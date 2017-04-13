@@ -1,0 +1,66 @@
+<Type Name="PrintJobType" FullName="System.Printing.PrintJobType">
+  <TypeSignature Language="C#" Value="public enum PrintJobType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintJobType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the print job uses [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Legacy">
+      <MemberSignature Language="C#" Value="Legacy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType Legacy = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Legacy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A non-XPS print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not specified whether the print job is [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)].</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xps">
+      <MemberSignature Language="C#" Value="Xps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType Xps = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Xps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] print job.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

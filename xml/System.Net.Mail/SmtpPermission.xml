@@ -1,0 +1,453 @@
+<Type Name="SmtpPermission" FullName="System.Net.Mail.SmtpPermission">
+  <TypeSignature Language="C#" Value="public sealed class SmtpPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SmtpPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Controls access to Simple Mail Transport Protocol (SMTP) servers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.SmtpPermission> and <xref:System.Net.Mail.SmtpPermissionAttribute> classes control access to SMTP host computers. The <xref:System.Net.Mail.SmtpClient> class demands an <xref:System.Net.Mail.SmtpPermission> when sending electronic mail to the SMTP host for delivery.  
+  
+ The <xref:System.Net.Mail.SmtpAccess> enumeration specifies the level of access controlled by an instance of this permission.  
+  
+   
+  
+## Examples  
+ The following code example creates an instance of an <xref:System.Net.Mail.SmtpPermission>.  
+  
+ [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
+ [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmtpPermission (bool unrestricted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool unrestricted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="unrestricted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="unrestricted">
+          <see langword="true" /> if the new permission is unrestricted; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class with the specified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `unrestricted` is `true`, the permission controls <xref:System.Net.Mail.SmtpAccess> access to SMTP servers. If unrestricted is `false`, the permission controls <xref:System.Net.Mail.SmtpAccess> access.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailPerms#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#4)]
+ [!code-csharp[NclMailPerms#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmtpPermission (System.Net.Mail.SmtpAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Mail.SmtpAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Net.Mail.SmtpAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="access" Type="System.Net.Mail.SmtpAccess" />
+      </Parameters>
+      <Docs>
+        <param name="access">One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class using the specified access level.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The permission created by this constructor can be used to help secure access to SMTP servers.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
+ [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmtpPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class using the specified permission state value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The permission created by this constructor can be used to give full access or prevent all access to SMTP servers.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#2)]
+ [!code-csharp[NclMailPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Access">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.SmtpAccess Access { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Mail.SmtpAccess Access" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpPermission.Access" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.SmtpAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the level of access to SMTP servers controlled by the permission.</summary>
+        <value>One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates displaying the value of this property.  
+  
+ [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
+ [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPermission">
+      <MemberSignature Language="C#" Value="public void AddPermission (System.Net.Mail.SmtpAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.Mail.SmtpAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.AddPermission(System.Net.Mail.SmtpAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="access" Type="System.Net.Mail.SmtpAccess" />
+      </Parameters>
+      <Docs>
+        <param name="access">One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</param>
+        <summary>Adds the specified access level value to the permission.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to modify access to Simple Mail Transport Protocol servers by adding to the state of this permission instance.  
+  
+   
+  
+## Examples  
+ The following code example adds <xref:System.Net.Mail.SmtpAccess> access to a permission object.  
+  
+ [!code-cpp[NclMailPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#5)]
+ [!code-csharp[NclMailPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current permission.</summary>
+        <returns>An <see cref="T:System.Net.Mail.SmtpPermission" /> that is identical to the current permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of a permission represents the same access to resources as the original permission.  
+  
+   
+  
+## Examples  
+ The following code example creates copy of a permission object.  
+  
+ [!code-cpp[NclMailPerms#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#3)]
+ [!code-csharp[NclMailPerms#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="securityElement">The XML encoding to use to set the state of the current permission.</param>
+        <summary>Sets the state of the permission using the specified XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by the security system and is not normally called by application code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityElement" /> does not describe an <see cref="T:System.Net.Mail.SmtpPermission" /> object.  
+  
+ -or-  
+  
+ <paramref name="securityElement" /> does not contain the required state information to reconstruct the permission.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="securityElement" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">An <see cref="T:System.Security.IPermission" /> to intersect with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
+        <returns>An <see cref="T:System.Net.Mail.SmtpPermission" /> that represents the intersection of the current permission and the specified permission. Returns <see langword="null" /> if the intersection is empty or <paramref name="target" /> is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permissions is a permission that describes the state they describe in common. Only a demand that passes both original permissions will pass the intersection.  
+  
+   
+  
+## Examples  
+ The following code example creates a permission object that is the intersection of an existing permission with an object that grants full access to SMTP servers.  
+  
+ [!code-cpp[NclMailPerms#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#6)]
+ [!code-csharp[NclMailPerms#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">An <see cref="T:System.Security.IPermission" /> that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
+        <summary>Returns a value indicating whether the current permission is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current permission is a subset of the specified permission if the current permission specifies a state that is wholly contained by the specified permission. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+  
+   
+  
+## Examples  
+ The following code example displays the subset relationship between two permissions.  
+  
+ [!code-cpp[NclMailPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#7)]
+ [!code-csharp[NclMailPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the current permission is unrestricted.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted permission has full access to all resources controlled by the permission instance.  
+  
+   
+  
+## Examples  
+ The following example creates a permission object and displays its state.  
+  
+ [!code-cpp[NclMailPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#2)]
+ [!code-csharp[NclMailPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the state of the permission.</summary>
+        <returns>A <see cref="T:System.Security.SecurityElement" /> that contains an XML encoding of the current permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by the security system and is not normally called by application code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">An <see cref="T:System.Security.IPermission" /> to combine with the current permission.</param>
+        <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
+        <returns>A new <see cref="T:System.Net.Mail.SmtpPermission" /> permission that represents the union of the current permission and the specified permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.SmtpPermission.Union%2A> method returns a permission that represents all the states represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+  
+   
+  
+## Examples  
+ The following example creates a permission object that is the union of two permission objects.  
+  
+ [!code-cpp[NclMailPerms#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#8)]
+ [!code-csharp[NclMailPerms#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

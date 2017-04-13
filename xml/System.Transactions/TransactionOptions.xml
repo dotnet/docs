@@ -1,0 +1,200 @@
+<Type Name="TransactionOptions" FullName="System.Transactions.TransactionOptions">
+  <TypeSignature Language="C#" Value="public struct TransactionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TransactionOptions extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains additional information that specifies transaction behaviors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure encapsulates the timeout and isolation level parameters for a transaction into a single, simple structure. It is passed to the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.CommittableTransaction> constructors to create a new transaction with the desired behaviors.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>Determines whether this <see cref="T:System.Transactions.TransactionOptions" /> instance and the specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this <see cref="T:System.Transactions.TransactionOptions" /> instance are identical; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsolationLevel">
+      <MemberSignature Language="C#" Value="public System.Transactions.IsolationLevel IsolationLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Transactions.IsolationLevel IsolationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionOptions.IsolationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the isolation level of the transaction.</summary>
+        <value>A <see cref="T:System.Transactions.IsolationLevel" /> enumeration that specifies the isolation level of the transaction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Equality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Transactions.TransactionOptions" />
+        <Parameter Name="y" Type="System.Transactions.TransactionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="o1">To be added.</param>
+        <param name="o2">To be added.</param>
+        <summary>Tests whether two specified <see cref="T:System.Transactions.TransactionOptions" /> instances are equivalent.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%28System.Transactions.TransactionOptions%2CSystem.Transactions.TransactionOptions%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Inequality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Transactions.TransactionOptions" />
+        <Parameter Name="y" Type="System.Transactions.TransactionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="o1">To be added.</param>
+        <param name="o2">To be added.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Transactions.TransactionOptions" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Trans%2A> actions.TransactionOptions.Compare(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)?qualifyHint=True&autoUpgrade=False]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionOptions.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the timeout period for the transaction.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> value that specifies the timeout period for the transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains the maximum amount of time that the scope can be in existence, before it aborts the transaction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

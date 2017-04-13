@@ -1,0 +1,411 @@
+<Type Name="EntityParameter" FullName="System.Data.EntityClient.EntityParameter">
+  <TypeSignature Language="C#" Value="public sealed class EntityParameter : System.Data.Common.DbParameter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityParameter extends System.Data.Common.DbParameter implements class System.Data.IDataParameter, class System.Data.IDbDataParameter" />
+  <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbParameter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a parameter used in EntityCommand.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name and data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name, data type and size.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size, string sourceColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, string sourceColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="sourceColumn" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <param name="sourceColumn">The name of the source column.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size, System.Data.ParameterDirection direction, bool isNullable, byte precision, byte scale, string sourceColumn, System.Data.DataRowVersion sourceVersion, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="direction" Type="System.Data.ParameterDirection" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+        <Parameter Name="precision" Type="System.Byte" />
+        <Parameter Name="scale" Type="System.Byte" />
+        <Parameter Name="sourceColumn" Type="System.String" />
+        <Parameter Name="sourceVersion" Type="System.Data.DataRowVersion" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
+        <param name="isNullable">
+          <see langword="true" /> to indicate that the parameter accepts null values; otherwise, <see langword="false" />.</param>
+        <param name="precision">The number of digits used to represent the value.</param>
+        <param name="scale">The number of decimal places to which value is resolved.</param>
+        <param name="sourceColumn">The name of the source column.</param>
+        <param name="sourceVersion">One of the <see cref="T:System.Data.DataRowVersion" /> values.</param>
+        <param name="value">The value of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbType">
+      <MemberSignature Language="C#" Value="public override System.Data.DbType DbType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.DbType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.DbType" /> of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.DbType" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public override System.Data.ParameterDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.ParameterDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the direction of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType EdmType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmType EdmType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.EdmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the parameter, expressed as an EdmType.</summary>
+        <value>The type of the parameter, expressed as an EdmType.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ May be null (which is what it will be if unset). This means that the DbType contains all the type information. Non-null values must not contradict DbType (only restate or specialize).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public override bool IsNullable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the parameter accepts null values.</summary>
+        <value>
+          <see langword="true" /> if null values are accepted; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterName">
+      <MemberSignature Language="C#" Value="public override string ParameterName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.ParameterName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the entity parameter.</summary>
+        <value>The name of the entity parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Precision">
+      <MemberSignature Language="C#" Value="public byte Precision { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Precision" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Precision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of digits used to represent the <see cref="P:System.Data.EntityClient.EntityParameter.Value" /> property.</summary>
+        <value>The number of digits used to represent the value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetDbType">
+      <MemberSignature Language="C#" Value="public override void ResetDbType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetDbType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ResetDbType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the type associated with the <see cref="T:System.Data.EntityClient.EntityParameter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public byte Scale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Scale" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Scale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of decimal places to which <see cref="P:System.Data.EntityClient.EntityParameter.Value" /> is resolved.</summary>
+        <value>The number of decimal places to which value is resolved.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public override int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size of the data within the column.</summary>
+        <value>The maximum size of the data within the column.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceColumn">
+      <MemberSignature Language="C#" Value="public override string SourceColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the source column mapped to the <see cref="T:System.Data.DataSet" /> and used for loading or returning the <see cref="P:System.Data.EntityClient.EntityParameter.Value" />.</summary>
+        <value>The name of the source column mapped to the dataset and used for loading or returning the value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceColumnNullMapping">
+      <MemberSignature Language="C#" Value="public override bool SourceColumnNullMapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SourceColumnNullMapping" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumnNullMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether source column is nullable.</summary>
+        <value>
+          <see langword="true" /> if source column is nullable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceVersion">
+      <MemberSignature Language="C#" Value="public override System.Data.DataRowVersion SourceVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.DataRowVersion" /> to use when loading the value.</summary>
+        <value>One of the <see cref="T:System.Data.DataRowVersion" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the parameter.</summary>
+        <returns>A string representation of the parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the parameter.</summary>
+        <value>The value of the parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

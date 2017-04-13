@@ -1,0 +1,1213 @@
+<Type Name="XmlSerializer" FullName="System.Xml.Serialization.XmlSerializer">
+  <TypeSignature Language="C#" Value="public class XmlSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XmlSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (System.Xml.Serialization.XmlTypeMapping xmlTypeMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Xml.Serialization.XmlTypeMapping)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlTypeMapping" Type="System.Xml.Serialization.XmlTypeMapping" />
+      </Parameters>
+      <Docs>
+        <param name="xmlTypeMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="defaultNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, Type[] extraTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Type[] extraTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Type[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="extraTypes" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="extraTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="overrides" Type="System.Xml.Serialization.XmlAttributeOverrides" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="overrides">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlRootAttribute root);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlRootAttribute root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlRootAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="root" Type="System.Xml.Serialization.XmlRootAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="root">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="overrides" Type="System.Xml.Serialization.XmlAttributeOverrides" />
+        <Parameter Name="extraTypes" Type="System.Type[]" />
+        <Parameter Name="root" Type="System.Xml.Serialization.XmlRootAttribute" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="overrides">To be added.</param>
+        <param name="extraTypes">To be added.</param>
+        <param name="root">To be added.</param>
+        <param name="defaultNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="overrides" Type="System.Xml.Serialization.XmlAttributeOverrides" />
+        <Parameter Name="extraTypes" Type="System.Type[]" />
+        <Parameter Name="root" Type="System.Xml.Serialization.XmlRootAttribute" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="overrides">To be added.</param>
+        <param name="extraTypes">To be added.</param>
+        <param name="root">To be added.</param>
+        <param name="defaultNamespace">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location, System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location, class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String,System.Security.Policy.Evidence)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method is obsolete and will be removed in a future release of the .NET Framework. Please use a XmlSerializer constructor overload which does not take an Evidence parameter. See http://go2.microsoft.com/fwlink/?LinkId=131738 for more information.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="overrides" Type="System.Xml.Serialization.XmlAttributeOverrides" />
+        <Parameter Name="extraTypes" Type="System.Type[]" />
+        <Parameter Name="root" Type="System.Xml.Serialization.XmlRootAttribute" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="overrides">To be added.</param>
+        <param name="extraTypes">To be added.</param>
+        <param name="root">To be added.</param>
+        <param name="defaultNamespace">To be added.</param>
+        <param name="location">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDeserialize">
+      <MemberSignature Language="C#" Value="public virtual bool CanDeserialize (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanDeserialize(class System.Xml.XmlReader xmlReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReader">
+      <MemberSignature Language="C#" Value="protected virtual System.Xml.Serialization.XmlSerializationReader CreateReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializationReader CreateReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CreateReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializationReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWriter">
+      <MemberSignature Language="C#" Value="protected virtual System.Xml.Serialization.XmlSerializationWriter CreateWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializationWriter CreateWriter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CreateWriter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializationWriter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.TextReader textReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.TextReader textReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textReader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="textReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="protected virtual object Deserialize (System.Xml.Serialization.XmlSerializationReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object Deserialize(class System.Xml.Serialization.XmlSerializationReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.Serialization.XmlSerializationReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.Serialization.XmlSerializationReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, string encodingStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, string encodingStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="encodingStyle" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">To be added.</param>
+        <param name="encodingStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, System.Xml.Serialization.XmlDeserializationEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, valuetype System.Xml.Serialization.XmlDeserializationEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.Xml.Serialization.XmlDeserializationEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="events" Type="System.Xml.Serialization.XmlDeserializationEvents" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">To be added.</param>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, string encodingStyle, System.Xml.Serialization.XmlDeserializationEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, string encodingStyle, valuetype System.Xml.Serialization.XmlDeserializationEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.String,System.Xml.Serialization.XmlDeserializationEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="encodingStyle" Type="System.String" />
+        <Parameter Name="events" Type="System.Xml.Serialization.XmlDeserializationEvents" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">To be added.</param>
+        <param name="encodingStyle">To be added.</param>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromMappings">
+      <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializer[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mappings" Type="System.Xml.Serialization.XmlMapping[]" />
+      </Parameters>
+      <Docs>
+        <param name="mappings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromMappings">
+      <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings, System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings, class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method is obsolete and will be removed in a future release of the .NET Framework. Please use an overload of FromMappings which does not take an Evidence parameter. See http://go2.microsoft.com/fwlink/?LinkId=131738 for more information.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializer[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mappings" Type="System.Xml.Serialization.XmlMapping[]" />
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="mappings">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromMappings">
+      <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializer[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mappings" Type="System.Xml.Serialization.XmlMapping[]" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="mappings">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromTypes">
+      <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromTypes (Type[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromTypes(class System.Type[] types) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromTypes(System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializer[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSerializer">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GenerateSerializer (Type[] types, System.Xml.Serialization.XmlMapping[] mappings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GenerateSerializer(class System.Type[] types, class System.Xml.Serialization.XmlMapping[] mappings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GenerateSerializer(System.Type[],System.Xml.Serialization.XmlMapping[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="mappings" Type="System.Xml.Serialization.XmlMapping[]" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <param name="mappings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSerializer">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GenerateSerializer (Type[] types, System.Xml.Serialization.XmlMapping[] mappings, System.CodeDom.Compiler.CompilerParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GenerateSerializer(class System.Type[] types, class System.Xml.Serialization.XmlMapping[] mappings, class System.CodeDom.Compiler.CompilerParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GenerateSerializer(System.Type[],System.Xml.Serialization.XmlMapping[],System.CodeDom.Compiler.CompilerParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="mappings" Type="System.Xml.Serialization.XmlMapping[]" />
+        <Parameter Name="parameters" Type="System.CodeDom.Compiler.CompilerParameters" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <param name="mappings">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlSerializerAssemblyName">
+      <MemberSignature Language="C#" Value="public static string GetXmlSerializerAssemblyName (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSerializerAssemblyName(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlSerializerAssemblyName">
+      <MemberSignature Language="C#" Value="public static string GetXmlSerializerAssemblyName (Type type, string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSerializerAssemblyName(class System.Type type, string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="defaultNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter textWriter, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter textWriter, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="protected virtual void Serialize (object o, System.Xml.Serialization.XmlSerializationWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(object o, class System.Xml.Serialization.XmlSerializationWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Object,System.Xml.Serialization.XmlSerializationWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="writer" Type="System.Xml.Serialization.XmlSerializationWriter" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="o">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter textWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter textWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+        <Parameter Name="encodingStyle" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <param name="encodingStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle, string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+        <Parameter Name="encodingStyle" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">To be added.</param>
+        <param name="o">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <param name="encodingStyle">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownAttribute">
+      <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlAttributeEventHandler UnknownAttribute;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlAttributeEventHandler UnknownAttribute" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlAttributeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownElement">
+      <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlElementEventHandler UnknownElement;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlElementEventHandler UnknownElement" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownElement" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlElementEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownNode">
+      <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlNodeEventHandler UnknownNode;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlNodeEventHandler UnknownNode" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownNode" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlNodeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnreferencedObject">
+      <MemberSignature Language="C#" Value="public event System.Xml.Serialization.UnreferencedObjectEventHandler UnreferencedObject;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.UnreferencedObjectEventHandler UnreferencedObject" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnreferencedObject" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.UnreferencedObjectEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

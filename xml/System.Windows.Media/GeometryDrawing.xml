@@ -1,0 +1,288 @@
+<Type Name="GeometryDrawing" FullName="System.Windows.Media.GeometryDrawing">
+  <TypeSignature Language="C#" Value="public sealed class GeometryDrawing : System.Windows.Media.Drawing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeometryDrawing extends System.Windows.Media.Drawing" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryDrawing" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Drawing</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Draws a <see cref="T:System.Windows.Media.Geometry" /> using the specified <see cref="P:System.Windows.Media.GeometryDrawing.Brush" /> and <see cref="P:System.Windows.Media.GeometryDrawing.Pen" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.GeometryDrawing> class with a <xref:System.Windows.Media.DrawingBrush> to paint an object with a shape, with an <xref:System.Windows.Media.DrawingImage> to create clip art, or with a <xref:System.Windows.Media.DrawingVisual>.  
+  
+## Freezable Features  
+ A <xref:System.Windows.Media.GeometryDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeometryDrawing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryDrawing.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeometryDrawing" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeometryDrawing (System.Windows.Media.Brush brush, System.Windows.Media.Pen pen, System.Windows.Media.Geometry geometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush brush, class System.Windows.Media.Pen pen, class System.Windows.Media.Geometry geometry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryDrawing.#ctor(System.Windows.Media.Brush,System.Windows.Media.Pen,System.Windows.Media.Geometry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="brush" Type="System.Windows.Media.Brush" />
+        <Parameter Name="pen" Type="System.Windows.Media.Pen" />
+        <Parameter Name="geometry" Type="System.Windows.Media.Geometry" />
+      </Parameters>
+      <Docs>
+        <param name="brush">The brush used to fill this <see cref="T:System.Windows.Media.GeometryDrawing" />.</param>
+        <param name="pen">The pen used to stroke this <see cref="T:System.Windows.Media.GeometryDrawing" />.</param>
+        <param name="geometry">The geometry</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeometryDrawing" /> class with the specified <see cref="T:System.Windows.Media.Brush" />, <see cref="T:System.Windows.Media.Pen" />, and <see cref="T:System.Windows.Media.Geometry" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Brush">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Brush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Brush" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryDrawing.Brush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> used to fill the interior of the shape described by this <see cref="T:System.Windows.Media.GeometryDrawing" />.</summary>
+        <value>The brush used to fill this <see cref="T:System.Windows.Media.GeometryDrawing" />. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Brush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GeometryDrawing>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BrushProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryDrawing.BrushProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GeometryDrawing.Brush" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryDrawing Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeometryDrawing Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryDrawing.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryDrawing</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GeometryDrawing" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryDrawing CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeometryDrawing CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryDrawing.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryDrawing</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GeometryDrawing" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryDrawing.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Geometry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Geometry" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryDrawing.Geometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Geometry" /> that describes the shape of this <see cref="T:System.Windows.Media.GeometryDrawing" />.</summary>
+        <value>The shape described by this <see cref="T:System.Windows.Media.GeometryDrawing" />. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Geometry"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GeometryDrawing>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GeometryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GeometryProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryDrawing.GeometryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GeometryDrawing.Geometry" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pen">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Pen Pen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Pen Pen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryDrawing.Pen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Pen" /> used to stroke this <see cref="T:System.Windows.Media.GeometryDrawing" />.</summary>
+        <value>The pen used to stroke this <see cref="T:System.Windows.Media.GeometryDrawing" />. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Pen"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GeometryDrawing>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryDrawing.PenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GeometryDrawing.Pen" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

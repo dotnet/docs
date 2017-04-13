@@ -1,0 +1,402 @@
+<Type Name="MSBuild" FullName="Microsoft.Build.Tasks.MSBuild">
+  <TypeSignature Language="C#" Value="public class MSBuild : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MSBuild extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.MSBuild" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Build.Framework.RunInMTA</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements the <c>MSBuild</c> task. Use the <c>MSBuild</c> element in your project file to create and execute this task. For usage and parameter information, see [MSBuild Task](http://msdn.microsoft.com/library/76577f6c-7669-44ad-a840-363e37a04d34).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements the "MSBuild" task, which hands off child project files to the MSBuild engine to be built.  
+  
+ Marked RunInMTA because there is no reason MSBuild tasks should run on a thread other than that of the RequestBuilder which spawned them.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MSBuild ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.MSBuild.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.MSBuild" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildInParallel">
+      <MemberSignature Language="C#" Value="public bool BuildInParallel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuildInParallel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.BuildInParallel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the projects specified in the <see cref="P:Microsoft.Build.Tasks.MSBuild.Projects" /> property are built in parallel, if possible.</summary>
+        <value>
+          <see langword="true" /> if the projects specified in the <see cref="P:Microsoft.Build.Tasks.MSBuild.Projects" /> property are built in parallel if possible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.MSBuild.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Instructs the MSBuild engine to build one or more project files whose locations are specified by the <see cref="P:Microsoft.Build.Tasks.MSBuild.Projects" /> property.</summary>
+        <returns>
+          <see langword="true" /> if all projects build successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Projects">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Projects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Projects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.Projects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the project files to build.</summary>
+        <value>The project files to build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public string[] Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a semicolon-delimited list of property name/value pairs to apply as global properties to the child project.</summary>
+        <value>A semicolon-delimited list of property name/value pairs to apply as global properties to the child project.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify this parameter, it is functionally equivalent to setting properties that have the **/property** switch when you build with .  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RebaseOutputs">
+      <MemberSignature Language="C#" Value="public bool RebaseOutputs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RebaseOutputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.RebaseOutputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the relative paths of target output items from the built projects have their paths adjusted to be relative to the calling project.</summary>
+        <value>
+          <see langword="true" /> if the relative paths of target output items from the built projects have their paths adjusted to be relative to the calling project.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProperties">
+      <MemberSignature Language="C#" Value="public string RemoveProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoveProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.RemoveProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the set of global properties to remove.</summary>
+        <value>Returns the set of global properties to remove.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunEachTargetSeparately">
+      <MemberSignature Language="C#" Value="public bool RunEachTargetSeparately { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunEachTargetSeparately" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.RunEachTargetSeparately" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task invokes each target in the list passed to [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] one at a time, instead of at the same time.</summary>
+        <value>
+          <see langword="true" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task invokes each target in the list passed to [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] one at a time; <see langword="false" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task invokes all targets in the list at the same time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true` guarantees that subsequent targets are invoked even if previously invoked targets failed. Otherwise, a build error would stop invocation of all subsequent targets. The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipNonexistentProjects">
+      <MemberSignature Language="C#" Value="public string SkipNonexistentProjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkipNonexistentProjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.SkipNonexistentProjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether project files that do not exist on the disk will be skipped.</summary>
+        <value>
+          <see langword="true" /> if project files that do not exist on the disk will be skipped; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If project files that do not exist on the disk are not skipped, they will cause a build error.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopOnFirstFailure">
+      <MemberSignature Language="C#" Value="public bool StopOnFirstFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopOnFirstFailure" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.StopOnFirstFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the task should stop building the remaining projects as soon as any one of them may not work.</summary>
+        <value>
+          <see langword="true" /> if the task should stop building the remaining projects as soon as any one of them may not work; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetAndPropertyListSeparators">
+      <MemberSignature Language="C#" Value="public string[] TargetAndPropertyListSeparators { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TargetAndPropertyListSeparators" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.TargetAndPropertyListSeparators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the escape characters to be unescaped from the specified <see cref="P:Microsoft.Build.Tasks.MSBuild.Properties" /> and <see cref="P:Microsoft.Build.Tasks.MSBuild.Targets" />.</summary>
+        <value>The escape characters to be unescaped from the specified <see cref="P:Microsoft.Build.Tasks.MSBuild.Properties" /> and <see cref="P:Microsoft.Build.Tasks.MSBuild.Targets" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has to be set to a value other than `null` for the `MSBuild` task to unescape properties and targets.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetOutputs">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] TargetOutputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] TargetOutputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.TargetOutputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the outputs of the built targets from all the project files. Only the outputs from the targets that were specified are returned, not any outputs that may exist on targets that those targets depend on.</summary>
+        <value>The outputs of the built targets from all the project files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public string[] Targets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Targets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target or targets to build in the project files. Use a semicolon to separate a list of target names.</summary>
+        <value>The target or targets to build in the project files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no targets are specified in the `MSBuild` task, the default targets specified in the project files are built.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolsVersion">
+      <MemberSignature Language="C#" Value="public string ToolsVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolsVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.ToolsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version to build the project with, which enables an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task to build a project that targets a different version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] than the one specified in the project. Valid values are <paramref name="2.0" />, <paramref name="3.0" /> and <paramref name="3.5" />.</summary>
+        <value>The target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version to build the project with.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `3.5.`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnloadProjectsOnCompletion">
+      <MemberSignature Language="C#" Value="public bool UnloadProjectsOnCompletion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnloadProjectsOnCompletion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.UnloadProjectsOnCompletion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the project will be unloaded once the operation is completed.</summary>
+        <value>
+          <see langword="true" /> if the project will be unloaded once the operation is completed; otherwise, <see langword="false" />. This property is no longer used in version 4.0</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseResultsCache">
+      <MemberSignature Language="C#" Value="public bool UseResultsCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseResultsCache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.MSBuild.UseResultsCache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether the MSBuild engine will return the built targets from the cache.</summary>
+        <value>
+          <see langword="true" /> if the MSBuild engine will return the built targets from the cache; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The scope of built targets in the cash is (ProjectFileName, GlobalProperties)[TargetNames] as a list of build items.  
+  
+ This property is no longer used in version 4.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

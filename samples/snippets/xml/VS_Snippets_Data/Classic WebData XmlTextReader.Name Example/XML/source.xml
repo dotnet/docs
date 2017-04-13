@@ -1,0 +1,15 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0"?>
+<!-- This is a sample XML document -->
+<!DOCTYPE Items [<!ENTITY number "123">]>
+<Items>
+  <Item>Test with an entity: &number;</Item>
+  <Item>test with a child element <more/> stuff</Item>
+  <Item>test with a CDATA section <![CDATA[<456>]]> def</Item>
+  <Item>Test with an char entity: &#65;</Item>
+  <!-- Fourteen chars in this element.-->
+  <Item>1234567890ABCD</Item>
+</Items>
+   <!--</Snippet2>-->
+

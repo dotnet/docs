@@ -1,0 +1,34 @@
+---
+title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build"
+apilocation: 
+  - "Microsoft.VisualStudio.Activities.dll"
+apitype: "Assembly"
+ms.assetid: d83033b0-a4cb-4d40-835e-5c1a176cde5b
+caps.latest.revision: 4
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+# Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build
+Creates and configures a <xref:System.Activities.ActivityBuilder> object that provides data for a workflow activity.  
+  
+## Syntax  
+  
+```csharp  
+public ActivityBuilder Build();   
+```  
+  
+## Return Value  
+ Returns a <xref:System.Activities.ActivityBuilder> object.  
+  
+## See Also  
+ [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

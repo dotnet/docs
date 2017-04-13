@@ -1,0 +1,291 @@
+<Type Name="KeyInfo" FullName="System.Security.Cryptography.Xml.KeyInfo">
+  <TypeSignature Language="C#" Value="public class KeyInfo : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyInfo extends System.Object implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an XML digital signature or XML encryption <see langword="&lt;KeyInfo&gt;" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.KeyInfo> class represents key information in XML digital signing and encryption.  
+  
+ The <xref:System.Security.Cryptography.Xml.KeyInfo> class enables you to imbed key-related information intended to help identify the key necessary for validating or decrypting the XML document. Multiple types of key-related information can be included within a single <xref:System.Security.Cryptography.Xml.KeyInfo>; each type of key-related information has an associated class derived from <xref:System.Security.Cryptography.Xml.KeyInfoClause>.  
+  
+ For more information about the `<KeyInfo>` element, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing a resource represented by a Universal Resource Identifier (URI).  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CPP/xmldsigdetach.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CS/xmldsigdetach.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/VB/xmldsigdetach.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing an XML document.  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CPP/xmldsigenv.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CS/xmldsigenv.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/VB/xmldsigenv.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example embeds an encrypted key within the encrypted XML document.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CPP/sample.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/VB/sample.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example maps a name to a symmetric key to identify it to the decryption method.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CPP/Cryptography.XML.XMLEncMapKey.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing a resource represented by a Universal Resource Identifier (URI).  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CPP/xmldsigdetach.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CS/xmldsigdetach.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/VB/xmldsigdetach.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing an XML document.  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CPP/xmldsigenv.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CS/xmldsigenv.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/VB/xmldsigenv.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example embeds an encrypted key within the encrypted XML document.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CPP/sample.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/VB/sample.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example maps a name to a symmetric key to identify it to the decryption method.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CPP/Cryptography.XML.XMLEncMapKey.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClause">
+      <MemberSignature Language="C#" Value="public void AddClause (System.Security.Cryptography.Xml.KeyInfoClause clause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddClause(class System.Security.Cryptography.Xml.KeyInfoClause clause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.AddClause(System.Security.Cryptography.Xml.KeyInfoClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clause" Type="System.Security.Cryptography.Xml.KeyInfoClause" />
+      </Parameters>
+      <Docs>
+        <param name="clause">The <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> to add to the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</param>
+        <summary>Adds a <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> that represents a particular type of <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> information to the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing a resource represented by a Universal Resource Identifier (URI).  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CPP/xmldsigdetach.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/CS/xmldsigdetach.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigDetached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigDetached/VB/xmldsigdetach.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when signing an XML document.  This example saves the signature in a new file.  
+  
+ [!code-cpp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CPP/xmldsigenv.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/CS/xmldsigenv.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML-XMLDsigEnvelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML-XMLDsigEnvelope/VB/xmldsigenv.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example embeds an encrypted key within the encrypted XML document.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CPP/sample.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncImbedKey/VB/sample.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.KeyInfo> object when encrypting an XML document. This example maps a name to a symmetric key to identify it to the decryption method.  
+  
+ [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CPP/Cryptography.XML.XMLEncMapKey.cpp#1)]
+ [!code-csharp[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/CS/sample.cs#1)]
+ [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKey/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfo.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> objects contained in the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</summary>
+        <value>The number of <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> objects contained in the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> objects in the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</summary>
+        <returns>An enumerator of the subelements of <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two enumerators taken from the same collection at the same time are not necessarily required to return the same iteration.  
+  
+ Initially, the enumerator must be positioned before the first element of the collection and must be advanced by the caller of the implementation before use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator (Type requestedObjectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator(class System.Type requestedObjectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetEnumerator(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestedObjectType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="requestedObjectType">The type of object to enumerate.</param>
+        <summary>Returns an enumerator of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> objects of the specified type in the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</summary>
+        <returns>An enumerator of the subelements of <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two enumerators taken from the same collection at the same time are not necessarily required to return the same iteration.  
+  
+ Initially, the enumerator must be positioned before the first element of the collection and must be advanced by the caller of the implementation before use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXml">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the XML representation of the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</summary>
+        <returns>The XML representation of the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfo.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key information identity.</summary>
+        <value>The key information identity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadXml">
+      <MemberSignature Language="C#" Value="public void LoadXml (System.Xml.XmlElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.LoadXml(System.Xml.XmlElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="value">The XML element from which to load the <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> state.</param>
+        <summary>Loads a <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> state from an XML element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

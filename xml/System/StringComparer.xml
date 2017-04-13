@@ -1,0 +1,827 @@
+<Type Name="StringComparer" FullName="System.StringComparer">
+  <TypeSignature Language="C#" Value="public abstract class StringComparer : System.Collections.Generic.IComparer&lt;string&gt;, System.Collections.Generic.IEqualityComparer&lt;string&gt;, System.Collections.IComparer, System.Collections.IEqualityComparer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit StringComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;string&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;string&gt;, class System.Collections.IComparer, class System.Collections.IEqualityComparer" />
+  <TypeSignature Language="DocId" Value="T:System.StringComparer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;System.String&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.String&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IComparer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEqualityComparer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object derived from the <xref:System.StringComparer> class embodies string-based comparison, equality, and hash code operations that take into account both case and culture-specific comparison rules. You can use the <xref:System.StringComparer> class to create a type-specific comparison to sort the elements in a generic collection. Classes such as <xref:System.Collections.Hashtable>, <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.SortedList>, and <xref:System.Collections.Generic.SortedList%602> use the <xref:System.StringComparer> class for sorting purposes.  
+  
+ A comparison operation that is represented by the <xref:System.StringComparer> class is defined to be either case-sensitive or case-insensitive, and use either word (culture-sensitive) or ordinal (culture-insensitive) comparison rules. For more information about word and ordinal comparison rules, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
+  
+## Implemented Properties  
+ You might be confused about how to use the <xref:System.StringComparer> class properties because of a seeming contradiction. The <xref:System.StringComparer> class is declared `abstract` (`MustInherit` in Visual Basic), which means its members can be invoked only on an object of a class derived from the <xref:System.StringComparer> class. The contradiction is that each property of the <xref:System.StringComparer> class is declared `static` (`Shared` in Visual Basic), which means the property can be invoked without first creating a derived class.  
+  
+ You can call a <xref:System.StringComparer> property directly because each property actually returns an instance of an anonymous class that is derived from the <xref:System.StringComparer> class. Consequently, the type of each property value is <xref:System.StringComparer>, which is the base class of the anonymous class, not the type of the anonymous class itself. Each <xref:System.StringComparer> class property returns a <xref:System.StringComparer> object that supports predefined case and comparison rules.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected StringComparer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.StringComparer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public int Compare (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Compare(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">An object to compare to <c>y</c>.</param>
+        <param name="y">An object to compare to <c>x</c>.</param>
+        <summary>When overridden in a derived class, compares two objects and returns an indication of their relative sort order.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="x" /> precedes  <paramref name="y" /> in the sort order.  
+  
+ -or-  
+  
+ <paramref name="x" /> is <see langword="null" /> and <paramref name="y" /> is not <see langword="null" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="x" /> is equal to <paramref name="y" />.  
+  
+ -or-  
+  
+ <paramref name="x" /> and <paramref name="y" /> are both <see langword="null" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="x" /> follows <paramref name="y" /> in the sort order.  
+  
+ -or-  
+  
+ <paramref name="y" /> is <see langword="null" /> and <paramref name="x" /> is not <see langword="null" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.StringComparer.Compare%28System.String%2CSystem.String%29?displayProperty=fullName> method is slightly more efficient than the <xref:System.StringComparer.Compare%28System.Object%2CSystem.Object%29?displayProperty=fullName> method because no conversion of the `x` and `y` arguments is needed to perform the comparison.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Neither <paramref name="x" /> nor <paramref name="y" /> is a <see cref="T:System.String" /> object, and neither <paramref name="x" /> nor <paramref name="y" /> implements the <see cref="T:System.IComparable" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract int Compare (string x, string y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string x, string y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Compare(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+        <Parameter Name="y" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">A string to compare to <c>y</c>.</param>
+        <param name="y">A string to compare to <c>x</c>.</param>
+        <summary>When overridden in a derived class, compares two strings and returns an indication of their relative sort order.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="x" /> precedes <paramref name="y" /> in the sort order.  
+  
+ -or-  
+  
+ <paramref name="x" /> is <see langword="null" /> and <paramref name="y" /> is not <see langword="null" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="x" /> is equal to <paramref name="y" />.  
+  
+ -or-  
+  
+ <paramref name="x" /> and <paramref name="y" /> are both <see langword="null" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="x" /> follows <paramref name="y" /> in the sort order.  
+  
+ -or-  
+  
+ <paramref name="y" /> is <see langword="null" /> and <paramref name="x" /> is not <see langword="null" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.StringComparer.Compare%28System.String%2CSystem.String%29?displayProperty=fullName> method is slightly more efficient than the <xref:System.StringComparer.Compare%28System.Object%2CSystem.Object%29?displayProperty=fullName> method because no conversion of the `x` and `y` arguments is needed to perform the comparison.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static StringComparer Create (System.Globalization.CultureInfo culture, bool ignoreCase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.StringComparer Create(class System.Globalization.CultureInfo culture, bool ignoreCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="culture">A culture whose linguistic rules are used to perform a string comparison.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that comparison operations be case-insensitive; <see langword="false" /> to specify that comparison operations be case-sensitive.</param>
+        <summary>Creates a <see cref="T:System.StringComparer" /> object that compares strings according to the rules of a specified culture.</summary>
+        <returns>A new <see cref="T:System.StringComparer" /> object that performs string comparisons according to the comparison rules used by the <paramref name="culture" /> parameter and the case rule specified by the <paramref name="ignoreCase" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="culture" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentCulture">
+      <MemberSignature Language="C#" Value="public static StringComparer CurrentCulture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer CurrentCulture" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.CurrentCulture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs a case-sensitive string comparison using the word comparison rules of the current culture.</summary>
+        <value>A new <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCulture%2A> property can be used when strings are linguistically relevant. For example, if strings are displayed to the user, or if strings are the result of user interaction, culture-sensitive string comparison should be used to order the string data.  
+  
+ The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread.  
+  
+ The <xref:System.StringComparer.CurrentCulture%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+ Each call to the <xref:System.StringComparer.CurrentCulture%2A> property `get` accessor returns a new <xref:System.StringComparer> object, as the following code shows.  
+  
+ [!code-csharp[System.StringComparer.CurrentCulture#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer.CurrentCulture/cs/CompareObjects.cs#1)]
+ [!code-vb[System.StringComparer.CurrentCulture#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer.CurrentCulture/vb/CompareObjects.vb#1)]  
+  
+ To improve performance, you can store the <xref:System.StringComparer> object in a local variable rather than retrieve the value of the <xref:System.StringComparer.CurrentCulture%2A> property multiple times.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentCultureIgnoreCase">
+      <MemberSignature Language="C#" Value="public static StringComparer CurrentCultureIgnoreCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer CurrentCultureIgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.CurrentCultureIgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs case-insensitive string comparisons using the word comparison rules of the current culture.</summary>
+        <value>A new <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread.  
+  
+ The<xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property can be used when strings are linguistically relevant but their case is not. For example, if strings are displayed to the user but case is unimportant, culture-sensitive, case-insensitive string comparison should be used to order the string data.  
+  
+ The <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+ Each call to the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property `get` accessor returns a new <xref:System.StringComparer> object, as the following code shows.  
+  
+ [!code-csharp[System.StringComparer.CurrentCulture#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer.CurrentCulture/cs/CompareObjects.cs#2)]
+ [!code-vb[System.StringComparer.CurrentCulture#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer.CurrentCulture/vb/CompareObjects.vb#2)]  
+  
+ To improve performance, you can store the <xref:System.StringComparer> object in a local variable rather than retrieve the value of the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property multiple times.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Equals(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">An object to compare to <c>y</c>.</param>
+        <param name="y">An object to compare to <c>x</c>.</param>
+        <summary>When overridden in a derived class, indicates whether two objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> refer to the same object, or <paramref name="x" /> and <paramref name="y" /> are both the same type of object and those objects are equal, or both <paramref name="x" /> and <paramref name="y" /> are <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the runtime does not have to unbox `x` or `y` if they are value types or attempt to downcast `x` or `y` to strings if they are reference types, the <xref:System.StringComparer.Equals%28System.String%2CSystem.String%29> method may be slightly more efficient than the <xref:System.StringComparer.Equals%28System.Object%2CSystem.Object%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (string x, string y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(string x, string y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Equals(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+        <Parameter Name="y" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">A string to compare to <c>y</c>.</param>
+        <param name="y">A string to compare to <c>x</c>.</param>
+        <summary>When overridden in a derived class, indicates whether two strings are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> refer to the same object, or <paramref name="x" /> and <paramref name="y" /> are equal, or <paramref name="x" /> and <paramref name="y" /> are <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the runtime does not have to unbox `x` or `y` if they are value types or attempt to downcast `x` or `y` to strings if they are reference types, the <xref:System.StringComparer.Equals%28System.String%2CSystem.String%29> method may be slightly more efficient than the <xref:System.StringComparer.Equals%28System.Object%2CSystem.Object%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.GetHashCode(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object.</param>
+        <summary>When overridden in a derived class, gets the hash code for the specified object.</summary>
+        <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.StringComparer.GetHashCode%28System.String%29> method is more efficient than the <xref:System.StringComparer.GetHashCode%2A> method because the `obj` parameter does not have to be unboxed to perform the operation.  
+  
+ The <xref:System.StringComparer.GetHashCode%28System.Object%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](~/docs/framework/configure-apps/file-schema/runtime/netfx45-cultureawarecomparergethashcode-longstrings-element.md) element to the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application's configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public abstract int GetHashCode (string obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(string obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.GetHashCode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">A string.</param>
+        <summary>When overridden in a derived class, gets the hash code for the specified string.</summary>
+        <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.StringComparer.GetHashCode%28System.String%29> method is more efficient than the <xref:System.StringComparer.GetHashCode%28System.Object%29> method because the `obj` parameter does not have to be unboxed to perform the operation.  
+  
+ The <xref:System.StringComparer.GetHashCode%28System.String%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](~/docs/framework/configure-apps/file-schema/runtime/netfx45-cultureawarecomparergethashcode-longstrings-element.md) element to the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application's configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvariantCulture">
+      <MemberSignature Language="C#" Value="public static StringComparer InvariantCulture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer InvariantCulture" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.InvariantCulture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs a case-sensitive string comparison using the word comparison rules of the invariant culture.</summary>
+        <value>A new <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCulture%2A> property compares strings in a linguistically relevant manner, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
+  
+ The invariant culture is the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+  
+ The <xref:System.StringComparer.InvariantCulture%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvariantCultureIgnoreCase">
+      <MemberSignature Language="C#" Value="public static StringComparer InvariantCultureIgnoreCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer InvariantCultureIgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.InvariantCultureIgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs a case-insensitive string comparison using the word comparison rules of the invariant culture.</summary>
+        <value>A new <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCultureIgnoreCase%2A> property compares strings in a linguistically relevant manner that ignores case, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
+  
+ The invariant culture is the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+  
+ The <xref:System.StringComparer.InvariantCultureIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordinal">
+      <MemberSignature Language="C#" Value="public static StringComparer Ordinal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer Ordinal" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.Ordinal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs a case-sensitive ordinal string comparison.</summary>
+        <value>A <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.Ordinal%2A> property performs a simple byte comparison that is independent of language. This is most appropriate when comparing strings that are generated programmatically or when comparing case-sensitive resources such as passwords.  
+  
+ The <xref:System.StringComparer.Ordinal%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrdinalIgnoreCase">
+      <MemberSignature Language="C#" Value="public static StringComparer OrdinalIgnoreCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.StringComparer OrdinalIgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.StringComparer.OrdinalIgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.StringComparer" /> object that performs a case-insensitive ordinal string comparison.</summary>
+        <value>A <see cref="T:System.StringComparer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.StringComparer> returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A> property treats the characters in the strings to compare as if they were converted to uppercase using the conventions of the invariant culture, and then performs a simple byte comparison that is independent of language. This is most appropriate when comparing strings that are generated programmatically or when comparing case-insensitive resources such as paths and filenames.  
+  
+ The <xref:System.StringComparer.OrdinalIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the properties and the <xref:System.StringComparer.Create%2A> method of the <xref:System.StringComparer> class. The example illustrates how different <xref:System.StringComparer> objects sort three versions of the Latin letter I.  
+  
+ [!code-cpp[System.StringComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.StringComparer/cpp/omni.cpp#1)]
+ [!code-csharp[System.StringComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.StringComparer/cs/omni.cs#1)]
+ [!code-vb[System.StringComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.StringComparer/vb/omni.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IComparer.Compare">
+      <MemberSignature Language="C#" Value="int IComparer.Compare (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.System#Collections#IComparer#Compare(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEqualityComparer.Equals">
+      <MemberSignature Language="C#" Value="bool IEqualityComparer.Equals (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IEqualityComparer.Equals(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.System#Collections#IEqualityComparer#Equals(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEqualityComparer.GetHashCode">
+      <MemberSignature Language="C#" Value="int IEqualityComparer.GetHashCode (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IEqualityComparer.GetHashCode(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.System#Collections#IEqualityComparer#GetHashCode(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

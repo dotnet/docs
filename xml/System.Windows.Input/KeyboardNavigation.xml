@@ -1,0 +1,481 @@
+<Type Name="KeyboardNavigation" FullName="System.Windows.Input.KeyboardNavigation">
+  <TypeSignature Language="C#" Value="public sealed class KeyboardNavigation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyboardNavigation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides logical and directional navigation between focusable objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.KeyboardNavigation> class is responsible for implementing default keyboard focus navigation when one of the navigation keys is pressed.  The navigation keys are: Tab, Shift+Tab, Ctrl+Tab, Ctrl+Shift+Tab, UpArrow, DownArrow, LeftArrow, and RightArrow keys.  
+  
+ An example of logical navigation is using the tab key to move focus.  
+  
+ An example of directional navigation is using the arrow keys to move focus.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Menu> with a number of <xref:System.Windows.Controls.MenuItem> objects.  The <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> attached property is set to <xref:System.Windows.Input.KeyboardNavigationMode> on the <xref:System.Windows.Controls.Menu>.  This means that when focus is changed using the tab key within the <xref:System.Windows.Controls.Menu>, focus will move from each element and when the last element is reached focus will return to the first element.  
+  
+ [!code-xml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
+  
+ [!code-csharp[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]
+ [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarkupSnippets/visualbasic/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceptsReturnProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AcceptsReturnProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AcceptsReturnProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.AcceptsReturn" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTabNavigationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ControlTabNavigationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ControlTabNavigationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.ControlTabNavigation" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectionalNavigationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DirectionalNavigationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DirectionalNavigationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.DirectionalNavigation" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAcceptsReturn">
+      <MemberSignature Language="C#" Value="public static bool GetAcceptsReturn (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetAcceptsReturn(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetAcceptsReturn(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which to read the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.AcceptsReturn" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.AcceptsReturn" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControlTabNavigation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.KeyboardNavigationMode GetControlTabNavigation (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.KeyboardNavigationMode GetControlTabNavigation(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetControlTabNavigation(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element from which to get the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.ControlTabNavigation" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.ControlTabNavigation" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectionalNavigation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.KeyboardNavigationMode GetDirectionalNavigation (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.KeyboardNavigationMode GetDirectionalNavigation(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetDirectionalNavigation(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element from which to get the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.DirectionalNavigation" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.DirectionalNavigation" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsTabStop">
+      <MemberSignature Language="C#" Value="public static bool GetIsTabStop (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsTabStop(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetIsTabStop(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which to read the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.IsTabStop" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.IsTabStop" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTabIndex">
+      <MemberSignature Language="C#" Value="public static int GetTabIndex (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTabIndex(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetTabIndex(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which to read the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabIndex" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabIndex" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTabNavigation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.KeyboardNavigationMode GetTabNavigation (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.KeyboardNavigationMode GetTabNavigation(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetTabNavigation(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element from which to get the attached property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabNavigation" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabNavigation" /> property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTabStopProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsTabStopProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsTabStopProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.IsTabStopProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.IsTabStop" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAcceptsReturn">
+      <MemberSignature Language="C#" Value="public static void SetAcceptsReturn (System.Windows.DependencyObject element, bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAcceptsReturn(class System.Windows.DependencyObject element, bool enabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetAcceptsReturn(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to write the attached property to.</param>
+        <param name="enabled">The property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.AcceptsReturn" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetControlTabNavigation">
+      <MemberSignature Language="C#" Value="public static void SetControlTabNavigation (System.Windows.DependencyObject element, System.Windows.Input.KeyboardNavigationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetControlTabNavigation(class System.Windows.DependencyObject element, valuetype System.Windows.Input.KeyboardNavigationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetControlTabNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element on which to set the attached property.</param>
+        <param name="mode">The property value to set</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.ControlTabNavigation" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirectionalNavigation">
+      <MemberSignature Language="C#" Value="public static void SetDirectionalNavigation (System.Windows.DependencyObject element, System.Windows.Input.KeyboardNavigationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDirectionalNavigation(class System.Windows.DependencyObject element, valuetype System.Windows.Input.KeyboardNavigationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetDirectionalNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element on which to set the attached property.</param>
+        <param name="mode">Property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.DirectionalNavigation" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsTabStop">
+      <MemberSignature Language="C#" Value="public static void SetIsTabStop (System.Windows.DependencyObject element, bool isTabStop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsTabStop(class System.Windows.DependencyObject element, bool isTabStop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetIsTabStop(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="isTabStop" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which to write the attached property.</param>
+        <param name="isTabStop">The property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.IsTabStop" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTabIndex">
+      <MemberSignature Language="C#" Value="public static void SetTabIndex (System.Windows.DependencyObject element, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabIndex(class System.Windows.DependencyObject element, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetTabIndex(System.Windows.DependencyObject,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which to set the attached property to.</param>
+        <param name="index">The property value to set.</param>
+        <summary>Set the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabIndex" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTabNavigation">
+      <MemberSignature Language="C#" Value="public static void SetTabNavigation (System.Windows.DependencyObject element, System.Windows.Input.KeyboardNavigationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabNavigation(class System.Windows.DependencyObject element, valuetype System.Windows.Input.KeyboardNavigationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetTabNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element on which to set the attached property.</param>
+        <param name="mode">Property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.KeyboardNavigation.TabNavigation" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabIndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.TabIndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.TabIndex" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabNavigationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabNavigationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabNavigationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.TabNavigationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.KeyboardNavigation.TabNavigation" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

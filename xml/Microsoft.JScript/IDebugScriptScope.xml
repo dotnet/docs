@@ -1,0 +1,45 @@
+<Type Name="IDebugScriptScope" FullName="Microsoft.JScript.IDebugScriptScope">
+  <TypeSignature Language="C#" Value="public interface IDebugScriptScope" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugScriptScope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugScriptScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("59447635-3E26-4873-BF26-05F173B80F5E")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that set the <see langword="this" /> value that is associated with the global scope. Used by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetThisValue">
+      <MemberSignature Language="C#" Value="public void SetThisValue (object thisValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetThisValue(object thisValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugScriptScope.SetThisValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisValue">The value that is used as the <see langword="this" /> object for the global scope.</param>
+        <summary>When implemented in a class, sets the <see langword="this" /> value that is associated with the global scope.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

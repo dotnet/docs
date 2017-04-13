@@ -1,0 +1,1616 @@
+<Type Name="Activity" FullName="System.Workflow.ComponentModel.Activity">
+  <TypeSignature Language="C#" Value="public class Activity : System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Activity extends System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Activity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer), typeof(System.ComponentModel.Design.Serialization.CodeDomSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer), typeof(System.ComponentModel.Design.Serialization.TypeCodeDomSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.ComponentModel.Design.ActivityDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.ComponentModel.Design.ActivityDesigner), typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("Component")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItemFilter("Microsoft.Workflow.VSDesigner", System.ComponentModel.ToolboxItemFilterType.Require)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Workflow.ComponentModel.Design.ActivitySet", System.ComponentModel.ToolboxItemFilterType.Allow)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.ComponentModel.Activity), "Design.Resources.Activity.png")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator(typeof(System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.ComponentModel.Compiler.ActivityValidator))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Serialization.RuntimeNameProperty("Name")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the fundamental building block of workflows. <see cref="T:System.Workflow.ComponentModel.Activity" /> is the base class for all activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An <xref:System.Workflow.ComponentModel.Activity> is the fundamental building block of workflows. An <xref:System.Workflow.ComponentModel.Activity> defines a set of properties and events, such as any class, along with execution logic that defines the activity's run-time behavior. A set of additional components can be associated with an <xref:System.Workflow.ComponentModel.Activity>. These include, but are not limited to a validator, a code generator, custom serializers, and a designer.  
+  
+ All activities share a common set of properties defined on the <xref:System.Workflow.ComponentModel.Activity> base class.  Each <xref:System.Workflow.ComponentModel.Activity> can declare its own additional properties according to its requirements by extending this class.  Because <xref:System.Workflow.ComponentModel.Activity> derives from <xref:System.Workflow.ComponentModel.DependencyObject>, properties can be defined as standard CLR properties and as dependency properties.  
+  
+ The execution logic of an <xref:System.Workflow.ComponentModel.Activity> fulfills a contract that exists between any <xref:System.Workflow.ComponentModel.Activity> and the workflow runtime. You must document the execution logic of any <xref:System.Workflow.ComponentModel.Activity> in a functional sense, so that a workflow developer who uses the <xref:System.Workflow.ComponentModel.Activity> knows how it behaves. The execution logic itself is hidden from the workflow developer who includes the activity in a workflow, because the execution logic is part of a contract that exists strictly between the workflow runtime and the <xref:System.Workflow.ComponentModel.Activity>.  
+  
+   
+  
+## Examples  
+ This example defines an activity whose purpose is to send an email. The activity defines one property, `Subject`, that uses a dependency property in its implementation. Other properties can be defined in a similar way. The `Execute` method is overridden to provide the logic for sending the email. For a complete example, see the [Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+```csharp  
+public class SendEmail : Activity  
+{  
+    public static readonly DependencyProperty SubjectProperty =  
+        DependencyProperty.Register("Subject", typeof(string), typeof(SendEmail));  
+  
+    public string Subject  
+    {  
+        get { return base.GetValue(SubjectProperty) as string; }  
+        set { base.SetValue(SubjectProperty, value); }  
+    }  
+  
+    // Define other properties...  
+  
+    protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
+    {  
+        // Logic to send the e-mail goes here...  
+        return ActivityExecutionStatus.Closed;  
+    }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create activities and add them as children to a composite activity.  
+  
+ This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+  
+ [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
+ [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to associate with this instance. The name must conform to the variable naming conventions for the programming language that is being used in the Workflow project, and must be unique in the workflow.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> class, while initializing the <see cref="P:System.Workflow.ComponentModel.Activity.Name" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityContextGuidProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ActivityContextGuidProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ActivityContextGuidProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ActivityContextGuidProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that represents the <see cref="T:System.Guid" /> of the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that is associated with the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="protected virtual System.Workflow.ComponentModel.ActivityExecutionStatus Cancel (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Cancel(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that contains the instance to cancel.</param>
+        <summary>Called by the workflow runtime to cancel execution of an activity that is currently executing.</summary>
+        <returns>The status at the end of the operation that determines whether the activity remains in the canceling state or transitions to the closed state.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Canceling">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Canceling;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Canceling" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Canceling" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the activity execution is canceled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Workflow.ComponentModel.Activity.Cancel%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="E:System.Workflow.ComponentModel.Activity.Canceling" /> in a derived class, make sure to call the base class <see cref="M:System.Workflow.ComponentModel.Activity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelingEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CancelingEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CancelingEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Canceling" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Activity Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a deep copy of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <returns>A deep copy of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uses a <xref:System.IO.MemoryStream> to copy the activity and creates a new activity by deserializing from that particular <xref:System.IO.MemoryStream>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Closed" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Closed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an <see cref="T:System.Workflow.ComponentModel.Activity" /> has completed execution.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Workflow.ComponentModel.Activity.Closed> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="E:System.Workflow.ComponentModel.Activity.Closed" /> in a derived class, make sure to call the base class <see cref="E:System.Workflow.ComponentModel.Activity.Closed" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ClosedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ClosedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Closed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compensating">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Compensating;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Compensating" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Compensating" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when running a compensation method on the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Workflow.ComponentModel.Activity.Compensating> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="E:System.Workflow.ComponentModel.Activity.Compensating" /> in a derived class, make sure to call the base class <see cref="E:System.Workflow.ComponentModel.Activity.Compensating" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CompensatingEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CompensatingEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CompensatingEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Compensating" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.ComponentModel.Design.MultilineStringEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user-defined description of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>The text description of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether this instance is enabled for execution and validation.</summary>
+        <value>
+          <see langword="true" /> if enabled for execution and validation; <see langword="false" /> otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `false`, all child activities are treated as if this value is `false` for them also.  
+  
+ This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected virtual System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> to associate with this <see cref="T:System.Workflow.ComponentModel.Activity" /> and execution.</param>
+        <summary>Called by the workflow runtime to execute an activity.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the run task, which determines whether the activity remains in the executing state, or transitions to the closed state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.ActivityExecutionContext> is used to get information about the currently running activity and workflow, and is also used to obtain services from the runtime environment.  
+  
+ The running occurs synchronously, returning control to the caller when the activity is completed or reaches an intermediate state.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the `Execute` method. In this example, an Outlook e-mail message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#98](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#98)]
+ [!code-vb[WF_Samples#98](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#98)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Executing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Executing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Executing" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Executing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.Activity" /> is run.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Workflow.ComponentModel.Activity.Executing> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> in a derived class, make sure to call the base class <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutingEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ExecutingEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ExecutingEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> event, which occurs when the activity is executed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionResult">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionResult ExecutionResult { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.ActivityExecutionResult ExecutionResult" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.ExecutionResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the last attempt to run this instance.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the last attempt to run this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only useful when a workflow instance is running.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionStatus">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionStatus ExecutionStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus ExecutionStatus" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.ExecutionStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of this instance.</summary>
+        <value>The current <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only useful when a workflow instance is running.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Faulting">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Faulting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; Faulting" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Faulting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an exception is raised during the running of the instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaultingEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty FaultingEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty FaultingEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that represents the <see cref="E:System.Workflow.ComponentModel.Activity.Faulting" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivityByName">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity GetActivityByName (string activityQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Activity GetActivityByName(string activityQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.GetActivityByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityQualifiedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activityQualifiedName">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to search for.</param>
+        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance, which is within the workflow.</summary>
+        <returns>The instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activityQualifiedID" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivityByName">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity GetActivityByName (string activityQualifiedName, bool withinThisActivityOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Activity GetActivityByName(string activityQualifiedName, bool withinThisActivityOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.GetActivityByName(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityQualifiedName" Type="System.String" />
+        <Parameter Name="withinThisActivityOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="activityQualifiedName">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to search for.</param>
+        <param name="withinThisActivityOnly">The value that indicates whether to limit the search to activities contained within this instance.</param>
+        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities under the root the <see cref="T:System.Workflow.ComponentModel.Activity" /> of this instance if the second parameter is <see langword="false" /> and under the current <see cref="T:System.Workflow.ComponentModel.Activity" /> if the second parameter is <see langword="true" />.</summary>
+        <returns>The instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities under the root the <see cref="T:System.Workflow.ComponentModel.Activity" /> of this instance if the second parameter is <see langword="false" /> and under the current <see cref="T:System.Workflow.ComponentModel.Activity" /> if the second parameter is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the instance of the <xref:System.Workflow.ComponentModel.Activity> whose name is requested from the set of all activities under the root the <xref:System.Workflow.ComponentModel.Activity> of this instance if the second parameter is `false` and under the current <xref:System.Workflow.ComponentModel.Activity> if the second parameter is `true`.  
+  
+ Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activityQualifiedID" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleFault">
+      <MemberSignature Language="C#" Value="protected virtual System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
+        <param name="exception">The <see cref="T:System.Exception" /> that caused this fault.</param>
+        <summary>Called when an exception is raised within the context of the execution of this instance.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default method tries to call the <xref:System.Workflow.ComponentModel.Activity.Cancel%2A> method and returns the result of this attempt.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected virtual void Initialize (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Initialize(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Initialize(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the initialization service.</param>
+        <summary>Called by the workflow runtime to initialize an activity during the construction of a new workflow instance. This method is called during the construction of a dynamic <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is a null reference (<see langword="Nothing " />in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected void Invoke&lt;T&gt; (EventHandler&lt;T&gt; handler, T e) where T : EventArgs;" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Invoke&lt;(class System.EventArgs) T&gt;(class System.EventHandler`1&lt;!!T&gt; handler, !!T e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Invoke``1(System.EventHandler{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.EventArgs</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;T&gt;" />
+        <Parameter Name="e" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The specified type.</typeparam>
+        <param name="handler">The <see cref="T:System.EventHandler" /> to be invoked.</param>
+        <param name="e">The <see cref="T:System.EventArgs" /> to associate with this event</param>
+        <summary>Subscribes an <see cref="T:System.EventHandler" /> and invokes that delegate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected void Invoke&lt;T&gt; (System.Workflow.ComponentModel.IActivityEventListener&lt;T&gt; eventListener, T e) where T : EventArgs;" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Invoke&lt;(class System.EventArgs) T&gt;(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;!!T&gt; eventListener, !!T e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Invoke``1(System.Workflow.ComponentModel.IActivityEventListener{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.EventArgs</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;T&gt;" />
+        <Parameter Name="e" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The specified type.</typeparam>
+        <param name="eventListener">The <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> to be invoked.</param>
+        <param name="e">The <see cref="T:System.EventArgs" /> to associate with this event</param>
+        <summary>Subscribes an <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> and invokes that delegate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDynamicActivity">
+      <MemberSignature Language="C#" Value="public bool IsDynamicActivity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDynamicActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.IsDynamicActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about whether the activity is executing within the default <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the workflow instance.</summary>
+        <value>Returns <see langword="false" /> if the activity is executing within the default <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the workflow instance, otherwise returns <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Activity Load (System.IO.Stream stream, System.Workflow.ComponentModel.Activity outerActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity Load(class System.IO.Stream stream, class System.Workflow.ComponentModel.Activity outerActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Load(System.IO.Stream,System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="outerActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> from which to load.</param>
+        <param name="outerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the context for the deserialized <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</summary>
+        <returns>An instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Activity Load (System.IO.Stream stream, System.Workflow.ComponentModel.Activity outerActivity, System.Runtime.Serialization.IFormatter formatter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity Load(class System.IO.Stream stream, class System.Workflow.ComponentModel.Activity outerActivity, class System.Runtime.Serialization.IFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Load(System.IO.Stream,System.Workflow.ComponentModel.Activity,System.Runtime.Serialization.IFormatter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="outerActivity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="formatter" Type="System.Runtime.Serialization.IFormatter" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The target <see cref="T:System.IO.Stream" /> of the load operation.</param>
+        <param name="outerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the context for the deserialized <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="formatter">The <see cref="T:System.Runtime.Serialization.IFormatter" /> used to read from the <see cref="T:System.IO.Stream" />.</param>
+        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" /> using the custom <see cref="T:System.Runtime.Serialization.IFormatter" /> for deserialization.</summary>
+        <returns>An instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of this instance. This name must conform to the variable naming convention of the programming language that is being used in the Workflow project.</summary>
+        <value>The name of this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default value for this is the empty string.  
+  
+ This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
+  
+   
+  
+## Examples  
+ The following code shows how to create activities and add them as children to a composite activity and set the value for <xref:System.Workflow.ComponentModel.Activity.Name%2A>.  
+  
+ This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+  
+ [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
+ [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityExecutionContextLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnActivityExecutionContextLoad (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivityExecutionContextLoad(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnActivityExecutionContextLoad(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
+        <summary>Called by the workflow runtime whenever an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is loaded. For example, this method is called during the creation of an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> as well as every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is reincarnated when a workflow instance is loaded from persistent storage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityExecutionContextUnload">
+      <MemberSignature Language="C#" Value="protected virtual void OnActivityExecutionContextUnload (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivityExecutionContextUnload(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnActivityExecutionContextUnload(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
+        <summary>Called by the workflow runtime whenever an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is unloaded. For example, this method is called during completion of an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> as well as every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is unloaded when a workflow instance is persisted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClosed">
+      <MemberSignature Language="C#" Value="protected virtual void OnClosed (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClosed(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnClosed(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
+        <summary>Called by the workflow runtime as part of the activity's transition to the closed state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method provides the activity with an opportunity to clean up resources utilized during its execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.CompositeActivity Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.CompositeActivity Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.CompositeActivity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that contains this <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> that is a parent to this <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returnsa null reference(`Nothing` in Visual Basic) if <xref:System.Workflow.ComponentModel.Activity> is a workflow or a root <xref:System.Workflow.ComponentModel.Activity>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QualifiedName">
+      <MemberSignature Language="C#" Value="public string QualifiedName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QualifiedName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.QualifiedName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the qualified name of the activity. Qualified activity names are always unique in a workflow instance.</summary>
+        <value>The qualified name of the instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The qualified name is the name of this instance with the name of the custom activity that contains this instance appended to the front.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseEvent">
+      <MemberSignature Language="C#" Value="protected void RaiseEvent (System.Workflow.ComponentModel.DependencyProperty dependencyEvent, object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RaiseEvent(class System.Workflow.ComponentModel.DependencyProperty dependencyEvent, object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RaiseEvent(System.Workflow.ComponentModel.DependencyProperty,System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyEvent" Type="System.Workflow.ComponentModel.DependencyProperty" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyEvent">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated with this <see cref="F:System.Reflection.MemberTypes.Event" />.</param>
+        <param name="sender">The <see cref="T:System.Object" /> source of the <see cref="F:System.Reflection.MemberTypes.Event" />.</param>
+        <param name="e">The <see cref="T:System.EventArgs" /> associated with the <see cref="F:System.Reflection.MemberTypes.Event" />.</param>
+        <summary>Raises an <see cref="F:System.Reflection.MemberTypes.Event" /> associated with the specified dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code invokes this method to raise an event that is defined as a <xref:System.Workflow.ComponentModel.DependencyProperty>.  
+  
+ This code example is part of the Send E-mail Activity sample and is from the SendEmailActivity.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669)  
+  
+ [!code-csharp[WF_Samples#233](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#233)]
+ [!code-vb[WF_Samples#233](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#233)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseGenericEvent&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected void RaiseGenericEvent&lt;T&gt; (System.Workflow.ComponentModel.DependencyProperty dependencyEvent, object sender, T e) where T : EventArgs;" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RaiseGenericEvent&lt;(class System.EventArgs) T&gt;(class System.Workflow.ComponentModel.DependencyProperty dependencyEvent, object sender, !!T e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RaiseGenericEvent``1(System.Workflow.ComponentModel.DependencyProperty,System.Object,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.EventArgs</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dependencyEvent" Type="System.Workflow.ComponentModel.DependencyProperty" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The specified type.</typeparam>
+        <param name="dependencyEvent">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated with this <see cref="F:System.Reflection.MemberTypes.Event" />.</param>
+        <param name="sender">The <see cref="T:System.Object" /> source of the event.</param>
+        <param name="e">The <see cref="T:System.EventArgs" /> associated with the <see cref="F:System.Reflection.MemberTypes.Event" />.</param>
+        <summary>Raises the event associated with the referenced <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForStatusChange">
+      <MemberSignature Language="C#" Value="public void RegisterForStatusChange (System.Workflow.ComponentModel.DependencyProperty dependencyProp, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; activityStatusChangeListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForStatusChange(class System.Workflow.ComponentModel.DependencyProperty dependencyProp, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; activityStatusChangeListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RegisterForStatusChange(System.Workflow.ComponentModel.DependencyProperty,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyProp" Type="System.Workflow.ComponentModel.DependencyProperty" />
+        <Parameter Name="activityStatusChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyProp">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to register.</param>
+        <param name="activityStatusChangeListener">The object that implements the Event Listener interface for this registration.</param>
+        <summary>Registers the specified <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> for the status change event.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dependencyProp" /> is not one of the following:  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Save(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to which to save the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Writes the <see cref="T:System.Workflow.ComponentModel.Activity" /> to a <see cref="T:System.IO.Stream" /> for persistence.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, System.Runtime.Serialization.IFormatter formatter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, class System.Runtime.Serialization.IFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Save(System.IO.Stream,System.Runtime.Serialization.IFormatter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="formatter" Type="System.Runtime.Serialization.IFormatter" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The target <see cref="T:System.IO.Stream" /> of the save operation.</param>
+        <param name="formatter">The binary or custom <see cref="T:System.Runtime.Serialization.IFormatter" /> for the serialization.</param>
+        <summary>Writes the <see cref="T:System.Workflow.ComponentModel.Activity" /> to a <see cref="T:System.IO.Stream" /> for persistence using the custom <see cref="T:System.Runtime.Serialization.IFormatter" /> provided for serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Soap formatters are not supported by Windows Workflow Foundation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
+        <exception cref="T:System.InvalidOperationException">This instance is in design mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; StatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; StatusChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.StatusChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of a running <see cref="T:System.Workflow.ComponentModel.Activity" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Workflow.ComponentModel.Activity.StatusChanged> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+> [!NOTE]
+>  When an activity (Activity A) subscribes to a different activity's (Activity B) `StatusChanged` event, the `Activity` property of the associated <xref:System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs> refers to the activity subscribed to (Activity B), and the associated `Sender` object refers to the execution context of the subscribing activity (Activity A).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="E:System.Workflow.ComponentModel.Activity.StatusChanged" /> in a derived class, make sure to call the base class <see cref="E:System.Workflow.ComponentModel.Activity.StatusChanged" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty StatusChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty StatusChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.StatusChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a string that represents this instance.</summary>
+        <returns>This instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned is a combination of the <xref:System.Workflow.ComponentModel.Activity.QualifiedName%2A> and the <xref:System.Type.FullName%2A> of the type of this instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackData">
+      <MemberSignature Language="C#" Value="protected void TrackData (object userData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackData(object userData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.TrackData(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userData">
+          <see cref="T:System.Object" /> that contains the tracking information.</param>
+        <summary>Informs the run-time tracking infrastructure of pending tracking information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a call to the `TrackData` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#118](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#118)]
+ [!code-vb[WF_Samples#118](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#118)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackData">
+      <MemberSignature Language="C#" Value="protected void TrackData (string userDataKey, object userData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackData(string userDataKey, object userData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.TrackData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userDataKey" Type="System.String" />
+        <Parameter Name="userData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userDataKey">The key to the user data that has changed.</param>
+        <param name="userData">
+          <see cref="T:System.Object" /> that contains the tracking information.</param>
+        <summary>Informs the run-time tracking infrastructure of pending tracking information.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Uninitialize">
+      <MemberSignature Language="C#" Value="protected virtual void Uninitialize (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Uninitialize(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Uninitialize(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
+        <summary>When overridden in a derived class, provides un-initialization by a service provider for the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method provides the activity with an opportunity to clean up resources allocated during initialization.  
+  
+ <xref:System.Workflow.ComponentModel.Activity.Uninitialize%2A> is called when an activity instance is guaranteed not to perform any more execution. For activities that do not implement <xref:System.Workflow.ComponentModel.ICompensatableActivity>, this occurs immediately after the activity closes, or, if the activity never executed, at workflow completion. For <xref:System.Workflow.ComponentModel.ICompensatableActivity> activities, this occurs either after compensation or at workflow completion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterForStatusChange">
+      <MemberSignature Language="C#" Value="public void UnregisterForStatusChange (System.Workflow.ComponentModel.DependencyProperty dependencyProp, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; activityStatusChangeListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterForStatusChange(class System.Workflow.ComponentModel.DependencyProperty dependencyProp, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; activityStatusChangeListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.UnregisterForStatusChange(System.Workflow.ComponentModel.DependencyProperty,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyProp" Type="System.Workflow.ComponentModel.DependencyProperty" />
+        <Parameter Name="activityStatusChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyProp">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to un-register.</param>
+        <param name="activityStatusChangeListener">The object that implements the Event Listener interface for this registration.</param>
+        <summary>Un-registers the specified <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> for the status change event.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dependencyProp" /> is not one of the following:  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />  
+  
+-   <see cref="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceId">
+      <MemberSignature Language="C#" Value="protected Guid WorkflowInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.WorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Guid" /> associated with the instance.</summary>
+        <value>The <see cref="T:System.Guid" /> associated with the instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetActivityByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance that is within the workflow.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

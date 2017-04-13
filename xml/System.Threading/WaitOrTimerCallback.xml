@@ -1,0 +1,75 @@
+<Type Name="WaitOrTimerCallback" FullName="System.Threading.WaitOrTimerCallback">
+  <TypeSignature Language="C#" Value="public delegate void WaitOrTimerCallback(object state, bool timedOut);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaitOrTimerCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.WaitOrTimerCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="state" Type="System.Object" />
+    <Parameter Name="timedOut" Type="System.Boolean" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="state">An object containing information to be used by the callback method each time it executes.</param>
+    <param name="timedOut">
+      <see langword="true" /> if the <see cref="T:System.Threading.WaitHandle" /> timed out; <see langword="false" /> if it was signaled.</param>
+    <summary>Represents a method to be called when a <see cref="T:System.Threading.WaitHandle" /> is signaled or times out.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Threading.WaitOrTimerCallback> represents a callback method that you want to execute when a registered wait handle times out or is signaled. Create the delegate by passing your callback method to the <xref:System.Threading.WaitOrTimerCallback> constructor. Your method must have the signature shown here.  
+  
+ Create the registered wait handle by passing the <xref:System.Threading.WaitOrTimerCallback> delegate and a <xref:System.Threading.WaitHandle> to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A?displayProperty=fullName>. Your callback method executes each time the <xref:System.Threading.WaitHandle> times out or is signaled.  
+  
+ [Visual Basic]  
+  
+> [!NOTE]
+>  Visual Basic users can omit the <xref:System.Threading.WaitOrTimerCallback> constructor, and simply use the `AddressOf` operator when passing the callback method to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A>. Visual Basic automatically calls the correct delegate constructor.  
+  
+ If you want to pass information to your callback method, create an object that contains the necessary information and pass it to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> when you create the registered wait handle. Each time your callback method executes, the `state` parameter contains this object.  
+  
+ For more information about using callback methods to synchronize thread pool threads, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Threading.WaitOrTimerCallback> delegate to represent a callback method that is executed when a wait handle is signaled.  
+  
+ The example also shows how to use the <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method to execute a specified callback method when a specified wait handle is signaled. In this example, the callback method is `WaitProc` and the wait handle is an <xref:System.Threading.AutoResetEvent>.  
+  
+ The example defines a `TaskInfo` class to hold the information that is passed to the callback when it executes. The example creates a `TaskInfo` object and assigns it some string data. The <xref:System.Threading.RegisteredWaitHandle> that is returned by the <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method is assigned to the `Handle` field of the `TaskInfo` object, so that the callback method has access to the <xref:System.Threading.RegisteredWaitHandle>.  
+  
+ In addition to the `TaskInfo` object, the call to the <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method specifies the <xref:System.Threading.AutoResetEvent> the task waits on, a <xref:System.Threading.WaitOrTimerCallback> delegate that represents the `WaitProc` callback method, a one-second timeout interval, and multiple callbacks.  
+  
+ When the main thread signals the <xref:System.Threading.AutoResetEvent> by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method, the <xref:System.Threading.WaitOrTimerCallback> delegate is invoked. The `WaitProc` method tests <xref:System.Threading.RegisteredWaitHandle> to determine whether a timeout occurred. If the callback was invoked because the wait handle was signaled, the `WaitProc` method unregisters the <xref:System.Threading.RegisteredWaitHandle>, stopping further callbacks. In the case of a timeout, the task continues waiting. The `WaitProc` method ends by printing a message to the console.  
+  
+ [!code-cpp[System.Threading.ThreadPool RegisterWaitForSingleObject0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadPool RegisterWaitForSingleObject0/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ThreadPool RegisterWaitForSingleObject0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadPool RegisterWaitForSingleObject0/CS/source.cs#1)]
+ [!code-vb[System.Threading.ThreadPool RegisterWaitForSingleObject0#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadPool RegisterWaitForSingleObject0/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

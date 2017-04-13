@@ -1,0 +1,374 @@
+<Type Name="CompositionContext" FullName="System.Composition.CompositionContext">
+  <TypeSignature Language="C#" Value="public abstract class CompositionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CompositionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Runtime</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompositionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (System.Composition.Hosting.Core.CompositionContract contract);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Composition.Hosting.Core.CompositionContract contract) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (Type exportType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Type exportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (Type exportType, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Type exportType, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public TExport GetExport&lt;TExport&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TExport GetExport&lt;TExport&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TExport</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public TExport GetExport&lt;TExport&gt; (string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TExport GetExport&lt;TExport&gt;(string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TExport</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetExports (Type exportType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetExports(class System.Type exportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetExports (Type exportType, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetExports(class System.Type exportType, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TExport&gt; GetExports&lt;TExport&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TExport&gt; GetExports&lt;TExport&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TExport&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TExport&gt; GetExports&lt;TExport&gt; (string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TExport&gt; GetExports&lt;TExport&gt;(string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TExport&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public abstract bool TryGetExport (System.Composition.Hosting.Core.CompositionContract contract, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, object export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="export">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, object export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <param name="export">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, string contractName, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, string contractName, object export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <param name="export">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (out TExport export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(!!TExport export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <param name="export">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (string contractName, out TExport export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(string contractName, !!TExport export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">To be added.</typeparam>
+        <param name="contractName">To be added.</param>
+        <param name="export">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

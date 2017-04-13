@@ -1,0 +1,107 @@
+<Type Name="ExpressionBuilderContext" FullName="System.Web.Compilation.ExpressionBuilderContext">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionBuilderContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionBuilderContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ExpressionBuilderContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the context for an <see cref="T:System.Web.Compilation.ExpressionBuilder" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Web.Compilation.ExpressionBuilderContext> object is typically used to obtain a virtual path or a <xref:System.Web.UI.Control.TemplateControl%2A> property for use with an expression builder. For more information, see <xref:System.Web.Configuration.ExpressionBuilder>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionBuilderContext (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ExpressionBuilderContext.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path of the file associated with the specified <see cref="T:System.Web.Compilation.ExpressionBuilder" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionBuilderContext" /> class using the specified virtual path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionBuilderContext (System.Web.UI.TemplateControl templateControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.TemplateControl templateControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ExpressionBuilderContext.#ctor(System.Web.UI.TemplateControl)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="templateControl" Type="System.Web.UI.TemplateControl" />
+      </Parameters>
+      <Docs>
+        <param name="templateControl">The <see cref="T:System.Web.UI.TemplateControl" /> to use with the specified <see cref="T:System.Web.Compilation.ExpressionBuilder" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionBuilderContext" /> class using the specified template control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.TemplateControl TemplateControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.TemplateControl TemplateControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ExpressionBuilderContext.TemplateControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.TemplateControl</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides an <see cref="T:System.Web.Compilation.ExpressionBuilder" /> object with a reference to a <see cref="T:System.Web.UI.TemplateControl" /> object.</summary>
+        <value>The <see cref="T:System.Web.UI.TemplateControl" /> that contains this expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An expression builder might require additional information about the containing page to evaluate or parse the expression value.  
+  
+ This also provides the <xref:System.Web.Compilation.ExpressionBuilder> object with information regarding the page that might be required. When an instance of a control is part of a control template, the <xref:System.Web.Compilation.ExpressionBuilderContext.TemplateControl%2A> property contains a reference to the containing control. For more information, see <xref:System.Web.UI.TemplateControl>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualPath">
+      <MemberSignature Language="C#" Value="public string VirtualPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ExpressionBuilderContext.VirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a virtual path to the file associated with the <see cref="T:System.Web.Compilation.ExpressionBuilderContext" /> object.</summary>
+        <value>The virtual path of the file associated with the <see cref="T:System.Web.Compilation.ExpressionBuilderContext" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

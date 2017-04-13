@@ -1,0 +1,454 @@
+<Type Name="FontWeight" FullName="System.Windows.FontWeight">
+  <TypeSignature Language="C#" Value="public struct FontWeight : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FontWeight extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontWeight" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.FontWeightConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Refers to the density of a typeface, in terms of the lightness or heaviness of the strokes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Weight differences are generally differentiated by an increased stroke or thickness that is associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
+  
+ **Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
+  
+<a name="xamlAttributeUsage_FontWeight"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object fontWeightProperty="fontWeightsValue"/>  
+```  
+  
+<a name="xamlValues_FontWeight"></a>   
+## XAML Values  
+ *fontWeightsValue*  
+ A <xref:System.Windows.FontWeights> property name, such as "Light", "Normal", or "UltraBold".  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontWeight> is set to "UltraBold".  
+  
+ [!code-xml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Compare(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.FontWeight" /> object to compare.</param>
+        <param name="right">The second <see cref="T:System.Windows.FontWeight" /> object to compare.</param>
+        <summary>Compares two instances of <see cref="T:System.Windows.FontWeight" />.</summary>
+        <returns>An <see cref="T:System.Int32" /> value that indicates the relationship between the two instances of <see cref="T:System.Windows.FontWeight" />. When the return value is less than zero, <paramref name="left" /> is less than <paramref name="right" />. When this value is zero, it indicates that both operands are equal. When the value is greater than zero, it indicates that <paramref name="left" /> is greater than <paramref name="right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontWeight.Compare%2A> method is used to evaluate two <xref:System.Windows.FontWeight> objects.  
+  
+ [!code-csharp[FontSnippets#FontSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#fontsnippet11)]
+ [!code-vb[FontSnippets#FontSnippet11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#fontsnippet11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare for equality.</param>
+        <summary>Determines whether the current <see cref="T:System.Windows.FontWeight" /> object is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.FontWeight obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.FontWeight obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Equals(System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The instance of <see cref="T:System.Windows.FontWeight" /> to compare for equality.</param>
+        <summary>Determines whether the current <see cref="T:System.Windows.FontWeight" /> object is equal to a specified <see cref="T:System.Windows.FontWeight" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromOpenTypeWeight">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight FromOpenTypeWeight (int weightValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontWeight FromOpenTypeWeight(int32 weightValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.FromOpenTypeWeight(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="weightValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="weightValue">An integer value between 1 and 999 that corresponds to the <c>usWeightClass</c> definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.</param>
+        <summary>Creates a new instance of <see cref="T:System.Windows.FontWeight" /> that corresponds to the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] <c>usWeightClass</c> value.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.FontWeight" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value , see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the hash code for this object.</summary>
+        <returns>A 32-bit hash code, which is a signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned value serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Equality(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Compares two instances of <see cref="T:System.Windows.FontWeight" /> for equality.</summary>
+        <returns>
+          <see langword="true" /> if the instances of <see cref="T:System.Windows.FontWeight" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan">
+      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Evaluates two instances of <see cref="T:System.Windows.FontWeight" /> to determine whether one instance is greater than the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is greater than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Evaluates two instances of <see cref="T:System.Windows.FontWeight" /> to determine whether one instance is greater than or equal to the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is greater than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Inequality(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Evaluates two instances of <see cref="T:System.Windows.FontWeight" /> to determine inequality.</summary>
+        <returns>
+          <see langword="false" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan">
+      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Evaluates two instances of <see cref="T:System.Windows.FontWeight" /> to determine whether one instance is less than the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is less than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.FontWeight" />
+        <Parameter Name="right" Type="System.Windows.FontWeight" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <param name="right">The second instance of <see cref="T:System.Windows.FontWeight" /> to compare.</param>
+        <summary>Evaluates two instances of <see cref="T:System.Windows.FontWeight" /> to determine whether one instance is less than or equal to the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is less than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The <see cref="T:System.String" /> specifying the format to use.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The <see cref="T:System.IFormatProvider" /> to use to format the value.  
+  
+ -or-  
+  
+ <see langword="null" /> to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToOpenTypeWeight">
+      <MemberSignature Language="C#" Value="public int ToOpenTypeWeight ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ToOpenTypeWeight() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.ToOpenTypeWeight" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that represents the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] <c>usWeightClass</c> for the <see cref="T:System.Windows.FontWeight" /> object.</summary>
+        <returns>An integer value between 1 and 999 that corresponds to the <c>usWeightClass</c> definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a text string that represents the value of the <see cref="T:System.Windows.FontWeight" /> object and is based on the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> property information.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the value of the <see cref="T:System.Windows.FontWeight" /> object, such as "Light", "Normal", or "UltraBold".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="TrackingCondition" FullName="System.Workflow.Runtime.Tracking.TrackingCondition">
+  <TypeSignature Language="C#" Value="public abstract class TrackingCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit TrackingCondition extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingCondition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An <see langword="abstract" /> base class representing a comparison that can be used to constrain an <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> or a <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Tracking.TrackingCondition> is the abstract base class from which <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> is derived.  
+  
+ <xref:System.Workflow.Runtime.Tracking.TrackingCondition> is evaluated by comparing the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TrackingCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingCondition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingCondition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public abstract string Member { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Member" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the name of the member whose value will be compared.</summary>
+        <value>The name of the member to be compared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> will be compared to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operator">
+      <MemberSignature Language="C#" Value="public abstract System.Workflow.Runtime.Tracking.ComparisonOperator Operator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Runtime.Tracking.ComparisonOperator Operator" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Operator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.ComparisonOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the operator to use in the comparison.</summary>
+        <value>One of the <see cref="T:System.Workflow.Runtime.Tracking.ComparisonOperator" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently only <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> and <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> are supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public abstract string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the value to compare.</summary>
+        <value>The value to compare.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> will be compared to the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

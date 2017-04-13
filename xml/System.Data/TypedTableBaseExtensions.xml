@@ -1,0 +1,303 @@
+<Type Name="TypedTableBaseExtensions" FullName="System.Data.TypedTableBaseExtensions">
+  <TypeSignature Language="C#" Value="public static class TypedTableBaseExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TypedTableBaseExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.TypedTableBaseExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the extension methods for the <see cref="T:System.Data.TypedTableBase`1" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class contains static extension methods that define the <xref:System.Data.TypedTableBaseExtensions.AsEnumerable%2A> method and standard query operations for typed data sets.  
+  
+ This class cannot be instantiated.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsEnumerable&lt;TRow&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;TRow&gt; AsEnumerable&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; AsEnumerable&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.AsEnumerable``1(System.Data.TypedTableBase{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type to convert the elements of the source to.</typeparam>
+        <param name="source">The source <see cref="T:System.Data.TypedTableBase`1" /> to make enumerable.</param>
+        <summary>Enumerates the data row elements of the <see cref="T:System.Data.TypedTableBase`1" /> and returns an <see cref="T:System.Data.EnumerableRowCollection`1" /> object, where the generic parameter <paramref name="T" /> is <see cref="T:System.Data.DataRow" />. This object can be used in a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression or method query.</summary>
+        <returns>An <see cref="T:System.Data.EnumerableRowCollection`1" /> object, where the generic parameter <paramref name="T" /> is <see cref="T:System.Data.DataRow" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAtOrDefault&lt;TRow&gt;">
+      <MemberSignature Language="C#" Value="public static TRow ElementAtOrDefault&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, int index) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TRow ElementAtOrDefault&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.ElementAtOrDefault``1(System.Data.TypedTableBase{``0},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TRow</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the elements or the row.</typeparam>
+        <param name="source">An enumerable object to return an element from.</param>
+        <param name="index">The zero-based index of the element to retrieve.</param>
+        <summary>Returns the element at a specified row in a sequence or a default value if the row is out of range.</summary>
+        <returns>The element at a specified row in a sequence.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderBy&lt;TRow,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderBy&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
+        <param name="keySelector">A function to extract a key from an element.</param>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order according to the specified key.</summary>
+        <returns>An <see cref="T:System.Data.OrderedEnumerableRowCollection`1" /> whose elements are sorted by the specified key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderBy&lt;TRow,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderBy&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector, System.Collections.Generic.IComparer&lt;TKey&gt; comparer) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
+        <param name="keySelector">A function to extract a key from an element.</param>
+        <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order according to the specified key and comparer.</summary>
+        <returns>An <see cref="T:System.Data.OrderedEnumerableRowCollection`1" /> whose elements are sorted by the specified key and comparer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderByDescending&lt;TRow,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderByDescending&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
+        <param name="keySelector">A function to extract a key from an element.</param>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order according to the specified key.</summary>
+        <returns>An <see cref="T:System.Data.OrderedEnumerableRowCollection`1" /> whose elements are sorted by the specified key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderByDescending&lt;TRow,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderByDescending&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector, System.Collections.Generic.IComparer&lt;TKey&gt; comparer) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
+        <param name="keySelector">A function to extract a key from an element.</param>
+        <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order according to the specified key and comparer.</summary>
+        <returns>An <see cref="T:System.Data.OrderedEnumerableRowCollection`1" /> whose elements are sorted by the specified key and comparer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select&lt;TRow,S&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;S&gt; Select&lt;TRow,S&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,S&gt; selector) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!S&gt; Select&lt;(class System.Data.DataRow) TRow, S&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!S&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.Select``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EnumerableRowCollection&lt;S&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="S" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="selector" Type="System.Func&lt;TRow,S&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="S">To be added.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to invoke a transformation function upon.</param>
+        <param name="selector">A transformation function to apply to each element.</param>
+        <summary>Projects each element of a <see cref="T:System.Data.TypedTableBase`1" /> into a new form.</summary>
+        <returns>An <see cref="T:System.Data.EnumerableRowCollection`1" /> whose elements are the result of invoking the transformation function on each element of <paramref name="source" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This projection method requires the transformation function, `selector`, to produce one value for each value in the source sequence, `source`. If `selector` returns a value that is itself a collection, the consumer must traverse the sub-sequences manually.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where&lt;TRow&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;TRow&gt; Where&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,bool&gt; predicate) where TRow : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; Where&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.Where``1(System.Data.TypedTableBase{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EnumerableRowCollection&lt;TRow&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;TRow,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
+        <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to filter.</param>
+        <param name="predicate">A function to test each element for a condition.</param>
+        <summary>Filters a sequence of rows based on the specified predicate.</summary>
+        <returns>An <see cref="T:System.Data.OrderedEnumerableRowCollection`1" /> that contains rows from the input sequence that satisfy the condition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

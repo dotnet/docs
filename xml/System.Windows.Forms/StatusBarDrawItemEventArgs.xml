@@ -1,0 +1,129 @@
+<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
+  <TypeSignature Language="C#" Value="public class StatusBarDrawItemEventArgs : System.Windows.Forms.DrawItemEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarDrawItemEventArgs extends System.Windows.Forms.DrawItemEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DrawItemEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.StatusBar.DrawItem" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBar.DrawItem> event occurs when a visual aspect of an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> changes. A <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> specifies the <xref:System.Drawing.Graphics> object to use to draw the panel, the <xref:System.Drawing.Rectangle> object in which to draw the panel, the panel identification number, state information about the panel, and the panel to draw. You can use the data provided by this class in an event handler for the <xref:System.Windows.Forms.StatusBar.DrawItem> event to create custom-drawn panels in your application's <xref:System.Windows.Forms.StatusBar> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle> enumeration and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A?displayProperty=fullName> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+  
+ [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarDrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Windows.Forms.StatusBarPanel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="r" Type="System.Drawing.Rectangle" />
+        <Parameter Name="itemId" Type="System.Int32" />
+        <Parameter Name="itemState" Type="System.Windows.Forms.DrawItemState" />
+        <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to use to draw the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> used to render text.</param>
+        <param name="r">The <see cref="T:System.Drawing.Rectangle" /> that represents the client area of the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="itemId">The zero-based index of the panel in the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</param>
+        <param name="itemState">One of the <see cref="T:System.Windows.Forms.DrawItemState" /> values that represents state information about the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="panel">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to draw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class without specifying a background and foreground color for the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarDrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Windows.Forms.StatusBarPanel,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="r" Type="System.Drawing.Rectangle" />
+        <Parameter Name="itemId" Type="System.Int32" />
+        <Parameter Name="itemState" Type="System.Windows.Forms.DrawItemState" />
+        <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to use to draw the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> used to render text.</param>
+        <param name="r">The <see cref="T:System.Drawing.Rectangle" /> that represents the client area of the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="itemId">The zero-based index of the panel in the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</param>
+        <param name="itemState">One of the <see cref="T:System.Windows.Forms.DrawItemState" /> values that represents state information about the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="panel">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to draw.</param>
+        <param name="foreColor">One of the <see cref="T:System.Drawing.Color" /> values that represents the foreground color of the panel to draw.</param>
+        <param name="backColor">One of the <see cref="T:System.Drawing.Color" /> values that represents the background color of the panel to draw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class with a specified background and foreground color for the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Panel">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBarPanel Panel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBarPanel Panel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</summary>
+        <value>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A> property enables you to obtain the <xref:System.Windows.Forms.StatusBarPanel> that needs to be drawn. You can use this information within the event handler for the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to perform drawing tasks on the <xref:System.Windows.Forms.StatusBarPanel>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle>, and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+  
+ [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

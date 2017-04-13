@@ -1,0 +1,167 @@
+<Type Name="DataGrid+HitTestType" FullName="System.Windows.Forms.DataGrid+HitTestType">
+  <TypeSignature Language="C#" Value="public enum DataGrid.HitTestType" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DataGrid/HitTestType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control the user has clicked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to determine which part of the grid has been clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property of a <xref:System.Windows.Forms.DataGrid.HitTestInfo> returns a <xref:System.Windows.Forms.DataGrid.HitTestType>. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> is created by invoking the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in a <xref:System.Windows.Forms.Control.MouseDown> event to return the <xref:System.Windows.Forms.DataGrid.HitTestInfo>. The row, column, and part of the grid are then printed.  
+  
+ [!code-cpp[Classic DataGrid.HitTestType Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestType Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="Caption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType Caption = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.Caption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The caption of the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cell">
+      <MemberSignature Language="C#" Value="Cell" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType Cell = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.Cell" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cell in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeader">
+      <MemberSignature Language="C#" Value="ColumnHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType ColumnHeader = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ColumnHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A column header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnResize">
+      <MemberSignature Language="C#" Value="ColumnResize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType ColumnResize = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ColumnResize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column border, which is the line between column headers. It can be dragged to resize a column's width.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The background area, visible when the control contains no table, few rows, or when a table is scrolled to its bottom.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentRows">
+      <MemberSignature Language="C#" Value="ParentRows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType ParentRows = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ParentRows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parent row section of the <see cref="T:System.Windows.Forms.DataGrid" /> control. The parent row displays information from or about the parent table of the currently displayed child table, such as the name of the parent table, column names and values of the parent record.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeader">
+      <MemberSignature Language="C#" Value="RowHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType RowHeader = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.RowHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A row header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RowResize">
+      <MemberSignature Language="C#" Value="RowResize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGrid/HitTestType RowResize = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.RowResize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row border, which is the line between grid row headers. It can be dragged to resize a row's height.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

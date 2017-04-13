@@ -1,0 +1,82 @@
+<Type Name="ValueProviderSourceAttribute" FullName="System.Web.ModelBinding.ValueProviderSourceAttribute">
+  <TypeSignature Language="C#" Value="public abstract class ValueProviderSourceAttribute : Attribute, System.Web.ModelBinding.IModelNameProvider, System.Web.ModelBinding.IValueProviderSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValueProviderSourceAttribute extends System.Attribute implements class System.Web.ModelBinding.IModelNameProvider, class System.Web.ModelBinding.IValueProviderSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ValueProviderSourceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IModelNameProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IValueProviderSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a base class for value-provider attributes that can be used in method parameters to specify the source of values for model binding, such as <see cref="T:System.Web.ModelBinding.FormAttribute" />, <see cref="T:System.Web.ModelBinding.QueryStringAttribute" />, and <see cref="T:System.Web.ModelBinding.ViewStateAttribute" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ValueProviderSourceAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderSourceAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelName">
+      <MemberSignature Language="C#" Value="public virtual string GetModelName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetModelName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.GetModelName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, returns the name of the model. The default is <see langword="null" />.</summary>
+        <returns>The name of the model.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueProvider">
+      <MemberSignature Language="C#" Value="public abstract System.Web.ModelBinding.IValueProvider GetValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.IValueProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <summary>Returns the value provider.</summary>
+        <returns>The value provider.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

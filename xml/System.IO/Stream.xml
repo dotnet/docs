@@ -1,0 +1,1918 @@
+<Type Name="Stream" FullName="System.IO.Stream">
+  <TypeSignature Language="C#" Value="public abstract class Stream : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Stream extends System.MarshalByRefObject implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Stream" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a generic view of a sequence of bytes. This is an abstract class.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/stream.cs#f956b0c07e86df64).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/stream.cs#f956b0c07e86df64). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ <xref:System.IO.Stream> is the abstract base class of all streams. A stream is an abstraction of a sequence of bytes, such as a file, an input/output device, an inter-process communication pipe, or a TCP/IP socket. The <xref:System.IO.Stream> class and its derived classes provide a generic view of these different types of input and output, and isolate the programmer from the specific details of the operating system and the underlying devices.  
+  
+ Streams involve three fundamental operations:  
+  
+-   You can read from streams. Reading is the transfer of data from a stream into a data structure, such as an array of bytes.  
+  
+-   You can write to streams. Writing is the transfer of data from a data structure into a stream.  
+  
+-   Streams can support seeking. Seeking refers to querying and modifying the current position within a stream. Seek capability depends on the kind of backing store a stream has. For example, network streams have no unified concept of a current position, and therefore typically do not support seeking.  
+  
+ Some of the more commonly used streams that inherit from <xref:System.IO.Stream> are <xref:System.IO.FileStream>, and <xref:System.IO.MemoryStream>.  
+  
+ Depending on the underlying data source or repository, streams might support only some of these capabilities. You can query a stream for its capabilities by using the <xref:System.IO.Stream.CanRead%2A>, <xref:System.IO.Stream.CanWrite%2A>, and <xref:System.IO.Stream.CanSeek%2A> properties of the <xref:System.IO.Stream> class.  
+  
+ The <xref:System.IO.Stream.Read%2A> and <xref:System.IO.Stream.Write%2A> methods read and write data in a variety of formats. For streams that support seeking, use the <xref:System.IO.Stream.Seek%2A> and <xref:System.IO.Stream.SetLength%2A> methods and the <xref:System.IO.Stream.Position%2A> and <xref:System.IO.Stream.Length%2A> properties to query and modify the current position and length of a stream.  
+  
+ This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ Disposing a <xref:System.IO.Stream> object flushes any buffered data, and essentially calls the <xref:System.IO.Stream.Flush%2A> method for you. <xref:System.IO.Stream.Dispose%2A> also releases operating system resources such as file handles, network connections, or memory used for any internal buffering. The <xref:System.IO.BufferedStream> class provides the capability of wrapping a buffered stream around another stream in order to improve read and write performance.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.IO.Stream> class includes async methods to simplify asynchronous operations. An async method contains `Async` in its name, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>. These methods enable you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ When used in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app, <xref:System.IO.Stream> includes two extension methods: <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A>. These methods convert a <xref:System.IO.Stream> object to a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)]. You can also convert a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)] to a <xref:System.IO.Stream> object by using the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> methods. For more information, see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](~/docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)  
+  
+ Some stream implementations perform local buffering of the underlying data to improve performance. For such streams, you can use the <xref:System.IO.Stream.Flush%2A> or <xref:System.IO.Stream.FlushAsync%2A> method to clear any internal buffers and ensure that all data has been written to the underlying data source or repository.  
+  
+ If you need a stream with no backing store (also known as a bit bucket), use the <xref:System.IO.Stream.Null> field to retrieve an instance of a stream that is designed for this purpose.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use two <xref:System.IO.FileStream> objects to asynchronously copy the files from one directory to another directory. The <xref:System.IO.FileStream> class derives from the <xref:System.IO.Stream> class. Notice that the <xref:System.Web.UI.WebControls.Button.Click> event handler for the <xref:System.Windows.Controls.Button> control is marked with the `async` modifier because it calls an asynchronous method.  
+  
+ [!code-csharp[Asynchronous_File_IO_async#1](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example.cs#1)]
+ [!code-vb[Asynchronous_File_IO_async#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you implement a derived class of <see cref="T:System.IO.Stream" />, you must provide implementations for the <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> methods. The asynchronous methods <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" />, <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" />, and <see cref="M:System.IO.Stream.CopyToAsync(System.IO.Stream)" /> use the synchronous methods <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> in their implementations. Therefore, your implementations of <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> will work correctly with the asynchronous methods. The default implementations of <see cref="M:System.IO.Stream.ReadByte" /> and <see cref="M:System.IO.Stream.WriteByte(System.Byte)" /> create a new single-element byte array, and then call your implementations of <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />. When you derive from <see cref="T:System.IO.Stream" />, we recommend that you override these methods to access your internal buffer, if you have one, for substantially better performance. You must also provide implementations of <see cref="P:System.IO.Stream.CanRead" />, <see cref="P:System.IO.Stream.CanSeek" />, <see cref="P:System.IO.Stream.CanWrite" />, <see cref="M:System.IO.Stream.Flush" />, <see cref="P:System.IO.Stream.Length" />, <see cref="P:System.IO.Stream.Position" />, <see cref="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)" />, and <see cref="M:System.IO.Stream.SetLength(System.Int64)" />.  
+  
+ Do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all the <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Stream ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Stream" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Stream> is the abstract base class of all streams.  
+  
+ Some of the more commonly used streams that inherit from <xref:System.IO.Stream> are <xref:System.IO.FileStream>, and <xref:System.IO.MemoryStream>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRead">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to read the data into.</param>
+        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data read from the stream.</param>
+        <param name="count">The maximum number of bytes to read.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the read is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
+        <summary>Begins an asynchronous read operation. (Consider using <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> instead; see the Remarks section.)</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous read, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous I/O operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>, help you implement asynchronous I/O operations more easily.  
+  
+ The default implementation of `BeginRead` on a stream calls the <xref:System.IO.Stream.Read%2A> method synchronously, which means that `Read` might block on some streams. However, instances of classes such as `FileStream` and `NetworkStream` fully support asynchronous operations if the instances have been opened asynchronously. Therefore, calls to `BeginRead` will not block on those streams. You can override `BeginRead` (by using async delegates, for example) to provide asynchronous behavior.  
+  
+ Pass the `IAsyncResult` return value to the <xref:System.IO.Stream.EndRead%2A> method of the stream to determine how many bytes were read and to release operating system resources used for reading. <xref:System.IO.Stream.EndRead%2A> must be called once for every call to <xref:System.IO.Stream.BeginRead%2A>. You can do this either by using the same code that called `BeginRead` or in a callback passed to `BeginRead`.  
+  
+ The current position in the stream is updated when the asynchronous read or write is issued, not when the I/O operation completes.  
+  
+ Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+  
+ Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading.  
+  
+ If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from `BeginRead`. Errors that occur during an asynchronous read request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling `EndRead`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">Attempted an asynchronous read past the end of the stream, or a disk error occurs.</exception>
+        <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <exception cref="T:System.NotSupportedException">The current <see langword="Stream" /> implementation does not support the read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginWrite">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write data from.</param>
+        <param name="offset">The byte offset in <c>buffer</c> from which to begin writing.</param>
+        <param name="count">The maximum number of bytes to write.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the write is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
+        <summary>Begins an asynchronous write operation. (Consider using <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> instead; see the Remarks section.)</summary>
+        <returns>An <see langword="IAsyncResult" /> that represents the asynchronous write, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous I/O operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>, help you implement asynchronous I/O operations more easily.  
+  
+ The default implementation of `BeginWrite` on a stream calls the <xref:System.IO.Stream.Write%2A> method synchronously, which means that `Write` might block on some streams. However, instances of classes such as `FileStream` and `NetworkStream` fully support asynchronous operations if the instances have been opened asynchronously. Therefore, calls to `BeginWrite` will not block on those streams. You can override `BeginWrite` (by using async delegates, for example) to provide asynchronous behavior.  
+  
+ Pass the `IAsyncResult` returned by the current method to <xref:System.IO.Stream.EndWrite%2A> to ensure that the write completes and frees resources appropriately. <xref:System.IO.Stream.EndWrite%2A> must be called once for every call to <xref:System.IO.Stream.BeginWrite%2A>. You can do this either by using the same code that called `BeginWrite` or in a callback passed to `BeginWrite`. If an error occurs during an asynchronous write, an exception will not be thrown until `EndWrite` is called with the `IAsyncResult` returned by this method.  
+  
+ If a stream is writable, writing at the end of the stream expands the stream.  
+  
+ The current position in the stream is updated when you issue the asynchronous read or write, not when the I/O operation completes. Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing.  
+  
+ If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from `BeginWrite`. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling `EndWrite`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">Attempted an asynchronous write past the end of the stream, or a disk error occurs.</exception>
+        <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <exception cref="T:System.NotSupportedException">The current <see langword="Stream" /> implementation does not support the write operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public abstract bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a value indicating whether the current stream supports reading.</summary>
+        <value>
+          <see langword="true" /> if the stream supports reading; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a class derived from <xref:System.IO.Stream> does not support reading, calls to the <xref:System.IO.Stream.Read%2A>, <xref:System.IO.Stream.ReadByte%2A>, and <xref:System.IO.Stream.BeginRead%2A> methods throw a <xref:System.NotSupportedException>.  
+  
+ If the stream is closed, this property returns `false`.  
+  
+   
+  
+## Examples  
+ The following is an example of using the `CanRead` property.  
+  
+ [!code-cpp[Classic FileStream.CanRead Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic FileStream.CanRead Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CS/source.cs#1)]
+ [!code-vb[Classic FileStream.CanRead Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSeek">
+      <MemberSignature Language="C#" Value="public abstract bool CanSeek { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanSeek" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a value indicating whether the current stream supports seeking.</summary>
+        <value>
+          <see langword="true" /> if the stream supports seeking; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a class derived from <xref:System.IO.Stream> does not support seeking, calls to <xref:System.IO.Stream.Length%2A>, <xref:System.IO.Stream.SetLength%2A>, <xref:System.IO.Stream.Position%2A>, and <xref:System.IO.Stream.Seek%2A> throw a <xref:System.NotSupportedException>.  
+  
+ If the stream is closed, this property returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanTimeout">
+      <MemberSignature Language="C#" Value="public virtual bool CanTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines whether the current stream can time out.</summary>
+        <value>A value that determines whether the current stream can time out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Stream.CanTimeout%2A> property always returns `false`. Some stream implementations require different behavior, such as <xref:System.Net.Sockets.NetworkStream>, which times out if network connectivity is interrupted or lost. If you are implementing a stream that must be able to time out, this property should be overridden to return `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanWrite">
+      <MemberSignature Language="C#" Value="public abstract bool CanWrite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanWrite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a value indicating whether the current stream supports writing.</summary>
+        <value>
+          <see langword="true" /> if the stream supports writing; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a class derived from <xref:System.IO.Stream> does not support writing, a call to <xref:System.IO.Stream.Write%2A>, <xref:System.IO.Stream.BeginWrite%2A>, or <xref:System.IO.Stream.WriteByte%2A> throws a <xref:System.NotSupportedException>.  
+  
+ If the stream is closed, this property returns `false`.  
+  
+   
+  
+## Examples  
+ The following is an example of using the `CanWrite` property.  
+  
+ [!code-cpp[Classic Stream.CanWrite Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Stream.CanWrite Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Stream.CanWrite Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Stream.CanWrite Example/CS/source.cs#1)]
+ [!code-vb[Classic Stream.CanWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Stream.CanWrite Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the current stream and releases any resources (such as sockets and file handles) associated with the current stream. Instead of calling this method, ensure that the stream is properly disposed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.IO.Stream.Dispose%2A>, specifying `true` to release all resources. You do not have to specifically call the <xref:System.IO.Stream.Close%2A> method. Instead, ensure that every <xref:System.IO.Stream> object is properly disposed. You can declare <xref:System.IO.Stream> objects within a `using` block (or `Using` block in Visual Basic) to ensure that the stream and all of its resources are disposed, or you can explicitly call the <xref:System.IO.Stream.Dispose%2A> method.  
+  
+ Flushing the stream will not flush its underlying encoder unless you explicitly call an implementation of <xref:System.IO.Stream.Flush%2A> or `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
+  
+ Attempts to manipulate the stream after the stream has been closed might throw an <xref:System.ObjectDisposedException>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>In derived classes, do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all of the <see langword="Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.IO.Stream destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.IO.Stream destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyTo(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <summary>Reads the bytes from the current stream and writes them to another stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Copying begins at the current position in the current stream, and does not reset the position of the destination stream after the copy operation is complete.  
+  
+   
+  
+## Examples  
+ The following example copies the contents of a <xref:System.IO.FileStream> to a <xref:System.IO.MemoryStream>.  
+  
+ [!code-csharp[System.IO.Stream.CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stream.copyto/cs/program.cs#1)]
+ [!code-vb[System.IO.Stream.CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stream.copyto/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The current stream does not support reading.  
+  
+ -or-  
+  
+ <paramref name="destination" /> does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">Either the current stream or <paramref name="destination" /> were closed before the <see cref="M:System.IO.Stream.CopyTo(System.IO.Stream)" /> method was called.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.IO.Stream destination, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.IO.Stream destination, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <param name="bufferSize">The size of the buffer. This value must be greater than zero. The default size is 81920.</param>
+        <summary>Reads the bytes from the current stream and writes them to another stream, using a specified buffer size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Copying begins at the current position in the current stream, and does not reset the position of the destination stream after the copy operation is complete.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bufferSize" /> is negative or zero.</exception>
+        <exception cref="T:System.NotSupportedException">The current stream does not support reading.  
+  
+ -or-  
+  
+ <paramref name="destination" /> does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">Either the current stream or <paramref name="destination" /> were closed before the <see cref="M:System.IO.Stream.CopyTo(System.IO.Stream)" /> method was called.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream.</summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Stream.CopyToAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Copying begins at the current position in the current stream.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use two <xref:System.IO.FileStream> objects to asynchronously copy the files from one directory to another. The <xref:System.IO.FileStream> class derives from the <xref:System.IO.Stream> class.  Notice that the <xref:System.Web.UI.WebControls.Button.Click> event handler for the <xref:System.Windows.Controls.Button> control is marked with the `async` modifier because it calls an asynchronous method  
+  
+ [!code-csharp[Asynchronous_File_IO_async#1](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example.cs#1)]
+ [!code-vb[Asynchronous_File_IO_async#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">Either the current stream or the destination stream is disposed.</exception>
+        <exception cref="T:System.NotSupportedException">The current stream does not support reading, or the destination stream does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer. This value must be greater than zero. The default size is 81920.</param>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream, using a specified buffer size.</summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Stream.CopyToAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Copying begins at the current position in the current stream.  
+  
+ For an example of copying between two streams, see the <xref:System.IO.Stream.CopyToAsync%28System.IO.Stream%29> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="buffersize" /> is negative or zero.</exception>
+        <exception cref="T:System.ObjectDisposedException">Either the current stream or the destination stream is disposed.</exception>
+        <exception cref="T:System.NotSupportedException">The current stream does not support reading, or the destination stream does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, int bufferSize, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, int32 bufferSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer. This value must be greater than zero. The default size is 81920.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream, using a specified buffer size and cancellation token.</summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Stream.CopyToAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+  
+ Copying begins at the current position in the current stream.  
+  
+ For an example of copying between two streams, see the <xref:System.IO.Stream.CopyToAsync%28System.IO.Stream%29> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="buffersize" /> is negative or zero.</exception>
+        <exception cref="T:System.ObjectDisposedException">Either the current stream or the destination stream is disposed.</exception>
+        <exception cref="T:System.NotSupportedException">The current stream does not support reading, or the destination stream does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWaitHandle">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.WaitHandle CreateWaitHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.WaitHandle CreateWaitHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.CreateWaitHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("CreateWaitHandle will be removed eventually.  Please use "new ManualResetEvent(false)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.WaitHandle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allocates a <see cref="T:System.Threading.WaitHandle" /> object.</summary>
+        <returns>A reference to the allocated <see langword="WaitHandle" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When called for the first time, the current method creates a `WaitHandle` object and returns it. On subsequent calls, `CreateWaitHandle` returns a reference to a new wait handle.  
+  
+ Use this method if you implement the asynchronous methods and require a way of blocking in <xref:System.IO.Stream.EndRead%2A> or <xref:System.IO.Stream.EndWrite%2A> until the asynchronous operation is complete.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method disposes the stream, by writing any changes to the backing store and closing the stream to release resources.  
+  
+ Calling `Dispose` allows the resources used by the <xref:System.IO.Stream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Place all cleanup logic for your stream object in <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />. Do not override <see cref="M:System.IO.Stream.Close" />.  
+  
+ Note that because of backward compatibility requirements, this method's implementation differs from the recommended guidance for the Dispose pattern.  This method calls <see cref="M:System.IO.Stream.Close" />, which then calls <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Stream" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should release all resources by specifying `true` for `disposing`. When `disposing` is `true`, the stream can also ensure data is flushed to the underlying buffer, and access other finalizable objects.  This may not be possible when called from a finalizer due a lack of ordering among finalizers.  
+  
+ If your stream is using an operating system handle to communicate with its source, consider using a subclass of <xref:System.Runtime.InteropServices.SafeHandle> for this purpose.  
+  
+ This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.Stream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.Stream.Dispose%2A> with `disposing` set to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>In derived classes, do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all of the Stream cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method.  
+  
+ <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRead">
+      <MemberSignature Language="C#" Value="public virtual int EndRead (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.EndRead(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The reference to the pending asynchronous request to finish.</param>
+        <summary>Waits for the pending asynchronous read to complete. (Consider using <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> instead; see the Remarks section.)</summary>
+        <returns>The number of bytes read from the stream, between zero (0) and the number of bytes you requested. Streams return zero (0) only at the end of the stream, otherwise, they should block until at least one byte is available.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous I/O operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>, help you implement asynchronous I/O operations more easily.  
+  
+ Call `EndRead` to determine how many bytes were read from the stream.  
+  
+ `EndRead` can be called once on every <xref:System.IAsyncResult> from <xref:System.IO.Stream.BeginRead%2A>.  
+  
+ This method blocks until the I/O operation has completed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">A handle to the pending read operation is not available.  
+  
+ -or-  
+  
+ The pending operation does not support reading.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
+        <exception cref="T:System.IO.IOException">The stream is closed or an internal error has occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWrite">
+      <MemberSignature Language="C#" Value="public virtual void EndWrite (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">A reference to the outstanding asynchronous I/O request.</param>
+        <summary>Ends an asynchronous write operation. (Consider using <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> instead; see the Remarks section.)</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous I/O operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>, help you implement asynchronous I/O operations more easily.  
+  
+ `EndWrite` must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.Stream.BeginWrite%2A>.  
+  
+ This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and become visible upon a call to `EndWrite`. Exceptions thrown by the thread pool thread will not be visible when calling `EndWrite`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">A handle to the pending write operation is not available.  
+  
+ -or-  
+  
+ The pending operation does not support writing.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
+        <exception cref="T:System.IO.IOException">The stream is closed or an internal error has occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public abstract void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Flush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override `Flush` on streams that implement a buffer. Use this method to move any information from an underlying buffer to its destination, clear the buffer, or both. Depending upon the state of the object, you might have to modify the current position within the stream (for example, if the underlying stream supports seeking). For additional information see <xref:System.IO.Stream.CanSeek%2A>.  
+  
+ When using the <xref:System.IO.StreamWriter> or <xref:System.IO.BinaryWriter> class, do not flush the base <xref:System.IO.Stream> object. Instead, use the class's <xref:System.IO.Stream.Flush%2A> or <xref:System.IO.Stream.Close%2A> method, which makes sure that the data is flushed to the underlying stream first and then written to the file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task FlushAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.FlushAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
+        <returns>A task that represents the asynchronous flush operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a derived class, such as <xref:System.IO.Compression.DeflateStream> or <xref:System.IO.Compression.GZipStream>, does not flush the buffer in its implementation of the <xref:System.IO.Stream.Flush%2A> method, the <xref:System.IO.Stream.FlushAsync%2A> method will not flush the buffer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously clears all buffers for this stream, causes any buffered data to be written to the underlying device, and monitors cancellation requests.</summary>
+        <returns>A task that represents the asynchronous flush operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+  
+ If a derived class, such as <xref:System.IO.Compression.DeflateStream> or <xref:System.IO.Compression.GZipStream>, does not flush the buffer in its implementation of the <xref:System.IO.Stream.Flush%2A> method, the <xref:System.IO.Stream.FlushAsync%2A> method will not flush the buffer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public abstract long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the length in bytes of the stream.</summary>
+        <value>A long value representing the length of the stream in bytes.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">A class derived from <see langword="Stream" /> does not support seeking.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public static readonly System.IO.Stream Null;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IO.Stream Null" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Stream.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see langword="Stream" /> with no backing store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `Null` to redirect output to a stream that will not consume any operating system resources. When the methods of `Stream` that provide writing are invoked on `Null`, the call simply returns, and no data is written. `Null` also implements a `Read` method that returns zero without reading data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInvariant">
+      <MemberSignature Language="C#" Value="protected virtual void ObjectInvariant ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ObjectInvariant() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.ObjectInvariant" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Do not call or override this method.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides support for a <see cref="T:System.Diagnostics.Contracts.Contract" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public abstract long Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the position within the current stream.</summary>
+        <value>The current position within the stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stream must support seeking to get or set the position. Use the <xref:System.IO.Stream.CanSeek%2A> property to determine whether the stream supports seeking.  
+  
+ Seeking to any location beyond the length of the stream is supported.  
+  
+ The `Position` property does not keep track of the number of bytes from the stream that have been consumed, skipped, or both.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public abstract int Read (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between <c>offset</c> and (<c>offset</c> + <c>count</c> - 1) replaced by the bytes read from the current source.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin storing the data read from the current stream.</param>
+        <param name="count">The maximum number of bytes to be read from the current stream.</param>
+        <summary>When overridden in a derived class, reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
+        <returns>The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading. Use the <xref:System.IO.Stream.ReadAsync%2A> method to read asynchronously from the current stream.  
+  
+ Implementations of this method read a maximum of `count` bytes from the current stream and store them in `buffer` beginning at `offset`. The current position within the stream is advanced by the number of bytes read; however, if an exception occurs, the current position within the stream remains unchanged. Implementations return the number of bytes read. The implementation will block until at least one byte of data can be read, in the event that no data is available. <xref:System.IO.Stream.Read%2A>returns 0 only when there is no more data in the stream and no more is expected (such as a closed socket or end of file). An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use <xref:System.IO.BinaryReader> for reading primitive data types.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.IO.Stream.Read%2A> to read a block of data.  
+  
+ [!code-cpp[Classic Stream.Read Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Stream.Read Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Stream.Read Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Stream.Read Example/CS/source.cs#1)]
+ [!code-vb[Classic Stream.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Stream.Read Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write the data into.</param>
+        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data from the stream.</param>
+        <param name="count">The maximum number of bytes to read.</param>
+        <summary>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ReadAsync Method (Byte\<xref:System.IO.Stream.ReadAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading.  
+  
+   
+  
+## Examples  
+ The following example shows how to read from a file asynchronously. The example uses the <xref:System.IO.FileStream> class, which derives from the <xref:System.IO.Stream> class.  
+  
+ [!code-csharp[Asynchronous_File_IO_async#4](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example4.cs#4)]
+ [!code-vb[Asynchronous_File_IO_async#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example4.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The stream is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write the data into.</param>
+        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data from the stream.</param>
+        <param name="count">The maximum number of bytes to read.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ReadAsync Method (Byte\<xref:System.IO.Stream.ReadAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading.  
+  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+  
+ For an example, see the [ReadAsync(Byte\<xref:System.IO.Stream.ReadAsync%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The stream is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadByte">
+      <MemberSignature Language="C#" Value="public virtual int ReadByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadByte" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.</summary>
+        <returns>The unsigned byte cast to an <see langword="Int32" />, or -1 if at the end of the stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading.  
+  
+ Attempts to manipulate the stream after the stream has been closed could throw an <xref:System.ObjectDisposedException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <block subset="none" type="overrides">
+          <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that reads the buffer directly, avoiding the extra array allocation on every call.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadTimeout">
+      <MemberSignature Language="C#" Value="public virtual int ReadTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.ReadTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to read before timing out.</summary>
+        <value>A value, in miliseconds, that determines how long the stream will attempt to read before timing out.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IO.Stream.ReadTimeout" /> method always throws an <see cref="T:System.InvalidOperationException" />.</exception>
+        <block subset="none" type="overrides">
+          <para>The <see cref="P:System.IO.Stream.ReadTimeout" /> property should be overridden to provide the appropriate behavior for the stream. If the stream does not support timing out, this property should raise an <see cref="T:System.InvalidOperationException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public abstract long Seek (long offset, System.IO.SeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="origin" Type="System.IO.SeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="offset">A byte offset relative to the <c>origin</c> parameter.</param>
+        <param name="origin">A value of type <see cref="T:System.IO.SeekOrigin" /> indicating the reference point used to obtain the new position.</param>
+        <summary>When overridden in a derived class, sets the position within the current stream.</summary>
+        <returns>The new position within the current stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.CanSeek%2A> property to determine whether the current instance supports seeking.  
+  
+ If `offset` is negative, the new position is required to precede the position specified by `origin` by the number of bytes specified by `offset`. If `offset` is zero (0), the new position is required to be the position specified by `origin`. If `offset` is positive, the new position is required to follow the position specified by `origin` by the number of bytes specified by `offset`.  
+  
+ Classes derived from `Stream` that support seeking must override this method to provide the functionality described above.  
+  
+ Seeking to any location beyond the length of the stream is supported.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support seeking, such as if the stream is constructed from a pipe or console output.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLength">
+      <MemberSignature Language="C#" Value="public abstract void SetLength (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLength(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.SetLength(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The desired length of the current stream in bytes.</param>
+        <summary>When overridden in a derived class, sets the length of the current stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified value is less than the current length of the stream, the stream is truncated. If the specified value is larger than the current length of the stream, the stream is expanded. If the stream is expanded, the contents of the stream between the old and the new length are not defined.  
+  
+ A stream must support both writing and seeking for `SetLength` to work.  
+  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing, and the <xref:System.IO.Stream.CanSeek%2A> property to determine whether seeking is supported.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support both writing and seeking, such as if the stream is constructed from a pipe or console output.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream Synchronized (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream Synchronized(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Synchronized(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> object to synchronize.</param>
+        <summary>Creates a thread-safe (synchronized) wrapper around the specified <see cref="T:System.IO.Stream" /> object.</summary>
+        <returns>A thread-safe <see cref="T:System.IO.Stream" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a class that wraps the specified <xref:System.IO.Stream> object and restricts access to it from multiple threads. All access to the <xref:System.IO.Stream> object will be thread safe.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public abstract void Write (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">An array of bytes. This method copies <c>count</c> bytes from <c>buffer</c> to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="count">The number of bytes to be written to the current stream.</param>
+        <summary>When overridden in a derived class, writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing. Use the <xref:System.IO.Stream.WriteAsync%2A> method to write asynchronously to the current stream.  
+  
+ If the write operation is successful, the position within the stream advances by the number of bytes written. If an exception occurs, the position within the stream remains unchanged.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is greater than the buffer length.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occured, such as the specified file cannot be found.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">
+          <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> was called after the stream was closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write data from.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> from which to begin copying bytes to the stream.</param>
+        <param name="count">The maximum number of bytes to write.</param>
+        <summary>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
+        <returns>A task that represents the asynchronous write operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [WriteAsync Method (Byte\<xref:System.IO.Stream.WriteAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing.  
+  
+   
+  
+## Examples  
+ The following example shows how to write asynchronously to a file. The example uses the <xref:System.IO.FileStream> class, which derives from the <xref:System.IO.Stream> class.  
+  
+ [!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
+ [!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The stream is currently in use by a previous write operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write data from.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> from which to begin copying bytes to the stream.</param>
+        <param name="count">The maximum number of bytes to write.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.</summary>
+        <returns>A task that represents the asynchronous write operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [WriteAsync Method (Byte\<xref:System.IO.Stream.WriteAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing.  
+  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+  
+ For an example, see the [WriteAsync(Byte\<xref:System.IO.Stream.WriteAsync%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The stream is currently in use by a previous write operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteByte">
+      <MemberSignature Language="C#" Value="public virtual void WriteByte (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteByte(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteByte(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">The byte to write to the stream.</param>
+        <summary>Writes a byte to the current position in the stream and advances the position within the stream by one byte.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.CanWrite%2A> property to determine whether the current instance supports writing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing, or the stream is already closed.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <block subset="none" type="overrides">
+          <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that writes to the buffer directly, avoiding the extra array allocation on every call.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTimeout">
+      <MemberSignature Language="C#" Value="public virtual int WriteTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WriteTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Stream.WriteTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to write before timing out.</summary>
+        <value>A value, in miliseconds, that determines how long the stream will attempt to write before timing out.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IO.Stream.WriteTimeout" /> method always throws an <see cref="T:System.InvalidOperationException" />.</exception>
+        <block subset="none" type="overrides">
+          <para>The <see cref="P:System.IO.Stream.WriteTimeout" /> property should be overridden to provide the appropriate behavior for the stream. If the stream does not support timing out, this property should raise an <see cref="T:System.InvalidOperationException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,55 @@
+<Type Name="ISingleResult&lt;T&gt;" FullName="System.Data.Linq.ISingleResult&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface ISingleResult&lt;T&gt; : IDisposable, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Data.Linq.IFunctionResult" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISingleResult`1&lt;T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Data.Linq.IFunctionResult, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.ISingleResult`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.Linq.IFunctionResult</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of the elements in the return sequence.</typeparam>
+    <summary>Represents the result of a mapped function that has a single return sequence.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example represents a stored procedure that returns rows of customers and uses an input parameter to return only those rows that list "London" as the customer city. The example assumes an enumerable `CustomersByCityResult` class.  
+  
+```  
+CREATE PROCEDURE [dbo].[Customers By City]  
+    (@param1 NVARCHAR(20))  
+AS  
+BEGIN  
+    -- SET NOCOUNT ON added to prevent extra result sets from  
+    -- interfering with SELECT statements.  
+    SET NOCOUNT ON;  
+    SELECT CustomerID, ContactName, CompanyName, City from Customers  
+        as c where c.City=@param1  
+END  
+```  
+  
+   
+  
+## Examples  
+ [!code-csharp[DLinqSprox#1](~/samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/northwind-sprox.cs#1)]
+ [!code-vb[DLinqSprox#1](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "applications [Visual Basic], Web services"
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

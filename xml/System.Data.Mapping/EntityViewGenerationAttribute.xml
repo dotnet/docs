@@ -1,0 +1,74 @@
+<Type Name="EntityViewGenerationAttribute" FullName="System.Data.Mapping.EntityViewGenerationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EntityViewGenerationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityViewGenerationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Mapping.EntityViewGenerationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Attribute to mark the assemblies containing the generated views type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The views for <xref:System.Data.Metadata.Edm.EntitySet>s and <xref:System.Data.Metadata.Edm.AssociationSet>s are generated at design time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityViewGenerationAttribute (Type viewGenerationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type viewGenerationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Mapping.EntityViewGenerationAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="viewGenerationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="viewGenerationType">The view type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Mapping.EntityViewGenerationAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewGenerationType">
+      <MemberSignature Language="C#" Value="public Type ViewGenerationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ViewGenerationType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewGenerationAttribute.ViewGenerationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the T:System.Type of the view.</summary>
+        <value>The T:System.Type of the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The views for <xref:System.Data.Metadata.Edm.EntitySet>s and <xref:System.Data.Metadata.Edm.AssociationSet>s are generated at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

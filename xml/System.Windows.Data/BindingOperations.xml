@@ -1,0 +1,620 @@
+<Type Name="BindingOperations" FullName="System.Windows.Data.BindingOperations">
+  <TypeSignature Language="C#" Value="public static class BindingOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BindingOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingOperations" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods to manipulate bindings, including <see cref="T:System.Windows.Data.Binding" />, <see cref="T:System.Windows.Data.MultiBinding" />, and <see cref="T:System.Windows.Data.PriorityBinding" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class exposes a set of static methods that serve as helper operations for data bindings.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessCollection">
+      <MemberSignature Language="C#" Value="public static void AccessCollection (System.Collections.IEnumerable collection, Action accessMethod, bool writeAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AccessCollection(class System.Collections.IEnumerable collection, class System.Action accessMethod, bool writeAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.AccessCollection(System.Collections.IEnumerable,System.Action,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+        <Parameter Name="accessMethod" Type="System.Action" />
+        <Parameter Name="writeAccess" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection to access.</param>
+        <param name="accessMethod">The action to perform on the collection.</param>
+        <param name="writeAccess">
+          <see langword="true" /> if <c>accessMethod</c> will write to the collection; otherwise, <see langword="false" />.</param>
+        <summary>Provides access to a collection by using the synchronization mechanism that the application specified when it called EnableCollectionSynchronization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAllBindings">
+      <MemberSignature Language="C#" Value="public static void ClearAllBindings (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearAllBindings(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.ClearAllBindings(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object from which to remove bindings.</param>
+        <summary>Removes all bindings, including bindings of type <see cref="T:System.Windows.Data.Binding" />, <see cref="T:System.Windows.Data.MultiBinding" />, and <see cref="T:System.Windows.Data.PriorityBinding" />, from the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified object is not data-bound, this method has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="target" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearBinding">
+      <MemberSignature Language="C#" Value="public static void ClearBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.ClearBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object from which to remove the binding.</param>
+        <param name="dp">The dependency property from which to remove the binding.</param>
+        <summary>Removes the binding from a property if there is one.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the given property is data-bound with a <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, or <xref:System.Windows.Data.MultiBinding>, this method removes the corresponding binding expression and restores the value of the property to what it was before any local value was set through the binding.  
+  
+ If the given property is not data-bound, this method has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionRegistering">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Data.CollectionRegisteringEventArgs&gt; CollectionRegistering;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Data.CollectionRegisteringEventArgs&gt; CollectionRegistering" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.BindingOperations.CollectionRegistering" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Data.CollectionRegisteringEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the data-binding system notices a collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionViewRegistering">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Data.CollectionViewRegisteringEventArgs&gt; CollectionViewRegistering;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Data.CollectionViewRegisteringEventArgs&gt; CollectionViewRegistering" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.BindingOperations.CollectionViewRegistering" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Data.CollectionViewRegisteringEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the data-binding system notices a collection view.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableCollectionSynchronization">
+      <MemberSignature Language="C#" Value="public static void DisableCollectionSynchronization (System.Collections.IEnumerable collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisableCollectionSynchronization(class System.Collections.IEnumerable collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.DisableCollectionSynchronization(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection to remove synchronized access from.</param>
+        <summary>Remove the synchronization registered for the specified collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedSource">
+      <MemberSignature Language="C#" Value="public static object DisconnectedSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property object DisconnectedSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingOperations.DisconnectedSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that replaces the <see cref="P:System.Windows.FrameworkElement.DataContext" /> when an item container is removed from the visual tree.</summary>
+        <value>An object that replaces the <see cref="P:System.Windows.FrameworkElement.DataContext" /> when an item container is removed from the visual tree.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property if you need to deal with the <xref:System.Windows.FrameworkElement.DataContext%2A> of an item container.  An item container is the UI element that displays an item in an <xref:System.Windows.Controls.ItemsControl>.  When an <xref:System.Windows.Controls.ItemsControl> is data bound to a collection, an item container is generated for each item.  In some cases, item containers are removed from the visual tree.  Two typical cases where an item container is removed are when an item is removed from the underlying collection and when virtualization is enabled on the <xref:System.Windows.Controls.ItemsControl>.  In these cases, the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the item container will be set to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> property  You should check whether the <xref:System.Windows.FrameworkElement.DataContext%2A> is equal to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> before accessing the <xref:System.Windows.FrameworkElement.DataContext%2A> in the <xref:System.Windows.FrameworkElement.DataContextChanged> event for item containers. For more information about item containers and virtualization, see the remarks in the <xref:System.Windows.Controls.VirtualizingStackPanel> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableCollectionSynchronization">
+      <MemberSignature Language="C#" Value="public static void EnableCollectionSynchronization (System.Collections.IEnumerable collection, object lockObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableCollectionSynchronization(class System.Collections.IEnumerable collection, object lockObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+        <Parameter Name="lockObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection that needs synchronized access.</param>
+        <param name="lockObject">The object to lock when accessing the collection.</param>
+        <summary>Enables a collection to be accessed across multiple threads and specifies the lock object that should be used to synchronize access to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  When you call this overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> method, the system locks the collection when you access it.  To specify a callback to lock the collection yourself, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> overload.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableCollectionSynchronization">
+      <MemberSignature Language="C#" Value="public static void EnableCollectionSynchronization (System.Collections.IEnumerable collection, object context, System.Windows.Data.CollectionSynchronizationCallback synchronizationCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableCollectionSynchronization(class System.Collections.IEnumerable collection, object context, class System.Windows.Data.CollectionSynchronizationCallback synchronizationCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="synchronizationCallback" Type="System.Windows.Data.CollectionSynchronizationCallback" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection that needs synchronized access.</param>
+        <param name="context">An object that is passed to the callback.</param>
+        <param name="synchronizationCallback">The callback that is invoked whenever access to the collection is required.</param>
+        <summary>Enables a collection to be accessed across multiple threads and specifies the callback that should be used to synchronize access to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  This overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> method enables you to specify a callback that ensures that the collection is accessed by one thread at a time.  You can have the system lock the collection by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> overload.  The `context` parameter is an arbitrary object that you can use to information known when you enable collection synchronization. This is passed to the callback and you can use it to determine the synchronization mechanism to use to control access to `collection`. `Context` can be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBinding">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.Binding GetBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.Binding GetBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the binding.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Data.Binding" /> object that is set on the specified property.</summary>
+        <returns>The <see cref="T:System.Windows.Data.Binding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.Binding" /> object has been set.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBindingBase">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingBase GetBindingBase (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingBase GetBindingBase(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingBase" /> object.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Data.BindingBase" /> object that is set on the specified property.</summary>
+        <returns>The <see cref="T:System.Windows.Data.BindingBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.BindingBase> class is the common base class for the <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, and <xref:System.Windows.Data.MultiBinding> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBinding%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBinding%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBinding%2A> methods if you know in advance the type of binding that is set on the property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBindingExpression">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpression GetBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpression GetBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingExpression" /> object.</param>
+        <summary>Returns the <see cref="T:System.Windows.Data.BindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
+        <returns>The <see cref="T:System.Windows.Data.BindingExpression" /> object associated with the given property or <see langword="null" /> if none exists. If a <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object is set on the property, the <see cref="P:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.BindingExpression> object maintains the connection between the binding source and the binding target. You can obtain the <xref:System.Windows.Data.BindingExpression> object by calling this static method or by calling the <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> method on a data-bound <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> object.  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that uses the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> method to obtain the <xref:System.Windows.Data.BindingExpression> and then calls the <xref:System.Windows.Data.BindingExpression.DataItem%2A> property to access the binding source object.  
+  
+ The <xref:System.Windows.Controls.TextBlock>`SavingsText` is the binding target object and <xref:System.Windows.Controls.TextBlock.Text%2A> is the binding target property.  
+  
+ [!code-csharp[DirectionalBinding#OnRentRaise](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#onrentraise)]
+ [!code-vb[DirectionalBinding#OnRentRaise](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DirectionalBinding/VisualBasic/DirectionalBinding.vb#onrentraise)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBindingExpressionBase">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpressionBase GetBindingExpressionBase (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpressionBase GetBindingExpressionBase(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingExpressionBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingExpressionBase" /> object.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Data.BindingExpressionBase" /> object that is set on the specified property.</summary>
+        <returns>The <see cref="T:System.Windows.Data.BindingExpressionBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.BindingExpressionBase> class is the common base class for the <xref:System.Windows.Data.BindingExpression>, <xref:System.Windows.Data.PriorityBindingExpression>, and <xref:System.Windows.Data.MultiBindingExpression> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBindingExpression%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBindingExpression%2A> methods if you know in advance type of binding that is set on the property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMultiBinding">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.MultiBinding GetMultiBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.MultiBinding GetMultiBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.MultiBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the binding.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Data.MultiBinding" /> object that is set on the specified property.</summary>
+        <returns>The <see cref="T:System.Windows.Data.MultiBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.MultiBinding" /> object has been set.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMultiBindingExpression">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.MultiBindingExpression GetMultiBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.MultiBindingExpression GetMultiBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetMultiBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.MultiBindingExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.MultiBindingExpression" /> object.</param>
+        <summary>Returns the <see cref="T:System.Windows.Data.MultiBindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
+        <returns>The <see cref="T:System.Windows.Data.MultiBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.MultiBindingExpression> object associated with the given property or `null` if none exists.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPriorityBinding">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.PriorityBinding GetPriorityBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.PriorityBinding GetPriorityBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.PriorityBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the binding.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Data.PriorityBinding" /> object that is set on the specified property.</summary>
+        <returns>The <see cref="T:System.Windows.Data.PriorityBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.PriorityBinding" /> object has been set.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPriorityBindingExpression">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.PriorityBindingExpression GetPriorityBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.PriorityBindingExpression GetPriorityBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetPriorityBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.PriorityBindingExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object.</param>
+        <summary>Returns the <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
+        <returns>The <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSourceUpdatingBindingGroups">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingGroup&gt; GetSourceUpdatingBindingGroups (System.Windows.DependencyObject root);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingGroup&gt; GetSourceUpdatingBindingGroups(class System.Windows.DependencyObject root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetSourceUpdatingBindingGroups(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="root">The root <see cref="T:System.Windows.UIElement" /> to get binding groups for.  This method returns <see cref="T:System.Windows.Data.BindingGroup" /> objects that are associated with this element or its descendant elements.</param>
+        <summary>Gets all <see cref="T:System.Windows.Data.BindingGroup" /> objects that have invalid values or target values have not been updated the source.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Data.BindingGroup" /> objects that are associated with the specified element and have invalid values or target values have not been updated the source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindingGroups%2A> returns all <xref:System.Windows.Data.BindingGroup> objects that are invalid or have not been updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSourceUpdatingBindings">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt; GetSourceUpdatingBindings (System.Windows.DependencyObject root);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingExpressionBase&gt; GetSourceUpdatingBindings(class System.Windows.DependencyObject root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetSourceUpdatingBindings(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="root">The root <see cref="T:System.Windows.UIElement" /> to get binding groups for.  This method returns <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects that are associated with this element or its descendant elements.</param>
+        <summary>Gets all <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects that have invalid values or target values have not been updated the source.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects that are associated with the specified element and have invalid values or target values have not been updated the source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindings%2A> returns all <xref:System.Windows.Data.BindingExpressionBase> objects that are invalid or have not been updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDataBound">
+      <MemberSignature Language="C#" Value="public static bool IsDataBound (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDataBound(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.IsDataBound(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="dp">The dependency property to check.</param>
+        <summary>Returns a value that indicates whether the specified property is currently data-bound.</summary>
+        <returns>
+          <see langword="true" /> if the specified property is data-bound; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="target" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBinding">
+      <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpressionBase SetBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp, System.Windows.Data.BindingBase binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpressionBase SetBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp, class System.Windows.Data.BindingBase binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.SetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.Windows.Data.BindingBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingExpressionBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="binding" Type="System.Windows.Data.BindingBase" />
+      </Parameters>
+      <Docs>
+        <param name="target">The binding target of the binding.</param>
+        <param name="dp">The target property of the binding.</param>
+        <param name="binding">The <see cref="T:System.Windows.Data.BindingBase" /> object that describes the binding.</param>
+        <summary>Creates and associates a new instance of <see cref="T:System.Windows.Data.BindingExpressionBase" /> with the specified binding target property.</summary>
+        <returns>The instance of <see cref="T:System.Windows.Data.BindingExpressionBase" /> created for and associated with the specified property. The <see cref="T:System.Windows.Data.BindingExpressionBase" /> class is the base class of <see cref="T:System.Windows.Data.BindingExpression" />, <see cref="T:System.Windows.Data.MultiBindingExpression" />, and <see cref="T:System.Windows.Data.PriorityBindingExpression" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new instance of a <xref:System.Windows.Data.BindingExpressionBase> and associates the instance with the given dependency property of the given object. This method is the way to attach a binding to an arbitrary <xref:System.Windows.DependencyObject> that may not expose its own SetBinding method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to set a binding. In this example, `myNewBindDef` is a <xref:System.Windows.Data.Binding> object that describes the binding. The binding target is `myDateText`, an instance of the <xref:System.Windows.Controls.TextBlock> class.  
+  
+ [!code-csharp[BindConversion#BOSetBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/BindConversion/CSharp/Window1.xaml.cs#bosetbinding)]
+ [!code-vb[BindConversion#BOSetBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindConversion/visualbasic/window1.xaml.vb#bosetbinding)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> parameter cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

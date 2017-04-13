@@ -1,0 +1,193 @@
+<Type Name="ComponentCollection" FullName="System.ComponentModel.ComponentCollection">
+  <TypeSignature Language="C#" Value="public class ComponentCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a read-only container for a collection of <see cref="T:System.ComponentModel.IComponent" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection inherits from <xref:System.Collections.ReadOnlyCollectionBase>. The only way to add <xref:System.ComponentModel.IComponent> objects to this collection is to use the class constructor.  
+  
+ This collection provides two indexer properties, a string indexer and an integer indexer. The string indexer property returns a component in the collection by name if the <xref:System.ComponentModel.IComponent.Site%2A> property of a component in the collection is not `null` and the <xref:System.ComponentModel.ISite.Name%2A> property of the <xref:System.ComponentModel.IComponent.Site%2A> property of the component matches the specified string. The integer indexer property returns the <xref:System.ComponentModel.IComponent> at the specified collection index. The <xref:System.ComponentModel.ComponentCollection.CopyTo%2A> method copies the contents of the collection to a specified array, beginning writing to the array at the specified index.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.ComponentModel.ComponentCollection> to enumerate a collection of custom `BookComponent` objects.  
+  
+ [!code-cpp[ContainerExmpl#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContainerExmpl/CPP/librarycontainer.cpp#2)]
+ [!code-csharp[ContainerExmpl#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContainerExmpl/CS/librarycontainer.cs#2)]
+ [!code-vb[ContainerExmpl#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContainerExmpl/VB/librarycontainer.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComponentCollection (System.ComponentModel.IComponent[] components);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent[] components) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentCollection.#ctor(System.ComponentModel.IComponent[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="components" Type="System.ComponentModel.IComponent[]" />
+      </Parameters>
+      <Docs>
+        <param name="components">An array of <see cref="T:System.ComponentModel.IComponent" /> objects to initialize the collection with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentCollection" /> class using the specified array of components.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds each <xref:System.ComponentModel.IComponent> in the specified <xref:System.ComponentModel.IComponent> array to the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.ComponentModel.ComponentCollection> from an array of `BookComponent` objects.  
+  
+ [!code-cpp[ContainerExmpl#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContainerExmpl/CPP/librarycontainer.cpp#2)]
+ [!code-csharp[ContainerExmpl#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContainerExmpl/CS/librarycontainer.cs#2)]
+ [!code-vb[ContainerExmpl#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContainerExmpl/VB/librarycontainer.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.ComponentModel.IComponent[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ComponentModel.IComponent[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentCollection.CopyTo(System.ComponentModel.IComponent[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.ComponentModel.IComponent[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An <see cref="T:System.ComponentModel.IComponent" /> array to copy the objects in the collection to.</param>
+        <param name="index">The index of the <c>array</c> at which copying to should begin.</param>
+        <summary>Copies the entire collection to an array, starting writing at the specified array index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.IComponent this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComponentCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The collection index of the <see cref="T:System.ComponentModel.Component" /> to get.</param>
+        <summary>Gets the <see cref="T:System.ComponentModel.Component" /> in the collection at the specified collection index.</summary>
+        <value>The <see cref="T:System.ComponentModel.IComponent" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">If the specified index is not within the index range of the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.IComponent this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.ComponentModel.IComponent" /> to get.</param>
+        <summary>Gets any component in the collection matching the specified name.</summary>
+        <value>A component with a name matching the name specified by the <paramref name="name" /> parameter, or <see langword="null" /> if the named component cannot be found in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class.  
+  
+ This property returns an <xref:System.ComponentModel.IComponent> in the collection if its <xref:System.ComponentModel.IComponent.Site%2A> property is not `null` and the <xref:System.ComponentModel.ISite.Name%2A> property of its <xref:System.ComponentModel.IComponent.Site%2A> property matches the specified string.  
+  
+> [!NOTE]
+>  This string indexer works only when the component is sited, which typically occurs only at design time. To site a <xref:System.ComponentModel.Component> at run time, set the <xref:System.ComponentModel.Component.Site%2A> property of the <xref:System.ComponentModel.Component>. The <xref:System.ComponentModel.ISite.Name%2A> property of the <xref:System.ComponentModel.ISite> set to the <xref:System.ComponentModel.IComponent.Site%2A> property must also be set for this property to return the component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

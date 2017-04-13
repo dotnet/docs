@@ -1,0 +1,167 @@
+<Type Name="XamlNodeList" FullName="System.Xaml.XamlNodeList">
+  <TypeSignature Language="C#" Value="public class XamlNodeList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlNodeList extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlNodeList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a list of XAML nodes, which can be used for scenarios such as writing XAML nodes in a deferred manner.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Xaml.XamlNodeList>, you create a writer delegate that exists as the <xref:System.Xaml.XamlNodeList.Writer%2A> value. The writer delegate is based on an internal XAML writer class that is specifically for XAML nodes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlNodeList (System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlNodeList.#ctor(System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="schemaContext">The schema context to use for node operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlNodeList" /> class, using a provided schema context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The schema context is applied to the XAML writer that exists as the <xref:System.Xaml.XamlNodeList.Writer%2A> value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlNodeList (System.Xaml.XamlSchemaContext schemaContext, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlSchemaContext schemaContext, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlNodeList.#ctor(System.Xaml.XamlSchemaContext,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="schemaContext">The schema context to use for node operations.</param>
+        <param name="size">The intended item count of the list.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlNodeList" /> class, using a provided schema context and list size.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlNodeList.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the items in this list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls `Clear` on the underlying list implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlNodeList.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of nodes in this <see cref="T:System.Xaml.XamlNodeList" />.</summary>
+        <value>The number of nodes in this <see cref="T:System.Xaml.XamlNodeList" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReader">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlReader GetReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlReader GetReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlNodeList.GetReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a XAML reader implementation delegate.</summary>
+        <returns>A XAML reader implementation delegate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although it is not specifically a service provider, you can use the <xref:System.Xaml.XamlReader> delegate that is returned from <xref:System.Xaml.XamlNodeList.GetReader%2A?displayProperty=fullName> in a service mode, where you cast it to <xref:System.Xaml.IXamlIndexingReader>. In that mode you can get and set the index values for <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A?displayProperty=fullName>. In this manner, the set mode enables skipping nodes without using the standard `Read` and `Skip`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xaml.XamlException">The <see cref="T:System.Xaml.XamlNodeList" /> is still in Write mode.  
+  
+ -or-  
+  
+ The writer that is used for the node list has no schema context.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Writer">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlWriter Writer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlWriter Writer" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlNodeList.Writer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the associated XAML writer.</summary>
+        <value>The associated XAML writer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

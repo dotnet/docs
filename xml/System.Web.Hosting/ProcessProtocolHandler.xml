@@ -1,0 +1,164 @@
+<Type Name="ProcessProtocolHandler" FullName="System.Web.Hosting.ProcessProtocolHandler">
+  <TypeSignature Language="C#" Value="public abstract class ProcessProtocolHandler : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProcessProtocolHandler extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessProtocolHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides support for protocol handlers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ProcessProtocolHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.ProcessProtocolHandler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gives the protocol handler an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>An object that is used to control the lifetime policy for this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListenerChannel">
+      <MemberSignature Language="C#" Value="public abstract void StartListenerChannel (System.Web.Hosting.IListenerChannelCallback listenerChannelCallback, System.Web.Hosting.IAdphManager AdphManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListenerChannel(class System.Web.Hosting.IListenerChannelCallback listenerChannelCallback, class System.Web.Hosting.IAdphManager AdphManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel(System.Web.Hosting.IListenerChannelCallback,System.Web.Hosting.IAdphManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listenerChannelCallback" Type="System.Web.Hosting.IListenerChannelCallback" />
+        <Parameter Name="AdphManager" Type="System.Web.Hosting.IAdphManager" />
+      </Parameters>
+      <Docs>
+        <param name="listenerChannelCallback">The callback for the listener channel.</param>
+        <param name="AdphManager">The application domain handler manager that is associated with the listener channel.</param>
+        <summary>Starts a protocol listener channel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListenerChannel">
+      <MemberSignature Language="C#" Value="public abstract void StopListenerChannel (int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListenerChannel(int32 listenerChannelId, bool immediate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listenerChannelId" Type="System.Int32" />
+        <Parameter Name="immediate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="listenerChannelId">The callback for the listener channel.</param>
+        <param name="immediate">
+          <see langword="true" /> to stop the protocol immediately; otherwise, <see langword="false" />.</param>
+        <summary>Stops the specified process protocol handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopProtocol">
+      <MemberSignature Language="C#" Value="public abstract void StopProtocol (bool immediate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopProtocol(bool immediate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopProtocol(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="immediate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="immediate">
+          <see langword="true" /> to stop the protocol immediately; otherwise, <see langword="false" />.</param>
+        <summary>Stops a process protocol handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ProcessProtocolHandler.StopProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2504 @@
+<Type Name="TimeZoneInfo" FullName="System.TimeZoneInfo">
+  <TypeSignature Language="C#" Value="public sealed class TimeZoneInfo : IEquatable&lt;TimeZoneInfo&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TimeZoneInfo extends System.Object implements class System.IEquatable`1&lt;class System.TimeZoneInfo&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.TimeZoneInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IDeserializationCallback</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents any time zone in the world.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A time zone is a geographical region in which the same time is used.  
+  
+ The<xref:System.TimeZoneInfo> class offers significant enhancements over the <xref:System.TimeZone> class, which provides only limited functionality.  
+  
+ The <xref:System.TimeZone> class recognizes only the local time zone, and can convert times between Coordinated Universal Time (UTC) and local time. A <xref:System.TimeZoneInfo> object can represent any time zone, and methods of the <xref:System.TimeZoneInfo> class can be used to convert the time in one time zone to the corresponding time in any other time zone. The members of the <xref:System.TimeZoneInfo> class support the following operations:  
+  
+-   Retrieving a time zone that is already defined by the operating system.  
+  
+-   Enumerating the time zones that are available on a system.  
+  
+-   Converting times between different time zones.  
+  
+-   Creating a new time zone that is not already defined by the operating system.  
+  
+-   Serializing a time zone for later retrieval.  
+  
+> [!NOTE]
+>  An instance of the <xref:System.TimeZoneInfo> class is immutable. Once an object has been instantiated, its values cannot be modified.  
+  
+ You cannot instantiate a <xref:System.TimeZoneInfo> object using the `new` keyword. Instead, you must call one of the static members of the <xref:System.TimeZoneInfo> class shown in the following table.  
+  
+|Static member name|Description|  
+|------------------------|-----------------|  
+|<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method|Creates a custom time zone from application-supplied data.|  
+|<xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method|Instantiates a time zone defined in the system registry based on the zone's identifier.|  
+|<xref:System.TimeZoneInfo.FromSerializedString%2A> method|Deserializes a string value to re-create a previously serialized <xref:System.TimeZoneInfo> object.|  
+|<xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method|Returns an enumerable <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.TimeZoneInfo> objects that represents all time zones that are available on the local system.|  
+|<xref:System.TimeZoneInfo.Local%2A> property|Instantiates a <xref:System.TimeZoneInfo> object that represents the local time zone.|  
+|<xref:System.TimeZoneInfo.Utc%2A> property|Instantiates a <xref:System.TimeZoneInfo> object that represents the UTC zone.|  
+  
+ You can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a time zone that is not defined in the local system registry. You can then use the <xref:System.TimeZoneInfo.ToSerializedString%2A> property to save the time zone object's information as a string, which can be stored in some form that is accessible to the application. You can use the <xref:System.TimeZoneInfo.FromSerializedString%2A> method to convert a serialized string back to a <xref:System.TimeZoneInfo> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BaseUtcOffset">
+      <MemberSignature Language="C#" Value="public TimeSpan BaseUtcOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan BaseUtcOffset" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.BaseUtcOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).</summary>
+        <value>An object that indicates the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time span returned by the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property can range from 14 hours (for a time zone that is 14 hours ahead of Coordinated Universal Time (UTC)) to -14 hours (for a time zone that is 14 hours behind UTC). Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.  
+  
+ The <xref:System.TimeZoneInfo.BaseUtcOffset%2A> value is represented as a whole number of minutes. It cannot include a fractional number of minutes.  
+  
+> [!NOTE]
+>  Because <xref:System.TimeZoneInfo.BaseUtcOffset%2A> is a property of the <xref:System.TimeZoneInfo> object rather than the <xref:System.TimeZoneInfo.AdjustmentRule> object, the <xref:System.TimeZoneInfo> class applies a single offset from UTC to all of a time zone's adjustments. To reflect a time zone that has modified its offset from UTC, you must create a new time zone using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method.  
+  
+ The <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property differs from the <xref:System.TimeZoneInfo.GetUtcOffset%2A> method in the following ways:  
+  
+-   The <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property returns the difference between UTC and the time zone's standard time; the <xref:System.TimeZoneInfo.GetUtcOffset%2A> method returns the difference between UTC and the time zone's time at a particular point in time.  
+  
+-   The <xref:System.TimeZoneInfo.GetUtcOffset%2A> method reflects the application of any adjustment rules to the time zone; the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property does not.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property to display the difference between the local time and Coordinated Universal Time (UTC).  
+  
+ [!code-csharp[System.TimeZone2.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#1)]
+ [!code-vb[System.TimeZone2.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearCachedData">
+      <MemberSignature Language="C#" Value="public static void ClearCachedData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearCachedData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ClearCachedData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears cached time zone data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cached time zone data includes data on the local time zone, the Coordinated Universal Time (UTC) zone, and any time zones that are retrieved by using methods such as <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> and <xref:System.TimeZoneInfo.GetSystemTimeZones%2A>.  
+  
+ You might call the <xref:System.TimeZoneInfo.ClearCachedData%2A> method to reduce the memory devoted to the application's cache of time zone information or to reflect the fact that the local system's time zone has changed.  
+  
+ Storing references to the local and UTC time zones is not recommended. After the call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method, these object variables will be undefined <xref:System.TimeZoneInfo> objects that are no longer references to <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>. For example, in the following code, the second call to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method throws an <xref:System.ArgumentException> because the `local` variable is no longer considered equal to <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.TimeZone2.BestPractices#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/cs/System.TimeZone2.BestPractices.cs#1)]
+ [!code-vb[System.TimeZone2.BestPractices#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/vb/System.TimeZone2.BestPractices.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTime">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTime (DateTime dateTime, TimeZoneInfo destinationTimeZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTime(valuetype System.DateTime dateTime, class System.TimeZoneInfo destinationTimeZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="destinationTimeZone" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <summary>Converts a time to the time in a particular time zone.</summary>
+        <returns>The date and time in the destination time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29> method applies any adjustment rules in effect in the `destinationTimeZone` time zone.  
+  
+ This overload of the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29> method determines the source time zone from the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property, as the following table shows.  
+  
+|Kind property value|Source time zone|Method behavior|  
+|-------------------------|----------------------|---------------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
+  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set as shown in the following table.  
+  
+|Condition|Returned Kind property value|  
+|---------------|----------------------------------|  
+|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|All other date and time values and destination time zones.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+  
+ If the value of the `dateTime` parameter is an ambiguous local time, it is interpreted as a standard time. If the `dateTime` parameter is an invalid local time, this method throws an <xref:System.ArgumentException>.  
+  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+  
+ You can also convert to or from UTC by calling the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example converts an array of date and time values to times in the Eastern Time zone of the U.S. and Canada. It shows that the source time zone depends on the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the source <xref:System.DateTime> value. It also illustrates that the <xref:System.TimeZoneInfo.ConvertTime%2A> method takes time zone adjustments into account, because a time zone adjustment occurs in both the source and destination time zones at 2:00 A.M. on November 7, 2010.  
+  
+ [!code-csharp[System.TimeZoneInfo.ConvertTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttime/cs/converttime1.cs#1)]
+ [!code-vb[System.TimeZoneInfo.ConvertTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttime/vb/converttime1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value of the <paramref name="dateTime" /> parameter represents an invalid time.</exception>
+        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method recognizes only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTime">
+      <MemberSignature Language="C#" Value="public static DateTimeOffset ConvertTime (DateTimeOffset dateTimeOffset, TimeZoneInfo destinationTimeZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ConvertTime(valuetype System.DateTimeOffset dateTimeOffset, class System.TimeZoneInfo destinationTimeZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+        <Parameter Name="destinationTimeZone" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">The date and time to convert.</param>
+        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <summary>Converts a time to the time in a particular time zone.</summary>
+        <returns>The date and time in the destination time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29> method applies any adjustment rules in effect in the `destinationTimeZone` time zone.  
+  
+ This overload differs from the other overloads of the <xref:System.TimeZoneInfo.ConvertTime%2A> method by accepting a <xref:System.DateTimeOffset> value as its first parameter. This identifies the date and time as an offset from Coordinated Universal Time (UTC) rather than as the date and time in a particular time zone. As a result, the `dateTimeOffset` parameter cannot represent either an ambiguous time or an invalid time.  
+  
+ In converting the `dateTimeOffset` value to the time in the destination time zone, this method takes into account any adjustment rules in effect in the destination time zone.  
+  
+ If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, respectively.  
+  
+   
+  
+## Examples  
+ The following example converts an array of <xref:System.DateTimeOffset> values to times in the Eastern Time zone of the U.S. and Canada. It illustrates that the <xref:System.TimeZoneInfo.ConvertTime%2A> method takes time zone adjustments into account, because a time zone adjustment occurs in both the source and destination time zones at 2:00 A.M. on November 7, 2010.  
+  
+ [!code-csharp[System.TimeZoneInfo.ConvertTime#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttime/cs/converttime2.cs#2)]
+ [!code-vb[System.TimeZoneInfo.ConvertTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttime/vb/converttime2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="dateTimeOffset" /> is treated as a local time or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTime">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTime (DateTime dateTime, TimeZoneInfo sourceTimeZone, TimeZoneInfo destinationTimeZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTime(valuetype System.DateTime dateTime, class System.TimeZoneInfo sourceTimeZone, class System.TimeZoneInfo destinationTimeZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo,System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="sourceTimeZone" Type="System.TimeZoneInfo" />
+        <Parameter Name="destinationTimeZone" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <param name="sourceTimeZone">The time zone of <c>dateTime</c>.</param>
+        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <summary>Converts a time from one time zone to another.</summary>
+        <returns>The date and time in the destination time zone that corresponds to the <paramref name="dateTime" /> parameter in the source time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTime%2A> method applies any adjustment rules in effect in the `destinationTimeZone` time zone.  
+  
+ The value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter must correspond to the `sourceTimeZone` parameter, as the following table shows.  
+  
+|DateTime.Kind value|sourceTimeZone value|Method behavior|  
+|-------------------------|--------------------------|---------------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Equals <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Any.|Converts `dateTime` to the destination time zone's time.|  
+  
+ You can also convert to or from Coordinated Universal Time (UTC) by calling the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods.  
+  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set as shown in the following table.  
+  
+|Condition|Returned Kind property value|  
+|---------------|----------------------------------|  
+|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|All other date and time values, source time zones, and destination time zones.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+  
+ If the value of the `dateTime` parameter is an ambiguous time in the source time zone, it is interpreted as a standard time. If the `dateTime` parameter is an invalid time in the source time zone, this method throws an <xref:System.ArgumentException>.  
+  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+  
+ The <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29> method throws an <xref:System.ArgumentException> exception if the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` argument is <xref:System.DateTimeKind?displayProperty=fullName> but the `sourceTimeZone` argument is not <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>. To determine whether the source time zone is the local time zone or the universal time zone, the method tests for reference equality instead of testing for value equality with the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29> method. Note that <xref:System.TimeZoneInfo> objects that represent the local time zone and that are retrieved by calling the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>. Furthermore, <xref:System.TimeZoneInfo> objects that represent the local or universal time zone and that are retrieved by iterating the collection returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>. As an alternative, you can call the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29> method.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29> method to convert from Hawaiian Standard Time to local time.  
+  
+ [!code-csharp[System.TimeZone2.Concepts#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#9)]
+ [!code-vb[System.TimeZone2.Concepts#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> parameter is <see cref="F:System.DateTimeKind.Local" />, but the <paramref name="sourceTimeZone" /> parameter does not equal <see cref="F:System.DateTimeKind.Local" />. For more information, see the Remarks section.  
+  
+ -or-  
+  
+ The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> parameter is <see cref="F:System.DateTimeKind.Utc" />, but the <paramref name="sourceTimeZone" /> parameter does not equal <see cref="P:System.TimeZoneInfo.Utc" />.  
+  
+ -or-  
+  
+ The <paramref name="dateTime" /> parameter is an invalid time (that is, it represents a time that does not exist because of a time zone's adjustment rules).</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sourceTimeZone" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="destinationTimeZone" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time, if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />, or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeBySystemTimeZoneId">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTimeBySystemTimeZoneId (DateTime dateTime, string destinationTimeZoneId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeBySystemTimeZoneId(valuetype System.DateTime dateTime, string destinationTimeZoneId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="destinationTimeZoneId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <param name="destinationTimeZoneId">The identifier of the destination time zone.</param>
+        <summary>Converts a time to the time in another time zone based on the time zone's identifier.</summary>
+        <returns>The date and time in the destination time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method applies any adjustment rules in effect in the `destinationTimeZoneId` time zone.  
+  
+ This overload is largely identical to calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29> method, except that it allows you to specify the destination time zone by its identifier rather than by an object reference. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
+  
+ The <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%29> method determines the source time zone from the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property, as the following table shows.  
+  
+|Kind property value|Source time zone|Method behavior|  
+|-------------------------|----------------------|---------------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
+  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set as shown in the following table.  
+  
+|Condition|Returned Kind property value|  
+|---------------|----------------------------------|  
+|The `destinationTimeZone` is `TimeZoneInfo.Utc.Id`.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|Any other `destinationTimeZone` value.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+  
+ If the value of the `dateTime` parameter is an ambiguous local time, it is interpreted as a standard time. If the `dateTime` parameter is an invalid local time, this method throws an <xref:System.ArgumentException>.  
+  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+  
+ This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationTimeZoneId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
+        <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
+        <exception cref="T:System.TimeZoneNotFoundException">The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeBySystemTimeZoneId">
+      <MemberSignature Language="C#" Value="public static DateTimeOffset ConvertTimeBySystemTimeZoneId (DateTimeOffset dateTimeOffset, string destinationTimeZoneId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ConvertTimeBySystemTimeZoneId(valuetype System.DateTimeOffset dateTimeOffset, string destinationTimeZoneId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTimeOffset,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+        <Parameter Name="destinationTimeZoneId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">The date and time to convert.</param>
+        <param name="destinationTimeZoneId">The identifier of the destination time zone.</param>
+        <summary>Converts a time to the time in another time zone based on the time zone's identifier.</summary>
+        <returns>The date and time in the destination time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method applies any adjustment rules in effect in the `destinationTimeZoneId` time zone.  
+  
+ This overload is identical to calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29> method, except that it allows you to specify the destination time zone by its identifier rather than by an object reference. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
+  
+ Because the `dateTimeOffset` parameter represents a date and time together with that time's offset from Coordinated Universal Time (UTC), it cannot represent either an ambiguous time or an invalid time.  
+  
+ This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
+  
+ In converting the `dateTimeOffset` value to the time in the destination time zone, the method takes into account any adjustment rules in effect in the destination time zone.  
+  
+ If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationTimeZoneId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found but the registry data is corrupted.</exception>
+        <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
+        <exception cref="T:System.TimeZoneNotFoundException">The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeBySystemTimeZoneId">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTimeBySystemTimeZoneId (DateTime dateTime, string sourceTimeZoneId, string destinationTimeZoneId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeBySystemTimeZoneId(valuetype System.DateTime dateTime, string sourceTimeZoneId, string destinationTimeZoneId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="sourceTimeZoneId" Type="System.String" />
+        <Parameter Name="destinationTimeZoneId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <param name="sourceTimeZoneId">The identifier of the source time zone.</param>
+        <param name="destinationTimeZoneId">The identifier of the destination time zone.</param>
+        <summary>Converts a time from one time zone to another based on time zone identifiers.</summary>
+        <returns>The date and time in the destination time zone that corresponds to the <paramref name="dateTime" /> parameter in the source time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method applies any adjustment rules in effect in the `destinationTimeZoneId` time zone.  
+  
+ Although it is similar to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method, you can use <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=fullName> to specify the source and destination time zones using their identifiers instead of their <xref:System.TimeZoneInfo> objects. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
+  
+ This method retrieves the time zones whose identifiers are the `sourceTimeZoneId` and `destinationTimeZoneId` parameters from the registry. It cannot retrieve time zone objects that are created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method.  
+  
+ The value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter must correspond to the `sourceTimeZoneId` parameter, as the following table shows.  
+  
+|DateTime.Kind value|sourceTimeZone value|Method behavior|  
+|-------------------------|--------------------------|---------------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Equals `TimeZoneInfo.Utc.Id`.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal `TimeZoneInfo.Utc.Id`.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Equals `TimeZoneInfo.Local.Id`.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal `TimeZoneInfo.Local.Id`.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Any.|Converts `dateTime` to the destination time zone's time.|  
+  
+ Because it relies on calls to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method performs a case-insensitive search to locate the time zones that correspond to `sourceTimeZoneId` and `destinationTimeZoneId`.  
+  
+ If the value of the `dateTime` parameter is an ambiguous time in the source time zone, it is interpreted as a standard time. If the `dateTime` parameter is an invalid time in the source time zone, this method throws an <xref:System.ArgumentException>.  
+  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName> unless the destination time zone is Coordinated Universal Time (UTC), in which case it is set to <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=fullName> method to display the time that corresponds to the local system time in eight cities of the world.  
+  
+ [!code-csharp[System.TimeZone2.Conversions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/System.TimeZone2.Conversions.cs#3)]
+ [!code-vb[System.TimeZone2.Conversions#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/System.TimeZone2.Conversions.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> parameter does not correspond to the source time zone.  
+  
+ -or-  
+  
+ <paramref name="dateTime" /> is an invalid time in the source time zone.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceTimeZoneId" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="destinationTimeZoneId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The time zone identifiers were found, but the registry data is corrupted.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read from the registry keys that hold time zone data.</exception>
+        <exception cref="T:System.TimeZoneNotFoundException">The <paramref name="sourceTimeZoneId" /> identifier was not found on the local system.  
+  
+ -or-  
+  
+ The <paramref name="destinationTimeZoneId" /> identifier was not found on the local system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeFromUtc">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTimeFromUtc (DateTime dateTime, TimeZoneInfo destinationTimeZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeFromUtc(valuetype System.DateTime dateTime, class System.TimeZoneInfo destinationTimeZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="destinationTimeZone" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The Coordinated Universal Time (UTC).</param>
+        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <summary>Converts a Coordinated Universal Time (UTC) to the time in a specified time zone.</summary>
+        <returns>The date and time in the destination time zone. Its <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Utc" /> if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Utc" />; otherwise, its <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Unspecified" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method applies any adjustment rules in effect in the `destinationTimeZone` time zone.  
+  
+ The precise behavior of this method depends on the value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter, as the following table shows.  
+  
+|DateTime.Kind property|Conversion|  
+|----------------------------|----------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts from Coordinated Universal Time (UTC).|  
+  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+  
+   
+  
+## Examples  
+ The following example converts Coordinated Universal Time (UTC) to Central Time.  
+  
+ [!code-csharp[System.TimeZone2.Concepts#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#8)]
+ [!code-vb[System.TimeZone2.Concepts#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of <paramref name="dateTime" /> is <see cref="F:System.DateTimeKind.Local" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationTimeZone" /> is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeToUtc">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTimeToUtc (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeToUtc(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <summary>Converts the specified date and time to Coordinated Universal Time (UTC).</summary>
+        <returns>The Coordinated Universal Time (UTC) that corresponds to the <paramref name="dateTime" /> parameter. The <see cref="T:System.DateTime" /> value's <see cref="P:System.DateTime.Kind" /> property is always set to <see cref="F:System.DateTimeKind.Utc" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exact conversion performed depends on the value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter, as the following table shows.  
+  
+|DateTime.Kind property|Conversion|  
+|----------------------------|----------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Converts from local time to Coordinated Universal Time (UTC).|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Assumes `dateTime` is local time and converts from local time to UTC.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Returns `dateTime` unchanged.|  
+  
+ If `dateTime` corresponds to an ambiguous local time, this method assumes that it is standard local time. If `dateTime` corresponds to an invalid local time, the method throws an <xref:System.ArgumentException>.  
+  
+> [!NOTE]
+>  If the current computer's local time zone includes multiple adjustment rules, this overload of the <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> method can return results that differ from the <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=fullName> and <xref:System.DateTime.ToUniversalTime%2A?displayProperty=fullName> methods. <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=fullName> always applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range. And when executing on [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)], <xref:System.DateTime.ToUniversalTime%2A?displayProperty=fullName> also applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range.  
+  
+ If the UTC equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later that <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
+  
+   
+  
+## Examples  
+ The following example illustrates the conversion of time values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, <xref:System.DateTimeKind?displayProperty=fullName>, and <xref:System.DateTimeKind?displayProperty=fullName>, respectively. It also illustrates the conversion of ambiguous and invalid times.  
+  
+ [!code-csharp[System.TimeZone2.Conversions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/System.TimeZone2.Conversions.cs#1)]
+ [!code-vb[System.TimeZone2.Conversions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/System.TimeZone2.Conversions.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <see langword="TimeZoneInfo.Local.IsInvalidDateTime(" /> <paramref name="dateTime" /> <see langword=")" /> returns <see langword="true" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule to the time zone conversion. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTimeToUtc">
+      <MemberSignature Language="C#" Value="public static DateTime ConvertTimeToUtc (DateTime dateTime, TimeZoneInfo sourceTimeZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeToUtc(valuetype System.DateTime dateTime, class System.TimeZoneInfo sourceTimeZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime,System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+        <Parameter Name="sourceTimeZone" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to convert.</param>
+        <param name="sourceTimeZone">The time zone of <c>dateTime</c>.</param>
+        <summary>Converts the time in a specified time zone to Coordinated Universal Time (UTC).</summary>
+        <returns>The Coordinated Universal Time (UTC) that corresponds to the <paramref name="dateTime" /> parameter. The <see cref="T:System.DateTime" /> object's <see cref="P:System.DateTime.Kind" /> property is always set to <see cref="F:System.DateTimeKind.Utc" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter equals <xref:System.DateTimeKind?displayProperty=fullName> and the `sourceTimeZone` parameter equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>, this method returns `dateTime` without performing any conversion.  
+  
+ If `dateTime` corresponds to an ambiguous time, this method assumes that it is the standard time of the source time zone. If `dateTime` corresponds to an invalid time, this method throws an <xref:System.ArgumentException>.  
+  
+ If the Coordinated Universal Time (UTC) equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later that <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current date from the local system and converts it to Coordinated Universal Time (UTC), then converts it to Tokyo Standard Time, and finally converts from Tokyo Standard Time back to UTC. Note that the two UTC times are identical.  
+  
+ [!code-csharp[System.TimeZone2.Conversions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/convertdt2.cs#2)]
+ [!code-vb[System.TimeZone2.Conversions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/convertdt2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dateTime" /> <see langword=".Kind" /> is <see cref="F:System.DateTimeKind.Utc" /> and <paramref name="sourceTimeZone" /> does not equal <see cref="P:System.TimeZoneInfo.Utc" />.  
+  
+ -or-  
+  
+ <paramref name="dateTime" /> <see langword=".Kind" /> is <see cref="F:System.DateTimeKind.Local" /> and <paramref name="sourceTimeZone" /> does not equal <see cref="P:System.TimeZoneInfo.Local" />.  
+  
+ -or-  
+  
+ <paramref name="sourceTimeZone" /> <see langword=".IsInvalidDateTime(" /> <paramref name="dateTime" /> <see langword=")" /> returns <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceTimeZone" /> is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, the method applies only the current adjustment rule to the time zone conversion if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCustomTimeZone">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="baseUtcOffset" Type="System.TimeSpan" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="standardDisplayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The time zone's identifier.</param>
+        <param name="baseUtcOffset">An object that represents the time difference between this time zone and Coordinated Universal Time (UTC).</param>
+        <param name="displayName">The display name of the new time zone.</param>
+        <param name="standardDisplayName">The name of the new time zone's standard time.</param>
+        <summary>Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, and a standard time display name.</summary>
+        <returns>The new time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29> method is suitable for creating a time zone that has no adjustments (that is, a time zone that does not support daylight saving time). To define a time zone that includes adjustments for daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method.  
+  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the properties of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+  
+|CreateCustomTimeZone parameter|TimeZoneInfo property|  
+|------------------------------------|---------------------------|  
+|`id`|<xref:System.TimeZoneInfo.Id%2A>|  
+|`baseUtcOffset`|<xref:System.TimeZoneInfo.BaseUtcOffset%2A>|  
+|`displayName`|<xref:System.TimeZoneInfo.DisplayName%2A>|  
+|`standardDisplayName`|<xref:System.TimeZoneInfo.StandardName%2A>|  
+  
+ Typically, the time zone's standard time name and its identifier are the same. However, the length of the time zone's identifier should not exceed 32 characters. The string passed to the `displayName` parameter follows a fairly standard format. The first portion of the display name is the time zone's base offset from Coordinated Universal Time, which is indicated by the acronym GMT (for Greenwich Mean Time), enclosed in parentheses. This is followed by a string that identifies the time zone itself, or one or more of the cities, regions, or countries in the time zone, or both. For example:  
+  
+```  
+(GMT+02:00) Athens, Beirut, Istanbul, Minsk  
+(GMT-02:00) Mid-Atlantic  
+(GMT-07:00) Mountain Time (US & Canada)  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a custom time zone for the Mawson and Holme Bay regions of Antarctica. It then displays the result of converting the local time to the time in the new time zone.  
+  
+ [!code-csharp[System.TimeZone2.CreateTimeZone#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#1)]
+ [!code-vb[System.TimeZone2.CreateTimeZone#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="id" /> parameter is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="baseUtcOffset" /> parameter does not represent a whole number of minutes.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseUtcOffset" /> parameter is greater than 14 hours or less than -14 hours.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCustomTimeZone">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, class System.TimeZoneInfo/AdjustmentRule[] adjustmentRules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="baseUtcOffset" Type="System.TimeSpan" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="standardDisplayName" Type="System.String" />
+        <Parameter Name="daylightDisplayName" Type="System.String" />
+        <Parameter Name="adjustmentRules" Type="System.TimeZoneInfo+AdjustmentRule[]" />
+      </Parameters>
+      <Docs>
+        <param name="id">The time zone's identifier.</param>
+        <param name="baseUtcOffset">An object that represents the time difference between this time zone and Coordinated Universal Time (UTC).</param>
+        <param name="displayName">The display name of the new time zone.</param>
+        <param name="standardDisplayName">The new time zone's standard time name.</param>
+        <param name="daylightDisplayName">The daylight saving time name of the new time zone.</param>
+        <param name="adjustmentRules">An array that augments the base UTC offset for a particular period.</param>
+        <summary>Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, a standard time name, a daylight saving time name, and daylight saving time rules.</summary>
+        <returns>A <see cref="T:System.TimeZoneInfo" /> object that represents the new time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method is suitable for creating a time zone that supports daylight saving time. To define a time zone that does not support daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method.  
+  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+  
+|CreateCustomTimeZone parameter|TimeZoneInfo member|  
+|------------------------------------|-------------------------|  
+|`id`|<xref:System.TimeZoneInfo.Id%2A>|  
+|`baseUtcOffset`|<xref:System.TimeZoneInfo.BaseUtcOffset%2A>|  
+|`displayName`|<xref:System.TimeZoneInfo.DisplayName%2A>|  
+|`standardDisplayName`|<xref:System.TimeZoneInfo.StandardName%2A>|  
+|`daylightDisplayName`|<xref:System.TimeZoneInfo.DaylightName%2A>|  
+|`adjustmentRules`|An array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=fullName> objects returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method.|  
+  
+ Typically, the time zone's standard time name and its identifier are the same. However, the length of the time zone's identifier should not exceed 32 characters. The string passed to the `displayName` parameter follows a fairly standard format. The first portion of the display name is the time zone's base offset from Coordinated Universal Time, which is indicated by the acronym GMT (for Greenwich Mean Time), enclosed in parentheses. This is followed by a string that identifies the time zone itself, or one or more of the cities, regions, or countries in the time zone, or both. For example:  
+  
+```  
+(GMT+02:00) Athens, Beirut, Istanbul, Minsk  
+(GMT-02:00) Mid-Atlantic  
+(GMT-07:00) Mountain Time (US & Canada)  
+```  
+  
+ The `baseUtcOffset` parameter defines the custom time zone's offset from Coordinated Universal Time (UTC) for all of the time zone's adjustment rules. In other words, the <xref:System.TimeZoneInfo> object model assumes that the time zone's offset from UTC is constant throughout the life of the time zone, and exists independent of particular adjustment rules. To reflect a time zone that has changed its offset from UTC, you must create a new time zone object.  
+  
+ A time zone's adjustment rules are defined by doing the following:  
+  
+1.  Calling either the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A> or the <xref:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule%2A> method to define the starting and ending transition time for each adjustment rule.  
+  
+2.  Calling the <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule%2A> method for each adjustment rule.  
+  
+3.  Assigning the adjustment rules to an array that can be passed as the `adjustmentRules` parameter.  
+  
+   
+  
+## Examples  
+ The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It then converts the local time to the time in the new time zone and displays the result.  
+  
+ [!code-csharp[System.TimeZone2.CreateTimeZone#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#2)]
+ [!code-vb[System.TimeZone2.CreateTimeZone#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="id" /> parameter is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="baseUtcOffset" /> parameter does not represent a whole number of minutes.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseUtcOffset" /> parameter is greater than 14 hours or less than -14 hours.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The adjustment rules specified in the <paramref name="adjustmentRules" /> parameter overlap.  
+  
+ -or-  
+  
+ The adjustment rules specified in the <paramref name="adjustmentRules" /> parameter are not in chronological order.  
+  
+ -or-  
+  
+ One or more elements in <paramref name="adjustmentRules" /> are <see langword="null" />.  
+  
+ -or-  
+  
+ A date can have multiple adjustment rules applied to it.  
+  
+ -or-  
+  
+ The sum of the <paramref name="baseUtcOffset" /> parameter and the <see cref="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" /> value of one or more objects in the <paramref name="adjustmentRules" /> array is greater than 14 hours or less than -14 hours.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCustomTimeZone">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules, bool disableDaylightSavingTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, class System.TimeZoneInfo/AdjustmentRule[] adjustmentRules, bool disableDaylightSavingTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="baseUtcOffset" Type="System.TimeSpan" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="standardDisplayName" Type="System.String" />
+        <Parameter Name="daylightDisplayName" Type="System.String" />
+        <Parameter Name="adjustmentRules" Type="System.TimeZoneInfo+AdjustmentRule[]" />
+        <Parameter Name="disableDaylightSavingTime" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="id">The time zone's identifier.</param>
+        <param name="baseUtcOffset">A <see cref="T:System.TimeSpan" /> object that represents the time difference between this time zone and Coordinated Universal Time (UTC).</param>
+        <param name="displayName">The display name of the new time zone.</param>
+        <param name="standardDisplayName">The standard time name of the new time zone.</param>
+        <param name="daylightDisplayName">The daylight saving time name of the new time zone.</param>
+        <param name="adjustmentRules">An array of <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> objects that augment the base UTC offset for a particular period.</param>
+        <param name="disableDaylightSavingTime">
+          <see langword="true" /> to discard any daylight saving time-related information present in <c>adjustmentRules</c> with the new object; otherwise, <see langword="false" />.</param>
+        <summary>Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, a standard time name, a daylight saving time name, daylight saving time rules, and a value that indicates whether the returned object reflects daylight saving time information.</summary>
+        <returns>The new time zone. If the <paramref name="disableDaylightSavingTime" /> parameter is <see langword="true" />, the returned object has no daylight saving time data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this overload of the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to create a custom time zone whose support for daylight saving time can be determined by conditions at run time.  
+  
+ The following table shows the relationship between the parameters that are provided to the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+  
+|CreateCustomTimeZone parameter|TimeZoneInfo property|  
+|------------------------------------|---------------------------|  
+|`id`|<xref:System.TimeZoneInfo.Id%2A>|  
+|`baseUtcOffset`|<xref:System.TimeZoneInfo.BaseUtcOffset%2A>|  
+|`displayName`|<xref:System.TimeZoneInfo.DisplayName%2A>|  
+|`standardDisplayName`|<xref:System.TimeZoneInfo.StandardName%2A>|  
+|`daylightDisplayName`|<xref:System.TimeZoneInfo.DaylightName%2A> if `disableDaylightSavingTime` is `false`; <xref:System.String.Empty?displayProperty=fullName> if `disableDaylightSavingTime` is `true`.|  
+|`adjustmentRules`|An array of <xref:System.TimeZoneInfo.AdjustmentRule> objects returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method if `disableDaylightSavingTime` is `false`; an empty array returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method if `disableDaylightSavingTime` is `true`.|  
+|`disableDaylightSavingTime`|Not <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A>.|  
+  
+ Typically, the time zone's standard time name and its identifier are the same. However, the length of the time zone's identifier should not exceed 32 characters. The string passed to the `displayName` parameter follows a fairly standard format. The first portion of the display name is the time zone's base offset from Coordinated Universal Time, which is indicated by the acronym GMT (for Greenwich Mean Time), enclosed in parentheses. This is followed by a string that identifies the time zone itself, or one or more of the cities, regions, or countries in the time zone, or both. For example:  
+  
+```  
+(GMT+02:00) Athens, Beirut, Istanbul, Minsk  
+(GMT-02:00) Mid-Atlantic  
+(GMT-07:00) Mountain Time (US & Canada)  
+```  
+  
+ A time zone's adjustment rules are defined by doing the following:  
+  
+1.  Calling either the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A> or the <xref:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule%2A> method to define the starting and ending transition rules for each adjustment rule.  
+  
+2.  Calling the <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule%2A> method for each adjustment rule.  
+  
+3.  Assigning the adjustment rules to an array that can be passed as the `adjustmentRules` parameter.  
+  
+ If `disableDaylightSavingTime` parameter is `false`, the operation of this method is identical to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> overload. If `disableDaylightSavingTime` is `true`, the returned object includes no adjustment rules and a <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is an empty string.  
+  
+   
+  
+## Examples  
+ The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It sets the `disableDaylightSavingTime` parameter in the call to the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to `true`. It then displays the new time zone's daylight saving time name, if one is present, and the number of adjustment rules to confirm that the new time zone has no daylight saving time information.  
+  
+ [!code-csharp[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#3)]
+ [!code-vb[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="id" /> parameter is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="baseUtcOffset" /> parameter does not represent a whole number of minutes.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseUtcOffset" /> parameter is greater than 14 hours or less than -14 hours.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The adjustment rules specified in the <paramref name="adjustmentRules" /> parameter overlap.  
+  
+ -or-  
+  
+ The adjustment rules specified in the <paramref name="adjustmentRules" /> parameter are not in chronological order.  
+  
+ -or-  
+  
+ One or more elements in <paramref name="adjustmentRules" /> are <see langword="null" />.  
+  
+ -or-  
+  
+ A date can have multiple adjustment rules applied to it.  
+  
+ -or-  
+  
+ The sum of the <paramref name="baseUtcOffset" /> parameter and the <see cref="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" /> value of one or more objects in the <paramref name="adjustmentRules" /> array is greater than 14 hours or less than -14 hours.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DaylightName">
+      <MemberSignature Language="C#" Value="public string DaylightName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DaylightName" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.DaylightName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the display name for the current time zone's daylight saving time.</summary>
+        <value>The display name for the time zone's daylight saving time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The display name is localized based on the culture installed with the Windows operating system.  
+  
+ A <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is not <xref:System.String?displayProperty=fullName> or `null` does not necessarily indicate that the time zone supports daylight saving time. To determine whether the time zone supports daylight saving time, check the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
+  
+ In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=fullName> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=fullName>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=fullName> or the [TimeZoneInfo.CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=fullName> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
+  
+ The <xref:System.TimeZoneInfo.DaylightName%2A> property is equivalent to the <xref:System.TimeZone.DaylightName%2A> property of the <xref:System.TimeZone> class.  
+  
+   
+  
+## Examples  
+ The following example defines a method named `DisplayDateWithTimeZoneName` that uses the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method to determine whether to display a time zone's standard time name or daylight saving time name.  
+  
+ [!code-csharp[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#1)]
+ [!code-vb[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the general display name that represents the time zone.</summary>
+        <value>The time zone's general display name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The display name is localized based on the culture installed with the Windows operating system.  
+  
+ Time zone display names for Windows system time zones follow a fairly standard format. The first portion of the display name is the time zone's base offset from Coordinated Universal Time, which is indicated by the acronym GMT (for Greenwich Mean Time), enclosed in parentheses. For Coordinated Universal Time, the GMT acronym with no offset is enclosed in parentheses.  This is followed by a string that identifies the time zone or one or more of the cities, regions, or countries in the time zone. For example:  
+  
+```  
+(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London  
+(GMT+02:00) Athens, Beirut, Istanbul, Minsk  
+(GMT-02:00) Mid-Atlantic  
+(GMT-07:00) Mountain Time (US & Canada)  
+```  
+  
+   
+  
+## Examples  
+ The following example retrieves a <xref:System.TimeZoneInfo> object that represents the local time zone and outputs its display name, standard time name, and daylight saving time name. The output is displayed for a system in the U.S. Pacific Standard Time zone.  
+  
+ [!code-csharp[System.TimeZone2.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/ShowTimeZoneNames1.cs#2)]
+ [!code-vb[System.TimeZone2.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/ShowTimeZoneNames1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">A second object to compare with the current object.</param>
+        <summary>Determines whether the current <see cref="T:System.TimeZoneInfo" /> object and another object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.TimeZoneInfo" /> object that is equal to the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method converts or casts `obj` to a <xref:System.TimeZoneInfo> object and compares it with the current instance. The test for equality is based on a comparison of values. The current <xref:System.TimeZoneInfo> instance and `obj` are considered to be equal under the following conditions:  
+  
+-   The run-time type of `obj` is <xref:System.TimeZoneInfo>.  
+  
+-   The two objects have the same <xref:System.TimeZoneInfo.Id%2A> property value.  
+  
+-   The two objects have the same adjustment rules.  
+  
+ If `obj` is `null`, this method returns `false`.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.TimeZoneInfo.Equals%28System.Object%29> method to determine whether the local time zone is Pacific Time or Eastern Time.  
+  
+ [!code-csharp[System.TimeZoneInfo.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.equals/cs/equals1.cs#1)]
+ [!code-vb[System.TimeZoneInfo.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.equals/vb/equals1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (TimeZoneInfo other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.TimeZoneInfo other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.Equals(System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="other">A second object to compare with the current object.</param>
+        <summary>Determines whether the current <see cref="T:System.TimeZoneInfo" /> object and another <see cref="T:System.TimeZoneInfo" /> object are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.TimeZoneInfo" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Equality is based on a comparison of values. Two <xref:System.TimeZoneInfo> objects are considered to be equal under the following conditions:  
+  
+-   The value of their <xref:System.TimeZoneInfo.Id%2A> property is the same.  
+  
+-   They have the same adjustment rules.  
+  
+ <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> returns the Boolean value that results from evaluating the following expression:  
+  
+ [C#]  
+  
+ `other.Id == this.Id && HasSameRules(other);`  
+  
+ [Visual Basic]  
+  
+ `other.Id = me.Id AndAlso HasSameRules(other)`  
+  
+ If the `other` parameter is an uninitialized <xref:System.TimeZoneInfo> object, this method returns `false`.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29> method to determine whether the local time zone is Pacific Time or Eastern Time.  
+  
+ [!code-csharp[System.TimeZone2.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#7)]
+ [!code-vb[System.TimeZone2.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSystemTimeZoneById">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo FindSystemTimeZoneById (string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo FindSystemTimeZoneById(string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The time zone identifier, which corresponds to the <see cref="P:System.TimeZoneInfo.Id" /> property.</param>
+        <summary>Retrieves a <see cref="T:System.TimeZoneInfo" /> object from the registry based on its identifier.</summary>
+        <returns>An object whose identifier is the value of the <paramref name="id" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `id` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `id` with time zone identifiers is case-insensitive. If you want to retrieve time zone objects based on partial matches, you can write custom procedures that work with the read-only collection of <xref:System.TimeZoneInfo> objects returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method.  
+  
+ <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> tries to match `id` to the subkey names of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones branch of the registry under Windows XP and Windows Vista. This branch does not necessarily contain a comprehensive list of time zone identifiers. If required by an application, you can create a particular time zone either by calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method or by calling <xref:System.TimeZoneInfo.FromSerializedString%2A> to deserialize a <xref:System.TimeZoneInfo> object that represents the required time zone. However, time zones created by these method calls are not included in the registry and cannot be retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. These custom time zones can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> or <xref:System.TimeZoneInfo.FromSerializedString%2A> method call.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve the Tokyo Standard Time zone. This <xref:System.TimeZoneInfo> object is then used to convert the local time to the time in Tokyo and to determine whether it is Tokyo Standard Time or Tokyo Daylight Time.  
+  
+ [!code-csharp[System.TimeZone2.Conversions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/convertdt2.cs#2)]
+ [!code-vb[System.TimeZone2.Conversions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/convertdt2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The system does not have enough memory to hold information about the time zone.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.TimeZoneNotFoundException">The time zone identifier specified by <paramref name="id" /> was not found. This means that a registry key whose name matches <paramref name="id" /> does not exist, or that the key exists but does not contain any time zone data.</exception>
+        <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
+        <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromSerializedString">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo FromSerializedString (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo FromSerializedString(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.FromSerializedString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The string representation of the serialized <see cref="T:System.TimeZoneInfo" /> object.</param>
+        <summary>Deserializes a string to re-create an original serialized <see cref="T:System.TimeZoneInfo" /> object.</summary>
+        <returns>The original serialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is an alternative to providing all the code required to create a time zone that is not found in the registry. You can define a custom time zone and either use the <xref:System.TimeZoneInfo.ToSerializedString%2A> method in a standalone executable or use an application's setup program to save the time zone as a string. The application can then retrieve this string from its storage location and instantiate it using the <xref:System.TimeZoneInfo.FromSerializedString%2A> method.  
+  
+   
+  
+## Examples  
+ The following example tries to retrieve the Antarctica/South Pole time zone from the local system. If it fails, the code tries to retrieve information about the time zone from a text file in the application directory. If this attempt fails, the code creates the time zone and writes information about the time zone to the text file.  
+  
+ [!code-csharp[System.TimeZone2.CreateTimeZone#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#4)]
+ [!code-vb[System.TimeZone2.CreateTimeZone#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="source" /> parameter is <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> parameter is a null string.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The source parameter cannot be deserialized back into a <see cref="T:System.TimeZoneInfo" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAdjustmentRules">
+      <MemberSignature Language="C#" Value="public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.TimeZoneInfo/AdjustmentRule[] GetAdjustmentRules() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAdjustmentRules" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo+AdjustmentRule[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an array of <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> objects that apply to the current <see cref="T:System.TimeZoneInfo" /> object.</summary>
+        <returns>An array of objects for this time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method retrieves an array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=fullName> objects. Each object in the array defines the effective start and end date of that time zone adjustment, as well as its delta (the exact amount by which the adjustment causes the time to change). In addition, two properties return <xref:System.TimeZoneInfo.TransitionTime?displayProperty=fullName> objects that define when each annual transition to and from standard time occurs.  
+  
+ If a time zone has multiple adjustment rules, they are generally ordered from earliest (at index 0) to latest (at index <xref:System.Array.Length%2A> – 1).  
+  
+ If a time zone has no adjustment rules, the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method returns an empty array (an array whose <xref:System.Array.Length%2A> is zero).  
+  
+ Any modifications to the elements of the array returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method are not reflected in the adjustment rules that belong to a particular time zone. To modify a time zone's adjustment rules (such as to reflect its historical transition to and from daylight saving time) you must create a new time zone with the appropriate adjustment rules, rather than modify the existing one.  
+  
+   
+  
+## Examples  
+ The following example retrieves all time zones that are defined on the local system and displays complete information about their adjustment rules to the console.  
+  
+ [!code-csharp[System.TimeZone2.AdjustmentRule.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/cs/System.TimeZone2.AdjustmentRule.Class.cs#3)]
+ [!code-vb[System.TimeZone2.AdjustmentRule.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/vb/System.TimeZone2.AdjustmentRule.Class.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The system does not have enough memory to make an in-memory copy of the adjustment rules.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAmbiguousTimeOffsets">
+      <MemberSignature Language="C#" Value="public TimeSpan[] GetAmbiguousTimeOffsets (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan[] GetAmbiguousTimeOffsets(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">A date and time.</param>
+        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
+        <returns>An array of objects that represents possible Coordinated Universal Time (UTC) offsets that a particular date and time can be mapped to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The precise behavior of this method depends on the relationship between the <xref:System.DateTime.Kind%2A> property and the <xref:System.TimeZoneInfo> object, as the following table shows.  
+  
+|TimeZoneInfo object type|Kind property value|Behavior|  
+|------------------------------|-------------------------|--------------|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Returns ambiguous time offsets for `dateTime`.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the local time, and then returns ambiguous time offsets for that time.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|Any value.|Throws an <xref:System.ArgumentException>.|  
+|Any other time zone.|<xref:System.DateTimeKind> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the specified time zone, and then determines whether that time is ambiguous.|  
+|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|Determines whether `dateTime` is ambiguous in the specified time zone.|  
+  
+ The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](~/docs/standard/datetime/resolve-ambiguous-times.md).  
+  
+   
+  
+## Examples  
+ The following example defines a method named `ShowPossibleUtcTimes` that uses the <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets%28System.DateTime%29> method to map an ambiguous time to its possible corresponding Coordinated Universal Time (UTC) times.  
+  
+ [!code-csharp[System.TimeZone2.GetAmbiguousTimeOffsets#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.GetAmbiguousTimeOffsets/cs/System.TimeZone2.GetAmbiguousTimeOffsets.cs#1)]
+ [!code-vb[System.TimeZone2.GetAmbiguousTimeOffsets#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.GetAmbiguousTimeOffsets/vb/System.TimeZone2.GetAmbiguousTimeOffsets.vb#1)]  
+  
+ The method can then be called using code such as the following:  
+  
+ [!code-csharp[System.TimeZone2.GetAmbiguousTimeOffsets#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.GetAmbiguousTimeOffsets/cs/System.TimeZone2.GetAmbiguousTimeOffsets.cs#2)]
+ [!code-vb[System.TimeZone2.GetAmbiguousTimeOffsets#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.GetAmbiguousTimeOffsets/vb/System.TimeZone2.GetAmbiguousTimeOffsets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dateTime" /> is not an ambiguous time.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTime" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAmbiguousTimeOffsets">
+      <MemberSignature Language="C#" Value="public TimeSpan[] GetAmbiguousTimeOffsets (DateTimeOffset dateTimeOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan[] GetAmbiguousTimeOffsets(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTimeOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">A date and time.</param>
+        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
+        <returns>An array of objects that represents possible Coordinated Universal Time (UTC) offsets that a particular date and time can be mapped to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The precise behavior of this method depends on the relationship between the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter and the <xref:System.TimeZoneInfo> object. If the value of the <xref:System.DateTimeOffset.Offset%2A> property corresponds to the current time zone's possible offsets from Coordinated Universal Time (UTC) for that date and time, the method returns the possible offsets. Otherwise, it converts `dateTimeOffset` to the time in the current time zone, and then returns the possible offsets of that date and time.  
+  
+ The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](~/docs/standard/datetime/resolve-ambiguous-times.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dateTimeOffset" /> is not an ambiguous time.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTimeOffset" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for hashing algorithms and data structures such as hash tables.</summary>
+        <returns>A 32-bit signed integer that serves as the hash code for this <see cref="T:System.TimeZoneInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional detail about the <xref:System.TimeZoneInfo.GetHashCode%2A> method, see <xref:System.Object.GetHashCode%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSystemTimeZones">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;TimeZoneInfo&gt; GetSystemTimeZones ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.TimeZoneInfo&gt; GetSystemTimeZones() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetSystemTimeZones" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.TimeZoneInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a sorted collection of all the time zones about which information is available on the local system.</summary>
+        <returns>A read-only collection of <see cref="T:System.TimeZoneInfo" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method retrieves all available time zone information from the subkeys of the registry's HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones key. If it is unable to successfully retrieve and parse values for particular string properties of individual <xref:System.TimeZoneInfo> objects, this method sets their value to an empty string ("").  
+  
+> [!IMPORTANT]
+>  The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method returns a collection of <xref:System.TimeZoneInfo> objects only for time zones defined in the registry. It does not include time zones created using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. These are accessible only through the object reference returned by the time zone creation method.  
+  
+ The collection returned by this method is sorted by UTC offset and, for time zones that have the same UTC offset, by the display name using the current culture. For information about the display name, see <xref:System.TimeZoneInfo.DisplayName%2A>.  
+  
+ The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> object returned by this method supports the <xref:System.Collections.Generic.IEnumerable%601> interface, which means that it can be iterated using the `foreach` (in C#) or `For Each…Next` (in Visual Basic) statements. Each iteration of the loop provides the next <xref:System.TimeZoneInfo> object in the collection.  
+  
+ The collection of <xref:System.TimeZoneInfo> objects represents time zones defined on the local computer; it does not necessarily provide complete information for all time zones during all time periods. If your application requires time zones not found on the local computer, you can create custom time zones using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create Time Zones Without Adjustment Rules](~/docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create Time Zones with Adjustment Rules](~/docs/standard/datetime/create-time-zones-with-adjustment-rules.md).  
+  
+ You can also determine whether an individual time zone is defined on the local computer by calling the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method and providing the identifier of the time zone you want to retrieve as a parameter.  
+  
+   
+  
+## Examples  
+ The following example retrieves a collection of time zone objects that represent the time zones defined on a computer and writes information about them to a text file.  
+  
+ [!code-csharp[System.TimeZone2.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/getsystemtimezones1.cs#6)]
+ [!code-vb[System.TimeZone2.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/getsystemtimezones1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">There is insufficient memory to store all time zone information.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have permission to read from the registry keys that contain time zone information.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUtcOffset">
+      <MemberSignature Language="C#" Value="public TimeSpan GetUtcOffset (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetUtcOffset(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetUtcOffset(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">The date and time to determine the offset for.</param>
+        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
+        <returns>An object that indicates the time difference between the two time zones.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned time span includes any differences due to the application of adjustment rules to the current time zone. It differs from the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property, which returns the difference between Coordinated Universal Time (UTC) and the time zone's standard time and, therefore, does not take adjustment rules into account.  
+  
+ If the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property does not correspond to the time zone object, this method performs the necessary conversion before returning a result. For example, this can occur if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> but the time zone object is not the local time zone. If `dateTime` is ambiguous, or if the converted time is ambiguous, this method interprets the ambiguous time as a standard time. If `dateTime` is invalid, this method returns a <xref:System.TimeSpan> object that reflects the difference between UTC and the time zone's standard time.  
+  
+ The <xref:System.TimeZoneInfo.GetUtcOffset%28System.DateTime%29?displayProperty=fullName> method is similar in operation to the <xref:System.TimeZone.GetUtcOffset%2A> method of the <xref:System.TimeZone> class.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of the <xref:System.TimeZoneInfo.GetUtcOffset%28System.DateTime%29> method with different time zones and with date values that have different <xref:System.DateTime.Kind%2A> property values.  
+  
+ [!code-csharp[System.TimeZone2.GetUtcOffset#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.GetUtcOffset/cs/System.TimeZone2.GetUtcOffset.cs#1)]
+ [!code-vb[System.TimeZone2.GetUtcOffset#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.GetUtcOffset/vb/System.TimeZone2.GetUtcOffset.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTime" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUtcOffset">
+      <MemberSignature Language="C#" Value="public TimeSpan GetUtcOffset (DateTimeOffset dateTimeOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetUtcOffset(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetUtcOffset(System.DateTimeOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">The date and time to determine the offset for.</param>
+        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
+        <returns>An object that indicates the time difference between Coordinated Universal Time (UTC) and the current time zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned time span includes any differences due to the application of adjustment rules to the current time zone. It differs from the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property, which returns the difference between Coordinated Universal Time (UTC) and the time zone's standard time and, therefore, does not take adjustment rules into account.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTimeOffset" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSameRules">
+      <MemberSignature Language="C#" Value="public bool HasSameRules (TimeZoneInfo other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasSameRules(class System.TimeZoneInfo other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.HasSameRules(System.TimeZoneInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.TimeZoneInfo" />
+      </Parameters>
+      <Docs>
+        <param name="other">A second object to compare with the current <see cref="T:System.TimeZoneInfo" /> object.</param>
+        <summary>Indicates whether the current object and another <see cref="T:System.TimeZoneInfo" /> object have the same adjustment rules.</summary>
+        <returns>
+          <see langword="true" /> if the two time zones have identical adjustment rules and an identical base offset; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Like the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> method, the <xref:System.TimeZoneInfo.HasSameRules%2A> method indicates whether two time zones have the same base offset (as defined by the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property) and the same adjustment rules. Unlike the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> method, <xref:System.TimeZoneInfo.HasSameRules%2A> does not compare time zone identifiers (as defined by the <xref:System.TimeZoneInfo.Id%2A> property).  
+  
+   
+  
+## Examples  
+ Typically, a number of time zones defined in the registry have the same offset from Coordinated Universal Time (UTC) and the same adjustment rules. The following example displays a list of these time zones to the console.  
+  
+ [!code-csharp[System.TimeZone2.HasSameRules#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.HasSameRules/cs/HasSameRules.cs#1)]
+ [!code-vb[System.TimeZone2.HasSameRules#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.HasSameRules/vb/HasSameRules.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="other" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time zone identifier.</summary>
+        <value>The time zone identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time zone identifier is a key string that uniquely identifies a particular time zone. In Windows XP and Windows Vista, it corresponds to the subkeys of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zone branch of the registry. It can be passed as a parameter to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve a particular time zone from the registry.  
+  
+> [!IMPORTANT]
+>  Although a key name in the Windows registry can be a maximum of 255 characters, we recommend that an identifier that you assign to a custom time zone be 32 characters or fewer. The longer the identifier, the greater the probability that an incorrect key name will be supplied when retrieving it.  
+  
+ The value of the <xref:System.TimeZoneInfo.Id%2A> property is usually, but not always, identical to that of the <xref:System.TimeZoneInfo.StandardName%2A> property. The identifier of the Coordinated Universal Time zone is UTC.  
+  
+   
+  
+## Examples  
+ The following example lists the identifier of each of the time zones defined on the local computer.  
+  
+ [!code-csharp[System.TimeZone2.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#5)]
+ [!code-vb[System.TimeZone2.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAmbiguousTime">
+      <MemberSignature Language="C#" Value="public bool IsAmbiguousTime (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAmbiguousTime(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">A date and time value.</param>
+        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="dateTime" /> parameter is ambiguous; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ambiguous time falls within a range of times for the current time zone. This means it can be either a standard time or a time that results from the application of an adjustment rule. Typically, ambiguous times result when the clock is set to return to standard time from daylight saving time. See the Example section for an illustration.  
+  
+ Coordinated Universal Time (UTC) has no ambiguous times; neither do time zones that do not support daylight saving time. Therefore, these time zones have no adjustment rules and calls to the <xref:System.TimeZoneInfo.IsAmbiguousTime%2A> method always return `false`.  
+  
+ For time zones that do observe daylight saving time, the precise behavior of this method depends on the relationship between the <xref:System.DateTime.Kind%2A> property and the <xref:System.TimeZoneInfo> object, as the following table shows.  
+  
+|TimeZoneInfo object type|Kind property value|Behavior|  
+|------------------------------|-------------------------|--------------|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Determines whether the `dateTime` parameter is ambiguous.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the local time and then determines whether that time is ambiguous.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Returns `false`.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|If `dateTime` is ambiguous, assumes it is a standard time, converts it to UTC, and returns `false`.|  
+|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the time in the specified time zone and then determines whether that time is ambiguous.|  
+|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|Determines whether `dateTime` is ambiguous.|  
+  
+   
+  
+## Examples  
+ In the Pacific Time zone, daylight saving time ends at 2:00 A.M. on November 4, 2007. The following example passes the time at one-minute intervals from 12:59 A.M. on November 4, 2007, to 2:01 A.M. on November 4, 2007, to the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29> method of a <xref:System.TimeZoneInfo> object that represents the Pacific Time zone. The console output indicates that all times from 1:00 A.M. on November 4, 2007, to 1:59 A.M. on November 4, 2007, are ambiguous.  
+  
+ [!code-csharp[System.TimeZone2.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#8)]
+ [!code-vb[System.TimeZone2.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> value is <see cref="F:System.DateTimeKind.Local" /> and <paramref name="dateTime" /> is an invalid time.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAmbiguousTime">
+      <MemberSignature Language="C#" Value="public bool IsAmbiguousTime (DateTimeOffset dateTimeOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAmbiguousTime(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">A date and time.</param>
+        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="dateTimeOffset" /> parameter is ambiguous in the current time zone; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ambiguous time falls within a range of times for the current time zone. This means that it can be either a standard time or a time that results from the application of an adjustment rule. Typically, ambiguous times result when the clock is set to return to standard time from daylight saving time. Coordinated Universal Time (UTC) has no ambiguous times; neither do time zones that do not support daylight saving time.  
+  
+ The precise behavior of the method depends on the relationship between the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter and the current time zone. If the value of the <xref:System.DateTimeOffset.Offset%2A> property is a possible offset from the UTC of the current time zone, the method determines whether that date and time is ambiguous. Otherwise, it converts `dateTimeOffset` to the time in the current time zone, and then determines whether that date and time is ambiguous.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDaylightSavingTime">
+      <MemberSignature Language="C#" Value="public bool IsDaylightSavingTime (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDaylightSavingTime(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">A date and time value.</param>
+        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the time zone of the current <see cref="T:System.TimeZoneInfo" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="dateTime" /> parameter is a daylight saving time; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter, as the following table shows.  
+  
+|TimeZoneInfo object|DateTime.Kind property|Result|  
+|-------------------------|----------------------------|------------|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Local`|Determines whether `dateTime` is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Utc`|Converts `dateTime` from Coordinated Universal Time (UTC) to local time and determines whether it is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Unspecified`|Assumes that `dateTime` represents local time and determines whether it is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|`DateTimeKind.Local`, `DateTimeKind.Unspecified`, or `DateTimeKind.Utc`|Returns `false` (UTC does not support daylight saving time).|  
+|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Local`|Converts the local time to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Utc`|Converts UTC to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Unspecified`|Determines whether `dateTime` is daylight saving time.|  
+  
+ If the time zone represented by the <xref:System.TimeZoneInfo> object does not support daylight saving time, the method always returns `false`. A number of time zones, including <xref:System.TimeZoneInfo.Utc%2A>, do not observe daylight saving time.  To determine whether a time zone supports daylight saving time, retrieve the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
+  
+ If the `dateTime` parameter specifies an ambiguous time in the current object's time zone, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method interprets `dateTime` as standard time and returns `false` if its <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>. If the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, this method will select the correct ambiguous time and indicate whether it is a daylight saving time.  
+  
+ Because the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29?displayProperty=fullName> method can return `false` for a date and time that is ambiguous (that is, a date and time that can represent either a standard time or a daylight saving time in a particular time zone), the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29?displayProperty=fullName> method can be paired with the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method to determine whether a time may be a daylight saving time. Because an ambiguous time is one that can be both a daylight saving time and a standard time, the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29> method can be called first to determine whether a date and time may be a daylight saving time. If the method returns `false`, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method can be called to determine whether the <xref:System.DateTime> value is a daylight saving time. The following example illustrates this technique.  
+  
+ [!code-csharp[System.TimeZone2.IsDaylightSavingTime#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#2)]
+ [!code-vb[System.TimeZone2.IsDaylightSavingTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#2)]  
+  
+ If the `dateTime` parameter specifies an invalid time, the method call throws an <xref:System.ArgumentException> if the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>; otherwise, the method returns `false`.  
+  
+ Call the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method to determine whether to use a time zone's <xref:System.TimeZoneInfo.StandardName%2A> value or its <xref:System.TimeZoneInfo.DaylightName%2A> value when displaying the time zone name. See the Example section for an illustration.  
+  
+   
+  
+## Examples  
+ The following example defines a method named `DisplayDateWithTimeZoneName` that uses the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method to determine whether to display a time zone's standard time name or daylight saving time name.  
+  
+ [!code-csharp[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#1)]
+ [!code-vb[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.DateTime.Kind" /> property of the <paramref name="dateTime" /> value is <see cref="F:System.DateTimeKind.Local" /> and <paramref name="dateTime" /> is an invalid time.</exception>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDaylightSavingTime">
+      <MemberSignature Language="C#" Value="public bool IsDaylightSavingTime (DateTimeOffset dateTimeOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDaylightSavingTime(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTimeOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffset" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffset">A date and time value.</param>
+        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the time zone of the current <see cref="T:System.TimeZoneInfo" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="dateTimeOffset" /> parameter is a daylight saving time; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter. If `dateTimeOffset` does not correspond to the current time zone's offset from Coordinated Universal Time (UTC), the method converts that time to the time in the current time zone. It then determines whether that date and time is a daylight saving time.  
+  
+ If the time zone represented by the <xref:System.TimeZoneInfo> object does not support daylight saving time, the method always returns `false`. To determine whether a time zone supports daylight saving time, retrieve the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvalidTime">
+      <MemberSignature Language="C#" Value="public bool IsInvalidTime (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInvalidTime(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsInvalidTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">A date and time value.</param>
+        <summary>Indicates whether a particular date and time is invalid.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="dateTime" /> is invalid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An invalid time falls within a range of times for the current time zone that cannot be mapped to Coordinated Universal Time (UTC) due to the application of an adjustment rule. Typically, invalid times occur when the time moves ahead for daylight saving time. See the Example section for an illustration.  
+  
+ The value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter affects whether `dateTime` represents an invalid time, as the following table shows.  
+  
+|DateTime.Kind property|TimeZoneInfo object (if applicable)|Behavior|  
+|----------------------------|-------------------------------------------|--------------|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|Determines whether the time is invalid.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName> or a non-local time zone.|Converts `dateTime` to the time of the <xref:System.TimeZoneInfo> object and returns `false`.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Not applicable.|Assumes `dateTime` is the time of the <xref:System.TimeZoneInfo> object and determines whether it is invalid.|  
+|<xref:System.DateTimeKind?displayProperty=fullName>|Not applicable.|Returns `false`.|  
+  
+   
+  
+## Examples  
+ In the Pacific Time zone, daylight saving time begins at 2:00 A.M. on April 2, 2006. The following code passes the time at one-minute intervals from 1:59 A.M. on April 2, 2006, to 3:01 A.M. on April 2, 2006, to the <xref:System.TimeZoneInfo.IsInvalidTime%2A> method of a <xref:System.TimeZoneInfo> object that represents the Pacific Time zone. The console output indicates that all times from 2:00 A.M. on April 2, 2006, to 2:59 A.M. on April 2, 2006, are invalid.  
+  
+ [!code-csharp[System.TimeZone2.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#9)]
+ [!code-vb[System.TimeZone2.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an invalid time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo Local { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.TimeZoneInfo Local" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Local" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.TimeZoneInfo" /> object that represents the local time zone.</summary>
+        <value>An object that represents the local time zone.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The local time zone is the time zone on the computer where the code is executing.  
+  
+> [!IMPORTANT]
+>  You should always access the local time zone through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property rather than assigning the local time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
+  
+ The <xref:System.TimeZoneInfo> object returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property reflects the setting of the **Automatically adjust clock for daylight saving changes** checkbox or the **Automatically adjust clock for Daylight Saving Time** checkbox in the Control Panel **Date and Time** application for Windows XP and Windows Vista, respectively. If the checkbox is unchecked, the cached copy of the local time zone contains no daylight saving time information. This means that:  
+  
+-   The local time zone's <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method returns an array whose length is zero.  
+  
+-   The local time zone's <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property returns `false`.  
+  
+-   The local time zone has no ambiguous or invalid times (all calls to <xref:System.TimeZoneInfo.IsAmbiguousTime%2A> or <xref:System.TimeZoneInfo.IsInvalidTime%2A> return `false`).  
+  
+-   All calls to <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A> with individual local times return false.  
+  
+ This is not true, however, if a reference to the local time zone is retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method.  
+  
+ The <xref:System.TimeZoneInfo.Local%2A> property corresponds to the <xref:System.TimeZone.CurrentTimeZone%2A> property of the <xref:System.TimeZone> class.  
+  
+   
+  
+## Examples  
+ The following example retrieves a <xref:System.TimeZoneInfo> object that represents the local time zone and outputs its display name, standard time name, and daylight saving time name.  
+  
+ [!code-csharp[System.TimeZone2.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/ShowTimeZoneNames1.cs#2)]
+ [!code-vb[System.TimeZone2.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/ShowTimeZoneNames1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>In converting dates and times, [!INCLUDE[winxp](~/includes/winxp-md.md)] recognizes only the current adjustment rule, which it applies to all dates, including down-level dates (that is, dates that are earlier than the starting date of the current adjustment rule). On [!INCLUDE[winxp](~/includes/winxp-md.md)], to prevent local date and time information provided by the <see cref="P:System.TimeZoneInfo.Local" /> object from diverging from the date and time information displayed in the system tray, the <see cref="T:System.TimeZoneInfo" /> object returned by the <see cref="P:System.TimeZoneInfo.Local" /> property also applies the current adjustment rule to down-level dates. Applications running on [!INCLUDE[winxp](~/includes/winxp-md.md)] that require historically accurate local date and time calculations must work around this behavior by using the <see cref="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" /> method to retrieve a <see cref="T:System.TimeZoneInfo" /> object that corresponds to the local time zone.  
+  
+ The following example provides an illustration for a [!INCLUDE[winxp](~/includes/winxp-md.md)] system in the U.S. Pacific Time zone. Because the first three method calls all use the local time zone returned by the <see cref="P:System.TimeZoneInfo.Local" /> property, they apply the current time zone adjustment rule (which went into effect in 2007) to a date in 2006. The current adjustment rule provides for the transition to daylight saving time to occur on the second Sunday of March; the previous rule, which was in effect in 2006, provided for the transition to daylight saving time to occur on the first Sunday of April. Only the fourth method call, which uses the <see cref="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" /> method to retrieve the local time zone, accurately performs this historical date and time conversion.  
+  
+ [!code-csharp[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/cs/converttimetoutc.cs#1)]
+ [!code-vb[System.TimeZoneInfo.ConvertTimeToUtc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttimetoutc/vb/converttimetoutc.vb#1)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardName">
+      <MemberSignature Language="C#" Value="public string StandardName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandardName" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.StandardName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the display name for the time zone's standard time.</summary>
+        <value>The display name of the time zone's standard time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The display name is localized based on the culture installed with the Windows operating system.  
+  
+ The <xref:System.TimeZoneInfo.StandardName%2A> property is identical to the <xref:System.TimeZone.StandardName%2A> property of the <xref:System.TimeZone> class.  
+  
+ If the operating system language is English, the value of the <xref:System.TimeZoneInfo.StandardName%2A> property is usually, but not always, identical to that of the <xref:System.TimeZoneInfo.Id%2A> property.  
+  
+   
+  
+## Examples  
+ The following example defines a method named `DisplayDateWithTimeZoneName` that uses the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method to determine whether to display a time zone's standard time name or daylight saving time name.  
+  
+ [!code-csharp[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#1)]
+ [!code-vb[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDaylightSavingTime">
+      <MemberSignature Language="C#" Value="public bool SupportsDaylightSavingTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDaylightSavingTime" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the time zone has any daylight saving time rules.</summary>
+        <value>
+          <see langword="true" /> if the time zone supports daylight saving time; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property for the local time zone returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property reflects the setting of the Control Panel **Date and Time** application's checkbox that defines whether the system automatically adjusts for daylight saving time. If it is unchecked, or if no checkbox is displayed for a time zone, the value of this property is `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves a collection of all time zones that are available on a local system and displays the names of those that do not support daylight saving time.  
+  
+ [!code-csharp[System.TimeZone2.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#4)]
+ [!code-vb[System.TimeZone2.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
+      <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
+        <summary>Runs when the deserialization of an object has been completed.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.TimeZoneInfo" /> object contains invalid or corrupted data.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to populate with data.</param>
+        <param name="context">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the current <see cref="T:System.TimeZoneInfo" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSerializedString">
+      <MemberSignature Language="C#" Value="public string ToSerializedString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToSerializedString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ToSerializedString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the current <see cref="T:System.TimeZoneInfo" /> object to a serialized string.</summary>
+        <returns>A string that represents the current <see cref="T:System.TimeZoneInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications that rely on time zones that are not typically defined in the registry of Windows systems can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to instantiate the necessary time zones as <xref:System.TimeZoneInfo> objects. The application can then call the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to convert the time zone object to a string.  
+  
+ The <xref:System.TimeZoneInfo> object should also be stored in a location where the application can retrieve it when needed. Possible locations include:  
+  
+-   The registry.  
+  
+-   An application resource file.  
+  
+-   An external file, such as a text file.  
+  
+   
+  
+## Examples  
+ The following example tries to retrieve the Antarctica/South Pole time zone from the local system. If it fails, the code tries to retrieve information about the time zone from a text file in the application directory. If this attempt fails, the code creates the time zone and writes information about it to the text file.  
+  
+ [!code-csharp[System.TimeZone2.CreateTimeZone#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#4)]
+ [!code-vb[System.TimeZone2.CreateTimeZone#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the current <see cref="T:System.TimeZoneInfo" /> object's display name.</summary>
+        <returns>The value of the <see cref="P:System.TimeZoneInfo.DisplayName" /> property of the current <see cref="T:System.TimeZoneInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When assigning a collection that contains <xref:System.TimeZoneInfo> objects to a list control such as the <xref:System.Windows.Forms.ListBox> control, the control automatically calls the <xref:System.TimeZoneInfo.ToString%2A> method to extract a string that describes each object to be represented in the list. As a result, you do not need to store a meaningful description of the object as a string, and the user does not need to use that string to extract the object from the collection. See [How to: Enumerate Time Zones Present on a Computer](~/docs/standard/datetime/enumerate-time-zones.md) for more detail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Utc">
+      <MemberSignature Language="C#" Value="public static TimeZoneInfo Utc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.TimeZoneInfo Utc" />
+      <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Utc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeZoneInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.TimeZoneInfo" /> object that represents the Coordinated Universal Time (UTC) zone.</summary>
+        <value>An object that represents the Coordinated Universal Time (UTC) zone.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a built-in object; information about this <xref:System.TimeZoneInfo> object is not retrieved from the registry.  
+  
+> [!IMPORTANT]
+>  You should always access the Coordinated Universal Time (UTC) zone through the <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName> property rather than assigning the UTC time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
+  
+ Coordinated Universal Time was previously known as Greenwich Mean Time (GMT).  
+  
+   
+  
+## Examples  
+ The following example retrieves a <xref:System.TimeZoneInfo> object that represents Coordinated Universal Time (UTC) and outputs its display name, standard time name, and daylight saving time name.  
+  
+ [!code-csharp[System.TimeZone2.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#3)]
+ [!code-vb[System.TimeZone2.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

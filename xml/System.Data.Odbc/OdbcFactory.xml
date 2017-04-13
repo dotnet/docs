@@ -1,0 +1,291 @@
+<Type Name="OdbcFactory" FullName="System.Data.Odbc.OdbcFactory">
+  <TypeSignature Language="C#" Value="public sealed class OdbcFactory : System.Data.Common.DbProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcFactory extends System.Data.Common.DbProviderFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbProviderFactory</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of methods for creating instances of the ODBC provider's implementation of the data source classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCommand">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommand CreateCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateCommand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbCommand</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbCommand" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbCommand = newFactory.CreateCommand()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbCommand cmd = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCommandBuilder">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommandBuilder CreateCommandBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommandBuilder CreateCommandBuilder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateCommandBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbCommandBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly-typed <xref:System.Data.Common.DbCommandBuilder> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbCommandBuilder = newFactory.CreateCommandBuilder()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbCommandBuilder cmd = newFactory.CreateCommandBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConnection">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnection CreateConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnection CreateConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbConnection" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnection> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbConnection = newFactory.CreateConnection()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbConnection cmd = newFactory.CreateConnection();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConnectionStringBuilder">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateConnectionStringBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnectionStringBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDataAdapter">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataAdapter CreateDataAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataAdapter CreateDataAdapter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateDataAdapter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly-typed <xref:System.Data.Common.DbDataAdapter> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbDataAdapter = newFactory.CreateDataAdapter()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbDataAdapter cmd = newFactory.CreateDataAdapter();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParameter">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbParameter CreateParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbParameter CreateParameter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateParameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbParameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbParameter" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly-typed <xref:System.Data.Common.DbParameter> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbParameter = newFactory.CreateParameter()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbParameter cmd = newFactory.CreateParameter();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.CodeAccessPermission CreatePermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.CodeAccessPermission CreatePermission(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.CodeAccessPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
+        <summary>Returns a strongly-typed <see cref="T:System.Security.CodeAccessPermission" /> instance.</summary>
+        <returns>A new strongly-typed instance of <see cref="T:System.Security.CodeAccessPermission" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.Odbc.OdbcFactory Instance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Data.Odbc.OdbcFactory Instance" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcFactory.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Odbc.OdbcFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of the <see cref="T:System.Data.Odbc.OdbcFactory" />, which can be used to retrieve strongly-typed data objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment uses the <xref:System.Data.Odbc.OdbcFactory.Instance%2A> property to retrieve an <xref:System.Data.Odbc.OdbcFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
+  
+```vb  
+Dim newFactory As OdbcFactory = OdbcFactory.Instance  
+Dim cmd As DbCommand = newFactory.CreateCommand()  
+```  
+  
+```csharp  
+OdbcFactory newFactory = OdbcFactory.Instance;  
+DbCommand cmd = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

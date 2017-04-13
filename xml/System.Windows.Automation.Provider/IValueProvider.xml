@@ -1,0 +1,151 @@
+<Type Name="IValueProvider" FullName="System.Windows.Automation.Provider.IValueProvider">
+  <TypeSignature Language="C#" Value="public interface IValueProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IValueProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("c7935180-6fb3-4201-b174-7df73adbf64a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls having an intrinsic value that does not span a range and that can be represented as a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the control may or may not be editable depending on the control and its settings.  
+  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ValuePattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IValueProvider.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the value of a control is read-only.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before allowing a call to <xref:System.Windows.Automation.Provider.IValueProvider.SetValue%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this method for a control that allows its value to be changed.  
+  
+ [!code-csharp[UIAIValueProvider_snip#IsReadOnly](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIValueProvider_snip/CSharp/ValueFragment.cs#isreadonly)]
+ [!code-vb[UIAIValueProvider_snip#IsReadOnly](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIValueProvider_snip/visualbasic/valuefragment.vb#isreadonly)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IValueProvider.SetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to set. The provider is responsible for converting the value to the appropriate data type.</param>
+        <summary>Sets the value of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Single-line edit controls support programmatic access to their contents by implementing <xref:System.Windows.Automation.Provider.IValueProvider>. However, multi-line edit controls do not implement <xref:System.Windows.Automation.Provider.IValueProvider>; instead they provide access to their content by implementing <xref:System.Windows.Automation.Provider.ITextProvider>.  
+  
+ Controls such as <xref:System.Windows.Automation.ControlType.ListItem> and <xref:System.Windows.Automation.ControlType.TreeItem> must implement <xref:System.Windows.Automation.Provider.IValueProvider> if the value of any of the items is editable, regardless of the current edit mode of the control. The parent control must also implement <xref:System.Windows.Automation.Provider.IValueProvider> if the child items are editable.  
+  
+ ![Editable list item.](~/add/media/uia-valuepattern-editable-listitem.PNG "Editable list item.")  
+Example of an Editable List Item  
+  
+   
+  
+## Examples  
+ The following example code demonstrates a custom control that allows its value to be set to a string of limited length.  
+  
+ [!code-csharp[UIAIValueProvider_snip#SetValue](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIValueProvider_snip/CSharp/ValueFragment.cs#setvalue)]
+ [!code-vb[UIAIValueProvider_snip#SetValue](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIValueProvider_snip/visualbasic/valuefragment.vb#setvalue)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If locale-specific information is passed to a control in an incorrect format such as an incorrectly formatted date.</exception>
+        <exception cref="T:System.ArgumentException">If a new value cannot be converted from a string to a format the control recognizes.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">When an attempt is made to manipulate a control that is not enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IValueProvider.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the control.</summary>
+        <value>The value of the control as a string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Single-line edit controls support programmatic access to their contents by implementing <xref:System.Windows.Automation.Provider.IValueProvider> (in addition to <xref:System.Windows.Automation.Provider.ITextProvider>). However, multi-line edit controls do not implement <xref:System.Windows.Automation.Provider.IValueProvider>.  
+  
+ To retrieve the textual contents of multi-line edit controls, the controls must implement <xref:System.Windows.Automation.Provider.ITextProvider>. However, <xref:System.Windows.Automation.Provider.ITextProvider> does not support setting the value of a control.  
+  
+ <xref:System.Windows.Automation.Provider.IValueProvider> does not support the retrieval of formatting information or substring values. Implement <xref:System.Windows.Automation.Provider.ITextProvider> in these scenarios.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this method for a control that allows its value to be retrieved.  
+  
+ [!code-csharp[UIAIValueProvider_snip#Value](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIValueProvider_snip/CSharp/ValueFragment.cs#value)]
+ [!code-vb[UIAIValueProvider_snip#Value](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIValueProvider_snip/visualbasic/valuefragment.vb#value)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

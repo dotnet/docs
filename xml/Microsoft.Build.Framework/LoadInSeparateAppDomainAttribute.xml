@@ -1,0 +1,39 @@
+<Type Name="LoadInSeparateAppDomainAttribute" FullName="Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute">
+  <TypeSignature Language="C#" Value="public sealed class LoadInSeparateAppDomainAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LoadInSeparateAppDomainAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the metadata attribute that [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] uses to identify tasks that must be executed in their own application domains.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoadInSeparateAppDomainAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

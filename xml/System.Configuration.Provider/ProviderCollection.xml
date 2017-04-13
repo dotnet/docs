@@ -1,0 +1,333 @@
+<Type Name="ProviderCollection" FullName="System.Configuration.Provider.ProviderCollection">
+  <TypeSignature Language="C#" Value="public class ProviderCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProviderCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Provider.ProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of provider objects that inherit from <see cref="T:System.Configuration.Provider.ProviderBase" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Provider.ProviderCollection> class utilizes an underlying <xref:System.Collections.Hashtable> object to store the provider name/value pairs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Provider.ProviderCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Provider.ProviderCollection.%23ctor%2A> constructor initializes the underlying <xref:System.Collections.Hashtable> object used to store the items of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual void Add (System.Configuration.Provider.ProviderBase provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The provider to be added.</param>
+        <summary>Adds a provider to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Provider.ProviderCollection.Add%2A> method first checks for any exceptions (as listed in the Exceptions section), and then calls the <xref:System.Collections.Hashtable.Add%2A?displayProperty=fullName> method. It passes in the object referenced by the `provider` parameter as well as the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the provider to be used as the key in the <xref:System.Collections.Hashtable> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Configuration.Provider.ProviderBase.Name" /> of <paramref name="provider" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ The length of the <see cref="P:System.Configuration.Provider.ProviderBase.Name" /> of <paramref name="provider" /> is less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is set to read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Configuration.Provider.ProviderBase[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Configuration.Provider.ProviderBase[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.CopyTo(System.Configuration.Provider.ProviderBase[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Configuration.Provider.ProviderBase[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the elements of the collection to.</param>
+        <param name="index">The index of the collection item at which to start the copying process.</param>
+        <summary>Copies the contents of the collection to the given array starting at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array into which the items are copied must have zero-based indexing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Provider.ProviderCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of providers in the collection.</summary>
+        <value>The number of providers in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object that implements the <see cref="T:System.Collections.IEnumerator" /> interface to iterate through the collection.</summary>
+        <returns>An object that implements <see cref="T:System.Collections.IEnumerator" /> to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Provider.ProviderCollection> class stores its collection in a <xref:System.Collections.Hashtable> object. The <xref:System.Configuration.Provider.ProviderCollection.GetEnumerator%2A?displayProperty=fullName> method calls the <xref:System.Collections.Hashtable.GetEnumerator%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Provider.ProviderCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.Provider.ProviderBase this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Provider.ProviderBase Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Provider.ProviderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Provider.ProviderBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The key by which the provider is identified.</param>
+        <summary>Gets the provider with the specified name.</summary>
+        <value>The provider with the specified name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the provider to be removed.</param>
+        <summary>Removes a provider from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection has been set to read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the collection to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Provider.ProviderCollection> class is read/write by default. The <xref:System.Configuration.Provider.ProviderCollection.SetReadOnly%2A> method makes the collection read-only. After a collection is set to read-only, some method calls (such as <xref:System.Configuration.Provider.ProviderCollection.Remove%2A> and <xref:System.Configuration.Provider.ProviderCollection.Add%2A> will result in an exception.  
+  
+ Note that most provider-based features will set their <xref:System.Configuration.Provider.ProviderCollection> object to read-only after creating instances of all of the configured providers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Provider.ProviderCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current object.</summary>
+        <value>The current object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Provider.ProviderCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the elements of the collection to.</param>
+        <param name="index">The index of the array at which to start copying provider instances from the collection.</param>
+        <summary>Copies the elements of the <see cref="T:System.Configuration.Provider.ProviderCollection" /> to an array, starting at a particular array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Provider.ProviderCollection.System%23Collections%23ICollection%23CopyTo%2A> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

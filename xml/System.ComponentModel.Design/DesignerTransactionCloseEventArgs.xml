@@ -1,0 +1,159 @@
+<Type Name="DesignerTransactionCloseEventArgs" FullName="System.ComponentModel.Design.DesignerTransactionCloseEventArgs">
+  <TypeSignature Language="C#" Value="public class DesignerTransactionCloseEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerTransactionCloseEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> and <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> event occurs when a designer finalizes a transaction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs>.  
+  
+ [!code-cpp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CPP/designertransactioncloseeventargsexample.cpp#1)]
+ [!code-csharp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CS/designertransactioncloseeventargsexample.cs#1)]
+ [!code-vb[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/VB/designertransactioncloseeventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerTransactionCloseEventArgs (bool commit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool commit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This constructor is obsolete. Use DesignerTransactionCloseEventArgs(bool, bool) instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="commit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="commit">A value indicating whether the transaction was committed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class, using the specified value that indicates whether the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerTransactionCloseEventArgs (bool commit, bool lastTransaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool commit, bool lastTransaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.#ctor(System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commit" Type="System.Boolean" />
+        <Parameter Name="lastTransaction" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="commit">A value indicating whether the transaction was committed.</param>
+        <param name="lastTransaction">
+          <see langword="true" /> if this is the last transaction to close; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `commit` is `true`, the <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction%2A> property defaults to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LastTransaction">
+      <MemberSignature Language="C#" Value="public bool LastTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LastTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this is the last transaction to close.</summary>
+        <value>
+          <see langword="true" />, if this is the last transaction to close; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionCommitted">
+      <MemberSignature Language="C#" Value="public bool TransactionCommitted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransactionCommitted" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.TransactionCommitted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction.</summary>
+        <value>
+          <see langword="true" /> if the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

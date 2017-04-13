@@ -1,0 +1,273 @@
+<Type Name="DrawTreeNodeEventArgs" FullName="System.Windows.Forms.DrawTreeNodeEventArgs">
+  <TypeSignature Language="C#" Value="public class DrawTreeNodeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawTreeNodeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawTreeNodeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.DrawNode" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TreeView.DrawNode> event to customize the appearance of nodes in a <xref:System.Windows.Forms.TreeView> control using owner drawing.  
+  
+ The <xref:System.Windows.Forms.TreeView.DrawNode> event is raised by a <xref:System.Windows.Forms.TreeView> control when its <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=fullName> or <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=fullName> and a node is displayed or updated. The <xref:System.Windows.Forms.DrawTreeNodeEventArgs> passed to the event handler contains information about the node to draw as well as providing methods to help you draw the node.  
+  
+ Use the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.State%2A> or <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A> properties to retrieve information about the node to draw. Use the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Graphics%2A> property to do the actual drawing within the area specified by the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A> property. To make the operating system draw a node that does not need to be owner drawn, set the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property to `true`.  
+  
+ When the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=fullName>, the area indicated by the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A> property includes the label portion of the node only. When the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A> area includes the entire node, including the area typically used for icons, checkboxes, plus and minus signs, and lines connecting the nodes.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tags and the custom selection highlight manually. Unselected nodes do not need customization. For these, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system.  
+  
+ Additionally, a handler for the <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event provides hit-testing. By default, a node can be selected only by clicking the region around its label. The <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event handler selects a node that is clicked anywhere within this region or within the region around a node tag, if present.  
+  
+ [!code-cpp[TreeViewOwnerDraw#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#1)]
+ [!code-csharp[TreeViewOwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#1)]
+ [!code-vb[TreeViewOwnerDraw#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawTreeNodeEventArgs (System.Drawing.Graphics graphics, System.Windows.Forms.TreeNode node, System.Drawing.Rectangle bounds, System.Windows.Forms.TreeNodeStates state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Windows.Forms.TreeNode node, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.TreeNodeStates state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawTreeNodeEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="node" Type="System.Windows.Forms.TreeNode" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.TreeNodeStates" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
+        <param name="node">The <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> within which to draw.</param>
+        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.TreeNodeStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawTreeNodeEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size and location of the <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The location specified by this property is relative to the upper-left corner of the <xref:System.Windows.Forms.TreeView> control.  
+  
+ When the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.TreeViewDrawMode>, the area specified by the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A> property is the region in which a node can be clicked to select it. If you draw outside this hit test region, you should provide your own code for selecting a node when its visible area is clicked. You may also want to provide your own hit test code when the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.TreeViewDrawMode>. In this mode, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A> property encompasses the whole node across the entire width of the <xref:System.Windows.Forms.TreeView> control, rather than the just hit test region.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tags and the custom selection highlight manually. Unselected nodes do not need customization. For these, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> overview reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
+ [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
+ [!code-vb[TreeViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawDefault">
+      <MemberSignature Language="C#" Value="public bool DrawDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DrawDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.TreeNode" /> should be drawn by the operating system rather than being owner drawn.</summary>
+        <value>
+          <see langword="true" /> if the node should be drawn by the operating system; <see langword="false" /> if the node will be drawn in the event handler. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `true` for nodes that you do not want to customize when you handle the <xref:System.Windows.Forms.TreeView.DrawNode> event. For example, this is useful when you want to customize only nodes that are in a specific state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this property. In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tag and a custom highlight color manually for the selected node. Nodes that are not selected do not need customization. For unselected nodes, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system and will not have a customized appearance.  
+  
+> [!NOTE]
+>  If you draw a node manually and also set the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property to `true`, some or all of what you draw may be overwritten by the operating system.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> overview reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
+ [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
+ [!code-vb[TreeViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> object used to draw the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <value>A <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.TreeNode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Graphics> class provides properties and methods useful for drawing on the display device.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tags and the custom selection highlight manually. Unselected nodes do not need customization. For these, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> overview reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
+ [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
+ [!code-vb[TreeViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Node">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode Node { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode Node" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Node" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</summary>
+        <value>The <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to access the <xref:System.Windows.Forms.TreeNode> object to draw. This is useful when the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.State%2A> property does not provide adequate information to meet your needs. The <xref:System.Windows.Forms.DrawTreeNodeEventArgs.State%2A> property provides only basic state information that you can use, for example, to determine whether a node is selected, checked, or focused. The <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A> property, on the other hand, allows you to access all members of the <xref:System.Windows.Forms.TreeNode> object. You must access the node directly, for example, when you want to determine its expansion state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tags and the custom selection highlight manually. Unselected nodes do not need customization. For these, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> overview reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
+ [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
+ [!code-vb[TreeViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNodeStates State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TreeNodeStates State" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNodeStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current state of the <see cref="T:System.Windows.Forms.TreeNode" /> to draw.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Windows.Forms.TreeNodeStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.TreeNode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to check whether the <xref:System.Windows.Forms.TreeNode> object to draw is in a particular state. This property provides only basic state information about the node. You can use this property, for example, to determine whether a node is selected, checked, or focused. If you need to know more, retrieve the node through the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A> property. For example, to determine whether the node is expanded, you must retrieve the node and check the <xref:System.Windows.Forms.TreeNode.IsExpanded%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws the node tags and the custom selection highlight manually. Unselected nodes do not need customization. For these, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault%2A> property is set to `true` so that they will be drawn by the operating system.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> overview reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
+ [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
+ [!code-vb[TreeViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

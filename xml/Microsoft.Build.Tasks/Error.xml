@@ -1,0 +1,126 @@
+<Type Name="Error" FullName="Microsoft.Build.Tasks.Error">
+  <TypeSignature Language="C#" Value="public sealed class Error : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Error extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Error" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>Error</c> task. Use the <c>Error</c> element in your project file to create and execute this task. For usage and parameter information, see [Delete Task](http://msdn.microsoft.com/library/916bb2e3-3017-4828-ae27-c0b5c99bbb48).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Error ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Error.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Error" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="public string Code { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Code" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Error.Code" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the error code to associate with the error.</summary>
+        <value>The error code to associate with the error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Error.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>Error</c> task - logs an error and stops the build.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="File">
+      <MemberSignature Language="C#" Value="public string File { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string File" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Error.File" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Relevant file if any. If none is provided, the file containing the Error task will be used.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpKeyword">
+      <MemberSignature Language="C#" Value="public string HelpKeyword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Error.HelpKeyword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Help keyword to associate with the error.</summary>
+        <value>The Help keyword to associate with the error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Error.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the error text.</summary>
+        <value>The error text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

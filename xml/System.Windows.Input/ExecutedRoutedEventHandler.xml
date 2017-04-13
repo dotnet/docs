@@ -1,0 +1,56 @@
+<Type Name="ExecutedRoutedEventHandler" FullName="System.Windows.Input.ExecutedRoutedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ExecutedRoutedEventHandler(object sender, ExecutedRoutedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutedRoutedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.ExecutedRoutedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Input.CommandBinding.Executed" /> and <see cref="E:System.Windows.Input.CommandBinding.PreviewExecuted" /> routed events, as well as related attached events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate contains the implementation logic for a <xref:System.Windows.Input.RoutedCommand>.  Separating the implementation logic from the command allows the command to be invoked from different sources and types, and enables the centralization of command logic.  
+  
+ This delegate is also used for <xref:System.Windows.Input.CommandManager.Executed?displayProperty=fullName> and <xref:System.Windows.Input.CommandManager.PreviewExecuted?displayProperty=fullName>, which are attached events on the <xref:System.Windows.Input.CommandManager> class that implements much of the commanding infrastructure. But most practical handlers will handle the <xref:System.Windows.Input.CommandBinding.Executed> events from a particular <xref:System.Windows.Input.CommandBinding>, rather than work at the <xref:System.Windows.Input.CommandManager> level.  
+  
+ Within <xref:System.Windows.Input.ExecutedRoutedEventArgs>, the following properties are generally of interest when you write an event handler for a routed event that results from an executed command:  
+  
+-   <xref:System.Windows.RoutedEventArgs.Source%2A> reports the target where the command was executed. Once the command is executed, you can also think of the <xref:System.Windows.RoutedEventArgs.Source%2A> more generally in routed event terms, as the object that raised a routed event.  
+  
+-   <xref:System.Windows.Input.ExecutedRoutedEventArgs.Command%2A> reports the command that executed. This property is useful if you use command bindings and if you write handlers that potentially handle multiple commands.  
+  
+-   <xref:System.Windows.Input.ExecutedRoutedEventArgs.Parameter%2A> reports any command-specific parameters that were passed by the executing command. Not all commands use or expect command-specific parameters.  
+  
+-   <xref:System.Windows.RoutedEventArgs.Handled%2A> reports whether the routed event that resulted from the executed command was already handled by a different element along the route. For routed event handlers, it is a recommended practice to have handlers that do meaningful work when handling the event to set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. This prevents typical handlers for the event from handling the event again further along the route. For more information on handling routed events, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+ This delegate also represents handlers for <xref:System.Windows.Input.CommandManager.Executed?displayProperty=fullName> and <xref:System.Windows.Input.CommandManager.PreviewExecutedEvent?displayProperty=fullName>, which are attached events on the <xref:System.Windows.Input.CommandManager> class that implements much of the commanding infrastructure. But most practical handlers will handle the <xref:System.Windows.Input.CommandBinding.Executed> events from a particular <xref:System.Windows.Input.CommandBinding>, rather than work at the <xref:System.Windows.Input.CommandManager> level.  
+  
+ For more information on commanding, see [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+  
+   
+  
+## Examples  
+ This example creates an <xref:System.Windows.Input.ExecutedRoutedEventHandler> that sets a visual property on the target when the command is executed. The example also includes the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> for the same command.  
+  
+ [!code-csharp[Custom_RoutedCommand#Custom_RoutedCommandHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/Custom_RoutedCommand/CSharp/Window1.xaml.cs#custom_routedcommandhandlers)]
+ [!code-vb[Custom_RoutedCommand#Custom_RoutedCommandHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Custom_RoutedCommand/visualbasic/window1.xaml.vb#custom_routedcommandhandlers)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

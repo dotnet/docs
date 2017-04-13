@@ -34,8 +34,8 @@ helpviewer_keywords:
   - "Object data type, declaring constants"
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

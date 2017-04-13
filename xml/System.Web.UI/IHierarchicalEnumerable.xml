@@ -1,0 +1,74 @@
+<Type Name="IHierarchicalEnumerable" FullName="System.Web.UI.IHierarchicalEnumerable">
+  <TypeSignature Language="C#" Value="public interface IHierarchicalEnumerable : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalEnumerable implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a hierarchical collection that can be enumerated with an <see cref="T:System.Collections.IEnumerator" /> interface. Collections that implement the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> interface are used by ASP.NET site navigation and data source controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchicalEnumerable> interface extends the <xref:System.Collections.IEnumerable> interface and exposes <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A>, which is a method used to retrieve an <xref:System.Web.UI.IHierarchyData> object from an enumerated item, in addition to the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
+  
+ Typically, clients that use <xref:System.Web.UI.IHierarchicalEnumerable> collections retrieve an <xref:System.Collections.IEnumerator> object by calling the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method, then iterate through the enumeration and call the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> on each enumerated item to retrieve an <xref:System.Web.UI.IHierarchyData> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.UI.IHierarchicalEnumerable> interface with a class that extends <xref:System.Collections.ArrayList> and provides a collection of <xref:System.Web.UI.IHierarchyData> objects that wrap <xref:System.IO.FileSystemInfo> objects. The <xref:System.Web.UI.IHierarchicalEnumerable> collection is used by classes that derive from <xref:System.Web.UI.HierarchicalDataSourceView> to return a collection of hierarchical nodes when the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A> method is called. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#4)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHierarchyData">
+      <MemberSignature Language="C#" Value="public System.Web.UI.IHierarchyData GetHierarchyData (object enumeratedItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchyData GetHierarchyData(object enumeratedItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchyData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumeratedItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="enumeratedItem">The <see cref="T:System.Object" /> for which to return an <see cref="T:System.Web.UI.IHierarchyData" />.</param>
+        <summary>Returns a hierarchical data item for the specified enumerated item.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchyData" /> instance that represents the <see cref="T:System.Object" /> passed to the <see cref="M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)" /> method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, clients that use <xref:System.Web.UI.IHierarchicalEnumerable> collections retrieve an <xref:System.Collections.IEnumerator> object by calling the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method, then iterate through the enumeration and call the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> method on each enumerated item to retrieve an <xref:System.Web.UI.IHierarchyData> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how an ASP.NET hierarchical data-bound control uses an <xref:System.Web.UI.IHierarchyData> object in a recursive data-binding method. The items in an <xref:System.Web.UI.IHierarchicalEnumerable> object are enumerated, and for each an <xref:System.Web.UI.IHierarchyData> object is retrieved using the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> method. Finally, the <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property is checked to determine whether recursion is necessary. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.GeneologyTree#5](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/geneologytree.cs#5)]
+ [!code-vb[Samples.AspNet.GeneologyTree#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/geneologytree.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

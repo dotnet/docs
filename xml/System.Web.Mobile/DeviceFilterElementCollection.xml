@@ -1,0 +1,339 @@
+<Type Name="DeviceFilterElementCollection" FullName="System.Web.Mobile.DeviceFilterElementCollection">
+  <TypeSignature Language="C#" Value="public sealed class DeviceFilterElementCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFilterElementCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFilterElementCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Mobile.DeviceFilterElement), AddItemName="filter", CollectionType=System.Configuration.ConfigurationElementCollectionType.BasicMap)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.Mobile.DeviceFilterElement" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeviceFilterElementCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElementCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Mobile.DeviceFilterElement deviceFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Mobile.DeviceFilterElement deviceFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Add(System.Web.Mobile.DeviceFilterElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceFilter" Type="System.Web.Mobile.DeviceFilterElement" />
+      </Parameters>
+      <Docs>
+        <param name="deviceFilter">The object to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Mobile.DeviceFilterElement" /> object to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllKeys">
+      <MemberSignature Language="C#" Value="public object[] AllKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] AllKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.AllKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection containing the keys of each item in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A collection containing the keys of each item in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionType">
+      <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.CollectionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration collection type of this <see cref="T:System.Web.Mobile.DeviceFilterElementCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A value from the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration representing the type of the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementName">
+      <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.ElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Mobile.DeviceFilterElement this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.DeviceFilterElement Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mobile.DeviceFilterElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to get or set the item.</param>
+        <summary>Gets or sets the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The item at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set an item at an index where an item already exists, the existing item is removed and the new item is then assigned to its index position in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Mobile.DeviceFilterElement this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.DeviceFilterElement Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mobile.DeviceFilterElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The string that identifies the item.</param>
+        <summary>Gets the specified item from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The specified item in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property, which can both set and get an item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The key that identifies the item to be removed.</param>
+        <summary>Removes the object with the specified key from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Mobile.DeviceFilterElement deviceFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Mobile.DeviceFilterElement deviceFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Remove(System.Web.Mobile.DeviceFilterElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceFilter" Type="System.Web.Mobile.DeviceFilterElement" />
+      </Parameters>
+      <Docs>
+        <param name="deviceFilter">The item to remove from the collection.</param>
+        <summary>Removes the specified item from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=fullName> method with the key as the argument.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item to be removed.</param>
+        <summary>Removes an item from the collection at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an item in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property takes either a 32-bit signed integer or a string as an argument. When specifying the item by string, only the `get` accessor is available. However, when specifying the item by integer, both the `get` and `set` accessors are available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

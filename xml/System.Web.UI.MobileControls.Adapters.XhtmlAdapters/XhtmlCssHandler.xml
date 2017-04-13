@@ -1,0 +1,109 @@
+<Type Name="XhtmlCssHandler" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler">
+  <TypeSignature Language="C#" Value="public class XhtmlCssHandler : System.Web.IHttpHandler, System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XhtmlCssHandler extends System.Object implements class System.Web.IHttpHandler, class System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.SessionState.IRequiresSessionState</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Handles requests for cascading style sheet (CSS) style information for adapters in the <see cref="N:System.Web.UI.MobileControls.Adapters.XhtmlAdapters" /> namespace. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For your Web site to take advantage of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler> class, you must add an <xref:System.Web.Configuration.SystemWebSectionGroup.HttpHandlers%2A> property section to the Web.config file, as shown in the following code example:  
+  
+```  
+<httpHandlers>  
+    <add verb="*" path="*/xhtmlCss.axd"   
+type =   
+  "System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler,   
+    System.Web.UI.MobileControls.Adapters,Version=1.0.0.0,   
+    PublicKeyToken=b03f5f7f11d50a3a,Culture=neutral" />  
+</httpHandlers>  
+```  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XhtmlCssHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReusable">
+      <MemberSignature Language="C#" Value="public bool IsReusable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler.IsReusable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating that another request can use the current instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public void ProcessRequest (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" />.</param>
+        <summary>Processes all HTTP requests for CSS style information for the XHTML adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.HttpRequest.QueryString" /> does not contain <c>"_css"</c>.  
+  
+ -or-  
+  
+ The CSS style sheet named in the <see cref="P:System.Web.HttpRequest.QueryString" /> cannot be found.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

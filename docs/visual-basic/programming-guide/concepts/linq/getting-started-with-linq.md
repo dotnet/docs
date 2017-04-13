@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LINQ, Visual Basic"
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

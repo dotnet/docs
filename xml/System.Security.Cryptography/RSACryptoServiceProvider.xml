@@ -1,0 +1,1606 @@
+<Type Name="RSACryptoServiceProvider" FullName="System.Security.Cryptography.RSACryptoServiceProvider">
+  <TypeSignature Language="C#" Value="public sealed class RSACryptoServiceProvider : System.Security.Cryptography.RSA, System.Security.Cryptography.ICspAsymmetricAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RSACryptoServiceProvider extends System.Security.Cryptography.RSA implements class System.Security.Cryptography.ICspAsymmetricAlgorithm" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSACryptoServiceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.RSA</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Cryptography.ICspAsymmetricAlgorithm</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Performs asymmetric encryption and decryption using the implementation of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm provided by the cryptographic service provider (CSP). This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default implementation of <xref:System.Security.Cryptography.RSA>.  
+  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider> supports key sizes from 384 bits to 16384 bits in increments of 8 bits if you have the Microsoft Enhanced Cryptographic Provider installed.  It supports key sizes from 384 bits to 512 bits in increments of 8 bits if you have the Microsoft Base Cryptographic Provider installed.  
+  
+ Valid key sizes are dependent on the cryptographic service provider (CSP) that is used by the <xref:System.Security.Cryptography.RSACryptoServiceProvider> instance. Windows CSPs enable keys sizes of 384 to 16384 bits for Windows versions prior to [!INCLUDE[win81](~/includes/win81-md.md)], and key sizes of 512 to 16384 bits for [!INCLUDE[win81](~/includes/win81-md.md)]. For more information, see [CryptGenKey](http://msdn.microsoft.com/library/aa379941\(v=vs.85\).aspx) function in the Windows documentation.  
+  
+## Interoperation with the Microsoft Cryptographic API (CAPI)  
+ Unlike the RSA implementation in unmanaged CAPI, the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class reverses the order of an encrypted array of bytes after encryption and before decryption.  By default, data encrypted by the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class cannot be decrypted by the CAPI `CryptDecrypt` function and data encrypted by the CAPI `CryptEncrypt` method cannot be decrypted by the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class.  
+  
+ If you do not compensate for the reverse ordering when interoperating between APIs, the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class throws a <xref:System.Security.Cryptography.CryptographicException>.  
+  
+ To interoperate with CAPI, you must manually reverse the order of encrypted bytes before the encrypted data interoperates with another API.  You can easily reverse the order of a managed byte array by calling the <xref:System.Array.Reverse%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class to encrypt a string into an array of bytes and then decrypt the bytes back into a string.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/VB/sample.vb#1)]  
+  
+ The following code example exports the key information created using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> into an <xref:System.Security.Cryptography.RSAParameters> object.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RSACryptoServiceProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> class using the default key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no default key is found, a new key is created.  
+  
+ This constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class to encrypt a string into an array of bytes and then decrypt the bytes back into a string.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RSACryptoServiceProvider (int dwKeySize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwKeySize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dwKeySize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dwKeySize">The size of the key to use in bits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> class with the specified key size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no default key is found, a new key is created.  
+  
+ This constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.RSACryptoServiceProvider>, generates a new key, and stores it in a key container.  
+  
+ [!code-cpp[Cryptography.RSACSP.ctor-int32-2#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-2/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.ctor-int32-2#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-2/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.ctor-int32-2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-2/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RSACryptoServiceProvider (System.Security.Cryptography.CspParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.CspParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Security.Cryptography.CspParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The parameters to be passed to the cryptographic service provider (CSP).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> class with the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters> field of the `parameters` parameter.  
+  
+ By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ You can create a <xref:System.Security.Cryptography.KeyNumber> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
+  
+ If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
+  
+ To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber> key pair.  
+  
+   
+  
+## Examples  
+ The following code example creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object, generates a new key, and stores it in a key container.  
+  
+ [!code-cpp[Cryptography.RSACSP.ctor-csp#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-csp/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.ctor-csp#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-csp/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.ctor-csp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.ctor-csp/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The CSP cannot be acquired.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RSACryptoServiceProvider (int dwKeySize, System.Security.Cryptography.CspParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwKeySize, class System.Security.Cryptography.CspParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32,System.Security.Cryptography.CspParameters)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dwKeySize" Type="System.Int32" />
+        <Parameter Name="parameters" Type="System.Security.Cryptography.CspParameters" />
+      </Parameters>
+      <Docs>
+        <param name="dwKeySize">The size of the key to use in bits.</param>
+        <param name="parameters">The parameters to be passed to the cryptographic service provider (CSP).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> class with the specified key size and parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters> field of the `parameters` parameter.  
+  
+ By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ You can create a <xref:System.Security.Cryptography.KeyNumber> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
+  
+ If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
+  
+ To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber> key pair.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.RSACryptoServiceProvider>, generates a new key, and stores it in a key container.  
+  
+ [!code-cpp[Cryptography.RSACSP.ctor-int32-csp#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-csp/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.ctor-int32-csp#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-csp/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.ctor-int32-csp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.ctor-int32-csp/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The CSP cannot be acquired.  
+  
+ -or-  
+  
+ The key cannot be created.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CspKeyContainerInfo">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CspKeyContainerInfo CspKeyContainerInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CspKeyContainerInfo CspKeyContainerInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CspKeyContainerInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Security.Cryptography.CspKeyContainerInfo" /> object that describes additional information about a cryptographic key pair.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.CspKeyContainerInfo" /> object that describes additional information about a cryptographic key pair.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo%2A> property to retrieve additional information about a cryptographic key pair.  The returned <xref:System.Security.Cryptography.CspKeyContainerInfo> object describes whether the key is exportable, and specifies the key container name, information about the provider, and other information.  
+  
+ In cases where a random key is generated, a key container will not be created until you call a method that uses the key.  Some properties of the <xref:System.Security.Cryptography.CspKeyContainerInfo> object returned by the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property will throw a <xref:System.Security.Cryptography.CryptographicException> if a key container has not been created.  To make sure that a key container has been created, call a method such as <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt%2A>, <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt%2A>, <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>, and so on, before you call the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CspKeyContainerInfo> property.  
+  
+ [!code-cpp[Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo/CPP/sample.cpp#1)]
+ [!code-csharp[Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo/CS/sample.cs#1)]
+ [!code-vb[Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RsaCryptoServiceProvider.CspKeyContainerInfo/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public byte[] Decrypt (byte[] rgb, bool fOAEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Decrypt(unsigned int8[] rgb, bool fOAEP) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgb" Type="System.Byte[]" />
+        <Parameter Name="fOAEP" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="rgb">The data to be decrypted.</param>
+        <param name="fOAEP">
+          <see langword="true" /> to perform direct <see cref="T:System.Security.Cryptography.RSA" /> decryption using OAEP padding (only available on a computer running Microsoft Windows XP or later); otherwise, <see langword="false" /> to use PKCS#1 v1.5 padding.</param>
+        <summary>Decrypts data with the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
+        <returns>The decrypted data, which is the original plain text before encryption.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt%2A> to encrypt data for decryption with this method.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and decrypts data.  
+  
+ This example uses the <xref:System.Text.ASCIIEncoding> class; however, the <xref:System.Text.UnicodeEncoding> class may be preferable in large data operations. The encrypted value can be saved as an `nvarchar` data type in Microsoft SQL Server 2005.  
+  
+ [!code-cpp[Cryptography.RSACSP.Decrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.Decrypt/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.Decrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.Decrypt/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.Decrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.Decrypt/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The <paramref name="fOAEP" /> parameter is <see langword="true" /> and the length of the <paramref name="rgb" /> parameter is greater than <see cref="P:System.Security.Cryptography.RSACryptoServiceProvider.KeySize" />.  
+  
+ -or-  
+  
+ The <paramref name="fOAEP" /> parameter is <see langword="true" /> and OAEP is not supported.  
+  
+ -or-  
+  
+ The key does not match the encrypted data. However, the exception wording may not be accurate. For example, it may say <c>Not enough storage is available to process this command</c>.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgb " />is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to decrypt. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override byte[] Decrypt (byte[] data, System.Security.Cryptography.RSAEncryptionPadding padding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Decrypt(unsigned int8[] data, class System.Security.Cryptography.RSAEncryptionPadding padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSAEncryptionPadding" />
+      </Parameters>
+      <Docs>
+        <param name="data">The data to decrypt.</param>
+        <param name="padding">The padding.</param>
+        <summary>Decrypts data that was previously encrypted with the <see cref="T:System.Security.Cryptography.RSA" /> algorithm by using the specified padding.</summary>
+        <returns>The decrypted data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `padding` must be either <xref:System.Security.Cryptography.RSAEncryptionPadding.Pkcs1%2A?displayProperty=fullName> or <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="padding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The padding mode is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DecryptValue">
+      <MemberSignature Language="C#" Value="public override byte[] DecryptValue (byte[] rgb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DecryptValue(unsigned int8[] rgb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgb" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgb">The data to be decrypted.</param>
+        <summary>This method is not supported in the current version.</summary>
+        <returns>The decrypted data, which is the original plain text before encryption.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This method is not supported in the current version.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public byte[] Encrypt (byte[] rgb, bool fOAEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encrypt(unsigned int8[] rgb, bool fOAEP) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgb" Type="System.Byte[]" />
+        <Parameter Name="fOAEP" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="rgb">The data to be encrypted.</param>
+        <param name="fOAEP">
+          <see langword="true" /> to perform direct <see cref="T:System.Security.Cryptography.RSA" /> encryption using OAEP padding (only available on a computer running Windows XP or later); otherwise, <see langword="false" /> to use PKCS#1 v1.5 padding.</param>
+        <summary>Encrypts data with the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
+        <returns>The encrypted data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes the padding supported by different versions of Microsoft Windows and the maximum length of `rgb` allowed by the different combinations of operating systems and padding.  
+  
+|Padding|Operating System Supported|Maximum Length of rgb Parameter|  
+|-------------|--------------------------------|-------------------------------------|  
+|OAEP padding (PKCS#1 v2)|Windows XP or later.|Modulus size -2 -2*hLen, where hLen is the size of the hash.|  
+|Direct Encryption (PKCS#1 v1.5)|Microsoft Windows 2000 or later with the high encryption pack installed.|Modulus size - 11. (11 bytes is the minimum padding possible.)|  
+|Direct Encryption and OAEP padding not supported|Microsoft Windows 98, Windows Millennium Edition, or Windows 2000 or later without the high encryption pack installed.|The maximum size allowed for a symmetric key.|  
+  
+ Use <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt%2A> to decrypt the results of this method.  
+  
+   
+  
+## Examples  
+ The following code example initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to the value of a public key (sent by another party), generates a session key using the <xref:System.Security.Cryptography.RijndaelManaged> algorithm, and then encrypts the session key using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> object.  Using this scheme, the session key could be sent back to the owner of the private RSA key and the two parties could use the session key to exchange encrypted data.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider.Encrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.Encrypt/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider.Encrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.Encrypt/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider.Encrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.Encrypt/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The length of the <paramref name="rgb" /> parameter is greater than the maximum allowed length.  
+  
+ -or-  
+  
+ The <paramref name="fOAEP" /> parameter is <see langword="true" /> and OAEP padding is not supported.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgb " />is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override byte[] Encrypt (byte[] data, System.Security.Cryptography.RSAEncryptionPadding padding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Encrypt(unsigned int8[] data, class System.Security.Cryptography.RSAEncryptionPadding padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSAEncryptionPadding" />
+      </Parameters>
+      <Docs>
+        <param name="data">The data to encrypt.</param>
+        <param name="padding">The padding.</param>
+        <summary>Encrypts data with the <see cref="T:System.Security.Cryptography.RSA" /> algorithm using the specified padding.</summary>
+        <returns>The encrypted data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `padding` must be either <xref:System.Security.Cryptography.RSAEncryptionPadding.Pkcs1%2A?displayProperty=fullName> or <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="padding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The padding mode is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptValue">
+      <MemberSignature Language="C#" Value="public override byte[] EncryptValue (byte[] rgb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] EncryptValue(unsigned int8[] rgb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgb" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgb">The data to be encrypted.</param>
+        <summary>This method is not supported in the current version.</summary>
+        <returns>The encrypted data.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This method is not supported in the current version.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportCspBlob">
+      <MemberSignature Language="C#" Value="public byte[] ExportCspBlob (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] ExportCspBlob(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include the private key; otherwise, <see langword="false" />.</param>
+        <summary>Exports a blob containing the key information associated with an <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> object.</summary>
+        <returns>A byte array containing the key information associated with an <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob%2A> method returns a blob containing key information that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when exporting a private key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Export" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportParameters">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.RSAParameters ExportParameters (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Security.Cryptography.RSAParameters ExportParameters(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.RSAParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
+        <returns>The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example exports the key information created using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> into an <xref:System.Security.Cryptography.RSAParameters> object.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ExportParameters/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key cannot be exported.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to export a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Export" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~RSACryptoServiceProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashData">
+      <MemberSignature Language="C#" Value="protected override byte[] HashData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.IO.Stream" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashData">
+      <MemberSignature Language="C#" Value="protected override byte[] HashData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportCspBlob">
+      <MemberSignature Language="C#" Value="public void ImportCspBlob (byte[] keyBlob);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImportCspBlob(unsigned int8[] keyBlob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyBlob" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="keyBlob">A byte array that represents an RSA key blob.</param>
+        <summary>Imports a blob that represents RSA key information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob%2A> method initializes the key data of an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using a blob that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when importing a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Import" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportParameters">
+      <MemberSignature Language="C#" Value="public override void ImportParameters (System.Security.Cryptography.RSAParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ImportParameters(valuetype System.Security.Cryptography.RSAParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Security.Cryptography.RSAParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</param>
+        <summary>Imports the specified <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example imports key information created from an <xref:System.Security.Cryptography.RSAParameters> object into an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ImportParameters/CPP/sample.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ImportParameters/CS/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSACryptoServiceProvider.ImportParameters/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The <paramref name="parameters" /> parameter has missing fields.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to import a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Import" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyExchangeAlgorithm">
+      <MemberSignature Language="C#" Value="public override string KeyExchangeAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyExchangeAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.KeyExchangeAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the key exchange algorithm available with this implementation of <see cref="T:System.Security.Cryptography.RSA" />.</summary>
+        <value>The name of the key exchange algorithm if it exists; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates the name of the algorithm, not of the type. For example, RSA-PKCS1-KeyEx is a key exchange algorithm name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySize">
+      <MemberSignature Language="C#" Value="public override int KeySize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.KeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the current key.</summary>
+        <value>The size of the key in bits.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider> supports key sizes from 384 bits to 16384 bits in increments of 8 bits if you have the Microsoft Enhanced Cryptographic Provider installed.  It supports key sizes from 384 bits to 512 bits in increments of 8 bits if you have the Microsoft Base Cryptographic Provider installed.  
+  
+ Valid key sizes are dependent on the cryptographic service provider (CSP) that is used by the <xref:System.Security.Cryptography.RSACryptoServiceProvider> instance. Windows CSPs enable key sizes of 384 to 16384 bits for Windows versions prior to [!INCLUDE[win81](~/includes/win81-md.md)], and key sizes of 512 to 16384 bits for [!INCLUDE[win81](~/includes/win81-md.md)]. For more information, see [CryptGenKey](http://msdn.microsoft.com/library/aa379941\(v=vs.85\).aspx) function in the Windows documentation.  
+  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider> class does not allow you to change key sizes using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.KeySize%2A> property.  Any value written to this property will fail to update the property without error.  To change the key size, use one of the constructor overloads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizes">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistKeyInCsp">
+      <MemberSignature Language="C#" Value="public bool PersistKeyInCsp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PersistKeyInCsp" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the key should be persisted in the cryptographic service provider (CSP).</summary>
+        <value>
+          <see langword="true" /> if the key should be persisted in the CSP; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to persist a key in a key container.  
+  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp%2A> property is automatically set to `true` when you specify a key container name in the <xref:System.Security.Cryptography.CspParameters.KeyContainerName> field of a <xref:System.Security.Cryptography.CspParameters> object and use it to initialize an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object by calling one of the constructors with a `parameters` parameter.  
+  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp%2A> property has no effect if the <xref:System.Security.Cryptography.RSACryptoServiceProvider> object is created with a `null` key container name.  
+  
+   
+  
+## Examples  
+ The following code example creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object and persists the key to a key container.  
+  
+ [!code-cpp[Cryptography.RSACSP.PersistKey#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.PersistKey/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.PersistKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.PersistKey/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.PersistKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.PersistKey/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to delete a key. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Delete" />  
+  
+ -or-  
+  
+ for permission to create a key. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Create" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicOnly">
+      <MemberSignature Language="C#" Value="public bool PublicOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PublicOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> object contains only a public key.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> object contains only a public key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider> class can be initialized either with a public key only or with both a public and private key.  Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly%2A> property to determine whether the current instance contains only a public key or both a public and private key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureAlgorithm">
+      <MemberSignature Language="C#" Value="public override string SignatureAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignatureAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.SignatureAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the signature algorithm available with this implementation of <see cref="T:System.Security.Cryptography.RSA" />.</summary>
+        <value>The name of the signature algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used in XML digital signature classes to indicate the algorithm URI. In this implementation, this property always returns http://www.w3.org/2000/09/xmldsig#rsa-sha1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignData">
+      <MemberSignature Language="C#" Value="public byte[] SignData (byte[] buffer, object halg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] SignData(unsigned int8[] buffer, object halg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="halg" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The input data for which to compute the hash.</param>
+        <param name="halg">The hash algorithm to use to create the hash value.</param>
+        <summary>Computes the hash value of the specified byte array using the specified hash algorithm, and signs the resulting hash value.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.RSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData%2A> method.  
+  
+ The `halg` parameter can accept a <xref:System.String>, a <xref:System.Security.Cryptography.HashAlgorithm>, or a <xref:System.Type>.  
+  
+   
+  
+## Examples  
+ The following code example signs and verifies data.  
+  
+ [!code-cpp[Cryptography.RSACSP.SignData2#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.SignData2/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.SignData2#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.SignData2/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.SignData2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.SignData2/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="halg" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="halg" /> parameter is not a valid type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SignData">
+      <MemberSignature Language="C#" Value="public byte[] SignData (System.IO.Stream inputStream, object halg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] SignData(class System.IO.Stream inputStream, object halg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="halg" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="inputStream">The input data for which to compute the hash.</param>
+        <param name="halg">The hash algorithm to use to create the hash value.</param>
+        <summary>Computes the hash value of the specified input stream using the specified hash algorithm, and signs the resulting hash value.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.RSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `halg` parameter can accept a <xref:System.String>, a <xref:System.Security.Cryptography.HashAlgorithm>, or a <xref:System.Type>.  
+  
+   
+  
+## Examples  
+ The following code example signs and verifies data.  
+  
+ [!code-cpp[Cryptography.RSACSP.SignData3#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.SignData3/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.SignData3#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.SignData3/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.SignData3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.SignData3/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="halg" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="halg" /> parameter is not a valid type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SignData">
+      <MemberSignature Language="C#" Value="public byte[] SignData (byte[] buffer, int offset, int count, object halg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] SignData(unsigned int8[] buffer, int32 offset, int32 count, object halg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Int32,System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="halg" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The input data for which to compute the hash.</param>
+        <param name="offset">The offset into the array from which to begin using data.</param>
+        <param name="count">The number of bytes in the array to use as data.</param>
+        <param name="halg">The hash algorithm to use to create the hash value.</param>
+        <summary>Computes the hash value of a subset of the specified byte array using the specified hash algorithm, and signs the resulting hash value.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.RSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData%2A> method.  
+  
+ The `halg` parameter can accept a <xref:System.String>, a <xref:System.Security.Cryptography.HashAlgorithm>, or a <xref:System.Type>. The string value can be one of the following:  
+  
+-   The object identifier (OID) friendly name of the hash algorithm to use, either a name registered in the crypto config file or one in the Crypto API OID table.  
+  
+-   The OID value. The OID must be one recognized by the Crypto API.  
+  
+ For example, you could use SignData(new byte[5], "1.3.14.3.2.26") or SignData(new byte[5], "sha1"), or SignData(new byte[5], "SHA1").  
+  
+   
+  
+## Examples  
+ The following code example signs and verifies data.  
+  
+ [!code-cpp[Cryptography.RSACSP.SignData1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.SignData1/CPP/example.cpp#1)]
+ [!code-csharp[Cryptography.RSACSP.SignData1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.SignData1/CS/example.cs#1)]
+ [!code-vb[Cryptography.RSACSP.SignData1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.SignData1/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="halg" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="halg" /> parameter is not a valid type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SignHash">
+      <MemberSignature Language="C#" Value="public byte[] SignHash (byte[] rgbHash, string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] SignHash(unsigned int8[] rgbHash, string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbHash" Type="System.Byte[]" />
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rgbHash">The hash value of the data to be signed.</param>
+        <param name="str">The hash algorithm identifier (OID) used to create the hash value of the data.</param>
+        <summary>Computes the signature for the specified hash value by encrypting it with the private key.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.RSA" /> signature for the specified hash value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash%2A> method.  
+  
+ The valid hash algorithms are <xref:System.Security.Cryptography.SHA1> and <xref:System.Security.Cryptography.MD5>. The algorithm identifier can be derived from the hash name by using the <xref:System.Security.Cryptography.CryptoConfig.MapNameToOID%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example encrypts some data, creates a hash of the encrypted data, and then signs hash with a digital signature.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ There is no private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to sign a file using the key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SignHash">
+      <MemberSignature Language="C#" Value="public override byte[] SignHash (byte[] hash, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.RSASignaturePadding padding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] SignHash(unsigned int8[] hash, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.RSASignaturePadding padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.Byte[]" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSASignaturePadding" />
+      </Parameters>
+      <Docs>
+        <param name="hash">The hash value of the data to be signed.</param>
+        <param name="hashAlgorithm">The hash algorithm name used to create the hash value of the data.</param>
+        <param name="padding">The padding.</param>
+        <summary>Computes the signature for the specified hash value by encrypting it with the private key using the specified padding.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.RSA" /> signature for the specified hash value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hashAlgorithm" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hash" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="padding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="padding" /> does not equal <see cref="P:System.Security.Cryptography.RSASignaturePadding.Pkcs1" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseMachineKeyStore">
+      <MemberSignature Language="C#" Value="public static bool UseMachineKeyStore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool UseMachineKeyStore" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the key should be persisted in the computer's key store instead of the user profile store.</summary>
+        <value>
+          <see langword="true" /> if the key should be persisted in the computer key store; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true` is equivalent to passing the <xref:System.Security.Cryptography.CspProviderFlags> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, whereas the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded. Setting <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> affects the key store location only if <xref:System.Security.Cryptography.RSACryptoServiceProvider> is initialized with no parameters.  
+  
+   
+  
+## Examples  
+ The following code example creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object and sets the static <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> property to use the machine key store instead of the user profile key store.  
+  
+ [!code-cpp[Cryptography.RSACSP.UseMachineKey#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RSACSP.UseMachineKey/CPP/example2.cpp#2)]
+ [!code-csharp[Cryptography.RSACSP.UseMachineKey#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RSACSP.UseMachineKey/CS/example2.cs#2)]
+ [!code-vb[Cryptography.RSACSP.UseMachineKey#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RSACSP.UseMachineKey/VB/example2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyData">
+      <MemberSignature Language="C#" Value="public bool VerifyData (byte[] buffer, object halg, byte[] signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyData(unsigned int8[] buffer, object halg, unsigned int8[] signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[],System.Object,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="halg" Type="System.Object" />
+        <Parameter Name="signature" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The data that was signed.</param>
+        <param name="halg">The name of the hash algorithm used to create the hash value of the data.</param>
+        <param name="signature">The signature data to be verified.</param>
+        <summary>Verifies that a digital signature is valid by determining the hash value in the signature using the provided public key and comparing it to the hash value of the provided data.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method verifies the <xref:System.Security.Cryptography.RSA> digital signature produced by the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignData%2A> method. The signature is verified by obtaining the hash value from the signature using the public key it was signed with, and comparing that value to the hash value of the provided data.  
+  
+ The `halg` parameter can accept a <xref:System.String>, a <xref:System.Security.Cryptography.HashAlgorithm>, or a <xref:System.Type>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the [VerifyData Method (Byte\<xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CPP/class1.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CS/class1.cs#2)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="halg" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="halg" /> parameter is not a valid type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyHash">
+      <MemberSignature Language="C#" Value="public bool VerifyHash (byte[] rgbHash, string str, byte[] rgbSignature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyHash(unsigned int8[] rgbHash, string str, unsigned int8[] rgbSignature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbHash" Type="System.Byte[]" />
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="rgbSignature" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbHash">The hash value of the signed data.</param>
+        <param name="str">The hash algorithm identifier (OID) used to create the hash value of the data.</param>
+        <param name="rgbSignature">The signature data to be verified.</param>
+        <summary>Verifies that a digital signature is valid by determining the hash value in the signature using the provided public key and comparing it to the provided hash value.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method verifies the <xref:System.Security.Cryptography.RSA> digital signature produced by the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method. The signature is verified by obtaining the hash value from the signature using the public key it was signed with, and comparing that value to the hash value of the provided data.  
+  
+ The valid hash algorithms are <xref:System.Security.Cryptography.SHA1> and <xref:System.Security.Cryptography.MD5>. The algorithm identifier can be derived from the hash name by using the <xref:System.Security.Cryptography.CryptoConfig.MapNameToOID%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the [VerifyHash Method (Byte\<xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
+  
+ [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CPP/class1.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CS/class1.cs#2)]
+ [!code-vb[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="rgbSignature" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The signature cannot be verified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyHash">
+      <MemberSignature Language="C#" Value="public override bool VerifyHash (byte[] hash, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.RSASignaturePadding padding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifyHash(unsigned int8[] hash, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.RSASignaturePadding padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.Byte[]" />
+        <Parameter Name="signature" Type="System.Byte[]" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSASignaturePadding" />
+      </Parameters>
+      <Docs>
+        <param name="hash">The hash value of the signed data.</param>
+        <param name="signature">The signature data to be verified.</param>
+        <param name="hashAlgorithm">The hash algorithm name used to create the hash value.</param>
+        <param name="padding">The padding.</param>
+        <summary>Verifies that a digital signature is valid by determining the hash value in the signature using the specified hashing algorithm and padding, and comparing it to the provided hash value.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hashAlgorithm" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hash" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="padding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="padding" /> does not equal <see cref="P:System.Security.Cryptography.RSASignaturePadding.Pkcs1" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+<Type Name="ServiceModelActivationSectionGroup" FullName="System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class ServiceModelActivationSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceModelActivationSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the configuration section for the SMSvcHost.exe tool. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class encapsulates the various configuration elements for the SMSvcHost.exe tool. Specifically, it represents the configuration elements that can be configured in the SMSvcHost.exe.config file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceModelActivationSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostics">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activation.Configuration.DiagnosticSection Diagnostics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activation.Configuration.DiagnosticSection Diagnostics" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.Diagnostics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activation.Configuration.DiagnosticSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the diagnostics configuration section.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.DiagnosticSection" /> instance that contains the diagnostics configuration section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionGroup">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup GetSectionGroup (System.Configuration.Configuration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup GetSectionGroup(class System.Configuration.Configuration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Configuration.Configuration" />
+      </Parameters>
+      <Docs>
+        <param name="config">A <see cref="T:System.Configuration.Configuration" /> that represents a configuration file.</param>
+        <summary>Gets the <see langword="System.ServiceModel.Activation" /> configuration section group from the specified configuration file.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup" /> that represents the <see langword="System.ServiceModel.Activation" /> settings in the configuration file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to extract the activation configuration settings from a configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetPipe">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activation.Configuration.NetPipeSection NetPipe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activation.Configuration.NetPipeSection NetPipe" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.NetPipe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activation.Configuration.NetPipeSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration settings for the NetPipeActivator sharing service.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.NetPipeSection" /> that contains configuration settings for the NetPipeActivator sharing service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetTcp">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activation.Configuration.NetTcpSection NetTcp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activation.Configuration.NetTcpSection NetTcp" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.NetTcp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activation.Configuration.NetTcpSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration settings for the NetTcpPortSharing sharing service.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.NetTcpSection" /> that contains configuration settings for the NetTcpPortSharing sharing service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,60 @@
+<Type Name="CodePropertySetValueReferenceExpression" FullName="System.CodeDom.CodePropertySetValueReferenceExpression">
+  <TypeSignature Language="C#" Value="public class CodePropertySetValueReferenceExpression : System.CodeDom.CodeExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodePropertySetValueReferenceExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePropertySetValueReferenceExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the value argument of a property set method call within a property set method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodePropertySetValueReferenceExpression> represents the value argument of a property set method call within a property set method declaration.  
+  
+ A property set method typically assigns or uses the value assigned to the property. Within the property set method, this value is represented by an implicit variable represented in CodeDOM by a <xref:System.CodeDom.CodePropertySetValueReferenceExpression>.  
+  
+   
+  
+## Examples  
+ This example demonstrates use of a <xref:System.CodeDom.CodePropertySetValueReferenceExpression> to represent the value argument passed to a property set value statement block.  
+  
+ [!code-cpp[CodePropertySetValueExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodePropertySetValueExample/CPP/codepropertysetvalueexample.cpp#2)]
+ [!code-csharp[CodePropertySetValueExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodePropertySetValueExample/CS/codepropertysetvalueexample.cs#2)]
+ [!code-vb[CodePropertySetValueExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodePropertySetValueExample/VB/codepropertysetvalueexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodePropertySetValueReferenceExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePropertySetValueReferenceExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePropertySetValueReferenceExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

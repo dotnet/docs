@@ -1,0 +1,100 @@
+<Type Name="DebugDirectoryBuilder" FullName="System.Reflection.PortableExecutable.DebugDirectoryBuilder">
+  <TypeSignature Language="C#" Value="public sealed class DebugDirectoryBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebugDirectoryBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.DebugDirectoryBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DebugDirectoryBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCodeViewEntry">
+      <MemberSignature Language="C#" Value="public void AddCodeViewEntry (string pdbPath, System.Reflection.Metadata.BlobContentId pdbContentId, ushort portablePdbVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCodeViewEntry(string pdbPath, valuetype System.Reflection.Metadata.BlobContentId pdbContentId, unsigned int16 portablePdbVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddCodeViewEntry(System.String,System.Reflection.Metadata.BlobContentId,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdbPath" Type="System.String" />
+        <Parameter Name="pdbContentId" Type="System.Reflection.Metadata.BlobContentId" />
+        <Parameter Name="portablePdbVersion" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="pdbPath">To be added.</param>
+        <param name="pdbContentId">To be added.</param>
+        <param name="portablePdbVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEmbeddedPortablePdbEntry">
+      <MemberSignature Language="C#" Value="public void AddEmbeddedPortablePdbEntry (System.Reflection.Metadata.BlobBuilder debugMetadata, ushort portablePdbVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEmbeddedPortablePdbEntry(class System.Reflection.Metadata.BlobBuilder debugMetadata, unsigned int16 portablePdbVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddEmbeddedPortablePdbEntry(System.Reflection.Metadata.BlobBuilder,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="debugMetadata" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="portablePdbVersion" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="debugMetadata">To be added.</param>
+        <param name="portablePdbVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddReproducibleEntry">
+      <MemberSignature Language="C#" Value="public void AddReproducibleEntry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReproducibleEntry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddReproducibleEntry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -2,8 +2,8 @@
 title: Publishing your Hello World application with Visual Studio 2017
 description: Publishing Your Hello World Application with Visual Studio 2017
 keywords: .NET, .NET Core, .NET Core console application, publishing (.NET Core), deployment (.NET Core)
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core

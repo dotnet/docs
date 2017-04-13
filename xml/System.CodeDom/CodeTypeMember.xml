@@ -1,0 +1,211 @@
+<Type Name="CodeTypeMember" FullName="System.CodeDom.CodeTypeMember">
+  <TypeSignature Language="C#" Value="public class CodeTypeMember : System.CodeDom.CodeObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeMember extends System.CodeDom.CodeObject" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeMember" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base class for a member of a type. Type members include fields, methods, properties, constructors and nested types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeTypeMember> class can be used to represent the declaration for a member of a type. <xref:System.CodeDom.CodeTypeMember> is a base class from which more specific types of members are derived, such as <xref:System.CodeDom.CodeMemberField> and <xref:System.CodeDom.CodeMemberMethod>. This class contains properties and methods common to all type members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeMember ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMember.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMember" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.CodeDom.MemberAttributes Attributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.MemberAttributes Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the attributes of the member.</summary>
+        <value>A bitwise combination of the <see cref="T:System.CodeDom.MemberAttributes" /> values used to indicate the attributes of the member. The default value is <see cref="F:System.CodeDom.MemberAttributes.Private" /> | <see cref="F:System.CodeDom.MemberAttributes.Final" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to specify the attributes of the type member.  
+  
+ Member attributes are classified in groups, with a mask for each group. The access group consists of flags containing the terms `Public`, `Private`, `Family`, or `Assembly`.  The scope group includes flags for <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, and <xref:System.CodeDom.MemberAttributes>. The <xref:System.CodeDom.MemberAttributes> mask identifies the access attributes. The <xref:System.CodeDom.MemberAttributes> mask identifies the scope attributes. The default value for the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property includes flags from both access and scope. To change either access or scope, first mask out the existing flags and then set the new value. For example, the code statement to identify a constructor (named `constructor1`) as public is `constructor1.Attributes = (constructor1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comments">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCommentStatementCollection Comments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeCommentStatementCollection Comments" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.Comments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCommentStatementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of comments for the type member.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeCommentStatementCollection" /> that indicates the comments for the member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comments in this collection are written to the generated source file just before the declaration of the member.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributes">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.CustomAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeAttributeDeclarationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom attributes of the member.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the custom attributes of the member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to add metadata attributes to the declaration of the member.  
+  
+> [!CAUTION]
+>  This property is `null` by default and should be checked for content before being referenced.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndDirectives">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeDirectiveCollection EndDirectives { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeDirectiveCollection EndDirectives" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.EndDirectives" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeDirectiveCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end directives for the member.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object containing end directives.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePragma">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeLinePragma LinePragma { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeLinePragma LinePragma" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.LinePragma" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeLinePragma</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line on which the type member statement occurs.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> object that indicates the location of the type member declaration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates the location of the type member declaration. This property can be used for error reporting and debugging. The location of the type member declaration can be useful when code is generated based on a template file.  
+  
+> [!CAUTION]
+>  This value is `null` by default and should be checked for content before being referenced.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the member.</summary>
+        <value>The name of the member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDirectives">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeDirectiveCollection StartDirectives { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeDirectiveCollection StartDirectives" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMember.StartDirectives" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeDirectiveCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the start directives for the member.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object containing start directives.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

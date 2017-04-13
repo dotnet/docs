@@ -1,0 +1,36 @@
+<Type Name="RequestBringIntoViewEventHandler" FullName="System.Windows.RequestBringIntoViewEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void RequestBringIntoViewEventHandler(object sender, RequestBringIntoViewEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestBringIntoViewEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RequestBringIntoViewEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.RequestBringIntoViewEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> routed event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handling this event is typically only done within elements that support a scrollable region, or otherwise deliberately set their rendering size smaller than the combined desired size of their child element content, and is only done by deliberately handling the event once it has routed upwards in the element tree and has reached the first parent that offers scrolling region support. An existing implementation that handles scrolling regions in a manner that is typically desirable for user controls is <xref:System.Windows.Controls.ScrollViewer>. If you derive from <xref:System.Windows.Controls.ScrollViewer>, you can register a class handler for <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> and supplement the base class handling of the event. You should also consider using or class-handling the class-defined <xref:System.Windows.Controls.ScrollViewer.ScrollChanged> event instead of <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName>. Alternatively, if you create an entirely custom class that does not derive from <xref:System.Windows.Controls.ScrollViewer>, you can still add class handling by calling <xref:System.Windows.EventManager.RegisterClassHandler%2A?displayProperty=fullName> in your class instantiation.  For details on class handling, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+ Content elements can cause the event to be raised by their content hosts (through calling <xref:System.Windows.FrameworkContentElement.BringIntoView%2A> and raising <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> from the content host). Similarly, you can request logical tree elements to be brought into view with the helper method <xref:System.Windows.LogicalTreeHelper.BringIntoView%2A?displayProperty=fullName>.  
+  
+ A <xref:System.Windows.Controls.ListBox> implements a related but different method <xref:System.Windows.Controls.ListBox.ScrollIntoView%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

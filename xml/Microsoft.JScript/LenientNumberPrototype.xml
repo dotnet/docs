@@ -1,0 +1,138 @@
+<Type Name="LenientNumberPrototype" FullName="Microsoft.JScript.LenientNumberPrototype">
+  <TypeSignature Language="C#" Value="public sealed class LenientNumberPrototype : Microsoft.JScript.NumberPrototype" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientNumberPrototype extends Microsoft.JScript.NumberPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientNumberPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.NumberPrototype</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientNumberPrototype" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public object constructor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.constructor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toExponential">
+      <MemberSignature Language="C#" Value="public object toExponential;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toExponential" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.toExponential" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toFixed">
+      <MemberSignature Language="C#" Value="public object toFixed;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toFixed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.toFixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLocaleString">
+      <MemberSignature Language="C#" Value="public object toLocaleString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLocaleString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.toLocaleString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toPrecision">
+      <MemberSignature Language="C#" Value="public object toPrecision;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toPrecision" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.toPrecision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public object toString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.toString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="valueOf">
+      <MemberSignature Language="C#" Value="public object valueOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientNumberPrototype.valueOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

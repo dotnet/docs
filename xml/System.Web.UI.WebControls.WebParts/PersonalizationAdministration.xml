@@ -1,0 +1,1506 @@
+<Type Name="PersonalizationAdministration" FullName="System.Web.UI.WebControls.WebParts.PersonalizationAdministration">
+  <TypeSignature Language="C#" Value="public static class PersonalizationAdministration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PersonalizationAdministration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationAdministration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements management and administrative functionality for Web Parts personalization. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides several static methods and properties that expose management and administrative functionality for Web Parts personalization. These methods apply to the default personalization provider configured in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control for a Web Parts control. If you need to administer several data stores that are acting as personalization providers, you should use the methods on the individual personalization provider classes directly. Note that the collection of configured personalization providers for a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is available from the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Providers%2A> static property.  
+  
+ It is important to be aware that personalization will fail if your Web application does not run at the default trust level of <xref:System.Web.AspNetHostingPermissionLevel> or higher (you can set custom trust levels in a Web.config file using the `<trust level="" />` element). The <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> and <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> classes both check for a trust level of <xref:System.Web.AspNetHostingPermissionLevel> when they are initialized. If you configure your application to run at a trust level of <xref:System.Web.AspNetHostingPermissionLevel>, and you use the default <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> provider to manage the personalization data for your application, the first time that the application tries to access personalization data, it will fail because an ASP.NET worker process running in <xref:System.Web.AspNetHostingPermissionLevel> trust does not have the permissions necessary to call into the various classes in the <xref:System.Data.SqlClient> namespace.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use several methods in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> class. This example consists of an .aspx page that references a Web Parts user control named `Persadmin.ascx`. The following code provides the .aspx file for the example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_PersAdmin#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/defaultcs.aspx#7)]  -->  
+  
+ This code provides the `Persadmin.ascx` control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_PersAdmin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public static string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the application specified by the provider.</summary>
+        <value>The application name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application name affects the data retrieved and saved by the personalization provider, and allows for multiple applications to either share data by setting an identical application name, or partition data within the same database by specifying different application names. The application name is found in the personalization provider section of the Web.config or System.config file.  
+  
+> [!CAUTION]
+>  Because a single default profile provider instance is used for all the requests served by an <xref:System.Web.HttpApplication> object, you can have multiple requests executing concurrently and attempting to set the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName%2A> property value. The <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName%2A> property is not thread-safe for multiple writes, and changing the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName%2A> property value can result in unexpected behavior for multiple users of an application. It is recommended that you avoid code to allow users to set the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName%2A> property unless required. An example of an application where setting the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName%2A> property might be required is an administrative application that manages profile data for multiple applications. Such an application should be a single-user application and not a Web application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindInactiveUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindInactiveUserState (string pathToMatch, string usernameToMatch, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindInactiveUserState(string pathToMatch, string usernameToMatch, valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState(System.String,System.String,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="usernameToMatch" Type="System.String" />
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <param name="usernameToMatch">The user name to match that has personalization data associated with the page.</param>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <summary>Returns a collection of per-user personalization state information for inactive users, based on the specified parameters.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains per-user personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances, per-user personalization state information where the `pathToMatch` parameter value matches the path of a page, `usernameToMatch` matches a user name that has personalization data associated with that page, and the users are considered inactive. In other words, for each returned record the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to `userInactiveSinceDate`. The returned collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances.  
+  
+ This method passes query wildcard characters to the underlying data store. Support for wildcard characters is currently dependent on how each provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Likewise, a wildcard search on a partial user name could have the wildcard character appear at any point in the text string of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property. For example, to find all user names that start with "John", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property would look like "John%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ If `userInactiveSinceDate` is <xref:System.DateTime.MaxValue>, then the returned values from this method are equivalent to <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState%2A>.  
+  
+ Both `pathToMatch` and `usernameToMatch` can be `null`. The `usernameToMatch` parameter can include commas (,) because some data stores, such as those running Microsoft SQL Server, allow commas as wildcard characters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindInactiveUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindInactiveUserState (string pathToMatch, string usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindInactiveUserState(string pathToMatch, string usernameToMatch, valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="usernameToMatch" Type="System.String" />
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <param name="usernameToMatch">The user name to match that has personalization data associated with the page.</param>
+        <param name="userInactiveSinceDate">The last date personalization information was accessed.</param>
+        <param name="pageIndex">The zero-based index of the page of results to return.</param>
+        <param name="pageSize">The number of records to return.</param>
+        <param name="totalRecords">The total number of records available.</param>
+        <summary>Returns a collection of per-user personalization state information for inactive users, based on the specified parameters.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains per-user personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances, per-user personalization state information where the `pathToMatch` parameter value matches the path of a page, `usernameToMatch` matches a user name that has personalization data associated with that page, and the users are considered inactive. In other words, for each returned record the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to `userInactiveSinceDate`. The collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances.  
+  
+ This method passes parameter wildcard characters to the underlying personalization provider, so how the data store handles these characters depends on how the provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Likewise, a wildcard search on a partial user name could have the wildcard character appear at any point in the text string of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property. For example, to find all user names that start with "John", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property would look like "John%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ If `userInactiveSinceDate` is <xref:System.DateTime.MaxValue>, then the returned values from this method are equivalent to <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState%2A>.  
+  
+ Both `pathToMatch` and `usernameToMatch` can be `null`. The `usernameToMatch` parameter can have commas (,) because some data stores, such as those running Microsoft SQL Server, allow commas as wildcard characters.  
+  
+ The data returned is constrained by `pageIndex` and `pageSize`, where `pageIndex` controls which records to return and `pageSize` controls the number of records to return. For example, if `pageIndex` was set to 0 and `pageSize` was set to 25, the data returned would be the first 25 entries. If `pageIndex` was set to 1 and `pageSize` was set to 25, the data returned would be entries 26 to 50. The `totalRecords` parameter returns the total number of records that are available.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
+  
+ \- or -  
+  
+ <paramref name="pageIndex" /> is less than zero  
+  
+ \- or -  
+  
+ <paramref name="pageSize" /> is less than or equal to zero.  
+  
+ \- or -  
+  
+ the combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSharedState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindSharedState (string pathToMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindSharedState(string pathToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <summary>Returns a collection of shared personalization state information based on the specified path.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains shared personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances where the `pathToMatch` value matches the path of a page that has shared personalization state data. The collection contains only <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instances.  
+  
+ This method passes parameter wildcard characters to the underlying personalization provider, so how the data store handles these characters depends on how the provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The ordering of the objects in the collection is determined by the provider.  
+  
+ The `pathToMatch` parameter can be `null`. If set to `null`, the parameter is ignored when performing queries.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> is an empty string ("") either before or after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSharedState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindSharedState (string pathToMatch, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindSharedState(string pathToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState(System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <param name="pageIndex">The zero-based index of the page of results to return.</param>
+        <param name="pageSize">The number of records to return.</param>
+        <param name="totalRecords">The total number of records available.</param>
+        <summary>Returns a collection of shared personalization state information based on the specified parameters.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains shared personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances where the `pathToMatch` value matches the path of a page that has shared personalization state data. The collection contains only <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instances.  
+  
+ This method passes parameter wildcard characters to the underlying personalization provider, so how the data store handles these characters depends on how the provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ The `pathToMatch` parameter can be `null`. If set to `null`, the parameter is ignored when performing queries.  
+  
+ The data returned is constrained by `pageIndex` and `pageSize`, where `pageIndex` controls which records to return and `pageSize` controls the number of records to return. For example, if `pageIndex` was set to 0 and `pageSize` was set to 25, the data returned would be the first 25 entries. If `pageIndex` was set to 1 and `pageSize` was set to 25, the data returned would be entries 26 to 50. The `totalRecords` parameter returns the total number of records that are available.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> before or after trimming is an empty string ("").  
+  
+ \- or -  
+  
+ <paramref name="pageIndex" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="pageSize" /> is less than or equal to zero.  
+  
+ \- or -  
+  
+ The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindUserState (string pathToMatch, string usernameToMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindUserState(string pathToMatch, string usernameToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="usernameToMatch" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <param name="usernameToMatch">The user name to match that has personalization data associated with the page.</param>
+        <summary>Returns a collection of per-user personalization state information based on the user name and page path.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains per-user personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances where the `pathToMatch` parameter value matches the path of a page, and `usernameToMatch` matches a user name that has personalization data associated with that page. The collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances.  
+  
+ This method passes parameter wildcard characters to the underlying personalization provider, so how the data store handles these characters depends on how the provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Likewise, a wildcard search on a partial user name could have the wildcard character appear at any point in the text string of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property. For example, to find all user names that start with "John", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property would look like "John%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The ordering of the objects in the collection is determined by the provider.  
+  
+ Both `pathToMatch` and `usernameToMatch` can be `null`. The `usernameToMatch` parameter can have commas (,) because some data stores, such as those running Microsoft SQL Server, allow commas as wildcard characters.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState%2A> method. The complete example can be found in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> class overview topic.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_PersAdmin#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindUserState (string pathToMatch, string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindUserState(string pathToMatch, string usernameToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState(System.String,System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="usernameToMatch" Type="System.String" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path of the page to match.</param>
+        <param name="usernameToMatch">The user name to match that has personalization data associated with the page.</param>
+        <param name="pageIndex">The zero-based index of the page of results to return.</param>
+        <param name="pageSize">The number of records to return.</param>
+        <param name="totalRecords">The total number or records available.</param>
+        <summary>Returns a collection of per-user personalization state information based on the specified parameters.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> that contains per-user personalization state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a collection of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances where the `pathToMatch` parameter value matches the path of a page and `usernameToMatch` matches a user name that has personalization data associated with that page. The collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances.  
+  
+ This method passes parameter wildcard characters to the underlying personalization provider, so how the data store handles these characters depends on how the provider handles characters as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ Likewise, a wildcard search on a partial user name could have the wildcard character appear at any point in the text string of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property. For example, to find all user names that start with "John", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property would look like "John%".  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ Both `pathToMatch` and `usernameToMatch` can be `null`. The `usernameToMatch` parameter can have commas (,) because some data stores, such as those running Microsoft SQL Server, allow commas as wildcard characters.  
+  
+ The data returned is constrained by `pageIndex` and `pageSize`, where `pageIndex` controls which records to return and `pageSize` controls the number of records to return. For example, if `pageIndex` was set to 0 and `pageSize` was set to 25, the data returned would be the first 25 entries. If `pageIndex` was set to 1 and `pageSize` was set to 25, the data returned would be entries 26 to 50. The `totalRecords` parameter returns the total number of records that are available.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState%2A> method. The complete example can be found in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> class overview topic.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_PersAdmin#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
+  
+ \- or -  
+  
+ <paramref name="pageIndex" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="pageSize" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllInactiveUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllInactiveUserState (DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllInactiveUserState(valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <summary>Returns a collection of all per-user personalization state information associated with inactive users, based on the specified date.</summary>
+        <returns>A collection of <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> instances.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances. Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ This method returns items where the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property value. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is <xref:System.DateTime.MaxValue>, this method effectively returns all per-user data in the underlying data store.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllInactiveUserState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllInactiveUserState (DateTime userInactiveSinceDate, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllInactiveUserState(valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState(System.DateTime,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <param name="pageIndex">The zero-based index of the page of results to return.</param>
+        <param name="pageSize">The number of records to return.</param>
+        <param name="totalRecords">The total number of records available.</param>
+        <summary>Returns a subset of all per-user personalization state information associated with inactive users, based on the specified parameters.</summary>
+        <returns>A collection of <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> instances.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned collection contains only <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances. Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ This method returns items where the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property value. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is <xref:System.DateTime.MaxValue>, this method effectively returns all per-user data in the underlying data store.  
+  
+ The return values are constrained by the `pageIndex` and `pageSize` parameters, where `pageIndex` controls which records to return and `pageSize` controls the number of records to return. For example, if `pageIndex` was set to 0 and `pageSize` was set to 25, the data returned would be the first 25 entries. If `pageIndex` was set to 1 and `pageSize` was set to 25, the data returned would be entries 26 to 50. The `totalRecords` parameter returns the total number of records that are available.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pageIndex" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="pageSize" /> is less than or equal to zero.  
+  
+ \- or -  
+  
+ The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope of the personalization information to be retrieved.</param>
+        <summary>Returns a collection of all personalization state information from the underlying data store for the requested personalization scope.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> containing state information for the specified scope.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the returned collection contains only <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects of either type <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> or type <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo>. Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllState">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection GetAllState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope of the personalization information to be retrieved.</param>
+        <param name="pageIndex">The zero-based index of the page of results to return.</param>
+        <param name="pageSize">The number of records to return.</param>
+        <param name="totalRecords">The total number of records available.</param>
+        <summary>Returns a subset of all personalization state information from the underlying data store, based on the specified parameters.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> containing state information for the specified scope and parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The items in the collection returned are based primarily on scope, and then the records corresponding to that scope are further reduced to a subset based on the `pageIndex` and `pageSize` parameters. The collection returned contains either <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instances only, or <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances only.  
+  
+ The items returned are constrained by the `pageIndex` and `pageSize` parameters, where `pageIndex` controls which records to return and `pageSize` controls the number of records returned. For example, if `pageIndex` was set to 0 and `pageSize` was set to 25, the data returned would be the first 25 entries. If `pageIndex` was set to 1 and `pageSize` was set to 25, the data returned would be entries 26 to 50. The `totalRecords` parameter returns the total number of records that are available.  
+  
+ Using the default personalization provider, the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order, and sorted by a combination of path and user name in ascending order. The order of the objects in the collection is determined by the provider.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pageIndex" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="pageSize" /> is less than or equal to zero.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountOfInactiveUserState">
+      <MemberSignature Language="C#" Value="public static int GetCountOfInactiveUserState (DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCountOfInactiveUserState(valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <summary>Returns a count of the per-user personalization items in the underlying data store for inactive users, based on the parameter specified.</summary>
+        <returns>The number of personalization items for inactive users.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns records where the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property value. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is set to <xref:System.DateTime.MaxValue>, a count of all users' personalization information is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountOfInactiveUserState">
+      <MemberSignature Language="C#" Value="public static int GetCountOfInactiveUserState (string pathToMatch, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCountOfInactiveUserState(string pathToMatch, valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState(System.String,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathToMatch" Type="System.String" />
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="pathToMatch">The path to the page with personalization state items to retrieve.</param>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <summary>Returns a count of the per-user personalization items in the underlying data store for inactive users, based on the specified parameters.</summary>
+        <returns>The count of the per-user personalization items in the underlying data store for inactive users.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns records where the page matches the specified `pathtoMatch` parameter and the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property value. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is set to <xref:System.DateTime.MaxValue>, a count of all users' personalization information is returned.  
+  
+ Note that the `pathToMatch` parameter can include wildcard characters. The method passes wildcard characters to the underlying data store. Wildcard character support is currently dependent on how each provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, you can perform a wildcard search on a partial path with the wildcard character appearing at the beginning, the end, or the middle of the search string text in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property. For example, to find all paths that start with "~/vdir", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property would be set to "~/vdir%".  
+  
+ The `pathToMatch` parameter can be `null`. If set to `null`, the parameter is ignored when performing queries.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pathToMatch" />, after trimming, is an empty string ("").  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountOfState">
+      <MemberSignature Language="C#" Value="public static int GetCountOfState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCountOfState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope of the personalization state items to retrieve.</param>
+        <summary>Returns a count of the personalization state items in the underlying data store that exist for the specified scope.</summary>
+        <returns>The number of personalization state items for the specified scope.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine the number of personalization state items in the underlying data store for the specified scope. Use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState%2A> method to further narrow the count to a particular page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState%2A> method. The complete example can be found in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> class overview topic.  
+  
+ [!code-csharp[WebParts_PersAdmin#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountOfState">
+      <MemberSignature Language="C#" Value="public static int GetCountOfState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope, string pathToMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCountOfState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, string pathToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+        <Parameter Name="pathToMatch" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope of the personalization state items to retrieve.</param>
+        <param name="pathToMatch">The path to the page with personalization state items to retrieve.</param>
+        <summary>Returns a count of the personalization state items in the underlying data store that exist for the specified parameters.</summary>
+        <returns>The number of personalization state items for the specified scope.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine the number of personalization state items in the underlying data store for the specified scope and path.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ <paramref name="pathToMatch" />, after trimming, is an empty string ("").  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountOfUserState">
+      <MemberSignature Language="C#" Value="public static int GetCountOfUserState (string usernameToMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCountOfUserState(string usernameToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfUserState(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usernameToMatch" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="usernameToMatch">The user name associated with the personalization state information to retrieve.</param>
+        <summary>Returns a count of the personalization state items in the underlying data store that exist for the specified user.</summary>
+        <returns>The number of personalization state items for the specified user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a count of the number of per-user personalization items in the underlying data store that exist for the given `usernameToMatch`.  
+  
+ Note that the `usernameToMatch` parameter can include wildcard characters. This method passes wildcard characters to the underlying data store. Wildcard character support is currently dependent on how each provider handles characters such as an asterisk (*), a percent symbol (%), or an underscore (_).  
+  
+ Normally, for SQL-compliant data stores, a wildcard search on a partial user name can have the wildcard character appear at any point in the text string of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> property. For example, to find all user names that start with "John", the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> parameter would look like "John%".  
+  
+ The `usernameToMatch` parameter can be `null`. If set to `null`, the parameter is ignored when performing queries. The `usernameToMatch` parameter is allowed to have commas (,) because some data stores, such as those running Microsoft SQL Server, allow commas as wildcard characters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="usernameToMatch" /> is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationProvider Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.UI.WebControls.WebParts.PersonalizationProvider Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an instance of the default personalization provider.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> of the default provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to retrieve an instance of the default personalization provider. This is the provider specified in the personalization provider section of the Web.config or Machine.config file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Provider%2A> property.  
+  
+ [!code-csharp[WebParts_PersAdmin#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a collection of personalization providers indexed by name.</summary>
+        <value>A read-only <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection" /> that contains the personalization providers available to the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a collection of personalization providers. The collection is populated at the initialization of the application and contains references to provider objects indexed by name. The default provider is indexed by the name specified in the Web.config or Machine.config configuration file.  
+  
+ Note that the returned collection is read-only; calls to `Remove`, `Add`, or `Clear` will result in an exception being thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetAllState">
+      <MemberSignature Language="C#" Value="public static int ResetAllState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetAllState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope associated with the personalization data to be deleted.</param>
+        <summary>Resets all personalization data in the underlying data store by deleting all rows associated with the specified scope.</summary>
+        <returns>The number of items that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method deletes all rows in the underlying data store associated with the specified personalization scope.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count of affected rows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetInactiveUserState">
+      <MemberSignature Language="C#" Value="public static int ResetInactiveUserState (DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetInactiveUserState(valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
+        <summary>Resets all per-user personalization state information in the underlying data store, based on the specified parameter.</summary>
+        <returns>The number of rows in the underlying data store that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method resets all per-user state information in the underlying data store, where the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> value.  
+  
+ If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is set to <xref:System.DateTime.MaxValue>, this method resets all per-user data in the underlying data store.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetInactiveUserState">
+      <MemberSignature Language="C#" Value="public static int ResetInactiveUserState (string path, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetInactiveUserState(string path, valuetype System.DateTime userInactiveSinceDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState(System.String,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the page associated with the personalization state information to be reset.</param>
+        <param name="userInactiveSinceDate">The last active date to be used in resetting user state personalization items.</param>
+        <summary>Resets all per-user state information in the underlying data store for inactive users, based on the specified parameters.</summary>
+        <returns>The number of rows in the underlying data store that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method resets all per-user state in the underlying data store associated with the specified path, where the user's <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property value is less than or equal to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property value.  
+  
+ For data stores that require more than one row of data to store personalization state for a page, or for a user and page combination, the count of reset rows might differ from the count of personalization state. If the underlying provider exposes data from a transaction-aware data store, this method performs its operations in a single transaction.  
+  
+ It is not an error to attempt to reset nonexistent shared state.  
+  
+ If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> is <xref:System.DateTime.MaxValue>, this method effectively resets all per-user data in the underlying data store for the specified path.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSharedState">
+      <MemberSignature Language="C#" Value="public static bool ResetSharedState (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ResetSharedState(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the page associated with the personalization state information to be reset.</param>
+        <summary>Resets shared state in the underlying data store for the specified path.</summary>
+        <returns>
+          <see langword="true" /> if personalization shared state was reset; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not an error to attempt to reset nonexistent shared state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was either a negative number or was greater than one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSharedState">
+      <MemberSignature Language="C#" Value="public static int ResetSharedState (string[] paths);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetSharedState(string[] paths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paths" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="paths">The paths to the pages associated with the personalization state information to be reset.</param>
+        <summary>Resets shared state in the underlying data store for the specified paths.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the count of the number of rows that were reset. It is not an error to attempt to reset nonexistent shared state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="paths" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="paths" /> is a zero-length array.  
+  
+ \- or -  
+  
+ A member of <paramref name="paths" /> is either <see langword="null" /> or an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetState">
+      <MemberSignature Language="C#" Value="public static int ResetState (System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetState(class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetState(System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects indicating what data should be reset.</param>
+        <summary>Resets personalization data in the underlying data store, based on the items contained in the collection.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method resets personalization data in the underlying data store, based on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> objects contained in the collection. You can use this method to selectively delete a mixture of shared and per-user data based on the collection's contents. <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> objects indicate that shared data for a page will be reset; <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> objects indicate that per-user data for a specific page will be reset.  
+  
+> [!NOTE]
+>  This method does not guarantee that all resets occur within a single transaction because the collection points to random sets of personalization data.  
+  
+ It is not an error for the collection to contain objects that reference nonexistent data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="data" /> is an empty collection.  
+  
+ -or-  
+  
+ An element of the collection is <see langword="null" />.  
+  
+ -or-  
+  
+ The path value of a <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> instance in the collection is <see langword="null" /> or an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="user" /> value of a <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> instance in the collection is <see langword="null" />, an empty string, or contains commas.  
+  
+ -or-  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ -or-  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ -or-  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetUserState">
+      <MemberSignature Language="C#" Value="public static int ResetUserState (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetUserState(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the page associated with the personalization state information to be reset.</param>
+        <summary>Resets all per-user state in the underlying data store for the specified path.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the count of the number of rows that were reset. It is not an error to attempt to reset nonexistent shared state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("").  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetUserState">
+      <MemberSignature Language="C#" Value="public static int ResetUserState (string[] usernames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetUserState(string[] usernames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usernames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="usernames">An array of user names whose per-user data should be reset.</param>
+        <summary>Resets all per-user state in the underlying data store for the specified paths.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method resets all per-user state in the underlying data store associated with the users contained in the `usernames` parameter, and returns a count of the number of rows that were reset.  
+  
+ It is not an error to attempt to reset nonexistent shared state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="usernames" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="usernames" /> is a zero-length array.  
+  
+ \- or -  
+  
+ A member of <paramref name="usernames" /> is either <see langword="null" />, contains commas, or is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetUserState">
+      <MemberSignature Language="C#" Value="public static bool ResetUserState (string path, string username);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ResetUserState(string path, string username) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the page associated with the personalization state information to be reset.</param>
+        <param name="username">The user name associated with the personalization data to be reset.</param>
+        <summary>Resets per-user state in the underlying data store for the specified combination of user name and path.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not an error to attempt to reset nonexistent user state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> or <paramref name="username" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> or <paramref name="username" /> is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ <paramref name="username" /> contains commas.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetUserState">
+      <MemberSignature Language="C#" Value="public static int ResetUserState (string path, string[] usernames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ResetUserState(string path, string[] usernames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="usernames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the page associated with the personalization state information to be reset.</param>
+        <param name="usernames">The user names associated with the personalization data to be reset.</param>
+        <summary>Resets per-user state in the underlying data store for the page and users specified.</summary>
+        <returns>The number of rows that were reset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method resets per-user state in the underlying data store associated with each user contained in the `usernames` parameter for the page specified by `path.`  
+  
+ It is not an error to attempt to reset nonexistent user state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> or <paramref name="usernames" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("") after trimming.  
+  
+ \- or -  
+  
+ A member of <paramref name="usernames" /> is <see langword="null" />, an empty string after trimming, or contains commas.  
+  
+ \- or -  
+  
+ <paramref name="usernames" /> is a zero-length array.  
+  
+ \- or -  
+  
+ The provider for a personalization provider defined in configuration is not of the correct type.  
+  
+ \- or -  
+  
+ The length of the string of any parameter is greater than 256 characters.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
+  
+ \- or -  
+  
+ The default personalization provider defined in configuration could not be found.</exception>
+        <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

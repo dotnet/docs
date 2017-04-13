@@ -1,0 +1,733 @@
+<Type Name="LogStore" FullName="System.IO.Log.LogStore">
+  <TypeSignature Language="C#" Value="public sealed class LogStore : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogStore extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.LogStore" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a log-structured storage.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Log.LogRecordSequence> class provides an implementation of the record sequence interface on top of a Common Log File System (CLFS) log. It works with the <xref:System.IO.Log.LogStore> class, which provides an interface for directly manipulating and managing a CLFS log file. A log store provides append-only storage across a set of disk extents. The <xref:System.IO.Log.LogStore> class represents this storage, and provides methods for adding and removing containers, setting policy, and creating archives. It does not provide methods for reading from and writing to the storage; these methods are provided by the <xref:System.IO.Log.LogRecordSequence> class.  
+  
+ The relationship between the <xref:System.IO.Log.LogStore> class and the <xref:System.IO.Log.LogRecordSequence> class is similar to the relationship between a disk file and a <xref:System.IO.FileStream> object. The disk file provides the actual storage and has attributes such as length and last access time, while the <xref:System.IO.FileStream> object provides a view on the file that can be used to read from it and write to it. Similarly, the <xref:System.IO.Log.LogStore> class has attributes like a policy and a collection of disk extents, and the <xref:System.IO.Log.LogRecordSequence> class provides a record-oriented mechanism for reading and writing data.  
+  
+ Unlike the file record sequence represented by the <xref:System.IO.Log.FileRecordSequence> class, a <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. The extents in a given <xref:System.IO.Log.LogStore> instance are all of uniform size, and space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments. To add and remove log extents, use the <xref:System.IO.Log.LogExtentCollection.Add%2A> and <xref:System.IO.Log.LogExtentCollection.Remove%2A> methods of the <xref:System.IO.Log.LogExtentCollection> object, which can be returned by the <xref:System.IO.Log.LogStore.Extents%2A> property.  
+  
+ A <xref:System.IO.Log.LogStore> instance can have policies associated with it. These are represented by <xref:System.IO.Log.LogPolicy> instances that can be returned by the <xref:System.IO.Log.LogStore.Policy%2A> property. A policy dictates rules that the log will attempt to follow, such as maximum number of extents and minimum size, and instructions on growing or shrinking the <xref:System.IO.Log.LogStore> under certain conditions. In addition, you can specify whether a <xref:System.IO.Log.LogStore> instance can be archived. Policies are set per log and are volatile, which means that once every handle to the log is closed, the policy no longer exists.  
+  
+   
+  
+## Examples  
+ The following example shows how to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogStore (Microsoft.Win32.SafeHandles.SafeFileHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Win32.SafeHandles.SafeFileHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handle" Type="Microsoft.Win32.SafeHandles.SafeFileHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A file handle for the log file that the current <see cref="T:System.IO.Log.LogStore" /> object encapsulates.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class for the specified handle.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handle" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.IOException">The log handle could not be bound to the thread pool.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the base file of the log store to open.</param>
+        <param name="mode">One of the <see cref="T:System.IO.FileMode" /> values that determines how to open or create the store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class with the specified path and mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to open a log store with the specified path and mode. The store is opened with read/write access, and shares read access.  
+  
+ The `path` parameter should use the following syntax:  
+  
+ `log:<physical log name>[::<log client name>]`  
+  
+ where `<physical log name>` is a valid path to a log file, and `<log client name>` is a unique client identifier. A log store should be either a physical log store or a virtual log store, but not both. Once a log store has been created physically or virtually, it remains so for its lifetime. A physical log store is created by specifying only the physical log name. A virtual log store is created by specifying both the physical log name and the log client name.  
+  
+ Clients that share the same physical log name share the same extents collection and policy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("").  
+  
+ -or-  
+  
+ <paramref name="path" /> contains only white space.  
+  
+ -or-  
+  
+ <paramref name="path" /> contains one or more invalid characters.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> contains an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when opening the log store.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.IO.Log.LogStore" /> cannot be used because the required Common Log File System (CLFS) component is not installed. Install the CLFS component if it is available for your platform or use the <see cref="T:System.IO.Log.FileRecordSequence" /> class instead.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the base file of the log store to open.</param>
+        <param name="mode">One of the <see cref="T:System.IO.FileMode" /> values that determines how to open or create the store.</param>
+        <param name="access">One of the <see cref="T:System.IO.FileAccess" /> values that determines how the file can be accessed by the <see cref="T:System.IO.Log.LogStore" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class with the specified path, mode, and access.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to open a new log store with the specified path, mode, and access. The store is opened sharing read access.  
+  
+ The `path` parameter should use the following syntax:  
+  
+ `log:<physical log name>[::<log client name>]`  
+  
+ where `<physical log name>` is a valid path to a log file, and `<log client name>` is a unique client identifier. A log store should be either a physical log store or a virtual log store, but not both. Once a log store has been created physically or virtually, it remains so for its lifetime. A physical log store is created by specifying only the physical log name. A virtual log store is created by specifying both the physical log name and the log client name.  
+  
+ Clients that share the same physical log name share the same extents collection and policy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("").  
+  
+ -or-  
+  
+ <paramref name="path" /> contains only white space.  
+  
+ -or-  
+  
+ <paramref name="path" /> contains one or more invalid characters.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> contains an invalid value.  
+  
+ -or  
+  
+ <paramref name="access" /> contains an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when opening the log store.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.IO.Log.LogStore" /> cannot be used because the required Common Log File System (CLFS) component is not installed. Install the CLFS component if it is available for your platform or use the <see cref="T:System.IO.Log.FileRecordSequence" /> class instead.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="share" Type="System.IO.FileShare" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the base file of the log store to open.</param>
+        <param name="mode">One of the <see cref="T:System.IO.FileMode" /> values that determines how to open or create the store.</param>
+        <param name="access">One of the <see cref="T:System.IO.FileAccess" /> values that determines how the file can be accessed by the <see cref="T:System.IO.Log.LogStore" />.</param>
+        <param name="share">One of the <see cref="T:System.IO.FileShare" /> values that determines how the log store will be shared among processes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access.  
+  
+ The `path` parameter should use the following syntax:  
+  
+ `log:<physical log name>[::<log client name>]`  
+  
+ where `<physical log name>` is a valid path to a log file, and `<log client name>` is a unique client identifier. A log store should be either a physical log store or a virtual log store, but not both. Once a log store has been created physically or virtually, it remains so for its lifetime. A physical log store is created by specifying only the physical log name. A virtual log store is created by specifying both the physical log name and the log client name.  
+  
+ Clients that share the same physical log name share the same extents collection and policy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("").  
+  
+ -or-  
+  
+ <paramref name="path" /> contains only white space.  
+  
+ -or-  
+  
+ <paramref name="path" /> contains one or more invalid characters.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> contains an invalid value.  
+  
+ -or  
+  
+ <paramref name="access" /> contains an invalid value.  
+  
+ -or-  
+  
+ <paramref name="share" /> contains an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when opening the log store.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.IO.Log.LogStore" /> cannot be used because the required Common Log File System (CLFS) component is not installed. Install the CLFS component if it is available for your platform or use the <see cref="T:System.IO.Log.FileRecordSequence" /> class instead.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Security.AccessControl.FileSecurity fileSecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share, class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Security.AccessControl.FileSecurity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="share" Type="System.IO.FileShare" />
+        <Parameter Name="fileSecurity" Type="System.Security.AccessControl.FileSecurity" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the base file of the log store to open.</param>
+        <param name="mode">One of the <see cref="T:System.IO.FileMode" /> values that determines how to open or create the store.</param>
+        <param name="access">One of the <see cref="T:System.IO.FileAccess" /> values that determines how the file can be accessed by the <see cref="T:System.IO.Log.LogStore" />.</param>
+        <param name="share">One of the <see cref="T:System.IO.FileShare" /> values that determines how the log store will be shared among processes.</param>
+        <param name="fileSecurity">One of the <see cref="T:System.Security.AccessControl.FileSecurity" /> value that specifies the security to set on the newly created store if the store must be created.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access. The `path` parameter should follow the following syntax:  
+  
+ `log:<physical log name>[::<log client name>]`  
+  
+ where `<physical log name>` is a valid path to a log file, and `<log client name>` is a unique client identifier. A log store should be either a physical log store or a virtual log store, but not both. Once a log store has been created physically or virtually, it remains so for its lifetime. A physical log store is created by specifying only the physical log name. A virtual log store is created by specifying both the physical log name and the log client name.  
+  
+ Clients that share the same physical log name share the same extents collection and policy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The log store file name specified by <paramref name="path" /> is not valid.  
+  
+ -or-  
+  
+ <paramref name="Mode" /> is <see langword="CreateNew" />, which cannot be used without write access.  
+  
+ -or-  
+  
+ <paramref name="Mode" /> is <see langword="OpenOrCreate" />, which cannot be used without write access.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> contains an invalid value.  
+  
+ -or  
+  
+ <paramref name="access" /> contains an invalid value.  
+  
+ -or-  
+  
+ <paramref name="share" /> contains an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when opening the log store.  
+  
+ The file specified by <paramref name="path" /> cannot be accessed because it is in use by another process.  
+  
+ -or-  
+  
+ The file specified by <paramref name="path" /> cannot be created because the file or directory already exists.  
+  
+ -or-  
+  
+ The log handle could not be bound to the thread pool.  
+  
+ -or-  
+  
+ The specified log file format or version is invalid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.IO.Log.LogStore" /> cannot be used because the required Common Log File System (CLFS) component is not installed. Install the CLFS component if it is available for your platform or use the <see cref="T:System.IO.Log.FileRecordSequence" /> class instead.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Archivable">
+      <MemberSignature Language="C#" Value="public bool Archivable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Archivable" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Archivable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this <see cref="T:System.IO.Log.LogStore" /> instance can be archived.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.IO.Log.LogStore" /> instance can be archived; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.IO.Log.LogStore> is not archivable, calls to the <xref:System.IO.Log.LogStore.CreateLogArchiveSnapshot%2A> and <xref:System.IO.Log.LogStore.SetArchiveTail%2A> methods result in a <xref:System.NotSupportedException> being thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseSequenceNumber">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber BaseSequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber BaseSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.BaseSequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the lowest sequence number that corresponds to a valid record in this <see cref="T:System.IO.Log.LogStore" /> instance.</summary>
+        <value>The lowest sequence number that corresponds to a valid record in this <see cref="T:System.IO.Log.LogStore" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogStore.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogStore.LastSequenceNumber%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLogArchiveSnapshot">
+      <MemberSignature Language="C#" Value="public System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.CreateLogArchiveSnapshot" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.LogArchiveSnapshot</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Takes a snapshot of the log store state for making a backup.</summary>
+        <returns>A <see cref="T:System.IO.Log.LogArchiveSnapshot" /> object that contains the state necessary to make an archive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The log store is not archivable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
+        <exception cref="T:System.ArgumentException">An argument is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">An invalid operation has been executed.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLogArchiveSnapshot">
+      <MemberSignature Language="C#" Value="public System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot (System.IO.Log.SequenceNumber first, System.IO.Log.SequenceNumber last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot(valuetype System.IO.Log.SequenceNumber first, valuetype System.IO.Log.SequenceNumber last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.CreateLogArchiveSnapshot(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.LogArchiveSnapshot</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="first" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="last" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="first">The starting sequence number in the range to archive.</param>
+        <param name="last">The ending sequence number in the range to archive.</param>
+        <summary>Takes a snapshot of the log store state between the specified sequence numbers for making a backup.</summary>
+        <returns>A <see cref="T:System.IO.Log.LogArchiveSnapshot" /> object that contains the state necessary to make an archive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The archive snapshot returned from this method encompasses information from either the base sequence number or the archive sequence number, whichever is lower, to the last sequence number. It is not inclusive for the last sequence number, which means that the archive only includes records up to but not including last. In addition, when using this method, the start SequenceNumber must be equal to the BaseSequenceNumber in order for the archive to be consistent.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="first" /> or <paramref name="last" /> is not between the base and last sequence numbers of this sequence.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="first" /> is larger than <paramref name="last" />.</exception>
+        <exception cref="T:System.InvalidOperationException">An invalid operation has been executed.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
+        <exception cref="T:System.NotSupportedException">The log store is not archivable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public static void Delete (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.Delete(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the base file of the log store to remove.</param>
+        <summary>Removes the log store.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string ("").  
+  
+ -or-  
+  
+ <paramref name="path" /> contains only white space.  
+  
+ -or-  
+  
+ <paramref name="path" /> contains one or more invalid characters.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when opening the log store.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.IO.Log.LogStore.Dispose%2A> when you have finished using the <xref:System.IO.Log.LogStore>. The <xref:System.IO.Log.LogStore.Dispose%2A> method leaves the <xref:System.IO.Log.LogStore> in an unusable state. After calling <xref:System.IO.Log.LogStore.Dispose%2A> , you must release all references to the <xref:System.IO.Log.LogStore> so the garbage collector can reclaim the memory that the <xref:System.IO.Log.LogStore> was occupying.  
+  
+> [!NOTE]
+>  Always call <xref:System.IO.Log.LogStore.Dispose%2A> before you release your last reference to the <xref:System.IO.Log.LogStore>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.Log.LogStore> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Extents">
+      <MemberSignature Language="C#" Value="public System.IO.Log.LogExtentCollection Extents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Log.LogExtentCollection Extents" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Extents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.LogExtentCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of log extents that contain the data for this log store.</summary>
+        <value>A <see cref="T:System.IO.Log.LogExtentCollection" /> instance containing the collection of log extents that encapsulates data for this log store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. The extents in a given <xref:System.IO.Log.LogStore> instance are all of uniform size, and space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments. To add and remove log extents, use the <xref:System.IO.Log.LogExtentCollection.Add%2A>and<xref:System.IO.Log.LogExtentCollection.Remove%2A> methods of the <xref:System.IO.Log.LogExtentCollection> object, which is returned by this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeBytes">
+      <MemberSignature Language="C#" Value="public long FreeBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 FreeBytes" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.FreeBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bytes available in the log store.</summary>
+        <value>The number of bytes available in the log store.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeFileHandle Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeFileHandle Handle" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the operating system file handle for the log file that the current <see cref="T:System.IO.Log.LogStore" /> instance encapsulates.</summary>
+        <value>The operating system file handle for the log file that the current <see cref="T:System.IO.Log.LogStore" /> instance encapsulates.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSequenceNumber">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber LastSequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber LastSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.LastSequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the sequence number of the next record to be appended to the log store.</summary>
+        <value>The sequence number of the next record to be appended to the log store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogStore.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogStore.LastSequenceNumber%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the log store, in bytes.</summary>
+        <value>The size of the log store, in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the log store is the sum of the sizes of the log extents.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Policy">
+      <MemberSignature Language="C#" Value="public System.IO.Log.LogPolicy Policy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Log.LogPolicy Policy" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Policy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.LogPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the policy associated with this log store.</summary>
+        <value>A <see cref="T:System.IO.Log.LogPolicy" /> instance representing the policy associated with this log store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.IO.Log.LogPolicy> instance returned by this property to examine and manipulate the log policy associated with this <xref:System.IO.Log.LogStore>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArchiveTail">
+      <MemberSignature Language="C#" Value="public void SetArchiveTail (System.IO.Log.SequenceNumber archiveTail);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetArchiveTail(valuetype System.IO.Log.SequenceNumber archiveTail) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.SetArchiveTail(System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="archiveTail" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="archiveTail">The sequence number of the archive tail.</param>
+        <summary>Sets the sequence number of the archive tail.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The smaller of the base sequence number and the archive tail determines the tail of the log.  
+  
+   
+  
+## Examples  
+ The following example shows how to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="archiveTail" /> is not between the base and last sequence numbers of this sequence.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="archiveTail" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.InvalidOperationException">An invalid operation has been executed.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
+        <exception cref="T:System.NotSupportedException">The log store is not archivable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of a program.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamCount">
+      <MemberSignature Language="C#" Value="public int StreamCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StreamCount" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.StreamCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of log streams in this log store.</summary>
+        <value>The number of log streams in this log store.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

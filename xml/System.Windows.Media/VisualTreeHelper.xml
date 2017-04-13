@@ -1,0 +1,850 @@
+<Type Name="VisualTreeHelper" FullName="System.Windows.Media.VisualTreeHelper">
+  <TypeSignature Language="C#" Value="public static class VisualTreeHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualTreeHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualTreeHelper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides utility methods that perform common tasks involving nodes in a visual tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Nodes in the visual tree can be either <xref:System.Windows.Media.Visual> or <xref:System.Windows.Media.Media3D.Visual3D> objects. Methods that are specific to a type of visual object are typed as either <xref:System.Windows.Media.Visual> or <xref:System.Windows.Media.Media3D.Visual3D>. However, some methods in the <xref:System.Windows.Media.VisualTreeHelper> class can accept a <xref:System.Windows.DependencyObject> value that represents either type of visual object.  
+  
+ [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] supports programmatic access to several different tree structures of objects. Primarily, this is exposed as a visual tree and a logical tree. In some cases, the logical tree is a more useful representation of the elements in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application, but conceptually the logical tree is implemented at a level beyond the <xref:System.Windows.Media.Visual> class. Unlike the visual tree, the logical tree can represent nonvisual data objects, such as <xref:System.Windows.Documents.ListItem>. For more information on the logical tree, see [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md). The logical tree also is supported by a similar utility method class, <xref:System.Windows.LogicalTreeHelper>.  
+  
+   
+  
+## Examples  
+ The following example shows how to enumerate all the descendants of a visual object, which is a technique you might want to use if you were interested in serializing all the rendering information of a visual object hierarchy.  
+  
+ [!code-csharp[VisualsOverview#101](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#101)]
+ [!code-vb[VisualsOverview#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#101)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBitmapEffect">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Effects.BitmapEffect GetBitmapEffect (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Effects.BitmapEffect GetBitmapEffect(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetBitmapEffect(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> that contains the bitmap effect.</param>
+        <summary>Returns the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> value for the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> for this <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBitmapEffectInput">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Effects.BitmapEffectInput GetBitmapEffectInput (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Effects.BitmapEffectInput GetBitmapEffectInput(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetBitmapEffectInput(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffectInput</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> that contains the bitmap effect input value.</param>
+        <summary>Returns the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> value for the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> for this <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCacheMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.CacheMode GetCacheMode (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.CacheMode GetCacheMode(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetCacheMode(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CacheMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> to get the <see cref="T:System.Windows.Media.CacheMode" /> for.</param>
+        <summary>Retrieves the cached representation of the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.CacheMode" /> for <paramref name="reference" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChild">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetChild (System.Windows.DependencyObject reference, int childIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetChild(class System.Windows.DependencyObject reference, int32 childIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetChild(System.Windows.DependencyObject,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.DependencyObject" />
+        <Parameter Name="childIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The parent visual, referenced as a <see cref="T:System.Windows.DependencyObject" />.</param>
+        <param name="childIndex">The index that represents the child visual that is contained by <c>reference</c>.</param>
+        <summary>Returns the child visual object from the specified collection index within a specified parent.</summary>
+        <returns>The index value of the child visual object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Media.VisualTreeHelper.GetChildrenCount%2A> method to determine the total number of child elements of a parent visual.  
+  
+ The value of `reference` can represent either a <xref:System.Windows.Media.Visual> or <xref:System.Windows.Media.Media3D.Visual3D> object, which is why the common base type <xref:System.Windows.DependencyObject> is used here as a parameter type.  
+  
+   
+  
+## Examples  
+ The following example shows how to enumerate all the descendants of a visual object. This is a technique you might use if you are interested in serializing all the rendering information of a visual object hierarchy or are performing analysis or alternative rendering.  
+  
+ [!code-csharp[VisualsOverview#101](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#101)]
+ [!code-vb[VisualsOverview#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCount">
+      <MemberSignature Language="C#" Value="public static int GetChildrenCount (System.Windows.DependencyObject reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetChildrenCount(class System.Windows.DependencyObject reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetChildrenCount(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The parent visual that is referenced as a <see cref="T:System.Windows.DependencyObject" />.</param>
+        <summary>Returns the number of children that the specified visual object contains.</summary>
+        <returns>The number of child visuals that the parent visual contains.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.VisualTreeHelper.GetChild%2A> method to retrieve a specified child of a parent visual.  
+  
+ The value of `reference` can represent either a <xref:System.Windows.Media.Visual> or <xref:System.Windows.Media.Media3D.Visual3D> object, which is why the common base type <xref:System.Windows.DependencyObject> is used here as a parameter type.  
+  
+   
+  
+## Examples  
+ The following example shows how to enumerate all the descendants of a visual object. This is a technique you might use if you are interested in serializing all the rendering information of a visual object hierarchy or are performing analysis or alternative rendering.  
+  
+ [!code-csharp[VisualsOverview#101](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#101)]
+ [!code-vb[VisualsOverview#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClip">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Geometry GetClip (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Geometry GetClip(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetClip(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose clip region value is returned.</param>
+        <summary>Return the clip region of the specified <see cref="T:System.Windows.Media.Visual" /> as a <see cref="T:System.Windows.Media.Geometry" /> value.</summary>
+        <returns>The clip region value of the <see cref="T:System.Windows.Media.Visual" /> returned as a <see cref="T:System.Windows.Media.Geometry" /> type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentBounds">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Rect3D GetContentBounds (System.Windows.Media.Media3D.Visual3D reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Rect3D GetContentBounds(class System.Windows.Media.Media3D.Visual3D reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Media3D.Visual3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Rect3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Media3D.Visual3D" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The 3D visual whose bounding box value is computed.</param>
+        <summary>Returns the cached bounding box rectangle for the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" />.</summary>
+        <returns>The bounding box 3D rectangle for the <see cref="T:System.Windows.Media.Media3D.Visual3D" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.VisualTreeHelper.GetDescendantBounds%2A> method to return the union of all the content bounding boxes for all the descendants of a 3D visual object, which includes the <xref:System.Windows.Media.Media3D.Visual3D> itself.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentBounds">
+      <MemberSignature Language="C#" Value="public static System.Windows.Rect GetContentBounds (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect GetContentBounds(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose bounding box value is computed.</param>
+        <summary>Returns the cached bounding box rectangle for the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The bounding box rectangle for the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Media.VisualTreeHelper.GetDescendantBounds%2A> method to return the union of all the content bounding boxes for all the descendants of a visual object, which includes the <xref:System.Windows.Media.Visual> itself.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.Visual> object.  
+  
+ [!code-csharp[VisualsOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#102)]
+ [!code-vb[VisualsOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescendantBounds">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Rect3D GetDescendantBounds (System.Windows.Media.Media3D.Visual3D reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Rect3D GetDescendantBounds(class System.Windows.Media.Media3D.Visual3D reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDescendantBounds(System.Windows.Media.Media3D.Visual3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Rect3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Media3D.Visual3D" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The 3D visual whose bounding box value for all descendants is computed.</param>
+        <summary>Returns the union of all the content bounding boxes for all the descendants of the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" />, which includes the content bounding box of the <see cref="T:System.Windows.Media.Media3D.Visual3D" />.</summary>
+        <returns>Returns the bounding box 3D rectangle for the 3D visual.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Media.VisualTreeHelper.GetContentBounds%2A> method to return the cached bounding box rectangle for a 3D visual object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescendantBounds">
+      <MemberSignature Language="C#" Value="public static System.Windows.Rect GetDescendantBounds (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect GetDescendantBounds(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDescendantBounds(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose bounding box value for all descendants is computed.</param>
+        <summary>Returns the union of all the content bounding boxes for all the descendants of the <see cref="T:System.Windows.Media.Visual" />, which includes the content bounding box of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The bounding box rectangle for the specified <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Media.VisualTreeHelper.GetContentBounds%2A> method to return the cached bounding box rectangle for a <xref:System.Windows.Media.Visual>.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the union of bounding rectangles for the descendants of a <xref:System.Windows.Media.Visual>.  
+  
+ [!code-csharp[VisualsOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#102)]
+ [!code-vb[VisualsOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDpi">
+      <MemberSignature Language="C#" Value="public static System.Windows.DpiScale GetDpi (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.DpiScale GetDpi(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDpi(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DpiScale</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The Visual target object.</param>
+        <summary>Gets the DPI information at which this Visual is measured and rendered.</summary>
+        <returns>A DPIScale value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDrawing">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingGroup GetDrawing (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.DrawingGroup GetDrawing(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDrawing(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose drawing content is returned.</param>
+        <summary>Returns the drawing content of the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The drawing content of the <see cref="T:System.Windows.Media.Visual" /> returned as a <see cref="T:System.Windows.Media.DrawingGroup" /> type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to retrieve the <xref:System.Windows.Media.DrawingGroup> from a visual object by using the <xref:System.Windows.Media.VisualTreeHelper.GetDrawing%2A> method. A hit test is then performed on the geometry of each drawing in the <xref:System.Windows.Media.DrawingGroup> to determine which geometry was hit.  
+  
+ [!code-csharp[VisualsOverview#VisualsOverviewSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#visualsoverviewsnippet4)]
+ [!code-vb[VisualsOverview#VisualsOverviewSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#visualsoverviewsnippet4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdgeMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.EdgeMode GetEdgeMode (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.EdgeMode GetEdgeMode(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetEdgeMode(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose edge mode value is returned.</param>
+        <summary>Returns the edge mode of the specified <see cref="T:System.Windows.Media.Visual" /> as an <see cref="T:System.Windows.Media.EdgeMode" /> value.</summary>
+        <returns>The <see cref="T:System.Windows.Media.EdgeMode" /> value of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The edge mode value determines how the edges of non-text primitives are rendered.  
+  
+|Edge mode value|Description|  
+|---------------------|-----------------|  
+|<xref:System.Windows.Media.EdgeMode>|Render edges of non-text primitives as aliased edges.|  
+|<xref:System.Windows.Media.EdgeMode>|No edge mode is specified. Do not change the current edge mode that is applied to non-text primitives.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEffect">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Effects.Effect GetEffect (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Effects.Effect GetEffect(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetEffect(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.Effect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> to get the bitmap effect for.</param>
+        <summary>Gets the bitmap effect for the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Effects.Effect" /> applied to <paramref name="reference" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOffset">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector GetOffset (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector GetOffset(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOffset(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose offset is returned.</param>
+        <summary>Returns the offset of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>A <see cref="T:System.Windows.Vector" /> that represents the offset value of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned offset value is relative to the parent of the <xref:System.Windows.Media.Visual>. If you want to return an offset value that is not relative to the parent of a <xref:System.Windows.Media.Visual>, use the <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method.  
+  
+   
+  
+## Examples  
+ The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is defined with <xref:System.Windows.FrameworkElement.Margin%2A> value of 4.  
+  
+ [!code-xml[VisualSnippets#VisualSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml#visualsnippet1)]  
+  
+ The following code example shows how to use the <xref:System.Windows.Media.VisualTreeHelper.GetOffset%2A> method to retrieve the offset of the <xref:System.Windows.Controls.TextBlock>. The offset values are contained within the returned <xref:System.Windows.Vector> value.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet2)]
+ [!code-vb[VisualSnippets#VisualSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet2)]  
+  
+ The offset takes into account the <xref:System.Windows.FrameworkElement.Margin%2A> value. In this case, <xref:System.Windows.Vector.X%2A> is 4, and <xref:System.Windows.Vector.Y%2A> is 4.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpacity">
+      <MemberSignature Language="C#" Value="public static double GetOpacity (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetOpacity(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOpacity(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose opacity value is returned.</param>
+        <summary>Returns the opacity of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>A value of type <see cref="T:System.Double" /> that represents the opacity value of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the opacity is expressed as a value between 0 and 1. A value of 0 indicates that the element is completely transparent, while a value of 1 indicates that the element is completely opaque. A value of 0.5 indicates that the element is 50 percent opaque. Values less than 0 are treated as 0, and values greater than 1 are treated as 1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpacityMask">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush GetOpacityMask (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Brush GetOpacityMask(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOpacityMask(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose opacity mask value is returned.</param>
+        <summary>Returns a <see cref="T:System.Windows.Media.Brush" /> value that represents the opacity mask of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>A value of type <see cref="T:System.Windows.Media.Brush" /> that represents the opacity mask value of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The opacity mask is a <xref:System.Windows.Media.Brush> that is applied to any alpha-channel masking for the rendered content of this <xref:System.Windows.Media.Visual>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetParent (System.Windows.DependencyObject reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetParent(class System.Windows.DependencyObject reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetParent(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The visual whose parent is returned.</param>
+        <summary>Returns a <see cref="T:System.Windows.DependencyObject" /> value that represents the parent of the visual object.</summary>
+        <returns>The parent of the visual.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `reference` can represent either a <xref:System.Windows.Media.Visual> or <xref:System.Windows.Media.Media3D.Visual3D> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransform">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Transform GetTransform (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Transform GetTransform(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetTransform(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Transform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose transform value is returned.</param>
+        <summary>Returns a <see cref="T:System.Windows.Media.Transform" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The transform value of the <see cref="T:System.Windows.Media.Visual" />, or <see langword="null" /> if <paramref name="reference" /> does not have a transform defined.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Alternatively, you can use the <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method to return a transform value for the ancestor of a <xref:System.Windows.Media.Visual>. This method always returns a valid transform. The following code example shows how to use <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet3)]
+ [!code-vb[VisualSnippets#VisualSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet3)]  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Windows.Media.VisualTreeHelper.GetTransform%2A> method to retrieve the transform for the specified visual object.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet6)]
+ [!code-vb[VisualSnippets#VisualSnippet6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet6)]  
+  
+ Your code should test for `null` before using the returned value. To return the offset of the returned transform, use the <xref:System.Windows.Media.GeneralTransform.Transform%2A> method. The offset value is relative to the parent of the <xref:System.Windows.Media.Visual>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXSnappingGuidelines">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DoubleCollection GetXSnappingGuidelines (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.DoubleCollection GetXSnappingGuidelines(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetXSnappingGuidelines(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose X-coordinate guideline collection is returned.</param>
+        <summary>Returns an X-coordinate (vertical) guideline collection.</summary>
+        <returns>The X-coordinate guideline collection of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetYSnappingGuidelines">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DoubleCollection GetYSnappingGuidelines (System.Windows.Media.Visual reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.DoubleCollection GetYSnappingGuidelines(class System.Windows.Media.Visual reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetYSnappingGuidelines(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> whose Y-coordinate guideline collection is returned.</param>
+        <summary>Returns a Y-coordinate (horizontal) guideline collection.</summary>
+        <returns>The Y-coordinate guideline collection of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.HitTestResult HitTest (System.Windows.Media.Visual reference, System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.HitTestResult HitTest(class System.Windows.Media.Visual reference, valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Visual,System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> to hit test.</param>
+        <param name="point">The point value to hit test against.</param>
+        <summary>Returns the topmost <see cref="T:System.Windows.Media.Visual" /> object of a hit test by specifying a <see cref="T:System.Windows.Point" />.</summary>
+        <returns>The hit test result of the <see cref="T:System.Windows.Media.Visual" />, returned as a <see cref="T:System.Windows.Media.HitTestResult" /> type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of the return value represents the <xref:System.Windows.Media.Visual> object that was hit.  
+  
+> [!NOTE]
+>  It is possible for a hit test that starts in a 2D visual tree to return <xref:System.Windows.Media.Media3D.RayHitTestResult>, which is a 3D hit test result object. Hit testing that starts in a 2D visual tree seamlessly extends into any defined 3D visual tree.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to hit test the objects within a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[HitTestingOverview#100](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#100)]
+ [!code-vb[HitTestingOverview#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public static void HitTest (System.Windows.Media.Media3D.Visual3D reference, System.Windows.Media.HitTestFilterCallback filterCallback, System.Windows.Media.HitTestResultCallback resultCallback, System.Windows.Media.Media3D.HitTestParameters3D hitTestParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void HitTest(class System.Windows.Media.Media3D.Visual3D reference, class System.Windows.Media.HitTestFilterCallback filterCallback, class System.Windows.Media.HitTestResultCallback resultCallback, class System.Windows.Media.Media3D.HitTestParameters3D hitTestParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Media3D.Visual3D" />
+        <Parameter Name="filterCallback" Type="System.Windows.Media.HitTestFilterCallback" />
+        <Parameter Name="resultCallback" Type="System.Windows.Media.HitTestResultCallback" />
+        <Parameter Name="hitTestParameters" Type="System.Windows.Media.Media3D.HitTestParameters3D" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Media3D.Visual3D" /> to hit test.</param>
+        <param name="filterCallback">The method that represents the hit test filter callback value.</param>
+        <param name="resultCallback">The method that represents the hit test result callback value.</param>
+        <param name="hitTestParameters">The 3D parameter value to hit test against.</param>
+        <summary>Initiates a hit test on the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" />, with caller-defined <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `filterCallback` parameter can be `null`, in which case, it is ignored. If `filterCallback` is not `null`, it is invoked before `resultCallback`.  `resultCallback` cannot be `null`.  
+  
+> [!NOTE]
+>  It is possible for a hit test that starts in a 2D visual tree to return <xref:System.Windows.Media.Media3D.RayHitTestResult>, which is a 3D hit test result object. Hit testing that starts in a 2D visual tree seamlessly extends into any defined 3D visual tree.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public static void HitTest (System.Windows.Media.Visual reference, System.Windows.Media.HitTestFilterCallback filterCallback, System.Windows.Media.HitTestResultCallback resultCallback, System.Windows.Media.HitTestParameters hitTestParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void HitTest(class System.Windows.Media.Visual reference, class System.Windows.Media.HitTestFilterCallback filterCallback, class System.Windows.Media.HitTestResultCallback resultCallback, class System.Windows.Media.HitTestParameters hitTestParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Visual,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.HitTestParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.Media.Visual" />
+        <Parameter Name="filterCallback" Type="System.Windows.Media.HitTestFilterCallback" />
+        <Parameter Name="resultCallback" Type="System.Windows.Media.HitTestResultCallback" />
+        <Parameter Name="hitTestParameters" Type="System.Windows.Media.HitTestParameters" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.Media.Visual" /> to hit test.</param>
+        <param name="filterCallback">The method that represents the hit test filter callback value.</param>
+        <param name="resultCallback">The method that represents the hit test result callback value.</param>
+        <param name="hitTestParameters">The parameter value to hit test against.</param>
+        <summary>Initiates a hit test on the specified <see cref="T:System.Windows.Media.Visual" />, with caller-defined <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `filterCallback` parameter can be `null`, in which case it is ignored. If `filterCallback` is not `null`, it is invoked before `resultCallback`. `resultCallback` cannot be `null`.  
+  
+> [!NOTE]
+>  It is possible for a hit test that starts in a 2D visual tree to return <xref:System.Windows.Media.Media3D.RayHitTestResult>, which is a 3D hit test result object. Hit testing that starts in a 2D visual tree seamlessly extends into any defined 3D visual tree.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to hit test the objects within a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[HitTestingOverview#101](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#101)]
+ [!code-vb[HitTestingOverview#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#101)]  
+[!code-csharp[HitTestingOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#102)]
+[!code-vb[HitTestingOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRootDpi">
+      <MemberSignature Language="C#" Value="public static void SetRootDpi (System.Windows.Media.Visual visual, System.Windows.DpiScale dpiInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRootDpi(class System.Windows.Media.Visual visual, valuetype System.Windows.DpiScale dpiInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.SetRootDpi(System.Windows.Media.Visual,System.Windows.DpiScale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+        <Parameter Name="dpiInfo" Type="System.Windows.DpiScale" />
+      </Parameters>
+      <Docs>
+        <param name="visual">A Visual object target.</param>
+        <param name="dpiInfo">DPI information for the target Visual.</param>
+        <summary>Updates the DPI information of a Visual. It can only be called on a Visual without a parent.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the topmost <see cref="T:System.Windows.Media.Visual" /> object of a hit test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloaded methods that take <xref:System.Windows.Media.HitTestResultCallback> and <xref:System.Windows.Media.HitTestFilterCallback> as parameters provide additional functionality during hit testing:  
+  
+-   Allow you to participate in controlling the visual tree traversal during hit testing.  
+  
+-   Allow you to retrieve all of the visuals under the point or geometry, not just the topmost one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

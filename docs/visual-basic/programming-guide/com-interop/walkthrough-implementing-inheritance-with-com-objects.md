@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "derived classes, COM reusability"
 ms.assetid: f8e7263a-de13-48d1-b67c-ca1adf3544d9
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

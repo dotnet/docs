@@ -1,0 +1,177 @@
+<Type Name="PaperSource" FullName="System.Drawing.Printing.PaperSource">
+  <TypeSignature Language="C#" Value="public class PaperSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PaperSource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the paper tray from which the printer gets paper.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> properties to get the paper source trays that are available on the printer and to set the paper source for a page, respectively.  
+  
+ For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+   
+  
+## Examples  
+ The following code example populates the `comboPaperSource` combo box with the printer's supported paper sources. The <xref:System.Drawing.Printing.PaperSource.SourceName%2A> is identified as the property that provides the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+  
+ [!code-cpp[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#2)]
+ [!code-csharp[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#2)]
+ [!code-vb[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaperSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSource" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSource> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Drawing.Printing.PaperSource.Kind%2A>|<xref:System.Drawing.Printing.PaperSourceKind?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSource.SourceName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PaperSourceKind Kind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PaperSourceKind Kind" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the paper source.</summary>
+        <value>One of the <see cref="T:System.Drawing.Printing.PaperSourceKind" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawKind">
+      <MemberSignature Language="C#" Value="public int RawKind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RawKind" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.RawKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the integer representing one of the <see cref="T:System.Drawing.Printing.PaperSourceKind" /> values or a custom value.</summary>
+        <value>The integer value representing one of the <see cref="T:System.Drawing.Printing.PaperSourceKind" /> values or a custom value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows integer value for each <xref:System.Drawing.Printing.PaperSourceKind> member. Anything larger than 256 maps to <xref:System.Drawing.Printing.PaperSourceKind> in the <xref:System.Drawing.Printing.PaperSourceKind> enumeration, but the <xref:System.Drawing.Printing.PaperSource.RawKind%2A> property returns the actual integer value.  
+  
+|Integer value|PaperSourceKind member|  
+|-------------------|----------------------------|  
+|1|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|2|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|3|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|4|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|5|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|6|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|7|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|8|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|9|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|10|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|11|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|14|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|15|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|256 or larger|<xref:System.Drawing.Printing.PaperSourceKind>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.SourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the paper source.</summary>
+        <value>The name of the paper source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this property when the paper source needs to be displayed. The name of the paper source is generated based upon the <xref:System.Drawing.Printing.PaperSource.Kind%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example populates the `comboPaperSource` combo box with the printer's supported paper sources. The <xref:System.Drawing.Printing.PaperSource.SourceName%2A> is identified as the property that provides the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+  
+ [!code-cpp[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#2)]
+ [!code-csharp[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#2)]
+ [!code-vb[PaperSource and PaperSize Example with Resolution#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSource.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides information about the <see cref="T:System.Drawing.Printing.PaperSource" /> in string form.</summary>
+        <returns>A string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,67 @@
+<Type Name="VisualStyleElement+StartPanel+MorePrograms" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+StartPanel+MorePrograms">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.StartPanel.MorePrograms" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/StartPanel/MorePrograms extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> for the background of the **All Programs** item in the **Start** menu. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms.Normal%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms> class returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> that represents the background of the **All Programs** menu item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementStartPanelMorePrograms1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#215](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#215)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#215](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#215)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents the background of the **All Programs** menu item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents the background of the **All Programs** menu item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms.Normal%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementStartPanelMorePrograms1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#215](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#215)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#215](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#215)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

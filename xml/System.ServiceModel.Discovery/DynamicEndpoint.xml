@@ -1,0 +1,89 @@
+<Type Name="DynamicEndpoint" FullName="System.ServiceModel.Discovery.DynamicEndpoint">
+  <TypeSignature Language="C#" Value="public class DynamicEndpoint : System.ServiceModel.Description.ServiceEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicEndpoint extends System.ServiceModel.Description.ServiceEndpoint" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DynamicEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Description.ServiceEndpoint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An endpoint that uses WS-Discovery to find the endpoint address dynamically at runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is added to the binding you specify in the <xref:System.ServiceModel.Discovery.DynamicEndpoint> constructor if not already present. The <xref:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria%2A> property enables you to describe the service you want to use. The <xref:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria%2A> and the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> used by the <xref:System.ServiceModel.Discovery.DynamicEndpoint> override these values specified in the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicEndpoint (System.ServiceModel.Description.ContractDescription contract, System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract, class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DynamicEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Channels.Binding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contract" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The contract.</param>
+        <param name="binding">The binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DynamicEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" /> and <see cref="T:System.ServiceModel.Channels.Binding" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscoveryEndpointProvider">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryEndpointProvider DiscoveryEndpointProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryEndpointProvider DiscoveryEndpointProvider" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DynamicEndpoint.DiscoveryEndpointProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.DiscoveryEndpointProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that provides a discovery endpoint.</summary>
+        <value>A discovery endpoint provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindCriteria">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.FindCriteria FindCriteria { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.FindCriteria FindCriteria" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.FindCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> used to search for a service.</summary>
+        <value>The find criteria.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.FindCriteria> is used to describe the service to call.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

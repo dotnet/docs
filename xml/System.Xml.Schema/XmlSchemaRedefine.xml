@@ -1,0 +1,183 @@
+<Type Name="XmlSchemaRedefine" FullName="System.Xml.Schema.XmlSchemaRedefine">
+  <TypeSignature Language="C#" Value="public class XmlSchemaRedefine : System.Xml.Schema.XmlSchemaExternal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaRedefine extends System.Xml.Schema.XmlSchemaExternal" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaRedefine" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaExternal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="redefine" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used to allow simple and complex types, groups and attribute groups from external schema files to be redefined in the current schema. This class can also be used to provide versioning for the schema elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class does the following:  
+  
+ The `redefine` element requires that the external elements exist in the same target namespace as the redefining schema. Schemas without a namespace can also be redefined using the `redefine` element, in which case the redefined components become part of the target namespace of the schema.  
+  
+ The definitions within the `redefine` element itself must use their current definitions as their base type definition. Attribute group definitions and model group definitions must include one and only one reference to themselves. Note that not all the definitions of the redefined schema document must be redefined.  
+  
+ Redefining elements may cause unexpected results, such as ill-formed definitions, on other type definitions that are based on the redefined definitions.  
+  
+ This provides a mechanism for versioning of schema types.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaRedefine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaRedefine.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaRedefine" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeGroups">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable AttributeGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable AttributeGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.AttributeGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> , for all attributes in the schema, which holds the post-compilation value of the <see langword="AttributeGroups" /> property.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> for all attributes in the schema. The post-compilation value of the <see langword="AttributeGroups" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Groups">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Groups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Groups" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.Groups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" />, for all groups in the schema, which holds the post-compilation value of the <see langword="Groups" /> property.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> for all groups in the schema. The post-compilation value of the <see langword="Groups" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("annotation", typeof(System.Xml.Schema.XmlSchemaAnnotation))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("attributeGroup", typeof(System.Xml.Schema.XmlSchemaAttributeGroup))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("complexType", typeof(System.Xml.Schema.XmlSchemaComplexType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("group", typeof(System.Xml.Schema.XmlSchemaGroup))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("simpleType", typeof(System.Xml.Schema.XmlSchemaSimpleType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of the following classes: <see cref="T:System.Xml.Schema.XmlSchemaAnnotation" />, <see cref="T:System.Xml.Schema.XmlSchemaAttributeGroup" />, <see cref="T:System.Xml.Schema.XmlSchemaComplexType" />, <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" />, and <see cref="T:System.Xml.Schema.XmlSchemaGroup" />.</summary>
+        <value>The elements contained within the redefine element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaTypes">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable SchemaTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable SchemaTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.SchemaTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" />, for all simple and complex types in the schema, which holds the post-compilation value of the <see langword="SchemaTypes" /> property.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> for all schema types in the schema. The post-compilation value of the <see langword="SchemaTypes" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

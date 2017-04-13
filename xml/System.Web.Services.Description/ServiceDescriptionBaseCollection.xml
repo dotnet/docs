@@ -1,0 +1,241 @@
+<Type Name="ServiceDescriptionBaseCollection" FullName="System.Web.Services.Description.ServiceDescriptionBaseCollection">
+  <TypeSignature Language="C#" Value="public abstract class ServiceDescriptionBaseCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceDescriptionBaseCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Forms the basis for the strongly typed collections that are members of the <see cref="N:System.Web.Services.Description" /> namespace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ServiceDescriptionBaseCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CPP/servicedescriptionbasecollection.cpp#1)]
+ [!code-csharp[ServiceDescriptionBaseCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CS/servicedescriptionbasecollection.cs#1)]
+ [!code-vb[ServiceDescriptionBaseCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/VB/servicedescriptionbasecollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetKey">
+      <MemberSignature Language="C#" Value="protected virtual string GetKey (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetKey(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.GetKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object for which to return the name of the key.</param>
+        <summary>Returns the name of the key associated with the value passed by reference.</summary>
+        <returns>A null reference.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class in order to return the name of the key associated with the `value` parameter. The default implementation returns null (`Nothing` in Visual Basic). This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClear">
+      <MemberSignature Language="C#" Value="protected override void OnClear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnClear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the contents of the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is intended to be overridden to perform additional processes when clearing the contents of a derived collection. This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsertComplete">
+      <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <c>value</c> parameter.</param>
+        <param name="value">The element to insert into the collection.</param>
+        <summary>Performs additional custom processes after inserting a new element into the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is inserted. For example, a derived class might need additional validation.  
+  
+ This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemove">
+      <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <c>value</c> parameter to be removed.</param>
+        <param name="value">The element to remove from the collection.</param>
+        <summary>Removes an element from the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is intended to be overridden to perform additional processes, such as validation, when an element is removed from the collection.  
+  
+ This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSet">
+      <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index where the <c>oldValue</c> parameter can be found.</param>
+        <param name="oldValue">The object to replace with the <c>newValue</c> parameter.</param>
+        <param name="newValue">The object that replaces the <c>oldValue</c> parameter.</param>
+        <summary>Replaces one value with another within the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden to perform additional processes, such as validation, when setting the value of an element in the collection. This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="protected virtual void SetParent (object value, object parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.SetParent(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object for which to set the parent object.</param>
+        <param name="parent">The object to set as the parent.</param>
+        <summary>Sets the parent object of the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to set a parent of an appropriate class, based upon the Web Services Description Language (WSDL) specification. The default implementation performs no action. This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.IDictionary Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Table" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionBaseCollection.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an interface that implements the association of the keys and values in the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
+        <value>An interface that implements the association of the keys and values in the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns a <xref:System.Collections.Hashtable> to associate the keys and values. This protected method is accessible only through this class or a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

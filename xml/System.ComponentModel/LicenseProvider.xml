@@ -1,0 +1,97 @@
+<Type Name="LicenseProvider" FullName="System.ComponentModel.LicenseProvider">
+  <TypeSignature Language="C#" Value="public abstract class LicenseProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LicenseProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the <see langword="abstract" /> base class for implementing a license provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses a <xref:System.ComponentModel.LicenseProvider> that is implemented by the <xref:System.ComponentModel.LicFileLicenseProvider> class.  
+  
+ [!code-cpp[Classic LicenseManager Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseManager Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic LicenseManager Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseManager Example/CS/source.cs#1)]
+ [!code-vb[Classic LicenseManager Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseManager Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.ComponentModel.LicenseProvider" />, you must override the <see cref="M:System.ComponentModel.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" /> method.  
+  
+ See <see cref="T:System.ComponentModel.LicFileLicenseProvider" /> for an implementation of this class. For more information on licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LicenseProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLicense">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.License GetLicense (System.ComponentModel.LicenseContext context, Type type, object instance, bool allowExceptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.License GetLicense(class System.ComponentModel.LicenseContext context, class System.Type type, object instance, bool allowExceptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.License</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.LicenseContext" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="allowExceptions" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.LicenseContext" /> that specifies where you can use the licensed object.</param>
+        <param name="type">A <see cref="T:System.Type" /> that represents the component requesting the license.</param>
+        <param name="instance">An object that is requesting the license.</param>
+        <param name="allowExceptions">
+          <see langword="true" /> if a <see cref="T:System.ComponentModel.LicenseException" /> should be thrown when the component cannot be granted a license; otherwise, <see langword="false" />.</param>
+        <summary>When overridden in a derived class, gets a license for an instance or type of component, when given a context and whether the denial of a license throws an exception.</summary>
+        <returns>A valid <see cref="T:System.ComponentModel.License" />.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.ComponentModel.LicenseProvider" />, you must override <see cref="M:System.ComponentModel.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" /> to implement a validation method for the license key.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

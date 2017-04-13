@@ -1,0 +1,62 @@
+<Type Name="XamlInstanceCreator" FullName="System.Windows.Markup.XamlInstanceCreator">
+  <TypeSignature Language="C#" Value="public abstract class XamlInstanceCreator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XamlInstanceCreator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlInstanceCreator" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract class that provides a means to store parser records for later instantiation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.XamlInstanceCreator> class is only intended for use by the WPF XAML markup compiler.  
+  
+<a name="xamlTextUsage_XamlInstanceCreator"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XamlInstanceCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlInstanceCreator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlInstanceCreator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public abstract object CreateObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlInstanceCreator.CreateObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, creates a new object to store parser records.</summary>
+        <returns>The created object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

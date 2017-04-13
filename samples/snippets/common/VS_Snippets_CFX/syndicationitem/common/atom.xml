@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-us" CustomAttribute="Value" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Feed Title</title>
+  <subtitle type="text">This is a sample feed</subtitle>
+  <id>FeedID</id>
+  <rights type="text">Copyright 2007</rights>
+  <updated>2007-04-13T17:29:38Z</updated>
+  <category term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme" />
+  <logo>http://server/image.jpg</logo>
+  <author>
+    <name>Jesper Aaberg</name>
+    <uri>http://Jesper/Aaberg</uri>
+    <email>jesper@contoso.com</email>
+  </author>
+  <!-- <Snippet10> -->
+  <contributor>
+    <name>Lene Aaling</name>
+    <uri>http://lene/aaling</uri>
+    <email>lene@contoso.com</email>
+  </contributor>
+  <!-- </Snippet10> -->
+  <generator>Sample Code</generator>
+  <!-- <Snippet12> -->
+  <link rel="alternate" href="http://someserver/MyItem" />
+  <link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://alternate/Link" />
+  <entry p2:itemAttrib="ItemAttribValue" xmlns:p2="http://FeedServer/tags">
+    <!-- <Snippet18> -->
+    <title type="text">My Item</title>
+    <!-- </Snippet18> -->
+
+    <!-- <Snippet16> -->
+    <summary type="text">this is a summary for my item</summary>
+    <!-- </Snippet16> -->
+
+    <author>
+      <name>Jesper Aaberg</name>
+      <uri>http://contoso/jesper</uri>
+      <email>jesper@contoso.com</email>
+    </author>
+    <!-- </Snippet12> -->
+    <!-- <Snippet14> -->
+    <source>
+      <title type="text">MyFeed</title>
+      <subtitle type="text">This is my feed</subtitle>
+      <link rel="alternate" href="http://myfeed/" />
+    </source>
+    <!-- </Snippet14> -->
+
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+    <link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+    <CustomElement xmlns="">Some text</CustomElement>
+    <!-- <Snippet4> -->
+    <link rel="alternate" href="http://someserver/MyItem" />
+    <content type="text">This is some content</content>
+  <!-- </Snippet4> -->
+  </entry>  
+  <!-- <Snippet6> -->
+  <entry>
+    <id>Item ID</id>
+    <title type="text">My Item</title>
+    <updated>2007-03-16T23:00:59Z</updated>
+    <author>
+      <name>Lene Aaling</name>
+      <uri>http://contoso/Lene</uri>
+      <email>lene@contoso.com</email>
+    </author>
+    <link rel="alternate" href="http://someserver/MyItem" />
+    <link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://otherserver/Item" />
+    <content type="text">This is some content</content>
+  </entry>
+  <!-- </Snippet6> -->
+  <!-- <Snippet8> -->
+  <entry>
+    <id>Item ID</id>
+    <title type="text">My Item</title>
+    <updated>2007-03-16T23:02:54Z</updated>
+    <author>
+      <name>Jesper Aaberg</name>
+      <uri>http://contoso/Jesper</uri>
+      <email>jesper@contoso.com</email>
+    </author>
+    <link rel="alternate" href="http://someserver/MyItem" />
+    <link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://otherserver/Item" />
+    <category term="Category One" />
+    <content type="text">This is some content</content>
+  </entry>
+  <!-- </Snippet8> -->
+</feed>
+
+

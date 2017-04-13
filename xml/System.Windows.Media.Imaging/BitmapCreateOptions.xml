@@ -1,0 +1,122 @@
+<Type Name="BitmapCreateOptions" FullName="System.Windows.Media.Imaging.BitmapCreateOptions">
+  <TypeSignature Language="C#" Value="public enum BitmapCreateOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCreateOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCreateOptions" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies initialization options for bitmap images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If PreservePixelFormat is not selected, the <xref:System.Windows.Media.PixelFormat> of the image is chosen by the system depending on what the system determines will yield the best performance. Enabling this option preserves the file format but may result in lesser performance.  
+  
+ If <xref:System.Windows.Media.Imaging.BitmapCreateOptions> is set to IgnoreColorProfile, calls to methods such as <xref:System.Windows.Media.Imaging.BitmapSource.CopyPixels%28System.Array%2CSystem.Int32%2CSystem.Int32%29> will not return color-corrected bits.  
+  
+ When IgnoreImageCache is selected, any existing entries in the image cache are replaced even if they share the same <xref:System.Uri>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to instantiate a <xref:System.Windows.Media.Imaging.BitmapImage> and specify <xref:System.Windows.Media.Imaging.BitmapCreateOptions>.  
+  
+ [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+ [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DelayCreation">
+      <MemberSignature Language="C#" Value="DelayCreation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCreateOptions DelayCreation = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.DelayCreation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> object to delay initialization until it is necessary. This is useful when dealing with collections of images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreColorProfile">
+      <MemberSignature Language="C#" Value="IgnoreColorProfile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCreateOptions IgnoreColorProfile = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreColorProfile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to ignore an embedded color profile.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreImageCache">
+      <MemberSignature Language="C#" Value="IgnoreImageCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCreateOptions IgnoreImageCache = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreImageCache" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Loads images without using an existing image cache. This option should only be selected when images in a cache need to be refreshed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCreateOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> are specified. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreservePixelFormat">
+      <MemberSignature Language="C#" Value="PreservePixelFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCreateOptions PreservePixelFormat = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.PreservePixelFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ensures that the <see cref="T:System.Windows.Media.PixelFormat" /> a file is stored in is the same as it is loaded to.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

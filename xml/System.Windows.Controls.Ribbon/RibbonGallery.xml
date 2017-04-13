@@ -1,0 +1,2454 @@
+<Type Name="RibbonGallery" FullName="System.Windows.Controls.Ribbon.RibbonGallery">
+  <TypeSignature Language="C#" Value="public class RibbonGallery : System.Windows.Controls.ItemsControl, Microsoft.Windows.Input.IPreviewCommandSource, System.Windows.Input.ICommandSource, System.Windows.IWeakEventListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonGallery extends System.Windows.Controls.ItemsControl implements class Microsoft.Windows.Input.IPreviewCommandSource, class System.Windows.Input.ICommandSource, class System.Windows.IWeakEventListener" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGallery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ItemsControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Windows.Input.IPreviewCommandSource</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommandSource</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.IWeakEventListener</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="AllFilterItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonMenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="FilterItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonMenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="GalleryItemStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonGalleryItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonGalleryCategory))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="ItemsPresenter", Type=typeof(System.Windows.Controls.ItemsPresenter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_FilterMenuButton", Type=typeof(System.Windows.Controls.Ribbon.RibbonMenuButton))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_ScrollViewer", Type=typeof(System.Windows.Controls.ScrollViewer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_FilterContentPane", Type=typeof(System.Windows.Controls.ContentPresenter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a menu that displays a set of related items or commands in a visually rich format that can be organized into multiple categorized subsets.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows a <xref:System.Windows.Controls.Ribbon.RibbonComboBox> hosting a simple <xref:System.Windows.Controls.Ribbon.RibbonGallery>.  
+  
+ ![Ribbon combo box control with drop&#45;down open](~/add/media/wpfribbon-combobox-selection.png "Ribbon combo box control with drop-down open")  
+Ribbon gallery in a combo box  
+  
+   
+  
+## Examples  
+ The following example shows the markup to create a combo box that hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> with three available items.  
+  
+ [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribboncombobox)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonGallery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFilterItem">
+      <MemberSignature Language="C#" Value="public static object AllFilterItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property object AllFilterItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the filter that returns all items in a ribbon gallery.</summary>
+        <value>The filter that returns all items in a ribbon gallery.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement a custom <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector%2A> or <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector%2A>, you can use this property to distinguish between "All" filter items and custom filter items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFilterItemContainerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style AllFilterItemContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style AllFilterItemContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is applied to items in the filter when the "All" filter is selected.</summary>
+        <value>The style that is applied to items in the filter when the "All" filter is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AllFilterItemContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFilterItemContainerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllFilterItemContainerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllFilterItemContainerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFilterItemTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate AllFilterItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate AllFilterItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when the "All" filter is selected.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AllFilterItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFilterItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllFilterItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllFilterItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAddToQuickAccessToolBarDirectly">
+      <MemberSignature Language="C#" Value="public bool CanAddToQuickAccessToolBarDirectly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether this control can be added directly to the Quick Access Toolbar.</summary>
+        <value>
+          <see langword="true" /> if this control can be added directly to the Quick Access Toolbar; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanAddToQuickAccessToolBarDirectly"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectlyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAddToQuickAccessToolBarDirectlyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectly" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUserFilter">
+      <MemberSignature Language="C#" Value="public bool CanUserFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUserFilter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a user can apply a filter to gallery items.</summary>
+        <value>
+          <see langword="true" /> if a filter can be applied to gallery items; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanUserFilter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUserFilterProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanUserFilterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanUserFilterProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilter" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style CategoryStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CategoryStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is applied to the <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> element generated for each item.</summary>
+        <value>The style that is applied to the container element generated for each item. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_CategoryStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CategoryStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CategoryStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate CategoryTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate CategoryTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display each item in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" />.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_CategoryTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CategoryTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CategoryTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
+        <summary>Unloads the container for the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonGallery.PrepareContainerForItemOverride%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsStretchToFill">
+      <MemberSignature Language="C#" Value="public bool ColumnsStretchToFill { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ColumnsStretchToFill" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates that the gallery distributes all its available width equally between its columns.</summary>
+        <value>
+          <see langword="true" /> if the gallery distributes its available width equally between its columns; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill%2A> property only has an effect when <xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope%2A> is set to `true`.  
+  
+<a name="dependencyPropertyInfo_ColumnsStretchToFill"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFillProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsStretchToFillProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnsStretchToFillProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnsStretchToFillProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFillProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the command that is associated with this ribbon gallery.</summary>
+        <value>The command that is associated with this ribbon gallery. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Command"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameter">
+      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a user-defined data value to pass to the command.</summary>
+        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CommandParameter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameter" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.Command" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTarget">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement CommandTarget { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement CommandTarget" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the element on which to invoke the specified command.</summary>
+        <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CommandTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandTargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandTargetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.CommandTargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandTarget" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand FilterCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand FilterCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command to invoke when the current gallery filter is changed by the user.</summary>
+        <value>The command to invoke when the current filter is changed. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemContainerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style FilterItemContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style FilterItemContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is applied to the filter items container generated from a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> header.</summary>
+        <value>The style applied to the filter items container element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterItemContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemContainerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterItemContainerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterItemContainerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemContainerStyleSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.StyleSelector FilterItemContainerStyleSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.StyleSelector FilterItemContainerStyleSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StyleSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.Style" /> that is applied to items in the filter when a custom filter is selected.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.StyleSelector" /> object that provides logic and returns a <see cref="T:System.Windows.Style" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property to specify the appearance of the content. If you have more than one style defined and want to specify logic that selects a style to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_FilterItemContainerStyleSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemContainerStyleSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterItemContainerStyleSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterItemContainerStyleSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate FilterItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate FilterItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when a custom filter is selected.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector FilterItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector FilterItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when a custom filter is selected.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_FilterItemTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterMenuButtonStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style FilterMenuButtonStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style FilterMenuButtonStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is applied to the filter menu button.</summary>
+        <value>The style that is applied to the filter menu button. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterMenuButtonStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterMenuButtonStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterMenuButtonStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterMenuButtonStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterPaneContent">
+      <MemberSignature Language="C#" Value="public object FilterPaneContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FilterPaneContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contents of the filter pane.</summary>
+        <value>The contents of the filter pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterPaneContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterPaneContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterPaneContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterPaneContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContent" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterPaneContentTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate FilterPaneContentTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate FilterPaneContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display the contents of the filter pane.</summary>
+        <value>A template that specifies the visualization of the filter pane contents. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterPaneContentTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterPaneContentTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterPaneContentTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterPaneContentTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GalleryItemStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style GalleryItemStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style GalleryItemStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is applied to items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>The style that is applied to items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GalleryItemStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GalleryItemStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GalleryItemStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GalleryItemStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GalleryItemTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate GalleryItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate GalleryItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display each item in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GalleryItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GalleryItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GalleryItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GalleryItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.GetContainerForItemOverride" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> object.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> container object that is used to display an item from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighlightedItem">
+      <MemberSignature Language="C#" Value="public object HighlightedItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object HighlightedItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the item that is currently highlighted.</summary>
+        <value>The item that is currently highlighted. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_HighlightedItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighlightedItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HighlightedItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HighlightedItemProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItem" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledCore">
+      <MemberSignature Language="C#" Value="protected override bool IsEnabledCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabledCore" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.IsEnabledCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that indicates whether the gallery is enabled.</summary>
+        <value>
+          <see langword="true" /> if the gallery is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemItsOwnContainerOverride">
+      <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to test.</param>
+        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSharedColumnSizeScope">
+      <MemberSignature Language="C#" Value="public bool IsSharedColumnSizeScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSharedColumnSizeScope" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether this gallery defines the scope used for uniform layout of items.</summary>
+        <value>
+          <see langword="true" /> if this gallery defines the scope used for uniform layout of items; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSharedColumnSizeScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScopeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSharedColumnSizeScopeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSharedColumnSizeScopeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSharedColumnSizeScopeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScopeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronizedWithCurrentItem">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsSynchronizedWithCurrentItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsSynchronizedWithCurrentItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the gallery should keep the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> synchronized with the current item in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is always synchronized with the current item in the source collection; <see langword="false" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is never synchronized with the current item; <see langword="null" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is synchronized with the current item only if the gallery is bound to a <see cref="T:System.Windows.Data.CollectionViewSource" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSynchronizedWithCurrentItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronizedWithCurrentItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSynchronizedWithCurrentItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSynchronizedWithCurrentItemProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItem" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxColumnCount">
+      <MemberSignature Language="C#" Value="public int MaxColumnCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxColumnCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the maximum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
+        <value>The maximum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />. The registered default is <see cref="F:System.Int32.MaxValue" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MaxColumnCount"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCountProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxColumnCountProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MaxColumnCountProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MaxColumnCountProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCountProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCount" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinColumnCount">
+      <MemberSignature Language="C#" Value="public int MinColumnCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinColumnCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the minimum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
+        <value>The minimum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.The registered default is 1. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MinColumnCount"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCountProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinColumnCountProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinColumnCountProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinColumnCountProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCountProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCount" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnApplyTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonGalleryAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHighlightedItemChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnHighlightedItemChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHighlightedItemChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnHighlightedItemChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Information about the change.</param>
+        <summary>Updates the old and new items when the highlighted item changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialized">
+      <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnInitialized(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnIsKeyboardFocusWithinChanged">
+      <MemberSignature Language="C#" Value="protected override void OnIsKeyboardFocusWithinChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsKeyboardFocusWithinChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged> event data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsChanged">
+      <MemberSignature Language="C#" Value="protected override void OnItemsChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Information about the change.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsSourceChanged">
+      <MemberSignature Language="C#" Value="protected override void OnItemsSourceChanged (System.Collections.IEnumerable oldValue, System.Collections.IEnumerable newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsSourceChanged(class System.Collections.IEnumerable oldValue, class System.Collections.IEnumerable newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Collections.IEnumerable" />
+        <Parameter Name="newValue" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">The old value of the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property.</param>
+        <param name="newValue">The new value of the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseEnter">
+      <MemberSignature Language="C#" Value="protected override void OnMouseEnter (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseEnter(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseEnter" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseEnter> event data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeave">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeave (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnPreviewKeyDown (System.Windows.Input.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewKeyDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectionChanged (System.Windows.RoutedPropertyChangedEventArgs&lt;object&gt; e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanged(class System.Windows.RoutedPropertyChangedEventArgs`1&lt;object&gt; e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.OnSelectionChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedPropertyChangedEventArgs&lt;System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prepares a <xref:System.Windows.Controls.Ribbon.RibbonGalleryCategory> to display <xref:System.Windows.Controls.Ribbon.RibbonGalleryItem> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewCommandParameter">
+      <MemberSignature Language="C#" Value="public object PreviewCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PreviewCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a user-defined data value to pass to the command when it is previewed.</summary>
+        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PreviewCommandParameter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreviewCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreviewCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameter" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickAccessToolBarId">
+      <MemberSignature Language="C#" Value="public object QuickAccessToolBarId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object QuickAccessToolBarId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a unique identifier that links a ribbon control to a corresponding control in the Quick Access Toolbar.</summary>
+        <value>A unique identifier for a control in the Quick Access Toolbar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_QuickAccessToolBarId"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarIdProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickAccessToolBarIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty QuickAccessToolBarIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty QuickAccessToolBarIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarId" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ribbon">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.Ribbon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Ribbon"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.RibbonProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RibbonProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.RibbonProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.Ribbon" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollIntoView(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.ScrollIntoView(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to bring into view.</param>
+        <summary>Causes the object to scroll into view.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected item in the ribbon gallery.</summary>
+        <value>The currently selected item, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItemProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedItemProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValue">
+      <MemberSignature Language="C#" Value="public object SelectedValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the property on the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> that is specified by the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />.</summary>
+        <value>The value of the property on the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> that is specified by the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedValue"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValueProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValuePath">
+      <MemberSignature Language="C#" Value="public string SelectedValuePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectedValuePath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path that is used to get the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> of the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>The path that is used to get the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> of the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedValuePath"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValuePathProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedValuePathProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedValuePathProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePathProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedValueProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.RoutedPropertyChangedEventHandler&lt;object&gt; SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedPropertyChangedEventHandler`1&lt;object&gt; SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedPropertyChangedEventHandler&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent SelectionChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent SelectionChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallImageSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource SmallImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource SmallImageSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Small" />.</summary>
+        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SmallImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SmallImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SmallImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSource" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.IWeakEventListener.ReceiveWeakEvent">
+      <MemberSignature Language="C#" Value="bool IWeakEventListener.ReceiveWeakEvent (Type managerType, object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGallery.System#Windows#IWeakEventListener#ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managerType" Type="System.Type" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method.</param>
+        <param name="sender">The object that originated the event.</param>
+        <param name="e">The event data.</param>
+        <summary>Receives events from the centralized event manager.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event. <see langword="false" /> if it receives an event that it does not recognize or handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Ribbon.RibbonGallery> instance is cast to an <xref:System.Windows.IWeakEventListener> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipDescription">
+      <MemberSignature Language="C#" Value="public string ToolTipDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the descriptive text that is displayed in the ToolTip for this control.</summary>
+        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipDescriptionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipDescriptionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipDescriptionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescriptionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescription" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterDescription">
+      <MemberSignature Language="C#" Value="public string ToolTipFooterDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the descriptive text that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterDescriptionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterDescriptionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescriptionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescription" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterImageSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipFooterImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipFooterImageSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSource" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterTitle">
+      <MemberSignature Language="C#" Value="public string ToolTipFooterTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title text that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipFooterTitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterTitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterTitleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipImageSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipImageSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image that is displayed in the ToolTip for this control.</summary>
+        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSource" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipTitle">
+      <MemberSignature Language="C#" Value="public string ToolTipTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title text that is displayed in the ToolTip for this control.</summary>
+        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipTitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipTitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipTitleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

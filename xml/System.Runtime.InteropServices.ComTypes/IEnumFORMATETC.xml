@@ -1,0 +1,218 @@
+<Type Name="IEnumFORMATETC" FullName="System.Runtime.InteropServices.ComTypes.IEnumFORMATETC">
+  <TypeSignature Language="C#" Value="public interface IEnumFORMATETC" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumFORMATETC" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumFORMATETC" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00000103-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the managed definition of the <see langword="IEnumFORMATETC" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface enumerates an array of <xref:System.Runtime.InteropServices.ComTypes.FORMATETC> structures.  
+  
+ For more information about the `IEnumFORMATETC` interface, see the MSDN Library.  
+  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.ComTypes.IEnumFORMATETC newEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone(class System.Runtime.InteropServices.ComTypes.IEnumFORMATETC newEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Clone(System.Runtime.InteropServices.ComTypes.IEnumFORMATETC@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumFORMATETC&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="newEnum">When this method returns, contains a reference to the newly created enumerator. This parameter is passed uninitialized.</param>
+        <summary>Creates a new enumerator that contains the same enumeration state as the current enumerator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about `IEnumFORMATETC::Clone`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.ComTypes.FORMATETC[] rgelt, int[] pceltFetched);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, valuetype System.Runtime.InteropServices.ComTypes.FORMATETC[] rgelt, int32[] pceltFetched) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Next(System.Int32,System.Runtime.InteropServices.ComTypes.FORMATETC[],System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.Int32" />
+        <Parameter Name="rgelt" Type="System.Runtime.InteropServices.ComTypes.FORMATETC[]" />
+        <Parameter Name="pceltFetched" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="celt">The number of <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> references to return in <c>rgelt</c>.</param>
+        <param name="rgelt">When this method returns, contains a reference to the enumerated <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> references. This parameter is passed uninitialized.</param>
+        <param name="pceltFetched">When this method returns, contains a reference to the actual number of references enumerated in <c>rgelt</c>. This parameter is passed uninitialized.</param>
+        <summary>Retrieves a specified number of items in the enumeration sequence.</summary>
+        <returns>
+          <see langword="S_OK" /> if the <paramref name="pceltFetched" /> parameter equals the <paramref name="celt" /> parameter; otherwise, <see langword="S_FALSE" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about `IEnumFORMATETC::Next`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public int Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the enumeration sequence to the beginning.</summary>
+        <returns>An HRESULT with the value <see langword="S_OK" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about `IEnumFORMATETC::Reset`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public int Skip (int celt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Skip(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="celt">The number of elements to skip in the enumeration.</param>
+        <summary>Skips a specified number of items in the enumeration sequence.</summary>
+        <returns>
+          <see langword="S_OK" /> if the number of elements skipped equals the <paramref name="celt" /> parameter; otherwise, <see langword="S_FALSE" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about `IEnumFORMATETC::Skip`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

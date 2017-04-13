@@ -82,8 +82,7 @@ DNU came with a concept called "global commands". These were, essentially, conso
 packages with a shell script that would invoke the DNX you specified to run the application. 
 
 The CLI does not support this concept. It does, however, support the concept of adding per-project commands that can be 
-invoked using the familiar `dotnet <command>` syntax. More about this can be found in the 
-[extensibility overview](../tools/index.md#extensibility). 
+invoked using the familiar `dotnet <command>` syntax.
 
 ### Installing dependencies
 As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a 
@@ -122,8 +121,7 @@ tools that you wish to use, in this case **1.0.0-preview2-003121**:
 ### Migrating the project file
 The CLI and DNX both use the same basic project system based on `project.json` file. The syntax and the semantics of the 
 project file are pretty much the same, with small differences based on the scenarios. There are also some changes to 
-the schema which you can see in the [schema file](http://json.schemastore.org/project) or in a more friendly 
-[project.json reference](../tools/project-json.md). 
+the schema which you can see in the [schema file](http://json.schemastore.org/project).
 
 If you are building a console application, you need to add the following snippet to your project file:
 
@@ -142,8 +140,7 @@ If you have a "commands" section in your `project.json`, you can remove it. Some
 DNU commands, such as Entity Framework CLI commands, are being ported to be 
 per-project extensions to the CLI. If you built your own commands that you are using in your projects, you need to 
 replace them with CLI extensions. In this case, the `commands` node in `project.json` needs to be replaced by the 
-`tools` node and it needs to list the tools dependencies as explained in the 
-[CLI extensibility section](../tools/index.md#extensibility). 
+`tools` node and it needs to list the tools dependencies. 
 
 After these things are done, you need to decide which type of portability you wish for you app. With .NET Core, we have 
 invested into providing a spectrum of portability options that you can choose from. For instance, you may want to have 

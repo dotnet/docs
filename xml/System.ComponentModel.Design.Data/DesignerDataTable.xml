@@ -1,0 +1,117 @@
+<Type Name="DesignerDataTable" FullName="System.ComponentModel.Design.Data.DesignerDataTable">
+  <TypeSignature Language="C#" Value="public abstract class DesignerDataTable : System.ComponentModel.Design.Data.DesignerDataTableBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerDataTable extends System.ComponentModel.Design.Data.DesignerDataTableBase" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataTable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.Data.DesignerDataTableBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a table in the data store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataTable> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
+  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataTable> class represents a single table in the data store. A collection of <xref:System.ComponentModel.Design.Data.DesignerDataTable> objects is returned when you call the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method with the `schemaClass` parameter set to <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass.Tables?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DesignerDataTable (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the table.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> class with the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DesignerDataTable (string name, string owner);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, string owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="owner" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the table.</param>
+        <param name="owner">The owner of the table.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> class with the specified name and owner.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRelationships">
+      <MemberSignature Language="C#" Value="protected abstract System.Collections.ICollection CreateRelationships ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ICollection CreateRelationships() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.CreateRelationships" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns a collection of relationship objects.</summary>
+        <returns>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataRelationship" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataTable.CreateRelationships%2A> method is called the first time the <xref:System.ComponentModel.Design.Data.DesignerDataTable.Relationships%2A> property is accessed, to populate the collection of data table relationships.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relationships">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Relationships { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Relationships" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataTable.Relationships" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of relationships defined for a table.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataRelationship" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A relationship describes a link between two tables in a data store. The <xref:System.ComponentModel.Design.Data.DesignerDataTable.Relationships%2A> property returns a collection that represents all the relationships between this table and other tables in the data store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

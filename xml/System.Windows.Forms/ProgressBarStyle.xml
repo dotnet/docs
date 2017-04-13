@@ -1,0 +1,73 @@
+<Type Name="ProgressBarStyle" FullName="System.Windows.Forms.ProgressBarStyle">
+  <TypeSignature Language="C#" Value="public enum ProgressBarStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProgressBarStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProgressBarStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the style that a <see cref="T:System.Windows.Forms.ProgressBar" /> uses to indicate the progress of an operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the marquee style when you need to indicate progress is being made, but you cannot indicate the quantity of progress. The Marquee style is valid only when visual styles are enabled. The Continuous style is valid only when visual styles are not enabled.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Blocks">
+      <MemberSignature Language="C#" Value="Blocks" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Blocks = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Blocks" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates progress by increasing the number of segmented blocks in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Continuous">
+      <MemberSignature Language="C#" Value="Continuous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Continuous = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Continuous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates progress by increasing the size of a smooth, continuous bar in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Marquee">
+      <MemberSignature Language="C#" Value="Marquee" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Marquee = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Marquee" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates progress by continuously scrolling a block across a <see cref="T:System.Windows.Forms.ProgressBar" /> in a marquee fashion.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

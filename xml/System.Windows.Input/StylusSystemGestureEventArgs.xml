@@ -1,0 +1,89 @@
+<Type Name="StylusSystemGestureEventArgs" FullName="System.Windows.Input.StylusSystemGestureEventArgs">
+  <TypeSignature Language="C#" Value="public class StylusSystemGestureEventArgs : System.Windows.Input.StylusEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusSystemGestureEventArgs extends System.Windows.Input.StylusEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusSystemGestureEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.StylusEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusSystemGestureEventArgs (System.Windows.Input.StylusDevice stylusDevice, int timestamp, System.Windows.Input.SystemGesture systemGesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusDevice stylusDevice, int32 timestamp, valuetype System.Windows.Input.SystemGesture systemGesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusSystemGestureEventArgs.#ctor(System.Windows.Input.StylusDevice,System.Int32,System.Windows.Input.SystemGesture)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusDevice" Type="System.Windows.Input.StylusDevice" />
+        <Parameter Name="timestamp" Type="System.Int32" />
+        <Parameter Name="systemGesture" Type="System.Windows.Input.SystemGesture" />
+      </Parameters>
+      <Docs>
+        <param name="stylusDevice">The <see cref="T:System.Windows.Input.StylusDevice" /> to associate with the event.</param>
+        <param name="timestamp">The time the event occurs.</param>
+        <param name="systemGesture">The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusSystemGestureEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusSystemGestureEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes a type-specific handler on the target whenever the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event is raised.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.StylusSystemGestureEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemGesture">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.SystemGesture SystemGesture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.SystemGesture SystemGesture" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusSystemGestureEventArgs.SystemGesture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</summary>
+        <value>The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

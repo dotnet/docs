@@ -1,0 +1,276 @@
+<Type Name="ComboBoxAutomationPeer" FullName="System.Windows.Automation.Peers.ComboBoxAutomationPeer">
+  <TypeSignature Language="C#" Value="public class ComboBoxAutomationPeer : System.Windows.Automation.Peers.SelectorAutomationPeer, System.Windows.Automation.Provider.IExpandCollapseProvider, System.Windows.Automation.Provider.IValueProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComboBoxAutomationPeer extends System.Windows.Automation.Peers.SelectorAutomationPeer implements class System.Windows.Automation.Provider.IExpandCollapseProvider, class System.Windows.Automation.Provider.IValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.SelectorAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IExpandCollapseProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IValueProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.ComboBox" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComboBoxAutomationPeer (System.Windows.Controls.ComboBox owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ComboBox owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.#ctor(System.Windows.Controls.ComboBox)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.ComboBox" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Controls.ComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItemAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.ItemAutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Windows.Controls.ComboBoxItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> class.</summary>
+        <returns>A new instance of the <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ComboBox" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetChildrenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of child elements. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>A collection of child elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the class that defines the type that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "ComboBox".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">One of the enumeration values.</param>
+        <summary>Gets the control pattern for this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />.</summary>
+        <returns>If <paramref name="pattern" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Value" /> or <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, this method returns a reference to the current instance of the <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />; otherwise, this method calls the base implementation on <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocusCore">
+      <MemberSignature Language="C#" Value="protected override void SetFocusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetFocusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.SetFocusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the keyboard input focus on the <see cref="T:System.Windows.Controls.ComboBox" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" /> object. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.ComboBox" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" /> object cannot receive focus.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse">
+      <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Collapse ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Expand">
+      <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Expand ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>The <see cref="T:System.Windows.Automation.ExpandCollapseState" /> for the current element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IValueProvider.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.IValueProvider.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.IValueProvider.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IValueProvider.SetValue">
+      <MemberSignature Language="C#" Value="void IValueProvider.SetValue (string val);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IValueProvider.SetValue(string val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="val" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="val">The string value of a control.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IValueProvider.Value">
+      <MemberSignature Language="C#" Value="string System.Windows.Automation.Provider.IValueProvider.Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Windows.Automation.Provider.IValueProvider.Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>A string value of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

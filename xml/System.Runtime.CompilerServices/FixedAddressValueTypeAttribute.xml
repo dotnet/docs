@@ -1,0 +1,76 @@
+<Type Name="FixedAddressValueTypeAttribute" FullName="System.Runtime.CompilerServices.FixedAddressValueTypeAttribute">
+  <TypeSignature Language="C#" Value="public sealed class FixedAddressValueTypeAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FixedAddressValueTypeAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Fixes the address of a static value type field throughout its lifetime. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> attribute to mark static value types as pinned upon creation.  
+  
+ This attribute is used by the Microsoft Visual C++ compiler.  
+  
+ Static value type fields are created as boxed objects. This means that their address can change as garbage collection is performed. When you apply this attribute to a static value type, its address remains constant during its lifetime.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of the <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> attribute to pin a static field in memory. It defines an `Age` structure and initializes two classes that have static fields of type `Age`. The second class applies <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> to pin the field's address. A number of memory allocations are made before and after these two objects are instantiated and the garbage collector is invoked. The output from the example shows that although the address of the first `Age` field has changed after garbage collection, the address of the field to which <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> is applied has not.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.FixedAddressValueTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.fixedaddressvaluetypeattribute/cs/example1.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FixedAddressValueTypeAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates the use of the <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> attribute to pin a static field in memory. It defines an `Age` structure and initializes two classes that have static fields of type `Age`. The second class applies <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> to pin the field's address. A number of memory allocations are made before and after these two objects are instantiated and the garbage collector is invoked. The output from the example shows that although the address of the first `Age` field has changed after garbage collection, the address of the field to which <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> is applied has not.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.FixedAddressValueTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.fixedaddressvaluetypeattribute/cs/example1.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

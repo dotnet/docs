@@ -1,0 +1,188 @@
+<Type Name="GridLengthConverter" FullName="System.Windows.GridLengthConverter">
+  <TypeSignature Language="C#" Value="public class GridLengthConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridLengthConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.GridLengthConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts instances of other types to and from <see cref="T:System.Windows.GridLength" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+<a name="XAMLTextUsage_GridLengthConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridLengthConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.GridLengthConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeDescriptorContext" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Determines whether a class can be converted from a given type to an instance of <see cref="T:System.Windows.GridLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert from the specified type to an instance of <see cref="T:System.Windows.GridLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeDescriptorContext" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="destinationType">The desired type that this instance of <see cref="T:System.Windows.GridLength" /> is being evaluated for conversion.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.GridLength" /> can be converted to a different type.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert this instance of <see cref="T:System.Windows.GridLength" /> to the specified type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, System.Globalization.CultureInfo cultureInfo, object source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeDescriptorContext" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Cultural specific information that should be respected during conversion.</param>
+        <param name="source">The object being converted.</param>
+        <summary>Attempts to convert a specified object to an instance of <see cref="T:System.Windows.GridLength" />.</summary>
+        <returns>The instance of <see cref="T:System.Windows.GridLength" /> that is created from the converted <paramref name="source" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> object is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> object is not <see langword="null" /> and is not a valid type that can be converted to a <see cref="T:System.Windows.GridLength" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, System.Globalization.CultureInfo cultureInfo, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeDescriptorContext" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Cultural specific information that should be respected during conversion.</param>
+        <param name="value">The instance of <see cref="T:System.Windows.GridLength" /> to convert.</param>
+        <param name="destinationType">The type that this instance of <see cref="T:System.Windows.GridLength" /> is converted to.</param>
+        <summary>Attempts to convert an instance of <see cref="T:System.Windows.GridLength" /> to a specified type.</summary>
+        <returns>The object that is created from the converted instance of <see cref="T:System.Windows.GridLength" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

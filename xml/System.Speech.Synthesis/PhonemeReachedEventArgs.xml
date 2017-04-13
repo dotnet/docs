@@ -1,0 +1,181 @@
+<Type Name="PhonemeReachedEventArgs" FullName="System.Speech.Synthesis.PhonemeReachedEventArgs">
+  <TypeSignature Language="C#" Value="public class PhonemeReachedEventArgs : System.Speech.Synthesis.PromptEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PhonemeReachedEventArgs extends System.Speech.Synthesis.PromptEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PhonemeReachedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Synthesis.PromptEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Returns data from the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A phoneme is a basic component of written language. For more information about phonemes, see <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>.  
+  
+   
+  
+## Examples  
+ The following example is part of a Windows Forms application that writes the information returned by the <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event to a text box. The phonemes are characters from the [International Phonetic Alphabet (IPA)](http://go.microsoft.com/fwlink/?LinkID=207686).  
+  
+> [!NOTE]
+>  The first and last characters returned by <xref:System.Speech.Synthesis.PhonemeReachedEventArgs> are opening and closing characters that enclose but do not represent phonemes that constitute a word or phrase. This example returns five characters, but only the middle three characters are phonemes that represent the word "theme": one for the "th" sound, one for the "e" sound, and one for the "m" sound .  
+  
+```csharp  
+using System;  
+using System.Collections.Generic;  
+using System.ComponentModel;  
+using System.Data;  
+using System.Drawing;  
+using System.Linq;  
+using System.Text;  
+using System.Windows.Forms;  
+using System.Speech.Synthesis;  
+  
+namespace PhonemeReached  
+{  
+  public partial class Form1 : Form  
+  {  
+  
+    public Form1()  
+    {  
+      InitializeComponent();  
+      textBox1.Text = "";  
+    }  
+  
+    public void button1_Click(object sender, EventArgs e)  
+    {  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Register for the PhonemeReached event.  
+      synth.PhonemeReached += new EventHandler<PhonemeReachedEventArgs>(synth_PhonemeReached);  
+  
+      // Speak the contents of a string.  
+      synth.Speak("Theme");  
+    }  
+  
+    // Write information about each phoneme as it is reached.  
+    private void synth_PhonemeReached(object sender, PhonemeReachedEventArgs e)  
+    {textBox1.AppendText(string.Format(  
+  
+        "  Phoneme reached summary:" + Environment.NewLine +  
+        "    Phoneme:                 {0}" + Environment.NewLine +    
+        "    Audio Position:         {1} mSec" + Environment.NewLine +  
+        "    Duration:                  {2} mSec" + Environment.NewLine +  
+        "    Emphasis:                {3}" + Environment.NewLine +  
+        "    Next Phoneme:         {4}" + Environment.NewLine + Environment.NewLine,   
+        e.Phoneme,  
+        e.AudioPosition,  
+        e.Duration,  
+        e.Emphasis,  
+        e.NextPhoneme));  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AudioPosition">
+      <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PhonemeReachedEventArgs.AudioPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the audio position of the phoneme.</summary>
+        <value>A <see langword="TimeSpan" /> object indicating the audio position.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public TimeSpan Duration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PhonemeReachedEventArgs.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the duration of the phoneme.</summary>
+        <value>A <see langword="TimeSpan" /> object indicating the duration.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emphasis">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerEmphasis Emphasis { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerEmphasis Emphasis" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PhonemeReachedEventArgs.Emphasis" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerEmphasis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the emphasis of the phoneme.</summary>
+        <value>A <see langword="SynthesizerEmphasis" /> member indicating the level of emphasis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPhoneme">
+      <MemberSignature Language="C#" Value="public string NextPhoneme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextPhoneme" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PhonemeReachedEventArgs.NextPhoneme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the phoneme following the phoneme associated with the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" /> event.</summary>
+        <value>A string containing the next phoneme.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Phoneme">
+      <MemberSignature Language="C#" Value="public string Phoneme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Phoneme" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PhonemeReachedEventArgs.Phoneme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The phoneme associated with the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" /> event.</summary>
+        <value>A string containing the phoneme.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,165 @@
+<Type Name="IInstanceProvider" FullName="System.ServiceModel.Dispatcher.IInstanceProvider">
+  <TypeSignature Language="C#" Value="public interface IInstanceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstanceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInstanceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Declares methods that provide a service object or recycle a service object for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface to control the creation and recycling of service objects when one is requested or disposed by an <xref:System.ServiceModel.InstanceContext> object.  
+  
+ Once the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface is implemented, you must assign your custom instance provider object to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property using either an endpoint behavior (a <xref:System.ServiceModel.Description.IEndpointBehavior> object) or a contract behavior (a <xref:System.ServiceModel.Description.IContractBehavior> object).  
+  
+ If the insertion mechanism is an endpoint behavior you can also implement a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> object that can insert your custom behavior using a configuration file. If the insertion mechanism is a contract behavior, you can insert the behavior programmatically prior to the opening of the service host or you can implement a custom attribute. (For an example of the contract behavior approach, see the Example section.)  
+  
+ <xref:System.ServiceModel.Dispatcher.IInstanceProvider> has two methods, <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> and <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A>. These methods are typically implemented to create service objects using a non-default constructor or to initialize or dispose of some state related to the lifetime of the object. Service object pooling is one example of custom <xref:System.ServiceModel.Dispatcher.IInstanceProvider> functionality.  
+  
+ Typically, the <xref:System.ServiceModel.InstanceContext> invokes the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> when the <xref:System.ServiceModel.InstanceContext> is first created and invokes the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method when the <xref:System.ServiceModel.InstanceContext> is closed.  
+  
+ There are two ways to cause an <xref:System.ServiceModel.InstanceContext> object to release a service object before the <xref:System.ServiceModel.InstanceContext> is closed. The first method is to set the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> to <xref:System.ServiceModel.ReleaseInstanceMode> or <xref:System.ServiceModel.ReleaseInstanceMode>. The second method is to call the <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A> method. If this is done, the <xref:System.ServiceModel.InstanceContext> calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method on the dispatcher's instance provider. If a new message arrives after the instance has been released, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new instance using the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method.  
+  
+> [!NOTE]
+>  If the <xref:System.ServiceModel.InstanceContextMode> of the service is <xref:System.ServiceModel.InstanceContextMode>, the system does not call the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> or <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> methods even when the user did not provide a well-known service object unless the user directly calls <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A> and then calls <xref:System.ServiceModel.InstanceContext.GetServiceInstance%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to implement <xref:System.ServiceModel.Dispatcher.IInstanceProvider> that provides "singleton" behavior; it always returns the same service instance and does not recycle it.  
+  
+ [!code-csharp[IContractBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#1)]
+ [!code-vb[IContractBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#1)]  
+  
+ The following code example shows how to implement a custom attribute that implements <xref:System.ServiceModel.Description.IContractBehavior> to insert the custom service instance provider. It also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute>, which binds its use to a specific contract.  
+  
+ [!code-csharp[IContractBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#2)]
+ [!code-vb[IContractBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetInstance">
+      <MemberSignature Language="C#" Value="public object GetInstance (System.ServiceModel.InstanceContext instanceContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInstance(class System.ServiceModel.InstanceContext instanceContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance(System.ServiceModel.InstanceContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceContext" Type="System.ServiceModel.InstanceContext" />
+      </Parameters>
+      <Docs>
+        <param name="instanceContext">The current <see cref="T:System.ServiceModel.InstanceContext" /> object.</param>
+        <summary>Returns a service object given the specified <see cref="T:System.ServiceModel.InstanceContext" /> object.</summary>
+        <returns>A user-defined service object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%29> method to control the exact service object that a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service receives when it attempts to create a new one.  
+  
+   
+  
+## Examples  
+ The following code example shows how to implement <xref:System.ServiceModel.Dispatcher.IInstanceProvider> that provides "singleton" behavior; it always returns the same service instance and does not recycle it.  
+  
+ [!code-csharp[IContractBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#1)]
+ [!code-vb[IContractBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#1)]  
+  
+ The following code example shows how to implement a custom attribute that implements <xref:System.ServiceModel.Description.IContractBehavior> to insert the custom service instance provider. It also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute>, which binds its use to a specific contract.  
+  
+ [!code-csharp[IContractBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#2)]
+ [!code-vb[IContractBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstance">
+      <MemberSignature Language="C#" Value="public object GetInstance (System.ServiceModel.InstanceContext instanceContext, System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInstance(class System.ServiceModel.InstanceContext instanceContext, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceContext" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="instanceContext">The current <see cref="T:System.ServiceModel.InstanceContext" /> object.</param>
+        <param name="message">The message that triggered the creation of a service object.</param>
+        <summary>Returns a service object given the specified <see cref="T:System.ServiceModel.InstanceContext" /> object.</summary>
+        <returns>The service object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> method to control the exact service object that a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service receives when it attempts to create a new one.  
+  
+   
+  
+## Examples  
+ The following code example shows how to implement <xref:System.ServiceModel.Dispatcher.IInstanceProvider> that provides "singleton" behavior; it always returns the same service instance and does not recycle it.  
+  
+ [!code-csharp[IContractBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#1)]
+ [!code-vb[IContractBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#1)]  
+  
+ The following code example shows how to implement a custom attribute that implements <xref:System.ServiceModel.Description.IContractBehavior> to insert the custom service instance provider. It also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute>, which binds its use to a specific contract.  
+  
+ [!code-csharp[IContractBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#2)]
+ [!code-vb[IContractBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseInstance">
+      <MemberSignature Language="C#" Value="public void ReleaseInstance (System.ServiceModel.InstanceContext instanceContext, object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseInstance(class System.ServiceModel.InstanceContext instanceContext, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance(System.ServiceModel.InstanceContext,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceContext" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceContext">The service's instance context.</param>
+        <param name="instance">The service object to be recycled.</param>
+        <summary>Called when an <see cref="T:System.ServiceModel.InstanceContext" /> object recycles a service object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method to perform some custom resource disposal or other recycling customization when a service recycles a service object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

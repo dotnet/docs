@@ -1,0 +1,414 @@
+<Type Name="FileWebResponse" FullName="System.Net.FileWebResponse">
+  <TypeSignature Language="C#" Value="public class FileWebResponse : System.Net.WebResponse, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileWebResponse extends System.Net.WebResponse implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Net.FileWebResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.WebResponse</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a file system implementation of the <see cref="T:System.Net.WebResponse" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse> class implements the <xref:System.Net.WebResponse>`abstract` base class to return file system resources for the <xref:System.Net.FileWebRequest> class.  
+  
+ Client applications do not create <xref:System.Net.FileWebResponse> instances directly; instead, they are created by calling the <xref:System.Net.FileWebRequest.GetResponse%2A> method on a <xref:System.Net.FileWebRequest> instance.  
+  
+ The <xref:System.Net.FileWebResponse.GetResponseStream%2A> method returns a <xref:System.IO.Stream> instance that provides read-only access to a file system resource.  
+  
+ The <xref:System.Net.FileWebResponse> class relies on the <xref:System.IO.File> class for error handling and code access security.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FileWebResponse (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebResponse.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Serialization is obsoleted for this type. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance that contains the information required to serialize the new <see cref="T:System.Net.FileWebResponse" /> instance.</param>
+        <param name="streamingContext">An instance of the <see cref="T:System.Runtime.Serialization.StreamingContext" /> class that contains the source of the serialized stream associated with the new <see cref="T:System.Net.FileWebResponse" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.FileWebResponse" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.FileWebResponse> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebResponse.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the response stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.FileWebResponse> and closes the response stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  The response stream must be closed to avoid running out of system resources. You can closes the response stream by calling either <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.FileWebResponse.Close%2A>  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.Close%2A> method to close the response stream.  
+  
+ [!code-cpp[FileWebResponse_Close#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_Close/CPP/filewebresponse_close.cpp#1)]
+ [!code-csharp[FileWebResponse_Close#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_Close/CS/filewebresponse_close.cs#1)]
+ [!code-vb[FileWebResponse_Close#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_Close/VB/filewebresponse_close.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public override long ContentLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebResponse.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the content in the file system resource.</summary>
+        <value>The number of bytes returned from the file system resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.ContentLength%2A> property contains the length, in bytes, of the file system resource.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.ContentLength%2A> property to obtain the content length of the file system resource.  
+  
+ [!code-cpp[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/CPP/filewebresponse_contentlength_contenttype.cpp#1)]
+ [!code-csharp[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/CS/filewebresponse_contentlength_contenttype.cs#1)]
+ [!code-vb[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/VB/filewebresponse_contentlength_contenttype.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public override string ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebResponse.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the content type of the file system resource.</summary>
+        <value>The value "binary/octet-stream".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.ContentType%2A> property contains the content type of the file system resource. The value of <xref:System.Net.FileWebResponse.ContentType%2A> is always "binary/octet-stream".  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.ContentType%2A> property to obtain the content type of the file system resource.  
+  
+ [!code-cpp[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/CPP/filewebresponse_contentlength_contenttype.cpp#1)]
+ [!code-csharp[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/CS/filewebresponse_contentlength_contenttype.cs#1)]
+ [!code-vb[FileWebResponse_ContentLength_ContentType#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_ContentLength_ContentType/VB/filewebresponse_contentlength_contenttype.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the destination for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetResponseStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetResponseStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebResponse.GetResponseStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the data stream from the file system resource.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> for reading data from the file system resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.GetResponseStream%2A> method returns the data stream from the file system resource.  
+  
+> [!NOTE]
+>  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.FileWebResponse.Close%2A>  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.GetResponseStream%2A> method to return the data stream from the file system resource.  
+  
+ [!code-cpp[FileWebResponse_GetResponseStream#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_GetResponseStream/CPP/filewebresponse_getresponsestream.cpp#1)]
+ [!code-csharp[FileWebResponse_GetResponseStream#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_GetResponseStream/CS/filewebresponse_getresponsestream.cs#1)]
+ [!code-vb[FileWebResponse_GetResponseStream#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_GetResponseStream/VB/filewebresponse_getresponsestream.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebResponse.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of header name/value pairs associated with the response.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> that contains the header name/value pairs associated with the response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.Headers%2A> property contains two name/value pairs, one for content length and one for content type, both of which are also exposed as properties, <xref:System.Net.FileWebResponse.ContentLength%2A> and <xref:System.Net.FileWebResponse.ContentType%2A>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.Headers%2A> property to retrieve the name/value pairs associated with the response.  
+  
+ [!code-cpp[FileWebResponse_Headers#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_Headers/CPP/filewebresponse_headers.cpp#1)]
+ [!code-csharp[FileWebResponse_Headers#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_Headers/CS/filewebresponse_headers.cs#1)]
+ [!code-vb[FileWebResponse_Headers#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_Headers/VB/filewebresponse_headers.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseUri">
+      <MemberSignature Language="C#" Value="public override Uri ResponseUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseUri" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebResponse.ResponseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI of the file system resource that provided the response.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the URI of the file system resource that provided the response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebResponse.ResponseUri%2A> property contains the URI of the file system resource that provided the response. This is always the file system resource that was requested.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebResponse.ResponseUri%2A> to retrieve the URI of the file system resource that provided the response.  
+  
+ [!code-cpp[FileWebResponse_ResponseUri#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebResponse_ResponseUri/CPP/filewebresponse_responseuri.cpp#1)]
+ [!code-csharp[FileWebResponse_ResponseUri#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebResponse_ResponseUri/CS/filewebresponse_responseuri.cs#1)]
+ [!code-vb[FileWebResponse_ResponseUri#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebResponse_ResponseUri/VB/filewebresponse_responseuri.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsHeaders">
+      <MemberSignature Language="C#" Value="public override bool SupportsHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebResponse.SupportsHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Net.FileWebResponse.Headers" /> property is supported by the <see cref="T:System.Net.FileWebResponse" /> instance.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.  
+  
+ true if the <see cref="P:System.Net.FileWebResponse.Headers" /> property is supported by the <see cref="T:System.Net.FileWebResponse" /> instance; otherwise, false.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always true for [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebResponse.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> , which will hold the serialized data for the <see cref="T:System.Net.FileWebResponse" />.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> containing the destination of the serialized stream associated with the new <see cref="T:System.Net.FileWebResponse" />.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data needed to serialize the <see cref="T:System.Net.FileWebResponse" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

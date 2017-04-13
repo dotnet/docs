@@ -1,0 +1,225 @@
+<Type Name="StylusPointPropertyInfo" FullName="System.Windows.Input.StylusPointPropertyInfo">
+  <TypeSignature Language="C#" Value="public class StylusPointPropertyInfo : System.Windows.Input.StylusPointProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointPropertyInfo extends System.Windows.Input.StylusPointProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointPropertyInfo" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.StylusPointProperty</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the constraints of a property in a <see cref="T:System.Windows.Input.StylusPoint" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.StylusPointPropertyInfo> class inherits from the <xref:System.Windows.Input.StylusPointProperty> class and generates the <xref:System.Windows.Input.StylusPointPropertyInfo.Minimum%2A>,  <xref:System.Windows.Input.StylusPointPropertyInfo.Maximum%2A>,  <xref:System.Windows.Input.StylusPointPropertyInfo.Resolution%2A>, and <xref:System.Windows.Input.StylusPointPropertyInfo.Unit%2A> values used to define the properties of a <xref:System.Windows.Input.StylusPoint>. The validity of each property value varies depending on the manufacture of the digitizer and stylus.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointPropertyInfo (System.Windows.Input.StylusPointProperty stylusPointProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusPointProperty" Type="System.Windows.Input.StylusPointProperty" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPointProperty">The <see cref="T:System.Windows.Input.StylusPointProperty" /> to base the new <see cref="T:System.Windows.Input.StylusPointProperty" /> on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointPropertyInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a new <xref:System.Windows.Input.StylusPointPropertyInfo>.  
+  
+ [!code-csharp[PacketSpy#16](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#16)]
+ [!code-vb[PacketSpy#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointPropertyInfo (System.Windows.Input.StylusPointProperty stylusPointProperty, int minimum, int maximum, System.Windows.Input.StylusPointPropertyUnit unit, float resolution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty, int32 minimum, int32 maximum, valuetype System.Windows.Input.StylusPointPropertyUnit unit, float32 resolution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty,System.Int32,System.Int32,System.Windows.Input.StylusPointPropertyUnit,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusPointProperty" Type="System.Windows.Input.StylusPointProperty" />
+        <Parameter Name="minimum" Type="System.Int32" />
+        <Parameter Name="maximum" Type="System.Int32" />
+        <Parameter Name="unit" Type="System.Windows.Input.StylusPointPropertyUnit" />
+        <Parameter Name="resolution" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPointProperty">The <see cref="T:System.Windows.Input.StylusPointProperty" /> to base the new <see cref="T:System.Windows.Input.StylusPointProperty" /> on.</param>
+        <param name="minimum">The minimum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</param>
+        <param name="maximum">The maximum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</param>
+        <param name="unit">One of the <see cref="T:System.Windows.Input.StylusPointPropertyUnit" /> values.</param>
+        <param name="resolution">The scale that converts a <see cref="T:System.Windows.Input.StylusPoint" /> property value into its units.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointPropertyInfo" /> class using the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a new <xref:System.Windows.Input.StylusPointPropertyInfo>.  
+  
+ [!code-csharp[PacketSpy#16](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#16)]
+ [!code-vb[PacketSpy#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public int Maximum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Maximum" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Maximum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</summary>
+        <value>The maximum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public int Minimum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Minimum" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Minimum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</summary>
+        <value>The minimum value accepted for the <see cref="T:System.Windows.Input.StylusPoint" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolution">
+      <MemberSignature Language="C#" Value="public float Resolution { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Resolution" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Resolution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scale that converts a <see cref="T:System.Windows.Input.StylusPoint" /> property value into units.</summary>
+        <value>The scale that converts a <see cref="T:System.Windows.Input.StylusPoint" /> property value into units.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the resolution by the value of a <xref:System.Windows.Input.StylusPoint> property to get its unit-based value. For example, if a property's value is 100, the unit is inches, and the resolution is .01, then multiplying 100 by .01 reveals that the value of that property is 1 inch.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unit">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointPropertyUnit Unit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.StylusPointPropertyUnit Unit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Unit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of measurement that is used by <see cref="T:System.Windows.Input.StylusPoint" /> property.</summary>
+        <value>One of the <see cref="T:System.Windows.Input.StylusPointPropertyUnit" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

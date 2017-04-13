@@ -1,0 +1,748 @@
+<Type Name="ChannelFactory&lt;TChannel&gt;" FullName="System.ServiceModel.ChannelFactory&lt;TChannel&gt;">
+  <TypeSignature Language="C#" Value="public class ChannelFactory&lt;TChannel&gt; : System.ServiceModel.ChannelFactory, System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelFactory`1&lt;TChannel&gt; extends System.ServiceModel.ChannelFactory implements class System.ServiceModel.Channels.IChannelFactory, class System.ServiceModel.Channels.IChannelFactory`1&lt;!TChannel&gt;, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ChannelFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TChannel" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ChannelFactory</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TChannel">The type of channel produced by the channel factory. This type must be either <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> or <see cref="T:System.ServiceModel.Channels.IRequestChannel" />.</typeparam>
+    <summary>A factory that creates channels of different types that are used by clients to send messages to variously configured service endpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This generic class enables more advanced scenarios where there is a requirement to create a channel factory that can be used to create more than one type of channel.  
+  
+ When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
+  
+ Frequently client or calling applications (for example, middle-tier applications are client applications, too) using this type also have complex state management needs as well as performance needs. For more information about these scenarios, please see [Middle-Tier Client Applications](~/docs/framework/wcf/feature-details/middle-tier-client-applications.md).  
+  
+   
+  
+## Examples  
+ The following sample shows how to create a channel factory and use it to create and manage channels.  
+  
+ [!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
+  
+ The following code example shows how to insert programmatically a client behavior prior to the creation of the channel object by the factory.  
+  
+ [!code-csharp[ChannelFactoryBehaviors#10](~/samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
+ [!code-vb[ChannelFactoryBehaviors#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to create a new object of the <xref:System.ServiceModel.ChannelFactory%601> class with the `IRequestChannel` interface.  
+  
+ [!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> specified for the channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to pass the binding information programmatically rather than using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> for the channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class that produces channels with a specified endpoint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to pass the service endpoint information programmatically rather than using an application configuration file.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEChannels#25](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#25)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="endpoint" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified endpoint configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when there is more than one target endpoint in the application configuration file.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEChannels#23](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#23)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ChannelFactory (Type channelType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type channelType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channelType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="channelType">The <see cref="T:System.Type" /> of channel produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to pass the channel type information programmatically rather than using an application configuration file. The `channelType` parameter must be an interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="channelType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="channelType" /> is a class or value type and is not an interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified binding and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to pass the binding and address information programmatically rather than using an application configuration file.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEChannels#26](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="remoteAddress">The address that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified binding and remote address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to pass the information about the remote address information with a string rather than as a typed object.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEChannels#29](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#29)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelFactory (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class associated with a specified name for the endpoint configuration and remote address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a channel of a specified type to a specified endpoint address.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a channel of type `TChannel`, the generic parameter for the class.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEChannels#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#30)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannel (System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel CreateChannel(class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Creates a channel that is used to send messages to a service at a specific endpoint address.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#27](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#27)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="protected static TChannel CreateChannel (string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig !TChannel CreateChannel(string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The name of the endpoint configuration used for the service.</param>
+        <summary>Creates a channel that is used to send messages to a service whose endpoint is configured in a specified way.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="address">To be added.</param>
+        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint that is configured with a specified binding.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public virtual TChannel CreateChannel (System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel CreateChannel(class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the channel sends messages.</param>
+        <summary>Creates a channel that is used to send messages to a service at a specific endpoint address through a specified transport address.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#28](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="address">To be added.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the channel sends messages.</param>
+        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint at a specified transport address that is configured with a specified binding.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#33](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#33)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithActAsToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="actAsToken">The security token.</param>
+        <summary>Creates a channel that is used to send messages to a service with an act as security token.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithActAsToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="actAsToken">The security token</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <summary>Creates a channel that is used to send messages to a service with an act as security token at a specific endpoint address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithActAsToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken, System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="actAsToken">The security token</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <param name="via">The transport address to which the channel sends messages.</param>
+        <summary>Creates a channel that is used to send messages to a service with an act as security token at a specific endpoint address through a specified transport address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithIssuedToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="issuedToken">The issued security token.</param>
+        <summary>Creates a channel that is used to send messages to a service with an issued security token.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithIssuedToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="issuedToken">The issued security token.</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <summary>Creates a channel that is used to send messages to a service with an issued security token at a specific endpoint address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithIssuedToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken, System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="issuedToken">The issued security token.</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <param name="via">The transport address to which the channel sends messages.</param>
+        <summary>Creates a channel that is used to send messages to a service with an issued security token at a specific endpoint address through a specified transport address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithOnBehalfOfToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="onBehalfOf">The security token.</param>
+        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithOnBehalfOfToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="onBehalfOf">The security token.</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token at a specific endpoint address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannelWithOnBehalfOfToken">
+      <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf, System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="onBehalfOf">The security token.</param>
+        <param name="address">The endpoint address that provides the location of the service.</param>
+        <param name="via">The transport address to which the channel sends messages.</param>
+        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token at a specific endpoint address through a specified transport address.</summary>
+        <returns>The created channel factory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDescription">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceEndpoint CreateDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateDescription() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateDescription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a description of the service endpoint.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> of the service.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The callback contract is <see langword="null" /> but the service endpoint requires one that is non-<see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="CreateChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel of a specified type to a specified endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a channel of type `TChannel`, the generic parameter for the class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

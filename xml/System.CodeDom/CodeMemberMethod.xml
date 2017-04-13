@@ -1,0 +1,292 @@
+<Type Name="CodeMemberMethod" FullName="System.CodeDom.CodeMemberMethod">
+  <TypeSignature Language="C#" Value="public class CodeMemberMethod : System.CodeDom.CodeTypeMember" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeMemberMethod extends System.CodeDom.CodeTypeMember" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMemberMethod" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeTypeMember</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a declaration for a method of a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeMemberMethod> can be used to represent the declaration for a method.  
+  
+ The <xref:System.CodeDom.CodeMemberMethod.ReturnType%2A> property specifies the data type of the method's return value. The <xref:System.CodeDom.CodeMemberMethod.Parameters%2A> property contains the method's parameters. The <xref:System.CodeDom.CodeMemberMethod.Statements%2A> property contains the statements of the method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of a <xref:System.CodeDom.CodeMemberMethod> to declare a method that accepts a parameter and returns a value.  
+  
+ [!code-cpp[CodeMemberMethodExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberMethodExample/CPP/codemembermethodexample.cpp#2)]
+ [!code-csharp[CodeMemberMethodExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberMethodExample/CS/codemembermethodexample.cs#2)]
+ [!code-vb[CodeMemberMethodExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberMethodExample/VB/codemembermethodexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeMemberMethod ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMemberMethod.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMemberMethod" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an empty <xref:System.CodeDom.CodeMemberMethod> object.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeMemberMethod.%23ctor%2A> constructor to create a <xref:System.CodeDom.CodeMemberMethod> instance. This example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CodeGenerator.GenerateCodeFromMember%2A> method.  
+  
+ [!code-csharp[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/cs/program.cs#3)]
+ [!code-vb[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplementationTypes">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReferenceCollection ImplementationTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReferenceCollection ImplementationTypes" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ImplementationTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReferenceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data types of the interfaces implemented by this method, unless it is a private method implementation, which is indicated by the <see cref="P:System.CodeDom.CodeMemberMethod.PrivateImplementationType" /> property.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> that indicates the interfaces implemented by this method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types referenced by this collection must consist of interfaces.  
+  
+ If this <xref:System.CodeDom.CodeMemberMethod> represents a declaration for a public method, and this method implements a method on an interface, the interface or interfaces this method implements a method of should be referenced in this collection.  
+  
+ The method should still have the same name as the method of the interface that is implemented by this method. For some languages, like C#, this has no effect on the syntax. For others, like Visual Basic, there is a special syntax for implementing interfaces. If the method is privately implementing a single interface, the <xref:System.CodeDom.CodeMemberMethod.PrivateImplementationType%2A> property should be used instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeParameterDeclarationExpressionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parameter declarations for the method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> that indicates the method parameters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateImplementationTypes">
+      <MemberSignature Language="C#" Value="public event EventHandler PopulateImplementationTypes;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PopulateImplementationTypes" />
+      <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateImplementationTypes" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that will be raised the first time the <see cref="P:System.CodeDom.CodeMemberMethod.ImplementationTypes" /> collection is accessed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateParameters">
+      <MemberSignature Language="C#" Value="public event EventHandler PopulateParameters;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PopulateParameters" />
+      <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateParameters" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that will be raised the first time the <see cref="P:System.CodeDom.CodeMemberMethod.Parameters" /> collection is accessed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateStatements">
+      <MemberSignature Language="C#" Value="public event EventHandler PopulateStatements;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PopulateStatements" />
+      <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateStatements" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that will be raised the first time the <see cref="P:System.CodeDom.CodeMemberMethod.Statements" /> collection is accessed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateImplementationType">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference PrivateImplementationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference PrivateImplementationType" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.PrivateImplementationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type of the interface this method, if private, implements a method of, if any.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the interface with the method that the private method whose declaration is represented by this <see cref="T:System.CodeDom.CodeMemberMethod" /> implements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this <xref:System.CodeDom.CodeMemberMethod> represents the declaration of a private method and the method implements a method of an interface, this property should indicate the interface type that the method is implementing a method of.  
+  
+ The type referenced by this property must be an interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference ReturnType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference ReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type of the return value of the method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the value returned by the method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnTypeCustomAttributes">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeAttributeDeclarationCollection ReturnTypeCustomAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeAttributeDeclarationCollection ReturnTypeCustomAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ReturnTypeCustomAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeAttributeDeclarationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the custom attributes of the return type of the method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the custom attributes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Statements">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection Statements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection Statements" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.Statements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the statements within the method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> that indicates the statements within the method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeParameters">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeParameterCollection TypeParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeParameterCollection TypeParameters" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.TypeParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type parameters for the current generic method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeParameterCollection" /> that contains the type parameters for the generic method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A generic method contains one or more unspecified types known as type parameters. A type parameter name stands for the type within the body of the generic declaration.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeMemberMethod.TypeParameters%2A> property to add two type parameters to the <xref:System.CodeDom.CodeMemberMethod> `printMethod`. This example is part of a larger example provided for the <xref:System.CodeDom.CodeTypeParameter> class.  
+  
+ [!code-csharp[System.CodeDOM.Generics.1#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDOM.Generics.1/CS/codedomgenerics.cs#6)]
+ [!code-vb[System.CodeDOM.Generics.1#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDOM.Generics.1/VB/codedomgenerics.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

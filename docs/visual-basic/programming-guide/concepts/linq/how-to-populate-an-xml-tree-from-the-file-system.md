@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 34eec79e-7945-4ba8-9f74-d05bb8ec67f6
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Populate an XML Tree from the File System (Visual Basic)

@@ -1,0 +1,388 @@
+<Type Name="Grid" FullName="System.Web.UI.DataVisualization.Charting.Grid">
+  <TypeSignature Language="C#" Value="public class Grid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Grid" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods and properties that manage the major and minor grids of <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides the functionality for the grids on the chart, and is exposed using the <xref:System.Web.UI.DataVisualization.Charting.Axis.MajorGrid%2A> and <xref:System.Web.UI.DataVisualization.Charting.Axis.MinorGrid%2A> properties of each <xref:System.Web.UI.DataVisualization.Charting.Axis> object.  
+  
+ Major grid lines by default do not have their <xref:System.Web.UI.DataVisualization.Charting.Grid.Interval%2A>, <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffset%2A>, <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A>, and <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffsetType%2A> properties set. When these properties for major grid lines are not set, the <xref:System.Web.UI.DataVisualization.Charting.Chart> control determines the appropriate values for grid lines automatically.  
+  
+ The axis and its minor grid lines by default have their <xref:System.Web.UI.DataVisualization.Charting.Grid.Interval%2A>, <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffset%2A>, <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A>, and <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffsetType%2A> properties set to **Auto** (0). If axis labels or minor grid lines are enabled and these properties are not modified, the <xref:System.Web.UI.DataVisualization.Charting.Chart> control automatically determines how often to draw the minor grid lines.  
+  
+ Axis grids:  
+  
+-   Can be enabled or disabled.  
+  
+-   Have a starting point that determines where they are first drawn.  
+  
+-   Display lines that can be set for style, width and color.  
+  
+-   Can have either automatic intervals, or intervals that are set manually.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Grid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Grid.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Grid" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines whether major or minor grid lines are enabled.</summary>
+        <value>
+          <see langword="True" /> if enabled, <see langword="false" /> if disabled. The default is <see langword="true" /> for major grid objects and <see langword="false" /> for minor grid objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Major and minor grids are visible when enabled, and not visible when disabled.  
+  
+ Tick marks will not be displayed if disabled.  
+  
+ You can disable tick marks by setting the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.AxisElementIntervalValueConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval between major or minor grid lines.</summary>
+        <value>A <see langword="double" /> value that represents the interval between grid lines. By default, the value is not set (<see cref="F:System.Double.NaN" />) for major grid lines. For minor grid lines, the default value is zero (0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at design time, or by assigning a value of <xref:System.Double.NaN> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object to which the chart element, such as a grid line or tick mark, belongs.  
+  
+ The interval of minor tick marks and grid lines is never affected by the <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A> property value.  
+  
+ The interval is measured in axis units, and determines how often an applicable chart element is drawn. For example, suppose a column chart has an X axis step of 1 (that is, 1, 2, 3, 4, and so forth); if you set the <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Interval%2A> property for the X axis to 2, an axis label will be displayed for every other column.  
+  
+ The same holds true for all applicable chart elements. In other words, if in the previous example strip lines were being used, with an <xref:System.Web.UI.DataVisualization.Charting.StripLine.IntervalOffset%2A> of 0.5, and their <xref:System.Web.UI.DataVisualization.Charting.StripLine.Interval%2A> property was 2, a strip line would be displayed at 0.5, 2.5, 4.5, and so on.  
+  
+ If you set a chart element `Interval` property to zero, an interval will be automatically determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart>control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalOffset">
+      <MemberSignature Language="C#" Value="public double IntervalOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 IntervalOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.AxisElementIntervalValueConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the offset of grid lines.</summary>
+        <value>A <see langword="double" /> value that represents the interval offset.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set"at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element, such as a grid line or a tick mark, belongs to.  
+  
+ The interval offset of minor tick marks and grid lines is never affected by the value of the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffsetType%2A> property setting defines the units of measurement of the offset.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffset%2A> can be a negative value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalOffsetType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffsetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval offset type of major and minor grid lines.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that indicates the interval type. By default it is not set for major grid lines. The default value for minor grid lines is <see cref="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+  
+ The interval offset type of minor tick marks and grid lines is never affected by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property value.  
+  
+ If this interval offset type is set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType>, the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property will be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval type for major or minor grid lines.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that indicates the interval type. By default it is not set for axis labels, major tick marks and major grid lines, by using the <see cref="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet" /> enumeration value. The default value for minor tick marks and grid lines is <see cref="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time— the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+  
+ The interval type of minor tick marks and grid lines is never affected by the value of the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalType%2A> property.  
+  
+ Interval types can be set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType>; the type of interval then depends on either the X-values or Y-values of the plotted <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects, depending on which axis the applicable elements belong to.  
+  
+ Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a value axis will only have an effect if the values of the data points are <xref:System.DateTime> or `double` values. Also, the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> must be set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+  
+ Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a categorical axis will only have an effect if the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> property (or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property, depending on the axis in question) of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> object is either <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+  
+> [!NOTE]
+>  Sunday is considered the first day of the week.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color LineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ChartColorEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line color of a grid.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object. The default value is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Grid.LineColor%2A> property is used to specify the color of major and minor tick marks or grids.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineDashStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line style of a grid.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value. The default is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.Solid" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Grid.LineDashStyle%2A> property can be used to specify the line style of major and minor tick marks or grids. The line can be solid, dotted, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public int LineWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line width of major and minor grid lines.</summary>
+        <value>An <see langword="integer" /> that represents the line width in pixels. The default value is one (1).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Grid.LineWidth%2A> property can be used to specify the line width, in pixels, of major and minor tick marks or grids.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

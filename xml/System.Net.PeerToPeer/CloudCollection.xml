@@ -1,0 +1,108 @@
+<Type Name="CloudCollection" FullName="System.Net.PeerToPeer.CloudCollection">
+  <TypeSignature Language="C#" Value="public class CloudCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Cloud&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CloudCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.Cloud&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.CloudCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Cloud&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Net.PeerToPeer.Cloud</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.CloudCollection" /> elements. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All members of the class are inherited from the Collection\<T> class.  Only those methods which are overridden are described below.This collection holds instances of the <xref:System.Net.PeerToPeer.Cloud> element, which contain peer information for peer-to-peer networking.  
+  
+ References of this type are returned by the <xref:System.Net.PeerToPeer.Cloud.GetCloudByName%2A> and <xref:System.Net.PeerToPeer.Cloud.GetAvailableClouds%2A> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CloudCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.CloudCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.CloudCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.Cloud item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.Cloud item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.CloudCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Cloud" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The value for the new element at the specified index.</param>
+        <summary>Inserts a <see cref="T:System.Net.PeerToPeer.Cloud" /> into the <see cref="T:System.Net.PeerToPeer.CloudCollection" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items cannot be inserted into the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> provided cannot be <see langword="null." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.Cloud item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.Cloud item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.CloudCollection.SetItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Cloud" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for the element to be replaced.</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Cloud" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> provided cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

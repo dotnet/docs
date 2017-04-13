@@ -1,0 +1,44 @@
+<Type Name="JumpItem" FullName="System.Windows.Shell.JumpItem">
+  <TypeSignature Language="C#" Value="public abstract class JumpItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JumpItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItem" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for the <see cref="T:System.Windows.Shell.JumpPath" /> and <see cref="T:System.Windows.Shell.JumpTask" /> classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CustomCategory">
+      <MemberSignature Language="C#" Value="public string CustomCategory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomCategory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItem.CustomCategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the category the <see cref="T:System.Windows.Shell.JumpItem" /> is grouped with in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List.</summary>
+        <value>The name of the category the <see cref="T:System.Windows.Shell.JumpItem" /> is grouped with. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> property is `null` or <xref:System.String>, the item is added to the **Tasks** category. If a value is specified, the item is added to a category that uses the specified name. Items in custom categories can be pinned to the Jump List by the user. When an item is pinned, it moves to an automatic category called **Pinned**. The user can also remove items from the Jump List.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

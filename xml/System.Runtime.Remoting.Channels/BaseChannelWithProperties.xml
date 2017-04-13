@@ -1,0 +1,108 @@
+<Type Name="BaseChannelWithProperties" FullName="System.Runtime.Remoting.Channels.BaseChannelWithProperties">
+  <TypeSignature Language="C#" Value="public abstract class BaseChannelWithProperties : System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseChannelWithProperties extends System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BaseChannelWithProperties" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base implementation for channels that want to expose a dictionary interface to their properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> class handles the complexity of asking the sinks in a channel sink chain for their properties. After the channel constructs its sink chain (if applicable), it must set the <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties> property.  
+  
+ This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Runtime.Remoting.Channels.BaseChannelWithProperties" />, you must implement the <see cref="P:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.Keys" /> property and the <see cref="P:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.Item(System.Object)" /> property.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseChannelWithProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BaseChannelWithProperties.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelWithProperties" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public override System.Collections.IDictionary Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.BaseChannelWithProperties.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the current channel object.</summary>
+        <value>A <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the current channel object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channel properties are used to configure the channel at run time.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SinksWithProperties">
+      <MemberSignature Language="C#" Value="protected System.Runtime.Remoting.Channels.IChannelSinkBase SinksWithProperties;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Runtime.Remoting.Channels.IChannelSinkBase SinksWithProperties" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.IChannelSinkBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the top channel sink in the channel sink stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channel sinks provide a plug-in point that allows access to the underlying messages that are flowing through the channel as well as the stream that is used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers, and all channel messages flow through this chain of sinks before the messages are serialized and transported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

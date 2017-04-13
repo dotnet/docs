@@ -1,0 +1,377 @@
+<Type Name="SecurityTokenHandlerConfigurationElement" FullName="System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement">
+  <TypeSignature Language="C#" Value="public sealed class SecurityTokenHandlerConfigurationElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityTokenHandlerConfigurationElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see langword="&lt;securityTokenHandlerConfiguration&gt;" /> element in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElement> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityTokenHandlerConfigurationElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudienceUris">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.AudienceUriElementCollection AudienceUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.AudienceUriElementCollection AudienceUris" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.AudienceUris" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("audienceUris", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.AudienceUriElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IdentityModel.Configuration.AudienceUriElementCollection" /> that is associated with this token handler configuration element.</summary>
+        <value>The collection of audience URIs that are configured for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<audienceUris>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caches">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.IdentityModelCachesElement Caches { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.IdentityModelCachesElement Caches" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Caches" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("caches", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.IdentityModelCachesElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.IdentityModelCachesElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the token replay cache and the session security token cache for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<caches>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidation">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.X509CertificateValidationElement CertificateValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.X509CertificateValidationElement CertificateValidation" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.CertificateValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("certificateValidation", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.X509CertificateValidationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.X509CertificateValidationElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the certificate validator and its properties for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<certificateValidator>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="protected override void Init ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Init() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Init" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerNameRegistry">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.IssuerNameRegistryElement IssuerNameRegistry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.IssuerNameRegistryElement IssuerNameRegistry" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.IssuerNameRegistry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("issuerNameRegistry", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.IssuerNameRegistryElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the issuer name registry for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<issuerNameRegistry>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerTokenResolver">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.CustomTypeElement IssuerTokenResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.CustomTypeElement IssuerTokenResolver" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.IssuerTokenResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("issuerTokenResolver", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.CustomTypeElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the issuer token resolver that is associated with this token handler configuration element.</summary>
+        <value>A custom type element that specifies the <see cref="T:System.Type" /> of the issuer token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<issuerTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumClockSkew">
+      <MemberSignature Language="C#" Value="public TimeSpan MaximumClockSkew { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaximumClockSkew" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.MaximumClockSkew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.IdentityModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maximumClockSkew", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum clock skew that is configured for this token handler configuration element.</summary>
+        <value>The maximum clock skew.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `maxClockSkew` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", IsRequired=false, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the token handler configuration element.</summary>
+        <value>The name of the identity configuration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `name` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveBootstrapContext">
+      <MemberSignature Language="C#" Value="public bool SaveBootstrapContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveBootstrapContext" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.SaveBootstrapContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("saveBootstrapContext", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to save the bootstrap context in claims identities and session security tokens created by the handlers configured in this identity collection.</summary>
+        <value>
+          <see langword="true" /> to save the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `saveBootstrapContext` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceTokenResolver">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.CustomTypeElement ServiceTokenResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.CustomTypeElement ServiceTokenResolver" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.ServiceTokenResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("serviceTokenResolver", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.CustomTypeElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the service token resolver that is associated with this token handler configuration element.</summary>
+        <value>A custom type element that specifies the <see cref="T:System.Type" /> of the service token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<serviceTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenReplayDetection">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.TokenReplayDetectionElement TokenReplayDetection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.TokenReplayDetectionElement TokenReplayDetection" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.TokenReplayDetection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("tokenReplayDetection", IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.TokenReplayDetectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.TokenReplayDetectionElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that specifies whether token replay detection is enabled and specifies the maximum expiration period for tokens in the token replay cache.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

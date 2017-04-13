@@ -1,0 +1,246 @@
+<Type Name="DllImportSearchPath" FullName="System.Runtime.InteropServices.DllImportSearchPath">
+  <TypeSignature Language="C#" Value="public enum DllImportSearchPath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DllImportSearchPath extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportSearchPath" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the paths that are used to search for DLLs that provide functions for platform invokes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute> attribute to apply a set of paths to an entire assembly or to an individual platform invoke.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationDirectory">
+      <MemberSignature Language="C#" Value="ApplicationDirectory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath ApplicationDirectory = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.ApplicationDirectory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the application directory in the DLL search path.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyDirectory">
+      <MemberSignature Language="C#" Value="AssemblyDirectory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath AssemblyDirectory = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyBehavior">
+      <MemberSignature Language="C#" Value="LegacyBehavior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath LegacyBehavior = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.LegacyBehavior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search the application directory, and then call the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function with the <c>LOAD_WITH_ALTERED_SEARCH_PATH</c> flag. This value is ignored if any other value is specified. Operating systems that do not support the <see cref="T:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute" /> attribute use this value, and ignore other values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeDirectories">
+      <MemberSignature Language="C#" Value="SafeDirectories" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath SafeDirectories = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the application directory, the <see langword="%WinDir%\System32" /> directory, and user directories in the DLL search path.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System32">
+      <MemberSignature Language="C#" Value="System32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath System32 = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.System32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the <see langword="%WinDir%\System32" /> directory in the DLL search path.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDllDirectoryForDependencies">
+      <MemberSignature Language="C#" Value="UseDllDirectoryForDependencies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath UseDllDirectoryForDependencies = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UseDllDirectoryForDependencies" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search for the dependencies of a DLL in the folder where the DLL is located before searching other folders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDirectories">
+      <MemberSignature Language="C#" Value="UserDirectories" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath UserDirectories = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UserDirectories" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include any path that was explicitly added to the process-wide search path by using the Win32 <c>AddDllDirectory</c> function.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

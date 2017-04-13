@@ -1,0 +1,63 @@
+<Type Name="CommandLineBuilderExtension" FullName="Microsoft.Build.Tasks.CommandLineBuilderExtension">
+  <TypeSignature Language="C#" Value="public class CommandLineBuilderExtension : Microsoft.Build.Utilities.CommandLineBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineBuilderExtension extends Microsoft.Build.Utilities.CommandLineBuilder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.CommandLineBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Comprises extended utility methods for constructing a command line.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineBuilderExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CommandLineBuilderExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQuotedText">
+      <MemberSignature Language="C#" Value="protected string GetQuotedText (string unquotedText);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetQuotedText(string unquotedText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CommandLineBuilderExtension.GetQuotedText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unquotedText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="unquotedText">The string to convert.</param>
+        <summary>Returns a quoted string appropriate for appending to a command line.</summary>
+        <returns>A string representing the new quoted string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Escapes any double quotes in the string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

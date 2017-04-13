@@ -1,0 +1,1343 @@
+<Type Name="DataContractSerializer" FullName="System.Runtime.Serialization.DataContractSerializer">
+  <TypeSignature Language="C#" Value="public sealed class DataContractSerializer : System.Runtime.Serialization.XmlObjectSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataContractSerializer extends System.Runtime.Serialization.XmlObjectSerializer" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Serialization.XmlObjectSerializer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serializes and deserializes an instance of a type into an XML stream or document using a supplied data contract. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize and deserialize instances of a type into an XML stream or document. For example, you can create a type named `Person` with properties that contain essential data, such as a name and address. You can then create and manipulate an instance of the `Person` class and write all of its property values in an XML document for later retrieval, or in an XML stream for immediate transport. Most important, the <xref:System.Runtime.Serialization.DataContractSerializer> is used to serialize and deserialize data sent in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages. Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to classes, and the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to class members to specify properties and fields that are serialized.  
+  
+ [!INCLUDE[crlist](~/includes/crlist-md.md)] types that can be serialized, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+  
+ To use the <xref:System.Runtime.Serialization.DataContractSerializer>, first create an instance of a class and an object appropriate to writing or reading the format; for example, an instance of the <xref:System.Xml.XmlDictionaryWriter>. Then call the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method to persist the data. To retrieve data, create an object appropriate to reading the data format (such as an <xref:System.Xml.XmlDictionaryReader> for an XML document) and call the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+  
+ You can set the type of a data contract serializer using the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in a client application configuration file.  
+  
+## Preparing Classes for Serialization or Deserialization  
+ The <xref:System.Runtime.Serialization.DataContractSerializer> is used in combination with the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> classes. To prepare a class for serialization, apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  For each member of the class that returns data that you want to serialize, apply the <xref:System.Runtime.Serialization.DataMemberAttribute>. You can serialize fields and properties, regardless of accessibility: private, protected, internal, protected internal, or public.  
+  
+ For example, your schema specifies a `Customer` with an `ID` property, but you already have an existing application that uses a type named `Person` with a `Name` property. To create a type that conforms to the contract, first apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  Then apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to every field or property that you want to serialize.  
+  
+> [!NOTE]
+>  You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to both private and public members.  
+  
+ The final format of the XML need not be text. Instead, the <xref:System.Runtime.Serialization.DataContractSerializer> writes the data as an XML infoset, which allows you to write the data to any format recognized by the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter>. It is recommended that you use the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to read and write, because both are optimized to work with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+  
+ If you are creating a class that has fields or properties that must be populated before the serialization or deserialization occurs, use callback attributes, as described in [Version-Tolerant Serialization Callbacks](~/docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
+  
+## Adding to the Collection of Known Types  
+ When serializing or deserializing an object, it is required that the type is "known" to the <xref:System.Runtime.Serialization.DataContractSerializer>. Begin by creating an instance of a class that implements <xref:System.Collections.Generic.IEnumerable%601> (such as <xref:System.Collections.Generic.List%601>) and adding the known types to the collection. Then create an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> using one of the overloads that takes the <xref:System.Collections.Generic.IEnumerable%601> (for example, <xref:System.Runtime.Serialization.DataContractSerializer.%23ctor%28System.Type%2CSystem.Collections.Generic.IEnumerable%7BSystem.Type%7D%29>.  
+  
+> [!NOTE]
+>  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types (see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md)).  
+  
+## Forward Compatibility  
+ The <xref:System.Runtime.Serialization.DataContractSerializer> understands data contracts that have been designed to be compatible with future versions of the contract. Such types implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface features the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property that returns an <xref:System.Runtime.Serialization.ExtensionDataObject> object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+  
+## Running under Partial Trust  
+ When instantiating the target object during deserialization, the <xref:System.Runtime.Serialization.DataContractSerializer> does not call the constructor of the target object. If you author a *[DataContract]* type that is accessible from partial trust (that is, it is public and in an assembly that has the `AllowPartiallyTrustedCallers` attribute applied) and that performs some security-related actions, you must be aware that the constructor is not called. In particular, the following techniques do not work:  
+  
+-   If you try to restrict partial trust access by making the constructor internal or private, or by adding a `LinkDemand` to the constructor -- neither of these have any effect during deserialization under partial trust.  
+  
+-   If you code the class that assumes the constructor has run, the class may get into an invalid internal state that is exploitable.  
+  
+   
+  
+## Examples  
+ The following example code shows a type named `Person` that is serialized by the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to the class, and the <xref:System.Runtime.Serialization.DataMemberAttribute> is applied to members to instruct the <xref:System.Runtime.Serialization.DataContractSerializer> what to serialize.  
+  
+ [!code-csharp[DataContractSerializer#0](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#0)]
+ [!code-vb[DataContractSerializer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Instances of this class are thread safe except when the instance is used with an implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> or <see cref="T:System.Runtime.Serialization.DataContractResolver" />.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize.  
+  
+ [!code-csharp[DataContractSerializer#8](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#8)]
+ [!code-vb[DataContractSerializer#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type, and a collection of known types that may be present in the object graph.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and a collection of known types that can be used in the object graph.  
+  
+ [!code-csharp[DataContractSerializer#9](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#9)]
+ [!code-vb[DataContractSerializer#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Runtime.Serialization.DataContractSerializerSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Runtime.Serialization.DataContractSerializerSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Runtime.Serialization.DataContractSerializerSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="settings" Type="System.Runtime.Serialization.DataContractSerializerSettings" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instance to serialize or deserialize.</param>
+        <param name="settings">The serializer settings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type and settings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, string rootName, string rootNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, string rootNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type using the supplied XML root element and namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document.  
+  
+ [!code-csharp[DataContractSerializer#10](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#10)]
+ [!code-vb[DataContractSerializer#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <param name="rootNamespace">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace of the root element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type using the XML root element and namespace specified through the parameters of type <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document.  
+  
+ [!code-csharp[DataContractSerializer#11](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#11)]
+ [!code-vb[DataContractSerializer#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, string rootName, string rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, string rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.String,System.String,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The root element name of the content.</param>
+        <param name="rootNamespace">The namespace of the root element.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root XML element and namespace in two string parameters as well as a list of known types that may be present in the object graph.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
+  
+ [!code-csharp[DataContractSerializer#12](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#12)]
+ [!code-vb[DataContractSerializer#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <param name="rootNamespace">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace of the root element.</param>
+        <param name="knownTypes">A <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root XML element and namespace in two <see cref="T:System.Xml.XmlDictionaryString" /> parameters as well as a list of known types that may be present in the object graph.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
+  
+ [!code-csharp[DataContractSerializer#13](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#13)]
+ [!code-vb[DataContractSerializer#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize. The default is the value returned by the <see cref="F:System.Int32.MaxValue" /> property.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, and a surrogate for custom serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+  
+ [!code-csharp[DataContractSerializer#14](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#14)]
+ [!code-vb[DataContractSerializer#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, System.Runtime.Serialization.DataContractResolver dataContractResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, class System.Runtime.Serialization.DataContractResolver dataContractResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+        <Parameter Name="dataContractResolver" Type="System.Runtime.Serialization.DataContractResolver" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize. The default is the value returned by the <see cref="F:System.Int32.MaxValue" /> property.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="dataContractResolver">An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> to map <see langword="xsi:type" /> declarations to data contract types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and an alternative for mapping <see langword="xsi:type" /> declarations at run time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  This method is not available in Windows Store apps.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, string rootName, string rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, string rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.String,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and the XML element and namespace that contain the content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace, and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+  
+ [!code-csharp[DataContractSerializer#15](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#15)]
+ [!code-vb[DataContractSerializer#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The <see cref="T:System.Xml.XmlDictionaryString" /> that specifies the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The <see cref="T:System.Xml.XmlDictionaryString" /> that specifies the XML namespace of the root.</param>
+        <param name="knownTypes">A <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and parameters of <see cref="T:System.Xml.XmlDictionaryString" /> that specify the XML element and namespace that contain the content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace (as <xref:System.Xml.XmlDictionaryString> parameters), and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+  
+ [!code-csharp[DataContractSerializer#16](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#16)]
+ [!code-vb[DataContractSerializer#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, string rootName, string rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, System.Runtime.Serialization.DataContractResolver dataContractResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, string rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, class System.Runtime.Serialization.DataContractResolver dataContractResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.String,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+        <Parameter Name="dataContractResolver" Type="System.Runtime.Serialization.DataContractResolver" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="dataContractResolver">An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> to map <see langword="xsi:type" /> declarations to data contract types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, the XML element and namespace that contains the content, and an alternative for mapping <see langword="xsi:type" /> declarations at run time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, System.Runtime.Serialization.DataContractResolver dataContractResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, bool preserveObjectReferences, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, class System.Runtime.Serialization.DataContractResolver dataContractResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="preserveObjectReferences" Type="System.Boolean" />
+        <Parameter Name="dataContractSurrogate" Type="System.Runtime.Serialization.IDataContractSurrogate" />
+        <Parameter Name="dataContractResolver" Type="System.Runtime.Serialization.DataContractResolver" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">The XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type upon serialization and deserialization; otherwise, <see langword="false" />.</param>
+        <param name="preserveObjectReferences">
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="dataContractResolver">An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> to map <see langword="xsi:type" /> declarations to data contract types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, parameters of <see cref="T:System.Xml.XmlDictionaryString" /> that specify the XML element and namespace that contains the content, and an alternative for mapping <see langword="xsi:type" /> declarations at run time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataContractResolver">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DataContractResolver DataContractResolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.DataContractResolver DataContractResolver" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.DataContractResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.DataContractResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the component used to dynamically map <see langword="xsi:type" /> declarations to known contract types.</summary>
+        <value>An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.DataContractResolver> is set using a <xref:System.Runtime.Serialization.DataContractSerializer> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataContractSurrogate">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.DataContractSurrogate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a surrogate type that can extend the serialization or deserialization process.</summary>
+        <value>An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.IDataContractSurrogate> can be used to customize how instances of a type are serialized and deserialized. For example, it can be used to enable the serialization of legacy types that are not serializable, that is, types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has not been applied.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreExtensionDataObject">
+      <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether to ignore data supplied by an extension of the class when the class is being serialized or deserialized.</summary>
+        <value>
+          <see langword="true" /> to omit the extension data; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> property is used when the class to which a <xref:System.Runtime.Serialization.DataContractAttribute> has been applied also implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case, the data added in a future version of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.IsStartObject(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream.</param>
+        <summary>Determines whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned on an object that can be deserialized.</summary>
+        <returns>
+          <see langword="true" /> if the reader is at the start element of the stream to read; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> determines whether it can read an object by checking that it is positioned on an XML element. It also examines the name and namespace of the XML element that the reader is positioned at and compares the values to the expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> property to determine whether the start of the data has been found.  
+  
+ [!code-csharp[DataContractSerializer#6](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#6)]
+ [!code-vb[DataContractSerializer#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.IsStartObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream.</param>
+        <summary>Determines whether the <see cref="T:System.Xml.XmlReader" /> is positioned on an object that can be deserialized.</summary>
+        <returns>
+          <see langword="true" /> if the reader is at the start element of the stream to read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnownTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt; KnownTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Type&gt; KnownTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of types that may be present in the object graph serialized using this instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the expected types passed in as known types to the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> constructor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A> property provides the set of known types that are used for serialization and deserialization. For example, if an instance of the <xref:System.Collections.Hashtable> class contains instances of a `Person` class, add the `Person` type to an instance of the <xref:System.Collections.Generic.List%601> class and use the instance to construct an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>. If you know of other types to add to the <xref:System.Collections.Hashtable>, then add those types to the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxItemsInObjectGraph">
+      <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of items in an object graph to serialize or deserialize.</summary>
+        <value>The maximum number of items to serialize or deserialize. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set in configuration or imperatively in code. To set it in configuration, add a custom behavior to the behaviors section and add the following setting.  
+  
+```  
+<behaviors>    <behavior name="MyServiceBehavior">        <dataContractSerializer maxItemsInObjectGraph="3" />    </behavior></behaviors>  
+```  
+  
+ To set this property imperatively in code find the operation description of the service, then get the operation behavior, finally set the property as shown in the following code.  
+  
+```  
+OperationDescription operation = host.Description.Endpoints[0].Contract.Operations.Find("MyOperationName");operation.Behaviors.Find<DataContractSerializerOperationBehavior>().MaxItemsInObjectGraph = 3;  
+```  
+  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. (The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects, and so on.) The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation and so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveObjectReferences">
+      <MemberSignature Language="C#" Value="public bool PreserveObjectReferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveObjectReferences" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether to use non-standard XML constructs to preserve object reference data.</summary>
+        <value>
+          <see langword="true" /> to keep the references; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.ReadObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream.</param>
+        <summary>Reads the XML stream with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlDictionaryReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the name of the object corresponds to the root name value supplied in the constructor; otherwise, <see langword="false" />.</param>
+        <summary>Reads the XML stream with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object, and also specifies whether a check is made to verify the object name before reading its value.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example reads an XML document and deserializes an instance of an object.  
+  
+ [!code-csharp[DataContractSerializer#2](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#2)]
+ [!code-vb[DataContractSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The <paramref name="verifyObjectName" /> parameter is set to <see langword="true" />, and the element name and namespace do not correspond to the values set in the constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.ReadObject(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the name of the object corresponds to the root name value supplied in the constructor; otherwise, <see langword="false" />.</param>
+        <summary>Reads the XML stream with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object, and also specifies whether a check is made to verify the object name before reading its value.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The <paramref name="verifyObjectName" /> parameter is set to <see langword="true" />, and the element name and namespace do not correspond to the values set in the constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public object ReadObject (System.Xml.XmlDictionaryReader reader, bool verifyObjectName, System.Runtime.Serialization.DataContractResolver dataContractResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ReadObject(class System.Xml.XmlDictionaryReader reader, bool verifyObjectName, class System.Runtime.Serialization.DataContractResolver dataContractResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+        <Parameter Name="dataContractResolver" Type="System.Runtime.Serialization.DataContractResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader used to read the content.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to verify the object name; otherwise, <see langword="false" />.</param>
+        <param name="dataContractResolver">An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> to map <see langword="xsi:type" /> declarations to data contract types.</param>
+        <summary>Reads an XML document or document stream and returns the deserialized object.  The method includes a parameter to specify whether the object name is verified is validated, and a resolver for mapping <see langword="xsi:type" /> declarations at runtime.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeReadOnlyTypes">
+      <MemberSignature Language="C#" Value="public bool SerializeReadOnlyTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SerializeReadOnlyTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializer.SerializeReadOnlyTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether read-only types are serialized.</summary>
+        <value>
+          <see langword="true" /> if read-only types are serialized; <see langword="false" /> if all types are serialized.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the stream.</param>
+        <summary>Writes the closing XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document. Making these calls is equivalent to making a single call of the <xref:System.Runtime.Serialization.DataContractSerializer.WriteObject%2A> method. For example, a user might make the calls separately to insert additional XML attributes into the XML after calling the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A> method.  
+  
+ [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+ [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteEndObject(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the stream.</param>
+        <summary>Writes the closing XML element using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public override void WriteObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <param name="graph">The object that contains the data to write to the stream.</param>
+        <summary>Writes all the object data (starting XML element, content, and closing element) to an XML document or stream with an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public void WriteObject (System.Xml.XmlDictionaryWriter writer, object graph, System.Runtime.Serialization.DataContractResolver dataContractResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteObject(class System.Xml.XmlDictionaryWriter writer, object graph, class System.Runtime.Serialization.DataContractResolver dataContractResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+        <Parameter Name="dataContractResolver" Type="System.Runtime.Serialization.DataContractResolver" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An XmlDictionaryWriter used to write the content to the XML document or stream.</param>
+        <param name="graph">The object that contains the content to write.</param>
+        <param name="dataContractResolver">An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> used to map <see langword="xsi:type" /> declarations to known data contracts.</param>
+        <summary>Writes all the object data (starting XML element, content, and enclosing element) to an XML document or stream  using the specified XmlDictionaryWriter. The method includes a resolver for mapping <see langword="xsi:type" /> declarations at runtime.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the stream.</param>
+        <param name="graph">The object to write to the stream.</param>
+        <summary>Writes the XML content using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
+  
+ [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+ [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the stream.</param>
+        <param name="graph">The object to write to the stream.</param>
+        <summary>Writes the XML content using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML start element.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the opening XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
+  
+ [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+ [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializer.WriteStartObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML start element.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the opening XML element using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

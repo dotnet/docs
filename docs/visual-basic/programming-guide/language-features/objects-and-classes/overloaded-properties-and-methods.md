@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Overloads keyword, overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

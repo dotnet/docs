@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

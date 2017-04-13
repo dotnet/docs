@@ -1,0 +1,489 @@
+<Type Name="TextDecoration" FullName="System.Windows.TextDecoration">
+  <TypeSignature Language="C#" Value="public sealed class TextDecoration : System.Windows.Media.Animation.Animatable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDecoration extends System.Windows.Media.Animation.Animatable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextDecoration" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.Animatable</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a text decoration, which a visual ornamentation that is added to text (such as an underline).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are four types of text decorations: underline, baseline, strikethrough, and overline. The following example shows the locations of the text decorations relative to the text.  
+  
+ ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
+Example of text decoration types  
+  
+ The following example shows a text decoration that has been styled with a linear gradient brush and a dashed pen.  
+  
+ ![Text decoration with linear gradient underline](~/add/media/textdecoration02.png "Text decoration with linear gradient underline")  
+Example of an underline styled with a linear gradient brush and dashed pen  
+  
+ Notice that <xref:System.Windows.TextDecoration> is derived from <xref:System.Windows.Media.Animation.Animatable>. This makes it possible to apply animated effects to the decoration elements, using a <xref:System.Windows.Media.Animation.DoubleAnimation> for the <xref:System.Windows.TextDecoration.PenOffset%2A> and a <xref:System.Windows.Media.Animation.ThicknessAnimation> for the <xref:System.Windows.TextDecoration.Pen%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextDecoration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecoration" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Windows.TextDecoration.Location%2A> property is <xref:System.Windows.TextDecorationLocation>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a <xref:System.Windows.TextDecoration> using the default constructor.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets2)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets2)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextDecoration (System.Windows.TextDecorationLocation location, System.Windows.Media.Pen pen, double penOffset, System.Windows.TextDecorationUnit penOffsetUnit, System.Windows.TextDecorationUnit penThicknessUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TextDecorationLocation location, class System.Windows.Media.Pen pen, float64 penOffset, valuetype System.Windows.TextDecorationUnit penOffsetUnit, valuetype System.Windows.TextDecorationUnit penThicknessUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.#ctor(System.Windows.TextDecorationLocation,System.Windows.Media.Pen,System.Double,System.Windows.TextDecorationUnit,System.Windows.TextDecorationUnit)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="location" Type="System.Windows.TextDecorationLocation" />
+        <Parameter Name="pen" Type="System.Windows.Media.Pen" />
+        <Parameter Name="penOffset" Type="System.Double" />
+        <Parameter Name="penOffsetUnit" Type="System.Windows.TextDecorationUnit" />
+        <Parameter Name="penThicknessUnit" Type="System.Windows.TextDecorationUnit" />
+      </Parameters>
+      <Docs>
+        <param name="location">The location of the text decoration.</param>
+        <param name="pen">The <see cref="T:System.Windows.Media.Pen" /> used to draw the text decoration. If this value is <see langword="null" />, the text decoration color matches the text color to which it is applied, and the text decoration's thickness is set to the font's recommended thickness.</param>
+        <param name="penOffset">The vertical displacement from the text decoration's location. A negative value moves the decoration lower, while a positive value moves the decoration higher.</param>
+        <param name="penOffsetUnit">The units used to interpret the value of <c>penOffset</c>.</param>
+        <param name="penThicknessUnit">The units used to interpret the value of the <see cref="P:System.Windows.Media.Pen.Thickness" /> for the <c>pen</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecoration" /> class with the specified <see cref="P:System.Windows.TextDecoration.Location" />, <see cref="P:System.Windows.TextDecoration.Pen" />, <see cref="P:System.Windows.TextDecoration.PenOffset" />, <see cref="P:System.Windows.TextDecoration.PenOffsetUnit" />, and <see cref="P:System.Windows.TextDecoration.PenThicknessUnit" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a <xref:System.Windows.TextDecoration> by using the `location`, `pen`, `penOffset`, `penOffsetUnit`, and `penThicknessUnit` parameters.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets6](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets6)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets6)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets6](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecoration Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.TextDecoration Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecoration</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.TextDecoration" />, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecoration CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.TextDecoration CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecoration</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.TextDecoration" /> object, making deep copies of this object's current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property value is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property value is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ Resource references, data bindings, and animations are not copied, but their current values are.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecorationLocation Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextDecorationLocation Location" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the vertical location at which the text decoration is drawn.</summary>
+        <value>The vertical location at which the text decoration is drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows the locations of the text decorations relative to the text.  
+  
+ ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
+Example of text decoration types  
+  
+ The <xref:System.Windows.TextDecoration.PenOffset%2A> property enables you to offset the text decoration from the specified <xref:System.Windows.TextDecoration.Location%2A>.  
+  
+<a name="dependencyPropertyInfo_Location"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.TextDecoration.LocationProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ In the following code example, a strikethrough text decoration is created with a solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation>.  
+  
+ [!code-csharp[textdecorationsnippets#TextDecorationSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets1)]
+ [!code-vb[textdecorationsnippets#TextDecorationSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets1)]
+ [!code-xml[textdecorationsnippets#TextDecorationSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LocationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LocationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.LocationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.TextDecoration.Location" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pen">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Pen Pen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Pen Pen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.Pen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Pen" /> used to draw the text decoration.</summary>
+        <value>The <see cref="T:System.Windows.Media.Pen" /> used to draw the text decoration. If this value is <c>null</c>, the decoration color matches the text to which it is applied and the decoration's thickness is set to the font's recommended thickness.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows a text decoration that has been styled with a linear gradient brush and a dashed pen.  
+  
+ ![Text decoration with linear gradient underline](~/add/media/textdecoration02.png "Text decoration with linear gradient underline")  
+Example of an underline styled with a linear gradient brush and dashed pen  
+  
+<a name="dependencyPropertyInfo_Pen"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.TextDecoration.PenProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ In the following code example, an underline text decoration is created with a linear gradient brush for the dashed pen.  
+  
+ [!code-csharp[textdecorationsnippets#TextDecorationSnippets3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets3)]
+ [!code-vb[textdecorationsnippets#TextDecorationSnippets3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets3)]
+ [!code-xml[textdecorationsnippets#TextDecorationSnippets3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenOffset">
+      <MemberSignature Language="C#" Value="public double PenOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 PenOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text decoration's offset from its <see cref="P:System.Windows.TextDecoration.Location" />.</summary>
+        <value>The text decoration's offset from its <see cref="P:System.Windows.TextDecoration.Location" />. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A negative value moves the text decoration higher, while a positive value moves the text decoration lower. Use the <xref:System.Windows.TextDecoration.PenOffsetUnit%2A> property to specify how the units of this value are interpreted.  
+  
+<a name="dependencyPropertyInfo_PenOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.TextDecoration.PenOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Windows.TextDecoration.PenOffset%2A> property.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets7)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets7)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenOffsetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenOffsetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenOffsetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenOffsetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.TextDecoration.PenOffset" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenOffsetUnit">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecorationUnit PenOffsetUnit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextDecorationUnit PenOffsetUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenOffsetUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the units in which the <see cref="P:System.Windows.TextDecoration.PenOffset" /> value is expressed.</summary>
+        <value>The units in which the <see cref="P:System.Windows.TextDecoration.PenOffset" /> value is expressed. The default is <see cref="F:System.Windows.TextDecorationUnit.FontRecommended" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PenOffsetUnit"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.TextDecoration.PenOffsetUnitProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Windows.TextDecoration.PenOffsetUnit%2A> property.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets7)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets7)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenOffsetUnitProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenOffsetUnitProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenOffsetUnitProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenOffsetUnitProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.TextDecoration.PenOffsetUnit" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.TextDecoration.Pen" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenThicknessUnit">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecorationUnit PenThicknessUnit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextDecorationUnit PenThicknessUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenThicknessUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the units in which the <see cref="P:System.Windows.Media.Pen.Thickness" /> of the text decoration's <see cref="P:System.Windows.TextDecoration.Pen" /> is expressed.</summary>
+        <value>The units in which the <see cref="P:System.Windows.Media.Pen.Thickness" /> of the text decoration's <see cref="P:System.Windows.TextDecoration.Pen" /> is expressed. The default is <see cref="F:System.Windows.TextDecorationUnit.FontRecommended" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PenThicknessUnit"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.TextDecoration.PenThicknessUnitProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Windows.TextDecoration.PenThicknessUnit%2A> property.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets7)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets7)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenThicknessUnitProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenThicknessUnitProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenThicknessUnitProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenThicknessUnitProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.TextDecoration.PenThicknessUnit" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

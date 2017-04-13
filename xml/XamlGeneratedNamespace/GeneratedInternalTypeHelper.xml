@@ -1,0 +1,201 @@
+<Type Name="GeneratedInternalTypeHelper" FullName="XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+  <TypeSignature Language="C#" Value="public sealed class GeneratedInternalTypeHelper : System.Windows.Markup.InternalTypeHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GeneratedInternalTypeHelper extends System.Windows.Markup.InternalTypeHelper" />
+  <TypeSignature Language="DocId" Value="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.InternalTypeHelper</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("PresentationBuildTasks", "4.0.0.0")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides infrastructure support for XAML markup compilers and developer tools.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneratedInternalTypeHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEventHandler">
+      <MemberSignature Language="C#" Value="protected override void AddEventHandler (System.Reflection.EventInfo eventInfo, object target, Delegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddEventHandler(class System.Reflection.EventInfo eventInfo, object target, class System.Delegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" />
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="handler" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDelegate">
+      <MemberSignature Language="C#" Value="protected override Delegate CreateDelegate (Type delegateType, object target, string handler);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Delegate CreateDelegate(class System.Type delegateType, object target, string handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delegateType" Type="System.Type" />
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="handler" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="delegateType">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="protected override object CreateInstance (Type type, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type type, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="protected override object GetPropertyValue (System.Reflection.PropertyInfo propertyInfo, object target, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetPropertyValue(class System.Reflection.PropertyInfo propertyInfo, object target, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyValue">
+      <MemberSignature Language="C#" Value="protected override void SetPropertyValue (System.Reflection.PropertyInfo propertyInfo, object target, object value, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetPropertyValue(class System.Reflection.PropertyInfo propertyInfo, object target, object value, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

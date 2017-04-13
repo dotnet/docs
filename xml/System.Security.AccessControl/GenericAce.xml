@@ -1,0 +1,399 @@
+<Type Name="GenericAce" FullName="System.Security.AccessControl.GenericAce">
+  <TypeSignature Language="C#" Value="public abstract class GenericAce" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GenericAce extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.GenericAce" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an Access Control Entry (ACE), and is the base class for all other ACE classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ACE contains both an ACE header and a binary blob. The header contains information about the type of the ACE, various flags, and the size of the binary blob.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AceFlags">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.AceFlags AceFlags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AceFlags AceFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Security.AccessControl.AceFlags" /> associated with this <see cref="T:System.Security.AccessControl.GenericAce" /> object.</summary>
+        <value>The <see cref="T:System.Security.AccessControl.AceFlags" /> associated with this <see cref="T:System.Security.AccessControl.GenericAce" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Security.AccessControl.AceFlags> object contains flags that specify information about the inheritance, inheritance propagation, and auditing conditions for an Access Control Entry (ACE).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AceType">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.AceType AceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AceType AceType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of this Access Control Entry (ACE).</summary>
+        <value>The type of this ACE.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditFlags">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.AuditFlags AuditFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AuditFlags AuditFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AuditFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AuditFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the audit information associated with this Access Control Entry (ACE).</summary>
+        <value>The audit information associated with this Access Control Entry (ACE).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BinaryLength">
+      <MemberSignature Language="C#" Value="public abstract int BinaryLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BinaryLength" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.BinaryLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.GenericAce" /> object. This length should be used before marshaling the ACL into a binary array with the <see cref="M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)" /> method.</summary>
+        <value>The length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.GenericAce Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.GenericAce Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.GenericAce</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a deep copy of this Access Control Entry (ACE).</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.GenericAce" /> object that this method creates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromBinaryForm">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.GenericAce CreateFromBinaryForm (byte[] binaryForm, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.GenericAce CreateFromBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.GenericAce</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binaryForm" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="binaryForm">The binary data from which to create the new <see cref="T:System.Security.AccessControl.GenericAce" /> object.</param>
+        <param name="offset">The offset at which to begin unmarshaling.</param>
+        <summary>Creates a <see cref="T:System.Security.AccessControl.GenericAce" /> object from the specified binary data.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.GenericAce" /> object this method creates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override sealed bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> object is equal to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Security.AccessControl.GenericAce" /> object is equal to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBinaryForm">
+      <MemberSignature Language="C#" Value="public abstract void GetBinaryForm (byte[] binaryForm, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binaryForm" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="binaryForm">The byte array into which the contents of the <see cref="T:System.Security.AccessControl.GenericAce" /> is marshaled.</param>
+        <param name="offset">The offset at which to start marshaling.</param>
+        <summary>Marshals the contents of the <see cref="T:System.Security.AccessControl.GenericAce" /> object into the specified byte array beginning at the specified offset.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is negative or too high to allow the entire <see cref="T:System.Security.AccessControl.GenericAcl" /> to be copied into <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override sealed int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the <see cref="T:System.Security.AccessControl.GenericAce" /> class. The  <see cref="M:System.Security.AccessControl.GenericAce.GetHashCode" /> method is suitable for use in hashing algorithms and data structures like a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceFlags">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.InheritanceFlags InheritanceFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.InheritanceFlags InheritanceFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.InheritanceFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets flags that specify the inheritance properties of this Access Control Entry (ACE).</summary>
+        <value>Flags that specify the inheritance properties of this ACE.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInherited">
+      <MemberSignature Language="C#" Value="public bool IsInherited { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInherited" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.IsInherited" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that specifies whether this Access Control Entry (ACE) is inherited or is set explicitly.</summary>
+        <value>
+          <see langword="true" /> if this ACE is inherited; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Equality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Security.AccessControl.GenericAce" />
+        <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
+        <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Security.AccessControl.GenericAce" />
+        <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
+        <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered unequal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Compare%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropagationFlags">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.PropagationFlags PropagationFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.PropagationFlags PropagationFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.PropagationFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets flags that specify the inheritance propagation properties of this Access Control Entry (ACE).</summary>
+        <value>Flags that specify the inheritance propagation properties of this ACE.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

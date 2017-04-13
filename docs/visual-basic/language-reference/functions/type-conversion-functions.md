@@ -92,8 +92,8 @@ helpviewer_keywords:
   - "type conversion, Visual Basic vs. .NET Framework"
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

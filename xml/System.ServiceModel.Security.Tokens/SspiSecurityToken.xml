@@ -1,0 +1,240 @@
+<Type Name="SspiSecurityToken" FullName="System.ServiceModel.Security.Tokens.SspiSecurityToken">
+  <TypeSignature Language="C#" Value="public class SspiSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SspiSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SspiSecurityToken" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an SSPI security token.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SspiSecurityToken (System.Net.NetworkCredential networkCredential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.NetworkCredential networkCredential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SspiSecurityToken.#ctor(System.Net.NetworkCredential,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="networkCredential" Type="System.Net.NetworkCredential" />
+        <Parameter Name="extractGroupsForWindowsAccounts" Type="System.Boolean" />
+        <Parameter Name="allowUnauthenticatedCallers" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="networkCredential">The <see cref="T:System.Net.NetworkCredential" />.</param>
+        <param name="extractGroupsForWindowsAccounts">
+          <see langword="true" /> if the groups to which the Windows accounts belong are extracted; otherwise, <see langword="false" />.</param>
+        <param name="allowUnauthenticatedCallers">
+          <see langword="true" /> if unauthenticated (anonymous) callers are allowed; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityToken" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SspiSecurityToken (System.Security.Principal.TokenImpersonationLevel impersonationLevel, bool allowNtlm, System.Net.NetworkCredential networkCredential);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Principal.TokenImpersonationLevel impersonationLevel, bool allowNtlm, class System.Net.NetworkCredential networkCredential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SspiSecurityToken.#ctor(System.Security.Principal.TokenImpersonationLevel,System.Boolean,System.Net.NetworkCredential)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="impersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
+        <Parameter Name="allowNtlm" Type="System.Boolean" />
+        <Parameter Name="networkCredential" Type="System.Net.NetworkCredential" />
+      </Parameters>
+      <Docs>
+        <param name="impersonationLevel">The <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.</param>
+        <param name="allowNtlm">
+          <see langword="true" /> if NTLM authentication is allowed; otherwise, <see langword="false" />.</param>
+        <param name="networkCredential">The <see cref="T:System.Net.NetworkCredential" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityToken" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNtlm">
+      <MemberSignature Language="C#" Value="public bool AllowNtlm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowNtlm" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.AllowNtlm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether to allow NTLM authentication.</summary>
+        <value>
+          <see langword="true" /> if NTLM authentication is allowed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.  
+  
+ Setting this property to `false` causes [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUnauthenticatedCallers">
+      <MemberSignature Language="C#" Value="public bool AllowUnauthenticatedCallers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowUnauthenticatedCallers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.AllowUnauthenticatedCallers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether to allow anonymous callers.</summary>
+        <value>
+          <see langword="true" /> if anonymous callers are allowed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractGroupsForWindowsAccounts">
+      <MemberSignature Language="C#" Value="public bool ExtractGroupsForWindowsAccounts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtractGroupsForWindowsAccounts" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.ExtractGroupsForWindowsAccounts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether to extract the groups to which the Windows accounts belong.</summary>
+        <value>
+          <see langword="true" /> if the groups to which the Windows accounts belong are extracted; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public override string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the token ID.</summary>
+        <value>The token ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImpersonationLevel">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.TokenImpersonationLevel ImpersonationLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel ImpersonationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.ImpersonationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the token impersonation level.</summary>
+        <value>The <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkCredential">
+      <MemberSignature Language="C#" Value="public System.Net.NetworkCredential NetworkCredential { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkCredential NetworkCredential" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.NetworkCredential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkCredential</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the network credential.</summary>
+        <value>The <see cref="T:System.Net.NetworkCredential" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityKeys">
+      <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.SecurityKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of security keys.</summary>
+        <value>A collection of <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidFrom">
+      <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.ValidFrom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting effective date for the token.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the starting effective date for the token.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidTo">
+      <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SspiSecurityToken.ValidTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the expiration date for the token.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the expiration date for the token.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

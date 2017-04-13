@@ -1,0 +1,266 @@
+<Type Name="PrintingPermission" FullName="System.Drawing.Printing.PrintingPermission">
+  <TypeSignature Language="C#" Value="public sealed class PrintingPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PrintingPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintingPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Controls access to printers. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintingPermission (System.Drawing.Printing.PrintingPermissionLevel printingLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Printing.PrintingPermissionLevel printingLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.#ctor(System.Drawing.Printing.PrintingPermissionLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="printingLevel" Type="System.Drawing.Printing.PrintingPermissionLevel" />
+      </Parameters>
+      <Docs>
+        <param name="printingLevel">One of the <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrintingPermission" /> class with the level of printing access specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintingPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrintingPermission" /> class with either fully restricted or unrestricted access, as specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates either the fully restricted (`None`) or the `Unrestricted` form of the permission.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="state" /> is not a valid <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current permission object.</summary>
+        <returns>A copy of the current permission object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of the permission object represents the same access to resources as the original permission object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="esd" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="esd">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission object of the same type as the current permission object.</param>
+        <summary>Creates and returns a permission that is the intersection of the current permission object and a target permission object.</summary>
+        <returns>A new permission object that represents the intersection of the current object and the specified target. This object is <see langword="null" /> if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permissions is a permission that describes the set of operations they both hold in common. Specifically, it represents the minimum permissions required for a demand to pass both permissions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is an object that is not of the same type as the current permission object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission object that is to be tested for the subset relationship. This object must be of the same type as the current permission object.</param>
+        <summary>Determines whether the current permission object is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current permission object is a subset of <paramref name="target" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is an object that is not of the same type as the current permission object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the permission is unrestricted.</summary>
+        <returns>
+          <see langword="true" /> if permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted permission object represents access to any and all resources protected by the permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintingPermissionLevel Level { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PrintingPermissionLevel Level" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintingPermission.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the code's level of printing access.</summary>
+        <value>One of the <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission object of the same type as the current permission object.</param>
+        <summary>Creates a permission that combines the permission object and the target permission object.</summary>
+        <returns>A new permission object that represents the union of the current permission object and the specified permission object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of a call to <xref:System.Security.Permissions.UIPermission.Union%2A> is a permission that represents all the operations represented by the current permission object, and all the operations represented by the specified permission object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is an object that is not of the same type as the current permission object.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "string conversion [Visual Basic], arrays"
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

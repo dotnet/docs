@@ -1,0 +1,151 @@
+<Type Name="FederationConfigurationElementCollection" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection">
+  <TypeSignature Language="C#" Value="public sealed class FederationConfigurationElementCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FederationConfigurationElementCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.IdentityModel.Services.Configuration.FederationConfigurationElement), AddItemName="federationConfiguration", CollectionType=System.Configuration.ConfigurationElementCollectionType.BasicMap)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of all of the <see langword="&lt;federationConfiguration&gt;" /> elements that are specified in the configuration file. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FederationConfigurationElementCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAdd">
+      <MemberSignature Language="C#" Value="protected override void BaseAdd (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void BaseAdd(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElement">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfigurationElement GetElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Services.Configuration.FederationConfigurationElement GetElement(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.GetElement(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.FederationConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see langword="&lt;federationConfiguration&gt;" /> element to retrieve.</param>
+        <summary>Retrieves the <see langword="&lt;federationConfiguration&gt;" /> element that has the specified name.</summary>
+        <returns>The <see langword="&lt;federationConfiguration&gt;" /> element that has the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a `<federationConfiguration>` element is specified through its `name` attribute (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No element with the specified name was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowOnDuplicate">
+      <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.ThrowOnDuplicate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

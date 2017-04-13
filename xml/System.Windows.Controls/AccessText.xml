@@ -1,0 +1,1255 @@
+<Type Name="AccessText" FullName="System.Windows.Controls.AccessText">
+  <TypeSignature Language="C#" Value="public class AccessText : System.Windows.FrameworkElement, System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessText extends System.Windows.FrameworkElement implements class System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AccessText" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.FrameworkElement</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Text")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies with an underscore the character that is used as the access key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If your content has multiple underscore characters, only the first one is converted into an <xref:System.Windows.Controls.AccessText.AccessKey%2A>; the other underscores appear as normal text. If the underscore that you want converted to the access key is not the first underscore, use two consecutive underscores for any underscores that precede the one that you want to convert. For example, the following code contains an access key and displays as _Hello**W**orld:  
+  
+```  
+<AccessText>__Hello_World</AccessText>   
+```  
+  
+ Because the underscore that precedes H is a double, the W key registers as the access key.  
+  
+ To use <xref:System.Windows.Controls.AccessText> as a content host in a control style, set <xref:System.Windows.Controls.ContentPresenter.RecognizesAccessKey%2A> in the <xref:System.Windows.Controls.ContentPresenter>, as this example shows:  
+  
+```  
+<ContentPresenter RecognizesAccessKey="True"/>   
+```  
+  
+   
+  
+## Examples  
+ You can use the <xref:System.Windows.Controls.AccessText> tag to create an <xref:System.Windows.Controls.AccessText.AccessKey%2A>; however, a tag is not necessary. The following example shows how to create an access key with and without the <xref:System.Windows.Controls.AccessText> tag.  
+  
+ [!code-xml[AccessText#2](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.AccessText" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessKey">
+      <MemberSignature Language="C#" Value="public char AccessKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char AccessKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.AccessKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides read-only access to the character that follows the first underline character.</summary>
+        <value>The character to return.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.AccessText.AccessKey%2A> property to programmatically determine which character is parsed by <xref:System.Windows.Controls.AccessText>.  
+  
+ The <xref:System.Windows.Input.AccessKeyManager> registers the <xref:System.Windows.Controls.AccessText.AccessKey%2A> character and raises the <xref:System.Windows.Input.AccessKeyManager.AccessKeyPressed> event when users press the key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override sealed System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The computed size that is used to arrange the content.</param>
+        <summary>Arranges and sizes the content of an <see cref="T:System.Windows.Controls.AccessText" /> object.</summary>
+        <returns>The size of the content.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Background" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> that fills the content area.</summary>
+        <value>The <see cref="T:System.Windows.Media.Brush" /> that fills the content area. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Background"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.BackgroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties in order to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.BackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.Background" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaselineOffset">
+      <MemberSignature Language="C#" Value="public double BaselineOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BaselineOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.BaselineOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that adjusts the baseline offset position of text in an <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The amount to adjust the baseline offset position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], this value is a true double. You cannot qualify this value by using measurement units such as picas or points.  
+  
+<a name="dependencyPropertyInfo_BaselineOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaselineOffsetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BaselineOffsetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BaselineOffsetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.BaselineOffsetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.BaselineOffset" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Font, Modifiability=System.Windows.Modifiability.Unmodifiable)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font family to use with the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The font family to use. The default is the font that is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontFamily" /> metric.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontFamily"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties in order to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamilyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontFamilyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontFamilyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontFamilyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.FontFamily" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.FontSizeConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font size to use with the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The font size to use. The default is the font size that is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontSize" /> metric.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+<a name="xamlAttributeUsage_FontSize"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object FontSize="double"/>  
+- or –  
+<object FontSize ="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_FontSize"></a>   
+## XAML Values  
+ *Double*  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value. This value is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For example, you can specify a value of `1`.  
+  
+ *qualifiedDouble*  
+ A *double* value that is followed by one of these unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ **Note** In many cases, you can set a double to `Auto`; however, you cannot set this property to `Auto`.  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.FontSize" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStretch">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStretch FontStretch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch FontStretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontStretch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.FontStretch" /> property that selects a normal, condensed, or expanded font from a <see cref="T:System.Windows.Media.FontFamily" />.</summary>
+        <value>The relative degree that the font is stretched. The default is <see cref="P:System.Windows.FontStretches.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontStretch"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.FontStretchProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStretchProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStretchProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStretchProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontStretchProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.FontStretch" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStyle FontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle FontStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font style to use with the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The font style to use; for example, normal, italic, or oblique. The default is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontStyle" /> metric.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information and a list of font styles, see <xref:System.Windows.FontStyle>.  
+  
+<a name="dependencyPropertyInfo_FontStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.FontStyleProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties in order to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.FontStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeight">
+      <MemberSignature Language="C#" Value="public System.Windows.FontWeight FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight FontWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font weight to use with the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The font weight to use. The default is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontWeight" /> metric.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontWeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontWeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontWeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontWeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.FontWeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> that draws the text content of the element.</summary>
+        <value>The <see cref="T:System.Windows.Media.Brush" /> that draws the text. The default is <see cref="P:System.Windows.Media.Brushes.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Foreground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.ForegroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set properties to change the appearance of the text in an <xref:System.Windows.Controls.AccessText> control.  
+  
+ [!code-xml[AccessText#AccessTextProps](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessText/CS/pane1.xaml#accesstextprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.ForegroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.Foreground" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualChild">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.GetVisualChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the visual child element to return.</param>
+        <summary>Gets the index of a visual child element.</summary>
+        <returns>Returns an integer that represents the index of a visual child element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of each line box.</summary>
+        <value>A double that specifies the height of each line box. This value must be equal to or greater than <c>0.0034</c> and equal to or less then <c>160000</c>. A value of <see cref="F:System.Double.NaN" /> (equivalent to an attribute value of <c>Auto</c>) causes the line height to be determined automatically from the current font characteristics. The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing this value does not change the height of the associated text; instead, it changes the box that contains it. To change the size of the text, use the <xref:System.Windows.Controls.AccessText.FontSize%2A> property.  
+  
+<a name="dependencyPropertyInfo_LineHeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.LineHeightProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+<a name="xamlAttributeUsage_LineHeight"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object LineHeight="double"/>  
+- or –  
+<object LineHeight ="qualifiedDouble"/>  
+- or –  
+<object LineHeight ="Auto"/>  
+```  
+  
+<a name="xamlValues_LineHeight"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value. This value is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For example, you can specify a value of `1`.  
+  
+ The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply here.  
+  
+ *qualifiedDouble*  
+ A *double* value that is followed by one of these unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ *Auto*  
+ An automatic line height determination. If you programmatically set the *Auto* value, its value corresponds to <xref:System.Double.NaN?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.LineHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.LineHeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineStackingStrategy">
+      <MemberSignature Language="C#" Value="public System.Windows.LineStackingStrategy LineStackingStrategy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LineStackingStrategy LineStackingStrategy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LineStackingStrategy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how the <see cref="P:System.Windows.Controls.AccessText.LineHeight" /> property is enforced.</summary>
+        <value>A <see cref="T:System.Windows.LineStackingStrategy" /> value that determines the behavior of the <see cref="P:System.Windows.Controls.AccessText.LineHeight" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.AccessText.LineHeight%2A> properties control the line box that is reserved for text. <xref:System.Windows.Controls.AccessText.LineHeight%2A> allows users to set a suggestion of height. <xref:System.Windows.LineStackingStrategy> defines how the <xref:System.Windows.Controls.AccessText.LineHeight%2A> is enforced.  
+  
+ You can set the <xref:System.Windows.Controls.AccessText.LineStackingStrategy%2A> property to <xref:System.Windows.LineStackingStrategy> or <xref:System.Windows.LineStackingStrategy>.  
+  
+-   The <xref:System.Windows.LineStackingStrategy> value increases the line to the tallest object in the line. It ensures that no item overdraws or is trimmed.  
+  
+-   The <xref:System.Windows.LineStackingStrategy> value enforces a <xref:System.Windows.Controls.AccessText.LineHeight%2A> value on all lines. If the <xref:System.Windows.Controls.AccessText.LineHeight%2A> property does not provide sufficient space, the text is either overdrawn or trimmed. Which occurs depends on the <xref:System.Windows.UIElement.ClipProperty> value.  
+  
+<a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.LineStackingStrategyProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineStackingStrategyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineStackingStrategyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineStackingStrategyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.LineStackingStrategyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.LineStackingStrategy" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalChildren">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LogicalChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumerator that iterates the logical child elements of the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>An enumerator that iterates the logical child elements of this element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override sealed System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The maximum size limit for the control. The return value cannot exceed this size.</param>
+        <summary>Remeasures the control.</summary>
+        <returns>The size of the control. Cannot exceed the maximum size limit for the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
+      <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to add to the <see cref="T:System.Windows.Controls.AccessText" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.AccessText> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddText">
+      <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the object.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.AccessText> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed by the <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The text without the first underscore character. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An access key is not created if you use the <xref:System.Windows.Controls.AccessText.Text%2A> property to supply text for an <xref:System.Windows.Controls.AccessText> element. This property is used internally to determine the text that is displayed by the access key. You can use this property to set additional text that does not contain the mnemonic (underlined character) or to retrieve the access key text.  
+  
+<a name="xamlObjectElementUsage_Text"></a>   
+## XAML Object Element Usage  
+  
+```  
+<object>_accessText</object>  
+- or -   
+<object><accessTextObject>_accessText</accessTextObject></object>  
+  
+```  
+  
+<a name="xamlValues_Text"></a>   
+## XAML Values  
+ *_accessText*  
+ A string that contains the underscore character. This value becomes an <xref:System.Windows.Controls.AccessText> that handles access keys for the *object*. The access key is the character that immediately follows the underscore.  
+  
+ *accessTextObject*  
+ The <xref:System.Windows.Controls.AccessText>.  
+  
+<a name="dependencyPropertyInfo_Text"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example creates an access key that customizes the first letter of the access key, which contains the mnemonic, and then sets the rest of the text by using the <xref:System.Windows.Controls.AccessText.Text%2A> property.  
+  
+ [!code-xml[AccessTextProps_snip#AccessTextText](~/samples/snippets/csharp/VS_Snippets_Wpf/AccessTextProps_snip/CS/pane1.xaml#accesstexttext)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlignment">
+      <MemberSignature Language="C#" Value="public System.Windows.TextAlignment TextAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal alignment of the content.</summary>
+        <value>The horizontal alignment of the text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of alignments see <xref:System.Windows.TextAlignment>.  
+  
+<a name="dependencyPropertyInfo_TextAlignment"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextAlignmentProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlignmentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextAlignmentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextAlignmentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.TextAlignment" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorations">
+      <MemberSignature Language="C#" Value="public System.Windows.TextDecorationCollection TextDecorations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextDecorations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the decorations that are added to the text of an <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The <see cref="T:System.Windows.TextDecorations" /> applied to the text of an <see cref="T:System.Windows.Controls.AccessText" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about text decorations, see <xref:System.Windows.TextDecorations>.  
+  
+ This property is not typically set, either by using markup or code.  
+  
+ This property exposes the default decoration for an access key (an underline in the same text color as the text) for possible styling or programmatic change. Because users expect access key identifiers to have a certain appearance in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], a better choice is to change this property by using application-wide mechanisms, such as application styles or custom themes.  
+  
+<a name="xamlPropertyElementUsage_TextDecorations"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.TextDecorations>  
+    OneOrMoreTextDecorations  
+  </object.TextDecorations>  
+</object>  
+```  
+  
+<a name="xamlValues_TextDecorations"></a>   
+## XAML Values  
+ *OneOrMoreTextDecorations*  
+ One or more <xref:System.Windows.TextDecoration> elements. Use this syntax if you are defining custom text decorations. For details, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
+  
+<a name="dependencyPropertyInfo_TextDecorations"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextDecorationsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorationsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextDecorationsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextDecorationsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextDecorationsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.TextDecorations" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEffects">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffectCollection TextEffects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextEffectCollection TextEffects" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextEffects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextEffectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the effects that are added to the text of an <see cref="T:System.Windows.Controls.AccessText" /> element.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextEffectCollection" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not typically set, either by using markup or code.  
+  
+ This property exposes the default effects for an access key for possible styling or programmatic change.  
+  
+ Because users expect access key identifiers to have a certain appearance in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], a better choice is to change this property by using application-wide mechanisms, such as application styles or custom themes.  
+  
+<a name="xamlPropertyElementUsage_TextEffects"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.TextEffects>  
+    OneOrMoreTextEffects  
+  </object.TextEffects>  
+</object>  
+  
+```  
+  
+<a name="xamlValues_TextEffects"></a>   
+## XAML Values  
+ *OneOrMoreTextEffects*  
+ One or more <xref:System.Windows.Media.TextEffect> elements.  
+  
+<a name="dependencyPropertyInfo_TextEffects"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextEffectsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEffectsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextEffectsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextEffectsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextEffectsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.TextEffects" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.Text" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTrimming">
+      <MemberSignature Language="C#" Value="public System.Windows.TextTrimming TextTrimming { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextTrimming TextTrimming" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextTrimming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextTrimming</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how the textual content of an <see cref="T:System.Windows.Controls.AccessText" /> element is clipped if it overflows the line box.</summary>
+        <value>The trimming behavior to use. The default is <see cref="F:System.Windows.TextTrimming.None" /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information and for a list of text trimming options, see <xref:System.Windows.TextTrimming>.  
+  
+<a name="dependencyPropertyInfo_TextTrimming"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextTrimmingProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTrimmingProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextTrimmingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextTrimmingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextTrimmingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.TextTrimming" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextWrapping">
+      <MemberSignature Language="C#" Value="public System.Windows.TextWrapping TextWrapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextWrapping TextWrapping" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextWrapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextWrapping</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the textual content of an <see cref="T:System.Windows.Controls.AccessText" /> element is wrapped if it overflows the line box.</summary>
+        <value>The wrapping behavior to use. The default is <see cref="F:System.Windows.TextWrapping.NoWrap" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_TextWrapping"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.AccessText.TextWrapping%2A> property of <xref:System.Windows.Controls.AccessText> to make a multiple-line label.  
+  
+ <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#4)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextWrappingProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextWrappingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextWrappingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextWrappingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.AccessText.TextWrapping" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualChildrenCount">
+      <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.VisualChildrenCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of child elements that are visual.</summary>
+        <value>Returns an integer that represents the number of child elements that are visible.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,152 @@
+<Type Name="ExpandedWrapper&lt;TExpandedElement&gt;" FullName="System.Data.Services.Internal.ExpandedWrapper&lt;TExpandedElement&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ExpandedWrapper&lt;TExpandedElement&gt; : System.Data.Services.IExpandedResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpandedWrapper`1&lt;TExpandedElement&gt; extends System.Object implements class System.Data.Services.IExpandedResult" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ExpandedWrapper`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TExpandedElement" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.Services.IExpandedResult</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TExpandedElement">Type of the expanded element.</typeparam>
+    <summary>This class is used internally by the system to implement support for queries with eager loading of related entities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace includes a number of variations of the `ExpandedWrapper` class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpandedWrapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the description for the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</summary>
+        <value>The description of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandedElement">
+      <MemberSignature Language="C#" Value="public TExpandedElement ExpandedElement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TExpandedElement ExpandedElement" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.ExpandedElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TExpandedElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpandedPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetExpandedPropertyValue (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetExpandedPropertyValue(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`1.GetExpandedPropertyValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <summary>Returns the value of the expanded property.</summary>
+        <returns>The value of the property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalGetExpandedPropertyValue">
+      <MemberSignature Language="C#" Value="protected abstract object InternalGetExpandedPropertyValue (int nameIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object InternalGetExpandedPropertyValue(int32 nameIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`1.InternalGetExpandedPropertyValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nameIndex">The index of the property.</param>
+        <summary>Returns a property object of the expanded property.</summary>
+        <returns>The property value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Services.IExpandedResult.ExpandedElement">
+      <MemberSignature Language="C#" Value="object System.Data.Services.IExpandedResult.ExpandedElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Data.Services.IExpandedResult.ExpandedElement" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.System#Data#Services#IExpandedResult#ExpandedElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

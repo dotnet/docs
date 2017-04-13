@@ -1,0 +1,51 @@
+<Type Name="VisualStyleElement+ExplorerBar" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ExplorerBar">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ExplorerBar" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ExplorerBar extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for each part of the Explorer Bar. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderBackground>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderClose>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.IEBarMenu>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupBackground>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupCollapse>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupHead>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupBackground>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupCollapse>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupExpand>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupHead>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the Explorer Bar part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

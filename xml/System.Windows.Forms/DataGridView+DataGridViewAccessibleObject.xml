@@ -1,0 +1,257 @@
+<Type Name="DataGridView+DataGridViewAccessibleObject" FullName="System.Windows.Forms.DataGridView+DataGridViewAccessibleObject">
+  <TypeSignature Language="C#" Value="protected class DataGridView.DataGridViewAccessibleObject : System.Windows.Forms.Control.ControlAccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridView/DataGridViewAccessibleObject extends System.Windows.Forms.Control/ControlAccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control+ControlAccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides information about the <see cref="T:System.Windows.Forms.DataGridView" /> control to accessibility client applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows Forms has accessibility support built in and provides information about your application that allows it to work with accessibility client applications. Examples of accessibility client applications are screen enlarger and reviewer utilities, voice input utilities, on-screen keyboards, alternative input devices, and keyboard enhancement utilities.  
+  
+ The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject> class inherits from the <xref:System.Windows.Forms.AccessibleObject> class to provide information about the <xref:System.Windows.Forms.DataGridView> control to accessibility client applications. Each class that represents a visual part of the <xref:System.Windows.Forms.DataGridView>—<xref:System.Windows.Forms.DataGridViewColumnHeaderCell>, <xref:System.Windows.Forms.DataGridViewRowHeaderCell>, <xref:System.Windows.Forms.DataGridViewRow>, and <xref:System.Windows.Forms.DataGridViewCell>—also contains a class that inherits from <xref:System.Windows.Forms.AccessibleObject> to provide information about the containing class and perform actions on behalf of accessibility client applications.  
+  
+ There are instances when you will want to provide additional information, such as the name or description of the <xref:System.Windows.Forms.DataGridView> control, to accessibility client applications. There are two ways of providing this additional information. To provide limited accessibility information for existing controls, set the control's <xref:System.Windows.Forms.Control.AccessibleName%2A> and <xref:System.Windows.Forms.Control.AccessibleDescription%2A> property values, which will be reported to accessibility client applications.  
+  
+> [!NOTE]
+>  You should change the <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleRole%2A> property values only in rare situations, such as if you make a <xref:System.Windows.Forms.DataGridView> look like a list.  
+  
+ Occasionally, you might require more accessibility information or different accessibility actions to be included with your custom <xref:System.Windows.Forms.DataGridView> or <xref:System.Windows.Forms.DataGridViewCell>. To customize accessibility, you can write your own class that derives from the <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject> or <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject> classes and override the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method. For example, if you are writing a custom row header cell that implements unique custom actions, such as special hit testing within your cell, you should create a class that inherits from the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject> class and override the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.CreateAccessibilityInstance%2A> method.  
+  
+ The <xref:System.Windows.Forms.DataGridView> exposes its data structure by using <xref:System.Windows.Forms.AccessibleRole> values to define the data table hierarchy. For more information on exposing data tables to Microsoft Active Accessibility, see "Exposing Data Tables through Microsoft Active Accessibility" in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewAccessibleObject (System.Windows.Forms.DataGridView owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.#ctor(System.Windows.Forms.DataGridView)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.DataGridView" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChild">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the child accessible object.</param>
+        <summary>Returns the child accessible object corresponding to the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the child accessible object corresponding to the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetChild%2A> method returns an accessible object for the row of <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> objects when <xref:System.Windows.Forms.DataGridView.ColumnHeadersVisible%2A> is `true` and `index` is 0. If <xref:System.Windows.Forms.DataGridView.ColumnHeadersVisible%2A> is `false` and `index` is 0, <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetChild%2A> returns an accessible object for the first <xref:System.Windows.Forms.DataGridViewRow>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCount">
+      <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetChildCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the number of child objects belonging to an accessible object.</summary>
+        <returns>The number of child objects belonging to the accessible object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetChildCount%2A> method returns the number of visible rows in the <xref:System.Windows.Forms.DataGridView>, plus 1 for the column header row if it is visible and 1 for each visible scroll bar. If there are no columns in the control, this method always returns 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFocused">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetFocused ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetFocused() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetFocused" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the accessible object of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that has the keyboard focus.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that specifies the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that has the current focus, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.DataGridView" /> does not have focus.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelected">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetSelected ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetSelected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.GetSelected" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the selected cells in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the currently selected cells, or <see langword="null" /> if no cells are selected or if the object itself does not have focus.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject HitTest (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject HitTest(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.HitTest(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The horizontal screen coordinate.</param>
+        <param name="y">The vertical screen coordinate.</param>
+        <summary>Retrieves the child object at the specified screen coordinates.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents an object at the given screen coordinates, or <see langword="null" /> if no object is at the specified location.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.HitTest%2A> method returns an <xref:System.Windows.Forms.AccessibleObject> that represents part of the <xref:System.Windows.Forms.DataGridView>. If the object itself is at the specified location, this method returns the calling object. The following table describes what the <xref:System.Windows.Forms.AccessibleObject> represents.  
+  
+|Area clicked|Object represented by accessible object|  
+|------------------|---------------------------------------------|  
+|Column header cell|<xref:System.Windows.Forms.DataGridViewColumnHeaderCell>|  
+|Row header cell|<xref:System.Windows.Forms.DataGridViewRow>|  
+|Cell|<xref:System.Windows.Forms.DataGridViewCell>|  
+|Scroll bar|<xref:System.Windows.Forms.AccessibleObject>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the accessible object name.</summary>
+        <value>The accessible object name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigate">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Navigate (System.Windows.Forms.AccessibleNavigation navigationDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject Navigate(valuetype System.Windows.Forms.AccessibleNavigation navigationDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="navigationDirection" Type="System.Windows.Forms.AccessibleNavigation" />
+      </Parameters>
+      <Docs>
+        <param name="navigationDirection">One of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</param>
+        <summary>Navigates to another accessible object.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the object positioned at the specified <see cref="T:System.Windows.Forms.AccessibleNavigation" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.AccessibleNavigation> value to get the first child accessible object of the <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject>, and use <xref:System.Windows.Forms.AccessibleNavigation> to get the last child. The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Navigate%2A> method will return `null` for all other values of the <xref:System.Windows.Forms.AccessibleNavigation> enumeration.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />.</summary>
+        <value>The <see cref="F:System.Windows.Forms.AccessibleRole.Table" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "calls, stored procedures"
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,66 @@
+<Type Name="AjaxFrameworkMode" FullName="System.Web.UI.AjaxFrameworkMode">
+  <TypeSignature Language="C#" Value="public enum AjaxFrameworkMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AjaxFrameworkMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.AjaxFrameworkMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how client scripts of the [!INCLUDE[ajax_current_ext](~/includes/ajax-current-ext-md.md)] client library are included on the client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.AjaxFrameworkMode Disabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all [!INCLUDE[ajax_current_ext](~/includes/ajax-current-ext-md.md)] script features are disabled and that the <see cref="T:System.Web.UI.ScriptManager" /> control does not reference any scripts automatically.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.AjaxFrameworkMode Enabled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="T:System.Web.UI.ScriptManager" /> control automatically includes the MicrosoftAjax.js script file, which is a combined script file of every core framework script (legacy behavior).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Explicit">
+      <MemberSignature Language="C#" Value="Explicit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.AjaxFrameworkMode Explicit = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Explicit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that you will explicitly include script references to individual framework core script file that your page requires, and that you will include references to the dependencies that each script file requires.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

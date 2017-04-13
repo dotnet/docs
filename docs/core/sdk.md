@@ -33,7 +33,7 @@ The native installers are primarily meant for developer's machines. The SDK is d
 native install mechanism, for instance DEB packages on Ubuntu or MSI bundles on Windows. These installers will install 
 and set up the environment as needed for the user to use the SDK immediately after the install. However, they also 
 require administrative privileges on the machine. You can view the installation instructions on the
-[.NET Core getting started page](https://aka.ms/dotnetcoregs).
+[.NET Core installation guide](https://aka.ms/dotnetcoregs).
 
 Install scripts, on the other hand, do not require administrative privileges. However, they will also not install any 
 prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for 

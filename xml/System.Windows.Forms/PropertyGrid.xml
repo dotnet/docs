@@ -1,0 +1,3170 @@
+<Type Name="PropertyGrid" FullName="System.Windows.Forms.PropertyGrid">
+  <TypeSignature Language="C#" Value="public class PropertyGrid : System.Windows.Forms.ContainerControl, System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyGrid extends System.Windows.Forms.ContainerControl implements class System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGrid" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.PropertyGridDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a user interface for browsing the properties of an object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use the property grid, you create a new instance of the <xref:System.Windows.Forms.PropertyGrid> class on a parent control and set <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> to the object to display the properties for.  
+  
+ The information displayed in the grid is a snapshot of the properties at the time the object is assigned. If a property value of the object specified by the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> is changed in code at run time, the new value is not displayed until an action is taken in the grid that causes the grid to refresh.  
+  
+ The property tabs within the property grid appear as buttons on the toolbar at the top of the <xref:System.Windows.Forms.PropertyGrid>, and can vary in scope as defined in the <xref:System.ComponentModel.PropertyTabScope>.  
+  
+ You can use the <xref:System.Windows.Forms.PropertyGrid.LargeButtons%2A> property to display large buttons instead of the default smaller ones. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. The large and small buttons and the property list expander icons (the plus or minus icons) are resized according to the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+  
+```  
+  
+ The <xref:System.Windows.Forms.PropertyGrid> control is not initially presented in the toolbox in the development environment. You can add a property grid to the toolbox, which enables you to drag a <xref:System.Windows.Forms.PropertyGrid> onto your form. You can also define an instance of <xref:System.Windows.Forms.PropertyGrid> by adding the appropriate code in your source code.  
+  
+ All public properties of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> will be displayed in the <xref:System.Windows.Forms.PropertyGrid> by default. You can hide a property so that it is not displayed in the <xref:System.Windows.Forms.PropertyGrid> control by decorating it with the <xref:System.ComponentModel.BrowsableAttribute> and setting the value to `false`. You can specify the category that a property appears in by providing a category with the <xref:System.ComponentModel.CategoryAttribute>. You can provide descriptive text for your property that appears at the bottom of the <xref:System.Windows.Forms.PropertyGrid> control by using the <xref:System.ComponentModel.DescriptionAttribute>.  
+  
+   
+  
+## Examples  
+ The following code example illustrates creating a property grid and setting its location on a form. This example requires that you have a form with a <xref:System.Windows.Forms.TextBox> on it.  
+  
+ [!code-cpp[Classic PropertyGrid Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyGrid Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyGrid Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyGrid Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyGrid Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyGrid Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityAction">for full trust. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGrid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyGrid" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To populate the grid, you must set the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScroll">
+      <MemberSignature Language="C#" Value="public override bool AutoScroll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.AutoScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color for the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImage">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackgroundImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The background image of the property grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.BackgroundImageChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.BackgroundImage" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayout">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackgroundImageLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The background image layout of the property grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayoutChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.BackgroundImageLayoutChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.BackgroundImageLayout" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowsableAttributes">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.AttributeCollection BrowsableAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.AttributeCollection BrowsableAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BrowsableAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the browsable attributes associated with the object that the property grid is attached to.</summary>
+        <value>The collection of browsable attributes associated with the object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only properties with attributes matching the values specified are displayed in the <xref:System.Windows.Forms.PropertyGrid>. The default is an <xref:System.ComponentModel.AttributeCollection> containing only <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName>.  
+  
+ Assigning an attribute collection that is empty or is `null` causes a new <xref:System.ComponentModel.AttributeCollection> to be created with <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName> set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanShowCommands">
+      <MemberSignature Language="C#" Value="public virtual bool CanShowCommands { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanShowCommands" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CanShowCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the commands pane can be made visible for the currently selected objects.</summary>
+        <value>
+          <see langword="true" /> if the commands pane can be made visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `true` if <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> is `true` and the object has commands available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanShowVisualStyleGlyphs">
+      <MemberSignature Language="C#" Value="public bool CanShowVisualStyleGlyphs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanShowVisualStyleGlyphs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CanShowVisualStyleGlyphs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether OS-specific visual style glyphs are used for the expansion nodes in the grid area.</summary>
+        <value>
+          <see langword="true" /> to use the visual style glyphs; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CategoryForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CategoryForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CategoryForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "ControlText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text color used for category headings.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the text color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The background color of category headings is determined by the <xref:System.Windows.Forms.PropertyGrid.LineColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategorySplitterColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CategorySplitterColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CategorySplitterColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CategorySplitterColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Control")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the line that separates categories in the grid area.</summary>
+        <value>The color of the category splitter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollapseAllGridItems">
+      <MemberSignature Language="C#" Value="public void CollapseAllGridItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CollapseAllGridItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.CollapseAllGridItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Collapses all the categories in the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method collapses the categories in the grid. Those categories that have grid items in the category have a plus sign (+) displayed next to that category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsActiveLinkColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsActiveLinkColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsActiveLinkColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsActiveLinkColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of active links in the executable commands region.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the active link color.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsBackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the hot commands region.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for controls.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsBorderColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsBorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsBorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsBorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "ControlDark")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the border surrounding the hot commands region.</summary>
+        <value>The color of the commands border.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsDisabledLinkColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsDisabledLinkColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsDisabledLinkColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsDisabledLinkColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unavailable link color for the executable commands region.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the unavailable link color.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color for the hot commands region.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for control text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsLinkColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color CommandsLinkColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommandsLinkColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsLinkColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the link color for the executable commands region.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the link color for the executable commands region.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsVisible">
+      <MemberSignature Language="C#" Value="public virtual bool CommandsVisible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommandsVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the commands pane is visible.</summary>
+        <value>
+          <see langword="true" /> if the commands pane is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `true` if the selected object has commands available and the <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandsVisibleIfAvailable">
+      <MemberSignature Language="C#" Value="public virtual bool CommandsVisibleIfAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommandsVisibleIfAvailable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the commands pane is visible for objects that expose verbs.</summary>
+        <value>
+          <see langword="true" /> if the commands pane is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuDefaultLocation">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point ContextMenuDefaultLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point ContextMenuDefaultLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ContextMenuDefaultLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default location for the shortcut menu.</summary>
+        <value>The default location for the shortcut menu if the command is invoked. Typically, this is centered over the selected property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The shortcut menu location is the center of the active property label in the grid. You can use this information to position the shortcut menu when the menu is invoked using the keyboard.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control.ControlCollection Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control/ControlCollection Controls" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control+ControlCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The controls associated with the property grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertyTab">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.Design.PropertyTab CreatePropertyTab (Type tabType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.Design.PropertyTab CreatePropertyTab(class System.Type tabType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.CreatePropertyTab(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.PropertyTab</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tabType">The type of tab to create.</param>
+        <summary>When overridden in a derived class, enables the creation of a <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</summary>
+        <returns>The newly created property tab. Returns <see langword="null" /> in its default implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Forms.Design.PropertyTab> for more information about creating property tabs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTabType">
+      <MemberSignature Language="C#" Value="protected virtual Type DefaultTabType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DefaultTabType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DefaultTabType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the default tab.</summary>
+        <value>A <see cref="T:System.Type" /> representing the default tab.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this property returns <xref:System.Windows.Forms.Design.PropertyTab>. Override this property to specify a modified version of the <xref:System.Windows.Forms.Design.PropertyTab>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledItemForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color DisabledItemForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color DisabledItemForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DisabledItemForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "GrayText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color of disabled text in the grid area.</summary>
+        <value>The foreground color of disabled items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.PropertyGrid>. The <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> method leaves the <xref:System.Windows.Forms.PropertyGrid> in an unusable state. After calling <xref:System.Windows.Forms.PropertyGrid.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.PropertyGrid> so the memory it was occupying can be reclaimed by garbage collection.  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.PropertyGrid>. Otherwise, the resources the <xref:System.Windows.Forms.PropertyGrid> is using will not be freed until garbage collection calls the destructor of <xref:System.Windows.Forms.PropertyGrid>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFlatToolbar">
+      <MemberSignature Language="C#" Value="protected bool DrawFlatToolbar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DrawFlatToolbar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DrawFlatToolbar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.PropertyGrid" /> control paints its toolbar with flat buttons.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.PropertyGrid" /> paints its toolbar with flat buttons; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandAllGridItems">
+      <MemberSignature Language="C#" Value="public void ExpandAllGridItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpandAllGridItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ExpandAllGridItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Expands all the categories in the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The foreground color of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColorChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.ForeColorChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.ForeColor" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpBackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color HelpBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HelpBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Control")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color for the Help region.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for controls.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpBorderColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color HelpBorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HelpBorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpBorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "ControlDark")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the border surrounding the description pane.</summary>
+        <value>The color of the help border.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color HelpForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HelpForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "ControlText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color for the Help region.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for control text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpVisible">
+      <MemberSignature Language="C#" Value="public virtual bool HelpVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HelpVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the Help text is visible.</summary>
+        <value>
+          <see langword="true" /> if the help text is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables the display of any available Help text associated with the selected property in the grid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDown">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyDown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is first pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#522](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#522)]
+ [!code-vb[System.Windows.Forms.EventExamples#522](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#522)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPress">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyPress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is pressed while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#523](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#523)]
+ [!code-vb[System.Windows.Forms.EventExamples#523](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#523)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUp">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyUp" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is released while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#524](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#524)]
+ [!code-vb[System.Windows.Forms.EventExamples#524](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#524)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeButtons">
+      <MemberSignature Language="C#" Value="public bool LargeButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LargeButtons" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.LargeButtons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether buttons appear in standard size or in large size.</summary>
+        <value>
+          <see langword="true" /> if buttons on the control appear large; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to enhance accessibility. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. Both the large and small buttons are resized according to the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color LineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.LineColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "InactiveBorder")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the gridlines and borders.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for scroll bars.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseDown">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseDown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks the <see cref="T:System.Windows.Forms.PropertyGrid" /> control with the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseEnter">
+      <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseEnter" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the mouse pointer enters the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseLeave">
+      <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseLeave" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the mouse pointer leaves the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseMove">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseMove" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the mouse pointer moves over the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseUp">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseUp" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the mouse pointer is over the control and the user releases a mouse button.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComComponentNameChanged">
+      <MemberSignature Language="C#" Value="protected void OnComComponentNameChanged (System.ComponentModel.Design.ComponentRenameEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnComComponentNameChanged(class System.ComponentModel.Design.ComponentRenameEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged(System.ComponentModel.Design.ComponentRenameEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.Design.ComponentRenameEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentRenameEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.ComComponentNameChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged(System.ComponentModel.Design.ComponentRenameEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged(System.ComponentModel.Design.ComponentRenameEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEnabledChanged">
+      <MemberSignature Language="C#" Value="protected override void OnEnabledChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnabledChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFontChanged">
+      <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnFontChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGotFocus">
+      <MemberSignature Language="C#" Value="protected override void OnGotFocus (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnGotFocus(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnGotFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnHandleCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnHandleCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleDestroyed">
+      <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnHandleDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs me);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs me) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="me" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="me">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseMove">
+      <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs me);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs me) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="me" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="me">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseMove" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseUp">
+      <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs me);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs me) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="me" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="me">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNotifyPropertyValueUIItemsChanged">
+      <MemberSignature Language="C#" Value="protected void OnNotifyPropertyValueUIItemsChanged (object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnNotifyPropertyValueUIItemsChanged(object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="M:System.Drawing.Design.IPropertyValueUIService.NotifyPropertyValueUIItemsChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs pevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs pevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pevent" Type="System.Windows.Forms.PaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="pevent">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertySortChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertySortChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertySortChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertySortChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnPropertySortChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyTabChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyTabChanged (System.Windows.Forms.PropertyTabChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyTabChanged(class System.Windows.Forms.PropertyTabChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged(System.Windows.Forms.PropertyTabChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.PropertyTabChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.PropertyTabChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertyTabChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged(System.Windows.Forms.PropertyTabChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged(System.Windows.Forms.PropertyTabChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyValueChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyValueChanged (System.Windows.Forms.PropertyValueChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyValueChanged(class System.Windows.Forms.PropertyValueChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged(System.Windows.Forms.PropertyValueChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.PropertyValueChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.PropertyValueChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertyValueChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged(System.Windows.Forms.PropertyValueChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged(System.Windows.Forms.PropertyValueChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResize">
+      <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnResize(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnResize(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnResize(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedGridItemChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedGridItemChanged (System.Windows.Forms.SelectedGridItemChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedGridItemChanged(class System.Windows.Forms.SelectedGridItemChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.SelectedGridItemChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.SelectedGridItemChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedObjectsChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedObjectsChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedObjectsChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSystemColorsChanged">
+      <MemberSignature Language="C#" Value="protected override void OnSystemColorsChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSystemColorsChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.SystemColorsChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisibleChanged">
+      <MemberSignature Language="C#" Value="protected override void OnVisibleChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnVisibleChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnVisibleChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PropertyGrid.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnVisibleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.PropertyGrid.OnVisibleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Padding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PaddingChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.Padding" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessDialogKey">
+      <MemberSignature Language="C#" Value="protected override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ProcessDialogKey(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">Specifies key codes and modifiers.</param>
+        <summary>Processes a dialog key.</summary>
+        <returns>
+          <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySort">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.PropertySort PropertySort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.PropertySort PropertySort" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.PropertySort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of sorting the <see cref="T:System.Windows.Forms.PropertyGrid" /> uses to display properties.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.PropertySort" /> values. The default is <see cref="F:System.Windows.Forms.PropertySort.Categorized" /> or <see cref="F:System.Windows.Forms.PropertySort.Alphabetical" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=fullName> causes the properties to be displayed in the order they were retrieved.  
+  
+ Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort> and <xref:System.Windows.Forms.PropertySort> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort> alone. The categorized view is always shown as alphabetical.  
+  
+> [!NOTE]
+>  To do custom sorting, implement <xref:System.ComponentModel.ICustomTypeDescriptor> on the component to return the properties in the desired order.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.PropertySort" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySortChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler PropertySortChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PropertySortChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertySortChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the sort mode is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#532](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#532)]
+ [!code-vb[System.Windows.Forms.EventExamples#532](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#532)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTabChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.PropertyTabChangedEventHandler PropertyTabChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PropertyTabChangedEventHandler PropertyTabChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertyTabChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertyTabChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property tab changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#531](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#531)]
+ [!code-vb[System.Windows.Forms.EventExamples#531](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#531)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTabs">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.PropertyGrid.PropertyTabCollection PropertyTabs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.PropertyGrid/PropertyTabCollection PropertyTabs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.PropertyTabs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertyGrid+PropertyTabCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of property tabs that are displayed in the grid.</summary>
+        <value>A <see cref="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" /> containing the collection of <see cref="T:System.Windows.Forms.Design.PropertyTab" /> objects being displayed by the <see cref="T:System.Windows.Forms.PropertyGrid" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyValueChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.PropertyValueChangedEventHandler PropertyValueChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PropertyValueChangedEventHandler PropertyValueChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertyValueChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertyValueChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#530](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#530)]
+ [!code-vb[System.Windows.Forms.EventExamples#530](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#530)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the control to invalidate its client area and immediately redraw itself and any child controls.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshTabs">
+      <MemberSignature Language="C#" Value="public void RefreshTabs (System.ComponentModel.PropertyTabScope tabScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshTabs(valuetype System.ComponentModel.PropertyTabScope tabScope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.RefreshTabs(System.ComponentModel.PropertyTabScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabScope" Type="System.ComponentModel.PropertyTabScope" />
+      </Parameters>
+      <Docs>
+        <param name="tabScope">Either the <see langword="Component" /> or <see langword="Document" /> value of <see cref="T:System.ComponentModel.PropertyTabScope" />.</param>
+        <summary>Refreshes the property tabs of the specified scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PropertyGrid.RefreshTabs%2A> method first deletes the property tabs of the specified scope, it then requires the objects and documents to rebuild the tabs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="tabScope" /> parameter is not the <see langword="Component" /> or <see langword="Document" /> value of <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSelectedProperty">
+      <MemberSignature Language="C#" Value="public void ResetSelectedProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSelectedProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ResetSelectedProperty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the selected property to its default value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the <xref:System.Windows.Forms.PropertyGrid.ResetSelectedProperty%2A> method is invoked by right clicking on the property. This method discards changes and attempts to reset the property to its default value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleCore">
+      <MemberSignature Language="C#" Value="protected override void ScaleCore (float dx, float dy);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleCore(float32 dx, float32 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ScaleCore(System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="dx">The horizontal scaling factor.</param>
+        <param name="dy">The vertical scaling factor.</param>
+        <summary>This method is not relevant for this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedGridItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.GridItem SelectedGridItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.GridItem SelectedGridItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedGridItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.GridItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the selected grid item.</summary>
+        <value>The currently selected row in the property grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Windows.Forms.GridItem> corresponds to a property of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A>.  
+  
+ You can use the returned <xref:System.Windows.Forms.GridItem> to view type information, the <xref:System.ComponentModel.PropertyDescriptor>, the parent, and the children of the selected object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedGridItemChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.SelectedGridItemChangedEventHandler SelectedGridItemChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.SelectedGridItemChangedEventHandler SelectedGridItemChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SelectedGridItemChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the selected <see cref="T:System.Windows.Forms.GridItem" /> is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#533](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#533)]
+ [!code-vb[System.Windows.Forms.EventExamples#533](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#533)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItemWithFocusBackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color SelectedItemWithFocusBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectedItemWithFocusBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedItemWithFocusBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Highlight")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of selected items that have the input focus.</summary>
+        <value>The background color of focused, selected items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItemWithFocusForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color SelectedItemWithFocusForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectedItemWithFocusForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedItemWithFocusForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "HighlightText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color of selected items that have the input focus.</summary>
+        <value>The foreground color of focused, selected items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedObject">
+      <MemberSignature Language="C#" Value="public object SelectedObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.PropertyGrid/SelectedObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object for which the grid displays properties.</summary>
+        <value>The first object in the object list. If there is no currently selected object the return is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property sets a single object into the grid to be browsed. If multiple objects are being browsed, this property returns the first one in the list. If no objects are selected, `null` is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedObjects">
+      <MemberSignature Language="C#" Value="public object[] SelectedObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] SelectedObjects" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected objects.</summary>
+        <value>An array of type <see cref="T:System.Object" />. The default is an empty array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PropertyGrid> only displays the properties that are common to all the objects that are in the array. Assigning an array to the <xref:System.Windows.Forms.PropertyGrid.SelectedObjects%2A> replaces the reference to any <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> you might make.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">One of the items in the array of objects had a null value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedObjectsChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectedObjectsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedObjectsChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the objects selected by the <see cref="P:System.Windows.Forms.PropertyGrid.SelectedObjects" /> property have changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#534](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#534)]
+ [!code-vb[System.Windows.Forms.EventExamples#534](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#534)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedTab">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.PropertyTab SelectedTab { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.PropertyTab SelectedTab" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.PropertyTab</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currently selected property tab.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Design.PropertyTab" /> that is providing the selected view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowEventsButton">
+      <MemberSignature Language="C#" Value="protected void ShowEventsButton (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ShowEventsButton(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ShowEventsButton(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">
+          <see langword="true" /> to show the events button; <see langword="false" /> to hide the events button.</param>
+        <summary>Displays or hides the events button.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowFocusCues">
+      <MemberSignature Language="C#" Value="protected override bool ShowFocusCues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowFocusCues" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ShowFocusCues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control should display focus rectangles.</summary>
+        <value>
+          <see langword="true" /> if the control should display focus rectangles; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPropertyPageImage">
+      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Bitmap ShowPropertyPageImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap ShowPropertyPageImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ShowPropertyPageImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Bitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image that represents the property page.</summary>
+        <value>The image that represents the property page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the site of the control.</summary>
+        <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByCategoryImage">
+      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Bitmap SortByCategoryImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap SortByCategoryImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SortByCategoryImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Bitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image that represents sorting grid items by category.</summary>
+        <value>The image that represents sorting by category.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByPropertyImage">
+      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Bitmap SortByPropertyImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap SortByPropertyImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SortByPropertyImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Bitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image that represents sorting grid items by property name.</summary>
+        <value>The image that represents sorting by property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone">
+      <MemberSignature Language="C#" Value="void IComPropertyBrowser.DropDownDone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#DropDownDone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes any open drop-down controls on the <see cref="T:System.Windows.Forms.PropertyGrid" /> control. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted">
+      <MemberSignature Language="C#" Value="bool IComPropertyBrowser.EnsurePendingChangesCommitted ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#EnsurePendingChangesCommitted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits all pending changes to the <see cref="T:System.Windows.Forms.PropertyGrid" /> control. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted" />.</summary>
+        <returns>
+          <see langword="true" /> if all the <see cref="T:System.Windows.Forms.PropertyGrid" /> successfully commits changes; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4">
+      <MemberSignature Language="C#" Value="void IComPropertyBrowser.HandleF4 ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#HandleF4" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Activates the <see cref="T:System.Windows.Forms.PropertyGrid" /> control when the user chooses properties for a control in Design view. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet">
+      <MemberSignature Language="C#" Value="bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#InPropertySet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is currently setting one of the properties of its selected object; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState">
+      <MemberSignature Language="C#" Value="void IComPropertyBrowser.LoadState (Microsoft.Win32.RegistryKey optRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(class Microsoft.Win32.RegistryKey optRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#LoadState(Microsoft.Win32.RegistryKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="optRoot" Type="Microsoft.Win32.RegistryKey" />
+      </Parameters>
+      <Docs>
+        <param name="optRoot">The registry key that contains the user states.</param>
+        <summary>Loads user states from the registry into the <see cref="T:System.Windows.Forms.PropertyGrid" /> control. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(Microsoft.Win32.RegistryKey)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState">
+      <MemberSignature Language="C#" Value="void IComPropertyBrowser.SaveState (Microsoft.Win32.RegistryKey optRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(class Microsoft.Win32.RegistryKey optRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#SaveState(Microsoft.Win32.RegistryKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="optRoot" Type="Microsoft.Win32.RegistryKey" />
+      </Parameters>
+      <Docs>
+        <param name="optRoot">The registry key that contains the user states.</param>
+        <summary>Saves user states from the <see cref="T:System.Windows.Forms.PropertyGrid" /> control to the registry. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(Microsoft.Win32.RegistryKey)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+  
+ [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text associated with this control.</summary>
+        <value>The text associated with this control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the text of the <see cref="T:System.Windows.Forms.PropertyGrid" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#521](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#521)]
+ [!code-vb[System.Windows.Forms.EventExamples#521](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#521)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolbarVisible">
+      <MemberSignature Language="C#" Value="public virtual bool ToolbarVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ToolbarVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ToolbarVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the toolbar is visible.</summary>
+        <value>
+          <see langword="true" /> if the toolbar is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripRenderer">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.ToolStripRenderer ToolStripRenderer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripRenderer ToolStripRenderer" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ToolStripRenderer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripRenderer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the painting functionality for <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ToolStripRenderer" /> for the <see cref="T:System.Windows.Forms.PropertyGrid" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCompatibleTextRendering">
+      <MemberSignature Language="C#" Value="public bool UseCompatibleTextRendering { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCompatibleTextRendering" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.UseCompatibleTextRendering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether to use the <see cref="T:System.Drawing.Graphics" /> class ([!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]) or the <see cref="T:System.Windows.Forms.TextRenderer" /> class ([!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)]) to render text.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
+  
+ The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewBackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ViewBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ViewBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Window")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the background color in the grid.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is the default system color for windows.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewBorderColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ViewBorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ViewBorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewBorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "ControlDark")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the border surrounding the grid area.</summary>
+        <value>The color of the property grid border.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ViewForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ViewForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "WindowText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the color of the text in the grid.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is current system color for text in windows.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

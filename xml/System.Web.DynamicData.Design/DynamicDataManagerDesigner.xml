@@ -1,0 +1,78 @@
+<Type Name="DynamicDataManagerDesigner" FullName="System.Web.DynamicData.Design.DynamicDataManagerDesigner">
+  <TypeSignature Language="C#" Value="public class DynamicDataManagerDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicDataManagerDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.Design.DynamicDataManagerDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicDataManagerDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicDataManagerDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.Design.DynamicDataManagerDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.Design.DynamicDataManagerDesigner.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates the HTML markup that is used to render the associated <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control at design time.</summary>
+        <returns>The HTML markup that is used to render the associated  <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%2A> method to generate a simple rectangular placeholder representation that displays the type and ID of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

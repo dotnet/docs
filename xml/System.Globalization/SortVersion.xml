@@ -1,0 +1,341 @@
+<Type Name="SortVersion" FullName="System.Globalization.SortVersion">
+  <TypeSignature Language="C#" Value="public sealed class SortVersion : IEquatable&lt;System.Globalization.SortVersion&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SortVersion extends System.Object implements class System.IEquatable`1&lt;class System.Globalization.SortVersion&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.SortVersion" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Globalization.SortVersion&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides information about the version of Unicode used to compare and order strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ From the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)] through the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], each version of the.NET Framework has included tables that contain sort weights and data on string normalization and that are based on a particular version of Unicode. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the presence of these tables depends on the operating system:  
+  
+-   On [!INCLUDE[win7](~/includes/win7-md.md)] and previous versions of the Windows operating system, the tables continue to be used for comparing and ordering strings.  
+  
+-   On [!INCLUDE[win8](~/includes/win8-md.md)], the .NET Framework delegates string comparison and ordering operations to the operating system.  
+  
+ Consequently, the result of a string comparison can depend not only on the .NET Framework version, but also on the operating system version, as the following table shows. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category.  
+  
+|.NET Framework version|Operating system|Unicode version|  
+|----------------------------|----------------------|---------------------|  
+|[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]|All operating systems|Unicode 5.0|  
+|[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later versions of the .NET Framework|[!INCLUDE[win7](~/includes/win7-md.md)]|Unicode 5.0|  
+|[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later versions of the .NET Framework|[!INCLUDE[win8](~/includes/win8-md.md)] and later Windows operating system versions|Unicode 6.0|  
+  
+ On [!INCLUDE[win8](~/includes/win8-md.md)], because the version of Unicode used in string comparison and ordering depends on the version of the operating system, the results of string comparison may differ even for applications that run on a specific version of the .NET Framework.  
+  
+ The <xref:System.Globalization.SortVersion> class provides information about the Unicode version used by the .NET Framework for string comparison and ordering. It enables developers to write applications that can detect and successfully handle changes in the version of Unicode that is used to compare and sort an application's strings.  
+  
+ You can instantiate a <xref:System.Globalization.SortVersion> object in two ways:  
+  
+-   By calling the <xref:System.Globalization.SortVersion.%23ctor%2A> constructor, which instantiates a new <xref:System.Globalization.SortVersion> object based on a version number and sort ID. This constructor is most useful when recreating a <xref:System.Globalization.SortVersion> object from saved data.  
+  
+-   By retrieving the value of the <xref:System.Globalization.CompareInfo.Version%2A?displayProperty=fullName> property. This property provides information about the Unicode version used by the .NET Framework on which the application is running.  
+  
+ The <xref:System.Globalization.SortVersion> class has two properties, <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A>, that indicate the Unicode version and the specific culture used for string comparison. The <xref:System.Globalization.SortVersion.FullVersion%2A> property is an arbitrary numeric value that reflects the Unicode version used for string comparison, and the <xref:System.Globalization.SortVersion.SortId%2A> property is an arbitrary <xref:System.Guid> that reflects the culture whose conventions are used for string comparison. The values of these two properties are important only when you compare two <xref:System.Globalization.SortVersion> objects by using the <xref:System.Globalization.SortVersion.Equals%2A> method, the <xref:System.Globalization.SortVersion.op_Equality%2A> operator, or the <xref:System.Globalization.SortVersion.op_Inequality%2A> operator.  
+  
+ You typically use a <xref:System.Globalization.SortVersion> object when saving or retrieving some form of culture-sensitive, ordered string data, such as indexes or the literal strings themselves. This requires the following steps:  
+  
+1.  When the ordered string data is saved, the <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A> property values are also saved.  
+  
+2.  When the ordered string data is retrieved, you can recreate the <xref:System.Globalization.SortVersion> object used for ordering the strings by calling the <xref:System.Globalization.SortVersion.%23ctor%2A> constructor.  
+  
+3.  This newly instantiated <xref:System.Globalization.SortVersion> object is compared with a <xref:System.Globalization.SortVersion> object that reflects the culture whose conventions are used to order the string data.  
+  
+4.  If the two <xref:System.Globalization.SortVersion> objects are not equal, the string data must be reordered.  
+  
+ The example provides an illustration.  
+  
+   
+  
+## Examples  
+ The following example contains a portion of the source code from an application that uses the <xref:System.Globalization.SortVersion> class to ensure that the native names of <xref:System.Globalization.RegionInfo> objects are ordered appropriately for the current system and current culture. It uses the <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> objects to store and retrieve ordered data from a data file named `Regions.dat` rather than retrieving and ordering data each time the application is run. The example first checks to determine whether the data file exists. If it does not, it creates the data and sets the `reindex` flag, which indicates that the data must be resorted and saved again. Otherwise, it retrieves the data and compares the saved <xref:System.Globalization.SortVersion> object with the <xref:System.Globalization.SortVersion> object for the current culture on the current system. If they are not equal, or if the `reindex` flag had been set previously, it resorts the <xref:System.Globalization.RegionInfo> data.  
+  
+ [!code-csharp[System.Globalization.SortVersion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.sortversion/cs/example1.cs#1)]
+ [!code-vb[System.Globalization.SortVersion#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.sortversion/vb/example1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortVersion (int fullVersion, Guid sortId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 fullVersion, valuetype System.Guid sortId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.#ctor(System.Int32,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fullVersion" Type="System.Int32" />
+        <Parameter Name="sortId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="fullVersion">A version number.</param>
+        <param name="sortId">A sort ID.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Globalization.SortVersion" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor instantiates a <xref:System.Globalization.SortVersion> object with the specified version and sort ID. The `fullVersion` argument is assigned to the <xref:System.Globalization.SortVersion.FullVersion%2A> property. The `sortId` argument is assigned to the <xref:System.Globalization.SortVersion.SortId%2A> property.  
+  
+ This constructor is useful for recreating a <xref:System.Globalization.SortVersion> object from data that has been serialized or saved. This version can then be compared with the current application version to determine whether the version of Unicode used to display and order the application's strings is available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Globalization.SortVersion other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Globalization.SortVersion other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.Equals(System.Globalization.SortVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Globalization.SortVersion" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with this instance.</param>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Globalization.SortVersion" /> instance is equal to a specified <see cref="T:System.Globalization.SortVersion" /> object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> represents the same version as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Globalization.SortVersion> objects are equal if their <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A> properties are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare with this instance.</param>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Globalization.SortVersion" /> instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Globalization.SortVersion" /> object that represents the same version as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Globalization.SortVersion> objects are equal if their <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A> properties are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullVersion">
+      <MemberSignature Language="C#" Value="public int FullVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.SortVersion.FullVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the full version number of the <see cref="T:System.Globalization.SortVersion" /> object.</summary>
+        <value>The version number of this <see cref="T:System.Globalization.SortVersion" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Globalization.SortVersion.FullVersion%2A> property reflects the Unicode version used to normalize and compare strings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Globalization.SortVersion left, System.Globalization.SortVersion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Globalization.SortVersion left, class System.Globalization.SortVersion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.op_Equality(System.Globalization.SortVersion,System.Globalization.SortVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Globalization.SortVersion" />
+        <Parameter Name="right" Type="System.Globalization.SortVersion" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Globalization.SortVersion" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Globalization.SortVersion> objects are equal if both are `null`, or if their <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A> properties are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Globalization.SortVersion left, System.Globalization.SortVersion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Globalization.SortVersion left, class System.Globalization.SortVersion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.op_Inequality(System.Globalization.SortVersion,System.Globalization.SortVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Globalization.SortVersion" />
+        <Parameter Name="right" Type="System.Globalization.SortVersion" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Globalization.SortVersion" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Globalization.SortVersion> objects are not equal if one is `null` and the other is not, or if they have different <xref:System.Globalization.SortVersion.FullVersion%2A> or <xref:System.Globalization.SortVersion.SortId%2A> property values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortId">
+      <MemberSignature Language="C#" Value="public Guid SortId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SortId" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.SortVersion.SortId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a globally unique identifier for this <see cref="T:System.Globalization.SortVersion" /> object.</summary>
+        <value>A globally unique identifier for this <see cref="T:System.Globalization.SortVersion" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Globalization.SortVersion.SortId%2A> property reflects the culture whose conventions influence string comparison and sorting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

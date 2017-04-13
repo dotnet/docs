@@ -1,0 +1,50 @@
+<Type Name="RestoreFocusMode" FullName="System.Windows.Input.RestoreFocusMode">
+  <TypeSignature Language="C#" Value="public enum RestoreFocusMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RestoreFocusMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.RestoreFocusMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] restores focus to the window.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.RestoreFocusMode Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.RestoreFocusMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RestoreFocusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automatically tries to restore focus to the element that last had focus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.RestoreFocusMode None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.RestoreFocusMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RestoreFocusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not restore focus.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

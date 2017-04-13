@@ -1,0 +1,108 @@
+<Type Name="AuditLevel" FullName="System.ServiceModel.AuditLevel">
+  <TypeSignature Language="C#" Value="public enum AuditLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuditLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.AuditLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies when to audit security events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When creating a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] application that requires authentication and/or authorization of the callers, you can specify that events related to security be recorded for either success, failure, or both. The level of auditing is determined by this enumeration.  
+  
+ The location of the audit log is specified by setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> property of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class to one of the <xref:System.ServiceModel.AuditLogLocation> values.  
+  
+ For more information about auditing, see [Auditing](~/docs/framework/wcf/feature-details/auditing-security-events.md).  
+  
+ You can also specify audit behavior using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) binding.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> and <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> properties to one of the <xref:System.ServiceModel.AuditLevel> values.  
+  
+ [!code-csharp[AuditingSecurityEvents#1](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#1)]
+ [!code-vb[AuditingSecurityEvents#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Failure">
+      <MemberSignature Language="C#" Value="Failure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLevel Failure = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLevel.Failure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only failed security-related events will be recorded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No events will be recorded. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLevel Success = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLevel.Success" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only successful security-related events will be recorded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuccessOrFailure">
+      <MemberSignature Language="C#" Value="SuccessOrFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLevel SuccessOrFailure = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLevel.SuccessOrFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both failed and successful security-related events will be recorded.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

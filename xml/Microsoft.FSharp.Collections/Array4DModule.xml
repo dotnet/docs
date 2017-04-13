@@ -1,0 +1,383 @@
+<Type Name="Array4DModule" FullName="Microsoft.FSharp.Collections.Array4DModule">
+  <TypeSignature Language="C#" Value="public static class Array4DModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Array4DModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.Array4DModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,,,] Create&lt;T&gt; (int length1, int length2, int length3, int length4, T initial);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,,,] Create&lt;T&gt;(int32 length1, int32 length2, int32 length3, int32 length4, !!T initial) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Create``1(System.Int32,System.Int32,System.Int32,System.Int32,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("create")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,,,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="length3" Type="System.Int32" />
+        <Parameter Name="length4" Type="System.Int32" />
+        <Parameter Name="initial" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">To be added.</param>
+        <param name="length2">To be added.</param>
+        <param name="length3">To be added.</param>
+        <param name="length4">To be added.</param>
+        <param name="initial">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (T[,,,] array, int index1, int index2, int index3, int index4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Get&lt;T&gt;(!!T[,,,] array, int32 index1, int32 index2, int32 index3, int32 index4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Get``1(``0[0:,0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("get")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="index2" Type="System.Int32" />
+        <Parameter Name="index3" Type="System.Int32" />
+        <Parameter Name="index4" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <param name="index3">To be added.</param>
+        <param name="index4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,,,] Initialize&lt;T&gt; (int length1, int length2, int length3, int length4, Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,T&gt;&gt;&gt;&gt; initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,,,] Initialize&lt;T&gt;(int32 length1, int32 length2, int32 length3, int32 length4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, !!T&gt;&gt;&gt;&gt; initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Initialize``1(System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,``0}}}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("init")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,,,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="length3" Type="System.Int32" />
+        <Parameter Name="length4" Type="System.Int32" />
+        <Parameter Name="initializer" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,T&gt;&gt;&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">To be added.</param>
+        <param name="length2">To be added.</param>
+        <param name="length3">To be added.</param>
+        <param name="length4">To be added.</param>
+        <param name="initializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length1&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length1&lt;T&gt; (T[,,,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length1&lt;T&gt;(!!T[,,,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Length1``1(``0[0:,0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length2&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length2&lt;T&gt; (T[,,,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length2&lt;T&gt;(!!T[,,,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Length2``1(``0[0:,0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length3&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length3&lt;T&gt; (T[,,,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length3&lt;T&gt;(!!T[,,,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Length3``1(``0[0:,0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length4&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length4&lt;T&gt; (T[,,,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length4&lt;T&gt;(!!T[,,,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Length4``1(``0[0:,0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length4")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Set&lt;T&gt; (T[,,,] array, int index1, int index2, int index3, int index4, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Set&lt;T&gt;(!!T[,,,] array, int32 index1, int32 index2, int32 index3, int32 index4, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.Set``1(``0[0:,0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("set")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="index2" Type="System.Int32" />
+        <Parameter Name="index3" Type="System.Int32" />
+        <Parameter Name="index4" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <param name="index3">To be added.</param>
+        <param name="index4">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZeroCreate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,,,] ZeroCreate&lt;T&gt; (int length1, int length2, int length3, int length4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,,,] ZeroCreate&lt;T&gt;(int32 length1, int32 length2, int32 length3, int32 length4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array4DModule.ZeroCreate``1(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("zeroCreate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,,,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="length3" Type="System.Int32" />
+        <Parameter Name="length4" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">To be added.</param>
+        <param name="length2">To be added.</param>
+        <param name="length3">To be added.</param>
+        <param name="length4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

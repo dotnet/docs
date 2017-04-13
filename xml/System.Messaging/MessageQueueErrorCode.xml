@@ -1,0 +1,2278 @@
+<Type Name="MessageQueueErrorCode" FullName="System.Messaging.MessageQueueErrorCode">
+  <TypeSignature Language="C#" Value="public enum MessageQueueErrorCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessageQueueErrorCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueErrorCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the source of an error that occurred within the Message Queuing application and generated a <see cref="T:System.Messaging.MessageQueueException" /> exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessageQueueErrorCode> enumeration gives detailed information about an error condition during a messaging operation.  
+  
+ The <xref:System.Messaging.MessageQueueException> uses the <xref:System.Messaging.MessageQueueException.MessageQueueErrorCode%2A> property to identify the nature of the Message Queuing error. The <xref:System.Messaging.MessageQueueErrorCode> value determines a text string to associate with the error.  
+  
+   
+  
+## Examples  
+ The following code example verifies whether a Message Queuing queue exists, and then deletes it.  
+  
+ [!code-cpp[MessageQueue.ExistsDelete#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CPP/mqexistsdelete.cpp#1)]
+ [!code-csharp[MessageQueue.ExistsDelete#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CS/mqexistsdelete.cs#1)]
+ [!code-vb[MessageQueue.ExistsDelete#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.ExistsDelete/VB/mqexistsdelete.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessDenied">
+      <MemberSignature Language="C#" Value="AccessDenied" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode AccessDenied = int32(-1072824283)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.AccessDenied" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Access is denied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> topics.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadSecurityContext">
+      <MemberSignature Language="C#" Value="BadSecurityContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode BadSecurityContext = int32(-1072824267)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.BadSecurityContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Bad security context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the security context has become corrupted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base">
+      <MemberSignature Language="C#" Value="Base" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode Base = int32(-1072824320)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Base" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message Queuing does not return this error code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferOverflow">
+      <MemberSignature Language="C#" Value="BufferOverflow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode BufferOverflow = int32(-1072824294)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.BufferOverflow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The buffer supplied to MQReceiveMessage for message body retrieval was too small. The message is not removed from the queue and part of the message body that fits in the buffer was copied.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotCreateCertificateStore">
+      <MemberSignature Language="C#" Value="CannotCreateCertificateStore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotCreateCertificateStore = int32(-1072824209)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateCertificateStore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to create a certificate store for the internal certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if you do not have permission to manipulate your own profile.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotCreateHashEx">
+      <MemberSignature Language="C#" Value="CannotCreateHashEx" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotCreateHashEx = int32(-1072824191)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateHashEx" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to create a hash object for an authenticated message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.HashAlgorithm%2A> property for more information about hash algorithms.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotCreateOnGlobalCatalog">
+      <MemberSignature Language="C#" Value="CannotCreateOnGlobalCatalog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotCreateOnGlobalCatalog = int32(-1072824201)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateOnGlobalCatalog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to create an object on a specified global catalog server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotGetDistinguishedName">
+      <MemberSignature Language="C#" Value="CannotGetDistinguishedName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotGetDistinguishedName = int32(-1072824194)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotGetDistinguishedName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to retrieve the distinguished name of local computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotGrantAddGuid">
+      <MemberSignature Language="C#" Value="CannotGrantAddGuid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotGrantAddGuid = int32(-1072824206)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotGrantAddGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to grant the "Add Guid" permission to current user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotHashDataEx">
+      <MemberSignature Language="C#" Value="CannotHashDataEx" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotHashDataEx = int32(-1072824193)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotHashDataEx" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to hash data for an authenticated message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotImpersonateClient">
+      <MemberSignature Language="C#" Value="CannotImpersonateClient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotImpersonateClient = int32(-1072824284)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotImpersonateClient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The RPC server cannot impersonate the client application, hence security credentials could not be verified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotJoinDomain">
+      <MemberSignature Language="C#" Value="CannotJoinDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotJoinDomain = int32(-1072824202)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotJoinDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to join Message Queuing enterprise on Windows 2000 domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotLoadMsmqOcm">
+      <MemberSignature Language="C#" Value="CannotLoadMsmqOcm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotLoadMsmqOcm = int32(-1072824205)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotLoadMsmqOcm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Cannot load the MSMQOCM.DLL library.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotOpenCertificateStore">
+      <MemberSignature Language="C#" Value="CannotOpenCertificateStore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotOpenCertificateStore = int32(-1072824208)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotOpenCertificateStore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to open the certificates store for the internal certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if you do not have permission to manipulate your own profile.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotSetCryptographicSecurityDescriptor">
+      <MemberSignature Language="C#" Value="CannotSetCryptographicSecurityDescriptor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotSetCryptographicSecurityDescriptor = int32(-1072824212)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotSetCryptographicSecurityDescriptor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to set the security descriptor for the cryptographic keys.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=fullName> topics.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotSignDataEx">
+      <MemberSignature Language="C#" Value="CannotSignDataEx" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CannotSignDataEx = int32(-1072824192)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotSignDataEx" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to sign data before sending an authenticated message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.DigitalSignature%2A> property for more information about signing data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateNotProvided">
+      <MemberSignature Language="C#" Value="CertificateNotProvided" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CertificateNotProvided = int32(-1072824211)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CertificateNotProvided" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: A user attempted to send an authenticated message without a certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputerDoesNotSupportEncryption">
+      <MemberSignature Language="C#" Value="ComputerDoesNotSupportEncryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode ComputerDoesNotSupportEncryption = int32(-1072824269)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ComputerDoesNotSupportEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The computer does not support encryption operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=fullName> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=fullName> topics.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorruptedInternalCertificate">
+      <MemberSignature Language="C#" Value="CorruptedInternalCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CorruptedInternalCertificate = int32(-1072824275)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedInternalCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The internal Message Queuing certificate is corrupted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This error applies only to Message Queuing 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorruptedPersonalCertStore">
+      <MemberSignature Language="C#" Value="CorruptedPersonalCertStore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CorruptedPersonalCertStore = int32(-1072824271)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedPersonalCertStore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The personal certificate store is corrupted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorruptedQueueWasDeleted">
+      <MemberSignature Language="C#" Value="CorruptedQueueWasDeleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CorruptedQueueWasDeleted = int32(-1072824216)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedQueueWasDeleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The.ini file for the queue in LQS was deleted because it was corrupted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CorruptedSecurityData">
+      <MemberSignature Language="C#" Value="CorruptedSecurityData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CorruptedSecurityData = int32(-1072824272)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedSecurityData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: A cryptographic function has failed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CouldNotGetAccountInfo">
+      <MemberSignature Language="C#" Value="CouldNotGetAccountInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CouldNotGetAccountInfo = int32(-1072824265)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CouldNotGetAccountInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Could not get the account information for the user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CouldNotGetUserSid">
+      <MemberSignature Language="C#" Value="CouldNotGetUserSid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode CouldNotGetUserSid = int32(-1072824266)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CouldNotGetUserSid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Could not get the SID information out of the thread token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about sender identifiers, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderId%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteConnectedNetworkInUse">
+      <MemberSignature Language="C#" Value="DeleteConnectedNetworkInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode DeleteConnectedNetworkInUse = int32(-1072824248)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DeleteConnectedNetworkInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The connected network cannot be deleted; it is in use.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependentClientLicenseOverflow">
+      <MemberSignature Language="C#" Value="DependentClientLicenseOverflow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode DependentClientLicenseOverflow = int32(-1072824217)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DependentClientLicenseOverflow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The number of dependent clients served by this Message Queuing server reached its upper limit.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DsError">
+      <MemberSignature Language="C#" Value="DsError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode DsError = int32(-1072824253)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DsError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Internal directory service error.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DsIsFull">
+      <MemberSignature Language="C#" Value="DsIsFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode DsIsFull = int32(-1072824254)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DsIsFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Directory service is full.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DtcConnect">
+      <MemberSignature Language="C#" Value="DtcConnect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode DtcConnect = int32(-1072824244)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DtcConnect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Cannot connect to MS DTC.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionProviderNotSupported">
+      <MemberSignature Language="C#" Value="EncryptionProviderNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode EncryptionProviderNotSupported = int32(-1072824213)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.EncryptionProviderNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The Cryptographic Service Provider is not supported by Message Queuing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailVerifySignatureEx">
+      <MemberSignature Language="C#" Value="FailVerifySignatureEx" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode FailVerifySignatureEx = int32(-1072824190)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.FailVerifySignatureEx" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Signature of received message is not valid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNameBufferTooSmall">
+      <MemberSignature Language="C#" Value="FormatNameBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode FormatNameBufferTooSmall = int32(-1072824289)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.FormatNameBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The format name buffer supplied to the API was too small to fit the format name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Generic">
+      <MemberSignature Language="C#" Value="Generic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode Generic = int32(-1072824319)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Generic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Generic Error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it cannot identify a more specific source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GuidNotMatching">
+      <MemberSignature Language="C#" Value="GuidNotMatching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode GuidNotMatching = int32(-1072824200)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.GuidNotMatching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to create Message Queuing configuration object with a GUID that matches the computer installation. You must uninstall Message Queuing and then reinstall it.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalContext">
+      <MemberSignature Language="C#" Value="IllegalContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalContext = int32(-1072824229)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid context parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalCriteriaColumns">
+      <MemberSignature Language="C#" Value="IllegalCriteriaColumns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalCriteriaColumns = int32(-1072824264)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalCriteriaColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid MQCOLUMNS parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if you are using the `MessagePropertyFilter` class and have selected `false` for all Boolean values and zero (0) for all integer values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalCursorAction">
+      <MemberSignature Language="C#" Value="IllegalCursorAction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalCursorAction = int32(-1072824292)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalCursorAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: MQ_ACTION_PEEK_NEXT specified to MQReceiveMessage can not be used with the current cursor position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `System.Messaging.MessageEnumerator.MoveNext` cannot be used with the current cursor position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalEnterpriseOperation">
+      <MemberSignature Language="C#" Value="IllegalEnterpriseOperation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalEnterpriseOperation = int32(-1072824207)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalEnterpriseOperation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The operation is invalid for a Message Queuing services object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalFormatName">
+      <MemberSignature Language="C#" Value="IllegalFormatName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalFormatName = int32(-1072824290)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalFormatName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The given format name is invalid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For valid format name syntax options, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.FormatName%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalMessageProperties">
+      <MemberSignature Language="C#" Value="IllegalMessageProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalMessageProperties = int32(-1072824255)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalMessageProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Illegal MQQMPROPS parameter, either null or with zero properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Illegal message properties, either `null` or with zero properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalOperation">
+      <MemberSignature Language="C#" Value="IllegalOperation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalOperation = int32(-1072824220)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalOperation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The operation is invalid on foreign message queuing systems.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalPrivateProperties">
+      <MemberSignature Language="C#" Value="IllegalPrivateProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalPrivateProperties = int32(-1072824197)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPrivateProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private properties parameter value is invalid. This may be because it has a null value or has zero properties specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalPropertyId">
+      <MemberSignature Language="C#" Value="IllegalPropertyId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalPropertyId = int32(-1072824263)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid property identifier value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalPropertySize">
+      <MemberSignature Language="C#" Value="IllegalPropertySize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalPropertySize = int32(-1072824261)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertySize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Illegal property buffer size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the Message class's Message.Id and Message.CorrelationId properties for more information about message identifiers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalPropertyValue">
+      <MemberSignature Language="C#" Value="IllegalPropertyValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalPropertyValue = int32(-1072824296)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid property value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalPropertyVt">
+      <MemberSignature Language="C#" Value="IllegalPropertyVt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalPropertyVt = int32(-1072824295)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyVt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid VARTYPE value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalQueuePathName">
+      <MemberSignature Language="C#" Value="IllegalQueuePathName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalQueuePathName = int32(-1072824300)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalQueuePathName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid queue path name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Path%2A> property for valid path syntax options.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalQueueProperties">
+      <MemberSignature Language="C#" Value="IllegalQueueProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalQueueProperties = int32(-1072824259)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalQueueProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Illegal MQQUEUEPROPS parameter, either null or with zero properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Illegal Queue Properties, either `null` or with zero properties.  
+  
+ Message Queuing returns this error if you are using the <xref:System.Messaging.MessageQueueCriteria> class and have called <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> or have not specified any criteria to use when filtering queues. See the MessageQueueCriteria class or MessageQueue.GetPublicQueues for more information about filtering queue search criteria.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalRelation">
+      <MemberSignature Language="C#" Value="IllegalRelation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalRelation = int32(-1072824262)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalRelation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid relation value in restriction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalRestrictionPropertyId">
+      <MemberSignature Language="C#" Value="IllegalRestrictionPropertyId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalRestrictionPropertyId = int32(-1072824260)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalRestrictionPropertyId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid propid value in MQRESTRICTION parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Invalid property identifier value for restriction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalSecurityDescriptor">
+      <MemberSignature Language="C#" Value="IllegalSecurityDescriptor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalSecurityDescriptor = int32(-1072824287)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSecurityDescriptor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The specified security descriptor is not a valid security descriptor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalSort">
+      <MemberSignature Language="C#" Value="IllegalSort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalSort = int32(-1072824304)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Illegal sort specified (for example, duplicate columns).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalSortPropertyId">
+      <MemberSignature Language="C#" Value="IllegalSortPropertyId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalSortPropertyId = int32(-1072824228)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSortPropertyId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid propid value in MQSORTSET.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Invalid property identifier value in for sort.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalUser">
+      <MemberSignature Language="C#" Value="IllegalUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IllegalUser = int32(-1072824303)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The user has an invalid user name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if your application is connecting to it through an invalid user name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsufficientProperties">
+      <MemberSignature Language="C#" Value="InsufficientProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InsufficientProperties = int32(-1072824257)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InsufficientProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Not all the required properties for the operation were specified in the input parameters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsufficientResources">
+      <MemberSignature Language="C#" Value="InsufficientResources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InsufficientResources = int32(-1072824281)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InsufficientResources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Insufficient resources to perform operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificate">
+      <MemberSignature Language="C#" Value="InvalidCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InvalidCertificate = int32(-1072824276)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The user certificate is not valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the security certificate specified in the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidHandle">
+      <MemberSignature Language="C#" Value="InvalidHandle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InvalidHandle = int32(-1072824313)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidHandle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: An invalid handle passed to a function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the specified queue handle is not valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidOwner">
+      <MemberSignature Language="C#" Value="InvalidOwner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InvalidOwner = int32(-1072824252)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidOwner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid object owner. For example CreateQueue failed because the Queue Manager object is invalid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidParameter">
+      <MemberSignature Language="C#" Value="InvalidParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode InvalidParameter = int32(-1072824314)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: An invalid parameter passed to a function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if one of the parameters supplied by the operation is not valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOTimeout">
+      <MemberSignature Language="C#" Value="IOTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode IOTimeout = int32(-1072824293)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IOTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The receive or peek message time-out has expired.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelBufferTooSmall">
+      <MemberSignature Language="C#" Value="LabelBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode LabelBufferTooSmall = int32(-1072824226)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.LabelBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The label buffer supplied to the API was too small.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineExists">
+      <MemberSignature Language="C#" Value="MachineExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MachineExists = int32(-1072824256)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MachineExists" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Computer with the same name already exists in the site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineNotFound">
+      <MemberSignature Language="C#" Value="MachineNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MachineNotFound = int32(-1072824307)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MachineNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The specified computer could not be found.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it cannot find the queue's computer in the directory service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageAlreadyReceived">
+      <MemberSignature Language="C#" Value="MessageAlreadyReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MessageAlreadyReceived = int32(-1072824291)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageAlreadyReceived" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: A message that is currently pointed at by the cursor has been removed from the queue by another process or by another call to receive the message without the use of this cursor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageNotFound">
+      <MemberSignature Language="C#" Value="MessageNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MessageNotFound = int32(-1072824184)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The specified message could not be found.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it cannot find the specified message in the queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageStorageFailed">
+      <MemberSignature Language="C#" Value="MessageStorageFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MessageStorageFailed = int32(-1072824278)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageStorageFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Could not store a recoverable or journal message. Message was not sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Recoverable%2A> and <xref:System.Messaging.Message.UseJournalQueue%2A> properties for more information about these message sending options.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingConnectorType">
+      <MemberSignature Language="C#" Value="MissingConnectorType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MissingConnectorType = int32(-1072824235)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MissingConnectorType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Connector Type is mandatory when sending an Acknowledgment or secure message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.ConnectorType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MqisReadOnlyMode">
+      <MemberSignature Language="C#" Value="MqisReadOnlyMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MqisReadOnlyMode = int32(-1072824224)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MqisReadOnlyMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: MQIS database is in read-only mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MqisServerEmpty">
+      <MemberSignature Language="C#" Value="MqisServerEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode MqisServerEmpty = int32(-1072824225)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MqisServerEmpty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The list of MQIS servers (in registry) is empty.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This error applies only to Message Queuing 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDs">
+      <MemberSignature Language="C#" Value="NoDs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoDs = int32(-1072824301)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoDs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: No connection with this site's controller(s).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoEntryPointMsmqOcm">
+      <MemberSignature Language="C#" Value="NoEntryPointMsmqOcm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoEntryPointMsmqOcm = int32(-1072824204)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoEntryPointMsmqOcm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Cannot locate an entry point in the MSMQOCM.DLL library.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoGlobalCatalogInDomain">
+      <MemberSignature Language="C#" Value="NoGlobalCatalogInDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoGlobalCatalogInDomain = int32(-1072824196)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoGlobalCatalogInDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to find Global Catalog servers in the specified domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoInternalUserCertificate">
+      <MemberSignature Language="C#" Value="NoInternalUserCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoInternalUserCertificate = int32(-1072824273)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoInternalUserCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The internal Message Queuing certificate for the user does not exist.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMsmqServersOnDc">
+      <MemberSignature Language="C#" Value="NoMsmqServersOnDc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoMsmqServersOnDc = int32(-1072824203)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoMsmqServersOnDc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to find Message Queuing servers on domain controllers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMsmqServersOnGlobalCatalog">
+      <MemberSignature Language="C#" Value="NoMsmqServersOnGlobalCatalog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoMsmqServersOnGlobalCatalog = int32(-1072824195)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoMsmqServersOnGlobalCatalog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Failed to find Message Queuing servers on Global Catalog domain controllers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoResponseFromObjectServer">
+      <MemberSignature Language="C#" Value="NoResponseFromObjectServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode NoResponseFromObjectServer = int32(-1072824247)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoResponseFromObjectServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: No response from object owner.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectServerNotAvailable">
+      <MemberSignature Language="C#" Value="ObjectServerNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode ObjectServerNotAvailable = int32(-1072824246)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ObjectServerNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Object owner is not reachable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationCanceled">
+      <MemberSignature Language="C#" Value="OperationCanceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode OperationCanceled = int32(-1072824312)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.OperationCanceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The operation was canceled before it could be completed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivilegeNotHeld">
+      <MemberSignature Language="C#" Value="PrivilegeNotHeld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode PrivilegeNotHeld = int32(-1072824282)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PrivilegeNotHeld" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Client does not have the required privileges to perform the operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="Property" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode Property = int32(-1072824318)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: One or more of the passed properties are invalid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyNotAllowed">
+      <MemberSignature Language="C#" Value="PropertyNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode PropertyNotAllowed = int32(-1072824258)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PropertyNotAllowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Invalid property for the requested operation</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderNameBufferTooSmall">
+      <MemberSignature Language="C#" Value="ProviderNameBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode ProviderNameBufferTooSmall = int32(-1072824221)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ProviderNameBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The passed buffer for the Provider name property is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the Message class's AuthenticationProviderName property for more information about provider names.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKeyDoesNotExist">
+      <MemberSignature Language="C#" Value="PublicKeyDoesNotExist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode PublicKeyDoesNotExist = int32(-1072824198)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PublicKeyDoesNotExist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The public key for the computer does not exist.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKeyNotFound">
+      <MemberSignature Language="C#" Value="PublicKeyNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode PublicKeyNotFound = int32(-1072824199)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PublicKeyNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Unable to find the public key for computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QDnsPropertyNotSupported">
+      <MemberSignature Language="C#" Value="QDnsPropertyNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode QDnsPropertyNotSupported = int32(-1072824210)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QDnsPropertyNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>DNS property is not supported as criteria to locate queues.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot retrieve the DNS path name of a queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueDeleted">
+      <MemberSignature Language="C#" Value="QueueDeleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode QueueDeleted = int32(-1072824230)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueDeleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The queue was deleted. Messages cannot be received anymore using this queue instance. The queue should be closed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueExists">
+      <MemberSignature Language="C#" Value="QueueExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode QueueExists = int32(-1072824315)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueExists" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: A queue with the same pathname is already registered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing registers public queues in the directory service, and registers private queues on the local computer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueNotAvailable">
+      <MemberSignature Language="C#" Value="QueueNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode QueueNotAvailable = int32(-1072824245)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Error while reading from a queue residing on a remote computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueNotFound">
+      <MemberSignature Language="C#" Value="QueueNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode QueueNotFound = int32(-1072824317)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The queue is not registered in the directory service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteMachineNotAvailable">
+      <MemberSignature Language="C#" Value="RemoteMachineNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode RemoteMachineNotAvailable = int32(-1072824215)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.RemoteMachineNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The remote machine is not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultBufferTooSmall">
+      <MemberSignature Language="C#" Value="ResultBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode ResultBufferTooSmall = int32(-1072824250)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ResultBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The supplied result buffer is too small.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityDescriptorBufferTooSmall">
+      <MemberSignature Language="C#" Value="SecurityDescriptorBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SecurityDescriptorBufferTooSmall = int32(-1072824285)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SecurityDescriptorBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The size of the buffer passed to MQGetQueueSecurity is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderCertificateBufferTooSmall">
+      <MemberSignature Language="C#" Value="SenderCertificateBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SenderCertificateBufferTooSmall = int32(-1072824277)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SenderCertificateBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The passed buffer for the user certificate property is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the Message class's System.Messaging.Message.SenderCertificate property for more information about user certificates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderIdBufferTooSmall">
+      <MemberSignature Language="C#" Value="SenderIdBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SenderIdBufferTooSmall = int32(-1072824286)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SenderIdBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The passed buffer for the user identifier property is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when the supplied sender identification buffer is too small. See the Message class's System.Messaging.Message.SenderId property for more information about sender identifiers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceNotAvailable">
+      <MemberSignature Language="C#" Value="ServiceNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode ServiceNotAvailable = int32(-1072824309)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ServiceNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The Message Queues service is not available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the application is unable to connect to the Queue Manager.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharingViolation">
+      <MemberSignature Language="C#" Value="SharingViolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SharingViolation = int32(-1072824311)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SharingViolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Sharing violation. The queue is already opened for exclusive receive.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.DenySharedReceive%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureBufferTooSmall">
+      <MemberSignature Language="C#" Value="SignatureBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SignatureBufferTooSmall = int32(-1072824222)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SignatureBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The passed buffer for the Signature property is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the Message class's DigitalSignature property for more information about signatures.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StaleHandle">
+      <MemberSignature Language="C#" Value="StaleHandle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode StaleHandle = int32(-1072824234)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.StaleHandle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The Queue Manager service has been restarted. The queue handle is stale and should be closed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricKeyBufferTooSmall">
+      <MemberSignature Language="C#" Value="SymmetricKeyBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode SymmetricKeyBufferTooSmall = int32(-1072824223)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SymmetricKeyBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The passed buffer for the Symmetric key property is too small.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the Message class's DestinationSymmetricKey property for more information about symmetric keys.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionEnlist">
+      <MemberSignature Language="C#" Value="TransactionEnlist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode TransactionEnlist = int32(-1072824232)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionEnlist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Cannot enlist the transaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionImport">
+      <MemberSignature Language="C#" Value="TransactionImport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode TransactionImport = int32(-1072824242)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionImport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Cannot import the transaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionSequence">
+      <MemberSignature Language="C#" Value="TransactionSequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode TransactionSequence = int32(-1072824239)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Wrong transaction operations sequence.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionUsage">
+      <MemberSignature Language="C#" Value="TransactionUsage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode TransactionUsage = int32(-1072824240)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionUsage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Wrong transaction usage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedAccessMode">
+      <MemberSignature Language="C#" Value="UnsupportedAccessMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode UnsupportedAccessMode = int32(-1072824251)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedAccessMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The specified access mode is not supported.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedFormatNameOperation">
+      <MemberSignature Language="C#" Value="UnsupportedFormatNameOperation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode UnsupportedFormatNameOperation = int32(-1072824288)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedFormatNameOperation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The requested operation for the specified format name is not supported.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedOperation">
+      <MemberSignature Language="C#" Value="UnsupportedOperation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode UnsupportedOperation = int32(-1072824214)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedOperation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: The operation is not supported for a WORKGROUP installation computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserBufferTooSmall">
+      <MemberSignature Language="C#" Value="UserBufferTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode UserBufferTooSmall = int32(-1072824280)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UserBufferTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Request failed because user buffer is too small to hold the returned information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WksCantServeClient">
+      <MemberSignature Language="C#" Value="WksCantServeClient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode WksCantServeClient = int32(-1072824218)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.WksCantServeClient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Message Queuing-independent clients cannot serve Message Queuing-dependent clients.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNotAllowed">
+      <MemberSignature Language="C#" Value="WriteNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueErrorCode WriteNotAllowed = int32(-1072824219)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.WriteNotAllowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Message text: Another MQIS server is being installed; write operations to the database are not allowed at this time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

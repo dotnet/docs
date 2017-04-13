@@ -1,0 +1,125 @@
+<Type Name="FileExtension" FullName="Microsoft.Build.Framework.XamlTypes.FileExtension">
+  <TypeSignature Language="C#" Value="public sealed class FileExtension : Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileExtension extends System.Object implements class Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.FileExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A simple class that deserializes content type data.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.FileExtension.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the corresponding content type.</summary>
+        <value>Returns the corresponding content type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchemaObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetSchemaObjects (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetSchemaObjects(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjects(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Build.Framework.XamlTypes.FileExtension/&lt;GetSchemaObjects&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of static data to retrieve.</param>
+        <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
+        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchemaObjectTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; GetSchemaObjectTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; GetSchemaObjectTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjectTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Build.Framework.XamlTypes.FileExtension/&lt;GetSchemaObjectTypes&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
+        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.FileExtension.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the file extension.</summary>
+        <value>Returns the name of the file extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 59055718-d0a7-4db3-8901-18dd33587703
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Preceding Siblings (XPath-LINQ to XML) (Visual Basic)

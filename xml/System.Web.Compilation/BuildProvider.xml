@@ -1,0 +1,606 @@
+<Type Name="BuildProvider" FullName="System.Web.Compilation.BuildProvider">
+  <TypeSignature Language="C#" Value="public abstract class BuildProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuildProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a set of properties and methods for generating source code within the ASP.NET build environment. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ASP.NET build environment uses <xref:System.Web.Compilation.BuildProvider> objects to generate source code for different file types within an application. Classes derived from <xref:System.Web.Compilation.BuildProvider> predominantly provide source code for files, Web pages, resources, and other custom items.  
+  
+ Typically, you do not create an instance of the <xref:System.Web.Compilation.BuildProvider> class directly. Instead, you implement a class that derives from <xref:System.Web.Compilation.BuildProvider>, and configure the <xref:System.Web.Compilation.BuildProvider> implementation for use within the ASP.NET build environment.  
+  
+ Instances of the <xref:System.Web.Compilation.BuildProvider> class are used with <xref:System.Web.Compilation.AssemblyBuilder> objects to build one or more files into a compiled assembly. A <xref:System.Web.Compilation.BuildProvider> instance generates source code in the appropriate language for individual files, and the <xref:System.Web.Compilation.AssemblyBuilder> object combines the source contributed by each <xref:System.Web.Compilation.BuildProvider> instance into a single assembly.  
+  
+ The ASP.NET build environment uses instances of the <xref:System.Web.Compilation.BuildProvider> class to build files within an application. The <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property of the <xref:System.Web.Compilation.BuildProvider> class indicates the path of the file to be built. The file extension of each file within an application is mapped to a corresponding build provider. The ASP.NET build environment initializes a <xref:System.Web.Compilation.BuildProvider> instance for each file based on the file extension, and uses the <xref:System.Web.Compilation.BuildProvider> methods to generate source code for the file. The ASP.NET build environment passes an <xref:System.Web.Compilation.AssemblyBuilder> object based on the preferred compiler language and the context of the file to the <xref:System.Web.Compilation.BuildProvider> methods when building an assembly from one or more files, so that the <xref:System.Web.Compilation.BuildProvider> instance can contribute source code for its file to the overall assembly.  
+  
+ To define custom build actions for a file type within an ASP.NET application, you must derive a class from <xref:System.Web.Compilation.BuildProvider>, implement members within the derived class for building the file type, and configure the build provider for the corresponding file extension within the application configuration file.  
+  
+ The  specifies the file extension for supported files, and whether the build provider supports code files, Web files, resource files or all files. Use the `type` attribute to specify the fully qualified type name of the build provider implementation. Use the <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> class to specify whether the build provider applies to files in the App_Code directory, to files in a Web content directory, to global or local resources, or to all files. Use the `extension` attribute to specify the file extension used to identify files that the <xref:System.Web.Compilation.BuildProvider> class supports. Use the <xref:System.Web.Configuration.BuildProviderCollection> class to examine build providers in a configuration file. For more information about configuring a build provider, see [buildProviders Element for compilation (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/40fa889d-5412-487a-b6a9-21eb011c2384).  
+  
+ To implement a build provider that generates source code for a custom file type, derive a class from <xref:System.Web.Compilation.BuildProvider>, and override the <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> method to generate source code for the supported file type. The generated source is added to the <xref:System.Web.Compilation.AssemblyBuilder> object in the form of a CodeDOM graph, or as content that represents a physical source code file. If the build provider requires a specific programming language, override the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property to return a <xref:System.Web.Compilation.CompilerType> object for the supported programming language. If the build provider does not require a specific programming language, do not override the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property; use the base class implementation, which indicates that the build provider can use any .NET Framework language, such as Visual Basic or C#.  
+  
+ To implement a build provider that generates source code for Web content, derive a class from <xref:System.Web.Compilation.BuildProvider> and override the <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> method to return the <xref:System.Type> for the class generated by <xref:System.Web.Compilation.BuildProvider>. Override the <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> method to generate source code for the type provided by the supported file.  
+  
+> [!NOTE]
+>  Adding a customized <xref:System.Web.Compilation.BuildProvider> class to the Web.config file works in an ASP.NET Web site but does not work in an ASP.NET Web application project. In a Web application project, the code that is generated by the <xref:System.Web.Compilation.BuildProvider> class cannot be included in the application. For more information, see [ASP.NET Web Application Project Precompilation Overview](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887).  
+  
+   
+  
+## Examples  
+ The following code example illustrates a simple build provider implementation, inheriting from the abstract <xref:System.Web.Compilation.BuildProvider> base class. The build provider overrides the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A>, <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A>, and <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> members of the base class. The example does not include the implementation of the `SampleClassGenerator` class. For more information, see the <xref:System.CodeDom.CodeCompileUnit> class overview.  
+  
+ [!code-csharp[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/CS/Class1.cs#2)]
+ [!code-vb[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/VB/Class1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BuildProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.BuildProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.Compilation.BuildProvider> class is abstract, you cannot create an instance of <xref:System.Web.Compilation.BuildProvider> directly using the constructor.  
+  
+ When deriving from the <xref:System.Web.Compilation.BuildProvider> class, override the constructor to implement custom initialization actions for your build provider implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeCompilerType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.Compilation.CompilerType CodeCompilerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Compilation.CompilerType CodeCompilerType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.CodeCompilerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.CompilerType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the compiler type used by a build provider to generate source code for a custom file type.</summary>
+        <value>A read-only <see cref="T:System.Web.Compilation.CompilerType" /> representing the code generator, code compiler, and compiler settings used to build source code for the virtual path. The base class returns <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property to provide the settings for compiling source code for an implementation of <xref:System.Web.Compilation.BuildProvider>. The <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property is `null` if the build provider does not require a specific code language for generating and compiling source code.  
+  
+ To set the value for a <xref:System.Web.Compilation.CompilerType> object within a build provider implementation, use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerType%2A> or <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> method.  
+  
+ The <xref:System.Web.Compilation.CompilerType.CodeDomProviderType%2A> property specifies the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation that is used to generate and compile source code for a build provider. The <xref:System.Web.Compilation.CompilerType.CompilerParameters%2A> property defines the settings that are used to compile the source code into an assembly.  
+  
+   
+  
+## Examples  
+ The following code example illustrates a simple build provider implementation, inheriting from the abstract <xref:System.Web.Compilation.BuildProvider> base class. The build provider overrides the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A>, <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A>, and <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> members of the base class.  
+  
+ [!code-csharp[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/CS/Class1.cs#2)]
+ [!code-vb[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public virtual void GenerateCode (System.Web.Compilation.AssemblyBuilder assemblyBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyBuilder" Type="System.Web.Compilation.AssemblyBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyBuilder">The assembly builder that references the source code generated by the build provider.</param>
+        <summary>Generates source code for the virtual path of the build provider, and adds the source code to a specified assembly builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement a build provider that generates source code for a custom file type, derive a class from the <xref:System.Web.Compilation.BuildProvider> class, and override the <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> method to generate source code for the supported file type.  
+  
+ Typically, a build provider's <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> implementation reads the <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property, parses the contents, and adds the generated source code to the specified <xref:System.Web.Compilation.AssemblyBuilder> object. You can contribute source code to the assembly in the form of a <xref:System.IO.TextWriter> object or a CodeDOM graph. To add source code to the assembly through a <xref:System.IO.TextWriter> object, use the <xref:System.Web.Compilation.AssemblyBuilder.CreateCodeFile%2A> method. To add source code in a CodeDOM graph to the assembly, use the <xref:System.Web.Compilation.AssemblyBuilder.AddCodeCompileUnit%2A> method.  
+  
+ If the build provider generates source code in a specific programming language, you must override the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property to return a <xref:System.Web.Compilation.CompilerType> object for the supported programming language.  
+  
+   
+  
+## Examples  
+ The following code example illustrates a simple build provider implementation, inheriting from the abstract <xref:System.Web.Compilation.BuildProvider> base class. The build provider overrides the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A>, <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A>, and <xref:System.Web.Compilation.BuildProvider.GenerateCode%2A> members of the base class.  
+  
+ [!code-csharp[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/CS/Class1.cs#2)]
+ [!code-vb[System.Web.Compilation.SampleBuildProvider_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.SampleBuildProvider_2/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeCompileUnit">
+      <MemberSignature Language="C#" Value="protected virtual System.CodeDom.CodeCompileUnit GetCodeCompileUnit (out System.Collections.IDictionary linePragmasTable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.CodeDom.CodeCompileUnit GetCodeCompileUnit(class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="linePragmasTable">When this method returns, contains a dictionary that contains all associated line numbers and line pragmas of the source code. This parameter is passed uninitialized.</param>
+        <summary>Represents the container for the generated CodeDOM graph.</summary>
+        <returns>The container for the CodeDOM graph that is generated by the <see cref="T:System.Web.Compilation.BuildProvider" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used through the <xref:System.Web.Compilation.ClientBuildManager> class for syntax highlighting and designer support in Visual Studio.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomString">
+      <MemberSignature Language="C#" Value="public virtual string GetCustomString (System.CodeDom.Compiler.CompilerResults results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCustomString(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.CodeDom.Compiler.CompilerResults" />
+      </Parameters>
+      <Docs>
+        <param name="results">The compilation results for the build provider's virtual path.</param>
+        <summary>Generates a string to be persisted in the compiled assembly.</summary>
+        <returns>A string to be persisted in the build environment, or <see langword="null" /> if the <see cref="T:System.Web.Compilation.BuildProvider" /> instance does not implement <see cref="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildManager.GetCompiledCustomString%2A> method of a <xref:System.Web.Compilation.BuildManager> object creates an instance of a build provider for an input virtual path, and calls the <xref:System.Web.Compilation.BuildProvider.GetCustomString%2A> method on the <xref:System.Web.Compilation.BuildProvider> object.  
+  
+ The base <xref:System.Web.Compilation.BuildProvider> class returns `null` for the <xref:System.Web.Compilation.BuildProvider.GetCustomString%2A> method, indicating that <xref:System.Web.Compilation.BuildProvider.GetCustomString%2A> is not implemented.  
+  
+ Certain build provider implementations can implement <xref:System.Web.Compilation.BuildProvider.GetCustomString%2A> in place of the <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> method. A <xref:System.Web.Compilation.BuildProvider> object typically uses <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> to return a <xref:System.Type> object for a virtual path. However, the <xref:System.Web.Compilation.BuildProvider.GetCustomString%2A> method can be used to indicate that a <xref:System.Web.Compilation.BuildProvider> object can generate multiple types from a virtual path.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultCompilerType">
+      <MemberSignature Language="C#" Value="protected System.Web.Compilation.CompilerType GetDefaultCompilerType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.Compilation.CompilerType GetDefaultCompilerType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.CompilerType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the compiler settings for the default language in the application.</summary>
+        <returns>A <see cref="T:System.Web.Compilation.CompilerType" /> that represents the compiler settings for the default language in the application. The base class returns the default compiler based on the application configuration file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerType%2A> method to examine the default compiler type for a build provider. Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> method to examine the compiler type configured in a build provider for a specific language name.  
+  
+ The base <xref:System.Web.Compilation.BuildProvider> class determines the default compiler type using the `defaultLanguage` attribute value in the  section of the application configuration file. If there is no default language setting in the compilation section, the default compiler type is set using the <xref:Microsoft.VisualBasic.VBCodeProvider> language provider.  
+  
+ When deriving from the <xref:System.Web.Compilation.BuildProvider> class, you can use <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerType%2A> to set the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property within your implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultCompilerTypeForLanguage">
+      <MemberSignature Language="C#" Value="protected System.Web.Compilation.CompilerType GetDefaultCompilerTypeForLanguage (string language);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.Compilation.CompilerType GetDefaultCompilerTypeForLanguage(string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.CompilerType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">A code language name.</param>
+        <summary>Returns the compiler settings for the build provider based on the specified language.</summary>
+        <returns>A <see cref="T:System.Web.Compilation.CompilerType" /> that represents the compiler settings for the build provider based on the specified language. The base class returns the default compiler settings for the language based on the application configuration file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> method to examine the compiler type configured in the build provider for a specific language name. Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerType%2A> method to examine the default compiler type for a build provider.  
+  
+ The base <xref:System.Web.Compilation.BuildProvider> class determines the default compiler type using the <xref:System.Web.Configuration.Compiler> elements in the <xref:System.Web.Configuration.CompilationSection.Compilers%2A> property of the <xref:System.Web.Configuration.CompilationSection> object for the configuration file. This is equivalent to examining the  elements in the  and the  elements in the  sections of the configuration file. For example, for the `language` value VB, the base class method returns a <xref:System.Web.Compilation.CompilerType> object that corresponds to the configured settings for an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=fullName>.  
+  
+ When you derive from the <xref:System.Web.Compilation.BuildProvider> class, you can use <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> to set the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property value for the language supported by your implementation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="language" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="language" /> does not match a configured compiler for the build provider.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneratedType">
+      <MemberSignature Language="C#" Value="public virtual Type GetGeneratedType (System.CodeDom.Compiler.CompilerResults results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetGeneratedType(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.CodeDom.Compiler.CompilerResults" />
+      </Parameters>
+      <Docs>
+        <param name="results">The compilation results for the build provider's virtual path.</param>
+        <summary>Returns a type generated by the build provider from the virtual path.</summary>
+        <returns>The type that is generated by the build provider for the virtual path. The base class returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement a build provider that generates source code for Web content such as .aspx files, derive a class from the <xref:System.Web.Compilation.BuildProvider> class and override the <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> method to return the type generated by the build provider.  
+  
+ The ASP.NET build system compiles files for each build provider, and generates a <xref:System.CodeDom.Compiler.CompilerResults> object, which is passed to the <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> method. Typically, a build provider's <xref:System.Web.Compilation.BuildProvider.GetGeneratedType%2A> implementation uses the <xref:System.Reflection.Assembly.GetType%2A> method on the <xref:System.CodeDom.Compiler.CompilerResults.CompiledAssembly%2A> property of the input `results` object to return the provided type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResultFlags">
+      <MemberSignature Language="C#" Value="public virtual System.Web.Compilation.BuildProviderResultFlags GetResultFlags (System.CodeDom.Compiler.CompilerResults results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.Compilation.BuildProviderResultFlags GetResultFlags(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildProviderResultFlags</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.CodeDom.Compiler.CompilerResults" />
+      </Parameters>
+      <Docs>
+        <param name="results">The compilation results for the build provider's virtual path.</param>
+        <summary>Returns a value indicating actions required when a virtual path is built.</summary>
+        <returns>A <see cref="T:System.Web.Compilation.BuildProviderResultFlags" /> value indicating actions required after the virtual path is built within the ASP.NET build environment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method is used by the ASP.NET build environment when using instances of the <xref:System.Web.Compilation.BuildProvider> class to build files and load the compiled assemblies.  
+  
+ The base <xref:System.Web.Compilation.BuildProvider> class method returns the <xref:System.Web.Compilation.BuildProviderResultFlags> field value, indicating that no special action is required when the virtual path is built.  
+  
+ When deriving from the <xref:System.Web.Compilation.BuildProvider> class, you can implement the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method to return a different <xref:System.Web.Compilation.BuildProviderResultFlags> value for your custom file type or virtual path. For example, if a rebuild of your virtual path requires the containing <xref:System.AppDomain> object to be reloaded, you can return the <xref:System.Web.Compilation.BuildProviderResultFlags> enumeration value from your <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenReader">
+      <MemberSignature Language="C#" Value="protected System.IO.TextReader OpenReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IO.TextReader OpenReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Opens a text reader for reading from the virtual path of the current build provider object.</summary>
+        <returns>An open <see cref="T:System.IO.TextReader" /> that can be used to read the contents of the <see cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.TextReader.Read%2A> method on the returned <xref:System.IO.TextReader> object to read the contents of the <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property for a <xref:System.Web.Compilation.BuildProvider> object.  
+  
+ After calling the <xref:System.Web.Compilation.BuildProvider.OpenReader%2A> method, you must use the <xref:System.IO.TextReader.Close%2A> method to close the <xref:System.IO.TextReader> object and free associated system resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenReader">
+      <MemberSignature Language="C#" Value="protected System.IO.TextReader OpenReader (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IO.TextReader OpenReader(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenReader(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to read.</param>
+        <summary>Opens a text reader for reading from a specified virtual path.</summary>
+        <returns>An open <see cref="T:System.IO.TextReader" /> that can be used to read the contents of the specified virtual path.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.TextReader.Read%2A> method on the returned <xref:System.IO.TextReader> object to read the contents of the virtual path.  
+  
+ After calling the <xref:System.Web.Compilation.BuildProvider.OpenReader%2A> method, you must use the <xref:System.IO.TextReader.Close%2A> method to close the <xref:System.IO.TextReader> object and free associated system resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStream">
+      <MemberSignature Language="C#" Value="protected System.IO.Stream OpenStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IO.Stream OpenStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Opens a stream for reading the virtual path of the current build provider object.</summary>
+        <returns>An open <see cref="T:System.IO.Stream" /> that can be used to read the contents of the <see cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.Read%2A> method on the returned <xref:System.IO.Stream> object to read the contents of the virtual path for the <xref:System.Web.Compilation.BuildProvider> object.  
+  
+ After calling the <xref:System.Web.Compilation.BuildProvider.OpenStream%2A> method, you must use the <xref:System.IO.Stream.Close%2A> method to close the <xref:System.IO.Stream> object and free associated system resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStream">
+      <MemberSignature Language="C#" Value="protected System.IO.Stream OpenStream (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IO.Stream OpenStream(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenStream(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to read.</param>
+        <summary>Opens a stream for reading from a specified virtual path.</summary>
+        <returns>An open <see cref="T:System.IO.Stream" /> that can be used to read the contents of the specified virtual path.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Stream.Read%2A> method on the returned <xref:System.IO.Stream> object to read the contents of the virtual path.  
+  
+ After calling the <xref:System.Web.Compilation.BuildProvider.OpenStream%2A> method, you must use the <xref:System.IO.Stream.Close%2A> method to close the <xref:System.IO.Stream> object and free associated system resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCompileErrors">
+      <MemberSignature Language="C#" Value="public virtual void ProcessCompileErrors (System.CodeDom.Compiler.CompilerResults results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessCompileErrors(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.ProcessCompileErrors(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.CodeDom.Compiler.CompilerResults" />
+      </Parameters>
+      <Docs>
+        <param name="results">Compiler results.</param>
+        <summary>When overridden in a derived class, enables you to review compiler error messages so that you can modify them to provide more information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically override this method so that you can modify compiler errors before they are displayed in order to make the error text more helpful to the user. This is useful in scenarios where you know the context of certain errors and can provide information to the user about how to fix them. The original compiler error message is usually specific to a particular language construct and might not make the real cause or solution obvious to the user.  
+  
+ You can access the errors by using the <xref:System.CodeDom.Compiler.CompilerResults> object that is passed to the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedAssemblies">
+      <MemberSignature Language="C#" Value="protected System.Collections.ICollection ReferencedAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection ReferencedAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.ReferencedAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the assemblies to compile with the source generated by the build provider.</summary>
+        <value>A read-only collection of assemblies that can be referenced by the source code generated by the build provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ASP.NET build environment initializes the collection of assemblies that are available for reference by the build provider. The source code generated by a build provider can use public types in the referenced assemblies. The referenced assembly collection consists of other assemblies built in the ASP.NET application, and assemblies listed in the  element in the configuration file.  
+  
+ If the build provider generates source code that references additional assemblies, the build provider adds the additional assemblies using the <xref:System.Web.Compilation.AssemblyBuilder.AddAssemblyReference%2A> method. The ASP.NET build environment resolves external types during assembly compilation using both the referenced assemblies added by build providers and the default collection of assemblies available for reference.  
+  
+ The <xref:System.Web.Compilation.BuildProvider.ReferencedAssemblies%2A> collection does not include assemblies that are added for reference by other build providers through the <xref:System.Web.Compilation.AssemblyBuilder.AddAssemblyReference%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBuildProvider">
+      <MemberSignature Language="C#" Value="public static void RegisterBuildProvider (string extension, Type providerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterBuildProvider(string extension, class System.Type providerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.RegisterBuildProvider(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extension" Type="System.String" />
+        <Parameter Name="providerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="extension">The file-name extension that the build provider is for.</param>
+        <param name="providerType">The build provider class.</param>
+        <summary>Registers a build provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to register build providers instead of defining them in the Web.config file. For more information about build providers, see the <xref:System.Web.Compilation.BuildProvider> class and [buildProviders Element for compilation (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/40fa889d-5412-487a-b6a9-21eb011c2384).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualPath">
+      <MemberSignature Language="C#" Value="protected string VirtualPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.VirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the file to be built by this build provider implementation.</summary>
+        <value>A read-only string that specifies the virtual path of a file to be compiled by this build provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The virtual path of a <xref:System.Web.Compilation.BuildProvider> object is the path to the file that is being compiled by the build provider. For example, if you have configured a custom <xref:System.Web.Compilation.BuildProvider> class to build all files in the Web site with the custom extension of .abc, if your Web site is named WebSite1, and the Web site contains a file named Example.abc, the <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property contains the value `/WebSite1/Example.abc`.  
+  
+ The file extension of each file within the application determines the file type, and the corresponding build provider for the file type. The ASP.NET build environment initializes a <xref:System.Web.Compilation.BuildProvider> object for each file based on the file type, and uses the <xref:System.Web.Compilation.BuildProvider> methods to generate source for each file.  
+  
+ For more information about configuring a build provider, see [buildProviders Element for compilation (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/40fa889d-5412-487a-b6a9-21eb011c2384).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualPathDependencies">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection VirtualPathDependencies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection VirtualPathDependencies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a collection of virtual paths that must be built before the build provider generates code.</summary>
+        <value>A read-only collection of strings, representing the virtual paths that this instance of the build provider is dependent on.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildProvider.VirtualPathDependencies%2A> property is a collection of virtual paths that must be compiled before the <xref:System.Web.Compilation.BuildProvider> instance generates source code. The assemblies from the virtual paths in <xref:System.Web.Compilation.BuildProvider.VirtualPathDependencies%2A> are added as references to the compilation for the <xref:System.Web.Compilation.BuildProvider> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

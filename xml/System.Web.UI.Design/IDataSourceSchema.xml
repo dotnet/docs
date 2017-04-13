@@ -1,0 +1,51 @@
+<Type Name="IDataSourceSchema" FullName="System.Web.UI.Design.IDataSourceSchema">
+  <TypeSignature Language="C#" Value="public interface IDataSourceSchema" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceSchema" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceSchema" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides basic functionality for describing the structure of a data source at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.Web.UI.Design.IDataSourceSchema> interface to describe a custom data source at design time. For example, the <xref:System.Web.UI.Design.DataSetSchema>, <xref:System.Web.UI.Design.XmlDocumentSchema>, and <xref:System.Web.UI.Design.TypeSchema> classes implement the <xref:System.Web.UI.Design.IDataSourceSchema> interface.  
+  
+ Classes that implement the <xref:System.Web.UI.Design.IDataSourceSchema> are used by custom control designer components to provide lists of fields and views for data-bound controls at design time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetViews">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceViewSchema[] GetViews ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDataSourceViewSchema[] GetViews() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceSchema.GetViews" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IDataSourceViewSchema[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an array of schema descriptors for views contained in the data source.</summary>
+        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class that implements the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method returns an array of objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. For example, in the array returned by the <xref:System.Web.UI.Design.DataSetSchema.GetViews%2A?displayProperty=fullName> method, each element of the array is a <xref:System.Web.UI.Design.DataSetViewSchema> object that implements <xref:System.Web.UI.Design.IDataSourceViewSchema>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

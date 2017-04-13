@@ -1,0 +1,77 @@
+<Type Name="ViewStateMode" FullName="System.Web.UI.ViewStateMode">
+  <TypeSignature Language="C#" Value="public enum ViewStateMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ViewStateMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether view state will be enabled for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.Control.ViewStateMode%2A?displayProperty=fullName> property to enable view state for an individual control even if it is disabled for the page.  
+  
+ To turn off view state for a page and turn it on for a specific control on the page, set the <xref:System.Web.UI.Control.EnableViewState%2A> property of the page and the control to `true`, set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the page to Disabled, and set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the control to Enabled.  
+  
+ The <xref:System.Web.UI.Control.ViewStateMode%2A> property of a page or a control has an effect only if the <xref:System.Web.UI.Control.EnableViewState%2A> property is set to `true`. If the <xref:System.Web.UI.Control.EnableViewState%2A> property is set to `false`, view state will be turned off even if the <xref:System.Web.UI.Control.ViewStateMode%2A> property is set to Enabled.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Disabled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Disable view state for this control even if the parent control has view state enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Enabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enable view state for this control even if the parent control has view state disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Inherit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inherit the value of <see cref="T:System.Web.UI.ViewStateMode" /> from the parent <see cref="T:System.Web.UI.Control" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

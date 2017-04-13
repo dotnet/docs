@@ -1,0 +1,274 @@
+<Type Name="ObjectPersistData" FullName="System.Web.UI.ObjectPersistData">
+  <TypeSignature Language="C#" Value="public class ObjectPersistData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectPersistData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectPersistData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>During the build process, retains information about property entries.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPersistData (System.Web.UI.ControlBuilder builder, System.Collections.IDictionary builtObjects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ControlBuilder builder, class System.Collections.IDictionary builtObjects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.#ctor(System.Web.UI.ControlBuilder,System.Collections.IDictionary)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="builtObjects" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The object for building the control.</param>
+        <param name="builtObjects">A collection of objects that have been built by this builder.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectPersistData" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToObjectControlBuilderTable">
+      <MemberSignature Language="C#" Value="public void AddToObjectControlBuilderTable (System.Collections.IDictionary table);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddToObjectControlBuilderTable(class System.Collections.IDictionary table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.AddToObjectControlBuilderTable(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="table">A collection for the control builder.</param>
+        <summary>Adds built objects to a collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllPropertyEntries">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection AllPropertyEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection AllPropertyEntries" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.AllPropertyEntries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all the property entries for the control being built.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing the property entries for the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionary BuiltObjects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary BuiltObjects" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.BuiltObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the objects that have been built by the control builder.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> containing the items that have been built by the control builder.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionItems">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection CollectionItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection CollectionItems" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.CollectionItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets items that are collection types.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing items of type <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventEntries">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection EventEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection EventEntries" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.EventEntries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets event entries for the control being built.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing the event entries.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilteredProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionary GetFilteredProperties (string filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionary GetFilteredProperties(string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetFilteredProperties(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter">The <see cref="P:System.Web.UI.PropertyEntry.Filter" /> on an expression.</param>
+        <summary>Gets the property entries with the specified filter.</summary>
+        <returns>The property entries with the specified filter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilteredProperty">
+      <MemberSignature Language="C#" Value="public System.Web.UI.PropertyEntry GetFilteredProperty (string filter, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.PropertyEntry GetFilteredProperty(string filter, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetFilteredProperty(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PropertyEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter">The <see cref="P:System.Web.UI.PropertyEntry.Filter" /> on an expression.</param>
+        <param name="name">The <see cref="P:System.Web.UI.PropertyEntry.Name" /> on an expression.</param>
+        <summary>Gets all property entries for the specified filter and property name.</summary>
+        <returns>All property entries for the specified filter and property name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyAllFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetPropertyAllFilters (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ICollection GetPropertyAllFilters(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetPropertyAllFilters(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Web.UI.PropertyEntry.Name" /> on an expression.</param>
+        <summary>Returns all filtered property entries for a specified property name.</summary>
+        <returns>All filtered property entries for a specified property name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCollection">
+      <MemberSignature Language="C#" Value="public bool IsCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.IsCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the persisted data is for a collection.</summary>
+        <value>
+          <see langword="true" /> if this persisted data is for a collection; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Localize">
+      <MemberSignature Language="C#" Value="public bool Localize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Localize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.Localize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control created by the control builder object is localized.</summary>
+        <value>
+          <see langword="true" /> if the control created by the control builder object is localized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Type ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ObjectType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the object associated with the persisted properties.</summary>
+        <value>The <see cref="T:System.Type" /> of the object being built.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceKey">
+      <MemberSignature Language="C#" Value="public string ResourceKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.ResourceKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource key for the control builder object.</summary>
+        <value>A <see cref="T:System.String" /> representing the resource key for the control builder.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

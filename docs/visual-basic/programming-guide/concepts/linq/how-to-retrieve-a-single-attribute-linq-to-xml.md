@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 11b938d7-c011-4048-900e-8b9183c41c94
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve a Single Attribute (LINQ to XML) (Visual Basic)

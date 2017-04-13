@@ -1,0 +1,203 @@
+<Type Name="CodeActivityPublicEnvironmentAccessor" FullName="System.Activities.CodeActivityPublicEnvironmentAccessor">
+  <TypeSignature Language="C#" Value="public struct CodeActivityPublicEnvironmentAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CodeActivityPublicEnvironmentAccessor extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityPublicEnvironmentAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about a public environment accessor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityMetadata">
+      <MemberSignature Language="C#" Value="public System.Activities.CodeActivityMetadata ActivityMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.CodeActivityMetadata ActivityMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.CodeActivityPublicEnvironmentAccessor.ActivityMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.CodeActivityMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <value>The activity’s arguments, variables, child activities, and activity delegates.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Activities.CodeActivityPublicEnvironmentAccessor Create (System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Activities.CodeActivityPublicEnvironmentAccessor Create(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.Create(System.Activities.CodeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.CodeActivityPublicEnvironmentAccessor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates the description of the arguments, child activities, variables, and activity delegates.</summary>
+        <returns>The description of the arguments, child activities, variables, and activity delegates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the specified object is equal to the public environment accessor.</summary>
+        <returns>
+          <see langword="True" /> if the specified object is equal to the public environment accessor; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a unique identifier for this public environment accessor.</summary>
+        <returns>A unique identifier for this public environment accessor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Equality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
+        <Parameter Name="right" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are equal.</summary>
+        <returns>
+          <see langword="True" /> if the two specified metadata instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Inequality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
+        <Parameter Name="right" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are not equal.</summary>
+        <returns>
+          <see langword="True" /> if the two specified metadata instances are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetAccessToPublicLocation">
+      <MemberSignature Language="C#" Value="public bool TryGetAccessToPublicLocation (System.Activities.LocationReference publicLocation, System.Activities.ArgumentDirection accessDirection, out System.Activities.LocationReference equivalentLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetAccessToPublicLocation(class System.Activities.LocationReference publicLocation, valuetype System.Activities.ArgumentDirection accessDirection, class System.Activities.LocationReference equivalentLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.TryGetAccessToPublicLocation(System.Activities.LocationReference,System.Activities.ArgumentDirection,System.Activities.LocationReference@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publicLocation" Type="System.Activities.LocationReference" />
+        <Parameter Name="accessDirection" Type="System.Activities.ArgumentDirection" />
+        <Parameter Name="equivalentLocation" Type="System.Activities.LocationReference&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="publicLocation">Public location reference.</param>
+        <param name="accessDirection">The access direction reference.</param>
+        <param name="equivalentLocation">The equivalent location reference.</param>
+        <summary>Returns a value that indicates whether the activity will try to get access to public location.</summary>
+        <returns>
+          <see langword="True" /> if the activity to try will get access to public location; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetReferenceToPublicLocation">
+      <MemberSignature Language="C#" Value="public bool TryGetReferenceToPublicLocation (System.Activities.LocationReference publicReference, out System.Activities.LocationReference equivalentReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetReferenceToPublicLocation(class System.Activities.LocationReference publicReference, class System.Activities.LocationReference equivalentReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.TryGetReferenceToPublicLocation(System.Activities.LocationReference,System.Activities.LocationReference@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publicReference" Type="System.Activities.LocationReference" />
+        <Parameter Name="equivalentReference" Type="System.Activities.LocationReference&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="publicReference">Public reference location.</param>
+        <param name="equivalentReference">The equivalent reference location.</param>
+        <summary>Returns a value that indicates whether the activity will try to get reference for the public location.</summary>
+        <returns>
+          <see langword="True" /> if the activity will try to get reference for the public location; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

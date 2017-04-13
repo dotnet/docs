@@ -1,0 +1,362 @@
+<Type Name="BindingBase" FullName="System.Windows.Data.BindingBase">
+  <TypeSignature Language="C#" Value="public abstract class BindingBase : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract BindingBase extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingBase" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Modifiability=System.Windows.Modifiability.Unmodifiable, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Object))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the common characteristics of the <see cref="T:System.Windows.Data.Binding" />, <see cref="T:System.Windows.Data.PriorityBinding" />, and <see cref="T:System.Windows.Data.MultiBinding" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=fullName> method is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup extension.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindingGroupName">
+      <MemberSignature Language="C#" Value="public string BindingGroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BindingGroupName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.BindingGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Windows.Data.BindingGroup" /> to which this binding belongs.</summary>
+        <value>The name of the <see cref="T:System.Windows.Data.BindingGroup" /> to which this binding belongs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> is not set, the binding belongs to a <xref:System.Windows.Data.BindingGroup> only if the binding's source and the <xref:System.Windows.FrameworkElement.DataContext%2A> of the parent element that has the <xref:System.Windows.Data.BindingGroup> are the same object.  
+  
+ If <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> is set to a value, the binding belongs to a <xref:System.Windows.Data.BindingGroup> if the following conditions are true:  
+  
+-   The <xref:System.Windows.Data.BindingGroup.Name%2A> of the <xref:System.Windows.Data.BindingGroup> and <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> are equal.  
+  
+-   The <xref:System.Windows.Data.BindingGroup> belongs to a parent element of the binding's target element.  
+  
+ If <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> is set to `null`, the binding is never a part of a <xref:System.Windows.Data.BindingGroup>.  
+  
+ You can include bindings that have a source that is different from the <xref:System.Windows.FrameworkElement.DataContext%2A> of the parent element that has the <xref:System.Windows.Data.BindingGroup> by setting <xref:System.Windows.Data.BindingGroup.Name%2A> of the <xref:System.Windows.Data.BindingGroup> and the <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> property of a binding to the same value.  You can exclude bindings that have the same source as <xref:System.Windows.FrameworkElement.DataContext%2A> of the parent element that has the <xref:System.Windows.Data.BindingGroup> by setting <xref:System.Windows.Data.BindingGroup.Name%2A> of the <xref:System.Windows.Data.BindingGroup> and the <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> property of a binding to different values.  
+  
+   
+  
+## Examples  
+ The following examples are part of an application that checks whether the user has set the properties of two objects to equal values. The first example creates two <xref:System.Windows.Controls.TextBox> controls, each of which is data bound to a different source: The binding of the first <xref:System.Windows.Controls.TextBox> is part of the <xref:System.Windows.Data.BindingGroup> because the <xref:System.Windows.Controls.TextBox> inherits the <xref:System.Windows.FrameworkElement.DataContext%2A> and <xref:System.Windows.Data.BindingGroup> from its parent <xref:System.Windows.Controls.StackPanel>  
+  
+ The binding on the second <xref:System.Windows.Controls.TextBox> is part of the <xref:System.Windows.Data.BindingGroup> because the <xref:System.Windows.Data.BindingGroup.Name%2A> of the <xref:System.Windows.Data.BindingGroup> and the <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> of the <xref:System.Windows.Data.Binding> are both set to `bindingGroup`.  
+  
+ [!code-xml[BindingGroupSnippets#BindingGroupName](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupname)]  
+[!code-xml[BindingGroupSnippets#ValidationAdornerSite](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validationadornersite)]  
+  
+ The following example shows the <xref:System.Windows.Controls.ValidationRule> that the previous example uses.  In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the example gets each source object from the <xref:System.Windows.Data.BindingGroup> and checks whether the properties of the objects are equal.  
+  
+ [!code-csharp[BindingGroupSnippets#BindingGroupNameValidationRule](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml.cs#bindinggroupnamevalidationrule)]
+ [!code-vb[BindingGroupSnippets#BindingGroupNameValidationRule](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/window3.xaml.vb#bindinggroupnamevalidationrule)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay">
+      <MemberSignature Language="C#" Value="public int Delay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Delay" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.Delay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in milliseconds, to wait before updating the binding source after the value on the target changes.</summary>
+        <value>The amount of time, in milliseconds, to wait before updating the binding source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a binding to update the binding source whenever the value of the property changes on the target, you set the <xref:System.Windows.Data.Binding.Mode%2A> property to <xref:System.Windows.Data.BindingMode> and the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> to <xref:System.Windows.Data.UpdateSourceTrigger>.  In this situation, you can use the <xref:System.Windows.Data.BindingBase.Delay%2A> property to specify whether there should be a time delay between when the target is changed and when the source is updated.  This is useful when you want to enable users to change a property on a source object but you don't want each change to be immediately committed to the source.  For example, suppose that you have a text box that is data two-way bound to a property of a data object.  When the user changes the value in the text box, the source gets updated.  To enable this scenario, you set the <xref:System.Windows.Data.Binding.Mode%2A> property on the <xref:System.Windows.Data.Binding> to <xref:System.Windows.Data.BindingMode> and the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> to <xref:System.Windows.Data.UpdateSourceTrigger>.  To avoid updating the source object with every keystroke, set the <xref:System.Windows.Data.BindingBase.Delay%2A> property to a reasonable value to cause the binding to update only after that amount of time has elapsed since the user stopped typing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackValue">
+      <MemberSignature Language="C#" Value="public object FallbackValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FallbackValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.FallbackValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value to use when the binding is unable to return a value.</summary>
+        <value>The default value is <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A binding returns a value successfully if:  
+  
+1.  The path to the binding source resolves successfully.  
+  
+2.  The value converter, if any, is able to convert the resulting value.  
+  
+3.  The resulting value is valid for the binding target (target) property.  
+  
+ If 1 and 2 return <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName>, the target property is set to the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available. If there is no <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, the default value of the target property is used.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> is not considered a successful return value.  
+  
+<a name="xamlTextUsage_FallbackValue"></a>   
+## XAML Text Usage  
+  
+```  
+<object FallbackValue="fallbackValue" />  
+```  
+  
+ **- or –**  
+  
+```  
+<object>  
+  <object.FallbackValue>  
+    fallbackValue  
+    </object.FallbackValue>  
+</object>  
+```  
+  
+<a name="xamlValues_FallbackValue"></a>   
+## XAML Values  
+ *fallbackValue*  
+ An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a default constructor on that type). The target property type will therefore influence which syntax you use for the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override sealed object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The object that can provide services for the markup extension. May be <see langword="null" />; see the Remarks section for more information.</param>
+        <summary>Returns an object that should be set on the property where this binding and extension are applied.</summary>
+        <returns>The value to set on the binding target property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation provides the base syntax support for binding through [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] for all provided practical derived classes (<xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, and <xref:System.Windows.Data.MultiBinding>).  
+  
+ The <xref:System.Windows.Data.BindingBase> class implementation of this method is expected to return an expression object that is the result of a binding. Binding a property works by targeting a given <xref:System.Windows.DependencyProperty> on a given <xref:System.Windows.DependencyObject>. These two pieces of information are transmitted by querying for an <xref:System.Windows.Markup.IProvideValueTarget> implementation on the `serviceProvider`, which the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] reader makes available during parsing of a binding. This base class implementation is responsible for checking for a valid <xref:System.Windows.DependencyProperty> and <xref:System.Windows.DependencyObject>. If these are found, the actual implementation of returning a binding expression falls to various derived classes, as implemented by having the base class call an internal abstract method. Otherwise, the extension returns the binding object itself. Returning the binding itself results in a type mismatch error, but this should not occur under normal circumstances.  
+  
+> [!IMPORTANT]
+>  Because the syntax for binding through [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] as implemented in this method relies on implementing an internal override, and because <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=fullName> itself is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] markup extension.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeFallbackValue">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeFallbackValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeFallbackValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ShouldSerializeFallbackValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether serialization processes should serialize the effective value of the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> property on instances of this class.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeTargetNullValue">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeTargetNullValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTargetNullValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ShouldSerializeTargetNullValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.Windows.Data.BindingBase.TargetNullValue" /> property should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Data.BindingBase.TargetNullValue" /> property should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringFormat">
+      <MemberSignature Language="C#" Value="public string StringFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.StringFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies how to format the binding if it displays the bound value as a string.</summary>
+        <value>A string that specifies how to format the binding if it displays the bound value as a string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.BindingBase.StringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+ If you set the <xref:System.Windows.Data.Binding.Converter%2A> and <xref:System.Windows.Data.BindingBase.StringFormat%2A> properties, the converter is applied to the data value first, and then the <xref:System.Windows.Data.BindingBase.StringFormat%2A> is applied.  
+  
+ When you set the <xref:System.Windows.Data.BindingBase.StringFormat%2A> on a <xref:System.Windows.Data.Binding> to a composite string format, you can specify only one parameter.  
+  
+ When you use a <xref:System.Windows.Data.MultiBinding>, the <xref:System.Windows.Data.BindingBase.StringFormat%2A> property applies only when it is set on the <xref:System.Windows.Data.MultiBinding>.  The value of <xref:System.Windows.Data.BindingBase.StringFormat%2A> that is set on any child <xref:System.Windows.Data.Binding> objects is ignored.  The number of parameters in a composite string format cannot exceed the number of child <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding>.  
+  
+ When you use a <xref:System.Windows.Data.PriorityBinding>, you can set the <xref:System.Windows.Data.BindingBase.StringFormat%2A> on the <xref:System.Windows.Data.PriorityBinding>, on child binding objects, or both.  If the <xref:System.Windows.Data.BindingBase.StringFormat%2A> is set on the child binding that is applied, that value is used.  If the <xref:System.Windows.Data.BindingBase.StringFormat%2A> is not set on the child binding that is applied, the <xref:System.Windows.Data.BindingBase.StringFormat%2A> of the <xref:System.Windows.Data.PriorityBinding> is applied if it is set.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Data.BindingBase.StringFormat%2A> property to convert `Price`, which is a <xref:System.Double>, to a string that represents a currency.  
+  
+ [!code-xml[ContentStringSnippets#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#binding)]  
+  
+ The following example uses the <xref:System.Windows.Data.BindingBase.StringFormat%2A> property on a <xref:System.Windows.Data.MultiBinding> to build a string that includes the `Description` and `Price` of each item in a <xref:System.Windows.Controls.ListBox>.  
+  
+ [!code-xml[ContentStringSnippets#MultiBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#multibinding)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNullValue">
+      <MemberSignature Language="C#" Value="public object TargetNullValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetNullValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.TargetNullValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value that is used in the target when the value of the source is <see langword="null" />.</summary>
+        <value>The value that is used in the target when the value of the source is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_TargetNullValue"></a>   
+## XAML Text Usage  
+  
+```  
+<object TargetNullValue="nullValue" />  
+```  
+  
+ **- or –**  
+  
+```  
+<object>  
+  <object.TargetNullValue>  
+    nullValue  
+    </object.TargetNullValue>  
+</object>  
+```  
+  
+<a name="xamlValues_TargetNullValue"></a>   
+## XAML Values  
+ *nullValue*  
+ An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a default constructor on that type).  
+  
+   
+  
+## Examples  
+ The following example binds a <xref:System.Windows.Controls.TextBox> to a property of an object.  If the property is `null`, the <xref:System.Windows.Controls.TextBox> displays "please enter a string."  
+  
+ [!code-xml[BindingGroupSnippets#TargetNullValue](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#targetnullvalue)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,96 @@
+<Type Name="AmbientPropertyValue" FullName="System.Xaml.AmbientPropertyValue">
+  <TypeSignature Language="C#" Value="public class AmbientPropertyValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AmbientPropertyValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.AmbientPropertyValue" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Reports information about an ambient property, as part of an <see cref="T:System.Xaml.IAmbientProvider" /> implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.AmbientPropertyValue> represents an information item that is returned by calling an <xref:System.Xaml.IAmbientProvider> service method. The `GetAll` methods return enumerations or arrays of <xref:System.Xaml.AmbientPropertyValue> items; the `GetFirst` methods return a single <xref:System.Xaml.AmbientPropertyValue>.  
+  
+## About Ambient Properties  
+ An ambient property is a property whose property value should be available to value converter usage in the XAML node structure and to the object graph underneath it. The ambient concept  is relevant for a XAML processor during the object-writing phase of the load path or the serialization phase of a save path.  
+  
+ A type can also be attributed as ambient. In this case, all properties that use the attributed type are reported as ambient.  
+  
+ In the load path case, the ambient property value might influence the object graph produced value of other properties that exist underneath it in a XAML node structure. When processed as a XAML node stream, the ambient concept implies that the ambient property value must be available to type converters and markup extensions from `StartObject` to `EndObject`. Similarly, a type converter or markup extension that is used for the save path can look up the ambient property and its value. Therefore, the XAML that is produced is a better round-trip representation.  
+  
+ By its language definition, XAML does not specify the order in which members of an object must be processed. However, any ambient property value must be processed first by the XAML reader so that the type converter and markup extension usage that are contained in other properties can access it through the <xref:System.Xaml.IAmbientProvider> service.  
+  
+ <xref:System.Xaml.XamlMember.DependsOn%2A> is a similar concept that also influences XAML node-processing order. However, <xref:System.Xaml.XamlMember.DependsOn%2A> can only be used for peer member and node relationships; it cannot influence all descendants. Also, <xref:System.Xaml.XamlMember.DependsOn%2A> directly influences object graph property setting, whereas the ambient technique relies on type converters or markup extensions. In the ambient technique, there must also be a specific type converter or markup extension definition. It is up to each type converter or markup extension to determine how the ambient property value should be interpreted and applied to the object graph location where the type converter or markup extension is used.  
+  
+## WPF Usage Notes  
+ An ambient property scenario that is illustrated in the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] feature set is <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName>, which can qualify the necessary property name lookups for other values. In this case, the <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName> value qualifies the <xref:System.Windows.Setter.Property%2A?displayProperty=fullName> values in the XAML nodes underneath it. <xref:System.Windows.Setter.Property%2A?displayProperty=fullName> uses the type converter behavior for a <xref:System.Windows.DependencyProperty>. This behavior accesses the ambient <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName> value by querying <xref:System.Xaml.IAmbientProvider.GetFirstAmbientValue%2A> from a service context that is available to type converters and markup extensions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AmbientPropertyValue (System.Xaml.XamlMember property, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlMember property, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AmbientPropertyValue.#ctor(System.Xaml.XamlMember,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="property" Type="System.Xaml.XamlMember" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="property">The identifier that represents the ambient property.</param>
+        <param name="value">The value to report.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.AmbientPropertyValue" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrievedProperty">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember RetrievedProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember RetrievedProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.AmbientPropertyValue.RetrievedProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML type system identifier (<see cref="T:System.Xaml.XamlMember" />) that represents the ambient property.</summary>
+        <value>The identifier that represents the ambient property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.AmbientPropertyValue.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the ambient property.</summary>
+        <value>The value of the ambient property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

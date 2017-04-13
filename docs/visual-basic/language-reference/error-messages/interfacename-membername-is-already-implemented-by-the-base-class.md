@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC42015"
 ms.assetid: 658c070a-113e-4bd8-b294-12c243191160
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

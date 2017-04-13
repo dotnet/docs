@@ -1,0 +1,291 @@
+<Type Name="MessageQueueCriteria" FullName="System.Messaging.MessageQueueCriteria">
+  <TypeSignature Language="C#" Value="public class MessageQueueCriteria" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQueueCriteria extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueCriteria" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Filters message queues when performing a query using the <see cref="T:System.Messaging.MessageQueue" /> class's <see cref="M:System.Messaging.MessageQueue.GetPublicQueues" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessageQueue> class provides a number of methods that enable you to filter your search for public queues on the network. Specific methods for filtering by queue label, category, or server location are the <xref:System.Messaging.MessageQueue.GetPublicQueuesByLabel%2A>, <xref:System.Messaging.MessageQueue.GetPublicQueuesByCategory%2A>, and <xref:System.Messaging.MessageQueue.GetPublicQueuesByMachine%2A>.  
+  
+ The <xref:System.Messaging.MessageQueueCriteria> class, when used with the <xref:System.Messaging.MessageQueue.GetPublicQueues%2A> method, allows you to refine your filter. You can specify search criteria not specifically addressed through one of the `GetPublicQueuesBy`* methods, or by multiple criteria. You can pass a <xref:System.Messaging.MessageQueueCriteria> instance into the <xref:System.Messaging.MessageQueue.GetPublicQueues%2A> method in order to search, for example, by queue creation or modification times, the computer the queue resides on, the queue label or category, or any combination of these properties.  
+  
+ When filtering by multiple properties, the criteria are composed by applying the `AND` operator to the set of properties. Thus, when you specify a value for the <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A> property together with the <xref:System.Messaging.MessageQueueCriteria.MachineName%2A> property, you are asking for all queues that were created after a specified time and that reside on a specific computer.  
+  
+ When you set any property, the method that sets the property also sets a flag to indicate that it should be included in the filter you are building. You cannot remove individual properties from the search filter. Instead, you remove all properties from the filter by calling <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A>, and then set the properties that you do want to build into the search filter. <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> resets all properties into a "not set" default state.  
+  
+ You must set a property before trying to read it; otherwise, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example iterates through message queues and displays the path of each queue that was created in the last day and that exists on the computer "MyComputer".  
+  
+ [!code-cpp[MessageQueue.GetMessageQueueEnumerator_criteria#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_criteria/CPP/mqgetmessagequeueenumerator_criteria.cpp#1)]
+ [!code-csharp[MessageQueue.GetMessageQueueEnumerator_criteria#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_criteria/CS/mqgetmessagequeueenumerator_criteria.cs#1)]
+ [!code-vb[MessageQueue.GetMessageQueueEnumerator_criteria#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_criteria/VB/mqgetmessagequeueenumerator_criteria.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageQueueCriteria ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueCriteria.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueCriteria" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public Guid Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Category" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the category by which to filter queues in the network.</summary>
+        <value>The queues' category.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The queue category allows an application to categorize its queues. For example, you can place all Billing queues in one category and all Order queues in another. The <xref:System.Messaging.MessageQueue.Category%2A> property is application-defined and has no intrinsic meaning to Message Queuing.  
+  
+ If you are filtering only by category when searching the queues on the network, you can use the method <xref:System.Messaging.MessageQueue.GetPublicQueuesByCategory%2A>, which is specifically designed for this purpose. If you are searching by multiple criteria that include the category, set this <xref:System.Messaging.MessageQueueCriteria.Category%2A> property and pass the parameter into <xref:System.Messaging.MessageQueue.GetPublicQueues%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.Category" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAll">
+      <MemberSignature Language="C#" Value="public void ClearAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueCriteria.ClearAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all properties from being built into a filter and puts all property values into a "not set" state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A>, the method sets flags related to each of the <xref:System.Messaging.MessageQueueCriteria> properties, which indicate that no properties are to be included when the application creates the search filter. <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> resets all properties that currently have values into a "not set" default state. Any properties that you subsequently change are combined using the logical `AND` operator to define a new filter for the <xref:System.Messaging.MessageQueue.GetPublicQueues%2A> method. When you change the property, the method that sets the property also sets a flag to indicate that it should be included in the filter you are building.  
+  
+ You cannot remove individual properties from the search filter. Instead, you remove all properties from the filter by calling <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A>, and then set the properties that you do want to build into the search filter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedAfter">
+      <MemberSignature Language="C#" Value="public DateTime CreatedAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedAfter" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the lower boundary of the queue creation date and time by which to filter queues on the network.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the lower boundary for a queue's creation date and time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessageQueueCriteria> properties are combined using a logical `AND`, so setting both <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A> and <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A> bounds a time interval for the queues' creation. If you set only <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A>, there is no upper boundary on the date.  
+  
+ If you try to set <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A> to a later <xref:System.DateTime> value than <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A>, <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A> is reset to the same (new) value as <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.CreatedAfter" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBefore">
+      <MemberSignature Language="C#" Value="public DateTime CreatedBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedBefore" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedBefore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the upper boundary of the queue creation date and time by which to filter queues on the network.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the upper boundary for a queue's creation date and time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessageQueueCriteria> properties are combined using a logical `AND`, so setting both <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A> and <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A> bounds a time interval for the queues' creation. If you set only <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A>, there is no lower boundary on the date.  
+  
+ If you try to set <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A> to an earlier <xref:System.DateTime> value than <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A>, <xref:System.Messaging.MessageQueueCriteria.CreatedAfter%2A> is reset to the same (new) value as <xref:System.Messaging.MessageQueueCriteria.CreatedBefore%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.CreatedBefore" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the label by which to filter queues in the network.</summary>
+        <value>The queues' label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message queue's label is an application-defined description of the queue. It does not have any intrinsic meaning to Message Queuing.  
+  
+ If you are filtering only by label when searching the queues on the network, you can use the method <xref:System.Messaging.MessageQueue.GetPublicQueuesByLabel%2A>, which is specifically designed for this purpose. If you are searching by multiple criteria that include the label, set this <xref:System.Messaging.MessageQueueCriteria.Label%2A> property and pass the parameter into <xref:System.Messaging.MessageQueue.GetPublicQueues%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.Label" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the computer name by which to filter queues in the network.</summary>
+        <value>The server name of the computer on which the queues reside.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message queue's <xref:System.Messaging.MessageQueue.MachineName%2A> reflects the name of the server on which the queue resides, without preceding backslashes (\\\\).  
+  
+ If you are filtering only by computer name when searching the queues on the network, you can use the method <xref:System.Messaging.MessageQueue.GetPublicQueuesByMachine%2A>, which is specifically designed for this purpose. If you are searching by multiple criteria that include the computer name, set this <xref:System.Messaging.MessageQueueCriteria.MachineName%2A> property and pass the parameter into <xref:System.Messaging.MessageQueue.GetPublicQueues%2A>.  
+  
+ You can also search for private queues on the network by specifying a computer name in the <xref:System.Messaging.MessageQueue.GetPrivateQueuesByMachine%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.MachineName" /> property before reading it.  
+  
+ -or-  
+  
+ The computer name syntax is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedAfter">
+      <MemberSignature Language="C#" Value="public DateTime ModifiedAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModifiedAfter" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the lower boundary of the queue modification date and time by which to filter queues on the network.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the lower boundary for a queue's last modification date and time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A queue's modification flag is set when you change the properties of a queue, but not when a message is read or written to the queue.  
+  
+ The <xref:System.Messaging.MessageQueueCriteria> properties are combined using a logical `AND`, so setting both <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A> and <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A> bounds a time interval for the queues' last modification. If you set only <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A>, there is no upper boundary on the date.  
+  
+ If you try to set <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A> to a later <xref:System.DateTime> value than <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A>, <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A> is reset to the same (new) value as <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.ModifiedAfter" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedBefore">
+      <MemberSignature Language="C#" Value="public DateTime ModifiedBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModifiedBefore" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedBefore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the upper boundary of the queue modification date and time by which to filter queues on the network.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the upper boundary for a queue's last modification date and time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A queue's modification flag is set when you change the properties of a queue, but not when a message is read or written to the queue.  
+  
+ The <xref:System.Messaging.MessageQueueCriteria> properties are combined using a logical `AND`, so setting both <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A> and <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A> bounds a time interval for the queues' last modification. If you set only <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A>, there is no lower boundary on the date.  
+  
+ If you try to set <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A> to an earlier <xref:System.DateTime> value than <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A>, <xref:System.Messaging.MessageQueueCriteria.ModifiedAfter%2A> is reset to the same (new) value as <xref:System.Messaging.MessageQueueCriteria.ModifiedBefore%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application did not set the <see cref="P:System.Messaging.MessageQueueCriteria.ModifiedBefore" /> property before reading it.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

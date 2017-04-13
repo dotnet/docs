@@ -1,0 +1,437 @@
+<Type Name="ConsoleColor" FullName="System.ConsoleColor">
+  <TypeSignature Language="C#" Value="public enum ConsoleColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleColor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ConsoleColor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Console</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants that define foreground and background colors for the console.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example saves the values of the <xref:System.ConsoleColor> enumeration to an array and stores the current values of the <xref:System.Console.BackgroundColor%2A> and <xref:System.Console.ForegroundColor%2A> properties to variables. It then changes the foreground color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current background, and it changes the background color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current foreground. (If the foreground color is the same as the background color, the text isn't visible.) Finally, it calls the <xref:System.Console.ResetColor%2A> method to restore the original console colors.  
+  
+ [!code-csharp[System.ConsoleColor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolecolor/cs/foregroundcolor3.cs#1)]
+ [!code-vb[System.ConsoleColor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.consolecolor/vb/foregroundcolor3.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Black">
+      <MemberSignature Language="C#" Value="Black" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Black = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Black" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color black.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blue">
+      <MemberSignature Language="C#" Value="Blue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Blue = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Blue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color blue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyan">
+      <MemberSignature Language="C#" Value="Cyan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Cyan = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Cyan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color cyan (blue-green).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkBlue">
+      <MemberSignature Language="C#" Value="DarkBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkBlue = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark blue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkCyan">
+      <MemberSignature Language="C#" Value="DarkCyan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkCyan = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkCyan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark cyan (dark blue-green).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGray">
+      <MemberSignature Language="C#" Value="DarkGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkGray = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark gray.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGreen">
+      <MemberSignature Language="C#" Value="DarkGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkGreen = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark green.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkMagenta">
+      <MemberSignature Language="C#" Value="DarkMagenta" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkMagenta = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkMagenta" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark magenta (dark purplish-red).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkRed">
+      <MemberSignature Language="C#" Value="DarkRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkRed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark red.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkYellow">
+      <MemberSignature Language="C#" Value="DarkYellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor DarkYellow = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkYellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color dark yellow (ochre).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray">
+      <MemberSignature Language="C#" Value="Gray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Gray = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Gray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color gray.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Green">
+      <MemberSignature Language="C#" Value="Green" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Green = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Green" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color green.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Magenta">
+      <MemberSignature Language="C#" Value="Magenta" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Magenta = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Magenta" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color magenta (purplish-red).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Red">
+      <MemberSignature Language="C#" Value="Red" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Red = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Red" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color red.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="White">
+      <MemberSignature Language="C#" Value="White" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor White = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.White" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color white.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yellow">
+      <MemberSignature Language="C#" Value="Yellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleColor Yellow = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Yellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The color yellow.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,162 @@
+<Type Name="Int32RectConverter" FullName="System.Windows.Int32RectConverter">
+  <TypeSignature Language="C#" Value="public sealed class Int32RectConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Int32RectConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Int32RectConverter" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts instances of other types to and from an <see cref="T:System.Windows.Int32Rect" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_Int32RectConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Int32RectConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Int32RectConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Int32RectConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Int32RectConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Determines whether an object can be converted from a given type to an instance of an <see cref="T:System.Windows.Int32Rect" />.</summary>
+        <returns>
+          <see langword="true" /> if the type can be converted to an <see cref="T:System.Windows.Int32Rect" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Int32RectConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="destinationType">The desired type this <see cref="T:System.Windows.Int32Rect" /> is being evaluated for conversion.</param>
+        <summary>Determines whether an instance of an <see cref="T:System.Windows.Int32Rect" /> can be converted to a different type.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Int32Rect" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Int32RectConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">Provides contextual information required for conversion.</param>
+        <param name="culture">Cultural information to respect during conversion.</param>
+        <param name="value">The object being converted.</param>
+        <summary>Attempts to convert the specified type to an <see cref="T:System.Windows.Int32Rect" />.</summary>
+        <returns>The <see cref="T:System.Windows.Int32Rect" /> created from converting <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.KeySplineConverter.CanConvertFrom%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown if the specified object is NULL or is a type that cannot be converted to an <see cref="T:System.Windows.Int32Rect" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Int32RectConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Provides contextual information required for conversion.</param>
+        <param name="culture">Cultural information to respect during conversion.</param>
+        <param name="value">The <see cref="T:System.Windows.Int32Rect" /> to convert.</param>
+        <param name="destinationType">The type to convert this <see cref="T:System.Windows.Int32Rect" /> to.</param>
+        <summary>Attempts to convert an <see cref="T:System.Windows.Int32Rect" /> to a specified type.</summary>
+        <returns>The object created from converting this <see cref="T:System.Windows.Int32Rect" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Int32RectConverter.CanConvertTo%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not an <see cref="T:System.Windows.Int32Rect" />, or if the <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

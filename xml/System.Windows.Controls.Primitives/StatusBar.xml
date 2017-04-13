@@ -1,0 +1,337 @@
+<Type Name="StatusBar" FullName="System.Windows.Controls.Primitives.StatusBar">
+  <TypeSignature Language="C#" Value="public class StatusBar : System.Windows.Controls.ItemsControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi StatusBar extends System.Windows.Controls.ItemsControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.StatusBar" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ItemsControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Primitives.StatusBarItem))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that displays items and information in a horizontal bar in an application window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.StatusBar> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
+  
+ A <xref:System.Windows.Controls.Primitives.StatusBar> is a bar that typically displays a horizontal row of images and status information. You can divide the items in a <xref:System.Windows.Controls.Primitives.StatusBar> into groups that contain related items, by using <xref:System.Windows.Controls.Separator> controls. The items in a <xref:System.Windows.Controls.Primitives.StatusBar> can display text, graphics, or other complex content. Items in a <xref:System.Windows.Controls.Primitives.StatusBar> are defined as <xref:System.Windows.Controls.Primitives.StatusBarItem> objects.  
+  
+ Events that are defined on a <xref:System.Windows.Controls.Primitives.StatusBarItem> are raised when the user clicks the item in the <xref:System.Windows.Controls.Primitives.StatusBar>.  
+  
+ The <xref:System.Windows.Controls.Primitives.StatusBar> does not receive keyboard focus.  
+  
+ The following illustration shows an example of a <xref:System.Windows.Controls.Primitives.StatusBar>.  
+  
+ **Status Bar**  
+  
+ ![Status bar](~/add/media/ss-ctl-statusbar.GIF "Status bar")  
+  
+## Customizing the StatusBar Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.StatusBar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.StatusBar>, see [StatusBar Styles and Templates](~/docs/framework/wpf/controls/statusbar-styles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Primitives.StatusBar>.  
+  
+ [!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]
+ <!-- TODO: review snippet reference [!code-xml[StatusBar_Snips#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StatusBar_Snips/XAML/Window1.xaml#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.GetContainerForItemOverride" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Controls.Primitives.StatusBarItem" />.</summary>
+        <returns>The element used to display the specified item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemItsOwnContainerOverride">
+      <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The specified object to evaluate.</param>
+        <summary>Determines if the specified item is (or is eligible to be) its own container.</summary>
+        <returns>Returns <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method return `true` if the item is a <xref:System.Windows.Controls.Primitives.StatusBarItem> or a <xref:System.Windows.Controls.Separator>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ItemContainerTemplateSelector ItemContainerTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ItemContainerTemplateSelector ItemContainerTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ItemContainerTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom logic for choosing a template used to display each item.</summary>
+        <value>A custom object that provides logic and returns an item container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.Windows.Controls.ItemContainerTemplateSelector> to choose different item containers if the items in your collection are the same type and you need to provide custom logic to choose the item container.  
+  
+<a name="dependencyPropertyInfo_ItemContainerTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemContainerTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemContainerTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelector" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Specifies an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" /> for this <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The item to display in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</param>
+        <param name="item">The content of the item to display.</param>
+        <summary>Prepares an item for display in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `element` is a <xref:System.Windows.Controls.Separator>, this method sets its <xref:System.Windows.Style>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorStyleKey">
+      <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SeparatorStyleKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SeparatorStyleKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.SeparatorStyleKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResourceKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key that represents the style to use for <see cref="T:System.Windows.Controls.Separator" /> objects in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
+        <value>A <see cref="T:System.Windows.ResourceKey" /> that references the style to use for <see cref="T:System.Windows.Controls.Separator" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SeparatorStyleKey"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object x:Key="{x:Static StatusBar.SeparatorStyleKey}"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldApplyItemContainerStyle">
+      <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="container">The container for the item.</param>
+        <param name="item">The object to evaluate.</param>
+        <summary>Determines whether to apply the <see cref="T:System.Windows.Style" /> for an item in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> to an object.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="item" /> is not a <see cref="T:System.Windows.Controls.Separator" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method makes sure that the style for an item in a <xref:System.Windows.Controls.Primitives.StatusBar> is not applied to a <xref:System.Windows.Controls.Separator> element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesItemContainerTemplate">
+      <MemberSignature Language="C#" Value="public bool UsesItemContainerTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesItemContainerTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the menu selects different item containers, depending on the type of the item in the underlying collection or some other heuristic.</summary>
+        <value>
+          <see langword="true" /> the menu selects different item containers; otherwise, <see langword="false" />.  
+  
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is useful if you want to create a menu by binding to a collection.  The item container is the UI element that displays the object in a collection. If you want to bind to a collection to create a menu that contains <xref:System.Windows.Controls.Primitives.StatusBarItem> objects and <xref:System.Windows.Controls.Separator> objects, set the <xref:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate%2A> property to true and create an <xref:System.Windows.Controls.ItemContainerTemplate> for each type of object in your collection.  Each <xref:System.Windows.Controls.ItemContainerTemplate> must contain either a <xref:System.Windows.Controls.Primitives.StatusBarItem> or a <xref:System.Windows.Controls.Separator>.  
+  
+<a name="dependencyPropertyInfo_UsesItemContainerTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesItemContainerTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UsesItemContainerTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UsesItemContainerTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,955 @@
+<Type Name="DbExpressionKind" FullName="System.Data.Common.CommandTrees.DbExpressionKind">
+  <TypeSignature Language="C#" Value="public enum DbExpressionKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DbExpressionKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains values that each expression class uses to denote the operation it represents. The <see cref="P:System.Data.Common.CommandTrees.DbExpression.ExpressionKind" /> property of an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> can be retrieved to determine which operation that expression represents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.Common.CommandTrees.DbExpressionKind> enumeration to specify the various kinds of expressions. The Members table lists the functions that are members of this class and the type of expressions they specify.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see langword="true" />-for-all expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="And" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind And = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.And" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Logical AND expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Any">
+      <MemberSignature Language="C#" Value="Any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Any = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Any" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see langword="true" />-for-any expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Case">
+      <MemberSignature Language="C#" Value="Case" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Case = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Case" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Conditional case statement expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast">
+      <MemberSignature Language="C#" Value="Cast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Cast = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Cast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Polymorphic type cast expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Constant">
+      <MemberSignature Language="C#" Value="Constant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Constant = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Constant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Constant value expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossApply">
+      <MemberSignature Language="C#" Value="CrossApply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind CrossApply = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossApply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cross apply expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossJoin">
+      <MemberSignature Language="C#" Value="CrossJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind CrossJoin = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cross join expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deref">
+      <MemberSignature Language="C#" Value="Deref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Deref = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Deref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereference expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Distinct">
+      <MemberSignature Language="C#" Value="Distinct" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Distinct = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Distinct" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Duplicate removal expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="Divide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Divide = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Divide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Division expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="Element" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Element = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Element" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set-to-singleton conversion expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityRef">
+      <MemberSignature Language="C#" Value="EntityRef" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind EntityRef = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.EntityRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Entity reference value retrieval expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="Equals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Equals = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Equals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Equality expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Except">
+      <MemberSignature Language="C#" Value="Except" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Except = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Except" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set subtraction expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="Filter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Filter = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Filter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Restriction expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullOuterJoin">
+      <MemberSignature Language="C#" Value="FullOuterJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind FullOuterJoin = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.FullOuterJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Full outer join expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Function">
+      <MemberSignature Language="C#" Value="Function" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Function = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Function" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Standalone function expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="GreaterThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GreaterThan = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Greater than expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEquals">
+      <MemberSignature Language="C#" Value="GreaterThanOrEquals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GreaterThanOrEquals = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Greater than or equal expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupBy">
+      <MemberSignature Language="C#" Value="GroupBy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GroupBy = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GroupBy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Grouping expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerJoin">
+      <MemberSignature Language="C#" Value="InnerJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind InnerJoin = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.InnerJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inner join expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="Intersect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Intersect = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Intersect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set intersection expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="IsEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsEmpty = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsEmpty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Empty set determination expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="IsNull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsNull = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsNull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Null determination expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOf">
+      <MemberSignature Language="C#" Value="IsOf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsOf = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type comparison (specified Type or Subtype) expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOfOnly">
+      <MemberSignature Language="C#" Value="IsOfOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsOfOnly = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOfOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type comparison (specified Type only) expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lambda">
+      <MemberSignature Language="C#" Value="Lambda" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Lambda = int32(57)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Lambda" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Lambda function expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftOuterJoin">
+      <MemberSignature Language="C#" Value="LeftOuterJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LeftOuterJoin = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LeftOuterJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Left outer join expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="LessThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LessThan = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Less than expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEquals">
+      <MemberSignature Language="C#" Value="LessThanOrEquals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LessThanOrEquals = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Less than or equal expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Like">
+      <MemberSignature Language="C#" Value="Like" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Like = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Like" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>String comparison expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Limit">
+      <MemberSignature Language="C#" Value="Limit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Limit = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Limit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Result count restriction (TOP n).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minus">
+      <MemberSignature Language="C#" Value="Minus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Minus = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Minus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Subtraction expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modulo">
+      <MemberSignature Language="C#" Value="Modulo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Modulo = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Modulo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Modulo expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="Multiply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Multiply = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Multiply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiplication expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NewInstance">
+      <MemberSignature Language="C#" Value="NewInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind NewInstance = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NewInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Instance, row, and set construction expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Not">
+      <MemberSignature Language="C#" Value="Not" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Not = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Not" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Logical NOT expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEquals">
+      <MemberSignature Language="C#" Value="NotEquals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind NotEquals = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NotEquals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inequality expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="Null" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Null = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Null expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OfType">
+      <MemberSignature Language="C#" Value="OfType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OfType = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set members by type (or subtype) expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OfTypeOnly">
+      <MemberSignature Language="C#" Value="OfTypeOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OfTypeOnly = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set members by exact type expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="Or" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Or = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Or" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Logical OR expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OuterApply">
+      <MemberSignature Language="C#" Value="OuterApply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OuterApply = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OuterApply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Outer apply expressions</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterReference">
+      <MemberSignature Language="C#" Value="ParameterReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind ParameterReference = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.ParameterReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reference to a parameter expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Plus">
+      <MemberSignature Language="C#" Value="Plus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Plus = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Plus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Addition expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Project">
+      <MemberSignature Language="C#" Value="Project" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Project = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Project" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Projection expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="Property" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Property = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Static or instance property retrieval expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ref">
+      <MemberSignature Language="C#" Value="Ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Ref = int32(47)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reference expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RefKey">
+      <MemberSignature Language="C#" Value="RefKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind RefKey = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RefKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ref key value retrieval expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipNavigation">
+      <MemberSignature Language="C#" Value="RelationshipNavigation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind RelationshipNavigation = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RelationshipNavigation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Relationship (composition or association) navigation expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scan">
+      <MemberSignature Language="C#" Value="Scan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Scan = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Scan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Entity or relationship set scan expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="Skip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Skip = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Skip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Skip elements of an ordered collection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="Sort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Sort = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Sort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sorting expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Treat">
+      <MemberSignature Language="C#" Value="Treat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Treat = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Treat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type conversion expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnaryMinus">
+      <MemberSignature Language="C#" Value="UnaryMinus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind UnaryMinus = int32(54)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnaryMinus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Negation expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnionAll">
+      <MemberSignature Language="C#" Value="UnionAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind UnionAll = int32(55)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnionAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set union (with duplicates) expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableReference">
+      <MemberSignature Language="C#" Value="VariableReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind VariableReference = int32(56)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.VariableReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reference to a variable expressions.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1288 @@
+<Type Name="ServiceController" FullName="System.ServiceProcess.ServiceController">
+  <TypeSignature Language="C#" Value="public class ServiceController : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceController extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceController" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.ServiceProcess.Design.ServiceControllerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceProcess.ServiceProcessDescription("ServiceControllerDesc")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a Windows service and allows you to connect to a running or stopped service, manipulate it, or get information about it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.ServiceProcess.ServiceController> class to connect to and control the behavior of existing services. When you create an instance of the <xref:System.ServiceProcess.ServiceController> class, you set its properties so it interacts with a specific Windows service. You can then use the class to start, stop, and otherwise manipulate the service.  
+  
+ You will most likely use the <xref:System.ServiceProcess.ServiceController> component in an administrative capacity. For example, you could create a Windows or Web application that sends custom commands to a service through the <xref:System.ServiceProcess.ServiceController> instance. This would be useful, because the Service Control Manager (SCM) Microsoft Management Console snap-in does not support custom commands.  
+  
+ After you create an instance of <xref:System.ServiceProcess.ServiceController>, you must set two properties on it to identify the service with which it interacts: the computer name and the name of the service you want to control.  
+  
+> [!NOTE]
+>  By default, <xref:System.ServiceProcess.ServiceController.MachineName%2A> is set to the local computer, so you do not need to change it unless you want to set the instance to point to another computer.  
+  
+ Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=fullName> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
+  
+ The set of commands a service can process depends on its properties; for example, you can set the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property for a service to `false`. This setting renders the `Stop` command unavailable on that particular service; it prevents you from stopping the service from the SCM by disabling the necessary button. If you try to stop the service from your code, the system raises an error and displays the error message "Failed to stop `servicename`."  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController> class to control the `SimpleService` service example.  
+  
+ [!code-csharp[ServiceControllerClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#1)]
+ [!code-vb[ServiceControllerClass#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceController ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class that is not associated with a specific service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceController (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name that identifies the service to the system. This can also be the display name for the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class that is associated with an existing service on the local computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=fullName> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+ [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceController (string name, string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name that identifies the service to the system. This can also be the display name for the service.</param>
+        <param name="machineName">The computer on which the service resides.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class that is associated with an existing service on the specified computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the `machineName` parameter, you can use "." to represent the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is invalid.  
+  
+ -or-  
+  
+ <paramref name="machineName" /> is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPauseAndContinue">
+      <MemberSignature Language="C#" Value="public bool CanPauseAndContinue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanPauseAndContinue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanPauseAndContinue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the service can be paused and resumed.</summary>
+        <value>
+          <see langword="true" /> if the service can be paused; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanPauseAndContinue%2A> property to determine whether a service can pause and continue. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+ [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanShutdown">
+      <MemberSignature Language="C#" Value="public bool CanShutdown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanShutdown" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanShutdown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanShutdown")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the service should be notified when the system is shutting down.</summary>
+        <value>
+          <see langword="true" /> if the service should be notified when the system is shutting down; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanShutdown%2A> property to determine whether a service provides a handler for a shutdown event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+ [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanStop">
+      <MemberSignature Language="C#" Value="public bool CanStop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanStop" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanStop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanStop")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the service can be stopped after it has started.</summary>
+        <value>
+          <see langword="true" /> if the service can be stopped and the <see cref="M:System.ServiceProcess.ServiceBase.OnStop" /> method called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property to determine whether a service provides a handler for a stop event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+ [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disconnects this <see cref="T:System.ServiceProcess.ServiceController" /> instance from the service and frees all the resources that the instance allocated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.ServiceController.Close%2A> releases all the handles associated with the <xref:System.ServiceProcess.ServiceController> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="public void Continue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Continue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Continue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Continues a service after it has been paused.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call <xref:System.ServiceProcess.ServiceController.Continue%2A> for a service, its status is first changed to `ContinuePending` and then, when the <xref:System.ServiceProcess.ServiceController.Continue%2A> method returns, it is changed to `Running`.  
+  
+ You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Continue%2A> method to continue a paused service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#5)]
+ [!code-vb[ServiceControllerClass#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DependentServices">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceController[] DependentServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceController[] DependentServices" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DependentServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPDependentServices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the set of services that depends on the service associated with this <see cref="T:System.ServiceProcess.ServiceController" /> instance.</summary>
+        <value>An array of <see cref="T:System.ServiceProcess.ServiceController" /> instances, each of which is associated with a service that depends on this service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> array represents the services that the system stops if your application calls <xref:System.ServiceProcess.ServiceController.Stop%2A> for this service.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
+  
+ [!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
+ [!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
+ [!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for connecting to existing services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Browse" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPDisplayName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a friendly name for the service.</summary>
+        <value>The friendly name of the service, which can be used to identify the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string (""), but setting the property to `null` throws an exception.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
+  
+ [!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
+ [!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
+ [!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceController.DisplayName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.ServiceProcess.ServiceController" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ServiceProcess.ServiceController> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteCommand">
+      <MemberSignature Language="C#" Value="public void ExecuteCommand (int command);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteCommand(int32 command) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.ExecuteCommand(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="command">An application-defined command flag that indicates which custom command to execute. The value must be between 128 and 256, inclusive.</param>
+        <summary>Executes a custom command on the service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call <xref:System.ServiceProcess.ServiceController.ExecuteCommand%2A>, the status of the service does not change. If the service was started, the status remains `Running`. If the service was stopped, the status remains `Stopped`, and so on. To process the custom command, the service must override the <xref:System.ServiceProcess.ServiceBase.OnCustomCommand%2A> method and provide a handler for the command identified by the `command` parameter.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=fullName> method to execute custom commands in the `SimpleService` service example.  
+  
+ [!code-csharp[ServiceContoller_ExecuteCommand#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/CS/program.cs#1)]
+ [!code-vb[ServiceContoller_ExecuteCommand#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/VB/module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevices">
+      <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetDevices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetDevices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the device driver services on the local computer.</summary>
+        <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a device driver service on the local computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the local computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
+  
+ [!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
+ [!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
+ [!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevices">
+      <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetDevices (string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetDevices(string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="machineName">The computer from which to retrieve the device driver services.</param>
+        <summary>Retrieves the device driver services on the specified computer.</summary>
+        <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a device driver service on the specified computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the specified computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServices">
+      <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetServices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves all the services on the local computer, except for the device driver services.</summary>
+        <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a service on the local computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the local computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the services that are running on the local computer.  
+  
+ [!code-cpp[ServiceController#6](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#6)]
+ [!code-csharp[ServiceController#6](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#6)]
+ [!code-vb[ServiceController#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServices">
+      <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetServices (string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetServices(string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="machineName">The computer from which to retrieve the services.</param>
+        <summary>Retrieves all the services on the specified computer, except for the device driver services.</summary>
+        <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a service on the specified computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the specified computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(".")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPMachineName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the computer on which this service resides.</summary>
+        <value>The name of the computer that is running the service associated with this <see cref="T:System.ServiceProcess.ServiceController" /> instance. The default is the local computer (".").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The computer name is the name of the server that is running this service, without the preceding backslash characters (\\\\).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.ServiceProcess.ServiceController.MachineName" /> syntax is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Pause" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Suspends a service's operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Pause%2A> method to pause a service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
+ [!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes property values by resetting the properties to their current values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.ServiceController.Refresh%2A> method causes the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A>, <xref:System.ServiceProcess.ServiceController.DependentServices%2A>, and <xref:System.ServiceProcess.ServiceController.Status%2A> properties to be reset to their current values when they are next referenced.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Refresh%2A> method to obtain the status of a service. The code instructs a service to pause, and then waits for the status to reflect the change. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+  
+ [!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
+ [!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceHandle">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.SafeHandle ServiceHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.InteropServices.SafeHandle ServiceHandle" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.SafeHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle for the service.</summary>
+        <value>A <see cref="T:System.Runtime.InteropServices.SafeHandle" /> that contains the handle for the service.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceName">
+      <MemberSignature Language="C#" Value="public string ServiceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceProcess.Design.ServiceNameConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPServiceName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name that identifies the service that this instance references.</summary>
+        <value>The name that identifies the service that this <see cref="T:System.ServiceProcess.ServiceController" /> instance references. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.ServiceController.ServiceName%2A> identifies the service to the Service Control Manager. Changing this property causes the <xref:System.ServiceProcess.ServiceController> instance to bind to another service, it does not change what the Service Control Manager's Microsoft Management Console snap-in displays.  
+  
+ When you are implementing a custom service, the value of this property must be identical to the name recorded for the service in the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property of the corresponding <xref:System.ServiceProcess.ServiceInstaller> class. In code, the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> is usually set in the `main()` function of the executable.  
+  
+ When you reset the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> property, the method that sets the property sets this instance's <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceController.ServiceName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The syntax of the <see cref="P:System.ServiceProcess.ServiceController.ServiceName" /> property is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicesDependedOn">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceController[] ServicesDependedOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceController[] ServicesDependedOn" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServicesDependedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPServicesDependedOn")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceController[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The set of services that this service depends on.</summary>
+        <value>An array of <see cref="T:System.ServiceProcess.ServiceController" /> instances, each of which is associated with a service that must be running for this service to run.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any service in the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> array is not running, you will not be able to start this service.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that the Messenger service is dependent on.  
+  
+ [!code-cpp[ServiceController#4](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#4)]
+ [!code-csharp[ServiceController#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#4)]
+ [!code-vb[ServiceController#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for connecting to existing services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Browse" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceType">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceType ServiceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceType ServiceType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPServiceType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of service that this object references.</summary>
+        <value>One of the <see cref="T:System.ServiceProcess.ServiceType" /> values, used to indicate the network service type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service type indicates how the service is used by the system. The value of the <xref:System.ServiceProcess.ServiceController.ServiceType%2A> property represents a set of flags combined using the bitwise OR operator.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
+  
+ [!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
+ [!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
+ [!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts the service, passing no arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+  
+ [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
+ [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
+ [!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (string[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(string[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="args">An array of arguments to pass to the service when it starts.</param>
+        <summary>Starts a service, passing the specified arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service cannot be started.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="args" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ A member of the array is <see langword="null" />.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StartType">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceStartMode StartType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceStartMode StartType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.StartType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPStartType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceStartMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates how the service represented by the <see cref="T:System.ServiceProcess.ServiceController" /> object starts.</summary>
+        <value>A value that indicates how the service starts.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for browsing services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Browse" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceControllerStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPStatus")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of the service that is referenced by this instance.</summary>
+        <value>One of the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> values that indicates whether the service is running, stopped, or paused, or whether a start, stop, pause, or continue command is pending.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The status indicates the current state of the service. The set of possible values includes several that indicate whether a state-changing command is pending.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+  
+ [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+ [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+ [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops this service and any services that are dependent on this service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any services depend on this service for their operation, they will be stopped before this service is stopped. The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> property contains the set of services that depend on this one.  
+  
+ If you stop a service that this service depends on, call the <xref:System.ServiceProcess.ServiceController.Stop%2A> method on this service within the <xref:System.ServiceProcess.ServiceController.Stop%2A> method of the parent service. The <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> property contains the services that this service depends on.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+  
+ [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+ [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+ [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForStatus">
+      <MemberSignature Language="C#" Value="public void WaitForStatus (System.ServiceProcess.ServiceControllerStatus desiredStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForStatus(valuetype System.ServiceProcess.ServiceControllerStatus desiredStatus) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredStatus" Type="System.ServiceProcess.ServiceControllerStatus" />
+      </Parameters>
+      <Docs>
+        <param name="desiredStatus">The status to wait for.</param>
+        <summary>Infinitely waits for the service to reach the specified status.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
+  
+> [!NOTE]
+>  The <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> method waits approximately 250 milliseconds between each status check.  <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> cannot detect the case of the observed service changing to the `desiredStatus` and then immediately to another status in that interval.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+  
+ [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
+ [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
+ [!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForStatus">
+      <MemberSignature Language="C#" Value="public void WaitForStatus (System.ServiceProcess.ServiceControllerStatus desiredStatus, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForStatus(valuetype System.ServiceProcess.ServiceControllerStatus desiredStatus, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredStatus" Type="System.ServiceProcess.ServiceControllerStatus" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="desiredStatus">The status to wait for.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> object specifying the amount of time to wait for the service to reach the specified status.</param>
+        <summary>Waits for the service to reach the specified status or for the specified time-out to expire.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
+  
+> [!NOTE]
+>  The <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> method waits approximately 250 milliseconds between each status check.  <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> cannot detect the case of the observed service changing to the `desiredStatus` and then immediately to another status in that interval.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
+        <exception cref="T:System.ServiceProcess.TimeoutException">The value specified for the <paramref name="timeout" /> parameter expires.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

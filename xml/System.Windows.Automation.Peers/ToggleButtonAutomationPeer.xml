@@ -1,0 +1,137 @@
+<Type Name="ToggleButtonAutomationPeer" FullName="System.Windows.Automation.Peers.ToggleButtonAutomationPeer">
+  <TypeSignature Language="C#" Value="public class ToggleButtonAutomationPeer : System.Windows.Automation.Peers.ButtonBaseAutomationPeer, System.Windows.Automation.Provider.IToggleProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToggleButtonAutomationPeer extends System.Windows.Automation.Peers.ButtonBaseAutomationPeer implements class System.Windows.Automation.Provider.IToggleProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ButtonBaseAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IToggleProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToggleButtonAutomationPeer (System.Windows.Controls.Primitives.ToggleButton owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Primitives.ToggleButton owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.#ctor(System.Windows.Controls.Primitives.ToggleButton)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Primitives.ToggleButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The control type for the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "Button".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">One of the enumeration values.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Toggle" />, this method returns the current instance of the <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />, otherwise <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IToggleProvider.Toggle">
+      <MemberSignature Language="C#" Value="void IToggleProvider.Toggle ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IToggleProvider.Toggle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#Toggle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IToggleProvider.ToggleState">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#ToggleState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>the toggle state of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

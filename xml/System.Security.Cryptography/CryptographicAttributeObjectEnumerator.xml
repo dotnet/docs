@@ -1,0 +1,122 @@
+<Type Name="CryptographicAttributeObjectEnumerator" FullName="System.Security.Cryptography.CryptographicAttributeObjectEnumerator">
+  <TypeSignature Language="C#" Value="public sealed class CryptographicAttributeObjectEnumerator : System.Collections.IEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CryptographicAttributeObjectEnumerator extends System.Object implements class System.Collections.IEnumerator" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicAttributeObjectEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides enumeration functionality for the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObject Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObject Current" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectEnumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CryptographicAttributeObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object from the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object that represents the current cryptographic attribute in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectEnumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the enumeration to the next <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
+        <returns>
+          <see langword="true" /> if the enumeration successfully moved to the next <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object; <see langword="false" /> if the enumerator is at the end of the enumeration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectEnumerator.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the enumeration to the first <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerator.Current">
+      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object from the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object that represents the current cryptographic attribute in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

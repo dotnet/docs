@@ -1,0 +1,1206 @@
+<Type Name="ListControl" FullName="System.Windows.Forms.ListControl">
+  <TypeSignature Language="C#" Value="public abstract class ListControl : System.Windows.Forms.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ListControl extends System.Windows.Forms.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.LookupBindingProperties("DataSource", "DisplayMember", "ValueMember", "SelectedValue")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a common implementation of members for the <see cref="T:System.Windows.Forms.ListBox" /> and <see cref="T:System.Windows.Forms.ComboBox" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListControl> class provides implementations of common elements for the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls.  
+  
+ The following properties are of primary concern to users of a data-bound <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox>: <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+  
+ [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+ [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+ [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ListControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowSelection">
+      <MemberSignature Language="C#" Value="protected virtual bool AllowSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.AllowSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the list enables selection of list items.</summary>
+        <value>
+          <see langword="true" /> if the list enables list item selection; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataManager">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.CurrencyManager DataManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CurrencyManager DataManager" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.DataManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CurrencyManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this control.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this control. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListControl.DataManager%2A> property is valid if the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set. If this is not a data-bound control, the default is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.AttributeProvider(typeof(System.ComponentModel.IListSource))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source for this <see cref="T:System.Windows.Forms.ListControl" />.</summary>
+        <value>An object that implements the <see cref="T:System.Collections.IList" /> or <see cref="T:System.ComponentModel.IListSource" /> interfaces, such as a <see cref="T:System.Data.DataSet" /> or an <see cref="T:System.Array" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are two ways to fill the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ListBox> controls.  
+  
+ For example, you can add objects to the <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method. You can also add objects to a <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties to fill the <xref:System.Windows.Forms.ComboBox>.  
+  
+ When the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set, a user cannot modify the items collection.  
+  
+ If setting the <xref:System.Windows.Forms.ListControl.DataSource%2A> property causes the data source to change, the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event is raised. If setting this property causes the data member to change, the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event is raised.  
+  
+ When you set <xref:System.Windows.Forms.ListControl.DataSource%2A> to `null`, <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is set to an empty string ("").  
+  
+   
+  
+## Examples  
+ The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+  
+ [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+ [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+ [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The assigned value does not implement the <see cref="T:System.Collections.IList" /> or <see cref="T:System.ComponentModel.IListSource" /> interfaces.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#142](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#142)]
+ [!code-vb[System.Windows.Forms.EventExamples#142](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#142)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMember">
+      <MemberSignature Language="C#" Value="public string DisplayMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayMember" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.DisplayMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberFieldEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Forms.Design.DataMemberFieldConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to display for this <see cref="T:System.Windows.Forms.ListControl" />.</summary>
+        <value>A <see cref="T:System.String" /> specifying the name of an object property that is contained in the collection specified by the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The controls that inherit from <xref:System.Windows.Forms.ListControl> can display diverse types of objects. If the specified property does not exist on the object or the value of <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is an empty string (""), the results of the object's `ToString` method are displayed instead.  
+  
+ If the new display member cannot be set, the previous display member setting is maintained.  
+  
+   
+  
+## Examples  
+ The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+  
+ [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+ [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+ [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DisplayMemberChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplayMemberChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.DisplayMemberChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#143](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#143)]
+ [!code-vb[System.Windows.Forms.EventExamples#143](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#143)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemOnProperty">
+      <MemberSignature Language="C#" Value="protected object FilterItemOnProperty (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object FilterItemOnProperty(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.FilterItemOnProperty(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object the <see cref="T:System.Windows.Forms.ListControl" /> item is bound to.</param>
+        <summary>Retrieves the current value of the <see cref="T:System.Windows.Forms.ListControl" /> item, if it is a property of an object, given the item.</summary>
+        <returns>The filtered object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterItemOnProperty">
+      <MemberSignature Language="C#" Value="protected object FilterItemOnProperty (object item, string field);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object FilterItemOnProperty(object item, string field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.FilterItemOnProperty(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="field" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object the <see cref="T:System.Windows.Forms.ListControl" /> item is bound to.</param>
+        <param name="field">The property name of the item the <see cref="T:System.Windows.Forms.ListControl" /> is bound to.</param>
+        <summary>Returns the current value of the <see cref="T:System.Windows.Forms.ListControl" /> item, if it is a property of an object given the item and the property name.</summary>
+        <returns>The filtered object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListControlConvertEventHandler Format;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListControlConvertEventHandler Format" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.Format" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListControlConvertEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the control is bound to a data value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListControl.Format> event is raised before each visible item in the <xref:System.Windows.Forms.ListControl> is formatted. Handling this event gives you access to the string to be displayed for this list item, through the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> property of the <xref:System.Windows.Forms.ListControlConvertEventArgs>.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.Format> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.Format> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#144](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#144)]
+ [!code-vb[System.Windows.Forms.EventExamples#144](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#144)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatInfo">
+      <MemberSignature Language="C#" Value="public IFormatProvider FormatInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.FormatInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IFormatProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IFormatProvider" /> that provides custom formatting behavior.</summary>
+        <value>The <see cref="T:System.IFormatProvider" /> implementation that provides custom formatting behavior.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.ListControl.FormatInfo%2A> property will override the default formatting behavior, which uses the <xref:System.Windows.Forms.Application.CurrentCulture%2A> setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatInfoChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FormatInfoChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FormatInfoChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.FormatInfoChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListControl.FormatInfo" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#145](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#145)]
+ [!code-vb[System.Windows.Forms.EventExamples#145](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatString">
+      <MemberSignature Language="C#" Value="public string FormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.FormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.FormatStringEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format-specifier characters that indicate how a value is to be displayed.</summary>
+        <value>The string of format-specifier characters that indicates how a value is to be displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format string used must follow standard [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] format specifications. For more information, see [Formatting Types in the .NET Framework](~/docs/standard/base-types/formatting-types.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatStringChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FormatStringChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FormatStringChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.FormatStringChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when value of the <see cref="P:System.Windows.Forms.ListControl.FormatString" /> property changes</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#146](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#146)]
+ [!code-vb[System.Windows.Forms.EventExamples#146](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#146)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattingEnabled">
+      <MemberSignature Language="C#" Value="public bool FormattingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FormattingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.FormattingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether formatting is applied to the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property of the <see cref="T:System.Windows.Forms.ListControl" />.</summary>
+        <value>
+          <see langword="true" /> if formatting of the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> property to `true` causes the <xref:System.Windows.Forms.ListControl.Format> event to be raised for each visible member of the <xref:System.Windows.Forms.ListControl>.  
+  
+ <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
+  
+-   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `false`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will not be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
+  
+-   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `true`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattingEnabledChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FormattingEnabledChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FormattingEnabledChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.FormattingEnabledChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListControl.FormattingEnabled" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#147](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#147)]
+ [!code-vb[System.Windows.Forms.EventExamples#147](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#147)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemText">
+      <MemberSignature Language="C#" Value="public string GetItemText (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetItemText(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.GetItemText(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object from which to get the contents to display.</param>
+        <summary>Returns the text representation of the specified item.</summary>
+        <returns>If the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property is not specified, the value returned by <see cref="M:System.Windows.Forms.ListControl.GetItemText(System.Object)" /> is the value of the item's <see langword="ToString" /> method. Otherwise, the method returns the string value of the member specified in the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property for the object specified in the <paramref name="item" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputKey">
+      <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">One of the values of <see cref="T:System.Windows.Forms.Keys" />.</param>
+        <summary>Handles special input keys, such as PAGE UP, PAGE DOWN, HOME, END, and so on.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="keyData" /> parameter specifies the <see cref="F:System.Windows.Forms.Keys.End" />, <see cref="F:System.Windows.Forms.Keys.Home" />, <see cref="F:System.Windows.Forms.Keys.PageUp" />, or <see cref="F:System.Windows.Forms.Keys.PageDown" /> key; <see langword="false" /> if the <paramref name="keyData" /> parameter specifies <see cref="F:System.Windows.Forms.Keys.Alt" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnBindingContextChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BindingContextChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataSourceChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnDataSourceChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DataSourceChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnDataSourceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnDataSourceChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnDataSourceChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisplayMemberChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDisplayMemberChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisplayMemberChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnDisplayMemberChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DisplayMemberChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnDisplayMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnDisplayMemberChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnDisplayMemberChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFormat">
+      <MemberSignature Language="C#" Value="protected virtual void OnFormat (System.Windows.Forms.ListControlConvertEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormat(class System.Windows.Forms.ListControlConvertEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnFormat(System.Windows.Forms.ListControlConvertEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.ListControlConvertEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.ListControlConvertEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.Format" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnFormat%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnFormat(System.Windows.Forms.ListControlConvertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnFormat(System.Windows.Forms.ListControlConvertEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFormatInfoChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnFormatInfoChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormatInfoChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnFormatInfoChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormatInfoChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnFormatInfoChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnFormatInfoChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnFormatInfoChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFormatStringChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnFormatStringChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormatStringChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnFormatStringChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormatStringChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnFormatStringChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnFormatStringChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnFormatStringChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFormattingEnabledChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnFormattingEnabledChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormattingEnabledChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnFormattingEnabledChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormattingEnabledChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnFormattingEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnFormattingEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnFormattingEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedIndexChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedIndexChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedValueChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedValueChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedValueChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnSelectedValueChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnSelectedValueChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnSelectedValueChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValueMemberChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnValueMemberChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValueMemberChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.OnValueMemberChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.ValueMemberChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListControl.OnValueMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListControl.OnValueMemberChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListControl.OnValueMemberChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshItem">
+      <MemberSignature Language="C#" Value="protected abstract void RefreshItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RefreshItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.RefreshItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item whose data to refresh.</param>
+        <summary>When overridden in a derived class, resynchronizes the data of the object at the specified index with the contents of the data source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshItems">
+      <MemberSignature Language="C#" Value="protected virtual void RefreshItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RefreshItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.RefreshItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, resynchronizes the item data with the contents of the data source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public abstract int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the zero-based index of the currently selected item.</summary>
+        <value>A zero-based index of the currently selected item. A value of negative one (-1) is returned if no item is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValue">
+      <MemberSignature Language="C#" Value="public object SelectedValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.SelectedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the member property specified by the <see cref="P:System.Windows.Forms.ListControl.ValueMember" /> property.</summary>
+        <value>An object containing the value of the member of the data source specified by the <see cref="P:System.Windows.Forms.ListControl.ValueMember" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a property is not specified in <xref:System.Windows.Forms.ListControl.ValueMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returns the results of the `ToString` method of the object.  
+  
+ <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
+  
+-   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `false`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will not be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
+  
+-   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `true`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returning the value of the property specified by the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property. This code is an excerpt from the example shown in the <xref:System.Windows.Forms.ListControl> class overview. See <xref:System.Windows.Forms.ListControl> for the whole code listing.  
+  
+ [!code-cpp[ListControl#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#3)]
+ [!code-csharp[ListControl#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#3)]
+ [!code-vb[ListControl#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assigned value is <see langword="null" /> or the empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedValueChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectedValueChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedValueChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.SelectedValueChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.SelectedValue" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. The example also uses the <xref:System.Windows.Forms.ListControl.SelectedValueChanged> event to fill in a text box when the user selects an item in the list box. The text box is filled with the data associated with the selected item.  
+  
+ [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+ [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+ [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemCore">
+      <MemberSignature Language="C#" Value="protected virtual void SetItemCore (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetItemCore(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.SetItemCore(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The array index of the object.</param>
+        <param name="value">The object.</param>
+        <summary>When overridden in a derived class, sets the object with the specified index in the derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemsCore">
+      <MemberSignature Language="C#" Value="protected abstract void SetItemsCore (System.Collections.IList items);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetItemsCore(class System.Collections.IList items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListControl.SetItemsCore(System.Collections.IList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.IList" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of items.</param>
+        <summary>When overridden in a derived class, sets the specified array of objects in a collection in the derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueMember">
+      <MemberSignature Language="C#" Value="public string ValueMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValueMember" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListControl.ValueMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberFieldEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the property to use as the actual value for the items in the <see cref="T:System.Windows.Forms.ListControl" />.</summary>
+        <value>A <see cref="T:System.String" /> representing a single property name of the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property value, or a hierarchy of period-delimited property names that resolves to a property name of the final data-bound object. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify the contents of the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property in cases where you bind data.  
+  
+ You can clear the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property by setting the property to an empty string ("") or `null`.  
+  
+ Setting a new <xref:System.Windows.Forms.ListControl.ValueMember%2A> property raises the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> and <xref:System.Windows.Forms.ListControl.SelectedValueChanged> events.  
+  
+   
+  
+## Examples  
+ The following code example shows loading the data into an <xref:System.Collections.ArrayList> and setting the <xref:System.Windows.Forms.ListControl.ValueMember%2A> to a property of the object in the list.  
+  
+ [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+ [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+ [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified property path cannot be resolved through the object specified by the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueMemberChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ValueMemberChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ValueMemberChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListControl.ValueMemberChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.ValueMember" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#148](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#148)]
+ [!code-vb[System.Windows.Forms.EventExamples#148](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#148)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

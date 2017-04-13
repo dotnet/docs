@@ -1,0 +1,76 @@
+<Type Name="DiscardableAttribute" FullName="System.Runtime.CompilerServices.DiscardableAttribute">
+  <TypeSignature Language="C#" Value="public class DiscardableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscardableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DiscardableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Marks a type definition as discardable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A type definition might be marked discardable if it is not referenced by any other code in its assembly. This might be useful for languages that support separate compilation, where it is only at link phase that it becomes known whether any type is actually referenced by other code.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers' use only.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.DiscardableAttribute> attribute to a type.  
+  
+ [!code-csharp[Runtime.CompilerServices.DiscardableAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.DiscardableAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.DiscardableAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.DiscardableAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscardableAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DiscardableAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DiscardableAttribute" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.DiscardableAttribute> attribute to a type.  
+  
+ [!code-csharp[Runtime.CompilerServices.DiscardableAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.DiscardableAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.DiscardableAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.DiscardableAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

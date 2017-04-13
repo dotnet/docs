@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "My.Resources object, developing applications"
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,132 @@
+<Type Name="ThemeInfoAttribute" FullName="System.Windows.ThemeInfoAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ThemeInfoAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThemeInfoAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ThemeInfoAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the location in which theme dictionaries are stored for an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used at the assembly level to indicate which theme resource dictionaries are being declared by an assembly for its defined controls, and where the resource dictionaries are located.  
+  
+ For example, if you do not provide theme-specific resource dictionaries, and your `generic.xaml` that supplies resource definitions for all resource lookups is compiled into the same assembly in which the assembly's control class definitions exist, you would apply the following attribution in the `AssemblyInfo.cs` for the assembly project:  
+  
+ `[assembly:ThemeInfoAttribute(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]`  
+  
+ In addition to <xref:System.Windows.ThemeInfoAttribute> application, your project and assembly must have additional characteristics in order for the resource dictionaries to be usable by the WPF theming system.  
+  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation>, then the referenced resource dictionary should be placed within a `themes` directory in the assembly structure.  
+  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation> for <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A>, then the names of the XAML files are expected to conform to the XAML file naming scheme `themes\<Theme Name>.<Theme Color>.xaml`. For example, the following is a list of theme files that support a variety of possible WPF theming scenarios on clients:  
+  
+    -   `themes\luna.normalcolor.xaml`  
+  
+    -   `themes\luna.homestead.xaml`  
+  
+    -   `themes\luna.metallic.xaml`  
+  
+    -   `themes\royale.normalcolor.xaml`  
+  
+    -   `themes\aero.normalcolor.xaml`  
+  
+    -   `themes\classic.xaml`  
+  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation>, then the external assembly names are expected to conform to a naming scheme, and each assembly for each theme should be built using the same key information.  
+  
+ For more information about how to create and use theme resource dictionaries, see "Defining Resources at the Theme Level" section of the topic [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThemeInfoAttribute (System.Windows.ResourceDictionaryLocation themeDictionaryLocation, System.Windows.ResourceDictionaryLocation genericDictionaryLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.ResourceDictionaryLocation themeDictionaryLocation, valuetype System.Windows.ResourceDictionaryLocation genericDictionaryLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ThemeInfoAttribute.#ctor(System.Windows.ResourceDictionaryLocation,System.Windows.ResourceDictionaryLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="themeDictionaryLocation" Type="System.Windows.ResourceDictionaryLocation" />
+        <Parameter Name="genericDictionaryLocation" Type="System.Windows.ResourceDictionaryLocation" />
+      </Parameters>
+      <Docs>
+        <param name="themeDictionaryLocation">The location of theme-specific resources.</param>
+        <param name="genericDictionaryLocation">The location of generic, not theme-specific, resources.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeInfoAttribute" /> class and creates an attribute that defines theme dictionary locations for types in an assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the `themeDictionaryLocation` is <xref:System.Windows.ResourceDictionaryLocation>, you can include files such as Luna.NormalColor.xaml. These names are defined by the system theme files, which include the following.  
+  
+ Classic – "Classic" Windows 9x/2000 look on Windows XP.  
+  
+ Luna.NormalColor - Default blue theme on Windows XP.  
+  
+ Luna.Homestead – Olive theme on Windows XP.  
+  
+ Luna.Metallic – Silver theme on Windows XP.  
+  
+ Royale.NormalColor – Default theme on Windows XP Media Center Edition.  
+  
+ Aero.NormalColor – Default theme on Windows Vista  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericDictionaryLocation">
+      <MemberSignature Language="C#" Value="public System.Windows.ResourceDictionaryLocation GenericDictionaryLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ResourceDictionaryLocation GenericDictionaryLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResourceDictionaryLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The location of generic, not theme specific, resources.</summary>
+        <value>The <see cref="T:System.Windows.ResourceDictionaryLocation" /> of the generic <see cref="T:System.Windows.ResourceDictionary" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemeDictionaryLocation">
+      <MemberSignature Language="C#" Value="public System.Windows.ResourceDictionaryLocation ThemeDictionaryLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ResourceDictionaryLocation ThemeDictionaryLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResourceDictionaryLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The location of theme specific resources.</summary>
+        <value>The <see cref="T:System.Windows.ResourceDictionaryLocation" /> of the theme specific <see cref="T:System.Windows.ResourceDictionary" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

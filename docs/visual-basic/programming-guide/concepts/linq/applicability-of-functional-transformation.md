@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 3b74e134-e19b-44bc-8d06-e26c48305040
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Applicability of Functional Transformation (Visual Basic)

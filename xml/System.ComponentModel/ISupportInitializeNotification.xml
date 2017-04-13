@@ -1,0 +1,96 @@
+<Type Name="ISupportInitializeNotification" FullName="System.ComponentModel.ISupportInitializeNotification">
+  <TypeSignature Language="C#" Value="public interface ISupportInitializeNotification : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISupportInitializeNotification implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitializeNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Allows coordination of initialization for a component and its dependent properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should implement this interface when your component has initialization dependencies on other components that also implement the <xref:System.ComponentModel.ISupportInitializeNotification> interface. You can check to see if the dependent components have completed initialization by checking the <xref:System.ComponentModel.ISupportInitializeNotification.IsInitialized%2A> property.  
+  
+ <xref:System.ComponentModel.ISupportInitializeNotification> is implemented by the <xref:System.Windows.Forms.BindingSource> and <xref:System.Windows.Forms.ListControl> types.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Initialized">
+      <MemberSignature Language="C#" Value="public event EventHandler Initialized;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Initialized" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.ISupportInitializeNotification.Initialized" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when initialization of the component is completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event typically occurs during the call to the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method for the component, but it may occur later if the component has dependent controls that implement the <xref:System.ComponentModel.ISupportInitializeNotification> interface and the dependent controls have not completed initialization.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitialized">
+      <MemberSignature Language="C#" Value="public bool IsInitialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the component is initialized.</summary>
+        <value>
+          <see langword="true" /> to indicate the component has completed initialization; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.ISupportInitializeNotification.IsInitialized%2A> property is automatically set to `false` when the <xref:System.ComponentModel.ISupportInitialize.BeginInit%2A> method is called, and `true` when the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

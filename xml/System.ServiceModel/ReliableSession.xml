@@ -1,0 +1,159 @@
+<Type Name="ReliableSession" FullName="System.ServiceModel.ReliableSession">
+  <TypeSignature Language="C#" Value="public class ReliableSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReliableSession extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableSession" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides convenient access to the properties of a reliable session binding element that are available when using one of the system-provided bindings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties contained in the <xref:System.ServiceModel.ReliableSession> class are the subset of those contained in the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> that are accessible from a predefined binding. This subset consists of the <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A> and <xref:System.ServiceModel.ReliableSession.Ordered%2A> properties. The <xref:System.ServiceModel.ReliableSession> class references the same objects as does the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>, so changing the value of one changes the value of the other too. This class gathers these two properties of reliable session binding element together for better discoverability.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a new reliable session, and access and change the property values of that session. The <xref:System.ServiceModel.ReliableSession> class allows you to write:  
+  
+ [!code-csharp[UEReliableSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/uereliablesession/cs/program.cs#1)]
+ [!code-vb[UEReliableSession#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uereliablesession/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReliableSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableSession.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ReliableSession" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReliableSession (System.ServiceModel.Channels.ReliableSessionBindingElement binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ReliableSessionBindingElement binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reliableSessionBindingElement" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" />
+      </Parameters>
+      <Docs>
+        <param name="binding">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ReliableSession" /> class from a reliable session binding element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEReliableSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/uereliablesession/cs/program.cs#1)]
+ [!code-vb[UEReliableSession#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uereliablesession/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="reliableSessionBindingElement" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InactivityTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan InactivityTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan InactivityTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.InactivityTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an interval of time that a service can remain inactive before closing.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time that a service remains inactive before closing. The default value is 10 minutes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property gets and sets the value of the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.InactivityTimeout%2A> property.  
+  
+ Activity on a channel is defined as receiving an application or infrastructure message. The inactivity timeout property controls the maximum amount of time to keep an inactive session alive. If more than the <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A> specified time interval passes with no activity, the session is aborted by the infrastructure and the channel faults. The reliable session is torn down unilaterally.  
+  
+ If the sending application has no messages to send then the reliable session is normally not faulted because of inactivity; instead a keep-alive mechanism keeps the session active indefinitely. Note that the dispatcher could independently abort the reliable session if no application messages are sent or received. Thus, the inactivity timeout typically expires if network conditions are such that no messages of any sort are received or if there is a failure on the sender.  
+  
+ Setting this timeout prevents the server from holding onto a security session if the client does not close it. If the security session has not received a message for the inactivity interval of time, it is closed by the server. This mitigates a potential denial of service attack.  
+  
+ When using a reliable session, there are two different inactivity timers that must be satisfied to keep the connection alive. If either of these inactivity timers goes off, then the connection is dropped.  
+  
+-   The first inactivity timer is on the reliable session and is called the <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A>. This inactivity timer fires if no messages, either application or infrastructure, are received within the timeout period. An infrastructure message is a message that is generated for the purpose of one of the protocols in the channel stack, such as a keep alive or an acknowledgment, rather than containing application data.  
+  
+-   The second inactivity timer is on the service and uses the <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> setting of the binding. This inactivity timer fires if no application messages are received within the timeout period.  
+  
+ Since the connection is dropped if either inactivity timer fires, increasing <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A> once it is greater than <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> has no effect. The default for both of these timeouts is 10 minutes, so you always have to increase both of them to make a difference when using a reliable session.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEReliableSession#2](~/samples/snippets/csharp/VS_Snippets_CFX/uereliablesession/cs/program.cs#2)]
+ [!code-vb[UEReliableSession#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uereliablesession/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than or equal to zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordered">
+      <MemberSignature Language="C#" Value="public bool Ordered { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Ordered" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.Ordered" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether message delivery must preserve the order in which messages are sent.</summary>
+        <value>
+          <see langword="true" /> if messages must be delivered in the order in which they are sent; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property gets and sets the value of the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.Ordered%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEReliableSession#2](~/samples/snippets/csharp/VS_Snippets_CFX/uereliablesession/cs/program.cs#2)]
+ [!code-vb[UEReliableSession#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uereliablesession/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

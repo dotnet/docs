@@ -1,0 +1,118 @@
+<Type Name="ResourceLocation" FullName="System.Reflection.ResourceLocation">
+  <TypeSignature Language="C#" Value="public enum ResourceLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ResourceLocation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ResourceLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the resource location.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainedInAnotherAssembly">
+      <MemberSignature Language="C#" Value="ContainedInAnotherAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ResourceLocation ContainedInAnotherAssembly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.ContainedInAnotherAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ResourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the resource is contained in another assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainedInManifestFile">
+      <MemberSignature Language="C#" Value="ContainedInManifestFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ResourceLocation ContainedInManifestFile = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.ContainedInManifestFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ResourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the resource is contained in the manifest file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Embedded">
+      <MemberSignature Language="C#" Value="Embedded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ResourceLocation Embedded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.Embedded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ResourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an embedded (that is, non-linked) resource.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

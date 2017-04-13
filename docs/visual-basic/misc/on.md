@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "On keyword"
 ms.assetid: 8619c328-1637-4f41-b466-cbe693f4fe73
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"

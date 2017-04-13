@@ -1,0 +1,944 @@
+<Type Name="DbExpressionVisitor" FullName="System.Data.Common.CommandTrees.DbExpressionVisitor">
+  <TypeSignature Language="C#" Value="public abstract class DbExpressionVisitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbExpressionVisitor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the basic functionality that should be implemented by visitors that do not return a result value.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DbExpressionVisitor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbAndExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbAndExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbAndExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbAndExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbAndExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbAndExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbApplyExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbApplyExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbApplyExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbApplyExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbArithmeticExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbArithmeticExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbArithmeticExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbArithmeticExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbArithmeticExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbArithmeticExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCaseExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCaseExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCaseExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCaseExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCaseExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCaseExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCastExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCastExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCastExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCastExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCastExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCastExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbComparisonExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbComparisonExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbComparisonExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbComparisonExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbComparisonExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbComparisonExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbConstantExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbConstantExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbConstantExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbConstantExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCrossJoinExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCrossJoinExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCrossJoinExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCrossJoinExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCrossJoinExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCrossJoinExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbDerefExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbDerefExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDerefExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDerefExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbDerefExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbDerefExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbDistinctExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbDistinctExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDistinctExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDistinctExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbDistinctExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbDistinctExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbElementExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbElementExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbElementExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbElementExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbElementExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbElementExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbEntityRefExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbEntityRefExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbEntityRefExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbEntityRefExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbExceptExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbExceptExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExceptExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExceptExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbExceptExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbExceptExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The expression to be handled.</param>
+        <summary>When overridden in a derived class, handles any expression of an unrecognized type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called when an expression of an otherwise unrecognized type is encountered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbFilterExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbFilterExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFilterExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFilterExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbFunctionExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbFunctionExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFunctionExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFunctionExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbGroupByExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbGroupByExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbGroupByExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbGroupByExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbGroupByExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbGroupByExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIntersectExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIntersectExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIntersectExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIntersectExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIntersectExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIntersectExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsEmptyExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsEmptyExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsEmptyExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsEmptyExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsEmptyExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsEmptyExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsNullExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsNullExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsNullExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsNullExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsNullExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsNullExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsOfExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsOfExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsOfExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsOfExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsOfExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsOfExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbJoinExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbJoinExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbJoinExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbJoinExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public virtual void Visit (System.Data.Common.CommandTrees.DbLambdaExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLambdaExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLambdaExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbLikeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLikeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLikeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLikeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLikeExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbLikeExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbLimitExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLimitExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLimitExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLimitExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNewInstanceExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNewInstanceExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNewInstanceExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNewInstanceExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNotExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNotExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNotExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNotExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNotExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNotExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNullExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNullExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNullExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNullExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNullExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNullExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbOfTypeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbOfTypeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOfTypeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOfTypeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbOfTypeExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbOfTypeExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbOrExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbOrExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOrExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOrExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbOrExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbOrExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbParameterReferenceExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbParameterReferenceExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbParameterReferenceExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbParameterReferenceExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbParameterReferenceExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbProjectExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbProjectExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbProjectExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbProjectExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbPropertyExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbPropertyExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbPropertyExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbPropertyExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbQuantifierExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbQuantifierExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbQuantifierExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbQuantifierExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRefExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRefExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRefKeyExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRefKeyExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefKeyExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefKeyExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRelationshipNavigationExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRelationshipNavigationExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRelationshipNavigationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbScanExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbScanExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbScanExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbScanExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbScanExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbScanExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbSkipExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbSkipExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSkipExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSkipExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbSkipExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbSkipExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbSortExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbSortExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSortExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSortExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbTreatExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbTreatExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbTreatExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbTreatExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbTreatExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbTreatExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbUnionAllExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbUnionAllExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbUnionAllExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbUnionAllExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbVariableReferenceExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbVariableReferenceExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbVariableReferenceExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> that is visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

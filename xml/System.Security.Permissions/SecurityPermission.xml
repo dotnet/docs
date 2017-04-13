@@ -1,0 +1,318 @@
+<Type Name="SecurityPermission" FullName="System.Security.Permissions.SecurityPermission">
+  <TypeSignature Language="C#" Value="public sealed class SecurityPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SecurityPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermission" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a set of security permissions applied to code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This permission uses the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration. The values for this enumeration can be found in its documentation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.SecurityPermission" /> class with either restricted or unrestricted permission as specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates either fully restricted (`None`) or `Unrestricted` access to all security permissions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityPermission (System.Security.Permissions.SecurityPermissionFlag flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityPermissionFlag flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.#ctor(System.Security.Permissions.SecurityPermissionFlag)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="flag" Type="System.Security.Permissions.SecurityPermissionFlag" />
+      </Parameters>
+      <Docs>
+        <param name="flag">The initial state of the permission, represented by a bitwise OR combination of any permission bits defined by <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.SecurityPermission" /> class with the specified initial set state of the flags.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.SecurityPermission.%23ctor%2A> constructor to create instances of the <xref:System.Security.Permissions.SecurityPermission> class that are used to demand security permissions.  For the complete code example, see the <xref:System.Security.Permissions.SecurityPermissionAttribute.%23ctor%28System.Security.Permissions.SecurityAction%29> constructor.  
+  
+ [!code-cpp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CPP/securitypermissionattribute.cpp#18)]
+ [!code-csharp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CS/securitypermissionattribute.cs#18)]
+ [!code-vb[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/VB/securitypermissionattribute.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="flag" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current permission.</summary>
+        <returns>A copy of the current permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of a permission represents the same access to resources as the original permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.SecurityPermissionFlag Flags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.SecurityPermissionFlag Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermission.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security permission flags.</summary>
+        <value>The state of the current permission, represented by a bitwise OR combination of any permission bits defined by <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Individual permission bits can be determined by performing an AND operation against this value and checking for nonzero.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An attempt is made to set this property to an invalid value. See <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /> for the valid values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="esd" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="esd">The XML encoding to use to reconstruct the permission.</param>
+        <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="esd" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="esd" /> parameter is not a valid permission element.  
+  
+ -or-  
+  
+ The <paramref name="esd" /> parameter's version number is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission to intersect with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
+        <returns>A new permission object that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permissions is a permission that describes the state that they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
+        <summary>Determines whether the current permission is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the current permission is unrestricted.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted permission represents access to any and all resources protected by the permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the permission and its current state.</summary>
+        <returns>An XML encoding of the permission, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission to combine with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
+        <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of a call to <xref:System.Security.Permissions.SecurityPermission.Union%2A> is a permission that represents all the operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

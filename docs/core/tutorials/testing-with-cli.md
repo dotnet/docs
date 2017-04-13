@@ -28,7 +28,9 @@ Say you wanted to introduce some new types to do work on. You can do this by add
 |__MyProject.csproj
 ```
 
-This works great when the size of your project is relatively small. However if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically. This is where folders come into play. You can either follow along with [the NewTypes sample project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) that this guide covers, or create your own files and folders.
+This works great when the size of your project is relatively small. However if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically. This is where folders come into play.
+
+You can follow along with [the NewTypes sample project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders as you go. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 To begin, create a new folder under the root of your project. `/Model` is chosen here.
 

@@ -1,0 +1,199 @@
+<Type Name="VisualStyleElement+ListView+Item" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ListView+Item">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ListView.Item" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ListView/Item extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for each state of an item of the list view control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item> class returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for a different state of a list view item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#177](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#177)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#177](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#177)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Disabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Disabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Disabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a disabled list view item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a disabled list view item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Disabled%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Disabled%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem4` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#180](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#180)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#180](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#180)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hot">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Hot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a hot list view item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a hot list view item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Hot%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Hot%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#178](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#178)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#178](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#178)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a normal list view item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a normal list view item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Normal%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#177](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#177)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#177](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#177)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Selected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Selected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Selected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a selected list view item that has focus.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a selected list view item that has focus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Selected%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.Selected%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem3` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#179](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#179)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#179](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#179)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedNotFocus">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement SelectedNotFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement SelectedNotFocus" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.SelectedNotFocus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a selected list view item without focus.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a selected list view item without focus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.SelectedNotFocus%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.Item.SelectedNotFocus%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementListViewItem5` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#181](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#181)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#181](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#181)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

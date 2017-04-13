@@ -1,0 +1,99 @@
+<Type Name="TitleStyle" FullName="System.Web.UI.WebControls.WebParts.TitleStyle">
+  <TypeSignature Language="C#" Value="public sealed class TitleStyle : System.Web.UI.WebControls.TableItemStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TitleStyle extends System.Web.UI.WebControls.TableItemStyle" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TableItemStyle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the style characteristics for the title bars of Web Parts controls within a zone.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class is used with zones to specify common style characteristics that apply to the title bars of Web Parts controls within the zones. The <xref:System.Web.UI.WebControls.WebParts.WebZone.PartTitleStyle%2A> property contains a reference to a <xref:System.Web.UI.WebControls.WebParts.TitleStyle> object for each zone.  
+  
+ A title bar for a control is rendered at run time as an HTML table cell. Because the <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class inherits from the <xref:System.Web.UI.WebControls.TableItemStyle> class, it allows you to set stylistic attributes for a title bar similar to the attributes for any table cell.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class. In the code for the following page, an `<asp:calendar>` element and an `<asp:label>` element appear within a zone, giving the corresponding controls genuine Web Parts functionality at run time. Notice that the `<parttitlestyle>` element, which contains several style attributes, applies to the title bars of both Web Parts controls contained within the zone.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_PartTitleStyle_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PartTitleStyle_Overview/CS/parttitlestylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_PartTitleStyle_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PartTitleStyle_Overview/VB/parttitlestylevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TitleStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class. The constructor sets the value of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrap">
+      <MemberSignature Language="C#" Value="public override bool Wrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the contents of the title bar for a part control wrap in the title bar.</summary>
+        <value>
+          <see langword="true" /> if the contents of a title bar wrap in the title bar; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class overrides the base <xref:System.Web.UI.WebControls.TableItemStyle.Wrap%2A> property so that it can set the value to `false`. The <xref:System.Web.UI.WebControls.WebParts.TitleStyle.%23ctor%2A> sets the <xref:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap%2A> property to `false`, so that by default, a title bar for a part control does not allow its contents to wrap.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap%2A> property. In the code for the following page, an `<asp:calendar>` element and an `<asp:label>` element appear within a zone, which gives the corresponding controls genuine Web Parts functionality at run time.  
+  
+ Notice that the `<parttitlestyle>` element, which contains several style attributes, applies to the title bars of both Web Parts controls contained within the zone. Notice also that the `<parttitlestyle>` element has `wrap` and `width` attributes. Because the <xref:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap%2A> property value is set to `true`, and the text in the title bars of the two controls is wider than the value assigned to the `width` attribute, the title bar text of each control wraps when the page is loaded in a browser.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_PartTitleStyle_Wrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PartTitleStyle_Wrap/CS/parttitlestylewrapcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_PartTitleStyle_Wrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PartTitleStyle_Wrap/VB/parttitlestylewrapvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

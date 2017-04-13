@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic)

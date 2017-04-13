@@ -1,0 +1,93 @@
+<Type Name="CachedResourceDictionaryExtension" FullName="System.Activities.Presentation.CachedResourceDictionaryExtension">
+  <TypeSignature Language="C#" Value="public class CachedResourceDictionaryExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CachedResourceDictionaryExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.CachedResourceDictionaryExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Windows.ResourceDictionary))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a cached dictionary that associates resource dictionaries with their URIs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements the <xref:System.Windows.Markup.MarkupExtensions> class that provides XAML markup extensions. Markup extensions return objects based on string attribute values or markup elements in XAML. The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an [IServiceProvider](assetId:///IServiceProvider?qualifyHint=False&amp;autoUpgrade=True) object at run time that can provide context.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CachedResourceDictionaryExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.CachedResourceDictionaryExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.CachedResourceDictionaryExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> object that can provide services for the markup extension.</param>
+        <summary>Returns an object that is set as the value of the target property for this markup extension.</summary>
+        <returns>The <see cref="T:System.Object" /> value to set on the property where the extension is applied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an [IServiceProvider](assetId:///IServiceProvider?qualifyHint=False&amp;autoUpgrade=True) object at run time that can provide context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.CachedResourceDictionaryExtension.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI associated with this cached resource dictionary extension.</summary>
+        <value>The  <see cref="T:System.Uri" /> associated with this cached resource dictionary extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

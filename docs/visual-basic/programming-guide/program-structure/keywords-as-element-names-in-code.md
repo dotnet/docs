@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "element names, in code"
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

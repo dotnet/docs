@@ -1,0 +1,330 @@
+<Type Name="WSFederationSerializer" FullName="System.IdentityModel.Services.WSFederationSerializer">
+  <TypeSignature Language="C#" Value="public class WSFederationSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSFederationSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.WSFederationSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to convert a WS-Federation message to <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> and <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> objects, which are WS-Trust protocol specific.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSFederationSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new instance serializes WS-Federation messages into WS-Trust Feb 2005 protocol messages; an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> class is used to serialize requests and an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> class is used to serialize responses.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSFederationSerializer (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> opened on the response XML.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class based on the namespace of the response XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The request and response messages are serialized based on the namespace of the response XML (the appropriate WS-Trust serializers are used based on the namespace).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSFederationSerializer (System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor(System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />
+        <Parameter Name="responseSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="requestSerializer">The WS-Trust Serializer to use to read the request (RST).</param>
+        <param name="responseSerializer">The WS-Trust Serializer to use to write the response (RSTR).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class with the specified request and response serializers.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestSerializer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="responseSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReadRequest">
+      <MemberSignature Language="C#" Value="public virtual bool CanReadRequest (string trustMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanReadRequest(string trustMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CanReadRequest(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trustMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="trustMessage">The WS-Trust message to check.</param>
+        <summary>Checks whether the specified string is a wst:RequestSecurityToken message with a namespace that is recognized by the wrapped <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />.</summary>
+        <returns>
+          <see langword="true" /> if the message is a valid wst:RequestSecurityToken message with a namespace that matches the WS-Trust protocol that this <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> supports; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReadResponse">
+      <MemberSignature Language="C#" Value="public virtual bool CanReadResponse (string trustMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanReadResponse(string trustMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CanReadResponse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trustMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="trustMessage">The WS-Trust message to check.</param>
+        <summary>Checks whether the specified string is a wst:RequestSecurityTokenResponse message with a namespace that is recognized by the wrapped <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />.</summary>
+        <returns>
+          <see langword="true" /> if the message is a valid wst:RequestSecurityTokenResponse message with a namespace that matches the WS-Trust protocol that this <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> supports; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRequest">
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityToken CreateRequest (System.IdentityModel.Services.FederationMessage message, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken CreateRequest(class System.IdentityModel.Services.FederationMessage message, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CreateRequest(System.IdentityModel.Services.FederationMessage,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.IdentityModel.Services.FederationMessage" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to convert. This should be an instance of <see cref="T:System.IdentityModel.Services.SignInRequestMessage" />.</param>
+        <param name="context">The current serialization context.</param>
+        <summary>Converts a WS-Federation Sign-In Request message to a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object that the security token service (the <see cref="T:System.IdentityModel.SecurityTokenService" /> class) can consume.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object that represents the converted Sign-In Request message.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is null.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The message is not of type <see cref="T:System.IdentityModel.Services.SignInRequestMessage" />.  
+  
+ -or-  
+  
+ The <see cref="T:System.IdentityModel.Services.SignInRequestMessage" /> object is missing required information to construct a valid <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponse">
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateResponse (System.IdentityModel.Services.FederationMessage message, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateResponse(class System.IdentityModel.Services.FederationMessage message, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CreateResponse(System.IdentityModel.Services.FederationMessage,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.IdentityModel.Services.FederationMessage" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to convert. This should be an instance of <see cref="T:System.IdentityModel.Services.SignInResponseMessage" />.</param>
+        <param name="context">The current serialization context.</param>
+        <summary>Converts a WS-Federation Sign-In Response message object to a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that represents the converted Sign-In Response message.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The message is not of type <see cref="T:System.IdentityModel.Services.SignInResponseMessage" />.  
+  
+ -or-  
+  
+ The <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> object is missing required information to construct a valid <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRequest">
+      <MemberSignature Language="C#" Value="public virtual string GetReferencedRequest (string wreqptr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetReferencedRequest(string wreqptr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetReferencedRequest(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wreqptr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="wreqptr">The URL of the request data.</param>
+        <summary>Gets the wreq string from a referenced URL.</summary>
+        <returns>The request data from the URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to get the wreq string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown by the default implementation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedResult">
+      <MemberSignature Language="C#" Value="public virtual string GetReferencedResult (string wresultptr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetReferencedResult(string wresultptr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetReferencedResult(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wresultptr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="wresultptr">The URL of the result data.</param>
+        <summary>Gets the wresult string from a referenced URL.</summary>
+        <returns>The request data from the URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to get the wresult string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown by the default implementation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestAsString">
+      <MemberSignature Language="C#" Value="public virtual string GetRequestAsString (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRequestAsString(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetRequestAsString(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object to serialize.</param>
+        <param name="context">The current serialization context.</param>
+        <summary>Serializes the specified <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object into a string.</summary>
+        <returns>A serialized string representation of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseAsString">
+      <MemberSignature Language="C#" Value="public virtual string GetResponseAsString (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetResponseAsString(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetResponseAsString(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="context">The current serialization context.</param>
+        <summary>Serializes the specified <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object into a string.</summary>
+        <returns>A serialized string representation of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="response" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

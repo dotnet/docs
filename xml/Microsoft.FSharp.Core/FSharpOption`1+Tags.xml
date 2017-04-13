@@ -1,0 +1,62 @@
+<Type Name="FSharpOption&lt;T&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;+Tags">
+  <TypeSignature Language="C#" Value="public static class FSharpOption&lt;T&gt;.Tags" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpOption`1/Tags&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpOption`1.Tags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public const int None;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 None" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpOption`1.Tags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Some">
+      <MemberSignature Language="C#" Value="public const int Some;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Some" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpOption`1.Tags.Some" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

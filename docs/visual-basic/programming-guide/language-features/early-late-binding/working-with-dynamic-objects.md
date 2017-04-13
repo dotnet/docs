@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "dynamic objects [Visual Basic]"
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

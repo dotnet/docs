@@ -1,0 +1,62 @@
+<Type Name="IAuthorServices" FullName="Microsoft.JScript.IAuthorServices">
+  <TypeSignature Language="C#" Value="public interface IAuthorServices" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorServices" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IAuthorServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("9E2B453C-6EAA-4329-A619-62E4889C8C8A")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines services for authoring JScript code in an editor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCodeSense">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.IParseText GetCodeSense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IParseText GetCodeSense() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetCodeSense" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.IParseText</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets an object that is used to add IntelliSense to text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to add IntelliSense to text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColorizer">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.IColorizeText GetColorizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IColorizeText GetColorizer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetColorizer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.IColorizeText</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets an object that is used to colorize text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to colorize text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

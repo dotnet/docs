@@ -1,0 +1,115 @@
+<Type Name="ProtocolEndpoint" FullName="System.IdentityModel.Metadata.ProtocolEndpoint">
+  <TypeSignature Language="C#" Value="public class ProtocolEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProtocolEndpoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ProtocolEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class defines a protocol endpoint.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProtocolEndpoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ProtocolEndpoint.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.ProtocolEndpoint.Binding%2A> property and the <xref:System.IdentityModel.Metadata.ProtocolEndpoint.Location%2A> property are both initialized to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProtocolEndpoint (Uri binding, Uri location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri binding, class System.Uri location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ProtocolEndpoint.#ctor(System.Uri,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Uri" />
+        <Parameter Name="location" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The URI that represents the binding for the new instance. Initializes the <see cref="P:System.IdentityModel.Metadata.ProtocolEndpoint.Binding" /> property.</param>
+        <param name="location">The URI that represents the location for the new instance. Initializes the <see cref="P:System.IdentityModel.Metadata.ProtocolEndpoint.Location" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> class that has the specified binding and location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public Uri Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Binding" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding. This is a required element.</summary>
+        <value>The URI that represents the binding for the current instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Uri Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Location" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location. This is a required element.</summary>
+        <value>The URI that represents the location for the current instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseLocation">
+      <MemberSignature Language="C#" Value="public Uri ResponseLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseLocation" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.ResponseLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the response location. This is an optional element.</summary>
+        <value>The URI that represents the response location for the current instance. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

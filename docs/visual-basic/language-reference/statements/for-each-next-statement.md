@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
 caps.latest.revision: 56
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -169,7 +169,14 @@ Next [ element ]
   
  **Modifying Collection Elements.** The <xref:System.Collections.IEnumerator.Current%2A> property of the enumerator object is [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md), and it returns a local copy of each collection element. This means that you cannot modify the elements themselves in a `For Each`...`Next` loop. Any modification you make affects only the local copy from `Current` and isn't reflected back into the underlying collection. However, if an element is a reference type, you can modify the members of the instance to which it points. The following example modifies the `BackColor` member of each `thisControl` element. You cannot, however, modify `thisControl` itself.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```vb  
+Sub lightBlueBackground(ByVal thisForm As System.Windows.Forms.Form)  
+    For Each thisControl As System.Windows.Forms.Control In thisForm.Controls  
+        thisControl.BackColor = System.Drawing.Color.LightBlue  
+    Next thisControl  
+End Sub  
+```  
+  
  The previous example can modify the `BackColor` member of each `thisControl` element, although it cannot modify `thisControl` itself.  
   
  **Traversing Arrays.** Because the <xref:System.Array> class implements the <xref:System.Collections.IEnumerable> interface, all arrays expose the <xref:System.Array.GetEnumerator%2A> method. This means that you can iterate through an array with a `For Each`...`Next` loop. However, you can only read the array elements. You cannot change them.  

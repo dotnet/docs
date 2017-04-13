@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "file I/O classes"
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

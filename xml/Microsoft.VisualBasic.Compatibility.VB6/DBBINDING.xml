@@ -1,0 +1,394 @@
+<Type Name="DBBINDING" FullName="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING">
+  <TypeSignature Language="C#" Value="public struct DBBINDING" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed DBBINDING extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a <see langword="Structure" /> that represents an ADO binding in an application that has been upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="bPrecision">
+      <MemberSignature Language="C#" Value="public byte bPrecision;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 bPrecision" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.bPrecision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="bScale">
+      <MemberSignature Language="C#" Value="public byte bScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 bScale" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.bScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cbMaxLen">
+      <MemberSignature Language="C#" Value="public int cbMaxLen;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 cbMaxLen" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.cbMaxLen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="dwFlags">
+      <MemberSignature Language="C#" Value="public int dwFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 dwFlags" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.dwFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="eParamIO">
+      <MemberSignature Language="C#" Value="public int eParamIO;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 eParamIO" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.eParamIO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="iOrdinal">
+      <MemberSignature Language="C#" Value="public int iOrdinal;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 iOrdinal" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.iOrdinal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="memOwner">
+      <MemberSignature Language="C#" Value="public int memOwner;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 memOwner" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.memOwner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="obLength">
+      <MemberSignature Language="C#" Value="public int obLength;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 obLength" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.obLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="obStatus">
+      <MemberSignature Language="C#" Value="public int obStatus;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 obStatus" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.obStatus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="obValue">
+      <MemberSignature Language="C#" Value="public int obValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 obValue" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.obValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="part">
+      <MemberSignature Language="C#" Value="public int part;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 part" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.part" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pBindExt">
+      <MemberSignature Language="C#" Value="public IntPtr pBindExt;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int pBindExt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.pBindExt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pObject">
+      <MemberSignature Language="C#" Value="public IntPtr pObject;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int pObject" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.pObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="typeInfo">
+      <MemberSignature Language="C#" Value="public IntPtr typeInfo;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int typeInfo" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.typeInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="wType">
+      <MemberSignature Language="C#" Value="public short wType;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 wType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING.wType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

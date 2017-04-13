@@ -1,0 +1,155 @@
+<Type Name="IfElseBranchActivity" FullName="System.Workflow.Activities.IfElseBranchActivity">
+  <TypeSignature Language="C#" Value="public sealed class IfElseBranchActivity : System.Workflow.Activities.SequenceActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IfElseBranchActivity extends System.Workflow.Activities.SequenceActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseBranchActivity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.SequenceActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.IfElseBranchDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.IfElseBranchActivity), "Resources.DecisionBranch.bmp")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.IfElseBranchValidator))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a branch of an <see cref="T:System.Workflow.Activities.IfElseActivity" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.ComponentModel.ActivityCondition> of each branch is determined before the branch is run. The first <xref:System.Workflow.Activities.IfElseBranchActivity> in the <xref:System.Workflow.Activities.IfElseActivity> that evaluates to `true` is run.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IfElseBranchActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseBranchActivity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create two new instances of the <xref:System.Workflow.Activities.IfElseBranchActivity> class.  This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[wf_samples#38](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#38)]
+ [!code-vb[wf_samples#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#38)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IfElseBranchActivity (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseBranchActivity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class using the name of the activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCondition Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityCondition Condition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.IfElseBranchActivity.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> object reference for the current branch activity. The evaluation of this condition returns a value that indicates whether this branch should be run.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that returns a value that indicates whether this branch should be run.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is optional on the last <xref:System.Workflow.Activities.IfElseBranchActivity> in the <xref:System.Workflow.Activities.IfElseActivity> and required in other cases.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Workflow.Activities.IfElseBranchActivity.Condition%2A> property. This code assumes that `Available` is of type <xref:System.Workflow.Activities.IfElseBranchActivity>. This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[wf_samples#39](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#39)]
+ [!code-vb[wf_samples#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#39)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ConditionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ConditionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.IfElseBranchActivity.ConditionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.IfElseBranchActivity.Condition" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

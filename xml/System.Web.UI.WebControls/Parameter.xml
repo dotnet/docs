@@ -1,0 +1,1086 @@
+<Type Name="Parameter" FullName="System.Web.UI.WebControls.Parameter">
+  <TypeSignature Language="C#" Value="public class Parameter : ICloneable, System.Web.UI.IStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Parameter extends System.Object implements class System.ICloneable, class System.Web.UI.IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Parameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("DefaultValue")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a mechanism that data source controls use to bind to application variables, user identities and choices, and other data. Serves as the base class for all ASP.NET parameter types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter> class represents a parameter in a parameterized SQL query, a filtering expression, or a business object method call that an ASP.NET data source control uses to select, filter, or modify data. <xref:System.Web.UI.WebControls.Parameter> objects are contained in a <xref:System.Web.UI.WebControls.ParameterCollection> object. <xref:System.Web.UI.WebControls.Parameter> objects are evaluated at run time, to bind the values of the variables they represent to whatever method is used by a data source control to interact with data.  
+  
+ Use classes that derive from <xref:System.Web.UI.WebControls.Parameter> with data source and data-bound controls to build Web-based data applications. These parameter classes are used by data source controls to bind specific kinds of values found in Web applications to placeholders in SQL query strings, business object method parameters, and more. The following table lists parameter types that are included in ASP.NET.  
+  
+|||  
+|-|-|  
+|<xref:System.Web.UI.WebControls.ControlParameter>|Binds any public property of a Web server control.|  
+|<xref:System.Web.UI.WebControls.FormParameter>|Binds a form field.|  
+|<xref:System.Web.UI.WebControls.SessionParameter>|Binds a session-state field.|  
+|<xref:System.Web.UI.WebControls.RouteParameter>|Binds a route URL parameter.|  
+|<xref:System.Web.UI.WebControls.CookieParameter>|Binds a cookie field.|  
+|<xref:System.Web.UI.WebControls.QueryStringParameter>|Binds a query-string parameter.|  
+|<xref:System.Web.UI.WebControls.ProfileParameter>|Binds a profile field.|  
+  
+ Extend the base <xref:System.Web.UI.WebControls.Parameter> class when you want to implement your own custom parameter types.  
+  
+ <xref:System.Web.UI.WebControls.Parameter> objects are very simple: they have a <xref:System.Web.UI.WebControls.Parameter.Name%2A> and a <xref:System.Web.UI.WebControls.Parameter.Type%2A> property, can be represented declaratively, and can track state across multiple HTTP requests. All parameters support a <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property, for cases when a parameter is bound to a value, but the value evaluates to `null` at run time.  
+  
+ When using a collection of <xref:System.Web.UI.WebControls.Parameter> objects with a data source control, their order in the collection might matter. For more information on how parameters are used, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the selected value of a <xref:System.Web.UI.WebControls.DropDownList> control in the W`here` clause of a SQL query. The example uses the <xref:System.Web.UI.WebControls.ControlParameter> class, which derives from the <xref:System.Web.UI.WebControls.ControlParameter> class.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> element defines the query with a parameter named "@Title" where the value from `DropDownList1` should go. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies that the "@Title" placeholder will be replaced by the value of the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the `DropDownList1` control. The <xref:System.Web.UI.WebControls.ControlParameter> element is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  -->  
+  
+ The following example is like the previous one, but uses code instead of markup. When the page loads the first time, the <xref:System.Web.UI.WebControls.DropDownList> control has no selected value, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object is used.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx#1)]  -->  
+  
+ The following code shows the code-behind class for the page in the previous example.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_3#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx.cs#4)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_3#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx.vb#4)]  
+  
+ The following code example demonstrates how to extend the <xref:System.Web.UI.WebControls.Parameter> class to create a new parameter type that can be used by data source controls and other controls in data-binding scenarios. A data source control can use a `StaticParameter` parameter to bind to the value of any object, typically a string, declared on a Web Forms page.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new default instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class, using the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor from a class that extends the <xref:System.Web.UI.WebControls.Parameter> class to initialize the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property of the instance. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Parameter (System.Web.UI.WebControls.Parameter original);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.Parameter original) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="original" Type="System.Web.UI.WebControls.Parameter" />
+      </Parameters>
+      <Docs>
+        <param name="original">A <see cref="T:System.Web.UI.WebControls.Parameter" /> instance from which the current instance is initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class with the values of the original, specified instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.Web.UI.WebControls.Parameter%29> constructor is a `protected` copy constructor used to clone a <xref:System.Web.UI.WebControls.Parameter> instance. The values of the <xref:System.Web.UI.WebControls.Parameter.Name%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Direction%2A>, and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> properties are all transferred to the new instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.Web.UI.WebControls.Parameter%29> constructor from a class that extends the <xref:System.Web.UI.WebControls.Parameter> class to implement correct object cloning behavior for the class. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#4)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter (string name, System.Data.DbType dbType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.Data.DbType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="dbType">The database type of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class, using the specified name and database type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.Data.DbType%29> constructor is initialized with the specified `name` and `dbType` parameters, and with default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter (string name, TypeCode type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.TypeCode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.TypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="type">A <see cref="T:System.TypeCode" /> that describes the type of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class, using the specified name and type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%29> constructor is initialized with the specified `name` and `type` parameters, and default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%29> constructor from a class that extends the <xref:System.Web.UI.WebControls.Parameter> class to initialize the <xref:System.Web.UI.WebControls.Parameter.Name%2A> and <xref:System.Web.UI.WebControls.Parameter.Type%2A> properties of the instance. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#3)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter (string name, System.Data.DbType dbType, string defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.Data.DbType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="defaultValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</param>
+        <param name="dbType">The database type of the <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</param>
+        <param name="defaultValue">The default value for the <see cref="T:System.Web.UI.WebControls.Parameter" /> instance, if the <see cref="T:System.Web.UI.WebControls.Parameter" /> is bound to a value that is not yet initialized when <see cref="M:System.Web.UI.WebControls.Parameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" /> is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class, using the specified name, the specified database type, and the specified value for its <see cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of the <xref:System.Web.UI.WebControls.Parameter> instance is initialized to <xref:System.Data.ParameterDirection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Parameter (string name, TypeCode type, string defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type, string defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.TypeCode,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.TypeCode" />
+        <Parameter Name="defaultValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="type">A <see cref="T:System.TypeCode" /> that describes the type of the parameter.</param>
+        <param name="defaultValue">A string that serves as a default value for the parameter, if the <see cref="T:System.Web.UI.WebControls.Parameter" /> is bound to a value that is not yet initialized when <see cref="M:System.Web.UI.WebControls.Parameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" /> is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class, using the specified name, the specified type, and the specified string for its <see cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor is initialized with the specified `name` parameter and `type` parameter, and assigned a <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property value. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor to add update parameter objects to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection of an <xref:System.Web.UI.WebControls.AccessDataSource> control before calling the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Parameter Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Parameter Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Parameter" /> that is an exact duplicate of the current one.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.Clone%2A> method calls the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.Web.UI.WebControls.Parameter%29> copy constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.Parameter> class with the values of the current instance.  
+  
+ If you extend the <xref:System.Web.UI.WebControls.Parameter> class, you can override the <xref:System.Web.UI.WebControls.Parameter.Clone%2A> method to include any state that should be copied to a new instance of your derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.Web.UI.WebControls.Parameter%29> constructor from a class that extends the <xref:System.Web.UI.WebControls.Parameter> class to implement correct object cloning behavior for the class. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#4)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertDbTypeToTypeCode">
+      <MemberSignature Language="C#" Value="public static TypeCode ConvertDbTypeToTypeCode (System.Data.DbType dbType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TypeCode ConvertDbTypeToTypeCode(valuetype System.Data.DbType dbType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ConvertDbTypeToTypeCode(System.Data.DbType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+      </Parameters>
+      <Docs>
+        <param name="dbType">A <see cref="T:System.Data.DbType" /> value to convert to an equivalent <see cref="T:System.TypeCode" /> value.</param>
+        <summary>Converts a <see cref="T:System.Data.DbType" /> value to an equivalent <see cref="T:System.TypeCode" /> value.</summary>
+        <returns>A <see cref="T:System.TypeCode" /> value that is equivalent to the specified <see cref="T:System.Data.DbType" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an <xref:System.TypeCode> instance if no equivalent for the <xref:System.Data.DbType> value is found. Database types without equivalent types include <xref:System.Data.DbType>, <xref:System.Data.DbType>, and <xref:System.Data.DbType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertEmptyStringToNull">
+      <MemberSignature Language="C#" Value="public bool ConvertEmptyStringToNull { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the value that the <see cref="T:System.Web.UI.WebControls.Parameter" /> object is bound to should be converted to <see langword="null" /> if it is <see cref="F:System.String.Empty" />.</summary>
+        <value>
+          <see langword="true" /> if the value that the <see cref="T:System.Web.UI.WebControls.Parameter" /> is bound to should be converted to <see langword="null" /> when it is <see cref="F:System.String.Empty" />; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> property of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypeCodeToDbType">
+      <MemberSignature Language="C#" Value="public static System.Data.DbType ConvertTypeCodeToDbType (TypeCode typeCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.DbType ConvertTypeCodeToDbType(valuetype System.TypeCode typeCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ConvertTypeCodeToDbType(System.TypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeCode" Type="System.TypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="typeCode">The <see cref="T:System.TypeCode" /> value to convert to an equivalent <see cref="T:System.Data.DbType" /> value.</param>
+        <summary>Converts a <see cref="T:System.TypeCode" /> value to an equivalent <see cref="T:System.Data.DbType" /> value.</summary>
+        <returns>A <see cref="T:System.Data.DbType" /> value that is equivalent to the specified <see cref="T:System.TypeCode" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an <xref:System.Data.DbType> instance if no equivalent is found. Types without equivalent database types include <xref:System.TypeCode> and <xref:System.TypeCode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbType">
+      <MemberSignature Language="C#" Value="public System.Data.DbType DbType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.DbType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the database type of the parameter.</summary>
+        <value>The database type of the <see cref="T:System.Web.UI.WebControls.Parameter" /> instance. The default value is <see cref="F:System.Data.DbType.Object" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The database type can be used to create strongly typed parameters, so that values are converted correctly between your Web application and underlying code or values from database tables.  
+  
+ If the database type of the parameter is changed by setting the <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to set this property to a value that is not in the <see cref="T:System.Data.DbType" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public string DefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a default value for the parameter, should the value that the parameter is bound to be uninitialized when the <see cref="M:System.Web.UI.WebControls.Parameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" /> method is called.</summary>
+        <value>A string that serves as a default value for the <see cref="T:System.Web.UI.WebControls.Parameter" /> when the value it is bound to cannot be resolved or is uninitialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is used in scenarios where the parameter is bound to a value, but the value is `null` or cannot be resolved when the <xref:System.Web.UI.WebControls.Parameter> object is evaluated.  
+  
+ If the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve a single data record using an <xref:System.Web.UI.WebControls.ObjectDataSource> control and display it in a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.ObjectDataSource> control retrieves a specific employee record by calling the `GetEmployee` method of the `EmployeeLogic` class. The `GetEmployee` method requires an employee ID parameter. The <xref:System.Web.UI.WebControls.ObjectDataSource> control uses a <xref:System.Web.UI.WebControls.QueryStringParameter> object in its <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> collection to pass an ID to the `GetEmployee` method in this example.  
+  
+ To view the example implementation of the `EmployeeLogic` class and the `GetEmployee` method, see the <xref:System.Web.UI.WebControls.ObjectDataSource> class overview.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Data.ParameterDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.ParameterDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.Web.UI.WebControls.Parameter" /> object is used to bind a value to a control, or the control can be used to change the value.</summary>
+        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values. <see cref="P:System.Web.UI.WebControls.Parameter.Direction" /> is set to <see cref="F:System.Data.ParameterDirection.Input" /> by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is currently not used by the <xref:System.Web.UI.WebControls.Parameter> class and is reserved for future use.  
+  
+ The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property describes the direction of the flow of data between the value that a <xref:System.Web.UI.WebControls.Parameter> instance is bound to and the <xref:System.Web.UI.WebControls.Parameter> object itself. The default value for the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property, <xref:System.Data.ParameterDirection>, describes the most common scenario where the flow of data is always in one direction: from the value to which the <xref:System.Web.UI.WebControls.Parameter> object is bound to the <xref:System.Web.UI.WebControls.Parameter> object. Any changes made to the underlying value are reflected by the <xref:System.Web.UI.WebControls.Parameter> object, but any changes to the <xref:System.Web.UI.WebControls.Parameter> object are not reflected by the underlying data. You can set the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property to <xref:System.Data.ParameterDirection> or <xref:System.Data.ParameterDirection> when working with output parameters, or <xref:System.Data.ParameterDirection> when working with a return value from a stored procedure.  
+  
+ If the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="protected virtual object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" /> of the request.</param>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> the parameter is bound to. If the parameter is not bound to a control, the <c>control</c> parameter is ignored.</param>
+        <summary>Updates and returns the value of the <see cref="T:System.Web.UI.WebControls.Parameter" /> object.</summary>
+        <returns>An <see langword="object" /> that represents the updated and current value of the parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of the <xref:System.Web.UI.WebControls.Parameter.Evaluate%2A> method is to return `null` in all cases. Classes that derive from the <xref:System.Web.UI.WebControls.Parameter> class override the <xref:System.Web.UI.WebControls.Parameter.Evaluate%2A> method to return an updated parameter value. For example, the <xref:System.Web.UI.WebControls.ControlParameter> object returns the value of the control that it is bound to, while the <xref:System.Web.UI.WebControls.QueryStringParameter> object retrieves the current name/value pair from the <xref:System.Web.HttpRequest> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Parameter.Evaluate%2A> method to return the correct value in a class that is derived from the <xref:System.Web.UI.WebControls.Parameter> class. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#6)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseType">
+      <MemberSignature Language="C#" Value="public System.Data.DbType GetDatabaseType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.DbType GetDatabaseType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.GetDatabaseType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.DbType" /> value that is equivalent to the CLR type of the current <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</summary>
+        <returns>The <see cref="T:System.Data.DbType" /> value that is equivalent to the CLR type of the current <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property must not already have been set, or must be set to <xref:System.Data.DbType>. This method is intended for use only when the CLR type is set but the <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property is not.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Parameter.DbType" /> property is already set to a value other than <see cref="F:System.Data.DbType.Object" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrackingViewState">
+      <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.Parameter" /> object is saving changes to its view state.</summary>
+        <value>
+          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the <see cref="T:System.Web.UI.WebControls.Parameter" /> state to restore.</param>
+        <summary>Restores the data source view's previously saved view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ This method restores view-state information for the <xref:System.Web.UI.WebControls.Parameter> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.Parameter.SaveViewState%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the parameter.</summary>
+        <value>The name of the parameter. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.WebControls.Parameter> objects are not required to have a name; however, data source controls might use the parameter name to match a <xref:System.Web.UI.WebControls.Parameter> object in a collection with a parameter in a SQL query or business method signature. For example, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of the <xref:System.Web.UI.WebControls.Parameter> object to match a placeholder in a parameterized SQL query. Similarly, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of a <xref:System.Web.UI.WebControls.Parameter> object in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection to match a placeholder in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property. In some cases, the name is not used and the order in which the <xref:System.Web.UI.WebControls.Parameter> object is added to a <xref:System.Web.UI.WebControls.ParameterCollection> collection is more important. For more information, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+  
+ If the name of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display filtered data using an <xref:System.Web.UI.WebControls.ObjectDataSource> control to retrieve data from a middle-tier business object and a <xref:System.Web.UI.WebControls.GridView> control to display the results. The code example consists of a <xref:System.Web.UI.WebControls.TextBox> control, a <xref:System.Web.UI.WebControls.GridView> control, the <xref:System.Web.UI.WebControls.ObjectDataSource> control, and a Submit button. By default, the <xref:System.Web.UI.WebControls.TextBox> control is populated with the name of one of the `Northwind` employees. The <xref:System.Web.UI.WebControls.GridView> control displays information about the employee identified by the name in the <xref:System.Web.UI.WebControls.TextBox> control. To retrieve data on another employee, enter the full name of the employee in the <xref:System.Web.UI.WebControls.TextBox> control and click the button.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property specifies an expression used to filter the data retrieved by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection. In this example, the parameter placeholder is bounded by single quotation marks because the type of the parameter is a string type that might contain spaces. If the type of the parameter is a numeric or date type, bounding quotation marks are not needed.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParameterChanged">
+      <MemberSignature Language="C#" Value="protected void OnParameterChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnParameterChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calls the <see cref="M:System.Web.UI.WebControls.ParameterCollection.OnParametersChanged(System.EventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> collection that contains the <see cref="T:System.Web.UI.WebControls.Parameter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.Parameter> object is not contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, calling the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method has no effect. If the <xref:System.Web.UI.WebControls.Parameter> object is contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> raises the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=fullName> event of the collection.  
+  
+ If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=fullName> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method to raise the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged> event when the state of a parameter changes. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#7)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to the <see cref="T:System.Web.UI.WebControls.Parameter" /> object's view state since the time the page was posted back to the server.</summary>
+        <returns>The <see cref="T:System.Object" /> that contains the changes to the <see cref="T:System.Web.UI.WebControls.Parameter" /> view state. If there is no view state associated with the object, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers.  
+  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle.  
+  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.WebControls.Parameter.ViewState%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirty">
+      <MemberSignature Language="C#" Value="protected virtual void SetDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SetDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.SetDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Marks the <see cref="T:System.Web.UI.WebControls.Parameter" /> object so its state will be recorded in view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.SetDirty%2A> method is called directly by the <xref:System.Web.UI.WebControls.ParameterCollection.SetDirtyObject%2A?displayProperty=fullName> method, to mark the <xref:System.Web.UI.WebControls.Parameter> object so that its state is recorded in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the parameter.</summary>
+        <value>The size of the parameter expressed as an integer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value for <xref:System.Web.UI.WebControls.Parameter.Size%2A> is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.System#ICloneable#Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.Parameter" /> instance.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Parameter" /> that is a copy of the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.Clone%2A> method calls the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.Web.UI.WebControls.Parameter%29> constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.Parameter> class with the values of the current instance.  
+  
+ If you extend the <xref:System.Web.UI.WebControls.Parameter> class, you can override the <xref:System.Web.UI.WebControls.Parameter.Clone%2A> method to include any state that should be copied to a new instance of your derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.Parameter" /> object is saving changes to its view state.</summary>
+        <value>
+          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the <see cref="T:System.Web.UI.WebControls.Parameter" /> state to restore.</param>
+        <summary>Restores the data source view's previously saved view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method restores view-state information for the <xref:System.Web.UI.WebControls.Parameter> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.Parameter.SaveViewState%2A> method.  
+  
+ This method is used primarily by control developers. You can override this method to control how a custom server control restores its view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
+      <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to the <see cref="T:System.Web.UI.WebControls.Parameter" /> object's view state since the time the page was posted back to the server.</summary>
+        <returns>The <see cref="T:System.Object" /> that contains the changes to the <see cref="T:System.Web.UI.WebControls.Parameter" /> object's view state. If there is no view state associated with the object, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers.  
+  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle.  
+  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.WebControls.Parameter.ViewState%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.UI.WebControls.Parameter" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.Control.ViewState" /> object and persisted across requests for the same page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation.</summary>
+        <returns>A string representation of the value of this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter.ToString%2A> method returns the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object. If the <xref:System.Web.UI.WebControls.Parameter> object has no name, <xref:System.Web.UI.WebControls.Parameter.ToString%2A> returns <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access various properties of a <xref:System.Web.UI.WebControls.Parameter> object, including its <xref:System.Web.UI.WebControls.Parameter.Name%2A> and <xref:System.Web.UI.WebControls.Parameter.Type%2A> properties.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/CS/parametertostringcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/VB/parametertostringvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.UI.WebControls.Parameter" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.Control.ViewState" /> object and persisted across requests for the same page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public TypeCode Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TypeCode Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the parameter.</summary>
+        <value>The type of the <see cref="T:System.Web.UI.WebControls.Parameter" />. The default value is <see cref="F:System.TypeCode.Object" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type can be used to create strongly typed parameters, so that values are converted correctly between your Web application and underlying code.  
+  
+ If the type of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The parameter type is not one of the <see cref="T:System.TypeCode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewState">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.StateBag ViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.StateBag ViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.ViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.StateBag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of state information that allows you to save and restore the view state of a <see cref="T:System.Web.UI.WebControls.Parameter" /> object across multiple requests for the same page.</summary>
+        <value>An instance of <see cref="T:System.Web.UI.StateBag" /> that contains the <see cref="T:System.Web.UI.WebControls.Parameter" /> object's view-state information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A parameter's view state is the accumulation of all its property values. To preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to an HTML `hidden` input element when subsequent requests are processed. View state is enabled for all server controls by default.  
+  
+ For more information about dictionaries and how to use them, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the view-state object to store parameter object state in a class that extends the <xref:System.Web.UI.WebControls.Parameter> class. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Parameter> class overview.  
+  
+ [!code-csharp[System.Web.UI.WebControls.Parameter_2#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/CS/staticparameter.cs#5)]
+ [!code-vb[System.Web.UI.WebControls.Parameter_2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_2/VB/staticparameter.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

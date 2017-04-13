@@ -1,0 +1,444 @@
+<Type Name="ObjectStateFormatter" FullName="System.Web.UI.ObjectStateFormatter">
+  <TypeSignature Language="C#" Value="public sealed class ObjectStateFormatter : System.Runtime.Serialization.IFormatter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectStateFormatter extends System.Object implements class System.Runtime.Serialization.IFormatter, class System.Web.UI.IStateFormatter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectStateFormatter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IFormatter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Serializes and deserializes object graphs that represent the state of an object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ObjectStateFormatter> class serializes and deserializes object state graphs in a compact format.  
+  
+ <xref:System.Web.UI.ObjectStateFormatter> is used by the <xref:System.Web.UI.PageStatePersister> class and classes that derive from it to serialize view state and control state. It is also used by the <xref:System.Web.UI.LosFormatter> class to provide object state graph formatting for various parts of the ASP.NET infrastructure.  
+  
+ The <xref:System.Web.UI.ObjectStateFormatter> class is optimized to serialize and format many common .NET Framework reference types, as well as constants. The following table lists the types that are optimized.  
+  
+|||||  
+|-|-|-|-|  
+|<xref:System.Array>|<xref:System.DateTime>|<xref:System.Int16>|<xref:System.String>|  
+|<xref:System.Collections.ArrayList>|<xref:System.Double>|<xref:System.Int32>|String []|  
+|<xref:System.Boolean>|<xref:System.Enum>|null (`Nothing`)|<xref:System.String.Empty?displayProperty=fullName>|  
+|<xref:System.Byte>|<xref:System.Collections.Hashtable>|<xref:System.Web.UI.Pair>|<xref:System.Web.UI.Triplet>|  
+|<xref:System.Char>|<xref:System.Collections.Specialized.HybridDictionary>|<xref:System.Single>|<xref:System.Type>|  
+|<xref:System.Drawing.Color>|<xref:System.Collections.IDictionary>|||  
+  
+ Additionally, while conventional string types and string arrays are written to and from a serialized binary writer unaltered, some strings are optimized by creating internal string tables. Strings are optimized using these tables if the string has an associated <xref:System.ComponentModel.TypeConverter> object or if the string is actually an instance of the <xref:System.Web.UI.IndexedString> class.  
+  
+ Other types not listed above are binary-serialized using a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> object if they implement the <xref:System.Runtime.Serialization.ISerializable> interface or are decorated with the <xref:System.SerializableAttribute> attribute. The <xref:System.Web.UI.ObjectStateFormatter> class is not optimized for any of these serializable types.  
+  
+ If the <xref:System.Web.UI.ObjectStateFormatter> class encounters a type that is not serializable, an <xref:System.ArgumentException> exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a class that derives from the <xref:System.Web.UI.PageStatePersister> class accesses the <xref:System.Web.UI.PageStatePersister.StateFormatter%2A> property to retrieve an <xref:System.Web.UI.ObjectStateFormatter> instance to serialize view state and control state to a stream. This code example is part of a larger example provided for the <xref:System.Web.UI.PageStatePersister> class.  
+  
+ [!code-csharp[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/CS/textfilepagestatepersister.cs#3)]
+ [!code-vb[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/VB/textfilepagestatepersister.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectStateFormatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectStateFormatter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream inputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream inputStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="inputStream">A <see cref="T:System.IO.Stream" /> that the <see cref="T:System.Web.UI.ObjectStateFormatter" /> deserializes into an initialized <see langword="object" />.</param>
+        <summary>Deserializes an object state graph from its binary-serialized form that is contained in the specified <see cref="T:System.IO.Stream" /> object.</summary>
+        <returns>An object that represents a deserialized object state graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any object state graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Deserialize%28System.IO.Stream%29> method is used to restore an object state graph stored in a <xref:System.IO.Stream>, such as a <xref:System.IO.FileStream>.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a class that derives from the <xref:System.Web.UI.PageStatePersister> class initializes the <xref:System.Web.UI.PageStatePersister.ViewState%2A> collection. In this example, the <xref:System.Web.UI.PageStatePersister.ViewState%2A> collection has been assigned to the <xref:System.Web.UI.Pair.First> field of a <xref:System.Web.UI.Pair> object, and serialized to a file using the <xref:System.Web.UI.ObjectStateFormatter> class. When the <xref:System.Web.UI.PageStatePersister.Load%2A> method is called, the <xref:System.Web.UI.LosFormatter.Deserialize%28System.IO.Stream%29> method is used to deserialize view state from the file, and the <xref:System.Web.UI.PageStatePersister.ViewState%2A> property is initialized. This code example is part of a larger example provided for the <xref:System.Web.UI.PageStatePersister> class.  
+  
+ [!code-csharp[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/CS/textfilepagestatepersister.cs#2)]
+ [!code-vb[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/VB/textfilepagestatepersister.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="inputStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An exception occurs during deserialization of the <see cref="T:System.IO.Stream" />. The exception message is appended to the message of the <see cref="T:System.ArgumentException" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (string inputString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(string inputString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputString">A string that the <see cref="T:System.Web.UI.ObjectStateFormatter" /> deserializes into an initialized object.</param>
+        <summary>Deserializes an object state graph from its serialized base64-encoded string form.</summary>
+        <returns>An object that represents a deserialized object state graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any object state graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Deserialize%28System.String%29> method is used to restore an object state graph stored in base64-encoded string form.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement a method that deserializes a base64-encoded string and returns an <xref:System.Collections.ICollection> collection of property settings. This code example relies on the property settings having been serialized with the <xref:System.Web.UI.ObjectStateFormatter> class, as shown in the <xref:System.Web.UI.ObjectStateFormatter.Serialize%28System.Object%29> method.  
+  
+ [!code-csharp[System.Web.UI.ObjectStateFormatter_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ObjectStateFormatter_1/CS/objectstateformattertest.cs#2)]
+ [!code-vb[System.Web.UI.ObjectStateFormatter_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ObjectStateFormatter_1/VB/objectstateformattertest.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="inputString" /> is <see langword="null" /> or has a <see cref="P:System.String.Length" /> of 0.</exception>
+        <exception cref="T:System.ArgumentException">The serialized data is invalid.</exception>
+        <exception cref="T:System.Web.HttpException">The machine authentication code (MAC) validation check that is performed when deserializing view state fails.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public string Serialize (object stateGraph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Serialize(object stateGraph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateGraph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stateGraph">The object to serialize.</param>
+        <summary>Serializes an object state graph to a base64-encoded string.</summary>
+        <returns>A base-64 encoded string that represents the serialized object state of the <paramref name="stateGraph" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any object graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Serialize%28System.Object%29> method is used to serialize an object state graph to a base64-encoded string form.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to serialize the values of a set of control properties to a base64-encoded string using the <xref:System.Web.UI.ObjectStateFormatter.Serialize%28System.Object%29> method. The string can be deserialized at a later time with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%28System.String%29> method.  
+  
+ [!code-csharp[System.Web.UI.ObjectStateFormatter_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ObjectStateFormatter_1/CS/objectstateformattertest.cs#1)]
+ [!code-vb[System.Web.UI.ObjectStateFormatter_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ObjectStateFormatter_1/VB/objectstateformattertest.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream outputStream, object stateGraph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream outputStream, object stateGraph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+        <Parameter Name="stateGraph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="outputStream">A <see cref="T:System.IO.Stream" /> to which the <see cref="T:System.Web.UI.ObjectStateFormatter" /> serializes the state of the specified object.</param>
+        <param name="stateGraph">The object to serialize.</param>
+        <summary>Serializes an object state graph to the specified <see cref="T:System.IO.Stream" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any object state graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Serialize%28System.IO.Stream%2CSystem.Object%29> method is used to serialize an object state graph to a binary <xref:System.IO.Stream> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a class retrieves an <xref:System.Web.UI.ObjectStateFormatter> instance to serialize view state and control state to a stream using the <xref:System.Web.UI.ObjectStateFormatter.Serialize%28System.IO.Stream%2CSystem.Object%29> method. This code example is part of a larger example provided for the <xref:System.Web.UI.PageStatePersister> class.  
+  
+ [!code-csharp[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/CS/textfilepagestatepersister.cs#3)]
+ [!code-vb[Samples.AspNet.Alexkr.TextFilePageStatePersister_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.Alexkr.TextFilePageStatePersister_1/VB/textfilepagestatepersister.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="inputStream" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IFormatter.Binder">
+      <MemberSignature Language="C#" Value="System.Runtime.Serialization.SerializationBinder System.Runtime.Serialization.IFormatter.Binder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.SerializationBinder System.Runtime.Serialization.IFormatter.Binder" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Binder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.SerializationBinder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Runtime.Serialization.Formatter.Binder" />.</summary>
+        <value>The <see cref="T:System.Runtime.Serialization.SerializationBinder" /> that performs type lookups during deserialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Runtime.Serialization.IFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IFormatter.Context">
+      <MemberSignature Language="C#" Value="System.Runtime.Serialization.StreamingContext System.Runtime.Serialization.IFormatter.Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.StreamingContext System.Runtime.Serialization.IFormatter.Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.StreamingContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Runtime.Serialization.IFormatter.Context" />.</summary>
+        <value>The <see cref="T:System.Runtime.Serialization.StreamingContext" /> used for serialization and deserialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Runtime.Serialization.IFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IFormatter.Deserialize">
+      <MemberSignature Language="C#" Value="object IFormatter.Deserialize (System.IO.Stream serializationStream);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.Serialization.IFormatter.Deserialize(class System.IO.Stream serializationStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="serializationStream">The stream that contains the data to deserialize.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.IO.Stream)" />.</summary>
+        <returns>The top object of the deserialized graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Runtime.Serialization.IFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IFormatter.Serialize">
+      <MemberSignature Language="C#" Value="void IFormatter.Serialize (System.IO.Stream serializationStream, object stateGraph);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IFormatter.Serialize(class System.IO.Stream serializationStream, object stateGraph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationStream" Type="System.IO.Stream" />
+        <Parameter Name="stateGraph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="serializationStream">The stream where the formatter puts the serialized data. This stream can reference a variety of backing stores (such as files, network, memory, and so on).</param>
+        <param name="stateGraph">The object, or root of the object graph, to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.ObjectStateFormatter.Serialize(System.IO.Stream,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Runtime.Serialization.IFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IFormatter.SurrogateSelector">
+      <MemberSignature Language="C#" Value="System.Runtime.Serialization.ISurrogateSelector System.Runtime.Serialization.IFormatter.SurrogateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ISurrogateSelector System.Runtime.Serialization.IFormatter.SurrogateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#SurrogateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.ISurrogateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="T:System.Runtime.Serialization.SurrogateSelector" />.</summary>
+        <value>The <see cref="T:System.Runtime.Serialization.SurrogateSelector" /> used by this formatter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Runtime.Serialization.IFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateFormatter.Deserialize">
+      <MemberSignature Language="C#" Value="object IStateFormatter.Deserialize (string serializedState);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateFormatter.Deserialize(string serializedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Web#UI#IStateFormatter#Deserialize(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializedState" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serializedState">A string that the <see cref="T:System.Web.UI.IStateFormatter" /> deserializes into an initialized object.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.String)" />.</summary>
+        <returns>An object that represents the state of an ASP.NET server control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Web.UI.IStateFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateFormatter.Serialize">
+      <MemberSignature Language="C#" Value="string IStateFormatter.Serialize (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IStateFormatter.Serialize(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Web#UI#IStateFormatter#Serialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">The object that represents the view state of the Web server control to serialize to string form.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.ObjectStateFormatter.Serialize(System.Object)" />.</summary>
+        <returns>A string that represents a Web server control's view state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.ObjectStateFormatter> instance is cast to an <xref:System.Web.UI.IStateFormatter> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes an object state graph from serialized form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

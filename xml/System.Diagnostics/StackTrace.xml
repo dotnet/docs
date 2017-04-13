@@ -1,0 +1,631 @@
+<Type Name="StackTrace" FullName="System.Diagnostics.StackTrace">
+  <TypeSignature Language="C#" Value="public class StackTrace" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StackTrace extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackTrace" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a stack trace, which is an ordered collection of one or more stack frames.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.StackTrace> information will be most informative with Debug build configurations. By default, Debug builds include debug symbols, while Release builds do not. The debug symbols contain most of the file, method name, line number, and column information used in constructing <xref:System.Diagnostics.StackFrame> and <xref:System.Diagnostics.StackTrace> objects.  
+  
+ <xref:System.Diagnostics.StackTrace> might not report as many method calls as expected, due to code transformations that occur during optimization.  
+  
+   
+  
+## Examples  
+ The following console application demonstrates how to create a simple <xref:System.Diagnostics.StackTrace> and iterate through its frames to obtain debugging and diagnostic information.  
+  
+ [!code-cpp[StackTraceSample1#1](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample1/CPP/stacktracesample1.cpp#1)]
+ [!code-csharp[StackTraceSample1#1](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample1/CS/stacktracesample1.cs#1)]
+ [!code-vb[StackTraceSample1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample1/VB/stacktracesample1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for the ability of inheritors to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. This class cannot be inherited by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class from the caller's frame.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.StackTrace> is created with the caller's current thread, and does not contain file name, line number, or column information.  
+  
+ Use this default constructor when you want a complete trace with only summary method information about the call stack.  
+  
+   
+  
+## Examples  
+ The following code example displays the first and last function calls in a stack trace.  
+  
+ [!code-cpp[StackFrameSample1#8](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#8)]
+ [!code-csharp[StackFrameSample1#8](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#8)]
+ [!code-vb[StackFrameSample1#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (bool fNeedFileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool fNeedFileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fNeedFileInfo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="fNeedFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class from the caller's frame, optionally capturing source information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.StackTrace> is created with the caller's current thread.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates various <xref:System.Diagnostics.StackTrace> constructor methods.  
+  
+ [!code-cpp[StackFrameSample1#4](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#4)]
+ [!code-csharp[StackFrameSample1#4](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#4)]
+ [!code-vb[StackFrameSample1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (System.Diagnostics.StackFrame frame);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.StackFrame frame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Diagnostics.StackFrame)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="frame" Type="System.Diagnostics.StackFrame" />
+      </Parameters>
+      <Docs>
+        <param name="frame">The frame that the <see cref="T:System.Diagnostics.StackTrace" /> object should contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class that contains a single frame.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you do not want the overhead of a full stack trace.  
+  
+   
+  
+## Examples  
+ The following code example writes stack trace information to an event log entry.  
+  
+ [!code-cpp[StackTraceSample3#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample3/CPP/stacktracesample3.cpp#6)]
+ [!code-csharp[StackTraceSample3#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample3/CS/stacktracesample3.cs#6)]
+ [!code-vb[StackTraceSample3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample3/VB/stacktracesample3.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception object from which to construct the stack trace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class using the provided exception object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.StackTrace> is created with the caller's current thread, and does not contain file name, line number, or column information.  
+  
+ The resulting stack trace describes the stack at the time of the exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (int skipFrames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 skipFrames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="skipFrames" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="skipFrames">The number of frames up the stack from which to start the trace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class from the caller's frame, skipping the specified number of frames.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.StackTrace> is created with the caller's current thread, and does not contain file name, line number, or column information.  
+  
+ If the number of frames to skip is greater than or equal to the total number of frames on the call stack at the time the instance is created, the <xref:System.Diagnostics.StackTrace> will contain no frames.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (Exception e, bool fNeedFileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, bool fNeedFileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="needFileInfo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception object from which to construct the stack trace.</param>
+        <param name="fNeedFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class, using the provided exception object and optionally capturing source information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting stack trace describes the stack at the time of the exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (Exception e, int skipFrames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, int32 skipFrames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+        <Parameter Name="skipFrames" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception object from which to construct the stack trace.</param>
+        <param name="skipFrames">The number of frames up the stack from which to start the trace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class using the provided exception object and skipping the specified number of frames.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.StackTrace> does not contain file name, line number, or column information.  
+  
+ The resulting stack trace describes the stack at the time of the exception.  
+  
+ If the number of frames to skip is greater than or equal to the total number of frames on the call stack at the time the instance is created, the <xref:System.Diagnostics.StackTrace> will contain no frames.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (int skipFrames, bool fNeedFileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 skipFrames, bool fNeedFileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="skipFrames" Type="System.Int32" />
+        <Parameter Name="fNeedFileInfo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="skipFrames">The number of frames up the stack from which to start the trace.</param>
+        <param name="fNeedFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class from the caller's frame, skipping the specified number of frames and optionally capturing source information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of frames to skip is greater than or equal to the total number of frames on the call stack at the time the instance is created, the <xref:System.Diagnostics.StackTrace> will contain no frames.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates various <xref:System.Diagnostics.StackTrace> constructor methods.  
+  
+ [!code-cpp[StackFrameSample1#4](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#4)]
+ [!code-csharp[StackFrameSample1#4](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#4)]
+ [!code-vb[StackFrameSample1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (System.Threading.Thread targetThread, bool needFileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Thread targetThread, bool needFileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Threading.Thread,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="targetThread" Type="System.Threading.Thread" />
+        <Parameter Name="needFileInfo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="targetThread">The thread whose stack trace is requested.</param>
+        <param name="needFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class for a specific thread, optionally capturing source information.  
+  
+ Do not use this constructor overload.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Do not use this constructor. It is obsolete, and there is no recommended alternative. When you suspend a thread, you have no way of knowing what code it is executing, and deadlocks can occur very easily. For example, if you suspend a thread while it holds locks during a security permission evaluation, other threads in the <xref:System.AppDomain> might be blocked. If you suspend a thread while it is executing a class constructor, other threads in the <xref:System.AppDomain> that attempt to use that class are blocked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Threading.ThreadStateException">The thread <paramref name="targetThread" /> is not suspended.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (Exception e, int skipFrames, bool fNeedFileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, int32 skipFrames, bool fNeedFileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+        <Parameter Name="skipFrames" Type="System.Int32" />
+        <Parameter Name="fNeedFileInfo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception object from which to construct the stack trace.</param>
+        <param name="skipFrames">The number of frames up the stack from which to start the trace.</param>
+        <param name="fNeedFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class using the provided exception object, skipping the specified number of frames and optionally capturing source information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting stack trace describes the stack at the time of the exception.  
+  
+ If the number of frames to skip is greater than or equal to the total number of frames on the call stack at the time the instance is created, the <xref:System.Diagnostics.StackTrace> will contain no frames.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameCount">
+      <MemberSignature Language="C#" Value="public virtual int FrameCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FrameCount" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.StackTrace.FrameCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of frames in the stack trace.</summary>
+        <value>The number of frames in the stack trace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the first and last function calls in a stack trace.  
+  
+ [!code-cpp[StackFrameSample1#8](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#8)]
+ [!code-csharp[StackFrameSample1#8](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#8)]
+ [!code-vb[StackFrameSample1#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFrame">
+      <MemberSignature Language="C#" Value="public virtual System.Diagnostics.StackFrame GetFrame (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.StackFrame GetFrame(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.GetFrame(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.StackFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the stack frame requested.</param>
+        <summary>Gets the specified stack frame.</summary>
+        <returns>The specified stack frame.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Stack frames are numbered starting at 0, which is the last stack frame pushed.  
+  
+   
+  
+## Examples  
+ The following code example displays the first and last function calls in a stack trace.  
+  
+ [!code-cpp[StackFrameSample1#8](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#8)]
+ [!code-csharp[StackFrameSample1#8](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#8)]
+ [!code-vb[StackFrameSample1#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFrames">
+      <MemberSignature Language="C#" Value="public virtual System.Diagnostics.StackFrame[] GetFrames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.StackFrame[] GetFrames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.GetFrames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.StackFrame[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of all stack frames in the current stack trace.</summary>
+        <returns>An array of type <see cref="T:System.Diagnostics.StackFrame" /> representing the function calls in the stack trace.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the returned <xref:System.Diagnostics.StackFrame> array to enumerate and examine function calls in the <xref:System.Diagnostics.StackTrace>. The length of the returned array is equal to the <xref:System.Diagnostics.StackTrace.FrameCount%2A> property value.  
+  
+ The <xref:System.Diagnostics.StackFrame> array elements are in reverse chronological order. The <xref:System.Diagnostics.StackFrame> at array index 0 represents the most recent function call in the stack trace and the last frame pushed onto the call stack. The <xref:System.Diagnostics.StackFrame> at array index <xref:System.Diagnostics.StackTrace.FrameCount%2A> minus 1 represents the oldest function call in the stack trace and the first frame pushed onto the call stack.  
+  
+ Use the <xref:System.Diagnostics.StackTrace.GetFrames%2A> method to obtain all stack frames in a stack trace; use the <xref:System.Diagnostics.StackTrace.GetFrame%2A> method to obtain a specific stack frame in a stack trace. The <xref:System.Diagnostics.StackFrame> indexes are ordered alike by the two methods. For example, the <xref:System.Diagnostics.StackFrame> at index 0 in the array returned by <xref:System.Diagnostics.StackTrace.GetFrames%2A> is equivalent to the <xref:System.Diagnostics.StackFrame> returned by <xref:System.Diagnostics.StackTrace.GetFrame%2A> with an input index of 0.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates enumerating the frames in a <xref:System.Diagnostics.StackTrace>.  
+  
+ [!code-cpp[StackTraceSample2#3](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample2/CPP/stacktracesample2.cpp#3)]
+ [!code-csharp[StackTraceSample2#3](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample2/CS/stacktracesample2.cs#3)]
+ [!code-vb[StackTraceSample2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample2/VB/stacktracesample2.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="METHODS_TO_SKIP">
+      <MemberSignature Language="C#" Value="public const int METHODS_TO_SKIP = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 METHODS_TO_SKIP = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.StackTrace.METHODS_TO_SKIP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Defines the default for the number of methods to omit from the stack trace. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the number of methods to skip at the beginning of the stack trace. The value of this constant is 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds a readable representation of the stack trace.</summary>
+        <returns>A readable representation of the stack trace.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes stack trace information to an event log entry.  
+  
+ [!code-cpp[StackTraceSample3#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample3/CPP/stacktracesample3.cpp#6)]
+ [!code-csharp[StackTraceSample3#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample3/CS/stacktracesample3.cs#6)]
+ [!code-vb[StackTraceSample3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample3/VB/stacktracesample3.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

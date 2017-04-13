@@ -1,0 +1,125 @@
+<Type Name="RemovedConditionAction" FullName="System.Workflow.Activities.Rules.RemovedConditionAction">
+  <TypeSignature Language="C#" Value="public sealed class RemovedConditionAction : System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RemovedConditionAction extends System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RemovedConditionAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleConditionChangeAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the removal of a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> from a workflow during dynamic update. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleCondition>s have been removed during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleCondition> that is removed (that is, that existed in the workflow prior to this dynamic update, but is gone afterward).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemovedConditionAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedConditionAction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedConditionAction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemovedConditionAction (System.Workflow.Activities.Rules.RuleCondition removedConditionDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleCondition removedConditionDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedConditionAction.#ctor(System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="removedConditionDefinition" Type="System.Workflow.Activities.Rules.RuleCondition" />
+      </Parameters>
+      <Docs>
+        <param name="removedConditionDefinition">The condition removed from the workflow.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedConditionAction" /> class by using the definition of the removed condition.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addedConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTo">
+      <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedConditionAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleCondition ConditionDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleCondition ConditionDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedConditionAction.ConditionDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Workflow.Activities.Rules.RemovedConditionAction.ConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionName">
+      <MemberSignature Language="C#" Value="public override string ConditionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedConditionAction.ConditionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that contains the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

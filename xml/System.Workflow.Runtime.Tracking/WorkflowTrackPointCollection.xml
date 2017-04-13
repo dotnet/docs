@@ -1,0 +1,87 @@
+<Type Name="WorkflowTrackPointCollection" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection">
+  <TypeSignature Language="C#" Value="public class WorkflowTrackPointCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkflowTrackPointCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Workflow.Runtime.Tracking.WorkflowTrackPoint</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection> is used in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to maintain a list of <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> objects to match.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowTrackPointCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection> to an empty list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowTrackPointCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt; points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt; points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.WorkflowTrackPoint})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="points">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" /> class by using a list of workflow track points.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> objects specified in `points`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="points" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

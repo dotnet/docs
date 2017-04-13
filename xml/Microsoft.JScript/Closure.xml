@@ -1,0 +1,90 @@
+<Type Name="Closure" FullName="Microsoft.JScript.Closure">
+  <TypeSignature Language="C#" Value="public sealed class Closure : Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Closure extends Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Closure" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ScriptFunction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a closure function. This class belongs to the objects and functions category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Closure (Microsoft.JScript.FunctionObject func);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.FunctionObject func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Closure.#ctor(Microsoft.JScript.FunctionObject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.JScript.FunctionObject" />
+      </Parameters>
+      <Docs>
+        <param name="func">The function that this closure represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Closure" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="arguments">
+      <MemberSignature Language="C#" Value="public object arguments;" />
+      <MemberSignature Language="ILAsm" Value=".field public object arguments" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Closure.arguments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The arguments to use for the function.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="caller">
+      <MemberSignature Language="C#" Value="public object caller;" />
+      <MemberSignature Language="ILAsm" Value=".field public object caller" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Closure.caller" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The calling scope information from the stack frame.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Closure.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of the function, such as the name of the function or the context.</summary>
+        <returns>A string representation of the function.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

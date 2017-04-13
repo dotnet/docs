@@ -1,0 +1,105 @@
+<Type Name="SwitchLevelAttribute" FullName="System.Diagnostics.SwitchLevelAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SwitchLevelAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SwitchLevelAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SwitchLevelAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies the level type for a switch.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is intended to be applied to all classes that inherit from the <xref:System.Diagnostics.Switch> class. The purpose of the attribute is to identify the type that specifies the switch criteria of the switch. Each switch determines whether a trace is to be written, based on whether an event type matches or exceeds the value of the <xref:System.Diagnostics.SwitchLevelAttribute.SwitchLevelType%2A> property for the switch. The type used for the <xref:System.Diagnostics.SwitchLevelAttribute.SwitchLevelType%2A> property varies for different switches. For example, the switch level type for the <xref:System.Diagnostics.BooleanSwitch> class is <xref:System.Boolean>, and the switch level type for the <xref:System.Diagnostics.TraceSwitch> class is <xref:System.Diagnostics.TraceLevel>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SwitchLevelAttribute (Type switchLevelType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type switchLevelType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchLevelAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="switchLevelType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="switchLevelType">The <see cref="T:System.Type" /> that determines whether a trace should be written.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SwitchLevelAttribute" /> class, specifying the type that determines whether a trace should be written.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `switchLevelType` parameter identifies the type that is used by the switch to determine if a trace should be written; for example, the type of the <xref:System.Diagnostics.TraceSwitch.Level%2A> property of the <xref:System.Diagnostics.TraceSwitch> class is <xref:System.Diagnostics.TraceLevel>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchLevelType">
+      <MemberSignature Language="C#" Value="public Type SwitchLevelType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type SwitchLevelType" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchLevelAttribute.SwitchLevelType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type that determines whether a trace should be written.</summary>
+        <value>The <see cref="T:System.Type" /> that determines whether a trace should be written.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The level property of a switch is not necessarily named `Level`; for example, the level property of the <xref:System.Diagnostics.BooleanSwitch> class is <xref:System.Diagnostics.BooleanSwitch.Enabled%2A>.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of the <xref:System.Diagnostics.SwitchLevelAttribute.SwitchLevelType%2A> property for the <xref:System.Diagnostics.BooleanSwitch>.  
+  
+ [!code-csharp[System.Diagnostics.TraceSource#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/CS/program.cs#13)]
+ [!code-vb[System.Diagnostics.TraceSource#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/VB/program.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The set operation failed because the value is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

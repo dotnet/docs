@@ -1,0 +1,291 @@
+<Type Name="AxParameterData" FullName="System.Windows.Forms.Design.AxParameterData">
+  <TypeSignature Language="C#" Value="public class AxParameterData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AxParameterData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxParameterData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a parameter of a method of a hosted ActiveX control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AxParameterData (System.Reflection.ParameterInfo info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.ParameterInfo info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.Reflection.ParameterInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Reflection.ParameterInfo" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Reflection.ParameterInfo" /> indicating the parameter information to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AxParameterData (System.Reflection.ParameterInfo info, bool ignoreByRefs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.ParameterInfo info, bool ignoreByRefs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.Reflection.ParameterInfo,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Reflection.ParameterInfo" />
+        <Parameter Name="ignoreByRefs" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Reflection.ParameterInfo" /> indicating the parameter information to use.</param>
+        <param name="ignoreByRefs">A value indicating whether to ignore parameters passed by reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information and whether to ignore by reference parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AxParameterData (string inname, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inname, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inname" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inname">The name of the parameter.</param>
+        <param name="typeName">The name of the type of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified name and type name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AxParameterData (string inname, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inname, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inname" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="inname">The name of the parameter.</param>
+        <param name="type">The type of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified name and type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Design.AxParameterData[] Convert (System.Reflection.ParameterInfo[] infos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Design.AxParameterData[] Convert(class System.Reflection.ParameterInfo[] infos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.Convert(System.Reflection.ParameterInfo[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.AxParameterData[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="infos" Type="System.Reflection.ParameterInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="infos">An array of <see cref="T:System.Reflection.ParameterInfo" /> objects to convert.</param>
+        <summary>Converts the specified parameter information to an <see cref="T:System.Windows.Forms.Design.AxParameterData" /> object.</summary>
+        <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Design.AxParameterData[] Convert (System.Reflection.ParameterInfo[] infos, bool ignoreByRefs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Design.AxParameterData[] Convert(class System.Reflection.ParameterInfo[] infos, bool ignoreByRefs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.Convert(System.Reflection.ParameterInfo[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.AxParameterData[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="infos" Type="System.Reflection.ParameterInfo[]" />
+        <Parameter Name="ignoreByRefs" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="infos">An array of <see cref="T:System.Reflection.ParameterInfo" /> objects to convert.</param>
+        <param name="ignoreByRefs">A value indicating whether to ignore parameters passed by reference.</param>
+        <summary>Converts the specified parameter information to an <see cref="T:System.Windows.Forms.Design.AxParameterData" /> object, according to the specified value indicating whether to ignore by reference parameters.</summary>
+        <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.CodeDom.FieldDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.FieldDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.FieldDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the direction of assignment fields.</summary>
+        <value>A <see cref="T:System.CodeDom.FieldDirection" /> indicating the direction of assignment fields.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsByRef">
+      <MemberSignature Language="C#" Value="public bool IsByRef { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsByRef" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsByRef" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the parameter data is passed by reference.</summary>
+        <value>
+          <see langword="true" /> if the parameter data is by reference; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIn">
+      <MemberSignature Language="C#" Value="public bool IsIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIn" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the parameter data is in.</summary>
+        <value>
+          <see langword="true" /> if the parameter data is in; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOptional">
+      <MemberSignature Language="C#" Value="public bool IsOptional { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsOptional" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the parameter data is optional.</summary>
+        <value>
+          <see langword="true" /> if the parameter data is optional; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOut">
+      <MemberSignature Language="C#" Value="public bool IsOut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOut" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the parameter data is out.</summary>
+        <value>
+          <see langword="true" /> if the parameter data is out; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the parameter.</summary>
+        <value>The name of the parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterType">
+      <MemberSignature Language="C#" Value="public Type ParameterType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ParameterType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.ParameterType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type expected by the parameter.</summary>
+        <value>The type expected by the parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public string TypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.TypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the type expected by the parameter.</summary>
+        <value>The name of the type expected by the parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

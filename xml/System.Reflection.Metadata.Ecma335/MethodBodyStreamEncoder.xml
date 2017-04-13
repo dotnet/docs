@@ -1,0 +1,115 @@
+<Type Name="MethodBodyStreamEncoder" FullName="System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder">
+  <TypeSignature Language="C#" Value="public struct MethodBodyStreamEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodBodyStreamEncoder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MethodBodyStreamEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodBody">
+      <MemberSignature Language="C#" Value="public int AddMethodBody (System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int maxStack = 8, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddMethodBody(valuetype System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int32 maxStack, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Reflection.Metadata.Ecma335.InstructionEncoder,System.Int32,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instructionEncoder" Type="System.Reflection.Metadata.Ecma335.InstructionEncoder" />
+        <Parameter Name="maxStack" Type="System.Int32" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
+      </Parameters>
+      <Docs>
+        <param name="instructionEncoder">To be added.</param>
+        <param name="maxStack">To be added.</param>
+        <param name="localVariablesSignature">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodBody">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody AddMethodBody (int codeSize, int maxStack = 8, int exceptionRegionCount = 0, bool hasSmallExceptionRegions = true, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder/MethodBody AddMethodBody(int32 codeSize, int32 maxStack, int32 exceptionRegionCount, bool hasSmallExceptionRegions, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Int32,System.Int32,System.Int32,System.Boolean,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder+MethodBody</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeSize" Type="System.Int32" />
+        <Parameter Name="maxStack" Type="System.Int32" />
+        <Parameter Name="exceptionRegionCount" Type="System.Int32" />
+        <Parameter Name="hasSmallExceptionRegions" Type="System.Boolean" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
+      </Parameters>
+      <Docs>
+        <param name="codeSize">To be added.</param>
+        <param name="maxStack">To be added.</param>
+        <param name="exceptionRegionCount">To be added.</param>
+        <param name="hasSmallExceptionRegions">To be added.</param>
+        <param name="localVariablesSignature">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

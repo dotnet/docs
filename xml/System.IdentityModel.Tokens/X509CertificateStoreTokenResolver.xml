@@ -1,0 +1,200 @@
+<Type Name="X509CertificateStoreTokenResolver" FullName="System.IdentityModel.Tokens.X509CertificateStoreTokenResolver">
+  <TypeSignature Language="C#" Value="public class X509CertificateStoreTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509CertificateStoreTokenResolver extends System.IdentityModel.Selectors.SecurityTokenResolver" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Selectors.SecurityTokenResolver</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a token resolver that can resolve tokens of type <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> against a specified X.509 certificate store.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509CertificateStoreTokenResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class with a default X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509CertificateStoreTokenResolver (System.Security.Cryptography.X509Certificates.StoreName storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.#ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.Security.Cryptography.X509Certificates.StoreName" />
+        <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">One of the enumeration values that specify the name of the X.509 certificate store.</param>
+        <param name="storeLocation">One of the enumeration values that specify the location of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class that uses the X.509 certificate store with the specified location and name to resolve tokens.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509CertificateStoreTokenResolver (string storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.#ctor(System.String,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.String" />
+        <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">The name of the X.509 certificate store.</param>
+        <param name="storeLocation">One of the enumeration values that specify the location of an X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class that uses the X.509 certificate store with the specified location and name to resolve tokens.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="storeLocation" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreLocation">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation StoreLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation StoreLocation" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.StoreLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the X.509 certificate store that is used by this token resolver.</summary>
+        <value>One of the enumeration values that specify the location of an X.509 certificate store.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreName">
+      <MemberSignature Language="C#" Value="public string StoreName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StoreName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.StoreName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the X.509 certificate store that is used by this token resolver.</summary>
+        <value>The name of the X.509 certificate store that is used by this token resolver.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveSecurityKeyCore">
+      <MemberSignature Language="C#" Value="protected override bool TryResolveSecurityKeyCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveSecurityKeyCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, class System.IdentityModel.Tokens.SecurityKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="keyIdentifierClause">The key identifier clause from which to resolve the security key.</param>
+        <param name="key">When this method returns, contains the security key that was resolved from the key identifier clause. This parameter is treated as uninitialized.</param>
+        <summary>Attempts to resolve the specified key identifier clause to a security key.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause is successfully resolved; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveTokenCore">
+      <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, out System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="keyIdentifier">The key identifier to resolve.</param>
+        <param name="token">When this method returns, contains the security token that was resolved from the key identifier. This parameter is treated as uninitialized.</param>
+        <summary>Resolves the specified key identifier to a security token.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier is successfully resolved; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifier" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveTokenCore">
+      <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="keyIdentifierClause">The key identifier clause to resolve.</param>
+        <param name="token">When this method returns, contains the security token that was resolved from the key identifier clause. This parameter is treated as uninitialized.</param>
+        <summary>Resolves the specified key identifier clause to a security token.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause is successfully resolved; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

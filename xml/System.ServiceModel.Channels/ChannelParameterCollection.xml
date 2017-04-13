@@ -1,0 +1,234 @@
+<Type Name="ChannelParameterCollection" FullName="System.ServiceModel.Channels.ChannelParameterCollection">
+  <TypeSignature Language="C#" Value="public class ChannelParameterCollection : System.Collections.ObjectModel.Collection&lt;object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelParameterCollection extends System.Collections.ObjectModel.Collection`1&lt;object&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelParameterCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Object&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Object</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of channel parameters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to cache channel properties when channels are destroyed and re-created.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelParameterCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This default constructor implicitly calls the constructor of the parent class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelParameterCollection (System.ServiceModel.Channels.IChannel channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.IChannel channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.#ctor(System.ServiceModel.Channels.IChannel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channel" Type="System.ServiceModel.Channels.IChannel" />
+      </Parameters>
+      <Docs>
+        <param name="channel">The channel whose parameters are in this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance is created with <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> set to `channel`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Channel">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.IChannel Channel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IChannel Channel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelParameterCollection.Channel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the channel whose parameters are in this collection.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.IChannel" /> whose parameters are in this collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set to `channel` when <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection of parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.InsertItem(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item in the collection.</param>
+        <param name="item">The item to add to the collection.</param>
+        <summary>Inserts the specified item into the collection using the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropagateChannelParameters">
+      <MemberSignature Language="C#" Value="public void PropagateChannelParameters (System.ServiceModel.Channels.IChannel innerChannel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PropagateChannelParameters(class System.ServiceModel.Channels.IChannel innerChannel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.PropagateChannelParameters(System.ServiceModel.Channels.IChannel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="innerChannel" Type="System.ServiceModel.Channels.IChannel" />
+      </Parameters>
+      <Docs>
+        <param name="innerChannel">The channel that receives the current collection's parameters.</param>
+        <summary>Adds the parameters in the current collection to a specified channel's <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Index of the parameter to remove.</param>
+        <summary>Removes a parameter from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.SetItem(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Index of the item to replace.</param>
+        <param name="item">Value of the replacement item.</param>
+        <summary>Replaces an item in the collection at a specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> to `channel` by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>, or simply invoke the parent constructor by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

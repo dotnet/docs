@@ -1,0 +1,1061 @@
+<Type Name="IList&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IList&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IList`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IList`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">The type of a list element.</typeparam>
+    <summary>Defines the interface for an STL/CLR [list](http://msdn.microsoft.com/library/a70c45c8-a257-4f6b-8434-b27ff6685bac) object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The enumeration whose elements are to be inserted into the container.</param>
+        <summary>Replaces the controlled sequence with the sequence that is designated by the given enumerator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_First">The beginning position of the range of elements to insert into the container.</param>
+        <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
+        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c> <paramref name="_Last" /><c>)</c>.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (int _Count, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(int32 _Count, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Count" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Count">The number of elements to insert into the container.</param>
+        <param name="_Val">The value of the elements to insert into the container.</param>
+        <summary>Replaces the controlled sequence with the specified number of the given element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="back">
+      <MemberSignature Language="C#" Value="public TValue back ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue back() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.back" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Accesses the last element of the container.</summary>
+        <returns>The last element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::back (STL/CLR)](http://msdn.microsoft.com/library/3241e497-42ab-4108-8598-3f90eac76f07).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="back_item">
+      <MemberSignature Language="C#" Value="public TValue back_item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue back_item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IList`1.back_item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Accesses the last element of the container.</summary>
+        <value>The last element of the controlled sequence, which must be non-empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::back_item (STL/CLR)](http://msdn.microsoft.com/library/63dcdd21-61f7-4e0f-88a7-c9c8f8a2c50a).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="begin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.begin(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::begin (STL/CLR)](http://msdn.microsoft.com/library/3431467b-951a-498a-af8d-50f631da1646).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="clear">
+      <MemberSignature Language="C#" Value="public void clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::clear (STL/CLR)](http://msdn.microsoft.com/library/5aac9a64-52f6-4a73-8b24-e30ceedcbc20).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="empty">
+      <MemberSignature Language="C#" Value="public bool empty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool empty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.empty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tests whether the container has no elements.</summary>
+        <returns>
+          <see langword="true" /> if the container has no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::empty (STL/CLR)](http://msdn.microsoft.com/library/f45edf8a-927d-41ff-9c09-cb0fba4f08b8).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="end">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.end(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::end (STL/CLR)](http://msdn.microsoft.com/library/c3444164-2c6e-4cbd-8765-1ce7d30fc43e).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last_iter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_First_iter">To be added.</param>
+        <param name="_Last_iter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="front">
+      <MemberSignature Language="C#" Value="public TValue front ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue front() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.front" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Accesses the first element of the container.</summary>
+        <returns>The first element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::front (STL/CLR)](http://msdn.microsoft.com/library/ead6aaaa-b518-4a9c-af80-7189bf872cad).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="front_item">
+      <MemberSignature Language="C#" Value="public TValue front_item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue front_item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IList`1.front_item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Accesses the first element of the container.</summary>
+        <value>The first element of the controlled sequence, which must be non-empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::front_item (STL/CLR)](http://msdn.microsoft.com/library/c871873b-7745-442b-9760-9d8096fa8610).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where_iter, System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="_Where_iter">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_First">To be added.</param>
+        <param name="_Last">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, int _Count, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, int32 _Count, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Count" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Count">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="merge">
+      <MemberSignature Language="C#" Value="public void merge (Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void merge(class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.merge(Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
+        <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The container to merge into this container.</param>
+        <param name="_Pred">The Boolean functor for comparing pairs of elements.</param>
+        <summary>Merges two ordered controlled sequences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::merge (STL/CLR)](http://msdn.microsoft.com/library/f8e93cd3-bd08-4086-859b-08a2899cc9a6).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pop_back">
+      <MemberSignature Language="C#" Value="public void pop_back ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_back() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.pop_back" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the last element from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::pop_back (STL/CLR)](http://msdn.microsoft.com/library/03fe8e0e-461b-41c4-8e20-97d0d4ed0feb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pop_front">
+      <MemberSignature Language="C#" Value="public void pop_front ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_front() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.pop_front" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the first element from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::pop_front (STL/CLR)](http://msdn.microsoft.com/library/6a0bad42-6796-41d9-a3e9-1488b3882574).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="push_back">
+      <MemberSignature Language="C#" Value="public void push_back (TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_back(!TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.push_back(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Val">The value of the element to append to the container.</param>
+        <summary>Adds a new element to the end of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::push_back (STL/CLR)](http://msdn.microsoft.com/library/f2c70470-a899-4e5f-8f3e-b55d6a8bff0e).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="push_front">
+      <MemberSignature Language="C#" Value="public void push_front (TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_front(!TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.push_front(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Val">The value of the element to insert at the beginning of the container.</param>
+        <summary>Adds a new element to the beginning of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::push_front (STL/CLR)](http://msdn.microsoft.com/library/47525641-1139-44fc-ac62-bdc04876d9e0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rbegin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::rbegin (STL/CLR)](http://msdn.microsoft.com/library/99637376-8ac3-4e39-844a-b4f324a7c6ba).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="remove">
+      <MemberSignature Language="C#" Value="public void remove (TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove(!TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Val">The value of the element to remove from the container.</param>
+        <summary>Removes an element that has a specified value from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::remove (STL/CLR)](http://msdn.microsoft.com/library/eaf598ee-e8fd-4cc0-be69-ca81a80e1d51).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rend">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.rend(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::rend (STL/CLR)](http://msdn.microsoft.com/library/b51030ad-1bca-42b0-b890-db47111d2921).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="resize">
+      <MemberSignature Language="C#" Value="public void resize (int _Newsize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.resize(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Newsize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Newsize">The new size of the container.</param>
+        <summary>Changes the number of elements in the container to the specified size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="resize">
+      <MemberSignature Language="C#" Value="public void resize (int _Newsize, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.resize(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Newsize" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Newsize">The new size of the container.</param>
+        <param name="_Val">The value of the padding elements.</param>
+        <summary>Changes the number of elements in the container to the specified size. If the new size is larger than the old size, the given values will be appended to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reverse">
+      <MemberSignature Language="C#" Value="public void reverse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void reverse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.reverse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reverses the elements of the controlled sequence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::reverse (STL/CLR)](http://msdn.microsoft.com/library/de3bce1e-01fe-461d-a785-5cf4fcea988f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="size">
+      <MemberSignature Language="C#" Value="public int size ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 size() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::size (STL/CLR)](http://msdn.microsoft.com/library/409e39fb-4468-44bb-b179-52c90e2fa293).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sort">
+      <MemberSignature Language="C#" Value="public void sort (Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void sort(class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.sort(Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Pred">The operator that will be used to compare elements for ordering.</param>
+        <summary>Orders the controlled sequence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::sort (STL/CLR)](http://msdn.microsoft.com/library/f811d5f4-a19e-4194-8765-1e68097c52f0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="splice">
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="splice">
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <param name="_First">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="splice">
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <param name="_First">To be added.</param>
+        <param name="_Last">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="swap">
+      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.swap(Microsoft.VisualC.StlClr.IList{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The container to swap contents with.</param>
+        <summary>Swaps the contents of two containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::swap (STL/CLR)](http://msdn.microsoft.com/library/188b66c2-0a08-4001-a566-41d0955c89bd).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="unique">
+      <MemberSignature Language="C#" Value="public void unique (Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void unique(class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.unique(Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Pred">The comparer that determines whether element pairs are unique. An element that is not unique will be removed from the container.</param>
+        <summary>Removes adjacent elements that pass a specified test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::unique (STL/CLR)](http://msdn.microsoft.com/library/c3a29e4e-0ec1-4472-b050-7a9511037132).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="assign">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all elements of the container with the specified elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="resize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the number of elements in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="splice">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reorders links between nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

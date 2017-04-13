@@ -1,0 +1,50 @@
+---
+title: "ICorDebugProcess::GetID Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorDebugProcess.GetID"
+apilocation: 
+  - "mscordbi.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorDebugProcess::GetID"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetID method, ICorDebugProcess interface [.NET Framework debugging]"
+  - "ICorDebugProcess::GetID method [.NET Framework debugging]"
+ms.assetid: b0ba8453-fa7e-4c14-93e5-335409cd4a47
+caps.latest.revision: 10
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# ICorDebugProcess::GetID Method
+Gets the operating system (OS) ID of the process.  
+  
+## Syntax  
+  
+```  
+HRESULT GetID([out] DWORD *pdwProcessId);  
+```  
+  
+#### Parameters  
+ `pdwProcessId`  
+ [out] The unique ID of the process.  
+  
+## Requirements  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+  
+ **Header:** CorDebug.idl, CorDebug.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

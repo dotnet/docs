@@ -1,0 +1,62 @@
+<Type Name="ImmutableArray&lt;T&gt;+Enumerator" FullName="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Enumerator">
+  <TypeSignature Language="C#" Value="public struct ImmutableArray&lt;T&gt;.Enumerator" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ImmutableArray`1/Enumerator&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableArray`1.Enumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public T Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Current" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableArray`1.Enumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.Enumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

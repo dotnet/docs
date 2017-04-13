@@ -1,0 +1,82 @@
+<Type Name="ToolStripTextDirection" FullName="System.Windows.Forms.ToolStripTextDirection">
+  <TypeSignature Language="C#" Value="public enum ToolStripTextDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripTextDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripTextDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the text orientation to use with a particular <see cref="P:System.Windows.Forms.ToolStrip.LayoutStyle" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripTextDirection Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies horizontal text orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripTextDirection Inherit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text direction is inherited from the parent control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical270">
+      <MemberSignature Language="C#" Value="Vertical270" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripTextDirection Vertical270 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Vertical270" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that text is to be rotated 270 degrees.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical90">
+      <MemberSignature Language="C#" Value="Vertical90" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripTextDirection Vertical90 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Vertical90" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that text is to be rotated 90 degrees.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

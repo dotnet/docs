@@ -1,0 +1,55 @@
+<Type Name="ModelBinderErrorMessageProviders" FullName="System.Web.ModelBinding.ModelBinderErrorMessageProviders">
+  <TypeSignature Language="C#" Value="public static class ModelBinderErrorMessageProviders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelBinderErrorMessageProviders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderErrorMessageProviders" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for model-binder error message providers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TypeConversionErrorMessageProvider">
+      <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelBinderErrorMessageProvider TypeConversionErrorMessageProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelBinderErrorMessageProvider TypeConversionErrorMessageProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderErrorMessageProviders.TypeConversionErrorMessageProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelBinderErrorMessageProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the current provider for type-conversion error messages.</summary>
+        <value>The error message provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueRequiredErrorMessageProvider">
+      <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelBinderErrorMessageProvider ValueRequiredErrorMessageProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelBinderErrorMessageProvider ValueRequiredErrorMessageProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderErrorMessageProviders.ValueRequiredErrorMessageProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelBinderErrorMessageProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the current provider for value-required error messages.</summary>
+        <value>The error message provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

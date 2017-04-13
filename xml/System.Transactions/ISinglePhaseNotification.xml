@@ -1,0 +1,77 @@
+<Type Name="ISinglePhaseNotification" FullName="System.Transactions.ISinglePhaseNotification">
+  <TypeSignature Language="C#" Value="public interface ISinglePhaseNotification : System.Transactions.IEnlistmentNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISinglePhaseNotification implements class System.Transactions.IEnlistmentNotification" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.ISinglePhaseNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Transactions.IEnlistmentNotification</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Describes a resource object that supports single phase commit optimization to participate in a transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should note that even when your resource manager implements this interface to support single phase commit optimization, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead.  
+  
+ To enlist your resource manager as a participant in a transaction, call the <xref:System.Transactions.Transaction.EnlistVolatile%2A> method or the <xref:System.Transactions.Transaction.EnlistDurable%2A> method of the <xref:System.Transactions.Transaction> class. Specifically, the `EnlistmentOptions` parameter should equal to <xref:System.Transactions.EnlistmentOptions> to ensure that a single phase commit is performed. If it is mistakenly set to <xref:System.Transactions.EnlistmentOptions>, no single phase commit occurs.  
+  
+ Since the <xref:System.Transactions.ISinglePhaseNotification> interface derives from the <xref:System.Transactions.IEnlistmentNotification> interface, the resource manager must also implement all the methods of the latter for two phase commit notifications.  It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  However, implementing this interface gives the resource manager the opportunity to take advantage of the optimization when it is available.  
+  
+ If the optimization is used and the transaction manager calls the <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> method of the enlisted resource, the resource manager should respond to this call by using various methods of the <xref:System.Transactions.SinglePhaseEnlistment> class to inform the transaction manager if the transaction is to be committed or rolled back.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SinglePhaseCommit">
+      <MemberSignature Language="C#" Value="public void SinglePhaseCommit (System.Transactions.SinglePhaseEnlistment enlistment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SinglePhaseCommit(class System.Transactions.SinglePhaseEnlistment enlistment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="singlePhaseEnlistment" Type="System.Transactions.SinglePhaseEnlistment" />
+      </Parameters>
+      <Docs>
+        <param name="enlistment">To be added.</param>
+        <summary>Represents the resource manager's implementation of the callback for the single phase commit optimization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  For more information on single phase and two phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+  
+ Therefore, on this enlistment of the resource manager, either the <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> method is called, or the two phase commit methods defined in ther <xref:System.Transactions.IEnlistmentNotification> interface are called.  
+  
+ Your implementation of this method should call either the <xref:System.Transactions.SinglePhaseEnlistment.Committed%2A> method or the <xref:System.Transactions.SinglePhaseEnlistment.Aborted%2A> method of the `singlePhaseEnlistment` parameter to indicate whether the transaction should be committed or rolled back.  
+  
+ The transaction manager calls this method when there is only one volatile enlistment that supports single phase commit, or when there are zero or more volatile enlistments and one durable enlistment. In the latter case, the volatile enlistments receive <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> notifications for two-phase-commit, and the sole durable enlistment receives a single-phase commit notification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -44,7 +44,7 @@ An `if` statement identifies which statement to run based on the value of a `Boo
   
  An `if` statement in C# can take two forms, as the following example shows.  
   
-```cs  
+```csharp  
   
 // if-else statement  
 if (condition)  
@@ -98,7 +98,7 @@ if (condition)
   
  Just as a statement in the else block or the then block can be any valid statement, you can use any valid Boolean expression for the condition. You can use logical operators such as [&&](../../../csharp/language-reference/operators/conditional-and-operator.md), [&](../../../csharp/language-reference/operators/and-operator.md), [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md), [&#124;](../../../csharp/language-reference/operators/or-operator.md) and [!](../../../csharp/language-reference/operators/logical-negation-operator.md) to make compound conditions. The following code shows examples.  
   
-```cs  
+```csharp  
 // NOT  
 bool result = true;  
 if (!result)  

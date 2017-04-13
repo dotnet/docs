@@ -1,0 +1,783 @@
+<Type Name="Glyphs" FullName="System.Windows.Documents.Glyphs">
+  <TypeSignature Language="C#" Value="public sealed class Glyphs : System.Windows.FrameworkElement, System.Windows.Markup.IUriContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Glyphs extends System.Windows.FrameworkElement implements class System.Windows.Markup.IUriContext" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Glyphs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.FrameworkElement</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IUriContext</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the set of glyphs that are used for rendering fixed text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
+  
+ <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp1/CS/default.xaml#1)]  -->
+ <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/xaml/VS_Snippets_Wpf/GlyphsOvwSamp1/XAML/default.xaml#1)]  -->  
+  
+ Each glyph defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
+  
+ ![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
+Various typographic qualities of two different glyph characters  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Glyphs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Glyphs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Glyphs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Glyphs.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finalSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BidiLevel">
+      <MemberSignature Language="C#" Value="public int BidiLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BidiLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.BidiLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bidirectional nesting level of <see cref="T:System.Windows.Documents.Glyphs" />.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the bidirectional nesting level.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_BidiLevel"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BidiLevelProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BidiLevelProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BidiLevelProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.BidiLevelProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.BidiLevel" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaretStops">
+      <MemberSignature Language="C#" Value="public string CaretStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CaretStops" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.CaretStops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caret stops that correspond to the code points in the Unicode string representing the <see cref="T:System.Windows.Documents.Glyphs" />.</summary>
+        <value>A value of type <see cref="T:System.String" /> that represents whether the code points have caret stops.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is a string of hexadecimal digits that describe an array of <xref:System.Boolean> values that correspond to every code point in the value represented by the <xref:System.Windows.Documents.Glyphs.UnicodeString%2A> property.  
+  
+<a name="dependencyPropertyInfo_CaretStops"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.CaretStopsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaretStopsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaretStopsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaretStopsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.CaretStopsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.CaretStops" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFontName">
+      <MemberSignature Language="C#" Value="public string DeviceFontName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceFontName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.DeviceFontName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the specific device font for which the <see cref="T:System.Windows.Documents.Glyphs" /> object has been optimized.</summary>
+        <value>A <see cref="T:System.String" /> value that represents the name of the device font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Documents.Glyphs> is rendered on a device that has built-in support for the named device font, the <xref:System.Windows.Documents.Glyphs> should be rendered using a device specific mechanism for selecting that font, and by sending Unicode code points rather than glyph indices. When rendering onto a device that does not include built-in support for the named device font, <xref:System.Windows.Documents.Glyphs.DeviceFontName%2A> should be ignored.  
+  
+<a name="dependencyPropertyInfo_DeviceFontName"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFontNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DeviceFontNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DeviceFontNameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.DeviceFontNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.DeviceFontName" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Fill { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Fill" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.Fill" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sets the <see cref="T:System.Windows.Media.Brush" /> that is used for the fill of the <see cref="T:System.Windows.Documents.Glyphs" /> class.</summary>
+        <value>A <see cref="T:System.Windows.Media.Brush" /> that is used for the fill of the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Fill"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FillProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FillProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.FillProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.Fill" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontRenderingEmSize">
+      <MemberSignature Language="C#" Value="public double FontRenderingEmSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontRenderingEmSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.FontRenderingEmSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.FontSizeConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the em size used for rendering the <see cref="T:System.Windows.Documents.Glyphs" /> class.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the em size used for rendering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontRenderingEmSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontRenderingEmSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontRenderingEmSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontRenderingEmSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.FontRenderingEmSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.FontRenderingEmSize" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontUri">
+      <MemberSignature Language="C#" Value="public Uri FontUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri FontUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.FontUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Uri" /> that represents the location of the font used for rendering the <see cref="T:System.Windows.Documents.Glyphs" /> class.</summary>
+        <value>A <see cref="T:System.Uri" /> that represents the location of the font used for rendering the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FontUri"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontUriProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontUriProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontUriProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.FontUriProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.FontUri" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indices">
+      <MemberSignature Language="C#" Value="public string Indices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Indices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.Indices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of glyph specifications that represents the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <value>A collection of glyph specifications that represents the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A sequence of glyphs forms a single cluster. The specification of the first glyph in the cluster is preceded by a specification of how many glyphs and how many code points combine to form the cluster. The <xref:System.Windows.Documents.Glyphs.Indices%2A> property collects in one string the following properties.  
+  
+-   Glyph indices  
+  
+-   Glyph advance widths  
+  
+-   Combining glyph attachment vectors  
+  
+-   Cluster mapping from code points to glyphs  
+  
+-   Glyph flags  
+  
+ Each glyph specification has the following form.  
+  
+ `[GlyphIndex][,[Advance][,[uOffset][,[vOffset][,[Flags]]]]]`  
+  
+<a name="dependencyPropertyInfo_Indices"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicesProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IndicesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IndicesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.IndicesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.Indices" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSideways">
+      <MemberSignature Language="C#" Value="public bool IsSideways { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSideways" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.IsSideways" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether to rotate the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <value>
+          <see langword="true" /> if the glyphs that make up the <see cref="T:System.Windows.Documents.Glyphs" /> object are rotated 90° counter-clockwise; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSideways"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSidewaysProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSidewaysProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSidewaysProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.IsSidewaysProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.IsSideways" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Glyphs.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRender">
+      <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Glyphs.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Windows.Media.DrawingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginX">
+      <MemberSignature Language="C#" Value="public double OriginX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OriginX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.OriginX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the x origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <value>The x origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_OriginX"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginXProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OriginXProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OriginXProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.OriginXProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.OriginX" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginY">
+      <MemberSignature Language="C#" Value="public double OriginY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OriginY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.OriginY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the y origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <value>The y origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_OriginY"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginYProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OriginYProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OriginYProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.OriginYProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.OriginY" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleSimulations">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.StyleSimulations StyleSimulations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.StyleSimulations StyleSimulations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.StyleSimulations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.StyleSimulations" /> for the <see cref="T:System.Windows.Documents.Glyphs" /> class.</summary>
+        <value>The <see cref="T:System.Windows.Media.StyleSimulations" /> for the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_StyleSimulations"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleSimulationsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StyleSimulationsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StyleSimulationsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.StyleSimulationsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.StyleSimulations" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">
+      <MemberSignature Language="C#" Value="Uri System.Windows.Markup.IUriContext.BaseUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.System#Windows#Markup#IUriContext#BaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Windows.Markup.IUriContext.BaseUri" />.</summary>
+        <value>The base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.Glyphs> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToGlyphRun">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphRun ToGlyphRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GlyphRun ToGlyphRun() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Glyphs.ToGlyphRun" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GlyphRun</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Windows.Media.GlyphRun" /> from the properties of the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <returns>A <see cref="T:System.Windows.Media.GlyphRun" /> that was created using the properties of the <see cref="T:System.Windows.Documents.Glyphs" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeString">
+      <MemberSignature Language="C#" Value="public string UnicodeString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UnicodeString" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Glyphs.UnicodeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.String" /> that represents the Unicode string for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</summary>
+        <value>A Unicode string for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_UnicodeString"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeStringProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UnicodeStringProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UnicodeStringProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Glyphs.UnicodeStringProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Glyphs.UnicodeString" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

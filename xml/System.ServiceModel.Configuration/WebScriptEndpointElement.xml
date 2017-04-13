@@ -1,0 +1,459 @@
+<Type Name="WebScriptEndpointElement" FullName="System.ServiceModel.Configuration.WebScriptEndpointElement">
+  <TypeSignature Language="C#" Value="public class WebScriptEndpointElement : System.ServiceModel.Configuration.StandardEndpointElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebScriptEndpointElement extends System.ServiceModel.Configuration.StandardEndpointElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebScriptEndpointElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardEndpointElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a custom configuration element that defines a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Web scripting enables working with the data entered onto a web page.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebScriptEndpointElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initiates a new instance of the <see cref="T:System.ServiceModel.Configuration.WebScriptEndpointElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTypeMapper">
+      <MemberSignature Language="C#" Value="public string ContentTypeMapper { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentTypeMapper" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.ContentTypeMapper" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("contentTypeMapper", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the group of behaviors and metadata that produce the web document configured by the current <see cref="T:System.ServiceModel.Configuration.WebScriptEndpointElement" />.</summary>
+        <value>The name of a content type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceEndpoint">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint (System.ServiceModel.Description.ContractDescription contractDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint(class System.ServiceModel.Description.ContractDescription contractDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.CreateServiceEndpoint(System.ServiceModel.Description.ContractDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
+      </Parameters>
+      <Docs>
+        <param name="contractDescription">An object whose properties define an endpoint’s characteristics, including  
+  
+-   the signature of the operations in terms of messages exchanged  
+  
+-   the data types of these messages, the location of the operations  
+  
+-   the specific protocols and serialization formats that are used to support successful communication with the service</param>
+        <summary>Initiates a new <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" />.</summary>
+        <returns>A web script endpoint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossDomainScriptAccessEnabled">
+      <MemberSignature Language="C#" Value="public bool CrossDomainScriptAccessEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CrossDomainScriptAccessEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.CrossDomainScriptAccessEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("crossDomainScriptAccessEnabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether different host computers can access each others’ scripts.</summary>
+        <value>
+          <see langword="true" /> if cross domain script access is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointType">
+      <MemberSignature Language="C#" Value="protected override Type EndpointType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type EndpointType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.EndpointType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>An web script endpoint object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostNameComparisonMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.HostNameComparisonMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("hostNameComparisonMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceModel.Configuration.ServiceModelEnumValidator(typeof(System.ServiceModel.HostNameComparisonModeHelper))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies how the host name should be used in URI comparisons when dispatching an incoming message to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>An enumerated description of a comparison mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison mode settings refer to the StrongWildcard, Exact, and WeakWildcard descriptions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferPoolSize">
+      <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.MaxBufferPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.LongValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, of any buffer pools used by the message transport.</summary>
+        <value>The maximum buffer pool size.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferSize">
+      <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.MaxBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, of the buffer used to receive messages.</summary>
+        <value>The maximum buffer size.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxReceivedMessageSize">
+      <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.MaxReceivedMessageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxReceivedMessageSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.LongValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum byte size of messages received by a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>The maximum byte size.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyConfiguration">
+      <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Configuration.ChannelEndpointElement serviceEndpointElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ChannelEndpointElement serviceEndpointElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to convert.</param>
+        <param name="serviceEndpointElement">Not used.</param>
+        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyConfiguration">
+      <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ServiceEndpointElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to convert.</param>
+        <param name="serviceEndpointElement">Not used.</param>
+        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitializeAndValidate">
+      <MemberSignature Language="C#" Value="protected override void OnInitializeAndValidate (System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ChannelEndpointElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
+      </Parameters>
+      <Docs>
+        <param name="channelEndpointElement">The <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> to be initialized.</param>
+        <summary>Initializes and verifies the format of the specified <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> and configures it to include web HTTP binding content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitializeAndValidate">
+      <MemberSignature Language="C#" Value="protected override void OnInitializeAndValidate (System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ServiceEndpointElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
+      </Parameters>
+      <Docs>
+        <param name="serviceEndpointElement">The <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" /> to be initialized.</param>
+        <summary>Initializes and verifies the format of the specified <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" /> and configures it to include web HTTP binding content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all the properties attached to the current <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>A collection of endpoint element properties.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.ReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("readerQuotas")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a configuration element that defines the constraints on the complexity of messages that can be processed by <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> objects.</summary>
+        <value>A configuration element that defines Xml dictionary reader quotas.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Security">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WebHttpSecurityElement Security { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WebHttpSecurityElement Security" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.Security" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("security")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WebHttpSecurityElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an HTTP web security binding element.</summary>
+        <value>A web script endpoint configuration element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.TransferMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("transferMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceModel.Configuration.ServiceModelEnumValidator(typeof(System.ServiceModel.TransferModeHelper))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the manner in which WCF messages are transported.</summary>
+        <value>An object that contains a string that designates a WCF message transfer mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of message transfer types include buffered and streamed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding WriteEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding WriteEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEndpointElement.WriteEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.EncodingConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("writeEncoding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encoding that is used to format the characters in a text message.</summary>
+        <value>The character encoding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

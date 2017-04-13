@@ -1,0 +1,61 @@
+<Type Name="IConfigurationSystem" FullName="System.Configuration.IConfigurationSystem">
+  <TypeSignature Language="C#" Value="public interface IConfigurationSystem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationSystem" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSystem" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides standard configuration methods.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetConfig">
+      <MemberSignature Language="C#" Value="public object GetConfig (string configKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetConfig(string configKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSystem.GetConfig(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configKey">The configuration key.</param>
+        <summary>Gets the specified configuration.</summary>
+        <returns>The object representing the configuration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public void Init ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSystem.Init" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Used for initialization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

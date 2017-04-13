@@ -1,0 +1,235 @@
+<Type Name="CorrelationDataMessageProperty" FullName="System.ServiceModel.Channels.CorrelationDataMessageProperty">
+  <TypeSignature Language="C#" Value="public class CorrelationDataMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CorrelationDataMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IMessageProperty</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a message property that accumulates additional correlation information for a message as protocols are applied, such as when data is returned from a <see cref="T:System.ServiceModel.MessageQuerySet" /> over the incoming message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The correlation data accumulated by the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> augments the message contents when calculating instance keys that relate messages to other messages.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationDataMessageProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string name, Func&lt;string&gt; dataProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Func`1&lt;string&gt; dataProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.Add(System.String,System.Func{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataProvider" Type="System.Func&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the correlation data provider.</param>
+        <param name="dataProvider">The correlation data provider.</param>
+        <summary>Adds a correlation data provider to the property’s private dictionary of providers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddData">
+      <MemberSignature Language="C#" Value="public static void AddData (System.ServiceModel.Channels.Message message, string name, Func&lt;string&gt; dataProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddData(class System.ServiceModel.Channels.Message message, string name, class System.Func`1&lt;string&gt; dataProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.AddData(System.ServiceModel.Channels.Message,System.String,System.Func{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataProvider" Type="System.Func&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to modify.</param>
+        <param name="name">The name of the correlation data provider.</param>
+        <param name="dataProvider">The correlation data provider.</param>
+        <summary>Adds correlation data to the specified message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message has a <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> then the correlation data is added to the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty>; otherwise, a new <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> is added that includes the correlation data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCopy">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.CreateCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes and returns a new <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> instance that is a copy of the current <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> instance.</summary>
+        <returns>The new instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataMessageProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of this message property: “CorrelationDataMessageProperty”.</summary>
+        <value>The string value “CorrelationDataMessageProperty”.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the data provider to remove.</param>
+        <summary>Removes a correlation data provider from the private dictionary of data providers.</summary>
+        <returns>
+          <see langword="true" /> if the remove operation was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.CorrelationDataMessageProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationDataMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that contains the <see cref="P:System.ServiceModel.Channels.Message.Properties" /> to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> contained the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
+        <returns>
+          <see langword="true" /> if the message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> property contains a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> class; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.CorrelationDataMessageProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationDataMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The message properties to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> contained by the specified message properties; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from the specified message properties.</summary>
+        <returns>
+          <see langword="true" /> if the message properties contain a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (string name, out string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGetValue(System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the data provider.</param>
+        <param name="value">When this method returns, contains the value of the data provider if it is present; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to retrieve the specified correlation data provider from the private dictionary of data providers.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> contains the specified correlation data provider; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

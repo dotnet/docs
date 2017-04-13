@@ -1,0 +1,53 @@
+<Namespace Name="System.Messaging">
+  <Docs>
+    <summary>The <see cref="N:System.Messaging" /> namespace provides classes that allow you to connect to, monitor, and administer message queues on the network and send, receive, or peek messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of the <xref:System.Messaging.MessageQueue> class include the following methods for reading and writing messages to the queue:  
+  
+-   The <xref:System.Messaging.MessageQueue.Send%2A> method enables your application to write messages to the queue. Overloads of the method enable you to specify whether to send your message using a <xref:System.Messaging.Message> (which provides detailed control over the information you send) or any other managed object, including application-specific classes. The method also supports sending messages as part of a transaction.  
+  
+-   The <xref:System.Messaging.MessageQueue.Receive%2A>, <xref:System.Messaging.MessageQueue.ReceiveById%2A>, and <xref:System.Messaging.MessageQueue.ReceiveByCorrelationId%2A> methods provide functionality for reading messages from a queue. Like the <xref:System.Messaging.MessageQueue.Send%2A> method, these methods provide overloads that support transactional queue processing. These methods also provide overloads with time-out.  
+  
+     Out parameters that enable processing to continue if the queue is empty. Because these methods are examples of synchronous processing, they interrupt the current thread until a message is available, unless you specify a time-out.  
+  
+-   The <xref:System.Messaging.MessageQueue.Peek%2A> method is similar to <xref:System.Messaging.MessageQueue.Receive%2A>, but it does not cause a message to be removed from the queue when it is read. Because <xref:System.Messaging.MessageQueue.Peek%2A> does not change the queue contents, there are no overloads to support transactional processing. However, because <xref:System.Messaging.MessageQueue.Peek%2A>, like <xref:System.Messaging.MessageQueue.Receive%2A>, reads messages synchronously from the queue, overloads of the method do support specifying a time-out in order to prevent the thread from waiting indefinitely.  
+  
+-   The <xref:System.Messaging.MessageQueue.BeginPeek%2A>, <xref:System.Messaging.MessageQueue.EndPeek%28System.IAsyncResult%29>, <xref:System.Messaging.MessageQueue.BeginReceive%2A>, and <xref:System.Messaging.MessageQueue.EndReceive%28System.IAsyncResult%29> methods provide ways to asynchronously read messages from the queue. They do not interrupt the current thread while waiting for a message to arrive in the queue.  
+  
+ The following methods of the <xref:System.Messaging.MessageQueue> class provide functionality for retrieving lists of queues by specified criteria and determining if specific queues exist:  
+  
+-   <xref:System.Messaging.MessageQueue.GetPrivateQueuesByMachine%28System.String%29> enables the retrieval of the private queues on a computer.  
+  
+-   <xref:System.Messaging.MessageQueue.GetPublicQueuesByCategory%28System.Guid%29>, <xref:System.Messaging.MessageQueue.GetPublicQueuesByLabel%28System.String%29>, and <xref:System.Messaging.MessageQueue.GetPublicQueuesByMachine%28System.String%29> provide ways to retrieve public queues by common criteria. An overload of <xref:System.Messaging.MessageQueue.GetPublicQueues%2A> provides even finer detail for selecting queues based on a number of search criteria.  
+  
+ Other methods of the <xref:System.Messaging.MessageQueue> class provide the following functionality:  
+  
+-   Creating and deleting Message Queueing queues.  
+  
+-   Using a message enumerator to step through the messages in a queue.  
+  
+-   Using a queue enumerator for iterating through the queues on the system.  
+  
+-   Setting ACL-based access rights.  
+  
+-   Working with the connection cache.  
+  
+ The <xref:System.Messaging.Message> class provides detailed control over the information you send to a queue, and is the object used when receiving or peeking messages from a queue. Besides the message body, the properties of the <xref:System.Messaging.Message> class include acknowledgment settings, formatter selection, identification, authentication and encryption information, timestamps, indications about using tracing, server journaling, and dead-letter queues, and transaction data.  
+  
+ The <xref:System.Messaging.MessageQueue> component is associated with the following three formatters, which enable you to serialize and deserialize messages sent and received from queues:  
+  
+-   The <xref:System.Messaging.XmlMessageFormatter> provides loosely coupled messaging, enabling independent versioning of serialized types on the client and server.  
+  
+-   The <xref:System.Messaging.ActiveXMessageFormatter> is compatible with the MSMQ COM control. It allows you to send types that can be received by the control and to receive types that were sent by the control.  
+  
+-   The <xref:System.Messaging.BinaryMessageFormatter> provides a faster alternative to the <xref:System.Messaging.XmlMessageFormatter>, but without the benefit of loosely coupled messaging.  
+  
+ Other classes in the `Messaging` namespace support code-access and ACL-based security, filtering <xref:System.Messaging.Message> properties when reading messages from a queue, and using transactions when sending and receiving messages.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

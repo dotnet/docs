@@ -1,0 +1,128 @@
+<Type Name="RefreshProperties" FullName="System.ComponentModel.RefreshProperties">
+  <TypeSignature Language="C#" Value="public enum RefreshProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshProperties extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshProperties" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that indicate the type of a refresh of the Properties window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.RefreshProperties> defines identifiers for types of refresh methods that can be used when refreshing the view of the Properties window.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the ttribute class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+  
+ [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
+ [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties All = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The properties should be requeried and the view should be refreshed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No refresh is necessary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Repaint">
+      <MemberSignature Language="C#" Value="Repaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties Repaint = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.Repaint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The view should be refreshed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the ttribute class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+  
+ [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
+ [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

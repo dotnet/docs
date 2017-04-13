@@ -1,0 +1,2312 @@
+<Type Name="XmlDictionaryWriter" FullName="System.Xml.XmlDictionaryWriter">
+  <TypeSignature Language="C#" Value="public abstract class XmlDictionaryWriter : System.Xml.XmlWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlDictionaryWriter extends System.Xml.XmlWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.XmlWriter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an abstract class that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] derives from <see cref="T:System.Xml.XmlWriter" /> to do serialization and deserialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can derive from this class to do other functions than serialization.  
+  
+ Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XmlDictionaryWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDictionaryWriter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Invoked only by its derived classes because this class is abstract.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCanonicalize">
+      <MemberSignature Language="C#" Value="public virtual bool CanCanonicalize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCanonicalize" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryWriter.CanCanonicalize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property always returns <see langword="false" />. Its derived classes can override to return <see langword="true" /> if they support canonicalization.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `true` if and only if this derived class of <xref:System.Xml.XmlDictionaryWriter> can canonicalize the XML content being written to it, according to the Exclusive XML Canonicalization rules as defined in [Exclusive XML Canonicalization Version 1.0](http://go.microsoft.com/fwlink/?LinkId=96655).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateBinaryWriter (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateBinaryWriter(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateBinaryWriter (System.IO.Stream stream, System.Xml.IXmlDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateBinaryWriter(class System.IO.Stream stream, class System.Xml.IXmlDictionary dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use as the shared dictionary.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateBinaryWriter (System.IO.Stream stream, System.Xml.IXmlDictionary dictionary, System.Xml.XmlBinaryWriterSession session);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateBinaryWriter(class System.IO.Stream stream, class System.Xml.IXmlDictionary dictionary, class System.Xml.XmlBinaryWriterSession session) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
+        <Parameter Name="session" Type="System.Xml.XmlBinaryWriterSession" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use as the shared dictionary.</param>
+        <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateBinaryWriter (System.IO.Stream stream, System.Xml.IXmlDictionary dictionary, System.Xml.XmlBinaryWriterSession session, bool ownsStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateBinaryWriter(class System.IO.Stream stream, class System.Xml.IXmlDictionary dictionary, class System.Xml.XmlBinaryWriterSession session, bool ownsStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
+        <Parameter Name="session" Type="System.Xml.XmlBinaryWriterSession" />
+        <Parameter Name="ownsStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream from which to read.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use as the shared dictionary.</param>
+        <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
+        <param name="ownsStream">
+          <see langword="true" /> to indicate that the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDictionaryWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateDictionaryWriter (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateDictionaryWriter(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateDictionaryWriter(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An instance of <see cref="T:System.Xml.XmlWriter" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> from an existing <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMtomWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateMtomWriter (System.IO.Stream stream, System.Text.Encoding encoding, int maxSizeInBytes, string startInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateMtomWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 maxSizeInBytes, string startInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateMtomWriter(System.IO.Stream,System.Text.Encoding,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="maxSizeInBytes" Type="System.Int32" />
+        <Parameter Name="startInfo" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the stream.</param>
+        <param name="maxSizeInBytes">The maximum number of bytes that are buffered in the writer.</param>
+        <param name="startInfo">An attribute in the ContentType SOAP header.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMtomWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateMtomWriter (System.IO.Stream stream, System.Text.Encoding encoding, int maxSizeInBytes, string startInfo, string boundary, string startUri, bool writeMessageHeaders, bool ownsStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateMtomWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 maxSizeInBytes, string startInfo, string boundary, string startUri, bool writeMessageHeaders, bool ownsStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateMtomWriter(System.IO.Stream,System.Text.Encoding,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="maxSizeInBytes" Type="System.Int32" />
+        <Parameter Name="startInfo" Type="System.String" />
+        <Parameter Name="boundary" Type="System.String" />
+        <Parameter Name="startUri" Type="System.String" />
+        <Parameter Name="writeMessageHeaders" Type="System.Boolean" />
+        <Parameter Name="ownsStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the stream.</param>
+        <param name="maxSizeInBytes">The maximum number of bytes that are buffered in the writer.</param>
+        <param name="startInfo">The content-type of the MIME part that contains the Infoset.</param>
+        <param name="boundary">The MIME boundary in the message.</param>
+        <param name="startUri">The content-id URI of the MIME part that contains the Infoset.</param>
+        <param name="writeMessageHeaders">
+          <see langword="true" /> to write message headers.</param>
+        <param name="ownsStream">
+          <see langword="true" /> to indicate that the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTextWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateTextWriter (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateTextWriter(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes text XML.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text writer writes the XML in UTF-8 format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTextWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateTextWriter (System.IO.Stream stream, System.Text.Encoding encoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateTextWriter(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the output.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes text XML.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of <xref:System.Xml.XmlDictionaryWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTextWriter">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateTextWriter (System.IO.Stream stream, System.Text.Encoding encoding, bool ownsStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateTextWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, bool ownsStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="ownsStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the stream.</param>
+        <param name="ownsStream">
+          <see langword="true" /> to indicate that the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes text XML.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCanonicalization">
+      <MemberSignature Language="C#" Value="public virtual void EndCanonicalization ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCanonicalization() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.EndCanonicalization" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented by a derived class, it stops the canonicalization started by the matching <see cref="M:System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])" /> call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not yet implemented.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Method is not implemented yet.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCanonicalization">
+      <MemberSignature Language="C#" Value="public virtual void StartCanonicalization (System.IO.Stream stream, bool includeComments, string[] inclusivePrefixes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartCanonicalization(class System.IO.Stream stream, bool includeComments, string[] inclusivePrefixes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="includeComments" Type="System.Boolean" />
+        <Parameter Name="inclusivePrefixes" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="includeComments">
+          <see langword="true" /> to include comments; otherwise, <see langword="false" />.</param>
+        <param name="inclusivePrefixes">The prefixes to be included.</param>
+        <summary>When implemented by a derived class, it starts the canonicalization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not yet implemented.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Method is not implemented yet.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, bool[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, bool[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Boolean[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Boolean[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the data.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of values to write from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Boolean" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, DateTime[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, valuetype System.DateTime[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.DateTime[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.DateTime[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.DateTime" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, decimal[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, valuetype System.Decimal[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Decimal[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Decimal[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Decimal" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, double[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, float64[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Double[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Double[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Double" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, Guid[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, valuetype System.Guid[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Guid[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Guid[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Guid" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, short[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, int16[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int16[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Int16[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int16" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, int[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, int32[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int32[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Int32[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int32" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, long[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, int64[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int64[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Int64[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int64" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, float[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, float32[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Single[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.Single[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Single" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, string localName, string namespaceUri, TimeSpan[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, string localName, string namespaceUri, valuetype System.TimeSpan[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="array" Type="System.TimeSpan[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.TimeSpan" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, bool[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, bool[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Boolean[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Boolean" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, DateTime[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, valuetype System.DateTime[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.DateTime[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.DateTime" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, decimal[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, valuetype System.Decimal[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Decimal[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Decimal" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, double[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, float64[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Double[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Double" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, Guid[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, valuetype System.Guid[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Guid[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Guid" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, short[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, int16[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Int16[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int16" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, int[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, int32[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Int32[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int32" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, long[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, int64[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Int64[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Int64" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, float[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, float32[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.Single[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.Single" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray">
+      <MemberSignature Language="C#" Value="public virtual void WriteArray (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, TimeSpan[] array, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteArray(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, valuetype System.TimeSpan[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="array" Type="System.TimeSpan[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array that contains the nodes.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to get from the array.</param>
+        <summary>Writes nodes from a <see cref="T:System.TimeSpan" /> array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttributeString">
+      <MemberSignature Language="C#" Value="public void WriteAttributeString (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteAttributeString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="namespaceUri">The namespace URI of the attribute.</param>
+        <param name="value">The attribute.</param>
+        <summary>Writes an attribute qualified name and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttributeString">
+      <MemberSignature Language="C#" Value="public void WriteAttributeString (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteAttributeString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix of the attribute.</param>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="namespaceUri">The namespace URI of the attribute.</param>
+        <param name="value">The attribute.</param>
+        <summary>Writes an attribute qualified name and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64Async">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteBase64Async (byte[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteBase64Async(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteBase64Async(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">Byte array to encode.</param>
+        <param name="index">The position in the buffer indicating the start of the bytes to write.</param>
+        <param name="count">The number of bytes to write.</param>
+        <summary>Asynchronously encodes the specified binary bytes as Base64 and writes out the resulting text.</summary>
+        <returns>The task that represents the asynchronous <see langword="WriteBase64" /> operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="public void WriteElementString (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteElementString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="value">The element content.</param>
+        <summary>Writes an element with a text content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="public void WriteElementString (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteElementString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix of the element.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="value">The element content.</param>
+        <summary>Writes an element with a text content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNode">
+      <MemberSignature Language="C#" Value="public virtual void WriteNode (System.Xml.XmlDictionaryReader reader, bool defattr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNode(class System.Xml.XmlDictionaryReader reader, bool defattr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteNode(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="defattr" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" />.</param>
+        <param name="defattr">
+          <see langword="true" /> to copy the default attributes from the <see langword="XmlReader" />; otherwise, <see langword="false" />.</param>
+        <summary>Writes the current XML node from an <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNode">
+      <MemberSignature Language="C#" Value="public override void WriteNode (System.Xml.XmlReader reader, bool defattr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteNode(class System.Xml.XmlReader reader, bool defattr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteNode(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="defattr" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" />.</param>
+        <param name="defattr">
+          <see langword="true" /> to copy the default attributes from the <see cref="T:System.Xml.XmlReader" />; otherwise, <see langword="false" />.</param>
+        <summary>Writes the current XML node from an <see cref="T:System.Xml.XmlReader" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteQualifiedName">
+      <MemberSignature Language="C#" Value="public virtual void WriteQualifiedName (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteQualifiedName(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteQualifiedName(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the qualified name.</param>
+        <param name="namespaceUri">The namespace URI of the qualified name.</param>
+        <summary>Writes out the namespace-qualified name. This method looks up the prefix that is in scope for the given namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the namespace maps to the current default namespace, no prefix is generated.  
+  
+ When writing attribute values, this method generates a prefix if the namespace is not found. When writing element content, it throws an exception if the namespace is not found.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartAttribute">
+      <MemberSignature Language="C#" Value="public void WriteStartAttribute (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAttribute(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="namespaceUri">The namespace URI of the attribute.</param>
+        <summary>Writes the start of an attribute with the specified local name, and namespace URI.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartAttribute">
+      <MemberSignature Language="C#" Value="public virtual void WriteStartAttribute (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartAttribute(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix.</param>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="namespaceUri">The namespace URI of the attribute.</param>
+        <summary>Writes the start of an attribute with the specified prefix, local name, and namespace URI.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="public void WriteStartElement (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartElement(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Writes the specified start tag and associates it with the given namespace.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The writer is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="public virtual void WriteStartElement (string prefix, System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartElement(string prefix, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteStartElement(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix of the element.</param>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Writes the specified start tag and associates it with the given namespace and prefix.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The writer is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public virtual void WriteString (System.Xml.XmlDictionaryString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteString(class System.Xml.XmlDictionaryString value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteString(System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="value">The text to write.</param>
+        <summary>Writes the given text content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTextNode">
+      <MemberSignature Language="C#" Value="protected virtual void WriteTextNode (System.Xml.XmlDictionaryReader reader, bool isAttribute);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteTextNode(class System.Xml.XmlDictionaryReader reader, bool isAttribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteTextNode(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="isAttribute" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> to get the text value from.</param>
+        <param name="isAttribute">
+          <see langword="true" /> to indicate that the reader is positioned on an attribute value or element content; otherwise, <see langword="false" />.</param>
+        <summary>Writes the text node that an <see cref="T:System.Xml.XmlDictionaryReader" /> is currently positioned on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If positioned on element content, this method advances the XmlDictionaryReader.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public virtual void WriteValue (Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValue(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Guid" /> value to write.</param>
+        <summary>Writes a <see cref="T:System.Guid" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public virtual void WriteValue (TimeSpan value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(valuetype System.TimeSpan value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValue(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.TimeSpan" /> value to write.</param>
+        <summary>Writes a <see cref="T:System.TimeSpan" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public virtual void WriteValue (System.Xml.IStreamProvider value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(class System.Xml.IStreamProvider value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.IStreamProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.IStreamProvider" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Xml.IStreamProvider" /> value to write.</param>
+        <summary>Writes a value from an <see cref="T:System.Xml.IStreamProvider" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the stream provided by the `IStreamProvider` are written as Base64 data, unless this method is overridden in a derived class.  
+  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlDictionaryWriter.WriteValueAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XmlException">
+          <paramref name="value" /> returns a <see langword="null" /> stream object.</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public virtual void WriteValue (System.Xml.UniqueId value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(class System.Xml.UniqueId value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.UniqueId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.UniqueId" />
+      </Parameters>
+      <Docs>
+        <param name="value">The Unique Id value to write.</param>
+        <summary>Writes a Unique Id value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public virtual void WriteValue (System.Xml.XmlDictionaryString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(class System.Xml.XmlDictionaryString value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> value.</param>
+        <summary>Writes a <see cref="T:System.Xml.XmlDictionaryString" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValueAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteValueAsync (System.Xml.IStreamProvider value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteValueAsync(class System.Xml.IStreamProvider value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteValueAsync(System.Xml.IStreamProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.IStreamProvider" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Xml.IStreamProvider" /> value to write.</param>
+        <summary>Asynchronously writes a value from an <see cref="T:System.Xml.IStreamProvider" />.</summary>
+        <returns>The task that represents the asynchronous <see langword="WriteValue" /> operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the asynchronous version of <xref:System.Xml.XmlDictionaryWriter.WriteValue%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlAttribute">
+      <MemberSignature Language="C#" Value="public virtual void WriteXmlAttribute (string localName, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlAttribute(string localName, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="value">The value of the attribute.</param>
+        <summary>Writes a standard XML attribute in the current node.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlAttribute">
+      <MemberSignature Language="C#" Value="public virtual void WriteXmlAttribute (System.Xml.XmlDictionaryString localName, System.Xml.XmlDictionaryString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlAttribute(class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute.</param>
+        <param name="value">The value of the attribute.</param>
+        <summary>Writes an XML attribute in the current node.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlnsAttribute">
+      <MemberSignature Language="C#" Value="public virtual void WriteXmlnsAttribute (string prefix, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlnsAttribute(string prefix, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix that is bound to the given namespace.</param>
+        <param name="namespaceUri">The namespace to which the prefix is bound.</param>
+        <summary>Writes a namespace declaration attribute.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlnsAttribute">
+      <MemberSignature Language="C#" Value="public virtual void WriteXmlnsAttribute (string prefix, System.Xml.XmlDictionaryString namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlnsAttribute(string prefix, class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.Xml.XmlDictionaryString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix that is bound to the given namespace.</param>
+        <param name="namespaceUri">The namespace to which the prefix is bound.</param>
+        <summary>Writes a namespace declaration attribute.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="CreateMtomWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the Message Transmission Optimization Mechanism (MTOM) format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MTOM allows users to optimize the transmission of raw binary data within SOAP messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXmlAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a standard XML attribute in the current element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A standard XML attribute is one with the prefix "xml" in any casing. Examples are `xml:space` and `xml:lang`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateBinaryWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
+  
+```  
+XmlWriter binarywriter = XmlDictionaryWriter.CreateBinaryWriter(Stream.Null);  
+binarywriter.WriteStartAttribute("StartAttribute");  
+string largeStr = new string('r', 100000);  
+for (int i = 0; i < 10000; i++)   
+{  
+    binarywriter.WriteValue(largeStr);  
+}  
+binarywriter.WriteEndAttribute();  
+  
+```  
+  
+ In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

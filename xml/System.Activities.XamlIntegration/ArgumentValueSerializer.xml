@@ -1,0 +1,83 @@
+<Type Name="ArgumentValueSerializer" FullName="System.Activities.XamlIntegration.ArgumentValueSerializer">
+  <TypeSignature Language="C#" Value="public class ArgumentValueSerializer : System.Windows.Markup.ValueSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArgumentValueSerializer extends System.Windows.Markup.ValueSerializer" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.ArgumentValueSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.ValueSerializer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts instances of <see cref="T:System.Activities.Argument" /> to instances of <see cref="T:System.String" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArgumentValueSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ArgumentValueSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.ArgumentValueSerializer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertToString">
+      <MemberSignature Language="C#" Value="public override bool CanConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ArgumentValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified object can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToString">
+      <MemberSignature Language="C#" Value="public override string ConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ArgumentValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to convert into a <see cref="T:System.String" />.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts the specified object to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> representation of the specified object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,203 @@
+<Type Name="BulletStyle" FullName="System.Web.UI.WebControls.BulletStyle">
+  <TypeSignature Language="C#" Value="public enum BulletStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the bullet styles you can apply to list items in a <see cref="T:System.Web.UI.WebControls.BulletedList" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BulletStyle> enumeration represents the bullet styles that you can apply to the list items in a <xref:System.Web.UI.WebControls.BulletedList> control. The <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property uses these enumeration values to set the bullet styles in a <xref:System.Web.UI.WebControls.BulletedList> control. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to `Disc`, each list item in a <xref:System.Web.UI.WebControls.BulletedList> control will render a filled circle preceding the content of the list item as follows:  
+  
+-   List Item 1  
+  
+-   List Item 2  
+  
+-   List Item 3  
+  
+ Specifying the `CustomImage` bullet style allows you to supply your own image for the bullet. If you specify the `CustomImage` bullet style, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to the URL of the custom image to use.  
+  
+ If you specify `NotSet`, the browser in which the control is rendered will determine the bullet style to display with the list items in the <xref:System.Web.UI.WebControls.BulletedList> control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control. A <xref:System.Web.UI.WebControls.ListBox> control is populated with all available <xref:System.Web.UI.WebControls.BulletStyle> enumeration values. The bullet style changes based on the style that the user selects from the list box.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BulletedListStylesExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListStylesExample/CS/bulletedliststylescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BulletedListStylesExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListStylesExample/VB/bulletedliststylesvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Circle">
+      <MemberSignature Language="C#" Value="Circle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Circle = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Circle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is an empty circle shape.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomImage">
+      <MemberSignature Language="C#" Value="CustomImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle CustomImage = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.CustomImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a custom image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disc">
+      <MemberSignature Language="C#" Value="Disc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Disc = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Disc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a filled circle shape.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerAlpha">
+      <MemberSignature Language="C#" Value="LowerAlpha" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle LowerAlpha = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.LowerAlpha" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a lowercase letter (a, b, c, ...).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerRoman">
+      <MemberSignature Language="C#" Value="LowerRoman" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle LowerRoman = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.LowerRoman" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a lowercase Roman numeral (i, ii, iii, ...).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is not set. The browser that renders the <see cref="T:System.Web.UI.WebControls.BulletedList" /> control will determine the bullet style to display.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Numbered">
+      <MemberSignature Language="C#" Value="Numbered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Numbered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Numbered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a number (1, 2, 3, ...).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Square">
+      <MemberSignature Language="C#" Value="Square" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Square = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Square" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is a filled square shape.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpperAlpha">
+      <MemberSignature Language="C#" Value="UpperAlpha" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle UpperAlpha = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.UpperAlpha" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is an uppercase letter (A, B, C, ...).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpperRoman">
+      <MemberSignature Language="C#" Value="UpperRoman" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle UpperRoman = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.UpperRoman" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bullet style is an uppercase Roman numeral (I, II, III, ...).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="TrackingConditionCollection" FullName="System.Workflow.Runtime.Tracking.TrackingConditionCollection">
+  <TypeSignature Language="C#" Value="public class TrackingConditionCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrackingConditionCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.TrackingCondition&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Workflow.Runtime.Tracking.TrackingCondition</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.TrackingCondition" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingConditionCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" /> class</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingConditionCollection> is initialized to an empty list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingConditionCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt; conditions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.TrackingCondition&gt; conditions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingCondition})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditions" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="conditions">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see cref="T:System.Workflow.Runtime.Tracking.TrackingCondition" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" /> by using a list of <see cref="T:System.Workflow.Runtime.Tracking.TrackingCondition" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingConditionCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.TrackingCondition> objects specified in `conditions`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="conditions" /> is a null reference (Nothing in Visual Basic)</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

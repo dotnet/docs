@@ -1,0 +1,177 @@
+<Type Name="MemoryMappedFileAccess" FullName="System.IO.MemoryMappedFiles.MemoryMappedFileAccess">
+  <TypeSignature Language="C#" Value="public enum MemoryMappedFileAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemoryMappedFileAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies access capabilities and restrictions for a memory-mapped file or view.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyOnWrite">
+      <MemberSignature Language="C#" Value="CopyOnWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess CopyOnWrite = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.CopyOnWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read and write access to the file, with the restriction that any write operations will not be seen by other processes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess Read = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read-only access to the file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadExecute">
+      <MemberSignature Language="C#" Value="ReadExecute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess ReadExecute = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadExecute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read access to the file that can store and run executable code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWrite">
+      <MemberSignature Language="C#" Value="ReadWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess ReadWrite = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read and write access to the file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWriteExecute">
+      <MemberSignature Language="C#" Value="ReadWriteExecute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess ReadWriteExecute = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWriteExecute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read and write access to the file that can can store and run executable code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess Write = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Write-only access to file.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

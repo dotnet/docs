@@ -1,0 +1,310 @@
+<Type Name="InvokeMemberBinder" FullName="System.Dynamic.InvokeMemberBinder">
+  <TypeSignature Language="C#" Value="public abstract class InvokeMemberBinder : System.Dynamic.DynamicMetaObjectBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InvokeMemberBinder extends System.Dynamic.DynamicMetaObjectBinder" />
+  <TypeSignature Language="DocId" Value="T:System.Dynamic.InvokeMemberBinder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Dynamic.DynamicMetaObjectBinder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the invoke member dynamic operation at the call site, providing the binding semantic and the details about the operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InvokeMemberBinder (string name, bool ignoreCase, System.Dynamic.CallInfo callInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, bool ignoreCase, class System.Dynamic.CallInfo callInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.InvokeMemberBinder.#ctor(System.String,System.Boolean,System.Dynamic.CallInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="callInfo" Type="System.Dynamic.CallInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to invoke.</param>
+        <param name="ignoreCase">true if the name should be matched ignoring case; false otherwise.</param>
+        <param name="callInfo">The signature of the arguments at the call site.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.InvokeMemberBinder" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind">
+      <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.InvokeMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
+        <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target of the dynamic invoke member operation.</param>
+        <param name="args">An array of arguments of the dynamic invoke member operation.</param>
+        <summary>Performs the binding of the dynamic invoke member operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallInfo">
+      <MemberSignature Language="C#" Value="public System.Dynamic.CallInfo CallInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Dynamic.CallInfo CallInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.InvokeMemberBinder.CallInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Dynamic.CallInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the signature of the arguments at the call site.</summary>
+        <value>The signature of the arguments at the call site.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvoke">
+      <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackInvoke (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args, System.Dynamic.DynamicMetaObject errorSuggestion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackInvoke(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.InvokeMemberBinder.FallbackInvoke(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
+        <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
+        <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target of the dynamic invoke operation.</param>
+        <param name="args">The arguments of the dynamic invoke operation.</param>
+        <param name="errorSuggestion">The binding result to use if binding fails, or null.</param>
+        <summary>When overridden in the derived class, performs the binding of the dynamic invoke operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the target when the target implements the invoke member operation as a sequence of get member, and invoke, to let the <xref:System.Dynamic.DynamicMetaObject> request the binding of the invoke operation only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvokeMember">
+      <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject FallbackInvokeMember (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackInvokeMember(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.InvokeMemberBinder.FallbackInvokeMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
+        <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target of the dynamic invoke member operation.</param>
+        <param name="args">The arguments of the dynamic invoke member operation.</param>
+        <summary>Performs the binding of the dynamic invoke member operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvokeMember">
+      <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackInvokeMember (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args, System.Dynamic.DynamicMetaObject errorSuggestion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackInvokeMember(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.InvokeMemberBinder.FallbackInvokeMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
+        <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
+        <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target of the dynamic invoke member operation.</param>
+        <param name="args">The arguments of the dynamic invoke member operation.</param>
+        <param name="errorSuggestion">The binding result to use if binding fails, or null.</param>
+        <summary>When overridden in the derived class, performs the binding of the dynamic invoke member operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCase">
+      <MemberSignature Language="C#" Value="public bool IgnoreCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.InvokeMemberBinder.IgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value indicating if the string comparison should ignore the case of the member name.</summary>
+        <value>True if the case is ignored, otherwise false.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.InvokeMemberBinder.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the member to invoke.</summary>
+        <value>The name of the member to invoke.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public override sealed Type ReturnType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.InvokeMemberBinder.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,212 @@
+<Type Name="DiscoveryClientElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryClientElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.BindingElementExtensionElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a sealed class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryClientElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyConfiguration">
+      <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindingElement">An element that builds the channel factories and channel listeners for various types of channels that are used to process outgoing and incoming messages.</param>
+        <summary>Adds the criteria from the specified binding element to the current <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElementType">
+      <MemberSignature Language="C#" Value="public override Type BindingElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.BindingElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the <see cref="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" />.</summary>
+        <value>A type object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the binding element that can be added to a client application to take advantage of the Discovery Client Channel that enables a client application to access a discoverable service without knowing the endpoint address in advance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFrom">
+      <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
+      </Parameters>
+      <Docs>
+        <param name="from">The <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to be copied.</param>
+        <summary>Copies the content of the specified <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to the current configuration element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElement">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CreateBindingElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscoveryEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.DiscoveryEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("endpoint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.ChannelEndpointElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
+        <value>A channel endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindCriteria">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.FindCriteria" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("findCriteria")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.Configuration.FindCriteriaElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" /> that supplies a set of criteria used by a client application to search for a discovery workflow service.</summary>
+        <value>A find criteria element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFrom">
+      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindingElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

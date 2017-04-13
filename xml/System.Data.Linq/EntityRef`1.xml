@@ -1,0 +1,132 @@
+<Type Name="EntityRef&lt;TEntity&gt;" FullName="System.Data.Linq.EntityRef&lt;TEntity&gt;">
+  <TypeSignature Language="C#" Value="public struct EntityRef&lt;TEntity&gt; where TEntity : class" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EntityRef`1&lt;class TEntity&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.EntityRef`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEntity">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TEntity">The type of the target entity.</typeparam>
+    <summary>Provides for deferred loading and relationship maintenance for the singleton side of a one-to-many relationship in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in combination with <xref:System.Data.Linq.EntitySet%601>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRef (System.Collections.Generic.IEnumerable&lt;TEntity&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The reference source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by specifying the source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRef (System.Data.Linq.EntityRef&lt;TEntity&gt; entityRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.Linq.EntityRef`1&lt;!TEntity&gt; entityRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(System.Data.Linq.EntityRef{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="entityRef" Type="System.Data.Linq.EntityRef&lt;TEntity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="entityRef">The target entity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by referencing the target entity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRef (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The target entity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by specifying the target entity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public TEntity Entity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TEntity Entity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntityRef`1.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TEntity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target entity.</summary>
+        <value>The target entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLoadedOrAssignedValue">
+      <MemberSignature Language="C#" Value="public bool HasLoadedOrAssignedValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLoadedOrAssignedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntityRef`1.HasLoadedOrAssignedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the target has been loaded or assigned.</summary>
+        <value>
+          <see langword="True" /> if the target has been loaded or assigned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `True` is returned even if the value in the target is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

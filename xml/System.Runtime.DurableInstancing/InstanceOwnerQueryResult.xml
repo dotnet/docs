@@ -1,0 +1,90 @@
+<Type Name="InstanceOwnerQueryResult" FullName="System.Runtime.DurableInstancing.InstanceOwnerQueryResult">
+  <TypeSignature Language="C#" Value="public sealed class InstanceOwnerQueryResult : System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceOwnerQueryResult extends System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstanceStoreQueryResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a query result set consisting of metadata associated with an instance owner or instance owners that are retrieved from a persistence store.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class with an empty query result set.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult (System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; instanceOwners);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; instanceOwners) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceOwners" Type="System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instanceOwners">A dictionary that contains GUIDs and metadata of instance owners representing the query result set. Metadata itself is contained in additional dictionaries that contain names and values of metadata properties.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class using the dictionary passed as a parameter that contains GUIDs associated with instance owners and dictionaries that contain metadata associated with these instance owners.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult (Guid instanceOwnerId, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceOwnerId, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceOwnerId" Type="System.Guid" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instanceOwnerId">GUID associated with the instance owner.</param>
+        <param name="metadata">Metadata associated with the instance owner in a dictionary, (which contains the names of properties and their values).</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class  with a single query result consisting of the GUID of the instance owner and the metadata associated with that instance owner in the instance store passed as parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceOwners">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceOwners { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceOwners" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.InstanceOwners" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the query result set consisting of metadata associated with an instance owner or instance owners stored in a dictionary that contains the GUID of the instance owner as a key and the metadata stored in another dictionary of names and values of properties as the value.</summary>
+        <value>The metadata associated with instance owners.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

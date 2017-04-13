@@ -1,0 +1,151 @@
+<Type Name="ProgressChangedEventArgs" FullName="System.ComponentModel.ProgressChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ProgressChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProgressChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProgressChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ComponentModel.ProgressChangedEventArgs> class. This example is part of a larger example for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#7)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#7)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProgressChangedEventArgs (int progressPercentage, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 progressPercentage, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProgressChangedEventArgs.#ctor(System.Int32,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="progressPercentage" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="progressPercentage">The percentage of an asynchronous task that has been completed.</param>
+        <param name="userState">A unique user state.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProgressChangedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressPercentage">
+      <MemberSignature Language="C#" Value="public int ProgressPercentage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProgressPercentage" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the asynchronous task progress percentage.</summary>
+        <value>A percentage value indicating the asynchronous task progress.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property determines what percentage of an asynchronous task has been completed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#517](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#517)]
+ [!code-vb[System.Windows.Forms.EventExamples#517](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#517)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserState">
+      <MemberSignature Language="C#" Value="public object UserState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object UserState" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.UserState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a unique user state.</summary>
+        <value>A unique <see cref="T:System.Object" /> indicating the user state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#517](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#517)]
+ [!code-vb[System.Windows.Forms.EventExamples#517](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#517)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

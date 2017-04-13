@@ -57,7 +57,7 @@ To create a sample:
 2. Write the topic that explains the concepts demonstrated in your sample (example: `docs/standard/linq/where-clause.md`) 
 3. Write your sample (example: `WhereClause-Sample1.cs`)
 4. Create a Program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
-  ```cs
+  ```csharp
     public class Program
     {
         public void Main(string[] args)

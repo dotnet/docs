@@ -1,0 +1,23 @@
+<Namespace Name="System.ComponentModel">
+  <Docs>
+    <summary>The <see cref="N:System.ComponentModel" /> namespace provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace divide into the following categories:  
+  
+-   Core component classes. See the <xref:System.ComponentModel.Component>, <xref:System.ComponentModel.IComponent>, <xref:System.ComponentModel.Container>, and <xref:System.ComponentModel.IContainer> classes.  
+  
+-   Component licensing. See the <xref:System.ComponentModel.License>, <xref:System.ComponentModel.LicenseManager>, <xref:System.ComponentModel.LicenseProvider>, and <xref:System.ComponentModel.LicenseProviderAttribute> classes.  
+  
+-   Attributes. See the <xref:System.Attribute> class.  
+  
+-   Descriptors and persistence. See the <xref:System.ComponentModel.TypeDescriptor>, <xref:System.ComponentModel.EventDescriptor>, and <xref:System.ComponentModel.PropertyDescriptor> classes.  
+  
+-   Type converters. See the <xref:System.ComponentModel.TypeConverter> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,56 @@
+<Type Name="RecycleLimitMonitor" FullName="System.Web.Hosting.RecycleLimitMonitor">
+  <TypeSignature Language="C#" Value="public class RecycleLimitMonitor : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecycleLimitMonitor extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitMonitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates a recycle limit monitor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the recycle limit monitor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Obtains a lifetime service object to control the lifetime policy for this instance.</summary>
+        <returns>Returns nulls.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

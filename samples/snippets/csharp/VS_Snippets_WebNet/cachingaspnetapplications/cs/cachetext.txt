@@ -1,0 +1,45 @@
+T:System.Runtime.Caching.Hosting.IApplicationIdentifier
+Defines an identifier for application domains that a cache 
+implementation can use to interact with a host environment. 
+public interface IApplicationIdentifier
+Remarks
+A dnprdnshort host environment such as ASP.NET can use the 
+T:System.Runtime.Caching.Hosting.IApplicationIdentifier 
+interface to define strings that identify individual 
+application domains. The host environment implements 
+the T:System.Runtime.Caching.Hosting.IApplicationIdentifier 
+interface. This interface is then available to 
+T:System.Runtime.Caching.ObjectCache implementations 
+through the P:System.Runtime.Caching.ObjectCache.Host property. 
+A cache implementation uses this reference to obtain
+ an identifier for the application domain. 
+In ASP.NET, cache implementations 
+use the application identifier to construct 
+identifiers for cache performance counters. 
+This provides names for performance counter 
+instances that can be distinguished between application domains 
+when multiple application domains are running. 
+Example
+
+ 
+M:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId
+Gets an identifier for an application domain. 
+string GetApplicationId();
+Return Value
+A unique identifier for the current application domain. 
+Remarks
+The M:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId method is 
+typically implemented by a dnprdnshort host environment in order to construct 
+an application identifier for an T:System.Runtime.Caching.ObjectCache 
+implementation. A T:System.Runtime.Caching.ObjectCache implementation 
+uses this information to identify the application domain that is 
+currently running. 
+For example, in ASP.NET, the cache uses an application identifier 
+
+to construct identifiers for cache performance counters. The cache 
+calls the M:System.Runtime.Caching.Hosting.IApplicationIdentifier.
+GetApplicationId method that is implemented by the host environment
+ and the host returns the identifier. This provides names for 
+performance counter instances that can be distinguished between 
+application domains when multiple application domains are running.
+Example

@@ -1,0 +1,94 @@
+<Type Name="SubclassTypeValidatorAttribute" FullName="System.Configuration.SubclassTypeValidatorAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SubclassTypeValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SubclassTypeValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SubclassTypeValidatorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Declaratively instructs the .NET Framework to perform validation on a configuration property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using a <xref:System.Configuration.SubclassTypeValidatorAttribute> attribute, and pass to it the value of the decorating parameters.  
+  
+ You can apply <xref:System.Configuration.SubclassTypeValidatorAttribute> attributes to property types only.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubclassTypeValidatorAttribute (Type baseClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type baseClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidatorAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseClass">The base class type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SubclassTypeValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor in the attributed model to ensure that the value assigned to the related property is a base class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClass">
+      <MemberSignature Language="C#" Value="public Type BaseClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BaseClass" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SubclassTypeValidatorAttribute.BaseClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the base type of the object being validated.</summary>
+        <value>The base type of the object being validated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatorInstance">
+      <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SubclassTypeValidatorAttribute.ValidatorInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the validator attribute instance.</summary>
+        <value>The current <see cref="T:System.Configuration.ConfigurationValidatorBase" /> instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

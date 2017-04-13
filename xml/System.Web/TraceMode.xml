@@ -1,0 +1,66 @@
+<Type Name="TraceMode" FullName="System.Web.TraceMode">
+  <TypeSignature Language="C#" Value="public enum TraceMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.TraceMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies in what order trace messages are emitted into the HTML output of a page.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode Default = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the default value of the <see cref="P:System.Web.TraceContext.TraceMode" /> enumeration, which is <see cref="F:System.Web.TraceMode.SortByTime" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByCategory">
+      <MemberSignature Language="C#" Value="SortByCategory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode SortByCategory = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByCategory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Emit trace messages alphabetically by category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByTime">
+      <MemberSignature Language="C#" Value="SortByTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode SortByTime = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Emit trace messages in the order they were processed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

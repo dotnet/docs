@@ -1,0 +1,37 @@
+<Type Name="InkCanvasStrokeErasingEventArgs" FullName="System.Windows.Controls.InkCanvasStrokeErasingEventArgs">
+  <TypeSignature Language="C#" Value="public class InkCanvasStrokeErasingEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasStrokeErasingEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeErasingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.StrokeErasing" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Stroke">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.Stroke Stroke { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.Stroke Stroke" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokeErasingEventArgs.Stroke" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.Stroke</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the stroke that is about to be erased.</summary>
+        <value>The stroke that is about to be erased.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

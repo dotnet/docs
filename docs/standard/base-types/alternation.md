@@ -2,8 +2,8 @@
 title: Alternation constructs in regular expressions
 description: Alternation constructs in regular expressions
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/28/2016
 ms.topic: article
 ms.prod: .net

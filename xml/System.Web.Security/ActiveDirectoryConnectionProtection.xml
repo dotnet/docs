@@ -1,0 +1,73 @@
+<Type Name="ActiveDirectoryConnectionProtection" FullName="System.Web.Security.ActiveDirectoryConnectionProtection">
+  <TypeSignature Language="C#" Value="public enum ActiveDirectoryConnectionProtection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDirectoryConnectionProtection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.ActiveDirectoryConnectionProtection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the connection protection options supported by the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.ActiveDirectoryConnectionProtection> enumeration is used in an application's configuration file to set the protocol used to secure communications between an <xref:System.Web.Security.ActiveDirectoryMembershipProvider> object and an Active Directory or Active Directory Application Mode server. The enumeration indicates the type of connection security the provider established based on the `connectionProtection` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. The `connectionProtection` attribute can be set only to either "None" or "Secure".  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.ActiveDirectoryConnectionProtection None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.ActiveDirectoryConnectionProtection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No transport layer security is used. Explicit credentials for the Active Directory connection must be provided in the configuration file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SignAndSeal">
+      <MemberSignature Language="C#" Value="SignAndSeal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.ActiveDirectoryConnectionProtection SignAndSeal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.ActiveDirectoryConnectionProtection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connection to the Active Directory server is secured by digitally signing and encrypting each packet sent to the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ssl">
+      <MemberSignature Language="C#" Value="Ssl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.ActiveDirectoryConnectionProtection Ssl = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.Ssl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.ActiveDirectoryConnectionProtection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An SSL connection is used to connect to the Active Directory server.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

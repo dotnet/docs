@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Shape of WordprocessingML Documents (Visual Basic)

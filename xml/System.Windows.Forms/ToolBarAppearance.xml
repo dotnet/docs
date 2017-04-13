@@ -1,0 +1,68 @@
+<Type Name="ToolBarAppearance" FullName="System.Windows.Forms.ToolBarAppearance">
+  <TypeSignature Language="C#" Value="public enum ToolBarAppearance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarAppearance extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarAppearance" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of toolbar to display.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ToolBar.Appearance%2A?displayProperty=fullName>.  
+  
+ Set the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the toolbar to `ToolBarAppearance.Flat` to give the toolbar and its buttons a flat appearance. As the mouse pointer moves over the buttons, their appearance changes to three-dimensional. Button separators appear as lines rather than spaces between the buttons when the toolbar has a flat appearance.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example assumes a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
+  
+ [!code-cpp[ToolBar#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolBar/CPP/mytoolbar.cpp#1)]
+ [!code-csharp[ToolBar#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolBar/CS/mytoolbar.cs#1)]
+ [!code-vb[ToolBar#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolBar/VB/mytoolbar.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarAppearance Flat = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The toolbar and buttons appear flat, but the buttons change to three-dimensional as the mouse pointer moves over them.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarAppearance Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The toolbar and buttons appear as standard three-dimensional controls.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

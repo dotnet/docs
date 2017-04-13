@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

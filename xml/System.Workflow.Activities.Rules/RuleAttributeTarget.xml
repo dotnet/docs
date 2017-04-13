@@ -1,0 +1,57 @@
+<Type Name="RuleAttributeTarget" FullName="System.Workflow.Activities.Rules.RuleAttributeTarget">
+  <TypeSignature Language="C#" Value="public enum RuleAttributeTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleAttributeTarget extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleAttributeTarget" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the path in a <see cref="T:System.Workflow.Activities.Rules.RuleReadAttribute" /> or <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> is for a method parameter, or <see langword="this" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use with the <xref:System.Workflow.Activities.Rules.RuleReadAttribute> and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parameter">
+      <MemberSignature Language="C#" Value="Parameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleAttributeTarget Parameter = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleAttributeTarget.Parameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleAttributeTarget</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the path is an absolute path beginning with a parameter name, which optionally can be followed by a path to an inner member.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="This">
+      <MemberSignature Language="C#" Value="This" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleAttributeTarget This = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleAttributeTarget.This" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleAttributeTarget</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the path is a relative or absolute path, beginning with the token <see langword="this" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

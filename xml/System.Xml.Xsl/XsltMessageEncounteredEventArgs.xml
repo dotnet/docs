@@ -1,0 +1,115 @@
+<Type Name="XsltMessageEncounteredEventArgs" FullName="System.Xml.Xsl.XsltMessageEncounteredEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class XsltMessageEncounteredEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XsltMessageEncounteredEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered> event occurs during XSLT processing when an `xsl:message` is specified in the style sheet.  
+  
+> [!NOTE]
+>  If the `terminate` attribute is set to `"yes"`, the XSLT processor stops executing the style sheet stops after the message is processed.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs> to display `xsl:message` content to the console. The sample writes the following message to the console:  `Message received:  Author name is not in the correct format <author><name>Plato</name></author>`.  
+  
+ [!code-csharp[XsltMessageEncountered#1](~/samples/snippets/csharp/VS_Snippets_Data/XsltMessageEncountered/CS/xsltmessageargs.cs#1)]
+ [!code-vb[XsltMessageEncountered#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XsltMessageEncountered/VB/xsltmessageargs.vb#1)]  
+  
+ The example uses the following files as input:  
+  
+ books.xml  
+  
+ [!code-xml[XML_Core_Files#1](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/books.xml#1)]  
+  
+ message.xsl  
+  
+ [!code-xml[XsltMessageEncountered#2](~/samples/snippets/xml/VS_Snippets_Data/XsltMessageEncountered/XML/message.xsl#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XsltMessageEncounteredEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltMessageEncounteredEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public abstract string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltMessageEncounteredEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the contents of the <c>xsl:message</c> element.</summary>
+        <value>The contents of the <c>xsl:message</c> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs> to display `xsl:message` content to the console. The sample writes the following message to the console:  `Message received:  Author name is not in the correct format <author><name>Plato</name></author>`.  
+  
+ [!code-csharp[XsltMessageEncountered#1](~/samples/snippets/csharp/VS_Snippets_Data/XsltMessageEncountered/CS/xsltmessageargs.cs#1)]
+ [!code-vb[XsltMessageEncountered#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XsltMessageEncountered/VB/xsltmessageargs.vb#1)]  
+  
+ The example uses the following files as input:  
+  
+ books.xml  
+  
+ [!code-xml[XML_Core_Files#1](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/books.xml#1)]  
+  
+ message.xsl  
+  
+ [!code-xml[XsltMessageEncountered#2](~/samples/snippets/xml/VS_Snippets_Data/XsltMessageEncountered/XML/message.xsl#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

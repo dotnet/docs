@@ -2,8 +2,8 @@
 title: Consuming a class library with .NET Core in Visual Studio 2017
 description: Learn how to call the members in a class library with Visual Studio 2017
 keywords: .NET Core, .NET Core class library, .NET STandard, .NET Standard class library distribution
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net
@@ -42,7 +42,7 @@ Just as we included unit tests in the same solution as our class library, we can
 
 1. In the code window for the 'program.cs' file, replace all of the code with the following code:
 
- [!CODE-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs#1)]
+ [!code-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs#1)]
 
    The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine how many rows the console window has. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the total number of rows in the console window, the code clears the console window and redisplays a message to the user.
 

@@ -1,0 +1,118 @@
+<Type Name="SoapExtensionReflector" FullName="System.Web.Services.Description.SoapExtensionReflector">
+  <TypeSignature Language="C#" Value="public abstract class SoapExtensionReflector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SoapExtensionReflector extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapExtensionReflector" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a common interface and functionality for classes to add SOAP extension information to a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object on a per-method basis.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The abstract <xref:System.Web.Services.Description.SoapExtensionReflector> class exposes an abstract method, <xref:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod%2A>. This abstract method allows a derived class to add descriptions of SOAP extensions when reflecting a Web method into objects that are placed in a <xref:System.Web.Services.Description.ServiceDescription> object. The method itself is not an input. The descriptions get added for all Web methods belonging to a specified binding that produces a <xref:System.Web.Services.Description.ServiceDescription>.  
+  
+ You can use a <xref:System.Web.Services.Description.ServiceDescription>to generate a Web Services Description Language (WSDL) document via the <xref:System.Web.Services.Description.ServiceDescription.Write%2A> method. The <xref:System.Web.Services.Description.ServiceDescriptionImporter> class and related classes can also use a <xref:System.Web.Services.Description.ServiceDescription> to generate client proxy code or abstract server code.  
+  
+ Use a class derived from the <xref:System.Web.Services.Description.SoapExtensionReflector> class in conjunction with a class derived from the abstract <xref:System.Web.Services.Protocols.SoapExtension> class to extend run-time processing of SOAP messages on the client or service.  
+  
+ You can specify <xref:System.Web.Services.Description.SoapExtensionReflector>in a configuration file via the [\<soapExtensionReflectorTypes> Element](http://msdn.microsoft.com/en-us/6950609a-c9a3-4f6f-a5fc-a05d6d204d5c) element and its child **add** element. You can also apply the configuration to an ASP.NET Web application that publishes a Web service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SoapExtensionReflector ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionReflector.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.SoapExtensionReflector" /> class</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectDescription">
+      <MemberSignature Language="C#" Value="public virtual void ReflectDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReflectDescription() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionReflector.ReflectDescription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates service-specific description information that gets placed in a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object corresponding to a binding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectionContext">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.ProtocolReflector ReflectionContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ProtocolReflector ReflectionContext" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapExtensionReflector.ReflectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ProtocolReflector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instance of a class derived from the abstract <see cref="T:System.Web.Services.Description.ProtocolReflector" /> class that invokes the <see cref="M:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod" /> method.</summary>
+        <value>The instance of a class derived from the abstract <see cref="T:System.Web.Services.Description.ProtocolReflector" /> class that invokes the <see cref="M:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod" /> method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement a class that is derived from the <xref:System.Web.Services.Description.SoapExtensionReflector>`abstract` class, you do not need to implement a class that is derived from <xref:System.Web.Services.Description.ProtocolReflector> to invoke the <xref:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod%2A> method or to set the <xref:System.Web.Services.Description.SoapExtensionReflector.ReflectionContext%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectMethod">
+      <MemberSignature Language="C#" Value="public abstract void ReflectMethod ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReflectMethod() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see langword="Abstract" /> method that a derived class must implement to add SOAP extension information to a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object on a per-method basis.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod%2A>method is called for each Web method that belongs to a binding that the <xref:System.Web.Services.Description.ServiceDescription>represents. The <xref:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod%2A> method does not use the Web method directly. The SOAP extension information gets added for all Web methods in a binding reflected from a Web service class.  
+  
+ An implementation of the <xref:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod%2A> can generate information like operation binding, `abstract` operation, and messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

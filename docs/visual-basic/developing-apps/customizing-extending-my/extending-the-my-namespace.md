@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "My namespace, extending"
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

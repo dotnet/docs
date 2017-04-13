@@ -1,0 +1,150 @@
+<Type Name="XamlDeferLoadAttribute" FullName="System.Windows.Markup.XamlDeferLoadAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XamlDeferLoadAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlDeferLoadAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlDeferLoadAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a class or property has a deferred load usage for XAML (such as a template behavior), and reports the class that enables the deferring behavior and its destination/content type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlDeferringLoader> is possibly involved in defer load scenarios as a support class.  
+  
+## WPF Usage Notes  
+ An example class where this attribute is applied in the WPF XAML implementation is <xref:System.Windows.TemplateContent>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDeferLoadAttribute (string loaderType, string contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string loaderType, string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="loaderType" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="loaderType">The string name of the type for the implementation to use for the defer load behavior.</param>
+        <param name="contentType">The string name of the type for the destination/content type of the defer load behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlDeferLoadAttribute" /> class, using string names of types.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="loaderType" /> or <paramref name="contentType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDeferLoadAttribute (Type loaderType, Type contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type loaderType, class System.Type contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.Type,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="loaderType" Type="System.Type" />
+        <Parameter Name="contentType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="loaderType">The CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</param>
+        <param name="contentType">The CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlDeferLoadAttribute" /> class, using CLR <see cref="T:System.Type" /> values.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="loaderType" /> or <paramref name="contentType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public Type ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</summary>
+        <value>The CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTypeName">
+      <MemberSignature Language="C#" Value="public string ContentTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.ContentTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string name of the type for the implementation to use for the defer load behavior.</summary>
+        <value>The string name of the type for the converter to use for the defer load behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoaderType">
+      <MemberSignature Language="C#" Value="public Type LoaderType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type LoaderType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.LoaderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</summary>
+        <value>The CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoaderTypeName">
+      <MemberSignature Language="C#" Value="public string LoaderTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoaderTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.LoaderTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string name of the type for the destination/content type of the defer load behavior.</summary>
+        <value>The string name of the type for the destination/content type of the defer load behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "structure variables"
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

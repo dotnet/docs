@@ -1,0 +1,479 @@
+<Type Name="MethodImplAttributes" FullName="System.Reflection.MethodImplAttributes">
+  <TypeSignature Language="C#" Value="public enum MethodImplAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MethodImplAttributes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MethodImplAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies flags for the attributes of a method implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The attributes are combined using the bitwise OR operation as follows:  
+  
+ **Code implementation masks:**  
+  
+-   `CodeTypeMask`  
+  
+-   `IL`  
+  
+-   `Native`  
+  
+-   `OPTIL`  
+  
+-   `Runtime`  
+  
+ **Managed masks:**  
+  
+-   `ManagedMask`  
+  
+-   `Unmanaged`  
+  
+-   `Managed`  
+  
+ **Implementation information and interop masks:**  
+  
+-   `ForwardRef`  
+  
+-   `PreserveSig`  
+  
+-   `InternalCall`  
+  
+-   `Synchronized`  
+  
+-   `NoInlining`  
+  
+-   `NoOptimization`  
+  
+-   `MaxMethodImplVal`  
+  
+> [!NOTE]
+>  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AggressiveInlining">
+      <MemberSignature Language="C#" Value="AggressiveInlining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes AggressiveInlining = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.AggressiveInlining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method should be inlined wherever possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeTypeMask">
+      <MemberSignature Language="C#" Value="CodeTypeMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes CodeTypeMask = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.CodeTypeMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies flags about code type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForwardRef">
+      <MemberSignature Language="C#" Value="ForwardRef" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes ForwardRef = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ForwardRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is not defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IL">
+      <MemberSignature Language="C#" Value="IL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes IL = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.IL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalCall">
+      <MemberSignature Language="C#" Value="InternalCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes InternalCall = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.InternalCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an internal call.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Managed">
+      <MemberSignature Language="C#" Value="Managed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Managed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Managed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is implemented in managed code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedMask">
+      <MemberSignature Language="C#" Value="ManagedMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes ManagedMask = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ManagedMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the method is implemented in managed or unmanaged code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxMethodImplVal">
+      <MemberSignature Language="C#" Value="MaxMethodImplVal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes MaxMethodImplVal = int32(65535)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.MaxMethodImplVal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a range check value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native">
+      <MemberSignature Language="C#" Value="Native" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Native = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Native" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is native.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoInlining">
+      <MemberSignature Language="C#" Value="NoInlining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes NoInlining = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoInlining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method cannot be inlined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoOptimization">
+      <MemberSignature Language="C#" Value="NoOptimization" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes NoOptimization = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoOptimization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](~/docs/framework/tools/ngen-exe-native-image-generator.md)) when debugging possible code generation problems.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OPTIL">
+      <MemberSignature Language="C#" Value="OPTIL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes OPTIL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.OPTIL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is in Optimized Intermediate Language (OPTIL).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveSig">
+      <MemberSignature Language="C#" Value="PreserveSig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes PreserveSig = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.PreserveSig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method signature is exported exactly as declared.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Runtime">
+      <MemberSignature Language="C#" Value="Runtime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Runtime = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Runtime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is provided by the runtime.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="Synchronized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Synchronized = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Synchronized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](~/docs/csharp/language-reference/keywords/lock-statement.md) or the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) for this purpose.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unmanaged">
+      <MemberSignature Language="C#" Value="Unmanaged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Unmanaged = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Unmanaged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is implemented in unmanaged code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,149 @@
+<Type Name="SmtpMail" FullName="System.Web.Mail.SmtpMail">
+  <TypeSignature Language="C#" Value="public class SmtpMail" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmtpMail extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mail.SmtpMail" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The recommended alternative is System.Net.Mail.SmtpClient. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides properties and methods for sending messages using the Collaboration Data Objects for Windows 2000 (CDOSYS) message component. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The mail message can be delivered either through the SMTP mail service built into Microsoft Windows 2000 or through an arbitrary SMTP server. Types in the <xref:System.Web.Mail> namespace can be used from ASP.NET or from any managed application.  
+  
+ If the <xref:System.Web.Mail.SmtpMail.SmtpServer%2A> property is not set, mail is by default queued on a Windows 2000 system, ensuring that the calling program does not block network traffic. If the <xref:System.Web.Mail.SmtpMail> property is set, the mail is delivered directly to the specified server.  
+  
+   
+  
+## Examples  
+ The following example can be compiled to a console application that is used to send email from a command line. If you compile the example to a file named MailMessage.exe, use the executable file to send email as follows:  
+  
+```  
+MailMessage to@contoso.com from@contoso.com test hello  
+```  
+  
+ [!code-csharp[System.Web.Mail.SmtpMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.SmtpMail/CS/systemwebmailsmtpmail.cs#1)]
+ [!code-vb[System.Web.Mail.SmtpMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.SmtpMail/VB/systemwebmailsmtpmail.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public static void Send (System.Web.Mail.MailMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Send(class System.Web.Mail.MailMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mail.SmtpMail.Send(System.Web.Mail.MailMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Web.Mail.MailMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.Web.Mail.MailMessage" /> to send.</param>
+        <summary>Sends an e-mail message using arguments supplied in the properties of the <see cref="T:System.Web.Mail.MailMessage" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use <xref:System.Web.Mail.MailMessage> to send an e-mail message using <xref:System.Web.Mail.SmtpMail>.  
+  
+ [!code-csharp[Classic SmtpMail.Send Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SmtpMail.Send Example/CS/smtpmailsend.cs#1)]
+ [!code-vb[Classic SmtpMail.Send Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SmtpMail.Send Example/VB/smtpmailsend.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">The mail cannot be sent.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The <see cref="M:System.Web.Mail.SmtpMail.Send(System.Web.Mail.MailMessage)" /> method requires the Microsoft Windows NT, Windows 2000, or Windows XP operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public static void Send (string from, string to, string subject, string messageText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Send(string from, string to, string subject, string messageText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mail.SmtpMail.Send(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="messageText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="from">The address of the e-mail sender.</param>
+        <param name="to">The address of the e-mail recipient.</param>
+        <param name="subject">The subject line of the e-mail message.</param>
+        <param name="messageText">The body of the e-mail message.</param>
+        <summary>Sends an e-mail message using the specified destination parameters. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to send a simple message using <xref:System.Web.Mail.SmtpMail>.  
+  
+ [!code-csharp[Classic SmtpMail.Send Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SmtpMail.Send Example/CS/smtpmailsend.cs#2)]
+ [!code-vb[Classic SmtpMail.Send Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SmtpMail.Send Example/VB/smtpmailsend.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The <see cref="M:System.Web.Mail.SmtpMail.Send(System.String,System.String,System.String,System.String)" /> method requires the Microsoft Windows NT, Windows 2000, or Windows XP operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpServer">
+      <MemberSignature Language="C#" Value="public static string SmtpServer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SmtpServer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.SmtpMail.SmtpServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the SMTP relay mail server to use to send e-mail messages. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The name of the e-mail relay server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If your local SMTP server (included with Windows 2000 and Windows Server 2003) is behind a firewall that blocks any direct SMTP traffic (through port 25), you will need to find out if there is a smart host available on your network that is allowed to relay SMTP messages to the Internet.  
+  
+ A smart host is an SMTP server with the permissions to relay outgoing e-mail messages directly to the Internet from internal SMTP servers. A smart host should be able to simultaneously connect to both the internal network and the Internet in order to work as the e-mail gateway.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Web.Mail.SmtpMail.SmtpServer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.SmtpMail.SmtpServer/CS/systemwebmailsmtpmailsmtpserver.cs#1)]
+ [!code-vb[System.Web.Mail.SmtpMail.SmtpServer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.SmtpMail.SmtpServer/VB/systemwebmailsmtpmailsmtpserver.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

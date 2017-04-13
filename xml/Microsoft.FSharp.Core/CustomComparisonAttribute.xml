@@ -1,0 +1,49 @@
+<Type Name="CustomComparisonAttribute" FullName="Microsoft.FSharp.Core.CustomComparisonAttribute">
+  <TypeSignature Language="C#" Value="public sealed class CustomComparisonAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CustomComparisonAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CustomComparisonAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomComparisonAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CustomComparisonAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

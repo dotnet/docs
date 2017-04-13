@@ -1,0 +1,347 @@
+<Type Name="RibbonControlSizeDefinition" FullName="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition">
+  <TypeSignature Language="C#" Value="public class RibbonControlSizeDefinition : System.Windows.Freezable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonControlSizeDefinition extends System.Windows.Freezable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Freezable</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about the size and visibility of the images and label associated with a Ribbon control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Ribbon Layout and Resizing](http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonControlSizeDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> class.</summary>
+        <returns>The new instance of this class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonImageSize ImageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonImageSize ImageSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates how to show the image on a control.</summary>
+        <value>One of the enumeration values that specify how to show the image on a control. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize>. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
+  
+<a name="dependencyPropertyInfo_ImageSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ImageSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ImageSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCollapsed">
+      <MemberSignature Language="C#" Value="public bool IsCollapsed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCollapsed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a control is collapsed.</summary>
+        <value>
+          <see langword="true" /> if a control is collapsed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCollapsedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsCollapsedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsCollapsedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsed" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLabelVisible">
+      <MemberSignature Language="C#" Value="public bool IsLabelVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLabelVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the control’s label is visible.</summary>
+        <value>
+          <see langword="true" /> if the control’s label is visible; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the label property of the control is not set, no label will be shown even if the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible%2A> property is `true`.  
+  
+<a name="dependencyPropertyInfo_IsLabelVisible"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLabelVisibleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsLabelVisibleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsLabelVisibleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxWidth">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlLength MaxWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonControlLength MaxWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum width constraint of a container control in a Ribbon.</summary>
+        <value>The maximum width of the control. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only has an effect if the control is a container for other objects.  
+  
+<a name="dependencyPropertyInfo_MaxWidth"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MaxWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MaxWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWidth">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlLength MinWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonControlLength MinWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum width constraint of a container control in a Ribbon.</summary>
+        <value>The minimum width of the control. The registered default is 0. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only has an effect if the control is a container for other objects.  
+  
+<a name="dependencyPropertyInfo_MinWidth"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlLength Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonControlLength Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of a container control in a Ribbon.</summary>
+        <value>The width of the control. The registered default is <see cref="P:System.Windows.GridLength.Auto" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only has an effect if the control is a container for other objects.  
+  
+<a name="dependencyPropertyInfo_Width"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.Width" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

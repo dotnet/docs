@@ -1,0 +1,366 @@
+<Type Name="Comparer&lt;T&gt;" FullName="System.Collections.Generic.Comparer&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Comparer&lt;T&gt; : System.Collections.Generic.IComparer&lt;T&gt;, System.Collections.IComparer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Comparer`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IComparer`1&lt;!T&gt;, class System.Collections.IComparer" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Comparer`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IComparer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of objects to compare.</typeparam>
+    <summary>Provides a base class for implementations of the <see cref="T:System.Collections.Generic.IComparer`1" /> generic interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IComparer%601> interface for use with collection classes such as the <xref:System.Collections.Generic.SortedList%602> and <xref:System.Collections.Generic.SortedDictionary%602> generic classes.  
+  
+ The difference between deriving from the <xref:System.Collections.Generic.Comparer%601> class and implementing the <xref:System.IComparable?displayProperty=fullName> interface is as follows:  
+  
+-   To specify how two objects should be compared by default, implement the <xref:System.IComparable?displayProperty=fullName> interface in your class. This ensures that sort operations will use the default comparison code that you provided.  
+  
+-   To define a comparer to use instead of the default comparer, derive from the <xref:System.Collections.Generic.Comparer%601> class. You can then use this comparer in sort operations that take a comparer as a parameter.  
+  
+ The object returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A> property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the <xref:System.Collections.Generic.Comparer%601.Default%2A> property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+  
+   
+  
+## Examples  
+ The following example derives a class, `BoxLengthFirst`, from the <xref:System.Collections.Generic.Comparer%601> class. This comparer compares two objects of type `Box`. It sorts them first by length, then by height, and then by width. The `Box` class implements the <xref:System.IComparable%601> interface to control the default comparison between two `Box` objects. This default implementation sorts first by height, then by length, and then by width. The example shows the differences between the two comparisons by sorting a list of `Box` objects first by using the `BoxLengthFirst` comparer and then by using the default comparer.  
+  
+ [!code-csharp[System.Collections.Generic.BoxCompare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#1)]
+ [!code-vb[System.Collections.Generic.BoxCompare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>
+        <see cref="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" /> and <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> may behave differently in terms of culture-sensitivity and case-sensitivity.  
+  
+ For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c>.  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
+  
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Comparer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Comparer`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract int Compare (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(!T x, !T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="x">The first object to compare.</param>
+        <param name="y">The second object to compare.</param>
+        <summary>When overridden in a derived class, performs a comparison of two objects of the same type and returns a value indicating whether one object is less than, equal to, or greater than the other.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is less than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="x" /> equals <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is greater than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement this method to provide a customized sort order comparison for type `T`.  
+  
+   
+  
+## Examples  
+ The following example defines a comparer of `Box` objects that can be used instead of the default comparer. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+  
+ [!code-csharp[System.Collections.Generic.BoxCompare#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#5)]
+ [!code-vb[System.Collections.Generic.BoxCompare#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Type <paramref name="T" /> does not implement either the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface.</exception>
+        <block subset="none" type="overrides">
+          <para>Comparing <see langword="null" /> with any reference type is allowed and does not generate an exception. A null reference is considered to be less than any reference that is not null.  
+  
+ For information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Comparer&lt;T&gt; Create (Comparison&lt;T&gt; comparison);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Comparer`1&lt;!T&gt; Create(class System.Comparison`1&lt;!T&gt; comparison) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Create(System.Comparison{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Comparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparison" Type="System.Comparison&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="comparison">The comparison to use.</param>
+        <summary>Creates a comparer by using the specified comparison.</summary>
+        <returns>The new comparer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Comparer&lt;T&gt; Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.Comparer`1&lt;!T&gt; Default" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Comparer`1.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Comparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a default sort order comparer for the type specified by the generic argument.</summary>
+        <value>An object that inherits <see cref="T:System.Collections.Generic.Comparer`1" /> and serves as a sort order comparer for type <paramref name="T" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.Comparer%601> returned by this property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, this property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.Default%2A> property to get an object that performs the default comparison. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+  
+ [!code-csharp[System.Collections.Generic.BoxCompare#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#3)]
+ [!code-vb[System.Collections.Generic.BoxCompare#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c> (<c>Comparer(Of String)</c> in Visual Basic).  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
+  
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IComparer.Compare">
+      <MemberSignature Language="C#" Value="int IComparer.Compare (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.System#Collections#IComparer#Compare(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">The first object to compare.</param>
+        <param name="y">The second object to compare.</param>
+        <summary>Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is less than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="x" /> equals <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is greater than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper for the <xref:System.Collections.Generic.Comparer%601.Compare%28%600%2C%600%29> method, so `obj` must be cast to the type specified by the generic argument `T` of the current instance. If it cannot be cast to `T`, an <xref:System.ArgumentException> is thrown.  
+  
+ Comparing `null` with any reference type is allowed and does not generate an exception. When sorting, `null` is considered to be less than any other object.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> method to compare two objects. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+  
+ [!code-csharp[System.Collections.Generic.BoxCompare#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#4)]
+ [!code-vb[System.Collections.Generic.BoxCompare#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="x" /> or <paramref name="y" /> is of a type that cannot be cast to type <paramref name="T" />.  
+  
+ -or-  
+  
+ <paramref name="x" /> and <paramref name="y" /> do not implement either the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface.</exception>
+        <block subset="none" type="usage">
+          <para>
+            <see cref="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" /> and <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> behave differently in terms of culture-sensitivity and case-sensitivity.  
+  
+ For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c>.  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
+  
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

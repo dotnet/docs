@@ -1,0 +1,66 @@
+<Type Name="ContractReferenceAssemblyAttribute" FullName="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ContractReferenceAssemblyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractReferenceAssemblyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that an assembly is a reference assembly that contains contracts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A contract reference assembly is named *assembly*.Contracts.dll, where *assembly* is the name of the assembly from which the contracts were extracted. A contract reference assembly contains the publicly visible interface of an assembly and its contracts, but contains no code. Contract reference assemblies are used both by the runtime analyzer to inherit contracts across assemblies, and during static verification to discover contracts on methods and types from assemblies outside the assembly that is under analysis.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractReferenceAssemblyAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

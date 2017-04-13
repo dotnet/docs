@@ -1,0 +1,35 @@
+<Type Name="RuntimeArgumentHandle" FullName="System.RuntimeArgumentHandle">
+  <TypeSignature Language="C#" Value="public struct RuntimeArgumentHandle" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RuntimeArgumentHandle extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.RuntimeArgumentHandle" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>References a variable-length argument list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure has no members other than those that it inherits from the <xref:System.Object> and <xref:System.ValueType> classes. It exists only to support C/C++ programming language functions that take a variable number of parameters. An instance of the structure is passed to the <xref:System.ArgIterator> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

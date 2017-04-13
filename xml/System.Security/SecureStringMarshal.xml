@@ -1,0 +1,132 @@
+<Type Name="SecureStringMarshal" FullName="System.Security.SecureStringMarshal">
+  <TypeSignature Language="C#" Value="public static class SecureStringMarshal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SecureStringMarshal extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.SecureStringMarshal" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.SecureString</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SecureStringToCoTaskMemAnsi">
+      <MemberSignature Language="C#" Value="public static IntPtr SecureStringToCoTaskMemAnsi (System.Security.SecureString s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToCoTaskMemAnsi(class System.Security.SecureString s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemAnsi(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureStringToCoTaskMemUnicode">
+      <MemberSignature Language="C#" Value="public static IntPtr SecureStringToCoTaskMemUnicode (System.Security.SecureString s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToCoTaskMemUnicode(class System.Security.SecureString s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureStringToGlobalAllocAnsi">
+      <MemberSignature Language="C#" Value="public static IntPtr SecureStringToGlobalAllocAnsi (System.Security.SecureString s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToGlobalAllocAnsi(class System.Security.SecureString s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocAnsi(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureStringToGlobalAllocUnicode">
+      <MemberSignature Language="C#" Value="public static IntPtr SecureStringToGlobalAllocUnicode (System.Security.SecureString s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToGlobalAllocUnicode(class System.Security.SecureString s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocUnicode(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

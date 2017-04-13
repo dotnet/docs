@@ -1,0 +1,97 @@
+<Type Name="RelativeSourceMode" FullName="System.Windows.Data.RelativeSourceMode">
+  <TypeSignature Language="C#" Value="public enum RelativeSourceMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelativeSourceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.RelativeSourceMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the location of the binding source relative to the position of the binding target.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_RelativeSource"></a>   
+## XAML Text Usage  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
+  
+   
+  
+## Examples  
+ See <xref:System.Windows.Data.RelativeSource> for examples.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindAncestor">
+      <MemberSignature Language="C#" Value="FindAncestor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.RelativeSourceMode FindAncestor = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.FindAncestor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.RelativeSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Refers to the ancestor in the parent chain of the data-bound element. You can use this to bind to an ancestor of a specific type or its subclasses. This is the mode you use if you want to specify <see cref="P:System.Windows.Data.RelativeSource.AncestorType" /> and/or <see cref="P:System.Windows.Data.RelativeSource.AncestorLevel" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousData">
+      <MemberSignature Language="C#" Value="PreviousData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.RelativeSourceMode PreviousData = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.PreviousData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.RelativeSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allows you to bind the previous data item (not that control that contains the data item) in the list of data items being displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Self">
+      <MemberSignature Language="C#" Value="Self" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.RelativeSourceMode Self = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.Self" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.RelativeSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Refers to the element on which you are setting the binding and allows you to bind one property of that element to another property on the same element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatedParent">
+      <MemberSignature Language="C#" Value="TemplatedParent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.RelativeSourceMode TemplatedParent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.TemplatedParent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.RelativeSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Refers to the element to which the template (in which the data-bound element exists) is applied. This is similar to setting a <see cref="T:System.Windows.TemplateBindingExtension" /> and is only applicable if the <see cref="T:System.Windows.Data.Binding" /> is within a template.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

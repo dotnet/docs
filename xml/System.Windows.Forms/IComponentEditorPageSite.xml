@@ -1,0 +1,53 @@
+<Type Name="IComponentEditorPageSite" FullName="System.Windows.Forms.IComponentEditorPageSite">
+  <TypeSignature Language="C#" Value="public interface IComponentEditorPageSite" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentEditorPageSite" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IComponentEditorPageSite" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>The site for a <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control GetControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Control GetControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IComponentEditorPageSite.GetControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the parent control for the page window.</summary>
+        <returns>The parent control for the page window.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirty">
+      <MemberSignature Language="C#" Value="public void SetDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IComponentEditorPageSite.SetDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the site that the editor is in a modified state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

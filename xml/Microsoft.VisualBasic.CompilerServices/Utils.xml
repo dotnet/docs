@@ -1,0 +1,185 @@
+<Type Name="Utils" FullName="Microsoft.VisualBasic.CompilerServices.Utils">
+  <TypeSignature Language="C#" Value="public sealed class Utils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Utils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Utils" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains utilities that the Visual Basic compiler uses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyArray">
+      <MemberSignature Language="C#" Value="public static Array CopyArray (Array arySrc, Array aryDest);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Array CopyArray(class System.Array arySrc, class System.Array aryDest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Array</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arySrc" Type="System.Array" />
+        <Parameter Name="aryDest" Type="System.Array" />
+      </Parameters>
+      <Docs>
+        <param name="arySrc">The array to be copied.</param>
+        <param name="aryDest">The destination array.</param>
+        <summary>Used by the Visual Basic compiler as a helper for <see langword="Redim" />.</summary>
+        <returns>The copied array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceString">
+      <MemberSignature Language="C#" Value="public static string GetResourceString (string ResourceKey, string[] Args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string GetResourceString(string ResourceKey, string[] Args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.GetResourceString(System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ResourceKey" Type="System.String" />
+        <Parameter Name="Args" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="ResourceKey">The identifier of the string or error message to retrieve.</param>
+        <param name="Args">An array of parameters to replace placeholders in the string or error message.</param>
+        <summary>Retrieves and formats a localized resource string or error message.</summary>
+        <returns>A formatted resource string or error message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodToString">
+      <MemberSignature Language="C#" Value="public static string MethodToString (System.Reflection.MethodBase Method);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string MethodToString(class System.Reflection.MethodBase Method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.MethodToString(System.Reflection.MethodBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Method" Type="System.Reflection.MethodBase" />
+      </Parameters>
+      <Docs>
+        <param name="Method">A <see cref="T:System.Reflection.MethodBase" /> object to return a Visual Basic method signature for.</param>
+        <summary>Returns a Visual Basic method signature.</summary>
+        <returns>The Visual Basic method signature for the supplied <see cref="T:System.Reflection.MethodBase" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCultureInfo">
+      <MemberSignature Language="C#" Value="public static object SetCultureInfo (System.Globalization.CultureInfo Culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object SetCultureInfo(class System.Globalization.CultureInfo Culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.SetCultureInfo(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="Culture">A <see cref="T:System.Globalization.CultureInfo" /> object to set as the culture of the current thread.</param>
+        <summary>Sets the culture of the current thread.</summary>
+        <returns>The previous value of the <see cref="P:System.Threading.Thread.CurrentCulture" /> property for the current thread.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowException">
+      <MemberSignature Language="C#" Value="public static void ThrowException (int hr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void ThrowException(int32 hr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.ThrowException(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hr">The Visual Basic error identifier.</param>
+        <summary>Throws a localized Visual Basic exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

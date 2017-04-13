@@ -1,0 +1,59 @@
+<Type Name="BooleanObject" FullName="Microsoft.JScript.BooleanObject">
+  <TypeSignature Language="C#" Value="public class BooleanObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BooleanObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BooleanObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a Boolean object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BooleanObject (Microsoft.JScript.ScriptObject prototype, Type subType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject prototype, class System.Type subType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.#ctor(Microsoft.JScript.ScriptObject,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prototype" Type="Microsoft.JScript.ScriptObject" />
+        <Parameter Name="subType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="prototype">The parent of the object.</param>
+        <param name="subType">The subtype of the object.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BooleanObject" /> class, specifying the parent and subtype.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.GetType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns <see cref="T:System.Boolean" /> or <see cref="T:Microsoft.JScript.BooleanObject" />.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> or <see cref="T:Microsoft.JScript.BooleanObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

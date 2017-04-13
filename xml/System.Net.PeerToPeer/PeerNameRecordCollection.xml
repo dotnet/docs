@@ -1,0 +1,120 @@
+<Type Name="PeerNameRecordCollection" FullName="System.Net.PeerToPeer.PeerNameRecordCollection">
+  <TypeSignature Language="C#" Value="public class PeerNameRecordCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.PeerNameRecord&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerNameRecordCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.PeerNameRecord&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRecordCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.PeerNameRecord&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Net.PeerToPeer.PeerNameRecord</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   This collection holds instances of the <xref:System.Net.PeerToPeer.PeerNameRecord> element, which are used to specify information about a peer within a <xref:System.Net.PeerToPeer.Cloud>.  
+  
+-  
+  
+ References to a peer name record collection are returned by the <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> and <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> methods.  
+  
+ All members of the class are inherited from the Collection\<T> class.  Only those methods which are overridden are described.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PeerNameRecordCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor returns an empty object of type <xref:System.Net.PeerToPeer.PeerNameRecordCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.PeerNameRecord item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.PeerNameRecord item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.InsertItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.PeerNameRecord" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The value for the new element at the specified index.</param>
+        <summary>Inserts a <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> element into the <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items cannot be inserted into a collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The item provided cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.PeerNameRecord item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.PeerNameRecord item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.SetItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.PeerNameRecord" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for the element to be replaced.</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The item provided cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

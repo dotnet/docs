@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "#Region keyword"
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

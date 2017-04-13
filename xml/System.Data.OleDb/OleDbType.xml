@@ -1,0 +1,671 @@
+<Type Name="OleDbType" FullName="System.Data.OleDb.OleDbType">
+  <TypeSignature Language="C#" Value="public enum OleDbType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the data type of a field, a property, for use in an <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The preceding table shows mappings between <xref:System.Data.OleDb.OleDbType> data types, OLE DB data types (shown in parentheses), and the .NET Framework types. The <xref:System.Data.OleDb.OleDbType> data types accept `System.Char[]`as `Parameter.Value` in parameterized queries.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BigInt">
+      <MemberSignature Language="C#" Value="BigInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType BigInt = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.BigInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 64-bit signed integer (DBTYPE_I8). This maps to <see cref="T:System.Int64" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Binary = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A stream of binary data (DBTYPE_BYTES). This maps to an <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Boolean = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Boolean value (DBTYPE_BOOL). This maps to <see cref="T:System.Boolean" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BSTR">
+      <MemberSignature Language="C#" Value="BSTR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType BSTR = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.BSTR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A null-terminated character string of Unicode characters (DBTYPE_BSTR). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Char">
+      <MemberSignature Language="C#" Value="Char" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Char = int32(129)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Char" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A character string (DBTYPE_STR). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Currency">
+      <MemberSignature Language="C#" Value="Currency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Currency = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Currency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A currency value ranging from -2 <sup>63</sup> (or -922,337,203,685,477.5808) to 2 <sup>63</sup> -1 (or +922,337,203,685,477.5807) with an accuracy to a ten-thousandth of a currency unit (DBTYPE_CY). This maps to <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="Date" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Date = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Date" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Date data, stored as a double (DBTYPE_DATE). The whole portion is the number of days since December 30, 1899, and the fractional portion is a fraction of a day. This maps to <see cref="T:System.DateTime" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DBDate">
+      <MemberSignature Language="C#" Value="DBDate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType DBDate = int32(133)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBDate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Date data in the format *yyyymmdd* (DBTYPE_DBDATE). This maps to <see cref="T:System.DateTime" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DBTime">
+      <MemberSignature Language="C#" Value="DBTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType DBTime = int32(134)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Time data in the format *hhmmss* (DBTYPE_DBTIME). This maps to <see cref="T:System.TimeSpan" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DBTimeStamp">
+      <MemberSignature Language="C#" Value="DBTimeStamp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType DBTimeStamp = int32(135)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBTimeStamp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data and time data in the format *yyyymmddhhmmss* (DBTYPE_DBTIMESTAMP). This maps to <see cref="T:System.DateTime" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="Decimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Decimal = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A fixed precision and scale numeric value between -10 <sup>38</sup> -1 and 10 <sup>38</sup> -1 (DBTYPE_DECIMAL). This maps to <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Double = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A floating-point number within the range of -1.79E +308 through 1.79E +308 (DBTYPE_R8). This maps to <see cref="T:System.Double" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="Empty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Empty = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No value (DBTYPE_EMPTY).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Error = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 32-bit error code (DBTYPE_ERROR). This maps to <see cref="T:System.Exception" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Filetime">
+      <MemberSignature Language="C#" Value="Filetime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Filetime = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Filetime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 64-bit unsigned integer representing the number of 100-nanosecond intervals since January 1, 1601 (DBTYPE_FILETIME). This maps to <see cref="T:System.DateTime" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Guid">
+      <MemberSignature Language="C#" Value="Guid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Guid = int32(72)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Guid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A globally unique identifier (or GUID) (DBTYPE_GUID). This maps to <see cref="T:System.Guid" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDispatch">
+      <MemberSignature Language="C#" Value="IDispatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType IDispatch = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.IDispatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A pointer to an <see langword="IDispatch" /> interface (DBTYPE_IDISPATCH). This maps to <see cref="T:System.Object" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Integer">
+      <MemberSignature Language="C#" Value="Integer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Integer = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Integer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 32-bit signed integer (DBTYPE_I4). This maps to <see cref="T:System.Int32" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IUnknown">
+      <MemberSignature Language="C#" Value="IUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType IUnknown = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.IUnknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A pointer to an <see langword="IUnknown" /> interface (DBTYPE_UNKNOWN). This maps to <see cref="T:System.Object" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongVarBinary">
+      <MemberSignature Language="C#" Value="LongVarBinary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType LongVarBinary = int32(205)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarBinary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A long binary value (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to an <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LongVarChar">
+      <MemberSignature Language="C#" Value="LongVarChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType LongVarChar = int32(201)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A long string value (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LongVarWChar">
+      <MemberSignature Language="C#" Value="LongVarWChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType LongVarWChar = int32(203)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarWChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A long null-terminated Unicode string value (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Numeric">
+      <MemberSignature Language="C#" Value="Numeric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Numeric = int32(131)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Numeric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An exact numeric value with a fixed precision and scale (DBTYPE_NUMERIC). This maps to <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropVariant">
+      <MemberSignature Language="C#" Value="PropVariant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType PropVariant = int32(138)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.PropVariant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An automation PROPVARIANT (DBTYPE_PROP_VARIANT). This maps to <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Single = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A floating-point number within the range of -3.40E +38 through 3.40E +38 (DBTYPE_R4). This maps to <see cref="T:System.Single" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallInt">
+      <MemberSignature Language="C#" Value="SmallInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType SmallInt = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.SmallInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 16-bit signed integer (DBTYPE_I2). This maps to <see cref="T:System.Int16" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TinyInt">
+      <MemberSignature Language="C#" Value="TinyInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType TinyInt = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.TinyInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 8-bit signed integer (DBTYPE_I1). This maps to <see cref="T:System.SByte" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedBigInt">
+      <MemberSignature Language="C#" Value="UnsignedBigInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType UnsignedBigInt = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedBigInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 64-bit unsigned integer (DBTYPE_UI8). This maps to <see cref="T:System.UInt64" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedInt">
+      <MemberSignature Language="C#" Value="UnsignedInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType UnsignedInt = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 32-bit unsigned integer (DBTYPE_UI4). This maps to <see cref="T:System.UInt32" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedSmallInt">
+      <MemberSignature Language="C#" Value="UnsignedSmallInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType UnsignedSmallInt = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedSmallInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 16-bit unsigned integer (DBTYPE_UI2). This maps to <see cref="T:System.UInt16" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedTinyInt">
+      <MemberSignature Language="C#" Value="UnsignedTinyInt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType UnsignedTinyInt = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedTinyInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 8-bit unsigned integer (DBTYPE_UI1). This maps to <see cref="T:System.Byte" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarBinary">
+      <MemberSignature Language="C#" Value="VarBinary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType VarBinary = int32(204)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarBinary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A variable-length stream of binary data (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to an <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarChar">
+      <MemberSignature Language="C#" Value="VarChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType VarChar = int32(200)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A variable-length stream of non-Unicode characters (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Variant">
+      <MemberSignature Language="C#" Value="Variant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType Variant = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Variant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A special data type that can contain numeric, string, binary, or date data, and also the special values Empty and Null (DBTYPE_VARIANT). This type is assumed if no other is specified. This maps to <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarNumeric">
+      <MemberSignature Language="C#" Value="VarNumeric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType VarNumeric = int32(139)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarNumeric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A variable-length numeric value (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarWChar">
+      <MemberSignature Language="C#" Value="VarWChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType VarWChar = int32(202)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarWChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A variable-length, null-terminated stream of Unicode characters (<see cref="T:System.Data.OleDb.OleDbParameter" /> only). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WChar">
+      <MemberSignature Language="C#" Value="WChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbType WChar = int32(130)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.WChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A null-terminated stream of Unicode characters (DBTYPE_WSTR). This maps to <see cref="T:System.String" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

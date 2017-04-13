@@ -1,0 +1,354 @@
+<Type Name="RotateTransform" FullName="System.Windows.Media.RotateTransform">
+  <TypeSignature Language="C#" Value="public sealed class RotateTransform : System.Windows.Media.Transform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RotateTransform extends System.Windows.Media.Transform" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.RotateTransform" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Transform</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Rotates an object clockwise about a specified point in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y coordinate system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.RotateTransform> rotates an object by a specified <xref:System.Windows.Media.RotateTransform.Angle%2A> about the point <xref:System.Windows.Media.RotateTransform.CenterX%2A>, <xref:System.Windows.Media.RotateTransform.CenterY%2A>.  
+  
+ When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RotateTransform> class provides several special features: <xref:System.Windows.Media.RotateTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RotateTransform ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RotateTransform" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RotateTransform (double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="angle">The clockwise rotation angle, in degrees.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RotateTransform" /> class that has the specified angle, in degrees, of clockwise rotation. The rotation is centered on the origin, (0,0).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RotateTransform (double angle, double centerX, double centerY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angle, float64 centerX, float64 centerY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Double" />
+        <Parameter Name="centerX" Type="System.Double" />
+        <Parameter Name="centerY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="angle">The clockwise rotation angle, in degrees. For more information, see the <see cref="P:System.Windows.Media.RotateTransform.Angle" /> property.</param>
+        <param name="centerX">The x-coordinate of the center point for the <see cref="T:System.Windows.Media.RotateTransform" />. For more information, see the <see cref="P:System.Windows.Media.RotateTransform.CenterX" /> property.</param>
+        <param name="centerY">The y-coordinate of the center point for the <see cref="T:System.Windows.Media.RotateTransform" />. For more information, see the <see cref="P:System.Windows.Media.RotateTransform.CenterY" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RotateTransform" /> class that has the specified angle and center point.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Angle">
+      <MemberSignature Language="C#" Value="public double Angle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Angle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.Angle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the angle, in degrees, of clockwise rotation.</summary>
+        <value>The angle, in degrees, of clockwise rotation. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+  
+<a name="dependencyPropertyInfo_Angle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RotateTransform.AngleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AngleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AngleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AngleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.AngleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RotateTransform.Angle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterX">
+      <MemberSignature Language="C#" Value="public double CenterX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CenterX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.CenterX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the x-coordinate of the rotation center point.</summary>
+        <value>The x-coordinate of the center of rotation. The default is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+  
+<a name="dependencyPropertyInfo_CenterX"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RotateTransform.CenterXProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterXProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterXProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterXProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.CenterXProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RotateTransform.CenterX" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterY">
+      <MemberSignature Language="C#" Value="public double CenterY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CenterY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.CenterY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the y-coordinate of the rotation center point.</summary>
+        <value>The y-coordinate of the center of rotation. The default is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+  
+<a name="dependencyPropertyInfo_CenterY"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RotateTransform.CenterYProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterYProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterYProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterYProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.CenterYProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RotateTransform.CenterY" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Media.RotateTransform.CenterY%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.RotateTransform Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RotateTransform Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.RotateTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.RotateTransform" /> by making deep copies of its values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.RotateTransform CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RotateTransform CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.RotateTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.RotateTransform" /> object by making deep copies of its values. This method does not copy resource references, data bindings, or animations, although it does copy their current values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current rotation transformation as a <see cref="T:System.Windows.Media.Matrix" /> object.</summary>
+        <value>The current rotation transformation as a <see cref="T:System.Windows.Media.Matrix" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RotateTransform" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The clockwise rotation angle is measured in degrees. The default center of rotation is the origin.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

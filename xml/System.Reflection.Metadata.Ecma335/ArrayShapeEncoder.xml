@@ -1,0 +1,80 @@
+<Type Name="ArrayShapeEncoder" FullName="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder">
+  <TypeSignature Language="C#" Value="public struct ArrayShapeEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ArrayShapeEncoder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ArrayShapeEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayShapeEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ArrayShapeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ArrayShapeEncoder.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="public void Shape (int rank, System.Collections.Immutable.ImmutableArray&lt;int&gt; sizes, System.Collections.Immutable.ImmutableArray&lt;int&gt; lowerBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Shape(int32 rank, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; sizes, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; lowerBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ArrayShapeEncoder.Shape(System.Int32,System.Collections.Immutable.ImmutableArray{System.Int32},System.Collections.Immutable.ImmutableArray{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rank" Type="System.Int32" />
+        <Parameter Name="sizes" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
+        <Parameter Name="lowerBounds" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rank">To be added.</param>
+        <param name="sizes">To be added.</param>
+        <param name="lowerBounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

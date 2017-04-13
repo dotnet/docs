@@ -1,0 +1,198 @@
+<Type Name="HandleComparer" FullName="System.Reflection.Metadata.HandleComparer">
+  <TypeSignature Language="C#" Value="public sealed class HandleComparer : System.Collections.Generic.IComparer&lt;System.Reflection.Metadata.EntityHandle&gt;, System.Collections.Generic.IComparer&lt;System.Reflection.Metadata.Handle&gt;, System.Collections.Generic.IEqualityComparer&lt;System.Reflection.Metadata.EntityHandle&gt;, System.Collections.Generic.IEqualityComparer&lt;System.Reflection.Metadata.Handle&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HandleComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;valuetype System.Reflection.Metadata.EntityHandle&gt;, class System.Collections.Generic.IComparer`1&lt;valuetype System.Reflection.Metadata.Handle&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;valuetype System.Reflection.Metadata.EntityHandle&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;valuetype System.Reflection.Metadata.Handle&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.HandleComparer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;System.Reflection.Metadata.EntityHandle&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;System.Reflection.Metadata.Handle&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.Reflection.Metadata.EntityHandle&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.Reflection.Metadata.Handle&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public int Compare (System.Reflection.Metadata.EntityHandle x, System.Reflection.Metadata.EntityHandle y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(valuetype System.Reflection.Metadata.EntityHandle x, valuetype System.Reflection.Metadata.EntityHandle y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Compare(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="y" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public int Compare (System.Reflection.Metadata.Handle x, System.Reflection.Metadata.Handle y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(valuetype System.Reflection.Metadata.Handle x, valuetype System.Reflection.Metadata.Handle y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Compare(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Reflection.Metadata.Handle" />
+        <Parameter Name="y" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.HandleComparer Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Reflection.Metadata.HandleComparer Default" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.HandleComparer.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.HandleComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Metadata.EntityHandle x, System.Reflection.Metadata.EntityHandle y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Metadata.EntityHandle x, valuetype System.Reflection.Metadata.EntityHandle y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Equals(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="y" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Metadata.Handle x, System.Reflection.Metadata.Handle y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Metadata.Handle x, valuetype System.Reflection.Metadata.Handle y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Equals(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Reflection.Metadata.Handle" />
+        <Parameter Name="y" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (System.Reflection.Metadata.EntityHandle obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(valuetype System.Reflection.Metadata.EntityHandle obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.GetHashCode(System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (System.Reflection.Metadata.Handle obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(valuetype System.Reflection.Metadata.Handle obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.GetHashCode(System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

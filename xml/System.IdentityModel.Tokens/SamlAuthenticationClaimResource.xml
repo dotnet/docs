@@ -1,0 +1,355 @@
+<Type Name="SamlAuthenticationClaimResource" FullName="System.IdentityModel.Tokens.SamlAuthenticationClaimResource">
+  <TypeSignature Language="C#" Value="public class SamlAuthenticationClaimResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlAuthenticationClaimResource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the resource type for a claim that is created from a <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class to create a <xref:System.IdentityModel.Claims.Claim> instance for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> authentication claim. The <xref:System.IdentityModel.Claims.Claim> class has a constructor that takes a resource, which this class can be passed to.  
+  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. A <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject is authenticated by a particular means at a particular time. The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class represents a claim resource for the <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthenticationClaimResource (DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="authenticationInstant" Type="System.DateTime" />
+        <Parameter Name="authenticationMethod" Type="System.String" />
+        <Parameter Name="dnsAddress" Type="System.String" />
+        <Parameter Name="ipAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationInstant">A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.</param>
+        <param name="authenticationMethod">A URI reference that specifies how the subject was authenticated.</param>
+        <param name="dnsAddress">The DNS domain name in which the computer that authenticated the subject resides.</param>
+        <param name="ipAddress">The IP address of the computer that authenticated the subject.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, and IP address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+  
+|Authentication method|URI|  
+|---------------------------|---------|  
+|Password|urn:oasis:names:tc:SAML:1.0:am:password|  
+|Kerberos|urn:ietf:rfc:1510|  
+|Secure Remote Password (SRP)|urn:ietf:rfc:2945|  
+|Hardware Token|URI:urn:oasis:names:tc:SAML:1.0:am:HardwareToken|  
+|SSL/TLS Certificate Based Client Authentication|urn:ietf:rfc:2246|  
+|PGP Public Key|urn:oasis:names:tc:SAML:1.0:am:PGP|  
+|SPKI Public Key|urn:oasis:names:tc:SAML:1.0:am:SPKI|  
+|XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
+|XML Digital Signature|urn:ietf:rfc:3075|  
+|Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthenticationClaimResource (DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAuthorityBinding})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="authenticationInstant" Type="System.DateTime" />
+        <Parameter Name="authenticationMethod" Type="System.String" />
+        <Parameter Name="dnsAddress" Type="System.String" />
+        <Parameter Name="ipAddress" Type="System.String" />
+        <Parameter Name="authorityBindings" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationInstant">A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.</param>
+        <param name="authenticationMethod">A URI reference that specifies how the subject was authenticated.</param>
+        <param name="dnsAddress">The DNS domain name in which the computer that authenticated the subject resides.</param>
+        <param name="ipAddress">The IP address of the computer that authenticated the subject.</param>
+        <param name="authorityBindings">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> that contains additional information about the subject.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, IP address, and reference to additional information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+  
+|Authentication method|URI|  
+|---------------------------|---------|  
+|Password|urn:oasis:names:tc:SAML:1.0:am:password|  
+|Kerberos|urn:ietf:rfc:1510|  
+|Secure Remote Password (SRP)|urn:ietf:rfc:2945|  
+|Hardware Token|URI:urn:oasis:names:tc:SAML:1.0:am:HardwareToken|  
+|SSL/TLS Certificate Based Client Authentication|urn:ietf:rfc:2246|  
+|PGP Public Key|urn:oasis:names:tc:SAML:1.0:am:PGP|  
+|SPKI Public Key|urn:oasis:names:tc:SAML:1.0:am:SPKI|  
+|XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
+|XML Digital Signature|urn:ietf:rfc:3075|  
+|Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorityBindings" /> contains a member that is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthenticationClaimResource (DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime authenticationInstant, string authenticationMethod, string dnsAddress, string ipAddress, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Tokens.SamlAuthorityBinding})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="authenticationInstant" Type="System.DateTime" />
+        <Parameter Name="authenticationMethod" Type="System.String" />
+        <Parameter Name="dnsAddress" Type="System.String" />
+        <Parameter Name="ipAddress" Type="System.String" />
+        <Parameter Name="authorityBindings" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationInstant">A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.</param>
+        <param name="authenticationMethod">A URI reference that specifies how the subject was authenticated.</param>
+        <param name="dnsAddress">The DNS domain name in which the computer that authenticated the subject resides.</param>
+        <param name="ipAddress">The IP address of the computer that authenticated the subject.</param>
+        <param name="authorityBindings">An <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> that contains additional information about the subject.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, IP address, and reference to additional information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+  
+|Authentication method|URI|  
+|---------------------------|---------|  
+|Password|urn:oasis:names:tc:SAML:1.0:am:password|  
+|Kerberos|urn:ietf:rfc:1510|  
+|Secure Remote Password (SRP)|urn:ietf:rfc:2945|  
+|Hardware Token|URI:urn:oasis:names:tc:SAML:1.0:am:HardwareToken|  
+|SSL/TLS Certificate Based Client Authentication|urn:ietf:rfc:2246|  
+|PGP Public Key|urn:oasis:names:tc:SAML:1.0:am:PGP|  
+|SPKI Public Key|urn:oasis:names:tc:SAML:1.0:am:SPKI|  
+|XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
+|XML Digital Signature|urn:ietf:rfc:3075|  
+|Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorityBindings" /> contains a member that is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationInstant">
+      <MemberSignature Language="C#" Value="public DateTime AuthenticationInstant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime AuthenticationInstant" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the instant in time at which the subject was authenticated.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant%2A> property corresponds to the `AuthenticationInstant` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationMethod">
+      <MemberSignature Language="C#" Value="public string AuthenticationMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationMethod" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the method that was used to authenticate the subject.</summary>
+        <value>The method that was used to authenticate the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+  
+|Authentication method|URI|  
+|---------------------------|---------|  
+|Password|urn:oasis:names:tc:SAML:1.0:am:password|  
+|Kerberos|urn:ietf:rfc:1510|  
+|Secure Remote Password (SRP)|urn:ietf:rfc:2945|  
+|Hardware Token|URI:urn:oasis:names:tc:SAML:1.0:am:HardwareToken|  
+|SSL/TLS Certificate Based Client Authentication|urn:ietf:rfc:2246|  
+|PGP Public Key|urn:oasis:names:tc:SAML:1.0:am:PGP|  
+|SPKI Public Key|urn:oasis:names:tc:SAML:1.0:am:SPKI|  
+|XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
+|XML Digital Signature|urn:ietf:rfc:3075|  
+|Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
+  
+ The <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationMethod%2A> property corresponds to the `AuthenticationMethod` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorityBindings">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; AuthorityBindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SamlAuthorityBinding&gt; AuthorityBindings" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets additional information about the subject.</summary>
+        <value>An <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> that contains additional information about the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings%2A> property corresponds to a set of `<AuthorityBinding>` child elements for an `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DnsAddress">
+      <MemberSignature Language="C#" Value="public string DnsAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DnsAddress" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DNS domain name in which the computer that authenticated the subject resides.</summary>
+        <value>The DNS domain name in which the computer that authenticated the subject resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress%2A> property corresponds to the `DNSAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare to this instance.</param>
+        <summary>Returns a value that indicates whether the instance is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> and has the same value as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" />.</summary>
+        <returns>A hash code for the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddress">
+      <MemberSignature Language="C#" Value="public string IPAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddress" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the IP address of the computer that authenticated the subject.</summary>
+        <value>The IP address of the computer that authenticated the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress%2A> property corresponds to the `IPAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

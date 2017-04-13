@@ -1,0 +1,318 @@
+<Type Name="BorderSkinStyle" FullName="System.Web.UI.DataVisualization.Charting.BorderSkinStyle">
+  <TypeSignature Language="C#" Value="public enum BorderSkinStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BorderSkinStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.BorderSkinStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a style for the border skin of a chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.BorderSkin> class represents the style of the border skin used for a chart image. If you set the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property to None, no skin will be used. This is the default value for the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property.  
+  
+> [!NOTE]
+>  The difference between the sets of border skin styles that use frames and follow either the naming convention [FrameThin*](assetId:///FrameThin*?qualifyHint=False&amp;autoUpgrade=True) or "[FrameTitle*](assetId:///FrameTitle*?qualifyHint=False&amp;autoUpgrade=True)—for example, FrameThin1 or FrameTitle1—is the shape and thickness of their frames.  
+  
+ In addition, if you use one of the "FrameThin" style border skins, the title of the chart will not be displayed. However, if you use one of the "FrameTitle" style border skins, the title of the chart will appear in the top-horizontal part of the frame.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Emboss">
+      <MemberSignature Language="C#" Value="Emboss" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle Emboss = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.Emboss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use an embossed border skin.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin1">
+      <MemberSignature Language="C#" Value="FrameThin1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin1 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with rounded corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin2">
+      <MemberSignature Language="C#" Value="FrameThin2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin2 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with rounded top corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin3">
+      <MemberSignature Language="C#" Value="FrameThin3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin3 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with square corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin4">
+      <MemberSignature Language="C#" Value="FrameThin4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin4 = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with square outside corners and rounded inside corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin5">
+      <MemberSignature Language="C#" Value="FrameThin5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin5 = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with rounded corners and screws.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameThin6">
+      <MemberSignature Language="C#" Value="FrameThin6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameThin6 = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a thin border skin with square inside corners and rounded outside corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle1">
+      <MemberSignature Language="C#" Value="FrameTitle1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle1 = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle2">
+      <MemberSignature Language="C#" Value="FrameTitle2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle2 = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded top corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle3">
+      <MemberSignature Language="C#" Value="FrameTitle3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle3 = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with square corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle4">
+      <MemberSignature Language="C#" Value="FrameTitle4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle4 = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded inside corners and square outside corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle5">
+      <MemberSignature Language="C#" Value="FrameTitle5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle5 = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded corners and screws.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle6">
+      <MemberSignature Language="C#" Value="FrameTitle6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle6 = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded outside corners and square inside corners.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle7">
+      <MemberSignature Language="C#" Value="FrameTitle7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle7 = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded corners. No border on the right side.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameTitle8">
+      <MemberSignature Language="C#" Value="FrameTitle8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle FrameTitle8 = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a border skin with rounded corners on top and bottom sides only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No border skin is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raised">
+      <MemberSignature Language="C#" Value="Raised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle Raised = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.Raised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a raised border skin.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunken">
+      <MemberSignature Language="C#" Value="Sunken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.BorderSkinStyle Sunken = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BorderSkinStyle.Sunken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a sunken border skin.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

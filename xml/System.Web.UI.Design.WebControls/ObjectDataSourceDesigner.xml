@@ -1,0 +1,335 @@
+<Type Name="ObjectDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.ObjectDataSourceDesigner">
+  <TypeSignature Language="C#" Value="public class ObjectDataSourceDesigner : System.Web.UI.Design.DataSourceDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSourceDesigner extends System.Web.UI.Design.DataSourceDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.DataSourceDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource> control represents a data source that calls methods of a business object in order to perform the Delete, Insert, Select, and Update database operations.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.ObjectDataSource> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.ObjectDataSource> control in a visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class members provide the following functionality:  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure%2A> property indicates whether the Configure Data Source wizard can be displayed. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema%2A> property indicates whether the schema of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control can be refreshed at design time.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod%2A> property specifies the method that performs the Select function. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName%2A> property specifies the type of the business object that provides the data for the associated control.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetView%2A> method returns a data source view with the specified name. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames%2A> method returns a list of data source view names for the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema%2A> method extracts the metadata for the Select method from the associated business object.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure%2A> method causes the Configure Data Source wizard to be displayed on the visual designer surface. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties%2A> method removes properties from, adds additional properties to, or shadows properties of the associated control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to extend the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class to change the appearance and behavior of controls that are derived from the <xref:System.Web.UI.WebControls.ObjectDataSource> control at design time.  
+  
+ The example derives the `MyObjectDataSource` control from the <xref:System.Web.UI.WebControls.ObjectDataSource>. The `MyObjectDataSource` is a copy of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also derives the `MyObjectDataSourceDesigner` class from the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> and applies a <xref:System.ComponentModel.DesignerAttribute> attribute for the `MyObjectDataSourceDesigner` on the `MyObjectDataSource` control.  
+  
+ The `MyObjectDataSourceDesigner` overrides the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties%2A> method to make the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the **Properties** grid at design time.  
+  
+ The `MyObjectDataSourceDesigner` overrides the <xref:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml%2A> method to display the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName%2A> and <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod%2A> properties in a placeholder, in addition to the control type and ID.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.ObjectDataSourceDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.ObjectDataSourceDesigner/CS/ObjectDataSourceDesigner.cs#1)]
+ [!code-vb[System.Web.UI.Design.WebControls.ObjectDataSourceDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.ObjectDataSourceDesigner/VB/ObjectDataSourceDesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDataSourceDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control or a copy of that control on the visual designer surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConfigure">
+      <MemberSignature Language="C#" Value="public override bool CanConfigure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure" /> method can be called; <see langword="false" /> otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure%2A> method can be called, and the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure%2A> property is `true`, if the <xref:System.ComponentModel.Component.Site%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control implements either the <xref:System.ComponentModel.Design.ITypeResolutionService> or the <xref:System.ComponentModel.Design.ITypeDiscoveryService> interface.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure%2A> is `true`, the **Configure Data Source** menu item is displayed in the **Common ObjectDataSource Tasks** context menu of the associated control on the visual designer surface. The Configure Data Source wizard is invoked when this menu item is selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRefreshSchema">
+      <MemberSignature Language="C#" Value="public override bool CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" /> can be called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema%2A> method can be called, and the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema%2A> property is `true`, if the <xref:System.ComponentModel.Component.Site%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control implements either the <xref:System.ComponentModel.Design.ITypeResolutionService> or <xref:System.ComponentModel.Design.ITypeDiscoveryService> interface, and the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> properties both contain a value.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema%2A> is `true`, the **Refresh Schema** menu item is displayed in the **Common ObjectDataSource Tasks** context menu of the associated control on the visual designer surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configure">
+      <MemberSignature Language="C#" Value="public override void Configure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Configure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the Configure Data Source wizard on the visual designer surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure%2A> method initiates a transaction that causes the Configure Data Source wizard to appear on the visual designer surface.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure%2A> method is called when you select the **Configure Data Source** menu item on the **Common ObjectDataSource Tasks** context menu of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control. The **Configure Data Source** menu item appears on the context menu when the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerDataSourceView GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.DesignerDataSourceView GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">A string containing the name of the <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" />.</param>
+        <summary>Returns a data source view with the specified name.</summary>
+        <returns>An <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" /> with the name specified by <paramref name="viewName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetView%2A> method returns an <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView> object with the specified name. If `viewName` is `null` or an empty string (""), the first view name in the array of names that is returned by <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames%2A> is used as the specified name. If no view names are returned by the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames%2A>, <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetView%2A> generates an unnamed <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewNames">
+      <MemberSignature Language="C#" Value="public override string[] GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of data source view names for the associated control.</summary>
+        <returns>A string array containing the names of the <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" /> objects of the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames%2A> method gets the view names from the names of the schema data tables of the associated control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection implementing the <see cref="T:System.Collections.IDictionary" /> of the added and shadowed properties.</param>
+        <summary>Used by the designer to remove properties from or add additional properties to the display in the **Properties** grid or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties%2A> method creates design-time properties to shadow the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> properties of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control so that they appear in the **Properties** grid of the visual designer.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class to change the **Properties** grid of a control that is derived from the <xref:System.Web.UI.WebControls.ObjectDataSource> class at design time. The example makes the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the **Properties** grid.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.ObjectDataSourceDesigner#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.ObjectDataSourceDesigner/CS/ObjectDataSourceDesigner.cs#4)]
+ [!code-vb[System.Web.UI.Design.WebControls.ObjectDataSourceDesigner#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.ObjectDataSourceDesigner/VB/ObjectDataSourceDesigner.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the <see cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> base method before performing other processing.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public override void RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">If <see langword="true" />, does not display error messages when exceptions occur during processing; otherwise, exception messages are displayed.</param>
+        <summary>Extracts the metadata for the Select method from the business object that is specified by the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema%2A> method extracts the metadata for the method that is named by the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod%2A> property from the <xref:System.Type> object that is named by the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName%2A> property, which is the type of the business object that provides the data for the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control. The metadata is saved in a <xref:System.Data.DataTable> array and in the <xref:System.Web.UI.Design.ControlDesigner.DesignerState%2A> array of the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectMethod">
+      <MemberSignature Language="C#" Value="public string SelectMethod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the method to execute when the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> method of the associated control is called.</summary>
+        <value>A string containing the name of the method to execute when the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> is called.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod%2A> property shadows the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the associated control.  
+  
+ When the value of the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod%2A> property is changed, the design-time markup for the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control is updated. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema%2A> method is called, if the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema%2A> property is true; otherwise, the <xref:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the type that contains the methods that are specified in the associated control.</summary>
+        <value>A string containing the name of the type that contains the methods that perform the Delete, Insert, Select, and Update database operations specified in the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName%2A> property shadows the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property of the associated control.  
+  
+ When the value of the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName%2A> property is changed, the design-time markup for the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control is updated. The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema%2A> method is called, if the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema%2A> property is true; otherwise, the <xref:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

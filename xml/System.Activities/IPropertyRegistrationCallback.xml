@@ -1,0 +1,58 @@
+<Type Name="IPropertyRegistrationCallback" FullName="System.Activities.IPropertyRegistrationCallback">
+  <TypeSignature Language="C#" Value="public interface IPropertyRegistrationCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyRegistrationCallback" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.IPropertyRegistrationCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Allows a workflow execution property to provide custom registration and un-registration logic.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register (System.Activities.RegistrationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register(class System.Activities.RegistrationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.IPropertyRegistrationCallback.Register(System.Activities.RegistrationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.RegistrationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Activities.RegistrationContext" /> that references the collection of execution properties to which the property is being registered.</param>
+        <summary>Called when a workflow execution property is added through <see cref="Overload:System.Activities.ExecutionProperties.Add" />. This provides a validation hook for the property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public void Unregister (System.Activities.RegistrationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister(class System.Activities.RegistrationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.IPropertyRegistrationCallback.Unregister(System.Activities.RegistrationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.RegistrationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Activities.RegistrationContext" /> that references the collection of execution properties to which the property belongs.</param>
+        <summary>Called when a workflow execution property goes out of scope.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

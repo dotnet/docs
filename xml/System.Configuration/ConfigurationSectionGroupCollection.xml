@@ -1,0 +1,493 @@
+<Type Name="ConfigurationSectionGroupCollection" FullName="System.Configuration.ConfigurationSectionGroupCollection">
+  <TypeSignature Language="C#" Value="public sealed class ConfigurationSectionGroupCollection : System.Collections.Specialized.NameObjectCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConfigurationSectionGroupCollection extends System.Collections.Specialized.NameObjectCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionGroupCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Specialized.NameObjectCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Configuration.ConfigurationSectionGroup" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationSectionGroupCollection> class to iterate through a collection of <xref:System.Configuration.ConfigurationSectionGroup> objects. You can access this collection of objects using the <xref:System.Configuration.Configuration.SectionGroups%2A> property or the <xref:System.Configuration.ConfigurationSectionGroup.SectionGroups%2A> property.  
+  
+ The <xref:System.Configuration.ConfigurationSectionGroupCollection> class is also used in the creation of custom types that extend the <xref:System.Configuration.ConfigurationSectionGroup> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection> class.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#1)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#1)]  
+  
+ The following example is an excerpt of the configuration file used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <configSections>  
+    <section name="CustomSection"   
+      type="Samples.AspNet.Configuration.CustomSection, ConfigurationSectionCollection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" />  
+  /configSections>  
+  
+<CustomSection fileName="default.txt" maxUsers="1000"   
+  maxIdleTime="00:05:00" />  
+  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string name, System.Configuration.ConfigurationSectionGroup sectionGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Configuration.ConfigurationSectionGroup sectionGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Add(System.String,System.Configuration.ConfigurationSectionGroup)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="sectionGroup" Type="System.Configuration.ConfigurationSectionGroup" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be added.</param>
+        <param name="sectionGroup">The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be added.</param>
+        <summary>Adds a <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method adds the specified <xref:System.Configuration.ConfigurationSectionGroup> object if it is not already contained within the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseClear%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.Clear%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#3)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Configuration.ConfigurationSectionGroup[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Configuration.ConfigurationSectionGroup[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.CopyTo(System.Configuration.ConfigurationSectionGroup[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Configuration.ConfigurationSectionGroup[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the object to.</param>
+        <param name="index">The index location at which to begin copying.</param>
+        <summary>Copies this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object to an array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="array" /> is less than the value of <see cref="P:System.Configuration.ConfigurationSectionGroupCollection.Count" /> plus <paramref name="index" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public override int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of section groups in the collection.</summary>
+        <value>An integer that represents the number of section groups in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup Get (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup Get(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Get(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be returned.</param>
+        <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object contained in the collection.</summary>
+        <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup Get (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup Get(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Get(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be returned.</param>
+        <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object from the collection.</summary>
+        <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.Get%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#4)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is null or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that can iterate through the <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.GetEnumerator%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#5)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKey">
+      <MemberSignature Language="C#" Value="public string GetKey (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetKey(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the section group whose key is to be returned.</param>
+        <summary>Gets the key of the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object contained in this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <returns>The key of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.GetKey%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#6)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The applicable <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">The applicable <see cref="T:System.Runtime.Serialization.StreamingContext" /> object.</param>
+        <summary>Used by the system during serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationSectionGroupCollection.GetObjectData%2A> method is used during serialization; that is, when persisting configuration data to a configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionGroup Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be returned.</param>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object whose index is specified from the collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object at the specified index.  
+  
+ In C#, this property is the indexer for the <see cref="T:System.Configuration.ConfigurationSectionCollection" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionGroup Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object to be returned.</param>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object whose name is specified from the collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object with the specified name.  
+  
+ In C#, this property is the indexer for the <see cref="T:System.Configuration.ConfigurationSectionCollection" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.Item%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#8)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public override System.Collections.Specialized.NameObjectCollectionBase.KeysCollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameObjectCollectionBase/KeysCollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keys to all <see cref="T:System.Configuration.ConfigurationSectionGroup" /> objects contained in this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> object that contains the names of all section groups in this collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.Keys%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#7)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the section group to be removed.</param>
+        <summary>Removes the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object whose name is specified from this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationSectionGroupCollection.Remove%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationSectionGroupCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/CS/ConfigurationSectionGroupCollection.cs#9)]
+ [!code-vb[System.Configuration.ConfigurationSectionGroupCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSectionGroupCollection/VB/ConfigurationSectionGroupCollection.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the section group to be removed.</param>
+        <summary>Removes the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object whose index is specified from this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object from the collection</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object contained in this <see cref="T:System.Configuration.ConfigurationSectionGroupCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the [Item\<xref:System.Configuration.ConfigurationSectionGroupCollection.Item%2A> property to iterate through a <xref:System.Configuration.ConfigurationSectionGroupCollection>.  
+  
+ [!code-csharp[ConfigurationSectionGroupCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationSectionGroupCollection/CS/sample.cs#9)]
+ [!code-vb[ConfigurationSectionGroupCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationSectionGroupCollection/VB/sample.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

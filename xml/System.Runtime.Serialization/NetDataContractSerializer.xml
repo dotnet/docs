@@ -1,0 +1,984 @@
+<Type Name="NetDataContractSerializer" FullName="System.Runtime.Serialization.NetDataContractSerializer">
+  <TypeSignature Language="C#" Value="public sealed class NetDataContractSerializer : System.Runtime.Serialization.XmlObjectSerializer, System.Runtime.Serialization.IFormatter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetDataContractSerializer extends System.Runtime.Serialization.XmlObjectSerializer implements class System.Runtime.Serialization.IFormatter" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.NetDataContractSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Serialization.XmlObjectSerializer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IFormatter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Serializes and deserializes an instance of a type into XML stream or document using the supplied [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] types. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.NetDataContractSerializer> differs from the <xref:System.Runtime.Serialization.DataContractSerializer> in one important way: the <xref:System.Runtime.Serialization.NetDataContractSerializer> includes CLR type information in the serialized XML, whereas the <xref:System.Runtime.Serialization.DataContractSerializer> does not. Therefore, the <xref:System.Runtime.Serialization.NetDataContractSerializer> can be used only if both the serializing and deserializing ends share the same CLR types.  
+  
+ The serializer can serialize types to which either the <xref:System.Runtime.Serialization.DataContractAttribute> or <xref:System.SerializableAttribute> attribute has been applied. It also serializes types that implement <xref:System.Runtime.Serialization.ISerializable>.  
+  
+ For more information about serialization, see [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+  
+## Incompatibility with XElement  
+ The <xref:System.Xml.Linq.XElement> class is used to write XML. However, the `NetDataContractSerializer` cannot serialize an instance of the type. The following code, therefore, fails with the exception: "Root type 'System.Xml.Linq.XElement' is not supported at the top level by NetDataContractSerializer since it is IXmlSerializable with `IsAny`=`true` and must write all its contents including the root element."  
+  
+ [!code-csharp[NetDataContractSerializer#15](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#15)]
+ [!code-vb[NetDataContractSerializer#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#15)]  
+  
+ However, if an `XElement` is used as the type of a field or property of a class, the data contained by the field or property is serialized. This is because as a member of a class, the data is not the top level of the class.  
+  
+   
+  
+## Examples  
+ The following example code shows a type named `Person` that is serialized by the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to the class, and the <xref:System.Runtime.Serialization.DataMemberAttribute> is applied to members (including a private member) to instruct the <xref:System.Runtime.Serialization.NetDataContractSerializer> what to serialize.  
+  
+ [!code-csharp[NetDataContractSerializer#0](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#0)]
+ [!code-vb[NetDataContractSerializer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[NetDataContractSerializer#8](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#8)]
+ [!code-vb[NetDataContractSerializer#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains context data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with the supplied streaming context data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.StreamingContext> class allows you to pass in user-specific context data to use while reading and writing objects.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer> using a <xref:System.Runtime.Serialization.StreamingContext>.  
+  
+ [!code-csharp[NetDataContractSerializer#9](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#9)]
+ [!code-vb[NetDataContractSerializer#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (string rootName, string rootNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string rootName, string rootNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with the supplied XML root element and namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> specifying the XML root element and namespace it will expect when deserializing an object.  
+  
+ [!code-csharp[NetDataContractSerializer#10](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#10)]
+ [!code-vb[NetDataContractSerializer#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+      </Parameters>
+      <Docs>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the name of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with two parameters of type <see cref="T:System.Xml.XmlDictionaryString" /> that contain the root element and namespace used to specify the content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlDictionaryString> can be used to optimize performance when the same set of strings is used across object instances.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> specifying the XML root element and namespace (as <xref:System.Xml.XmlDictionaryString> arguments) it will expect when deserializing an object.  
+  
+ [!code-csharp[NetDataContractSerializer#11](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#11)]
+ [!code-vb[NetDataContractSerializer#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (System.Runtime.Serialization.StreamingContext context, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, System.Runtime.Serialization.ISurrogateSelector surrogateSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Serialization.StreamingContext context, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, class System.Runtime.Serialization.ISurrogateSelector surrogateSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.Runtime.Serialization.StreamingContext,System.Int32,System.Boolean,System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,System.Runtime.Serialization.ISurrogateSelector)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="assemblyFormat" Type="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
+        <Parameter Name="surrogateSelector" Type="System.Runtime.Serialization.ISurrogateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains context data.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type; otherwise, <see langword="false" />.</param>
+        <param name="assemblyFormat">A <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> enumeration value that specifies a method for locating and loading assemblies.</param>
+        <param name="surrogateSelector">An implementation of the <see cref="T:System.Runtime.Serialization.ISurrogateSelector" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with the supplied context data; in addition, specifies the maximum number of items in the object to be serialized, and parameters to specify whether extra data is ignored, the assembly loading method, and a surrogate selector.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ignoreExtensionDataObject` parameter is used when the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is implemented in the class that is being serialized or deserialized.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer> using a <xref:System.Runtime.Serialization.StreamingContext>. The code also sets the `ignoreExtensionDataObject`, and specifies an implementation of the `ISurrogateSelector` interface to handle to assist the serializer when selecting a surrogate (for deserializing legacy types).  
+  
+ [!code-csharp[NetDataContractSerializer#12](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#12)]
+ [!code-vb[NetDataContractSerializer#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxItemsInObjectGraph" /> value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (string rootName, string rootNamespace, System.Runtime.Serialization.StreamingContext context, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, System.Runtime.Serialization.ISurrogateSelector surrogateSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string rootName, string rootNamespace, valuetype System.Runtime.Serialization.StreamingContext context, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, class System.Runtime.Serialization.ISurrogateSelector surrogateSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.String,System.String,System.Runtime.Serialization.StreamingContext,System.Int32,System.Boolean,System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,System.Runtime.Serialization.ISurrogateSelector)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rootName" Type="System.String" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="assemblyFormat" Type="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
+        <Parameter Name="surrogateSelector" Type="System.Runtime.Serialization.ISurrogateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="rootNamespace">The namespace of the XML element that encloses the content to serialize or deserialize.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains context data.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type; otherwise, <see langword="false" />.</param>
+        <param name="assemblyFormat">A <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> enumeration value that specifies a method for locating and loading assemblies.</param>
+        <param name="surrogateSelector">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to handle the legacy type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with the supplied context data and root name and namespace; in addition, specifies the maximum number of items in the object to be serialized, and parameters to specify whether extra data is ignored, the assembly loading method, and a surrogate selector.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ignoreExtensionDataObject` parameter is used when the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is implemented in the class that is being serialized or deserialized.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer> specifying the XML element name and namespace to expect when deserializing. The code also sets the `ignoreExtensionDataObject`, and specifies an implementation of the <xref:System.Runtime.Serialization.ISurrogateSelector> interface to handle to assist the serializer when selecting a surrogate (for deserializing legacy types).  
+  
+ [!code-csharp[NetDataContractSerializer#13](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#13)]
+ [!code-vb[NetDataContractSerializer#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxItemsInObjectGraph" /> value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetDataContractSerializer (System.Xml.XmlDictionaryString rootName, System.Xml.XmlDictionaryString rootNamespace, System.Runtime.Serialization.StreamingContext context, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, System.Runtime.Serialization.ISurrogateSelector surrogateSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDictionaryString rootName, class System.Xml.XmlDictionaryString rootNamespace, valuetype System.Runtime.Serialization.StreamingContext context, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle assemblyFormat, class System.Runtime.Serialization.ISurrogateSelector surrogateSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.#ctor(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Runtime.Serialization.StreamingContext,System.Int32,System.Boolean,System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,System.Runtime.Serialization.ISurrogateSelector)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="rootNamespace" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="maxItemsInObjectGraph" Type="System.Int32" />
+        <Parameter Name="ignoreExtensionDataObject" Type="System.Boolean" />
+        <Parameter Name="assemblyFormat" Type="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
+        <Parameter Name="surrogateSelector" Type="System.Runtime.Serialization.ISurrogateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element of the content.</param>
+        <param name="rootNamespace">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace of the root element.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains context data.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the data supplied by an extension of the type; otherwise, <see langword="false" />.</param>
+        <param name="assemblyFormat">A <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> enumeration value that specifies a method for locating and loading assemblies.</param>
+        <param name="surrogateSelector">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to handle the legacy type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class with the supplied context data, and root name and namespace (as <see cref="T:System.Xml.XmlDictionaryString" /> parameters); in addition, specifies the maximum number of items in the object to be serialized, and parameters to specify whether extra data found is ignored, assembly loading method, and a surrogate selector.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlDictionaryString> can be used to optimize performance when the same set of strings is used across object instances.  
+  
+ The `ignoreExtensionDataObject` parameter is used when the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is implemented in the class that is being serialized or deserialized.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer> specifying the XML element name and namespace (as <xref:System.Xml.XmlDictionaryString> arguments) to expect when deserializing. The code also sets the `ignoreExtensionDataObject`, and specifies an implementation of the <xref:System.Runtime.Serialization.ISurrogateSelector> interface to handle to assist the serializer when selecting a surrogate (for deserializing legacy types).  
+  
+ [!code-csharp[NetDataContractSerializer#14](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#14)]
+ [!code-vb[NetDataContractSerializer#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxItemsInObjectGraph" /> value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyFormat">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.Formatters.FormatterAssemblyStyle AssemblyFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle AssemblyFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.AssemblyFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.Formatters.FormatterAssemblyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies a method for locating and loading assemblies.</summary>
+        <value>A <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> enumeration value that specifies a method for locating and loading assemblies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An `AssemblyFormat` instance can have two styles: <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle> or <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle>. Specifying `Simple` allows types in one version to be loaded and deserialized from an instance serialized from a different version.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value being set does not correspond to any of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Binder">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.SerializationBinder Binder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.SerializationBinder Binder" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.Binder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.SerializationBinder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that controls class loading.</summary>
+        <value>The <see cref="T:System.Runtime.Serialization.SerializationBinder" /> used with the current formatter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. The assembly name includes the name, version, and strong name hash of the assembly. By default, deserialization uses this information to create an instance of an identical object (with the exception of any assembly loading restricted by the security policy). Some users need to control which class to load, either because the class has moved between assemblies or a different version of the class is required on the server and client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.StreamingContext Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.StreamingContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.StreamingContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object that enables the passing of context data that is useful while serializing or deserializing.</summary>
+        <value>A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the context data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the XML to deserialize.</param>
+        <summary>Deserializes an XML document or stream into an object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method assumes the default format is text XML.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreExtensionDataObject">
+      <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.IgnoreExtensionDataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether data supplied by an extension of the object is ignored.</summary>
+        <value>
+          <see langword="true" /> to ignore the data supplied by an extension of the type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject>, data from a future version of a type can be stored by the <xref:System.Runtime.Serialization.ExtensionDataObject>. During a round trip (where an object is deserialized, altered, and serialized again), the extra data is stored and serialized again. For more information, see [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.IsStartObject(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> that contains the XML to read.</param>
+        <summary>Determines whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned on an object that can be deserialized using the specified reader.</summary>
+        <returns>
+          <see langword="true" />, if the reader is at the start element of the stream to read; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> determines whether it can read an object by examining the name and namespace of the XML element the reader is positioned at, and comparing the values to expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+  
+ You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29?displayProperty=fullName>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29?displayProperty=fullName>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.IsStartObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> that contains the XML to read.</param>
+        <summary>Determines whether the <see cref="T:System.Xml.XmlReader" /> is positioned on an object that can be deserialized using the specified reader.</summary>
+        <returns>
+          <see langword="true" /> if the reader is at the start element of the stream to read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxItemsInObjectGraph">
+      <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.MaxItemsInObjectGraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of items allowed in the object to be serialized.</summary>
+        <value>The maximum number of items allowed in the object. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about setting quotas, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.ReadObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream or document.</param>
+        <summary>Reads the XML stream or document with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlDictionaryReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream or document.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the root name and root namespace used to construct the serializer; <see langword="false" /> to skip the verification.</param>
+        <summary>Reads the XML stream or document with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object; also checks whether the object data conforms to the name and namespace used to create the serializer.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `verifyObjectName` parameter determines whether it can read an object by examining the name and namespace of the XML element the reader is positioned at, and comparing the values to expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+  
+ You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.ReadObject(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream or document.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the root name and root namespace used to construct the serializer; <see langword="false" /> to skip the verification.</param>
+        <summary>Reads the XML stream or document with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object; also checks whether the object data conforms to the name and namespace used to create the serializer.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `verifyObjectName` parameter determines whether it can read an object by examining the name and namespace of the XML element the reader is positioned at, and comparing the values to expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+  
+ You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="reader" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Serialize(class System.IO.Stream stream, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to serialize with.</param>
+        <param name="graph">The object to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>Serializes the specified object graph using the specified writer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurrogateSelector">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.ISurrogateSelector SurrogateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ISurrogateSelector SurrogateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.NetDataContractSerializer.SurrogateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.ISurrogateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that assists the formatter when selecting a surrogate for serialization.</summary>
+        <value>An <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> for selecting a surrogate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Runtime.Serialization.IDataContractSurrogate>, see [Data Contract Surrogates](~/docs/framework/wcf/extending/data-contract-surrogates.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document or stream.</param>
+        <summary>Writes the closing XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods to write the object data into the XML document.  
+  
+ [!code-csharp[NetDataContractSerializer#5](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#5)]
+ [!code-vb[NetDataContractSerializer#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="writer" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <summary>Writes the closing XML element using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">the <paramref name="writer" /> is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public override void WriteObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <param name="graph">The object containing the content to write.</param>
+        <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML content.</param>
+        <param name="graph">The object to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>Writes the XML content using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods to write the object data into the XML document.  
+  
+ [!code-csharp[NetDataContractSerializer#5](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#5)]
+ [!code-vb[NetDataContractSerializer#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML content.</param>
+        <param name="graph">The object to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>Writes the XML content using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML element.</param>
+        <param name="graph">The object to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>Writes the opening XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.NetDataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods to write the object data into the XML document.  
+  
+ [!code-csharp[NetDataContractSerializer#5](~/samples/snippets/csharp/VS_Snippets_CFX/netdatacontractserializer/cs/source.cs#5)]
+ [!code-vb[NetDataContractSerializer#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/netdatacontractserializer/vb/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML element.</param>
+        <param name="graph">The object to serialize. All child objects of this root object are automatically serialized.</param>
+        <summary>Writes the opening XML element using an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="IsStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the reader is positioned on an object that can be deserialized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is equivalent to using the `ReadObject` method of the `IFormatter` interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEndObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing XML element using the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the XML stream or document and returns the deserialized object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteObjectContent">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the XML content using the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,589 @@
+<Type Name="CustomTypeDescriptor" FullName="System.ComponentModel.CustomTypeDescriptor">
+  <TypeSignature Language="C#" Value="public abstract class CustomTypeDescriptor : System.ComponentModel.ICustomTypeDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CustomTypeDescriptor extends System.Object implements class System.ComponentModel.ICustomTypeDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.CustomTypeDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ICustomTypeDescriptor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a simple default implementation of the <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Like <xref:System.ComponentModel.TypeDescriptionProvider>, the <xref:System.ComponentModel.CustomTypeDescriptor> class relies on a parent object of type <xref:System.ComponentModel.ICustomTypeDescriptor> supplied during construction. This allows classes that derive from <xref:System.ComponentModel.CustomTypeDescriptor> to selectively override methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomTypeDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CustomTypeDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is equivalent to calling the other <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A?displayProperty=fullName> constructor with a parameter that is `null`.  
+  
+ All methods of a <xref:System.ComponentModel.CustomTypeDescriptor> created with this constructor will return default values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomTypeDescriptor (System.ComponentModel.ICustomTypeDescriptor parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.ICustomTypeDescriptor parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="System.ComponentModel.ICustomTypeDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent custom type descriptor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CustomTypeDescriptor" /> class using a parent custom type descriptor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `parent` parameter is `null`, all <xref:System.ComponentModel.CustomTypeDescriptor> methods will return default values. Otherwise, all <xref:System.ComponentModel.CustomTypeDescriptor> methods will delegate to the methods of `parent`.  
+  
+ Most <xref:System.ComponentModel.CustomTypeDescriptor> methods return `null` by default. The following table shows the return values for the methods that do not return `null` by default.  
+  
+|Method|Default return value|  
+|------------|--------------------------|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A>|An empty attribute collection (<xref:System.ComponentModel.AttributeCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetConverter%2A>|The default <xref:System.ComponentModel.TypeConverter> instance.|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A>|An empty events collection (<xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A>|An empty property collection (<xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=fullName>).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttributes">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.AttributeCollection GetAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection GetAttributes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of custom attributes for the type represented by this type descriptor.</summary>
+        <returns>An <see cref="T:System.ComponentModel.AttributeCollection" /> containing the attributes for the type. The default is <see cref="F:System.ComponentModel.AttributeCollection.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed to the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassName">
+      <MemberSignature Language="C#" Value="public virtual string GetClassName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetClassName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified name of the class represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.String" /> containing the fully qualified class name of the type this type descriptor is describing. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.ComponentModel.CustomTypeDescriptor.GetClassName%2A> is not a static method and thus, is not guaranteed to be thread-safe.  
+  
+ If a parent custom type descriptor was passed to the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetClassName%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentName">
+      <MemberSignature Language="C#" Value="public virtual string GetComponentName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetComponentName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the name of the class represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.String" /> containing the name of the component instance this type descriptor is describing. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed to the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetComponentName%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConverter">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.TypeConverter GetConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeConverter GetConverter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetConverter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a type converter for the type represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter" /> for the type represented by this type descriptor. The default is a newly created <see cref="T:System.ComponentModel.TypeConverter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetConverter%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultEvent">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptor GetDefaultEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor GetDefaultEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the event descriptor for the default event of the object represented by this type descriptor.</summary>
+        <returns>The <see cref="T:System.ComponentModel.EventDescriptor" /> for the default event on the object represented by this type descriptor. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultProperty">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptor GetDefaultProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the property descriptor for the default property of the object represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> for the default property on the object represented by this type descriptor. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditor">
+      <MemberSignature Language="C#" Value="public virtual object GetEditor (Type editorBaseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditor(class System.Type editorBaseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editorBaseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="editorBaseType">The base type of the editor to retrieve.</param>
+        <summary>Returns an editor of the specified type that is to be associated with the class represented by this type descriptor.</summary>
+        <returns>An editor of the given type that is to be associated with the class represented by this type descriptor. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetEditor%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvents">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptorCollection GetEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of event descriptors for the object represented by this type descriptor.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> containing the event descriptors for the object represented by this type descriptor. The default is <see cref="F:System.ComponentModel.EventDescriptorCollection.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvents">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptorCollection GetEvents (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of attributes to use as a filter. This can be <see langword="null" />.</param>
+        <summary>Returns a filtered collection of event descriptors for the object represented by this type descriptor.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> containing the event descriptions for the object represented by this type descriptor. The default is <see cref="F:System.ComponentModel.EventDescriptorCollection.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the `attributes` parameter to filter the collection that is returned.  
+  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of property descriptors for the object represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> containing the property descriptions for the object represented by this type descriptor. The default is <see cref="F:System.ComponentModel.PropertyDescriptorCollection.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties(System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of attributes to use as a filter. This can be <see langword="null" />.</param>
+        <summary>Returns a filtered collection of property descriptors for the object represented by this type descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> containing the property descriptions for the object represented by this type descriptor. The default is <see cref="F:System.ComponentModel.PropertyDescriptorCollection.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the `attributes` parameter to filter the collection that is returned. For filtering rules, see <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A>.  
+  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyOwner">
+      <MemberSignature Language="C#" Value="public virtual object GetPropertyOwner (System.ComponentModel.PropertyDescriptor pd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pd" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="pd">The property descriptor for which to retrieve the owning object.</param>
+        <summary>Returns an object that contains the property described by the specified property descriptor.</summary>
+        <returns>An <see cref="T:System.Object" /> that owns the given property specified by the type descriptor. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a parent custom type descriptor was passed into the <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A> constructor, the <xref:System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner%2A> method will call the parent's corresponding method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of property descriptors for the object represented by this type descriptor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A> method returns a collection of property descriptors for the object this type descriptor is representing. An optional attribute array may be provided to filter the collection that is returned. If no parent is provided, the method will return <xref:System.ComponentModel.PropertyDescriptorCollection.Empty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of event descriptors for the object represented by this type descriptor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A> method returns a collection of event descriptors for the object this type descriptor is representing. An optional attribute array may be provided to filter the collection that is returned. If no parent is provided, the method will return <xref:System.ComponentModel.EventDescriptorCollection.Empty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

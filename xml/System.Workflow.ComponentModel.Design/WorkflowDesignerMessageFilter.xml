@@ -1,0 +1,1107 @@
+<Type Name="WorkflowDesignerMessageFilter" FullName="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter">
+  <TypeSignature Language="C#" Value="public abstract class WorkflowDesignerMessageFilter : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowDesignerMessageFilter extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base class for all workflow message filters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The workflow designer provides a `Strategy` design pattern to create replaceable message filter objects to handle events.  
+  
+ Derive from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> class to create message filters that can respond to workflow designer events, such as drag operations, layout and paint operations, and other designer events. To add a custom message filter to the message filters chain, call the <xref:System.Workflow.ComponentModel.Design.WorkflowView.AddDesignerMessageFilter%2A> on the <xref:System.Workflow.ComponentModel.Design.WorkflowView> or override the <xref:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters%2A> virtual property on the custom root activity and add the custom message filter to the collection returned from the base class.  
+  
+   
+  
+## Examples  
+ The following code example shows a custom designer message filter that derives from <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter>. The class, named `CustomMessageFilter`, overrides a number of its base class methods including <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver%2A>, and <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown%2A>.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_Samples#237](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#237)]
+ [!code-vb[wf_Samples#237](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#237)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowDesignerMessageFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes an instance of a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Finalize%2A> invokes `Dispose` with disposing set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+> [!NOTE]
+>  `Dispose` can be called multiple times by other objects. When overriding `Dispose(Boolean)`, be careful not to reference objects that have been previously disposed of in an earlier call to `Dispose`. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to implement `Dispose(Boolean)`, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~WorkflowDesignerMessageFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Attempts to free resources by calling <see langword="Dispose(false)" /> before the object is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected virtual void Initialize (System.Workflow.ComponentModel.Design.WorkflowView parentView);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize(class System.Workflow.ComponentModel.Design.WorkflowView parentView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Initialize(System.Workflow.ComponentModel.Design.WorkflowView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentView" Type="System.Workflow.ComponentModel.Design.WorkflowView" />
+      </Parameters>
+      <Docs>
+        <param name="parentView">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to associate with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</param>
+        <summary>Initializes the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" /> with the associated <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can associate message filters with the <xref:System.Workflow.ComponentModel.Design.WorkflowView> to capture messages that occur from user interaction, such as mouse events, keyboard events, paint and layout events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageHitTestContext">
+      <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.HitTestInfo MessageHitTestContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.HitTestInfo MessageHitTestContext" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.MessageHitTestContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.HitTestInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that describes the context of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+        <value>A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> object that contains information about the context of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.HitTestInfo> contains information about the area and the context of the area hit, including any designers hit and the area on the designer hit.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragDrop">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDragDrop (System.Windows.Forms.DragEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragDrop(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse button is released above an object during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragDrop%2A> occurs when the mouse button is released above an object during a drag operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragEnter">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDragEnter (System.Windows.Forms.DragEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragEnter(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer enters the bounds of an object during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter%2A> occurs when the mouse pointer enters the bounds of an object during a drag operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#247](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#247)]
+ [!code-vb[wf_samples#247](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#247)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragLeave">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDragLeave ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragLeave() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Occurs when the mouse pointer leaves the bounds of an object during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave%2A> occurs when the mouse pointer leaves the bounds of an object during a drag operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#249](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#249)]
+ [!code-vb[wf_samples#249](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#249)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragOver">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDragOver (System.Windows.Forms.DragEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragOver(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer moves within the bounds of an object during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver%2A> occurs when the mouse pointer moves within the bounds of an object during a drag operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#248](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#248)]
+ [!code-vb[wf_samples#248](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#248)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGiveFeedback">
+      <MemberSignature Language="C#" Value="protected virtual bool OnGiveFeedback (System.Windows.Forms.GiveFeedbackEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGiveFeedback(class System.Windows.Forms.GiveFeedbackEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.GiveFeedbackEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback%2A> occurs when a drag operation is started. <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback%2A> allows the source of a drag operation to modify the appearance of the mouse pointer to give you visual feedback during a drag operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#251](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#251)]
+ [!code-vb[wf_samples#251](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#251)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected virtual bool OnKeyDown (System.Windows.Forms.KeyEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnKeyDown(class System.Windows.Forms.KeyEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when a key is pressed.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown%2A> occurs when a key is pressed when a specific object has focus.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown%2A> method to customize how to remove activities from a workflow design surface.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#253](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#253)]
+ [!code-vb[wf_samples#253](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#253)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyUp">
+      <MemberSignature Language="C#" Value="protected virtual bool OnKeyUp (System.Windows.Forms.KeyEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnKeyUp(class System.Windows.Forms.KeyEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when a key is released.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp%2A> occurs when a key is released when a specific object has focus.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#254](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#254)]
+ [!code-vb[wf_samples#254](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#254)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayout">
+      <MemberSignature Language="C#" Value="protected virtual void OnLayout (System.Windows.Forms.LayoutEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.LayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when child objects should be repositioned.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnLayout%2A> occurs when child objects should be repositioned within the parent container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseCaptureChanged">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseCaptureChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseCaptureChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Occurs when the items selected by dragging the mouse changes.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged%2A> occurs when the items selected by dragging the mouse changes.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#246](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#246)]
+ [!code-vb[wf_samples#246](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#246)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDoubleClick">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseDoubleClick (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseDoubleClick(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when you double-click the mouse.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick%2A> occurs when you double-click the mouse. The double-click is determined by the mouse settings of the operating system. You can set the time between clicks of a mouse button that is considered a double-click rather than two clicks.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#241](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#241)]
+ [!code-vb[wf_samples#241](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#241)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDown">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseDown (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseDown(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when a mouse button is clicked.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A> occurs when a mouse button is clicked.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#238](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#238)]
+ [!code-vb[wf_samples#238](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#238)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseEnter">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseEnter (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseEnter(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer enters the bounds of an object.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter%2A> occurs when the mouse pointer enters the bounds of an object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#242](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#242)]
+ [!code-vb[wf_samples#242](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#242)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseHover">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseHover (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseHover(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer pauses above an object.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover%2A> occurs when the mouse pointer hovers above an object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#243](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#243)]
+ [!code-vb[wf_samples#243](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#243)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeave">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseLeave ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseLeave() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Occurs when the mouse pointer leaves the bounds of an object.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave%2A> occurs when the mouse pointer leaves the bounds of an object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave%2A> method to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#244](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#244)]
+ [!code-vb[wf_samples#244](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#244)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseMove">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseMove (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseMove(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer moves while within the bounds of an object.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove%2A> occurs when the mouse pointer moves while within the bounds of an object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove%2A> method to return the scroll position and to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#239](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#239)]
+ [!code-vb[wf_samples#239](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#239)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseUp">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseUp (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseUp(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse button is released.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp%2A> occurs when you release a mouse button.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp%2A> method to return the scroll position and to return `false` so that other components in the designer architecture can process the method.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#240](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#240)]
+ [!code-vb[wf_samples#240](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#240)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseWheel">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMouseWheel (System.Windows.Forms.MouseEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseWheel(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse wheel moves.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseWheel%2A> occurs when the mouse wheel moves.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseWheel%2A> method to zoom the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object based on the <xref:System.Windows.Forms.MouseEventArgs.Delta%2A> property of the <xref:System.Windows.Forms.MouseEventArgs> and to return `false` so that other components in the designer architecture can process the method.  
+  
+ [!code-csharp[wf_samples#245](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#245)]
+ [!code-vb[wf_samples#245](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#245)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected virtual bool OnPaint (System.Windows.Forms.PaintEventArgs eventArgs, System.Drawing.Rectangle viewPort, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnPaint(class System.Windows.Forms.PaintEventArgs eventArgs, valuetype System.Drawing.Rectangle viewPort, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaint(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.PaintEventArgs" />
+        <Parameter Name="viewPort" Type="System.Drawing.Rectangle" />
+        <Parameter Name="ambientTheme" Type="System.Workflow.ComponentModel.Design.AmbientTheme" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the event.</param>
+        <param name="viewPort">A <see cref="T:System.Drawing.Rectangle" /> that describes the area to be painted.</param>
+        <param name="ambientTheme">A <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> used to obtain information about the theme.</param>
+        <summary>Occurs when a paint message is received.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaint%2A> occurs when a paint message is received. Use the parameters passed to <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaint%2A> to determine the area to be painted, the theme used, and additional information about the event passed in the `PaintEventArgs`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaintWorkflowAdornments">
+      <MemberSignature Language="C#" Value="protected virtual bool OnPaintWorkflowAdornments (System.Windows.Forms.PaintEventArgs eventArgs, System.Drawing.Rectangle viewPort, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnPaintWorkflowAdornments(class System.Windows.Forms.PaintEventArgs eventArgs, valuetype System.Drawing.Rectangle viewPort, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaintWorkflowAdornments(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.PaintEventArgs" />
+        <Parameter Name="viewPort" Type="System.Drawing.Rectangle" />
+        <Parameter Name="ambientTheme" Type="System.Workflow.ComponentModel.Design.AmbientTheme" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see langword="PaintEventArgs" /> that contains information about the event.</param>
+        <param name="viewPort">A <see langword="Rectangle" /> that describes the area to be painted.</param>
+        <param name="ambientTheme">An <see langword="AmbientTheme" /> used to obtain information about the theme.</param>
+        <summary>Occurs when the workflow should repaint its adornments.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `OnPaintWorkflowAdornments` occurs when the workflow should repaint its adornments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnQueryContinueDrag">
+      <MemberSignature Language="C#" Value="protected virtual bool OnQueryContinueDrag (System.Windows.Forms.QueryContinueDragEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnQueryContinueDrag(class System.Windows.Forms.QueryContinueDragEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Forms.QueryContinueDragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">A <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs during a drag operation.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `OnQueryContinueDrag` occurs during a drag operation. The `OnQueryContinueDrag` event allows the drag source to determine whether the drag operation should be canceled.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnQueryContinueDrag%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#252](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#252)]
+ [!code-vb[wf_samples#252](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#252)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnScroll">
+      <MemberSignature Language="C#" Value="protected virtual bool OnScroll (System.Windows.Forms.ScrollBar sender, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnScroll(class System.Windows.Forms.ScrollBar sender, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnScroll(System.Windows.Forms.ScrollBar,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Windows.Forms.ScrollBar" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The <see cref="T:System.Windows.Forms.ScrollBar" /> that the user scrolled.</param>
+        <param name="value">The position of the scroll bar.</param>
+        <summary>Occurs when a user scrolls in a workflow designer.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnScroll%2A> occurs when you use a scroll bar on a designer to scroll up, down, left, or right.  
+  
+ Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnScroll%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnShowContextMenu">
+      <MemberSignature Language="C#" Value="protected virtual bool OnShowContextMenu (System.Drawing.Point screenMenuPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnShowContextMenu(valuetype System.Drawing.Point screenMenuPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="screenMenuPoint" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="screenMenuPoint">The point at which to the context menu is shown.</param>
+        <summary>Occurs when the workflow should show a context menu.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu%2A> occurs when the workflow should show a context menu.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu%2A> method so that it always returns `true`.  
+  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#255](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#255)]
+ [!code-vb[wf_samples#255](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#255)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnThemeChange">
+      <MemberSignature Language="C#" Value="protected virtual void OnThemeChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThemeChange() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnThemeChange" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Occurs when the theme of the workflow changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnThemeChange%2A> occurs when you make changes to the workflow theme.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentView">
+      <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.WorkflowView ParentView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.WorkflowView ParentView" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ParentView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.WorkflowView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> that is associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message filter responds to events in a <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The message filter is associated with a <xref:System.Workflow.ComponentModel.Design.WorkflowView> using <xref:System.Workflow.ComponentModel.Design.WorkflowView.AddDesignerMessageFilter%2A>. When an event occurs in the <xref:System.Workflow.ComponentModel.Design.WorkflowView> it passes the message on to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> to be handled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessMessage">
+      <MemberSignature Language="C#" Value="protected virtual bool ProcessMessage (System.Windows.Forms.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessMessage(valuetype System.Windows.Forms.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ProcessMessage(System.Windows.Forms.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Windows.Forms.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see langword="Message" /> to handle.</param>
+        <summary>Occurs when a raw Win32 message must be processed.</summary>
+        <returns>
+          <see langword="true" /> if the message is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.WorkflowView> can receive raw Win32 messages from the operating system. Messages forward to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> to be handled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

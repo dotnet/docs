@@ -1,0 +1,114 @@
+<Type Name="DataPagerFieldCommandEventArgs" FullName="System.Web.UI.WebControls.DataPagerFieldCommandEventArgs">
+  <TypeSignature Language="C#" Value="public class DataPagerFieldCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.CommandEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="Command" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Command` event is raised when a <xref:System.Web.UI.WebControls.Button>, <xref:System.Web.UI.WebControls.ImageButton>, or <xref:System.Web.UI.WebControls.LinkButton> control button in a <xref:System.Web.UI.WebControls.DataPagerField> object is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class is used internally by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> and the <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A?displayProperty=fullName> methods to access information about the event that was raised.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class, see the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> constructor.  
+  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPagerFieldCommandEventArgs (System.Web.UI.WebControls.DataPagerFieldItem item, object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPagerFieldItem item, object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.#ctor(System.Web.UI.WebControls.DataPagerFieldItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.DataPagerFieldItem" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Web.UI.WebControls.DataPagerFieldItem" /> object that generated the event.</param>
+        <param name="commandSource">The source of the event.</param>
+        <param name="originalArgs">The original event data that contains the <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" /> and <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" /> properties.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when raising events.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item%2A>|The value of the `item` parameter.|  
+|<xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.CommandSource%2A>|The value of the `commandSource` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandSource">
+      <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.CommandSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control that raised the event.</summary>
+        <value>The control that raised the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerFieldItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerFieldItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerFieldItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataPagerFieldItem" /> object that contains the control that raised the event.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.DataPagerFieldItem" /> object that contains the control that raised the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataPagerFieldItem> object. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.PagerField%2A?displayProperty=fullName> property represents the pager field object that contains the control that raised the event. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A?displayProperty=fullName> property represents the <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

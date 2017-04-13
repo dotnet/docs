@@ -1,0 +1,554 @@
+<Type Name="NumberStyles" FullName="System.Globalization.NumberStyles">
+  <TypeSignature Language="C#" Value="public enum NumberStyles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed NumberStyles extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.NumberStyles" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Determines the styles permitted in numeric string arguments that are passed to the <see langword="Parse" /> and <see langword="TryParse" /> methods of the integral and floating-point numeric types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberStyles> enumeration consists of two kinds of enumeration values that are used to parse the string representations of numeric values:  
+  
+-   Individual field flags, which define specific style elements (such as white space and group separators) that can be present in the parsed string.  
+  
+-   Composite number styles, which consist of multiple field flags that define the style elements that can be present in the parsed string.  
+  
+ Except for AllowHexSpecifier, the individual field flags in the <xref:System.Globalization.NumberStyles> enumeration define style elements that are used when parsing the string representation of a decimal number. None indicates that only digits can be present in the parsed string. The remaining individual field flags define style elements that may be, but do not have to be, present in the string representation of a decimal number for the parse operation to succeed. In contrast, the AllowHexSpecifier flag indicates that the string to be parsed is always interpreted as a hexadecimal value. The only individual field flags that can be used with AllowHexSpecifier are AllowLeadingWhite and AllowTrailingWhite. The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, HexNumber, that consists of all three flags.  
+  
+ The symbols (such as the currency symbol, the group separator, the decimal separator, and the positive and negative signs) that can appear in the string to be parsed are defined by the members of the <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is passed either implicitly or explicitly to the `Parse` method. The members table in this topic provides a description of each individual flag and indicates its relationship to <xref:System.Globalization.NumberFormatInfo> properties.  
+  
+ The following table lists the composite number styles and indicates which individual field flags they include. A "1" in a cell indicates that the composite number style includes the individual number style in that row. A "0" indicates that the composite number style does not include the individual number style.  
+  
+||Any|Currency|Float|Integer|Number|HexNumber|  
+|-|---------|--------------|-----------|-------------|------------|---------------|  
+|AllowHexSpecifier (0x0200)|0|0|0|0|0|1|  
+|AllowCurrencySymbol (0x0100)|1|1|0|0|0|0|  
+|AllowExponent (0x0080)|1|0|1|0|0|0|  
+|AllowThousands (0x0040)|1|1|0|0|1|0|  
+|AllowDecimalPoint (0x0020)|1|1|1|0|1|0|  
+|AllowParentheses (0x0010)|1|1|0|0|0|0|  
+|AllowTrailingSign (0x0008)|1|1|0|0|1|0|  
+|AllowLeadingSign (0x0004)|1|1|1|1|1|0|  
+|AllowTrailingWhite (0x0002)|1|1|1|1|1|1|  
+|AllowLeadingWhite (0x0001)|1|1|1|1|1|1|  
+||(0x1ff)|(0x17f)|(0x0a7)|(0x007)|(0x06f)|(0x203)|  
+  
+   
+  
+## Examples  
+ This example shows how to parse a string into a 32-bit integer by using various <xref:System.Globalization.NumberStyles> flags.  
+  
+ [!code-cpp[NumberStyles#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberStyles/cpp/NumberStyles.cpp#1)]
+ [!code-csharp[NumberStyles#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberStyles/CS/NumberStyles.cs#1)]
+ [!code-vb[NumberStyles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberStyles/vb/numberstyles.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowCurrencySymbol">
+      <MemberSignature Language="C#" Value="AllowCurrencySymbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowCurrencySymbol = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowCurrencySymbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can contain a currency symbol. Valid currency symbols are determined by the <see cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDecimalPoint">
+      <MemberSignature Language="C#" Value="AllowDecimalPoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowDecimalPoint = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowDecimalPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can have a decimal point. If the <see cref="T:System.Globalization.NumberStyles" /> value includes the <see cref="F:System.Globalization.NumberStyles.AllowCurrencySymbol" /> flag and the parsed string includes a currency symbol, the decimal separator character is determined by the <see cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" /> property. Otherwise, the decimal separator character is determined by the <see cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowExponent">
+      <MemberSignature Language="C#" Value="AllowExponent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowExponent = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowExponent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can be in exponential notation. The <see cref="F:System.Globalization.NumberStyles.AllowExponent" /> flag allows the parsed string to contain an exponent that begins with the "E" or "e" character and that is followed by an optional positive or negative sign and an integer. In other words, it successfully parses strings in the form *nnn*E*xx*, *nnn*E+*xx*, and *nnn*E-*xx*. It does not allow a decimal separator or sign in the significand or mantissa; to allow these elements in the string to be parsed, use the <see cref="F:System.Globalization.NumberStyles.AllowDecimalPoint" /> and <see cref="F:System.Globalization.NumberStyles.AllowLeadingSign" /> flags, or use a composite style that includes these individual flags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowHexSpecifier">
+      <MemberSignature Language="C#" Value="AllowHexSpecifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowHexSpecifier = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowHexSpecifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string represents a hexadecimal value. Valid hexadecimal values include the numeric digits 0-9 and the hexadecimal digits A-F and a-f. Strings that are parsed using this style cannot be prefixed with "0x" or "&amp;h". A string that is parsed with the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> style will always be interpreted as a hexadecimal value. The only flags that can be combined with <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> are <see cref="F:System.Globalization.NumberStyles.AllowLeadingWhite" /> and <see cref="F:System.Globalization.NumberStyles.AllowTrailingWhite" />. The <see cref="T:System.Globalization.NumberStyles" /> enumeration includes a composite style, <see cref="F:System.Globalization.NumberStyles.HexNumber" />, that consists of these three flags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowLeadingSign">
+      <MemberSignature Language="C#" Value="AllowLeadingSign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowLeadingSign = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowLeadingSign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can have a leading sign. Valid leading sign characters are determined by the <see cref="P:System.Globalization.NumberFormatInfo.PositiveSign" /> and <see cref="P:System.Globalization.NumberFormatInfo.NegativeSign" /> properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowLeadingWhite">
+      <MemberSignature Language="C#" Value="AllowLeadingWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowLeadingWhite = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowLeadingWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that leading white-space characters can be present in the parsed string. Valid white-space characters have the Unicode values U+0009, U+000A, U+000B, U+000C, U+000D, and U+0020. Note that this is a subset of the characters for which the <see cref="M:System.Char.IsWhiteSpace(System.Char)" /> method returns <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowParentheses">
+      <MemberSignature Language="C#" Value="AllowParentheses" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowParentheses = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowParentheses" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can have one pair of parentheses enclosing the number. The parentheses indicate that the string to be parsed represents a negative number.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowThousands">
+      <MemberSignature Language="C#" Value="AllowThousands" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowThousands = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowThousands" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can have group separators, such as symbols that separate hundreds from thousands. If the <see cref="T:System.Globalization.NumberStyles" /> value includes the <see cref="F:System.Globalization.NumberStyles.AllowCurrencySymbol" /> flag and the string to be parsed includes a currency symbol, the valid group separator character is determined by the <see cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" /> property,  and the number of digits in each group is determined by the <see cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" /> property. Otherwise, the valid group separator character is determined by the <see cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" /> property, and the number of digits in each group is determined by the <see cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowTrailingSign">
+      <MemberSignature Language="C#" Value="AllowTrailingSign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowTrailingSign = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowTrailingSign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the numeric string can have a trailing sign. Valid trailing sign characters are determined by the <see cref="P:System.Globalization.NumberFormatInfo.PositiveSign" /> and <see cref="P:System.Globalization.NumberFormatInfo.NegativeSign" /> properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowTrailingWhite">
+      <MemberSignature Language="C#" Value="AllowTrailingWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowTrailingWhite = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowTrailingWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that trailing white-space characters can be present in the parsed string. Valid white-space characters have the Unicode values U+0009, U+000A, U+000B, U+000C, U+000D, and U+0020. Note that this is a subset of the characters for which the <see cref="M:System.Char.IsWhiteSpace(System.Char)" /> method returns <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Any">
+      <MemberSignature Language="C#" Value="Any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Any = int32(511)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Any" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that all styles except <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Currency">
+      <MemberSignature Language="C#" Value="Currency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Currency = int32(383)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Currency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that all styles except <see cref="F:System.Globalization.NumberStyles.AllowExponent" /> and <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Float">
+      <MemberSignature Language="C#" Value="Float" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Float = int32(167)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Float" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="F:System.Globalization.NumberStyles.AllowLeadingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowTrailingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowLeadingSign" />, <see cref="F:System.Globalization.NumberStyles.AllowDecimalPoint" />, and <see cref="F:System.Globalization.NumberStyles.AllowExponent" /> styles are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HexNumber">
+      <MemberSignature Language="C#" Value="HexNumber" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles HexNumber = int32(515)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.HexNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="F:System.Globalization.NumberStyles.AllowLeadingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowTrailingWhite" />, and <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> styles are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Integer">
+      <MemberSignature Language="C#" Value="Integer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Integer = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Integer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="F:System.Globalization.NumberStyles.AllowLeadingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowTrailingWhite" />, and <see cref="F:System.Globalization.NumberStyles.AllowLeadingSign" /> styles are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no style elements, such as leading or trailing white space, thousands separators, or a decimal separator, can be present in the parsed string. The string to be parsed must consist of integral decimal digits only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="Number" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Number = int32(111)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Number" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="F:System.Globalization.NumberStyles.AllowLeadingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowTrailingWhite" />, <see cref="F:System.Globalization.NumberStyles.AllowLeadingSign" />, <see cref="F:System.Globalization.NumberStyles.AllowTrailingSign" />, <see cref="F:System.Globalization.NumberStyles.AllowDecimalPoint" />, and <see cref="F:System.Globalization.NumberStyles.AllowThousands" /> styles are used. This is a composite number style.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

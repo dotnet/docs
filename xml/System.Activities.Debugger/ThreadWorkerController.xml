@@ -1,0 +1,74 @@
+<Type Name="ThreadWorkerController" FullName="System.Activities.Debugger.ThreadWorkerController">
+  <TypeSignature Language="C#" Value="public class ThreadWorkerController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThreadWorkerController extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.ThreadWorkerController" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports the creation and execution of an auxiliary debugging thread, or island, on a dedicated worker thread. This type is a utility class used by the framework and is not intended for public use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This worker thread is needed to enable simulation of multithread-like execution of parallel activities.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThreadWorkerController ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.ThreadWorkerController.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.ThreadWorkerController" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IslandWorker">
+      <MemberSignature Language="C#" Value="public static void IslandWorker (System.Activities.Debugger.ThreadWorkerController controller);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IslandWorker(class System.Activities.Debugger.ThreadWorkerController controller) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.ThreadWorkerController.IslandWorker(System.Activities.Debugger.ThreadWorkerController)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controller" Type="System.Activities.Debugger.ThreadWorkerController" />
+      </Parameters>
+      <Docs>
+        <param name="controller">The auxiliary debugger thread to execute.</param>
+        <summary>Directs execution to a particular auxiliary debugger thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a static function.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,128 @@
+<Type Name="DirectoryResponse" FullName="System.DirectoryServices.Protocols.DirectoryResponse">
+  <TypeSignature Language="C#" Value="public abstract class DirectoryResponse : System.DirectoryServices.Protocols.DirectoryOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DirectoryResponse extends System.DirectoryServices.Protocols.DirectoryOperation" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryOperation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> class is the base class for request response classes, like the <see cref="T:System.DirectoryServices.Protocols.SearchResponse" /> and <see cref="T:System.DirectoryServices.Protocols.AddResponse" /> classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public virtual System.DirectoryServices.Protocols.DirectoryControl[] Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.DirectoryControl[] Controls" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.Controls" /> property contains an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server.</summary>
+        <value>An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public virtual string ErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.ErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.ErrorMessage" /> property contains the error message, if any, for this operation.</summary>
+        <value>The error message, if any, for this operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchedDN">
+      <MemberSignature Language="C#" Value="public virtual string MatchedDN { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchedDN" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.MatchedDN" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.MatchedDN" /> property contains the matched distinguished name returned by the server.</summary>
+        <value>The matched distinguished name returned by the server.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Referral">
+      <MemberSignature Language="C#" Value="public virtual Uri[] Referral { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri[] Referral" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.Referral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.Referral" /> property contains the server referrals.</summary>
+        <value>The server referrals.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestId">
+      <MemberSignature Language="C#" Value="public string RequestId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.RequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.RequestId" /> property contains the Request Identifier.</summary>
+        <value>The Request Identifier.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">User attempted to set the property value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultCode">
+      <MemberSignature Language="C#" Value="public virtual System.DirectoryServices.Protocols.ResultCode ResultCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.ResultCode ResultCode" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryResponse.ResultCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.ResultCode" /> property contains the result code of the operation.</summary>
+        <value>The result code of the operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

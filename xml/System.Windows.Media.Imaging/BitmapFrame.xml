@@ -1,0 +1,430 @@
+<Type Name="BitmapFrame" FullName="System.Windows.Media.Imaging.BitmapFrame">
+  <TypeSignature Language="C#" Value="public abstract class BitmapFrame : System.Windows.Media.Imaging.BitmapSource, System.Windows.Markup.IUriContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BitmapFrame extends System.Windows.Media.Imaging.BitmapSource implements class System.Windows.Markup.IUriContext" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapFrame" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Imaging.BitmapSource</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IUriContext</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents image data returned by a decoder and accepted by encoders.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapFrame> provides additional functionality not defined by <xref:System.Windows.Media.Imaging.BitmapSource> by providing access to the <xref:System.Windows.Media.Imaging.BitmapFrame.Thumbnail%2A> associated with a particular frame of an image. <xref:System.Windows.Media.Imaging.BitmapFrame> also supports the writing of metadata information by using the <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> property or the <xref:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter%2A> method.  
+  
+ Any <xref:System.Windows.Media.Imaging.BitmapFrame> returned from a decoder is always frozen. If you require a modifiable copy, you must first create a copy of the <xref:System.Windows.Media.Imaging.BitmapFrame> by using the <xref:System.Windows.Media.Imaging.BitmapSource.Clone%2A> method.  
+  
+ Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] format images support multiple frames.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a <xref:System.Windows.Media.Imaging.BitmapFrame>.  
+  
+ [!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
+ [!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
+  
+ The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapFrame> object to open a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] graphic and write metadata by using the <xref:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter%2A> method.  
+  
+ [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
+ [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
+ [!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BitmapFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="public abstract Uri BaseUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.BaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets a value that represents the base <see cref="T:System.Uri" /> of the current context.</summary>
+        <value>The <see cref="T:System.Uri" /> of the current context.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorContexts">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; ColorContexts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.ColorContext&gt; ColorContexts" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.ColorContexts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a collection of <see cref="T:System.Windows.Media.ColorContext" /> objects that are associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
+        <value>A read-only collection of <see cref="T:System.Windows.Media.ColorContext" /> objects that are associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.IO.Stream bitmapStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.IO.Stream bitmapStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapStream">The <see cref="T:System.IO.Stream" /> that is used to construct the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.IO.Stream" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `bitmapStream` can be closed after the frame is created only when the <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option is used. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains the stream until the frame is needed. Use the <xref:System.Windows.Media.Imaging.BitmapFrame.Create%28System.IO.Stream%2CSystem.Windows.Media.Imaging.BitmapCreateOptions%2CSystem.Windows.Media.Imaging.BitmapCacheOption%29> method to specify create and cache options.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapUri">The <see cref="T:System.Uri" /> that identifies the source of the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a <xref:System.Windows.Media.Imaging.BitmapFrame> from a given <xref:System.Uri>.  
+  
+ [!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
+ [!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Media.Imaging.BitmapSource" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that is used to construct this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Net.Cache.RequestCachePolicy uriCachePolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, class System.Net.Cache.RequestCachePolicy uriCachePolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Net.Cache.RequestCachePolicy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapUri" Type="System.Uri" />
+        <Parameter Name="uriCachePolicy" Type="System.Net.Cache.RequestCachePolicy" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapUri">The location of the bitmap from which the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> is created.</param>
+        <param name="uriCachePolicy">The caching requirements for this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Net.Cache.RequestCachePolicy" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapFrame.Create%28System.Uri%2CSystem.Net.Cache.RequestCachePolicy%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source, System.Windows.Media.Imaging.BitmapSource thumbnail);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source, class System.Windows.Media.Imaging.BitmapSource thumbnail) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Media.Imaging.BitmapSource" />
+        <Parameter Name="thumbnail" Type="System.Windows.Media.Imaging.BitmapSource" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source from which the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> is constructed.</param>
+        <param name="thumbnail">A thumbnail image of the resulting <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> with the specified thumbnail.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> with the specified thumbnail.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.IO.Stream bitmapStream, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.IO.Stream bitmapStream, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapStream" Type="System.IO.Stream" />
+        <Parameter Name="createOptions" Type="System.Windows.Media.Imaging.BitmapCreateOptions" />
+        <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapStream">The stream from which this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> is constructed.</param>
+        <param name="createOptions">The options that are used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="cacheOption">The cache option that is used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.IO.Stream" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.IO.Stream" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option if you wish to close the `bitmapStream` after the bitmap is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed and cleanup is handled by the garbage collector.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapUri" Type="System.Uri" />
+        <Parameter Name="createOptions" Type="System.Windows.Media.Imaging.BitmapCreateOptions" />
+        <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapUri">The location of the bitmap from which the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> is created.</param>
+        <param name="createOptions">The options that are used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="cacheOption">The cache option that is used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />, and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption, System.Net.Cache.RequestCachePolicy uriCachePolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption, class System.Net.Cache.RequestCachePolicy uriCachePolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption,System.Net.Cache.RequestCachePolicy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmapUri" Type="System.Uri" />
+        <Parameter Name="createOptions" Type="System.Windows.Media.Imaging.BitmapCreateOptions" />
+        <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
+        <Parameter Name="uriCachePolicy" Type="System.Net.Cache.RequestCachePolicy" />
+      </Parameters>
+      <Docs>
+        <param name="bitmapUri">The location of the bitmap from which the <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> is created.</param>
+        <param name="createOptions">The options that are used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="cacheOption">The cache option that is used to create this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="uriCachePolicy">The caching requirements for this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />, <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />, and <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Uri" /> with the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />, <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />, and <see cref="T:System.Net.Cache.RequestCachePolicy" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapFrame.Create%28System.Uri%2CSystem.Windows.Media.Imaging.BitmapCreateOptions%2CSystem.Windows.Media.Imaging.BitmapCacheOption%2CSystem.Net.Cache.RequestCachePolicy%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source, System.Windows.Media.Imaging.BitmapSource thumbnail, System.Windows.Media.Imaging.BitmapMetadata metadata, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; colorContexts);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source, class System.Windows.Media.Imaging.BitmapSource thumbnail, class System.Windows.Media.Imaging.BitmapMetadata metadata, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.ColorContext&gt; colorContexts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapMetadata,System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Media.ColorContext})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Media.Imaging.BitmapSource" />
+        <Parameter Name="thumbnail" Type="System.Windows.Media.Imaging.BitmapSource" />
+        <Parameter Name="metadata" Type="System.Windows.Media.Imaging.BitmapMetadata" />
+        <Parameter Name="colorContexts" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that is used to construct this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="thumbnail">A thumbnail image of the resulting <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="metadata">The metadata to associate with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <param name="colorContexts">The <see cref="T:System.Windows.Media.ColorContext" /> objects that are associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> with the specified thumbnail, <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />, and <see cref="T:System.Windows.Media.ColorContext" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> from a given <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> with the specified thumbnail, <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />, and <see cref="T:System.Windows.Media.ColorContext" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInPlaceBitmapMetadataWriter">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter CreateInPlaceBitmapMetadataWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter CreateInPlaceBitmapMetadataWriter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, creates an instance of <see cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />, which can be used to associate metadata with a <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
+        <returns>An <see cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Metadata can only be added or edited using the <xref:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter%2A> if the image file contains enough room for the new metadata; otherwise, metadata can be added using the <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapFrame> object to open a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] graphic and write metadata by using the <xref:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter%2A> method.  
+  
+ [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
+ [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
+ [!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decoder">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.BitmapDecoder Decoder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapDecoder Decoder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Decoder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapDecoder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the decoder associated with this instance of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> that is associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbnail">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.BitmapSource Thumbnail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapSource Thumbnail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Thumbnail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the thumbnail image associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents a thumbnail of the current <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

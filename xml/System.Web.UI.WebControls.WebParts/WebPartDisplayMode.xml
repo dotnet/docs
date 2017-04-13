@@ -1,0 +1,225 @@
+<Type Name="WebPartDisplayMode" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayMode">
+  <TypeSignature Language="C#" Value="public abstract class WebPartDisplayMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartDisplayMode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a common set of properties for the several display modes that a Web Parts page can enter.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Web Parts page can enter several different display modes. In each display mode, certain elements of the Web Parts user interface (UI) are either hidden or displayed, and certain kinds of user modifications to a page are either enabled or disabled. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control contains the implementation for the display modes that are available in the Web Parts control set, and manages the display modes for a page.  
+  
+ The following table lists fields that represent the available display modes.  
+  
+|Display mode|Description|  
+|------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode>|Displays Web Parts controls and UI elements in the normal mode in which end users view a page.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.DesignDisplayMode>|Displays zone UI elements and enables users to drag Web Parts controls to change the layout of a page.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode>|Displays special editing UI elements and enables end users to edit the controls on a page.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode>|Displays special catalog UI elements and enables end users to add and remove page controls.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode>|Displays special connections UI elements and enables end users to connect Web Parts controls.|  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate the declarative use of display modes on a Web Parts page. Each of these display modes, as implemented by the Web Parts control set, is derived from the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> class.  
+  
+ This code example has four parts:  
+  
+-   A custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+-   A Web page with a zone to host the custom control.  
+  
+-   A user control that enables users to change display modes on the Web page.  
+  
+-   An explanation of how the page works in a browser.  
+  
+ The first part of the example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a demonstration of both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartDisplayMode_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/CS/textdisplaywebpart.cs#9)]
+ [!code-vb[WebParts_WebPartDisplayMode_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/VB/textdisplaywebpart.vb#9)]  
+  
+ The second part of the code example is a Web page that references a standard ASP.NET <xref:System.Web.UI.WebControls.Calendar> control within an `<asp:webpartzone>` element, so that the control is wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control and given basic Web Parts functionality at run time. The page also references the `TextDisplayWebPart` control within an `<asp:catalogzone>` element, which demonstrates the end user's ability to switch to catalog mode and add controls to the page. The page also includes an `<asp:editorzone>` element, which enables users to edit the controls contained in the `<asp:webpartzone>` when the page is in edit mode. Near the top of the page are a `register` directive for the custom control and another one for the user control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDisplayMode_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/CS/WebPartDisplayModecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDisplayMode_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/VB/WebPartDisplayModevb.aspx#1)]  -->  
+  
+ The third part of the code example is a user control that enables users to switch display modes on a Web page. Save the source code for this control in a file named DisplayModeMenuCS.ascx or DisplayModeMenuVB.ascx (depending on which language you use for the code example), and put it in the same directory as the Web page. For more details about display modes and a description of the source code in this control, see the topic [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDisplayMode_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDisplayMode_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDisplayMode_Overview/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ When you load the page in a browser, you can use the **Display Mode** drop-down list control to switch to different display modes. To edit controls, select **Edit** in the drop-down list control. To edit a specific control, expose its verbs menu by clicking the arrow in the control's title bar, and then clicking **Edit** in the verbs menu. When a control is in edit mode, the editing controls added to this page enable you to change the edited control's appearance and layout. When you are finished, select **Browse** in the **Display Mode** drop-down list control to return the page to a normal view. To add controls to the page, switch to catalog mode. Notice that you can either use the **Display Mode** drop-down list control, or click the button near the bottom of the page. The inline code for the `Button1_Click` method demonstrates how to change display modes programmatically. While you are in catalog mode, you can add the custom `TextDisplayWebPart` control to the page.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Developers can derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class to create custom display modes. To make a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> available on a Web Parts page, you would also need to derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" /> method.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebPartDisplayMode (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the display mode.</param>
+        <summary>Initializes a value for the name of the display mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> object is never created because the class is abstract. At run time, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> class as the base class to create objects for each of the various page display modes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>If you derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class to create a custom display mode, in your class declaration you must call the base constructor and pass to it a string containing the name of the custom display mode.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPageDesign">
+      <MemberSignature Language="C#" Value="public virtual bool AllowPageDesign { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPageDesign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AllowPageDesign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines whether users can change the layout of a Web Parts page when the page is in a certain display mode.</summary>
+        <value>
+          <see langword="true" /> if users can change the page layout; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociatedWithToolZone">
+      <MemberSignature Language="C#" Value="public virtual bool AssociatedWithToolZone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssociatedWithToolZone" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a certain display mode is associated with a class that derives from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class.</summary>
+        <value>
+          <see langword="true" /> if the display mode is associated with a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a Web Parts page enters a display mode whose <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control interprets that to mean that an associated class derives from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, and that additional user interface (UI) elements need to be displayed. For example, when a page enters edit mode, special zones that contain UI elements for editing Web Parts controls appear on the page. This behavior is made possible because the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone%2A> property value on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode> field is set to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> base class to create custom display modes must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" /> property in order to set its value.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public virtual bool IsEnabled (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEnabled(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.IsEnabled(System.Web.UI.WebControls.WebParts.WebPartManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPartManager" Type="System.Web.UI.WebControls.WebParts.WebPartManager" />
+      </Parameters>
+      <Docs>
+        <param name="webPartManager">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control instance on the current page.</param>
+        <summary>Gets a value that indicates whether users can personalize a page while the page is in a certain display mode.</summary>
+        <returns>
+          <see langword="true" /> if users can personalize a page; otherwise, <see langword="false" />. The default is <see langword="true" />. However, when <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.RequiresPersonalization" /> is set to <see langword="true" />, and personalization is disabled on the page, the default will be <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of a display mode.</summary>
+        <value>A string that contains the name of a display mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresPersonalization">
+      <MemberSignature Language="C#" Value="public virtual bool RequiresPersonalization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresPersonalization" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.RequiresPersonalization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a particular display mode requires personalization to be enabled.</summary>
+        <value>A Boolean value that indicates whether personalization is required. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHiddenWebParts">
+      <MemberSignature Language="C#" Value="public virtual bool ShowHiddenWebParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowHiddenWebParts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.ShowHiddenWebParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether controls that have their <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" /> property set to <see langword="true" /> should be displayed.</summary>
+        <value>A Boolean value that indicates whether hidden controls should be displayed. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

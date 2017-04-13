@@ -1,0 +1,102 @@
+<Type Name="Func&lt;T1,T2,TResult&gt;" FullName="System.Func&lt;T1,T2,TResult&gt;">
+  <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T1,in T2,out TResult&gt;(T1 arg1, T2 arg2);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`3&lt;- T1, - T2, + TResult&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Func`3" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T2">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TResult">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="arg1" Type="T1" />
+    <Parameter Name="arg2" Type="T2" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>TResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T1">The type of the first parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T2">The type of the second parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
+    <param name="arg1">The first parameter of the method that this delegate encapsulates.</param>
+    <param name="arg2">The second parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has two parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <returns>The return value of the method that this delegate encapsulates.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have two parameters, each of which is passed to it by value, and that it must return a value.  
+  
+> [!NOTE]
+>  To reference a method that has two parameters and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the generic <xref:System.Action%602> delegate instead.  
+  
+ When you use the <xref:System.Func%603> delegate you do not have to explicitly define a delegate that encapsulates a method with two parameters. For example, the following code explicitly declares a delegate named `ExtractMethod` and assigns a reference to the `ExtractWords` method to its delegate instance.  
+  
+ [!code-csharp[System.Func~3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Delegate.cs#1)]
+ [!code-vb[System.Func~3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/Delegate.vb#1)]  
+  
+ The following example simplifies this code by instantiating a <xref:System.Func%603> delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-csharp[System.Func~3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Func3.cs#2)]
+ [!code-vb[System.Func~3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/Func3.vb#2)]  
+  
+ You can use the <xref:System.Func%603> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
+  
+ [!code-csharp[System.Func~3#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Anon.cs#3)]  
+  
+ You can also assign a lambda expression to a <xref:System.Func%603> delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/visual-basic/programming-guide/language-features/procedures/lambda-expressions.md) and [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
+  
+ [!code-csharp[System.Func~3#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Lambda.cs#4)]
+ [!code-vb[System.Func~3#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/lambda.vb#4)]  
+  
+ The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate. In particular, because many methods of types in the <xref:System.Linq> namespace have <xref:System.Func%603> parameters, you can pass these methods a lambda expression without explicitly instantiating a <xref:System.Func%603> delegate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:System.Func%603> delegate. This example declares a <xref:System.Func%603> variable and assigns it a lambda expression that takes a <xref:System.String> value and an <xref:System.Int32> value as parameters. The lambda expression returns `true` if the length of the <xref:System.String> parameter is equal to the value of the <xref:System.Int32> parameter. The delegate that encapsulates this method is subsequently used in a query to filter strings in an array of strings.  
+  
+ [!code-csharp[System.Func~3#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Example.cs#5)]
+ [!code-vb[System.Func~3#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/Example.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,194 @@
+<Type Name="VBArrayPrototype" FullName="Microsoft.JScript.VBArrayPrototype">
+  <TypeSignature Language="C#" Value="public class VBArrayPrototype : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VBArrayPrototype extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VBArrayPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.VBArrayObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.VBArrayConstructor constructor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.VBArrayConstructor constructor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.VBArrayPrototype.constructor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VBArrayConstructor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
+        <value>A reference to a prototype-based object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="dimensions">
+      <MemberSignature Language="C#" Value="public static int dimensions (object thisob);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 dimensions(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.dimensions(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.VBArray_dimensions)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Determines the number of dimensions in the specified array.</summary>
+        <returns>The number of dimensions in <paramref name="thisob" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getItem">
+      <MemberSignature Language="C#" Value="public static object getItem (object thisob, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object getItem(object thisob, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject | Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs, Microsoft.JScript.JSBuiltin.VBArray_getItem)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="args">An array that represents the indexes of each dimension that specifies the position of the element to get.</param>
+        <summary>Gets the value at the specified position in the specified array.</summary>
+        <returns>The value at the specified position in <paramref name="thisob" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `thisob` has three or fewer dimensions, `args` can contain a comma-separated list of indexes. If `thisob` has four or more dimensions, `args` can contain an array of indexes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lbound">
+      <MemberSignature Language="C#" Value="public static int lbound (object thisob, object dimension);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 lbound(object thisob, object dimension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.lbound(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.VBArray_lbound)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="dimension" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dimension">The dimension whose lower bound is determined.</param>
+        <summary>Gets the lower bound of the specified dimension in the specified array.</summary>
+        <returns>The lower bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toArray">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject toArray (object thisob, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject toArray(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.toArray(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject | Microsoft.JScript.JSFunctionAttributeEnum.HasEngine, Microsoft.JScript.JSBuiltin.VBArray_toArray)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ArrayObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Converts a <see cref="T:Microsoft.JScript.VBArrayObject" /> object to an <see cref="T:Microsoft.JScript.ArrayObject" /> object.</summary>
+        <returns>
+          <paramref name="thisob" /> expressed as an <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ubound">
+      <MemberSignature Language="C#" Value="public static int ubound (object thisob, object dimension);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ubound(object thisob, object dimension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.ubound(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.VBArray_ubound)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="dimension" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dimension">The dimension whose upper bound is determined.</param>
+        <summary>Gets the upper bound of the specified dimension in the specified array.</summary>
+        <returns>The upper bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

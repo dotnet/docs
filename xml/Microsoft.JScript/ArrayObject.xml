@@ -1,0 +1,68 @@
+<Type Name="ArrayObject" FullName="Microsoft.JScript.ArrayObject">
+  <TypeSignature Language="C#" Value="public class ArrayObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an array object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="length">
+      <MemberSignature Language="C#" Value="public virtual object length { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ArrayObject.length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the length of the array.</summary>
+        <value>The length of the array.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpliceSlowly">
+      <MemberSignature Language="C#" Value="protected void SpliceSlowly (uint start, uint deleteCount, object[] args, Microsoft.JScript.ArrayObject outArray, uint oldLength, uint newLength);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SpliceSlowly(unsigned int32 start, unsigned int32 deleteCount, object[] args, class Microsoft.JScript.ArrayObject outArray, unsigned int32 oldLength, unsigned int32 newLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayObject.SpliceSlowly(System.UInt32,System.UInt32,System.Object[],Microsoft.JScript.ArrayObject,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UInt32" />
+        <Parameter Name="deleteCount" Type="System.UInt32" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="outArray" Type="Microsoft.JScript.ArrayObject" />
+        <Parameter Name="oldLength" Type="System.UInt32" />
+        <Parameter Name="newLength" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="start">The position in this array at which to add and remove elements.</param>
+        <param name="deleteCount">The number of elements to remove, if any.</param>
+        <param name="args">The elements to add, if any.</param>
+        <param name="outArray">An array that contains the elements removed from this array, if any have been removed.</param>
+        <param name="oldLength">The previous length of this array.</param>
+        <param name="newLength">The new length of this array.</param>
+        <summary>Adds elements to and removes elements from an array, at the specified position in the array. You can add elements, remove elements, or both.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

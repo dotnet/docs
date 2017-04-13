@@ -1,0 +1,127 @@
+<Type Name="HttpBinding" FullName="System.Web.Services.Description.HttpBinding">
+  <TypeSignature Language="C#" Value="public sealed class HttpBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.HttpBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("binding", "http://schemas.xmlsoap.org/wsdl/http/", typeof(System.Web.Services.Description.Binding))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtensionPrefix("http", "http://schemas.xmlsoap.org/wsdl/http/")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to a <see cref="T:System.Web.Services.Description.Binding" /> within an XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The use of this class as an extensibility element specifies that information is to be passed by HTTP. For more information about specification of protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example shows a typical usage of the `HttpBinding` class.  
+  
+ [!code-cpp[WebServices_HttpBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebServices_HttpBinding/CPP/httpbinding.cpp#1)]
+ [!code-csharp[WebServices_HttpBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_HttpBinding/CS/httpbinding.cs#1)]
+ [!code-vb[WebServices_HttpBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebServices_HttpBinding/VB/httpbinding.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.HttpBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.HttpBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public const string Namespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.HttpBinding.Namespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the URI for the XML namespace representing the HTTP transport for use with SOAP. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The field value is "http://schemas.xmlsoap.org/wsdl/http/".  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Namespace` field.  
+  
+ [!code-cpp[HttpBinding_HttpBinding#2](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpBinding_HttpBinding/CPP/httpbinding_ctor.cpp#2)]
+ [!code-csharp[HttpBinding_HttpBinding#2](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpBinding_HttpBinding/CS/httpbinding_ctor.cs#2)]
+ [!code-vb[HttpBinding_HttpBinding#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpBinding_HttpBinding/VB/httpbinding_ctor.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verb">
+      <MemberSignature Language="C#" Value="public string Verb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Verb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.HttpBinding.Verb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("verb")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the HTTP request will be made using the "GET" or "POST" method.</summary>
+        <value>A string containing one of two possible values, "GET" or "POST". The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example creates a new `HttpBinding` and sets its `Verb` property.  
+  
+ WebServices_HttpBinding#2  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

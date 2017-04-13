@@ -1,0 +1,90 @@
+<Type Name="Runtime" FullName="Microsoft.JScript.Runtime">
+  <TypeSignature Language="C#" Value="public static class Runtime" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Runtime extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Runtime" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides utility functions.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DoubleToInt64">
+      <MemberSignature Language="C#" Value="public static long DoubleToInt64 (double val);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 DoubleToInt64(float64 val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.DoubleToInt64(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="val" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="val">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Double" /> value to an <see cref="T:System.Int64" />.</summary>
+        <returns>
+          <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (object v1, object v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(object v1, object v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.Equals(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="System.Object" />
+        <Parameter Name="v2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="v1">The first operand.</param>
+        <param name="v2">The second operand.</param>
+        <summary>Determines whether two specified values are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values are equal; <see langword="false" /> if the values are not equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedDecimalToInt64">
+      <MemberSignature Language="C#" Value="public static long UncheckedDecimalToInt64 (decimal val);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 UncheckedDecimalToInt64(valuetype System.Decimal val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.UncheckedDecimalToInt64(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="val" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="val">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Decimal" /> value to an <see cref="T:System.Int64" />.</summary>
+        <returns>
+          <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

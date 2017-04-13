@@ -1,0 +1,137 @@
+<Type Name="EventActivityOptions" FullName="System.Diagnostics.Tracing.EventActivityOptions">
+  <TypeSignature Language="C#" Value="public enum EventActivityOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventActivityOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventActivityOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the tracking of activity start and stop events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Detachable">
+      <MemberSignature Language="C#" Value="Detachable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventActivityOptions Detachable = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventActivityOptions.Detachable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allow overlapping activities. By default, activity starts and stops must be property nested. That is, a sequence of Start A, Start B, Stop A, Stop B is not allowed will result in B stopping at the same time as A.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="Disable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventActivityOptions Disable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventActivityOptions.Disable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Turn off start and stop tracking.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventActivityOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventActivityOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the default behavior for start and stop tracking.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recursive">
+      <MemberSignature Language="C#" Value="Recursive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventActivityOptions Recursive = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventActivityOptions.Recursive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allow recursive activity starts. By default, an activity cannot be recursive. That is, a sequence of Start A, Start A, Stop A, Stop A is not allowed. Unintentional recursive activities can occur if the app executes and for some the stop is not reached before another start is called.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,99 @@
+<Type Name="DataGridColumnCollectionEditor" FullName="System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor">
+  <TypeSignature Language="C#" Value="public class DataGridColumnCollectionEditor : System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridColumnCollectionEditor extends System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Design.UITypeEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an editing user interface (UI) for the column collection of a <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor> class and the <xref:System.Drawing.Design.UITypeEditor> class (the collection editor's base class) with a custom `Columns` property. The property is a reference to the <xref:System.Web.UI.WebControls.DataGridColumnCollection> class.  
+  
+ [!code-csharp[Design.WebControls_CollectionEditorSamples#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Design.WebControls_CollectionEditorSamples/CS/WebControlDesignerCollectionEditors.cs#4)]
+ [!code-vb[Design.WebControls_CollectionEditorSamples#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Design.WebControls_CollectionEditorSamples/VB/webcontroldesignercollectioneditors.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridColumnCollectionEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object indicating the context of the object being edited.</param>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> object containing a reference to the associated designer.</param>
+        <param name="value">The object to edit.</param>
+        <summary>Edits the specified value using the specified context descriptor and service provider.</summary>
+        <returns>The final value of the object after it has been edited.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that indicates the context of the object being edited.</param>
+        <summary>Gets the editing style associated with this editor, using the specified <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object.</summary>
+        <returns>The <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value representing the editing style of this editor. The default is <see langword="Modal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Always returns the value `Modal`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

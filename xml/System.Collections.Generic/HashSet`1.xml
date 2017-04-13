@@ -1,0 +1,1695 @@
+<Type Name="HashSet&lt;T&gt;" FullName="System.Collections.Generic.HashSet&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class HashSet&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.ISet&lt;T&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HashSet`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.ISet`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.HashSet`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ISet&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IDeserializationCallback</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.HashSetDebugView`1))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of elements in the hash set.</typeparam>
+    <summary>Represents a set of values.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs#2d265edc718b158b).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs#2d265edc718b158b). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ The <xref:System.Collections.Generic.HashSet%601> class provides high-performance set operations. A set is a collection that contains no duplicate elements, and whose elements are in no particular order.  
+  
+> [!NOTE]
+>  <xref:System.Collections.Generic.HashSet%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Collections.Generic.HashSet%601> class did not implement this interface.  
+  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ The <xref:System.Collections.Generic.HashSet%601> class is based on the model of mathematical sets and provides high-performance set operations similar to accessing the keys of the <xref:System.Collections.Generic.Dictionary%602> or <xref:System.Collections.Hashtable> collections. In simple terms, the <xref:System.Collections.Generic.HashSet%601> class can be thought of as a <xref:System.Collections.Generic.Dictionary%602> collection without values.  
+  
+ A <xref:System.Collections.Generic.HashSet%601> collection is not sorted and cannot contain duplicate elements. If order or element duplication is more important than performance for your application, consider using the <xref:System.Collections.Generic.List%601> class together with the <xref:System.Collections.Generic.List%601.Sort%2A> method.  
+  
+ <xref:System.Collections.Generic.HashSet%601> provides many mathematical set operations, such as set addition (unions) and set subtraction. The following table lists the provided <xref:System.Collections.Generic.HashSet%601> operations and their mathematical equivalents.  
+  
+|HashSet(Of T) operation|Mathematical equivalent|  
+|-------------------------------|-----------------------------|  
+|<xref:System.Collections.Generic.HashSet%601.UnionWith%2A>|Union or set addition|  
+|<xref:System.Collections.Generic.HashSet%601.IntersectWith%2A>|Intersection|  
+|<xref:System.Collections.Generic.HashSet%601.ExceptWith%2A>|Set subtraction|  
+|<xref:System.Collections.Generic.HashSet%601.SymmetricExceptWith%2A>|Symmetric difference|  
+  
+ In addition to the listed set operations, the <xref:System.Collections.Generic.HashSet%601> class also provides methods for determining set equality, overlap of sets, and whether a set is a subset or superset of another set.  
+  
+ For very large <xref:System.Collections.Generic.HashSet%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Collections.Generic.HashSet%601> class implements the <xref:System.Collections.Generic.ISet%601> interface.  
+  
+## HashSet and LINQ Set Operations  
+ LINQ provides access to the `Distinct`, `Union`, `Intersect` and `Except` set operations on any data source that implements the <xref:System.Collections.IEnumerable> or <xref:System.Linq.IQueryable> interfaces.  <xref:System.Collections.Generic.HashSet%601> provides a larger and more robust collection of set operations. For example, <xref:System.Collections.Generic.HashSet%601> provides comparisons such as <xref:System.Collections.Generic.HashSet%601.IsSubsetOf%2A> and <xref:System.Collections.Generic.HashSet%601.IsSupersetOf%2A>.  
+  
+ The primary difference between LINQ set operations and <xref:System.Collections.Generic.HashSet%601> operations is that LINQ set operations always return a new <xref:System.Collections.Generic.IEnumerable%601> collection, whereas the <xref:System.Collections.Generic.HashSet%601> equivalent methods modify the current collection.  
+  
+ Typically, if you must create a new set or if your application needs access only to the provided set operations, using LINQ set operations on any <xref:System.Collections.Generic.IEnumerable%601> collection or array will be sufficient. However, if your application requires access to additional set operations, or if it is not desirable or necessary to create a new collection, use the <xref:System.Collections.Generic.HashSet%601> class.  
+  
+ The following table shows the <xref:System.Collections.Generic.HashSet%601> operations and their equivalent LINQ set operations.  
+  
+|HashSet(Of T) operation|LINQ equivalent|  
+|-------------------------------|---------------------|  
+|<xref:System.Collections.Generic.HashSet%601.UnionWith%2A>|<xref:System.Linq.Enumerable.Union%2A>|  
+|<xref:System.Collections.Generic.HashSet%601.IntersectWith%2A>|<xref:System.Linq.Enumerable.Intersect%2A>|  
+|<xref:System.Collections.Generic.HashSet%601.ExceptWith%2A>|<xref:System.Linq.Enumerable.Except%2A>|  
+|Not provided.|<xref:System.Linq.Enumerable.Distinct%2A>|  
+|<xref:System.Collections.Generic.HashSet%601.SymmetricExceptWith%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.Overlaps%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.IsSubsetOf%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.IsProperSubsetOf%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.IsSupersetOf%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.IsProperSupersetOf%2A>|Not provided.|  
+|<xref:System.Collections.Generic.HashSet%601.SetEquals%2A>|Not provided.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to merge two disparate sets. This example creates two <xref:System.Collections.Generic.HashSet%601> objects, and populates them with even and odd numbers, respectively. A third <xref:System.Collections.Generic.HashSet%601> object is created from the set that contains the even numbers. The example then calls the <xref:System.Collections.Generic.HashSet%601.UnionWith%2A> method, which adds the odd number set to the third set.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#01)]
+ [!code-vb[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/vb/Program.vb#01)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HashSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that is empty and uses the default equality comparer for the set type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and populate two <xref:System.Collections.Generic.HashSet%601> objects. This example is part of a larger example provided for the <xref:System.Collections.Generic.HashSet%601.UnionWith%2A> method.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#03)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HashSet (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection whose elements are copied to the new set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that uses the default equality comparer for the set type, contains elements copied from the specified collection, and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ If `collection` contains duplicates, the set will contain one of each unique element. No exception will be thrown. Therefore, the size of the resulting set is not identical to the size of `collection`.  
+  
+ This constructor is an O(`n`) operation, where `n` is the number of elements in the `collection` parameter.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Collections.Generic.HashSet%601> collection from an existing set. In this example, two sets are created with even and odd integers, respectively. A third <xref:System.Collections.Generic.HashSet%601> object is then created from the even integer set.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_UnionWith#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HashSet (System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> implementation to use when comparing values in the set, or <see langword="null" /> to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1" /> implementation for the set type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that is empty and uses the specified equality comparer for the set type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HashSet (System.Collections.Generic.IEnumerable&lt;T&gt; collection, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection whose elements are copied to the new set.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> implementation to use when comparing values in the set, or <see langword="null" /> to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1" /> implementation for the set type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that uses the specified equality comparer for the set type, contains elements copied from the specified collection, and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ If `collection` contains duplicates, the set will contain one of each unique element. No exception will be thrown. Therefore, the size of the resulting set is not identical to the size of `collection`.  
+  
+ This constructor is an O(`n`) operation, where `n` is the number of elements in the `collection` parameter.  
+  
+   
+  
+## Examples  
+ The following example uses a supplied <xref:System.Collections.Generic.IEqualityComparer%601> to allow case-insensitive comparisons on the elements of a  <xref:System.Collections.Generic.HashSet%601> collection of vehicle types.  
+  
+ [!code-cpp[System.Collections.Generic.HashSet_ExceptWith#03](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/cpp/source2.cpp#03)]
+ [!code-csharp[System.Collections.Generic.HashSet_ExceptWith#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/cs/source2.cs#03)]
+ [!code-vb[System.Collections.Generic.HashSet_ExceptWith#03](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/vb/source2.vb#03)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HashSet (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that contains the information required to serialize the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> structure that contains the source and destination of the serialized stream associated with the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute an object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public bool Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Add(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element to add to the set.</param>
+        <summary>Adds the specified element to a set.</summary>
+        <returns>
+          <see langword="true" /> if the element is added to the <see cref="T:System.Collections.Generic.HashSet`1" /> object; <see langword="false" /> if the element is already present.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Collections.Generic.HashSet%601.Count%2A> already equals the capacity of the <xref:System.Collections.Generic.HashSet%601> object, the capacity is automatically adjusted to accommodate the new item.  
+  
+ If <xref:System.Collections.Generic.HashSet%601.Count%2A> is less than the capacity of the internal array, this method is an O(1) operation. If the <xref:System.Collections.Generic.HashSet%601> object must be resized, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and populate two <xref:System.Collections.Generic.HashSet%601> objects. This example is part of a larger example provided for the <xref:System.Collections.Generic.HashSet%601.UnionWith%2A> method.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#03)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from a <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Generic.HashSet%601.Count%2A> is set to zero and references to other objects from elements of the collection are also released. The capacity remains unchanged until a call to <xref:System.Collections.Generic.HashSet%601.TrimExcess%2A> is made.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates and populates a <xref:System.Collections.Generic.HashSet%601> collection, then clears it and releases the memory referenced by the collection.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_Clear#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_Clear/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_Clear#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_Clear/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comparer">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEqualityComparer&lt;T&gt; Comparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; Comparer" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.Comparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> object that is used to determine equality for the values in the set.</summary>
+        <value>The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> object that is used to determine equality for the values in the set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element to locate in the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object contains the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object contains the specified element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to remove values from a <xref:System.Collections.Generic.HashSet%601> collection using the <xref:System.Collections.Generic.HashSet%601.Remove%2A> method. In this example, the <xref:System.Collections.Generic.HashSet%601.Contains%2A> method verifies that the set contains a value before removing it.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.Generic.HashSet`1" /> object. The array must have zero-based indexing.</param>
+        <summary>Copies the elements of a <see cref="T:System.Collections.Generic.HashSet`1" /> object to an array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.Generic.HashSet`1" /> object. The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of a <see cref="T:System.Collections.Generic.HashSet`1" /> object to an array, starting at the specified array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="arrayIndex" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="arrayIndex" /> is greater than the length of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int arrayIndex, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array, int32 arrayIndex, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.Generic.HashSet`1" /> object. The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="count">The number of elements to copy to <c>array</c>.</param>
+        <summary>Copies the specified number of elements of a <see cref="T:System.Collections.Generic.HashSet`1" /> object to an array, starting at the specified array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is `count`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="arrayIndex" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="count" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="arrayIndex" /> is greater than the length of the destination <paramref name="array" />.  
+  
+ -or-  
+  
+ <paramref name="count" /> is greater than the available space from the <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements that are contained in a set.</summary>
+        <value>The number of elements that are contained in the set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.HashSet%601> object is the number of elements that the object can hold. A <xref:System.Collections.Generic.HashSet%601> object's capacity automatically increases as elements are added to the object.  
+  
+ The capacity is always greater than or equal to <xref:System.Collections.Generic.HashSet%601.Count%2A>. If <xref:System.Collections.Generic.HashSet%601.Count%2A> exceeds the capacity while adding elements, the capacity is set to the first prime number that is greater than double the previous capacity.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create, populate, and manipulate two <xref:System.Collections.Generic.HashSet%601> objects. In this example, both the contents of the set and <xref:System.Collections.Generic.HashSet%601.Count%2A> display to the console.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#01)]
+ [!code-vb[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/vb/Program.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSetComparer">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.HashSet&lt;T&gt;&gt; CreateSetComparer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEqualityComparer`1&lt;class System.Collections.Generic.HashSet`1&lt;!T&gt;&gt; CreateSetComparer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CreateSetComparer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.HashSet&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEqualityComparer" /> object that can be used for equality testing of a <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IEqualityComparer" /> object that can be used for deep equality testing of the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.IEqualityComparer> object checks for equality at only one level; however, you can chain together comparers at additional levels to perform deeper equality testing.  
+  
+ Calling this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptWith">
+      <MemberSignature Language="C#" Value="public void ExceptWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExceptWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection of items to remove from the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Removes all elements in the specified collection from the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.HashSet%601.ExceptWith%2A> method is the equivalent of mathematical set subtraction.  
+  
+ This method is an O(`n`) operation, where `n` is the number of elements in the `other` parameter.  
+  
+   
+  
+## Examples  
+ The following example creates two <xref:System.Collections.Generic.HashSet%601> collections with overlapping sets of data. The lower range of values is then removed from the larger set using the <xref:System.Collections.Generic.HashSet%601.ExceptWith%2A> method.  
+  
+ [!code-cpp[System.Collections.Generic.HashSet_ExceptWith#02](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/cpp/program.cpp#02)]
+ [!code-csharp[System.Collections.Generic.HashSet_ExceptWith#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_ExceptWith#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_ExceptWith/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.HashSet&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.HashSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.HashSet&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <returns>A <see cref="T:System.Collections.Generic.HashSet`1.Enumerator" /> object for the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of enumerators. Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A>.  
+  
+ The <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property returns the same object until <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator object instead.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that contains the information required to serialize the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> structure that contains the source and destination of the serialized stream associated with the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize a <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IntersectWith">
+      <MemberSignature Language="C#" Value="public void IntersectWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IntersectWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Modifies the current <see cref="T:System.Collections.Generic.HashSet`1" /> object to contain only elements that are present in that object and in the specified collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection represented by the `other` parameter is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A> and `m` is the number of elements in `other`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProperSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsProperSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object is a proper subset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object is a proper subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.HashSet%601> object is empty unless the `other` parameter is also an empty set.  
+  
+ This method always returns `false` if <xref:System.Collections.Generic.HashSet%601.Count%2A> is greater than or equal to the number of elements in `other`.  
+  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, then this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A> and `m` is the number of elements in `other`.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each other. In this example, `lowNumbers` is both a subset and a proper subset of `allNumbers` until `allNumbers` is modified, using the <xref:System.Collections.Generic.HashSet%601.IntersectWith%2A> method, to contain only values that are present in both sets. Once `allNumbers` and `lowNumbers` are identical, `lowNumbers` is still a subset of `allNumbers` but is no longer a proper subset.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProperSupersetOf">
+      <MemberSignature Language="C#" Value="public bool IsProperSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object is a proper superset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object is a proper superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty unless the current <xref:System.Collections.Generic.HashSet%601> collection is also empty.  
+  
+ This method always returns `false` if <xref:System.Collections.Generic.HashSet%601.Count%2A> is less than or equal to the number of elements in `other`.  
+  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each other. In this example, `allNumbers` is both a superset and a proper superset of `lowNumbers` until `allNumbers` is modified, using the <xref:System.Collections.Generic.HashSet%601.IntersectWith%2A> method, to contain only values that are present in both sets. Once `allNumbers` and `lowNumbers` are identical, `allNumbers` is still a superset of `lowNumbers` but is no longer a proper superset.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object is a subset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object is a subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a subset of any other collection, including an empty set; therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.HashSet%601> object is empty, even if the `other` parameter is an empty set.  
+  
+ This method always returns `false` if <xref:System.Collections.Generic.HashSet%601.Count%2A> is greater than the number of elements in `other`.  
+  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A> and `m` is the number of elements in `other`.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each other. In this example, `lowNumbers` is both a subset and a proper subset of `allNumbers` until `allNumbers` is modified, using the <xref:System.Collections.Generic.HashSet%601.IntersectWith%2A> method, to contain only values that are present in both sets. Once `allNumbers` and `lowNumbers` are identical, `lowNumbers` is still a subset of `allNumbers` but is no longer a proper subset.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupersetOf">
+      <MemberSignature Language="C#" Value="public bool IsSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object is a superset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object is a superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All collections, including the empty set, are supersets of the empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current <xref:System.Collections.Generic.HashSet%601> object is empty.  
+  
+ This method always returns `false` if <xref:System.Collections.Generic.HashSet%601.Count%2A> is less than the number of elements in `other`.  
+  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each other. In this example, `allNumbers` is both a superset and a proper superset of `lowNumbers` until `allNumbers` is modified, using the <xref:System.Collections.Generic.HashSet%601.IntersectWith%2A> method, to contain only values that are present in both sets. Once `allNumbers` and `lowNumbers` are identical, `allNumbers` is still a superset of `lowNumbers` but is no longer a proper superset.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserialization">
+      <MemberSignature Language="C#" Value="public virtual void OnDeserialization (object sender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.OnDeserialization(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the deserialization event.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and raises the deserialization event when the deserialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Generic.HashSet`1" /> object is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlaps">
+      <MemberSignature Language="C#" Value="public bool Overlaps (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Overlaps(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether the current <see cref="T:System.Collections.Generic.HashSet`1" /> object and a specified collection share common elements.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object and <paramref name="other" /> share at least one common element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is the number of elements in `other`.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each another. In this example, `allNumbers` and `lowNumbers` are shown to share common elements using the <xref:System.Collections.Generic.HashSet%601.Overlaps%2A> method.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element to remove.</param>
+        <summary>Removes the specified element from a <see cref="T:System.Collections.Generic.HashSet`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the element is successfully found and removed; otherwise, <see langword="false" />.  This method returns <see langword="false" /> if <paramref name="item" /> is not found in the <see cref="T:System.Collections.Generic.HashSet`1" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.Generic.HashSet%601> object does not contain the specified element, the object remains unchanged. No exception is thrown.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to remove values from a <xref:System.Collections.Generic.HashSet%601> collection using the <xref:System.Collections.Generic.HashSet%601.Remove%2A> method. In this example, zero is arbitrarily removed from the <xref:System.Collections.Generic.HashSet%601> collection.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveWhere">
+      <MemberSignature Language="C#" Value="public int RemoveWhere (Predicate&lt;T&gt; match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RemoveWhere(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.RemoveWhere(System.Predicate{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="match">The <see cref="T:System.Predicate`1" /> delegate that defines the conditions of the elements to remove.</param>
+        <summary>Removes all elements that match the conditions defined by the specified predicate from a <see cref="T:System.Collections.Generic.HashSet`1" /> collection.</summary>
+        <returns>The number of elements that were removed from the <see cref="T:System.Collections.Generic.HashSet`1" /> collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to remove values from a <xref:System.Collections.Generic.HashSet%601> collection using the <xref:System.Collections.Generic.HashSet%601.Remove%2A> method. In this example, all odd integers are removed from the <xref:System.Collections.Generic.HashSet%601> collection as specified by the `match` delegate.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_RemoveWhere#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_RemoveWhere/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="match" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEquals">
+      <MemberSignature Language="C#" Value="public bool SetEquals (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetEquals(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.Generic.HashSet`1" /> object and the specified collection contain the same elements.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.HashSet`1" /> object is equal to <paramref name="other" />; otherwise, false.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.HashSet%601.SetEquals%2A> method ignores duplicate entries and the order of elements in the `other` parameter.  
+  
+ If the collection represented by `other` is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates two disparate <xref:System.Collections.Generic.HashSet%601> objects and compares them to each another. Initially, the two sets are not equal, which is demonstrated by using the <xref:System.Collections.Generic.HashSet%601.SetEquals%2A> method. The `allNumbers`<xref:System.Collections.Generic.HashSet%601> object is then modified, after which the sets are equal.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_boolMethods#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_boolMethods/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricExceptWith">
+      <MemberSignature Language="C#" Value="public void SymmetricExceptWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SymmetricExceptWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Modifies the current <see cref="T:System.Collections.Generic.HashSet`1" /> object to contain only elements that are present either in that object or in the specified collection, but not both.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `other` parameter is a <xref:System.Collections.Generic.HashSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.HashSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates two <xref:System.Collections.Generic.HashSet%601> collections with overlapping sets of data. The set that contains the lower values is then modified, using the <xref:System.Collections.Generic.HashSet%601.SymmetricExceptWith%2A> method, to contain only the values that are not present in both sets.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_SymmetricExceptWith#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_SymmetricExceptWith/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_SymmetricExceptWith#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_SymmetricExceptWith/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Add">
+      <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" /> object.</param>
+        <summary>Adds an item to an <see cref="T:System.Collections.Generic.ICollection`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity must be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+  
+ The <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator object instead.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ The <xref:System.Collections.IEnumerator.Current%2A> property returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExcess">
+      <MemberSignature Language="C#" Value="public void TrimExcess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimExcess() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.TrimExcess" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the capacity of a <see cref="T:System.Collections.Generic.HashSet`1" /> object to the actual number of elements it contains, rounded up to a nearby, implementation-specific value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Collections.Generic.HashSet%601.TrimExcess%2A> method to minimize a <xref:System.Collections.Generic.HashSet%601> object's memory overhead once it is known that no new elements will be added. To completely clear a <xref:System.Collections.Generic.HashSet%601> object and release all memory referenced by it, call this method after calling the <xref:System.Collections.Generic.HashSet%601.Clear%2A> method.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.HashSet%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates and populates a <xref:System.Collections.Generic.HashSet%601> collection, and then clears the collection and releases the memory referenced by it.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_Clear#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_Clear/cs/Program.cs#02)]
+ [!code-vb[System.Collections.Generic.HashSet_Clear#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_Clear/vb/Program.vb#02)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnionWith">
+      <MemberSignature Language="C#" Value="public void UnionWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnionWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Generic.HashSet`1" /> object.</param>
+        <summary>Modifies the current <see cref="T:System.Collections.Generic.HashSet`1" /> object to contain all elements that are present in itself, the specified collection, or both.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is the number of elements in the `other` parameter.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to merge two disparate sets. This example creates two <xref:System.Collections.Generic.HashSet%601> objects, and populates them with even and odd numbers, respectively. A third <xref:System.Collections.Generic.HashSet%601> object is created from the set that contains the even numbers. The example then calls the <xref:System.Collections.Generic.HashSet%601.UnionWith%2A> method, which adds the odd number set to the third set.  
+  
+ [!code-csharp[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/cs/Program.cs#01)]
+ [!code-vb[System.Collections.Generic.HashSet_UnionWith#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Generic.HashSet_UnionWith/vb/Program.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

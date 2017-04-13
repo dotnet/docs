@@ -1,0 +1,1035 @@
+<Type Name="Cookie" FullName="System.Net.Cookie">
+  <TypeSignature Language="C#" Value="public sealed class Cookie" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Cookie extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Cookie" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Primitives</AssemblyName>
+    <AssemblyVersion>3.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of properties and methods that are used to manage cookies. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Cookie> class is used by a client application to retrieve information about cookies that are received with HTTP responses. The following cookie formats are supported during parsing of the HTTP response headers: the original Netscape specification, RFC 2109, and RFC 2965.  
+  
+ For a list of initial property values for an instance of <xref:System.Net.Cookie>, see the various <xref:System.Net.Cookie> constructors.  
+  
+   
+  
+## Examples  
+ The following example sends a request to a URL and displays the cookies returned in the response.  
+  
+ [!code-cpp[NCLCookies#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#1)]
+ [!code-csharp[NCLCookies#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#1)]
+ [!code-vb[NCLCookies#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cookie ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cookie" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes all fields to their default values, using empty strings ("") for `name`, `value`, `path`, and `domain`. Note that at least the <xref:System.Net.Cookie.Name%2A> property must be initialized before using an instance of the <xref:System.Net.Cookie> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cookie (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <c>name</c>: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
+        <param name="value">The value of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <c>value</c>: semicolon, comma.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cookie" /> class with a specified <see cref="P:System.Net.Cookie.Name" /> and <see cref="P:System.Net.Cookie.Value" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default for the `value` parameter uses the empty string ("").  
+  
+ The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+  
+ However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"");`  
+  
+ The comma character is used as a delimiter between separate cookies on the same line.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.CookieException">The <paramref name="name" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter is of zero length.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter contains an invalid character.  
+  
+ -or-  
+  
+ The <paramref name="value" /> parameter is <see langword="null" /> .  
+  
+ -or -  
+  
+ The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cookie (string name, string value, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <c>name</c>: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
+        <param name="value">The value of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <c>value</c>: semicolon, comma.</param>
+        <param name="path">The subset of URIs on the origin server to which this <see cref="T:System.Net.Cookie" /> applies. The default value is "/".</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cookie" /> class with a specified <see cref="P:System.Net.Cookie.Name" />, <see cref="P:System.Net.Cookie.Value" />, and <see cref="P:System.Net.Cookie.Path" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default for the `path` parameter uses the empty string ("").  
+  
+ The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and can not cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+  
+ However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "");`  
+  
+ The comma character is used as a delimiter between separate cookies on the same line.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.CookieException">The <paramref name="name" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter is of zero length.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter contains an invalid character.  
+  
+ -or-  
+  
+ The <paramref name="value" /> parameter is <see langword="null" /> .  
+  
+ -or -  
+  
+ The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cookie (string name, string value, string path, string domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value, string path, string domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="domain" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <c>name</c>: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
+        <param name="value">The value of a <see cref="T:System.Net.Cookie" /> object. The following characters must not be used inside <c>value</c>: semicolon, comma.</param>
+        <param name="path">The subset of URIs on the origin server to which this <see cref="T:System.Net.Cookie" /> applies. The default value is "/".</param>
+        <param name="domain">The optional internet domain for which this <see cref="T:System.Net.Cookie" /> is valid. The default value is the host this <see cref="T:System.Net.Cookie" /> has been received from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cookie" /> class with a specified <see cref="P:System.Net.Cookie.Name" />, <see cref="P:System.Net.Cookie.Value" />, <see cref="P:System.Net.Cookie.Path" />, and <see cref="P:System.Net.Cookie.Domain" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default for the `domain` and `path` parameters uses the empty string ("").  
+  
+ The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+  
+ However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
+  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "", "");`  
+  
+ The comma character is used as a delimiter between separate cookies on the same line.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.CookieException">The <paramref name="name" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter is of zero length.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter contains an invalid character.  
+  
+ -or-  
+  
+ The <paramref name="value" /> parameter is <see langword="null" /> .  
+  
+ -or -  
+  
+ The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Comment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a comment that the server can add to a <see cref="T:System.Net.Cookie" />.</summary>
+        <value>An optional comment to document intended usage for this <see cref="T:System.Net.Cookie" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The client can inspect this optional comment for information added by the server. For example, the server could include information about issues like the privacy policy or intended usage.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommentUri">
+      <MemberSignature Language="C#" Value="public Uri CommentUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CommentUri" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.CommentUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URI comment that the server can provide with a <see cref="T:System.Net.Cookie" />.</summary>
+        <value>An optional comment that represents the intended usage of the URI reference for this <see cref="T:System.Net.Cookie" />. The value must conform to URI format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The URI can provide optional information, such as how the server uses the <xref:System.Net.Cookie>.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies that are returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discard">
+      <MemberSignature Language="C#" Value="public bool Discard { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Discard" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Discard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the discard flag set by the server.</summary>
+        <value>
+          <see langword="true" /> if the client is to discard the <see cref="T:System.Net.Cookie" /> at the end of the current session; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `true`, this property instructs the client application not to save the <xref:System.Net.Cookie> on the user's hard disk when a session ends.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="public string Domain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Domain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI for which the <see cref="T:System.Net.Cookie" /> is valid.</summary>
+        <value>The URI for which the <see cref="T:System.Net.Cookie" /> is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A server cannot indicate a domain other than its own URI. However, it can indicate more than one server in the domain. The default value is the host that this cookie has been received from.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object comparand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object comparand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparand" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="comparand">A reference to a <see cref="T:System.Net.Cookie" />.</param>
+        <summary>Overrides the <see cref="M:System.Object.Equals(System.Object)" /> method.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.Cookie" /> is equal to <paramref name="comparand" />. Two <see cref="T:System.Net.Cookie" /> instances are equal if their <see cref="P:System.Net.Cookie.Name" />, <see cref="P:System.Net.Cookie.Value" />, <see cref="P:System.Net.Cookie.Path" />, <see cref="P:System.Net.Cookie.Domain" />, and <see cref="P:System.Net.Cookie.Version" /> properties are equal. <see cref="P:System.Net.Cookie.Name" /> and <see cref="P:System.Net.Cookie.Domain" /> string comparisons are case-insensitive.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="public bool Expired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Expired" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Expired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current state of the <see cref="T:System.Net.Cookie" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Net.Cookie" /> has expired; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Expired cookies, if received, should be destroyed by the client application.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expires">
+      <MemberSignature Language="C#" Value="public DateTime Expires { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Expires" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Expires" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expiration date and time for the <see cref="T:System.Net.Cookie" /> as a <see cref="T:System.DateTime" />.</summary>
+        <value>The expiration date and time for the <see cref="T:System.Net.Cookie" /> as a <see cref="T:System.DateTime" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Net.Cookie.Expires%2A> property to <xref:System.DateTime> makes this a session <xref:System.Net.Cookie>, which is its default value.  
+  
+ The <xref:System.DateTimeKind> property of <xref:System.Net.Cookie.Expires%2A> is used to determine if the <xref:System.Net.Cookie> is set in <xref:System.DateTimeKind> or <xref:System.DateTimeKind>. If the <xref:System.DateTimeKind> property is set to <xref:System.DateTimeKind>, then <xref:System.DateTimeKind> is assumed.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Overrides the <see cref="M:System.Object.GetHashCode" /> method.</summary>
+        <returns>The 32-bit signed integer hash code for this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that might be used as a key in a hash table must provide this override, because objects that are used as keys in a hash table are required to generate their own hash code through this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpOnly">
+      <MemberSignature Language="C#" Value="public bool HttpOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HttpOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.HttpOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether a page script or other active content can access this cookie.</summary>
+        <value>Boolean value that determines whether a page script or other active content can access this cookie.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, a page script or other active content cannot access this cookie.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name for the <see cref="T:System.Net.Cookie" />.</summary>
+        <value>The name for the <see cref="T:System.Net.Cookie" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Cookie.Name%2A> property must be initialized before using an instance of the <xref:System.Net.Cookie> class.  
+  
+ The following characters are reserved and cannot be used for this attribute value: equal sign, semicolon, comma, new line (\n), return (\r), tab (\t), and space character. The dollar sign ($) character cannot be the first character.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.CookieException">The value specified for a set operation is <see langword="null" /> or the empty string  
+  
+ \- or -  
+  
+ The value specified for a set operation contained an illegal character. The following characters must not be used inside the <see cref="P:System.Net.Cookie.Name" /> property: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URIs to which the <see cref="T:System.Net.Cookie" /> applies.</summary>
+        <value>The URIs to which the <see cref="T:System.Net.Cookie" /> applies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Cookie.Path%2A> property specifies the subset of URIs on the origin server to which this <xref:System.Net.Cookie> applies. If this propery is not specified, then this <xref:System.Net.Cookie> will be sent to all pages on the origin server or servers.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public string Port { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Port" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of TCP ports that the <see cref="T:System.Net.Cookie" /> applies to.</summary>
+        <value>The list of TCP ports that the <see cref="T:System.Net.Cookie" /> applies to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute restricts the ports to which this <xref:System.Net.Cookie> may be sent. The default value means no restriction. Setting this to the empty string ("") will restrict the port to the one used in the HTTP response. Otherwise, the value must be a double-quoted string that contains port values delimited with commas.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.CookieException">The value specified for a set operation could not be parsed or is not enclosed in double quotes.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Secure">
+      <MemberSignature Language="C#" Value="public bool Secure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Secure" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Secure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security level of a <see cref="T:System.Net.Cookie" />.</summary>
+        <value>
+          <see langword="true" /> if the client is only to return the cookie in subsequent requests if those requests use Secure Hypertext Transfer Protocol (HTTPS); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In effect, when this property is `true` this cookie may be sent only with https:// requests.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeStamp">
+      <MemberSignature Language="C#" Value="public DateTime TimeStamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeStamp" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.TimeStamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time when the cookie was issued as a <see cref="T:System.DateTime" />.</summary>
+        <value>The time when the cookie was issued as a <see cref="T:System.DateTime" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a read-only property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cookie.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Overrides the <see cref="M:System.Object.ToString" /> method.</summary>
+        <returns>Returns a string representation of this <see cref="T:System.Net.Cookie" /> object that is suitable for including in a HTTP Cookie: request header.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exact format of the string depends on the RFC that this cookie conforms to.  
+  
+   
+  
+## Examples  
+ The following example displays the string value of a cookie returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#4)]
+ [!code-csharp[NCLCookies#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#4)]
+ [!code-vb[NCLCookies#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Net.Cookie.Value" /> for the <see cref="T:System.Net.Cookie" />.</summary>
+        <value>The <see cref="P:System.Net.Cookie.Value" /> for the <see cref="T:System.Net.Cookie" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Cookie.Value%2A> of a <xref:System.Net.Cookie> must not be `null`. The following characters are reserved and cannot be used for this property: semicolon, comma.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version of HTTP state maintenance to which the cookie conforms.</summary>
+        <value>The version of HTTP state maintenance to which the cookie conforms.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the <xref:System.Net.Cookie.Version%2A> property is 0, complying with the original Netscape specification. If the value is explicitly set to 1, then this <xref:System.Net.Cookie> must conform to RFC 2109. Note that if a <xref:System.Net.Cookie> was created automatically by receiving a Set-Cookie2 HTTP response header, the conformance is set to RFC 2965.  
+  
+ An attempt to set the <xref:System.Net.Cookie.Version%2A> property to a value less than zero will throw an exception.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of cookies returned in a response. For the complete example, see the <xref:System.Net.Cookie> class topic.  
+  
+ [!code-cpp[NCLCookies#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCookies/CPP/cookiessnippets.cpp#3)]
+ [!code-csharp[NCLCookies#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCookies/CS/cookiessnippets.cs#3)]
+ [!code-vb[NCLCookies#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLCookies/VB/cookiessnippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a version is not allowed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

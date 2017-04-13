@@ -1,0 +1,86 @@
+<Type Name="IExtenderControl" FullName="System.Web.UI.IExtenderControl">
+  <TypeSignature Language="C#" Value="public interface IExtenderControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtenderControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IExtenderControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the behavior for an extender control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extender controls that derive from the <xref:System.Web.UI.ExtenderControl> class require a <xref:System.Web.UI.ScriptManager> control to be on the page. The <xref:System.Web.UI.ExtenderControl> base class performs an explicit test to make sure that a <xref:System.Web.UI.ScriptManager> control exists on the page.  
+  
+ However, if you want to create extender controls and the page does not contain an <xref:System.Web.UI.ScriptManager> control, you can create a class that implements the <xref:System.Web.UI.IExtenderControl> interface directly. Additionally, if you are creating a class that derives from <xref:System.Web.UI.Control> or you are extending an existing control that derives from <xref:System.Web.UI.Control>, you can implement the <xref:System.Web.UI.IExtenderControl> interface to support client functionality.  
+  
+ The <xref:System.Web.UI.IExtenderControl> interface registers the script libraries for a control by calling the <xref:System.Web.UI.IExtenderControl.GetScriptReferences%2A> method, and it registers <xref:System.Web.UI.ScriptDescriptor> objects by calling the <xref:System.Web.UI.IExtenderControl.GetScriptDescriptors%2A> method. The <xref:System.Web.UI.IExtenderControl.GetScriptDescriptors%2A> method returns an <xref:System.Collections.IEnumerable> list of <xref:System.Web.UI.ScriptDescriptor> objects.  
+  
+> [!NOTE]
+>  If you extend an existing control type that is derived from the <xref:System.Web.UI.WebControls.WebControl> class, implement the <xref:System.Web.UI.IScriptControl> interface.  
+  
+ To create an extender control by implementing <xref:System.Web.UI.IExtenderControl>, you do the following:  
+  
+-   Write code for the control's `OnInit` event to detect and use the <xref:System.Web.UI.ScriptManager> control if it is available on the page.  
+  
+-   If the <xref:System.Web.UI.ScriptManager> is not available on the page, provide alternative means to register required scripts by calling static methods of the <xref:System.Web.UI.ScriptManager> class.  
+  
+-   Provide protected virtual members for <xref:System.Web.UI.IExtenderControl> members.  
+  
+-   Provide instance script as a script block that you register with the <xref:System.Web.UI.ScriptManager> control. You must do this during the control's `PreRender`, `PreRenderComplete`, or `Render` events.  
+  
+-   Register the script descriptors during the control's `Render` event.  
+  
+> [!NOTE]
+>  If the page contains an <xref:System.Web.UI.UpdatePanel> control, the page must contain a <xref:System.Web.UI.ScriptManager> control. You must implement the <xref:System.Web.UI.IExtenderControl> interface only when the page does not contain a <xref:System.Web.UI.ScriptManager> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetScriptDescriptors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors (System.Web.UI.Control targetControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors(class System.Web.UI.Control targetControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IExtenderControl.GetScriptDescriptors(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetControl" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="targetControl">The server control that the extender is associated with.</param>
+        <summary>Registers the <see cref="T:System.Web.UI.ScriptDescriptor" /> objects for the control and returns an object that contains the <see cref="T:System.Web.UI.ScriptDescriptor" /> objects for the control.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> collection that contains <see cref="T:System.Web.UI.ScriptDescriptor" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScriptReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt; GetScriptReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; GetScriptReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IExtenderControl.GetScriptReferences" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Registers the script libraries for the control and returns an enumeration of ECMAScript (JavaScript) files that have been registered as embedded resources.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> collection that contains JavaScript files that have been registered as embedded resources.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

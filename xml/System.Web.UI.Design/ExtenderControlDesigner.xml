@@ -1,0 +1,156 @@
+<Type Name="ExtenderControlDesigner" FullName="System.Web.UI.Design.ExtenderControlDesigner">
+  <TypeSignature Language="C#" Value="public class ExtenderControlDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtenderControlDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ExtenderControlDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides UI support for working with extender controls at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ExtenderControlDesigner> class enables you to interact with extender controls on the page at design time in an IDE such as [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)]. Only control developers and IDE developers have to interact with this class directly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExtenderControlDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlDesigner.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.ExtenderControlDesigner" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this [{1}](assetId:///{1}?qualifyHint=False&amp;autoUpgrade=True) references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md). For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the standard HTML rendering of an extender control at design time, which includes type and ID information.</summary>
+        <returns>The design-time HTML rendering of the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">A component of type <see cref="T:System.Web.UI.IExtenderControl" /> that implements the <see cref="T:System.ComponentModel.IComponent" /> interface.</param>
+        <summary>Initializes the specified component and adds it to the component change service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A dictionary that contains the properties for the control.</param>
+        <summary>Adjusts the items listed in the properties grid for the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="protected override bool Visible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExtenderControlDesigner.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current control is displayed on the design surface so it can be selected and its properties can be edited.</summary>
+        <value>
+          <see langword="true" /> if the current control is displayed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

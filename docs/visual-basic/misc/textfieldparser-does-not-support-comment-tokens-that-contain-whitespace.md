@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_WhitespaceInToken"
 ms.assetid: 55107656-270e-4bbb-841a-478904df8e07
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

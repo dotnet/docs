@@ -1,0 +1,30 @@
+<Type Name="BuildTemplateMethod" FullName="System.Web.UI.BuildTemplateMethod">
+  <TypeSignature Language="C#" Value="public delegate void BuildTemplateMethod(Control control);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildTemplateMethod extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildTemplateMethod" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="control" Type="System.Web.UI.Control" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="control">A <see cref="T:System.Web.UI.Control" /> that represents the container used to store the child controls in the template.</param>
+    <summary>Supports ASP.NET during the creation of a template for a templated control from generated class code. The <see cref="T:System.Web.UI.BuildTemplateMethod" /> delegate handles the <see cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.BuildTemplateMethod> delegate is used in conjunction with the <xref:System.Web.UI.CompiledTemplateBuilder> class, which creates a template for a templated control from generated class code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

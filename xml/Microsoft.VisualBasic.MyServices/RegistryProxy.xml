@@ -1,0 +1,617 @@
+<Type Name="RegistryProxy" FullName="Microsoft.VisualBasic.MyServices.RegistryProxy">
+  <TypeSignature Language="C#" Value="public class RegistryProxy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi RegistryProxy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides properties and methods for manipulating the registry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use these properties, you must have Read and Write permission from the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. Any code running with full trust (under the default security policy, this is any code installed on the user's local hard drive) has the necessary permissions to access the registry. For more information, see the <xref:System.Security.Permissions.RegistryPermission> class.  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read data from the registry|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a message box.  
+  
+ [!code-vb[VbVbalrMyRegistry#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClassesRoot">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey ClassesRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey ClassesRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type which provides access to <see langword="HKEY_CLASSES_ROOT" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_CLASSES_ROOT` is primarily used to store information about file associations in Windows.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example gets the names of the subkeys for the `ClassesRoot` registry key and adds them to `ListBox1`.  
+  
+ [!code-vb[VbVbalrMyRegistry#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#10)]  
+  
+ This example requires that you have a `ListBox` named `ListBox1` in your project.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentConfig">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CurrentConfig { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey CurrentConfig" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type which provides access to <see langword="HKEY_CURRENT_CONFIG" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_CURRENT_CONFIG` is primarily used to store settings for devices on the computer.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example creates the subkey `MyDeviceSettings`.  
+  
+ [!code-vb[VbVbalrMyRegistry#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CurrentUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey CurrentUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type which provides access to <see langword="HKEY_CURRENT_USER" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_CURRENT_USER` is primarily used to store per-user settings, such as colors and fonts, in Windows. The key differ according to the user.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example deletes the subkey `Software\MyCompany\Preferences\UserData`.  
+  
+ [!code-vb[VbVbalrMyRegistry#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynData">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey DynData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey DynData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The DynData registry key works only on Win9x, which is not supported by this version of the .NET Framework.  Use the PerformanceData registry key instead.  This property will be removed from a future version of the framework.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_DYNDATA" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_DYNDATA` is used to store dynamic registry data, such as that used by Virtual Device Drivers and is supported only on Windows 95/98 systems. On non-Windows 95/98 systems, calling any methods of the key returned by `Registry.DynData`, such as `CreateSubKey`, `DeleteSubKey`, `GetSubKeyCount`, `GetValueCount`, etc., will throw a <xref:System.IO.IOException>.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example deletes the subkey tree `Software\MyCompany\Preferences`.  
+  
+ [!code-vb[VbVbalrMyRegistry#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public object GetValue (string keyName, string valueName, object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance object GetValue(string keyName, string valueName, object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.GetValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">
+          <see langword="String" />. Key from which the value is to be retrieved. Required.</param>
+        <param name="valueName">
+          <see langword="String" />. Value to be retrieved. Required.</param>
+        <param name="defaultValue">
+          <see langword="Object" />. Default value to be supplied if the value does not exist. Required.</param>
+        <summary>Gets a value from a registry key.</summary>
+        <returns>Gets a value from a registry key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `valueName` is not case-sensitive.  
+  
+ A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either null or the empty string ("") for `valueName`.  
+  
+ The following table lists examples of tasks involving the `GetValue` method.  
+  
+|To|See|  
+|--------|---------|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a `MessageBox`.  
+  
+ [!code-vb[VbVbalrMyRegistry#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read from the registry key.</exception>
+        <exception cref="T:System.IO.IOException">The <see cref="T:Microsoft.Win32.RegistryKey" /> that contains the specified value has been marked for deletion.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalMachine">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey LocalMachine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey LocalMachine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_LOCAL_MACHINE" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_LOCAL_MACHINE` is usually used to store settings that do not vary from user to user in Windows. All users of the computer share this key. Its five subkeys (`Hardware`, `SAM`, `Security`, `Software`, and `System`) hold configuration data for the local machine.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example opens the subkey `Software\MyCompany\Preferences` and sets the value `FontColor` to `"red"`.  
+  
+ [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformanceData">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey PerformanceData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey PerformanceData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_PERFORMANCE_DATA" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_PERFORMANCE_DATA` is used to access performance information for software components. Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. This data is not stored in the registry, although the registry is used to access it. Instead, calling registry functions via `HKEY_PERFORMANCE_DATA` causes the system to collect the data from the appropriate system object managers.  
+  
+ This key does not exist on Windows 98 systems; an attempt to use it other than calling the `Name` method will throw an <xref:System.IO.IOException>.  
+  
+ This key cannot normally be written to; attempting to create a subkey on it will throw an <xref:System.IO.IOException>.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|AllAccess|Create, read, and write access to registry variables.|  
+|Create|Create access to registry variables.|  
+|NoAccess|No access to registry variables.|  
+|Read|Read access to registry variables.|  
+|Write|Write access to registry variables.|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|To|See|  
+|--------|---------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example gets the value `ThisSoftwar`e from the `MyCompany` subkey.  
+  
+ [!code-vb[VbVbalrMyRegistry#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string keyName, string valueName, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetValue(string keyName, string valueName, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">
+          <see langword="String" />. Name of the key to be written to. Required.</param>
+        <param name="valueName">
+          <see langword="String" />. Name of the value to be written. Required.</param>
+        <param name="value">
+          <see langword="Object" />. Value to be written. Required.</param>
+        <summary>Writes a value to a registry key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified key or value does not exist, it is created.  
+  
+ Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
+  
+|To|See|  
+|--------|---------|  
+|Set a value in a registry key|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+  
+   
+  
+## Examples  
+ This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
+  
+ [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.  
+  
+ -or-  
+  
+ <paramref name="valueName" /> is longer than the maximum length allowed (255 characters).</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access..</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string keyName, string valueName, object value, Microsoft.Win32.RegistryValueKind valueKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetValue(string keyName, string valueName, object value, valuetype Microsoft.Win32.RegistryValueKind valueKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="valueKind" Type="Microsoft.Win32.RegistryValueKind" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">
+          <see langword="String" />. Name of the key to be written to. Required.</param>
+        <param name="valueName">
+          <see langword="String" />. Name of the value to be written. Required.</param>
+        <param name="value">
+          <see langword="Object" />. Value to be written. Required.</param>
+        <param name="valueKind">
+          <see cref="T:Microsoft.Win32.RegistryValueKind" />. Required.</param>
+        <summary>Writes a value to a registry key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified key or value does not exist, it is created.  
+  
+ Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
+  
+|To|See|  
+|--------|---------|  
+|Set a value in a registry key|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+  
+   
+  
+## Examples  
+ This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
+  
+ [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.  
+  
+ -or-  
+  
+ <paramref name="keyName" /> is longer than the maximum length allowed (255 characters).  
+  
+ -or-  
+  
+ The type of <paramref name="value" /> does not match the registry data type specified by <paramref name="valueKind" />, therefore the data cannot be converted properly.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only, and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Users">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey Users { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.RegistryKey Users" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.Users" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_USERS" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Win32.RegistryKey" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `HKEY_USERS` is primarily used to store default settings for first-time users.  
+  
+ The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+  
+ Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+  
+|Value|Access to Registry Variables|  
+|-----------|----------------------------------|  
+|AllAccess|Create, read, and write|  
+|Create|Create|  
+|NoAccess|No access.|  
+|Read|Read|  
+|Write|Write|  
+  
+ The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+  
+|**To**|**See**|  
+|------------|-------------|  
+|Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
+|Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+  
+   
+  
+## Examples  
+ This example counts and displays the number of values in the registry key.  
+  
+ [!code-vb[VbVbalrMyRegistry#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,310 @@
+<Type Name="HierarchicalVirtualizationItemDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes">
+  <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationItemDesiredSizes" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationItemDesiredSizes extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the desired size of the control's items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] and in logical units.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HierarchicalVirtualizationItemDesiredSizes (System.Windows.Size logicalSize, System.Windows.Size logicalSizeInViewport, System.Windows.Size logicalSizeBeforeViewport, System.Windows.Size logicalSizeAfterViewport, System.Windows.Size pixelSize, System.Windows.Size pixelSizeInViewport, System.Windows.Size pixelSizeBeforeViewport, System.Windows.Size pixelSizeAfterViewport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size logicalSize, valuetype System.Windows.Size logicalSizeInViewport, valuetype System.Windows.Size logicalSizeBeforeViewport, valuetype System.Windows.Size logicalSizeAfterViewport, valuetype System.Windows.Size pixelSize, valuetype System.Windows.Size pixelSizeInViewport, valuetype System.Windows.Size pixelSizeBeforeViewport, valuetype System.Windows.Size pixelSizeAfterViewport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="logicalSize" Type="System.Windows.Size" />
+        <Parameter Name="logicalSizeInViewport" Type="System.Windows.Size" />
+        <Parameter Name="logicalSizeBeforeViewport" Type="System.Windows.Size" />
+        <Parameter Name="logicalSizeAfterViewport" Type="System.Windows.Size" />
+        <Parameter Name="pixelSize" Type="System.Windows.Size" />
+        <Parameter Name="pixelSizeInViewport" Type="System.Windows.Size" />
+        <Parameter Name="pixelSizeBeforeViewport" Type="System.Windows.Size" />
+        <Parameter Name="pixelSizeAfterViewport" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="logicalSize">The size of the control's child items, in logical units.</param>
+        <param name="logicalSizeInViewport">The size of the control's child items that are in the viewport, in logical units.</param>
+        <param name="logicalSizeBeforeViewport">The size of the control's child items that are in the cache before the viewport, in logical units.</param>
+        <param name="logicalSizeAfterViewport">The size of the control's child items that are in the cache after the viewport, in logical units.</param>
+        <param name="pixelSize">The size of the control's child items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <param name="pixelSizeInViewport">The size of the control's child items that are in viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <param name="pixelSizeBeforeViewport">The size of the control's child items that are in the cache before the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <param name="pixelSizeAfterViewport">The size of the control's child items that are in the cache after the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oCompare" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="oCompare">The object to compare to this object.</param>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes comparisonItemSizes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes comparisonItemSizes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparisonItemSizes" Type="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="comparisonItemSizes">The object to compare to this object.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</summary>
+        <returns>A hash code for this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items, in logical units.</summary>
+        <value>The size of the control's child items, in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSizeAfterViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeAfterViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeAfterViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeAfterViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items that are in the cache after the viewport, in logical units.</summary>
+        <value>The control's child items that are in the cache after the viewport, in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSizeBeforeViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeBeforeViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeBeforeViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeBeforeViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control's child items that are in the cache before the viewport, in logical units.</summary>
+        <value>The control's child items that are in the cache before the viewport, in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSizeInViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeInViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeInViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeInViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control's child items that are in the viewport, in logical units.</summary>
+        <value>The control's child items that are in the viewport, in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemDesiredSizes1" Type="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+        <Parameter Name="itemDesiredSizes2" Type="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="itemDesiredSizes1">The first object to compare.</param>
+        <param name="itemDesiredSizes2">The second object to compare.</param>
+        <summary>Returns a value that indicates whether the specified object <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified object <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemDesiredSizes1" Type="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+        <Parameter Name="itemDesiredSizes2" Type="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="itemDesiredSizes1">The first object to compare.</param>
+        <param name="itemDesiredSizes2">The second object to compare.</param>
+        <summary>Returns a value that indicates whether the specified object <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> are unequal.</summary>
+        <returns>
+          <see langword="true" /> if the specified object <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> are unequal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PixelSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The size of the control's child items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelSizeAfterViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeAfterViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeAfterViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeAfterViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items that are in the cache after the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The size of the control's child items that are in the cache after the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelSizeBeforeViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeBeforeViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeBeforeViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeBeforeViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items that are in the cache before the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The size of the control's child items that are in the cache before the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelSizeInViewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeInViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeInViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeInViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the control's child items that are in the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The size of the control's child items that are in the viewport, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

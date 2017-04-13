@@ -46,7 +46,7 @@ expression. I've followed the practice of checking the node type, then
 casting to a variable access expression and then checking the properties of
 the specific expression type:
 
-```cs
+```csharp
 Expression<Func<int, int>> addFive = (num) => num + 5;
 
 if (addFive.NodeType == ExpressionType.Lambda)
@@ -66,7 +66,7 @@ The `System.Linq.Expression` class also contains many static methods to create e
 methods create an expression node using the arguments supplied for its children. In this way,
 you build an expression up from its leaf nodes. For example, this code builds an Add expression:
 
-```cs
+```csharp
 // Addition is an add expression for "1 + 2"
 var one = Expression.Constant(1, typeof(int));
 var two = Expression.Constant(2, typeof(int));

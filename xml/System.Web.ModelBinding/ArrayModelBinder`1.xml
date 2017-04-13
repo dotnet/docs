@@ -1,0 +1,68 @@
+<Type Name="ArrayModelBinder&lt;TElement&gt;" FullName="System.Web.ModelBinding.ArrayModelBinder&lt;TElement&gt;">
+  <TypeSignature Language="C#" Value="public class ArrayModelBinder&lt;TElement&gt; : System.Web.ModelBinding.CollectionModelBinder&lt;TElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayModelBinder`1&lt;TElement&gt; extends System.Web.ModelBinding.CollectionModelBinder`1&lt;!TElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ArrayModelBinder`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TElement" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.CollectionModelBinder&lt;TElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TElement">TElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TElement">The type of the array.</typeparam>
+    <summary>Maps a browser request to an array.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayModelBinder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ArrayModelBinder`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ArrayModelBinder`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrReplaceCollection">
+      <MemberSignature Language="C#" Value="protected override bool CreateOrReplaceCollection (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext, System.Collections.Generic.IList&lt;TElement&gt; newCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CreateOrReplaceCollection(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Collections.Generic.IList`1&lt;!TElement&gt; newCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ArrayModelBinder`1.CreateOrReplaceCollection(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Collections.Generic.IList{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
+        <Parameter Name="newCollection" Type="System.Collections.Generic.IList&lt;TElement&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <param name="newCollection">The new collection.</param>
+        <summary>Converts the collection to an array.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,231 @@
+<Type Name="SqlTypesSchemaImporterExtensionHelper" FullName="System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper">
+  <TypeSignature Language="C#" Value="public class SqlTypesSchemaImporterExtensionHelper : System.Xml.Serialization.Advanced.SchemaImporterExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlTypesSchemaImporterExtensionHelper extends System.Xml.Serialization.Advanced.SchemaImporterExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Serialization.Advanced.SchemaImporterExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTypesSchemaImporterExtensionHelper (string name, string destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="destinationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name as a string.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTypesSchemaImporterExtensionHelper (string name, string destinationType, bool direct);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string destinationType, bool direct) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="destinationType" Type="System.String" />
+        <Parameter Name="direct" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name as a string.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <param name="direct">A Boolean.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTypesSchemaImporterExtensionHelper (string name, string targetNamespace, string[] references, System.CodeDom.CodeNamespaceImport[] namespaceImports, string destinationType, bool direct);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string targetNamespace, string[] references, class System.CodeDom.CodeNamespaceImport[] namespaceImports, string destinationType, bool direct) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String,System.String[],System.CodeDom.CodeNamespaceImport[],System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="targetNamespace" Type="System.String" />
+        <Parameter Name="references" Type="System.String[]" />
+        <Parameter Name="namespaceImports" Type="System.CodeDom.CodeNamespaceImport[]" />
+        <Parameter Name="destinationType" Type="System.String" />
+        <Parameter Name="direct" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name as a string.</param>
+        <param name="targetNamespace">The target namespace.</param>
+        <param name="references">String array of references.</param>
+        <param name="namespaceImports">Array of CodeNamespaceImport objects.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <param name="direct">A Boolean for direct.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportSchemaType">
+      <MemberSignature Language="C#" Value="public override string ImportSchemaType (System.Xml.Schema.XmlSchemaType type, System.Xml.Schema.XmlSchemaObject context, System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.XmlSchemaImporter importer, System.CodeDom.CodeCompileUnit compileUnit, System.CodeDom.CodeNamespace mainNamespace, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ImportSchemaType(class System.Xml.Schema.XmlSchemaType type, class System.Xml.Schema.XmlSchemaObject context, class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.XmlSchemaImporter importer, class System.CodeDom.CodeCompileUnit compileUnit, class System.CodeDom.CodeNamespace mainNamespace, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.ImportSchemaType(System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Xml.Schema.XmlSchemaType" />
+        <Parameter Name="context" Type="System.Xml.Schema.XmlSchemaObject" />
+        <Parameter Name="schemas" Type="System.Xml.Serialization.XmlSchemas" />
+        <Parameter Name="importer" Type="System.Xml.Serialization.XmlSchemaImporter" />
+        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
+        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" />
+        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+          <c>type</c>
+        </param>
+        <param name="context">
+          <c>context</c>
+        </param>
+        <param name="schemas">
+          <c>schemas</c>
+        </param>
+        <param name="importer">
+          <c>importer</c>
+        </param>
+        <param name="compileUnit">
+          <c>compileUnit</c>
+        </param>
+        <param name="mainNamespace">
+          <c>mainNamespace</c>
+        </param>
+        <param name="options">
+          <c>options</c>
+        </param>
+        <param name="codeProvider">
+          <c>codeProvider</c>
+        </param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportSchemaType">
+      <MemberSignature Language="C#" Value="public override string ImportSchemaType (string name, string xmlNamespace, System.Xml.Schema.XmlSchemaObject context, System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.XmlSchemaImporter importer, System.CodeDom.CodeCompileUnit compileUnit, System.CodeDom.CodeNamespace mainNamespace, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ImportSchemaType(string name, string xmlNamespace, class System.Xml.Schema.XmlSchemaObject context, class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.XmlSchemaImporter importer, class System.CodeDom.CodeCompileUnit compileUnit, class System.CodeDom.CodeNamespace mainNamespace, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.ImportSchemaType(System.String,System.String,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="xmlNamespace" Type="System.String" />
+        <Parameter Name="context" Type="System.Xml.Schema.XmlSchemaObject" />
+        <Parameter Name="schemas" Type="System.Xml.Serialization.XmlSchemas" />
+        <Parameter Name="importer" Type="System.Xml.Serialization.XmlSchemaImporter" />
+        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
+        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" />
+        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+          <c>name</c>
+        </param>
+        <param name="xmlNamespace">
+          <c>xmlNamespace</c>
+        </param>
+        <param name="context">
+          <c>context</c>
+        </param>
+        <param name="schemas">
+          <c>schemas</c>
+        </param>
+        <param name="importer">
+          <c>importer</c>
+        </param>
+        <param name="compileUnit">
+          <c>compileUnit</c>
+        </param>
+        <param name="mainNamespace">
+          <c>mainNamespace</c>
+        </param>
+        <param name="options">
+          <c>options</c>
+        </param>
+        <param name="codeProvider">
+          <c>codeProvider</c>
+        </param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlTypesNamespace">
+      <MemberSignature Language="C#" Value="protected static readonly string SqlTypesNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly string SqlTypesNamespace" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.SqlTypesNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

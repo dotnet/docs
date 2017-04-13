@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "event logs, changing output location"
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

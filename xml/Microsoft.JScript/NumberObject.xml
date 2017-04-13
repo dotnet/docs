@@ -1,0 +1,58 @@
+<Type Name="NumberObject" FullName="Microsoft.JScript.NumberObject">
+  <TypeSignature Language="C#" Value="public class NumberObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumberObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a number object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected NumberObject (Microsoft.JScript.ScriptObject parent, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberObject.#ctor(Microsoft.JScript.ScriptObject,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.JScript.ScriptObject" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent of the object.</param>
+        <param name="value">The underlying value that the class represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NumberObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberObject.GetType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the type of the underlying value object, or returns <see cref="T:Microsoft.JScript.NumberObject" />.</summary>
+        <returns>The type of the underlying value object, or <see cref="T:Microsoft.JScript.NumberObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

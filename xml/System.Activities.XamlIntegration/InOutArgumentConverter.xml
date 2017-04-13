@@ -1,0 +1,52 @@
+<Type Name="InOutArgumentConverter" FullName="System.Activities.XamlIntegration.InOutArgumentConverter">
+  <TypeSignature Language="C#" Value="public sealed class InOutArgumentConverter : System.Activities.XamlIntegration.TypeConverterBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InOutArgumentConverter extends System.Activities.XamlIntegration.TypeConverterBase" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.InOutArgumentConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.XamlIntegration.TypeConverterBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type converter to convert <see cref="T:System.Activities.InOutArgument" /> classes to and from various other representations.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InOutArgumentConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.InOutArgumentConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InOutArgumentConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InOutArgumentConverter (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.InOutArgumentConverter.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the associated <see cref="T:System.Activities.InOutArgument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InOutArgumentConverter" /> class using the specified type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

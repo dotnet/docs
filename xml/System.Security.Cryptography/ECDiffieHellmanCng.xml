@@ -1,0 +1,967 @@
+<Type Name="ECDiffieHellmanCng" FullName="System.Security.Cryptography.ECDiffieHellmanCng">
+  <TypeSignature Language="C#" Value="public sealed class ECDiffieHellmanCng : System.Security.Cryptography.ECDiffieHellman" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ECDiffieHellmanCng extends System.Security.Cryptography.ECDiffieHellman" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDiffieHellmanCng" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.ECDiffieHellman</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a Cryptography Next Generation (CNG) implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm. This class is used to perform cryptographic operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng> class enables two parties to exchange private key material even if they are communicating through a public channel.  Both parties can calculate the same secret value, which is referred to as the *secret agreement* in the managed Diffie-Hellman classes. The secret agreement can then be used for a variety of purposes, including as a symmetric key. However, instead of exposing the secret agreement directly, the <xref:System.Security.Cryptography.ECDiffieHellmanCng> class does some post-processing on the agreement before providing the value. This post processing is referred to as the *key derivation function (KDF)*; you can select which KDF you want to use and set its parameters through a set of properties on the instance of the Diffie-Hellman object.  
+  
+|Key derivation function|Properties|  
+|-----------------------------|----------------|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A> - An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A>- An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.Label%2A> - The label for key derivation.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.Seed%2A> - The seed for key derivation.|  
+  
+ The result of passing the secret agreement through the key derivation function is a byte array that may be used as key material for your application. The number of bytes of key material generated is dependent on the key derivation function; for example, SHA-256 will generate 256 bits of key material, whereas SHA-512 will generate 512 bits of key material.The basic flow of an ECDH key exchange is as follows:  
+  
+1.  Alice and Bob create a key pair to use for the Diffie-Hellman key exchange operation  
+  
+2.  Alice and Bob configure the KDF using parameters the agree on.  
+  
+3.  Alice sends Bob her public key.  
+  
+4.  Bob sends Alice his public key.  
+  
+5.  Alice and Bob use each other's public keys to generate the secret agreement, and apply the KDF to the secret agreement to generate key material.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.ECDiffieHellmanCng> class to establish a key exchange and how to use that key to encrypt a message that can be sent over a public channel and decrypted by the receiver.  
+  
+ [!code-csharp[ECDiffieHellmanCng#1](~/samples/snippets/csharp/VS_Snippets_CLR/ecdiffiehellmancng/cs/program.cs#1)]
+ [!code-vb[ECDiffieHellmanCng#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ecdiffiehellmancng/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ECDiffieHellmanCng ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class with a random key pair.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The random key pair has a default public key length of 521 bits.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ECDiffieHellmanCng (int keySize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 keySize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keySize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="keySize">The size of the key. Valid key sizes are 256, 384, and 521 bits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class with a random key pair, using the specified key size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The random key pair will have the public key length defined by the `keySize` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keySize" /> specifies an invalid length.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ECDiffieHellmanCng (System.Security.Cryptography.CngKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.CngKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.#ctor(System.Security.Cryptography.CngKey)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="key" Type="System.Security.Cryptography.CngKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key that will be used as input to the cryptographic operations performed by the current object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class by using the specified <see cref="T:System.Security.Cryptography.CngKey" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> does not specify an Elliptic Curve Diffie-Hellman (ECDH) algorithm group.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ECDiffieHellmanCng (System.Security.Cryptography.ECCurve curve);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.ECCurve curve) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.#ctor(System.Security.Cryptography.ECCurve)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
+      </Parameters>
+      <Docs>
+        <param name="curve">The curve used to generate the public/private key pair.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class whose public/private key pair is generated over the specified curve.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="curve" /> does not validate.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveKeyFromHash">
+      <MemberSignature Language="C#" Value="public override byte[] DeriveKeyFromHash (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, byte[] secretPrepend, byte[] secretAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DeriveKeyFromHash(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, unsigned int8[] secretPrepend, unsigned int8[] secretAppend) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyFromHash(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">The other party's public key.</param>
+        <param name="hashAlgorithm">The hash algorithm  to use to derive the key material.</param>
+        <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
+        <param name="secretAppend">A value to append to the derived secret before hashing.</param>
+        <summary>Derives bytes that can be used as a key using a hash function, given another party's public key, hash algorithm's name, a prepend value and an append value.</summary>
+        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of `secretPrepend` or `secretAppend` is `null`, they are treated as empty arrays.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an ECDH key, or it is not the correct size.  
+  
+ -or-  
+  
+ <paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveKeyFromHmac">
+      <MemberSignature Language="C#" Value="public override byte[] DeriveKeyFromHmac (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, byte[] hmacKey, byte[] secretPrepend, byte[] secretAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DeriveKeyFromHmac(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, unsigned int8[] hmacKey, unsigned int8[] secretPrepend, unsigned int8[] secretAppend) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyFromHmac(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="hmacKey" Type="System.Byte[]" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">The other party's public key.</param>
+        <param name="hashAlgorithm">The hash algorithm to use to derive the key material.</param>
+        <param name="hmacKey">The key for the HMAC.</param>
+        <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
+        <param name="secretAppend">A value to append to the derived secret before hashing.</param>
+        <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
+        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of `secretPrepend` or `secretAppend` is `null`, they are treated as empty arrays. If the value of `hmacKey` is `null`, the result of the Elliptic Curve Diffie-Hellman (ECDH) algorithm will be used as the HMAC key.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an ECDH key, or it is not the correct size.  
+  
+ -or-  
+  
+ <paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveKeyMaterial">
+      <MemberSignature Language="C#" Value="public byte[] DeriveKeyMaterial (System.Security.Cryptography.CngKey otherPartyPublicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DeriveKeyMaterial(class System.Security.Cryptography.CngKey otherPartyPublicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial(System.Security.Cryptography.CngKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.CngKey" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">An object that contains the public part of the Elliptic Curve Diffie-Hellman (ECDH) key from the other party in the key exchange.</param>
+        <summary>Derives the key material that is generated from the secret agreement between two parties, given a <see cref="T:System.Security.Cryptography.CngKey" /> object that contains the second party's public key.</summary>
+        <returns>A byte array that contains the key material. This information is generated from the secret agreement that is calculated from the current object's private key and the specified public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is invalid. Either its <see cref="P:System.Security.Cryptography.CngKey.AlgorithmGroup" /> property does not specify <see cref="P:System.Security.Cryptography.CngAlgorithmGroup.ECDiffieHellman" /> or its key size does not match the key size of this instance.</exception>
+        <exception cref="T:System.InvalidOperationException">This object's <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction" /> property specifies the <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" /> key derivation function, but either <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Label" /> or <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Seed" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveKeyMaterial">
+      <MemberSignature Language="C#" Value="public override byte[] DeriveKeyMaterial (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DeriveKeyMaterial(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial(System.Security.Cryptography.ECDiffieHellmanPublicKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">The public key from the other party in the key exchange.</param>
+        <summary>Derives the key material that is generated from the secret agreement between two parties, given an <see cref="T:System.Security.Cryptography.ECDiffieHellmanPublicKey" /> object that contains the second party's public key.</summary>
+        <returns>A byte array that contains the key material. This information is generated from the secret agreement that is calculated from the current object's private key and the specified public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> key.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveKeyTls">
+      <MemberSignature Language="C#" Value="public override byte[] DeriveKeyTls (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, byte[] prfLabel, byte[] prfSeed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DeriveKeyTls(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey, unsigned int8[] prfLabel, unsigned int8[] prfSeed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyTls(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="prfLabel" Type="System.Byte[]" />
+        <Parameter Name="prfSeed" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">The other party's public key.</param>
+        <param name="prfLabel">The ASCII-encoded PRF label.</param>
+        <param name="prfSeed">The 64-byte PRF seed.</param>
+        <summary>Derives bytes that can be used as a key using a Transport Layer Security (TLS) Pseudo-Random Function (PRF) derivation algorithm.</summary>
+        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="prfLabel" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="prfSeed" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an ECDH key, or it is not the correct size.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="prfSeed" /> is not exactly 64 bytes in length.  
+  
+ -or-  
+  
+ All other cryptographic errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveSecretAgreementHandle">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle (System.Security.Cryptography.CngKey otherPartyPublicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle(class System.Security.Cryptography.CngKey otherPartyPublicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveSecretAgreementHandle(System.Security.Cryptography.CngKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.CngKey" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">An object that contains the public part of the Elliptic Curve Diffie-Hellman (ECDH) key from the other party in the key exchange.</param>
+        <summary>Gets a handle to the secret agreement generated between two parties, given a <see cref="T:System.Security.Cryptography.CngKey" /> object that contains the second party's public key.</summary>
+        <returns>A handle to the secret agreement. This information is calculated from the current object's private key and the specified public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an ECDH key, or it is not the correct size.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DeriveSecretAgreementHandle">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveSecretAgreementHandle(System.Security.Cryptography.ECDiffieHellmanPublicKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+      </Parameters>
+      <Docs>
+        <param name="otherPartyPublicKey">The public key from the other party in the key exchange.</param>
+        <summary>Gets a handle to the secret agreement generated between two parties, given an <see cref="T:System.Security.Cryptography.ECDiffieHellmanPublicKey" /> object that contains the second party's public key.</summary>
+        <returns>A handle to the secret agreement. This information is calculated from the current object's private key and the specified public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="otherPartyPublicKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="otherPartyPublicKey" /> is not an <see cref="T:System.Security.Cryptography.ECDiffieHellmanPublicKey" /> key.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportExplicitParameters">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ECParameters ExportExplicitParameters (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Security.Cryptography.ECParameters ExportExplicitParameters(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ExportExplicitParameters(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the key and explicit curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+        <returns>The key and explicit curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Explicit export is not supported by this platform. Windows 10 or higher is required.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportParameters">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ECParameters ExportParameters (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Security.Cryptography.ECParameters ExportParameters(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ExportParameters(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the key used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+        <returns>The key and named curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlString">
+      <MemberSignature Language="C#" Value="public override void FromXmlString (string xmlString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXmlString(string xmlString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlString">The XML-based key information to be deserialized.</param>
+        <summary>This method is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To deserialize an XML key, use the <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString%28System.String%2CSystem.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlString">
+      <MemberSignature Language="C#" Value="public void FromXmlString (string xml, System.Security.Cryptography.ECKeyXmlFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXmlString(string xml, valuetype System.Security.Cryptography.ECKeyXmlFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xml" Type="System.String" />
+        <Parameter Name="format" Type="System.Security.Cryptography.ECKeyXmlFormat" />
+      </Parameters>
+      <Docs>
+        <param name="xml">The XML-based key information to be deserialized.</param>
+        <param name="format">One of the enumeration values that specifies the format of the XML string. The only currently accepted format is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</param>
+        <summary>Deserializes the key information from an XML string by using the specified format.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xml" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="xml" /> is malformed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="format" /> specifies an invalid format. The only accepted value is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public override void GenerateKey (System.Security.Cryptography.ECCurve curve);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey(valuetype System.Security.Cryptography.ECCurve curve) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.GenerateKey(System.Security.Cryptography.ECCurve)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
+      </Parameters>
+      <Docs>
+        <param name="curve">The curve used to generate an ephemeral public/private key pair.</param>
+        <summary>Generates a new ephemeral public/private key pair for the specified curve.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `curve` must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+  
+ Characteristic-2 curves are not supported on Windows.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="curve" /> does not validate.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngAlgorithm HashAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngAlgorithm HashAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hash algorithm to use when generating key material.</summary>
+        <value>An object that specifies the hash algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by Cryptography Next Generation (CNG) objects only if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property.  
+  
+ This property accepts the following algorithms: <xref:System.Security.Cryptography.CngAlgorithm.MD5%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha1%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha384%2A>, and <xref:System.Security.Cryptography.CngAlgorithm.Sha512%2A>.  
+  
+ Other custom hash algorithms may also be used.  
+  
+ The default algorithm is <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is <see langword="null." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HmacKey">
+      <MemberSignature Language="C#" Value="public byte[] HmacKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] HmacKey" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.HmacKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Hash-based Message Authentication Code (HMAC) key to use when deriving key material.</summary>
+        <value>The Hash-based Message Authentication Code (HMAC) key to use when deriving key material.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property applies only when the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property, and the <xref:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey%2A> property is `false`. By default, the value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportParameters">
+      <MemberSignature Language="C#" Value="public override void ImportParameters (System.Security.Cryptography.ECParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ImportParameters(valuetype System.Security.Cryptography.ECParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters(System.Security.Cryptography.ECParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The curve's parameters to import.</param>
+        <summary>Imports the specified parameters for an <see cref="T:System.Security.Cryptography.ECCurve" /> object as a key into the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters%2A> method replaces the existing key that this object is working with by creating a         new <xref:System.Security.Cryptography.CngKey> object. If `parameters` contains only the <xref:System.Security.Cryptography.ECParameters.Q> field, then only a public key is imported.         If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, then a full key pair is be imported.          The `parameter`<xref:System.Security.Cryptography.ECParameters.Curve>value specifies the type of the curve to import.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="parameters" /> does not validate.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="parameters" /> references a curve that cannot be imported..</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <paramref name="parameters" /> references a curve that is not supported by this platform.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngKey Key { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngKey Key" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="T:System.Security.Cryptography.CngKey" /> that is used by the current object for cryptographic operations.</summary>
+        <value>The key pair used by this object to perform cryptographic operations.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDerivationFunction">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction KeyDerivationFunction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction KeyDerivationFunction" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key derivation function for the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class.</summary>
+        <value>One of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction" /> enumeration values: <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash" />, <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac" />, or <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" />. The default value is <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the key derivation function that is used to transform the secret agreement into key material.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The enumeration value is out of range.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public byte[] Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Label" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the label value that is used for key derivation.</summary>
+        <value>The label value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property. By default, it is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKey">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ECDiffieHellmanPublicKey PublicKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.ECDiffieHellmanPublicKey PublicKey" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.PublicKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECDiffieHellmanPublicKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the public key that can be used by another <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> object to generate a shared secret agreement.</summary>
+        <value>The public key that is associated with this instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretAppend">
+      <MemberSignature Language="C#" Value="public byte[] SecretAppend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SecretAppend" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that will be appended to the secret agreement when generating key material.</summary>
+        <value>The value that is appended to the secret agreement.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> key derivation function (KDF) is used. The value is appended to the secret agreement, and the combined value is passed to the KDF to generate the key material. By default, the value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretPrepend">
+      <MemberSignature Language="C#" Value="public byte[] SecretPrepend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SecretPrepend" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that will be added to the beginning of the secret agreement when deriving key material.</summary>
+        <value>The value that is appended to the beginning of the secret agreement during key derivation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to one of the following values:  
+  
+-   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>  
+  
+-   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>  
+  
+ The value is prepended to the secret agreement, and the combined value is passed to the key derivation function (KDF) to generate the key material. By default, the value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seed">
+      <MemberSignature Language="C#" Value="public byte[] Seed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Seed" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.Seed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the seed value that will be used when deriving key material.</summary>
+        <value>The seed value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>. By default, the value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXmlString">
+      <MemberSignature Language="C#" Value="public override string ToXmlString (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToXmlString(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>This method is not implemented.</summary>
+        <returns>Not applicable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To convert the current key to an XML representation, use the <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString%28System.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXmlString">
+      <MemberSignature Language="C#" Value="public string ToXmlString (System.Security.Cryptography.ECKeyXmlFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToXmlString(valuetype System.Security.Cryptography.ECKeyXmlFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Security.Cryptography.ECKeyXmlFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">One of the enumeration values that specifies the format of the XML string. The only currently accepted format is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</param>
+        <summary>Serializes the key information to an XML string by using the specified format.</summary>
+        <returns>A string object that contains the key information, serialized to an XML string, according to the requested format.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="format" /> specifies an invalid format. The only accepted value is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSecretAgreementAsHmacKey">
+      <MemberSignature Language="C#" Value="public bool UseSecretAgreementAsHmacKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSecretAgreementAsHmacKey" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the secret agreement is used as a Hash-based Message Authentication Code (HMAC) key to derive key material.</summary>
+        <value>
+          <see langword="true" /> if the secret agreement is used as an HMAC key to derive key material; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>. By default, the value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="DeriveKeyMaterial">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives the key material that is generated from the secret agreement between two parties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Elliptic Curve Diffie-Hellman (ECDH) algorithm accepts the private key and the other party’s public key as input, and produces the secret agreement as output. The key derivation function (KDF) then takes the secret agreement and produces the key material as output.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveSecretAgreementHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a handle to the secret agreement generated between two parties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng.DeriveSecretAgreementHandle%2A> method overloads are for advanced users who need a handle to the raw secret agreement instead of the key material. The secret agreement handle can be used in platform invoke calls to perform any work that is not wrapped by the <xref:System.Security.Cryptography.ECDiffieHellmanCng> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

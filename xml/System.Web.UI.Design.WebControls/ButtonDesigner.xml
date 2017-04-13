@@ -1,0 +1,108 @@
+<Type Name="ButtonDesigner" FullName="System.Web.UI.Design.WebControls.ButtonDesigner">
+  <TypeSignature Language="C#" Value="public class ButtonDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ButtonDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ButtonDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used to provide design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Button" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.Button> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to extend the <xref:System.Web.UI.Design.WebControls.ButtonDesigner> class. The second demonstrates how to extend the <xref:System.Web.UI.WebControls.Button> class and associate it with the class that is created in the first code example.  
+  
+ The following code example shows how to create a custom designer class that extends the <xref:System.Web.UI.Design.WebControls.ButtonDesigner> class and overrides the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has not been set previously (that is, it has the <xref:System.Web.UI.WebControls.BorderStyle> field value), a call to the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method sets it to a blue-dashed border with a width of three pixels, and then displays that border on the design surface. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has been set, the existing border property values are displayed.  
+  
+ Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method of the associated control to generate the markup.  
+  
+ [!code-vb[System.Web.UI.Design.WebControls_ButtonDesignerSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_ButtonDesignerSamples/VB/custombutton.vb#1)]  
+  
+ The following code example shows how to use a simple class that extends the <xref:System.Web.UI.WebControls.Button> class and is associated with the `SampleButtonDesigner` class, created in the preceding example, through the <xref:System.ComponentModel.DesignerAttribute> object.  
+  
+ [!code-vb[System.Web.UI.Design.WebControls_ButtonDesignerSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_ButtonDesignerSamples/VB/custombutton.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ButtonDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ButtonDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ButtonDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ButtonDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.Button> control or a copy of that control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the markup that is used to render the associated control at design time.</summary>
+        <returns>A <see cref="T:System.String" /> containing the markup used to render the <see cref="T:System.Web.UI.WebControls.Button" /> at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method replaces the <xref:System.Web.UI.WebControls.Button.Text%2A> property with the <xref:System.Web.UI.Control.ID%2A> property of the <xref:System.Web.UI.WebControls.Button> control if the <xref:System.Web.UI.WebControls.Button.Text%2A> contains no displayable characters. Then, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method to generate the markup.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method to change the generated markup.  
+  
+ If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has not been set previously (that is, it has the <xref:System.Web.UI.WebControls.BorderStyle> field value), a call to the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method sets it to a blue-dashed border with a width of three pixels, and then displays that border on the design surface. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has been set, the existing border property values are displayed.  
+  
+ Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method of the associated control to generate the markup.  
+  
+ [!code-vb[System.Web.UI.Design.WebControls_ButtonDesignerSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_ButtonDesignerSamples/VB/custombutton.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml" /> method, typically you will modify selected property values, then call the base method to generate the markup, and then restore the properties to their original values.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

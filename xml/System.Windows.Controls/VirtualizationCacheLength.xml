@@ -1,0 +1,292 @@
+<Type Name="VirtualizationCacheLength" FullName="System.Windows.Controls.VirtualizationCacheLength">
+  <TypeSignature Language="C#" Value="public struct VirtualizationCacheLength : IEquatable&lt;System.Windows.Controls.VirtualizationCacheLength&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit VirtualizationCacheLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Controls.VirtualizationCacheLength&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizationCacheLength" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Controls.VirtualizationCacheLength&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Controls.VirtualizationCacheLengthConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the measurements for the <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> attached property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=fullName> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a <xref:System.Windows.Controls.VirtualizationCacheLength> by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VirtualizationCacheLength (double cacheBeforeAndAfterViewport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 cacheBeforeAndAfterViewport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cacheBeforeAndAfterViewport" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="cacheBeforeAndAfterViewport">The size of the cache before and after the viewport.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> class with a uniform cache length for each side of the viewport.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VirtualizationCacheLength (double cacheBeforeViewport, double cacheAfterViewport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 cacheBeforeViewport, float64 cacheAfterViewport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cacheBeforeViewport" Type="System.Double" />
+        <Parameter Name="cacheAfterViewport" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="cacheBeforeViewport">The size of the cache before the viewport.</param>
+        <param name="cacheAfterViewport">The size of the cache after the viewport.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> class with the specified cache lengths for each side of the viewport.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheAfterViewport">
+      <MemberSignature Language="C#" Value="public double CacheAfterViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CacheAfterViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the cache before the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</summary>
+        <value>The size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheBeforeViewport">
+      <MemberSignature Language="C#" Value="public double CacheBeforeViewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CacheBeforeViewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</summary>
+        <value>The size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oCompare" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="oCompare">The object to compare with the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.VirtualizationCacheLength cacheLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Controls.VirtualizationCacheLength cacheLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.Equals(System.Windows.Controls.VirtualizationCacheLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cacheLength" Type="System.Windows.Controls.VirtualizationCacheLength" />
+      </Parameters>
+      <Docs>
+        <param name="cacheLength">The object to compare with the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.VirtualizationCacheLength cl1, valuetype System.Windows.Controls.VirtualizationCacheLength cl2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.op_Equality(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cl1" Type="System.Windows.Controls.VirtualizationCacheLength" />
+        <Parameter Name="cl2" Type="System.Windows.Controls.VirtualizationCacheLength" />
+      </Parameters>
+      <Docs>
+        <param name="cl1">The first object to compare.</param>
+        <param name="cl2">The second object to compare.</param>
+        <summary>Determines whether the two specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.VirtualizationCacheLength cl1, valuetype System.Windows.Controls.VirtualizationCacheLength cl2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.op_Inequality(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cl1" Type="System.Windows.Controls.VirtualizationCacheLength" />
+        <Parameter Name="cl2" Type="System.Windows.Controls.VirtualizationCacheLength" />
+      </Parameters>
+      <Docs>
+        <param name="cl1">The first object to compare.</param>
+        <param name="cl2">The second object to compare.</param>
+        <summary>Determines whether the two specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.VirtualizationCacheLength.ToString%2A> method returns a string that displays the values of the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

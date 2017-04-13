@@ -1,0 +1,78 @@
+<Type Name="ITokenColorInfo" FullName="Microsoft.JScript.ITokenColorInfo">
+  <TypeSignature Language="C#" Value="public interface ITokenColorInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITokenColorInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ITokenColorInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0F20D5C8-CBDB-4b64-AB7F-10B158407323")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines properties for coloring specific units of code.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.TokenColor Color { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.JScript.TokenColor Color" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a class, gets the color that should be used to show a unit of code.</summary>
+        <value>The color that should be used to show the unit of code.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPosition">
+      <MemberSignature Language="C#" Value="public int EndPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.EndPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a class, gets the position where a unit of code ends.</summary>
+        <value>The position where the unit of code ends.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPosition">
+      <MemberSignature Language="C#" Value="public int StartPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.StartPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a class, gets the position where a unit of code starts.</summary>
+        <value>The position where the unit of code starts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

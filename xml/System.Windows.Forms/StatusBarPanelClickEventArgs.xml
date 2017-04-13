@@ -1,0 +1,97 @@
+<Type Name="StatusBarPanelClickEventArgs" FullName="System.Windows.Forms.StatusBarPanelClickEventArgs">
+  <TypeSignature Language="C#" Value="public class StatusBarPanelClickEventArgs : System.Windows.Forms.MouseEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarPanelClickEventArgs extends System.Windows.Forms.MouseEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.MouseEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.StatusBar.PanelClick" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBar.PanelClick> event occurs when the user clicks a panel on the <xref:System.Windows.Forms.StatusBar>. A <xref:System.Windows.Forms.StatusBarPanelClickEventArgs> specifies which <xref:System.Windows.Forms.StatusBarPanel> was clicked, the mouse button that was pressed, how many times it was pressed, and the coordinates of the mouse click at the time the <xref:System.Windows.Forms.StatusBarPanel> was clicked. You can use the data provided by this class in an event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event to perform tasks related to the <xref:System.Windows.Forms.StatusBarPanel> being clicked. For example, if a <xref:System.Windows.Forms.StatusBarPanel> is used to display the time, you could create an event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event and use data provided by this class to display a dialog box that allows you to modify the date and time on the system.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.StatusBar.PanelClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.StatusBar> named `StatusBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#552](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#552)]
+ [!code-vb[System.Windows.Forms.EventExamples#552](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#552)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBarPanelClickEventArgs (System.Windows.Forms.StatusBarPanel statusBarPanel, System.Windows.Forms.MouseButtons button, int clicks, int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.StatusBarPanel statusBarPanel, valuetype System.Windows.Forms.MouseButtons button, int32 clicks, int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanelClickEventArgs.#ctor(System.Windows.Forms.StatusBarPanel,System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="statusBarPanel" Type="System.Windows.Forms.StatusBarPanel" />
+        <Parameter Name="button" Type="System.Windows.Forms.MouseButtons" />
+        <Parameter Name="clicks" Type="System.Int32" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="statusBarPanel">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel that was clicked.</param>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that represents the mouse buttons that were clicked while over the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
+        <param name="clicks">The number of times that the mouse button was clicked.</param>
+        <param name="x">The x-coordinate of the mouse click.</param>
+        <param name="y">The y-coordinate of the mouse click.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusBarPanel">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBarPanel StatusBarPanel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBarPanel StatusBarPanel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanelClickEventArgs.StatusBarPanel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</summary>
+        <value>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBarPanelClickEventArgs.StatusBarPanel%2A> property enables you to obtain the <xref:System.Windows.Forms.StatusBarPanel> that was clicked. You can use this within the event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event of a <xref:System.Windows.Forms.StatusBar> control to perform tasks such as displaying custom dialog boxes when a <xref:System.Windows.Forms.StatusBarPanel> within a <xref:System.Windows.Forms.StatusBar> control is clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.StatusBar.PanelClick?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.StatusBar> named `StatusBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.StatusBar.PanelClick?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#552](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#552)]
+ [!code-vb[System.Windows.Forms.EventExamples#552](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#552)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

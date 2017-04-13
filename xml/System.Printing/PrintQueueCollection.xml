@@ -1,0 +1,260 @@
+<Type Name="PrintQueueCollection" FullName="System.Printing.PrintQueueCollection">
+  <TypeSignature Language="C#" Value="public class PrintQueueCollection : System.Printing.PrintSystemObjects, IDisposable, System.Collections.Generic.IEnumerable&lt;System.Printing.PrintQueue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi PrintQueueCollection extends System.Printing.PrintSystemObjects implements class System.Collections.Generic.IEnumerable`1&lt;class System.Printing.PrintQueue&gt;, class System.Collections.IEnumerable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.PrintSystemObjects</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Printing.PrintQueue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Printing.PrintQueue" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this collection to test a printer's capabilities and configure a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueCollection (System.Printing.PrintServer printServer, string[] propertyFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string[] propertyFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.#ctor(System.Printing.PrintServer,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="printServer" Type="System.Printing.PrintServer" />
+        <Parameter Name="propertyFilter" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="printServer">The print server that hosts the collection.</param>
+        <param name="propertyFilter">The properties of the collection members that are initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueCollection" /> class for the specified <see cref="T:System.Printing.PrintServer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only the properties that are listed in the string array are initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueCollection (System.Printing.PrintServer printServer, string[] propertyFilter, System.Printing.EnumeratedPrintQueueTypes[] enumerationFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string[] propertyFilter, valuetype System.Printing.EnumeratedPrintQueueTypes[] enumerationFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.#ctor(System.Printing.PrintServer,System.String[],System.Printing.EnumeratedPrintQueueTypes[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="printServer" Type="System.Printing.PrintServer" />
+        <Parameter Name="propertyFilter" Type="System.String[]" />
+        <Parameter Name="enumerationFlag" Type="System.Printing.EnumeratedPrintQueueTypes[]" />
+      </Parameters>
+      <Docs>
+        <param name="printServer">The print server that hosts the collection.</param>
+        <param name="propertyFilter">The properties of the collection members that are initialized.</param>
+        <param name="enumerationFlag">An array that specifies the types of print queues that are included in the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueCollection" /> class for the specified <see cref="T:System.Printing.PrintServer" />, containing only the print server's queues of the specified <see cref="T:System.Printing.EnumeratedPrintQueueTypes" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only the properties that are listed in the string array are initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Printing.PrintQueue printObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Printing.PrintQueue printObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.Add(System.Printing.PrintQueue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printObject" Type="System.Printing.PrintQueue" />
+      </Parameters>
+      <Docs>
+        <param name="printObject">The print queue that is added.</param>
+        <summary>Adds a <see cref="T:System.Printing.PrintQueue" /> to the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool A_0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="A_0" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="A_0">To be added.</param>
+        <summary>Releases the unmanaged resources that are being used by the <see cref="T:System.Printing.PrintQueueCollection" />, and optionally releases the managed resources that are being used.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the unnamed Boolean parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the parameter set to `false`.  
+  
+ When the Boolean parameter is `true`, this method releases all resources that are held by any managed objects that this <xref:System.Printing.PrintQueueCollection> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerator&lt;System.Printing.PrintQueue&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Printing.PrintQueue&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Printing.PrintQueue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object that implements the generic <see cref="T:System.Collections.IEnumerator" /> interface that has been closed with <see cref="T:System.Printing.PrintQueue" />.</summary>
+        <returns>An object that implements the generic <see cref="T:System.Collections.IEnumerator" /> and that can iterate through the <see cref="T:System.Printing.PrintQueue" /> objects that the <see cref="T:System.Printing.PrintQueueCollection" /> contains.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you use the `foreach` statement to iterate through all members of the collection. Use <xref:System.Printing.PrintQueueCollection.GetEnumerator%2A> only when you need to customize iteration, such as by skipping every other member.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to test a printer's capabilities and configure a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNonGenericEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetNonGenericEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetNonGenericEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.GetNonGenericEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an object that implements the non-generic <see cref="T:System.Collections.IEnumerator" /> interface.</summary>
+        <returns>An object that implements the non-generic <see cref="T:System.Collections.IEnumerator" /> and that can iterate through the <see cref="T:System.Printing.PrintQueue" /> objects that the <see cref="T:System.Printing.PrintQueueCollection" /> contains.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you use the `foreach` statement to iterate through all members of the collection. Use your own enumerator object only when you need to customize iteration, such as by skipping every other member.  
+  
+ If you need your own enumerator, we recommend that you use the generic, type-safe function <xref:System.Printing.PrintQueueCollection.GetEnumerator%2A> instead of <xref:System.Printing.PrintQueueCollection.GetNonGenericEnumerator%2A>. The <xref:System.Printing.PrintQueueCollection.GetNonGenericEnumerator%2A> is public only to fulfill the requirements of the <xref:System.Collections.IEnumerable> interface, which is implemented by this collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public static object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Printing.PrintQueueCollection" />.</summary>
+        <value>A <see cref="T:System.Object" /> that can be used to synchronize access to the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

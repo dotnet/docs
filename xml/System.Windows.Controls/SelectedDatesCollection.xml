@@ -1,0 +1,171 @@
+<Type Name="SelectedDatesCollection" FullName="System.Windows.Controls.SelectedDatesCollection">
+  <TypeSignature Language="C#" Value="public sealed class SelectedDatesCollection : System.Collections.ObjectModel.ObservableCollection&lt;DateTime&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SelectedDatesCollection extends System.Collections.ObjectModel.ObservableCollection`1&lt;valuetype System.DateTime&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedDatesCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ObservableCollection&lt;System.DateTime&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.DateTime</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of selected dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dates can be added to the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property of a <xref:System.Windows.Controls.Calendar>. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A?displayProperty=fullName> property, adding a date or a range to the <xref:System.Windows.Controls.SelectedDatesCollection> may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
+  
+|CalendarSelectionMode|Effect on SelectedDates|  
+|---------------------------|-----------------------------|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|No selections are allowed. <xref:System.Windows.Controls.Calendar.SelectedDate%2A> cannot be set and no values can be added to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|Only a single date can be selected, either by setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> or the first value in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> cannot be used.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|A single range of dates can be selected. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A>, adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will clear all previous values from <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|Multiple non-contiguous ranges of dates can be selected. Adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A> or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will not clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> will still clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, but additional dates or ranges can then be added. Adding a range that includes some dates that are already selected or overlaps with another range results in the union of the ranges and does not cause an exception.|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
+  
+ [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+ [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+ [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectedDatesCollection (System.Windows.Controls.Calendar owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Calendar owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.#ctor(System.Windows.Controls.Calendar)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Calendar" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Controls.Calendar" /> associated with this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectedDatesCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (DateTime start, DateTime end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(valuetype System.DateTime start, valuetype System.DateTime end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.AddRange(System.DateTime,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.DateTime" />
+        <Parameter Name="end" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="start">The first date to add to the collection.</param>
+        <param name="end">The last date to add to the collection.</param>
+        <summary>Adds all the dates in the specified range, which includes the first and last dates, to the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, DateTime item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, valuetype System.DateTime item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.InsertItem(System.Int32,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, DateTime item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, valuetype System.DateTime item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.SetItem(System.Int32,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,236 @@
+<Type Name="SynchronizationScopeActivity" FullName="System.Workflow.ComponentModel.SynchronizationScopeActivity">
+  <TypeSignature Language="C#" Value="public sealed class SynchronizationScopeActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SynchronizationScopeActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.CompositeActivity</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.ComponentModel.Design.SequenceDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.ComponentModel.SynchronizationScopeActivity), "Resources.Sequence.png")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a section of workflow that requires controlled access to shared variables.  If two or more instances of a <see cref="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" /> access the same variables, then the execution of these activities is effectively serialized. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SynchronizationScopeActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates creating a new instance of a <xref:System.Workflow.ComponentModel.SynchronizationScopeActivity> object.  This example is from the Nested Exception Handlers SDK sample.  For more information, see [Nested Exception Handlers Sample](http://msdn.microsoft.com/en-us/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
+  
+ [!code-csharp[WF_Samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
+ [!code-vb[WF_Samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SynchronizationScopeActivity (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" /> class using the name of the activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Cancel (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Cancel(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityChangeRemove">
+      <MemberSignature Language="C#" Value="protected override void OnActivityChangeRemove (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity removedActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnActivityChangeRemove(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Workflow.ComponentModel.Activity removedActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+        <Parameter Name="removedActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">To be added.</param>
+        <param name="removedActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWorkflowChangesCompleted">
+      <MemberSignature Language="C#" Value="protected override void OnWorkflowChangesCompleted (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnWorkflowChangesCompleted(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SynchronizationHandles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; SynchronizationHandles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; SynchronizationHandles" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.SynchronizationScopeActivity.SynchronizationHandles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.SynchronizationHandlesEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.SynchronizationHandlesTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of strings that represents handles that determine the synchronization behavior of this <see cref="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" />. When two or more <see cref="T:System.Workflow.ComponentModel.SynchronizationScopeActivity" /> activities share a synchronization handle, they execute in a serial fashion; there is no interleaved execution of the child activities within them.</summary>
+        <value>A multiline string that contains synchronization handles for this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates setting the SynchronizationHandles property.  This example is from the Nested Exception Handlers SDK sample.  For more information, see [Nested Exception Handlers Sample](http://msdn.microsoft.com/en-us/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
+  
+ [!code-csharp[WF_Samples#163](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#163)]
+ [!code-vb[WF_Samples#163](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#163)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent">
+      <MemberSignature Language="C#" Value="void IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;.OnEvent (object sender, System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent(object sender, class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SynchronizationScopeActivity.System#Workflow#ComponentModel#IActivityEventListener&lt;System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs&gt;#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

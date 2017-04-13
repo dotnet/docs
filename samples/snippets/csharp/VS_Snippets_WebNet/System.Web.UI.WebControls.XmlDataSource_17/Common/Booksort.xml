@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bookstore xmlns:bk="urn:samples">
+  <book genre="novel" publicationdate="1997" bk:ISBN="1-861001-57-5">
+    <title>ThisIsATest</title>
+    <author>
+      <first-name>Jane</first-name>
+      <last-name>Austen</last-name>
+    </author>
+    <price>24.95</price>
+    </book>
+  <book genre="novel" publicationdate="1992" bk:ISBN="1-861002-30-1">
+    <title>The Handmaid's Tale</title>
+    <author>Atwood</author>
+    <price>29.95</price>
+  </book>
+</bookstore>

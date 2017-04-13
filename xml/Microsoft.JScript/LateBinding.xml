@@ -1,0 +1,336 @@
+<Type Name="LateBinding" FullName="Microsoft.JScript.LateBinding">
+  <TypeSignature Language="C#" Value="public sealed class LateBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LateBinding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LateBinding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at run time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LateBinding (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A string that identifies the binding reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LateBinding (string name, object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">A string that identifies the binding reference.</param>
+        <param name="obj">The object that the binding reference is defined on.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier and object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="public object Call (object[] arguments, bool construct, bool brackets, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Call(object[] arguments, bool construct, bool brackets, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.Call(System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Object[]" />
+        <Parameter Name="construct" Type="System.Boolean" />
+        <Parameter Name="brackets" Type="System.Boolean" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">The arguments to pass to the member.</param>
+        <param name="construct">
+          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
+        <param name="brackets">
+          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Resolves the binding reference by calling a member.</summary>
+        <returns>The return value of the call to the member.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallValue">
+      <MemberSignature Language="C#" Value="public static object CallValue (object thisob, object val, object[] arguments, bool construct, bool brackets, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CallValue(object thisob, object val, object[] arguments, bool construct, bool brackets, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.CallValue(System.Object,System.Object,System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="val" Type="System.Object" />
+        <Parameter Name="arguments" Type="System.Object[]" />
+        <Parameter Name="construct" Type="System.Boolean" />
+        <Parameter Name="brackets" Type="System.Boolean" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that the binding reference is defined on.</param>
+        <param name="val">Information about the member to call.</param>
+        <param name="arguments">The arguments to pass to the member.</param>
+        <param name="construct">
+          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
+        <param name="brackets">
+          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Resolves the binding reference by calling a member.</summary>
+        <returns>The return value of the call to the member.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallValue2">
+      <MemberSignature Language="C#" Value="public static object CallValue2 (object val, object thisob, object[] arguments, bool construct, bool brackets, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CallValue2(object val, object thisob, object[] arguments, bool construct, bool brackets, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.CallValue2(System.Object,System.Object,System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="val" Type="System.Object" />
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="arguments" Type="System.Object[]" />
+        <Parameter Name="construct" Type="System.Boolean" />
+        <Parameter Name="brackets" Type="System.Boolean" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="val">Information about the member to call.</param>
+        <param name="thisob">The object that the binding reference is defined on.</param>
+        <param name="arguments">The arguments to pass to the member.</param>
+        <param name="construct">
+          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
+        <param name="brackets">
+          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Resolves the binding reference by calling a member.</summary>
+        <returns>The return value of the call to the member.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public bool Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Delete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.Delete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deletes the binding reference member from the object that the binding reference is defined on.</summary>
+        <returns>
+          <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteMember">
+      <MemberSignature Language="C#" Value="public static bool DeleteMember (object obj, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeleteMember(object obj, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.DeleteMember(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to delete from.</param>
+        <param name="name">The member to delete.</param>
+        <summary>Deletes the specified member from the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNonMissingValue">
+      <MemberSignature Language="C#" Value="public object GetNonMissingValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetNonMissingValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.GetNonMissingValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the value of the binding reference, and converts a <see cref="T:Microsoft.JScript.Missing" /> value to null.</summary>
+        <returns>The value of the binding reference; otherwise, null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue2">
+      <MemberSignature Language="C#" Value="public object GetValue2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue2() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.GetValue2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the value of the binding reference, and throws an exception if it cannot be resolved.</summary>
+        <returns>The value of the binding reference.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="obj">
+      <MemberSignature Language="C#" Value="public object obj;" />
+      <MemberSignature Language="ILAsm" Value=".field public object obj" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LateBinding.obj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to the object that the binding reference is defined on.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIndexedPropertyValueStatic">
+      <MemberSignature Language="C#" Value="public static void SetIndexedPropertyValueStatic (object obj, object[] arguments, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIndexedPropertyValueStatic(object obj, object[] arguments, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.SetIndexedPropertyValueStatic(System.Object,System.Object[],System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="arguments" Type="System.Object[]" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that the binding reference is defined on.</param>
+        <param name="arguments">The arguments to pass to the member.</param>
+        <param name="value">The new value of the property.</param>
+        <summary>Sets an indexed property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.SetValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The new value of the property.</param>
+        <summary>Sets a property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

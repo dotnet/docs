@@ -1,0 +1,598 @@
+<Type Name="Cursors" FullName="System.Windows.Forms.Cursors">
+  <TypeSignature Language="C#" Value="public sealed class Cursors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Cursors extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Cursors" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a collection of <see cref="T:System.Windows.Forms.Cursor" /> objects for use by a Windows Forms application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some of the <xref:System.Windows.Forms.Cursor> objects in this class can take on a different appearance than those described. The user can change the cursor appearance by adjusting the mouse pointer settings in their operating system. The panning and no move cursors are static and cannot be changed by the operating system.  
+  
+ The panning and no move cursors are used during mouse wheel operations. Depending on the direction the window can be scrolled, the cursor changes to the appropriate no move cursor when the mouse wheel is clicked. The cursor then changes to the appropriate panning cursor as the mouse is moved.  
+  
+   
+  
+## Examples  
+ The following example demonstrates changing the mouse cursor using the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.Cursor> class, and the <xref:System.Windows.Forms.Cursors> class. The example creates a form that contains a <xref:System.Windows.Forms.ComboBox> control, a <xref:System.Windows.Forms.Panel> control, and a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ComboBox> contains all cursors provided by the <xref:System.Windows.Forms.Cursors> class. When the user selects a mouse cursor in the <xref:System.Windows.Forms.ComboBox>, the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property is set to the selected cursor, which updates the cursor for the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.ListView> is updated every time the <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName> event occurs.  
+  
+ [!code-cpp[System.Windows.Forms.Cursors#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CPP/cursorexample.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursors#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CS/cursorexample.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursors#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursors/VB/cursorexample.vb#1)]  
+  
+ The following example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example assumes that you have a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppStarting">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor AppStarting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor AppStarting" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.AppStarting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears when an application starts.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when an application starts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arrow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Arrow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Arrow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Arrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the arrow cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the arrow cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cross">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Cross { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Cross" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Cross" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the crosshair cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the crosshair cursor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Forms.Cursors> class. To run this example place paste the following code in a form and call the InitializeRadioButtonsAndGroupBox method from the form's constructor or Load method. Ensure all events are connected to their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Default" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default cursor, which is usually an arrow cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the default cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Hand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Hand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Hand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the hand cursor, typically used when hovering over a Web link.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the hand cursor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=fullName> method in a derived class and using the <xref:System.Windows.Forms.Cursors.Hand%2A> property. To run the example, paste the following code in a new form and paste this class, forming the same file, after the form. Add a button of type FunButton to the form.  
+  
+ [!code-cpp[System.Windows.Forms.ControlDefaultProperties#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlDefaultProperties/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ControlDefaultProperties#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlDefaultProperties/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ControlDefaultProperties#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ControlDefaultProperties/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Help { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Help" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Help" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Help cursor, which is a combination of an arrow and a question mark.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the Help cursor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Forms.Cursors> class. To run this example place paste the following code in a form and call the InitializeRadioButtonsAndGroupBox method from the form's constructor or Load method. Ensure all events are connected to their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HSplit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor HSplit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor HSplit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.HSplit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears when the mouse is positioned over a horizontal splitter bar.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when the mouse is positioned over a horizontal splitter bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IBeam">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor IBeam { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor IBeam" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.IBeam" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the I-beam cursor, which is used to show where the text cursor appears when the mouse is clicked.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the I-beam cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor No { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor No" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.No" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that indicates that a particular region is invalid for the current operation.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that indicates that a particular region is invalid for the current operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMove2D">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor NoMove2D { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor NoMove2D" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMove2D" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in both a horizontal and vertical direction.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMoveHoriz">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor NoMoveHoriz { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor NoMoveHoriz" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMoveHoriz" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in a horizontal direction.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMoveVert">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor NoMoveVert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor NoMoveVert" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMoveVert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in a vertical direction.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanEast">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanEast { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanEast" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanEast" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the right.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the right.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanNE">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanNE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanNE" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the right.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the right.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanNorth">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanNorth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanNorth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNorth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in an upward direction.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in an upward direction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanNW">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanNW { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanNW" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNW" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the left.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the left.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanSE">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanSE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanSE" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the right.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the right.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanSouth">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanSouth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanSouth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSouth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in a downward direction.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in a downward direction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanSW">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanSW { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanSW" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSW" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the left.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the left.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanWest">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor PanWest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor PanWest" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanWest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the left.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the left.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeAll">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor SizeAll { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor SizeAll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeAll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the four-headed sizing cursor, which consists of four joined arrows that point north, south, east, and west.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the four-headed sizing cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeNESW">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor SizeNESW { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor SizeNESW" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNESW" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the two-headed diagonal (northeast/southwest) sizing cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents two-headed diagonal (northeast/southwest) sizing cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeNS">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor SizeNS { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor SizeNS" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNS" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the two-headed vertical (north/south) sizing cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed vertical (north/south) sizing cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeNWSE">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor SizeNWSE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor SizeNWSE" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNWSE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the two-headed diagonal (northwest/southeast) sizing cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed diagonal (northwest/southeast) sizing cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeWE">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor SizeWE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor SizeWE" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeWE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the two-headed horizontal (west/east) sizing cursor.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed horizontal (west/east) sizing cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpArrow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor UpArrow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor UpArrow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.UpArrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the up arrow cursor, typically used to identify an insertion point.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the up arrow cursor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Forms.Cursors> class. To run this example place paste the following code in a form and call the InitializeRadioButtonsAndGroupBox method from the form's constructor or Load method. Ensure all events are connected to their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GroupBoxRadioButtonExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRadioButtonExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VSplit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor VSplit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor VSplit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.VSplit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor that appears when the mouse is positioned over a vertical splitter bar.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when the mouse is positioned over a vertical splitter bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitCursor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor WaitCursor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor WaitCursor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.WaitCursor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the wait cursor, typically an hourglass shape.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the wait cursor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To force display of the wait cursor over a given control, call that control's <xref:System.Windows.Forms.Control.UseWaitCursor%2A> method. To make the wait cursor display for the entire application, regardless of the control or form selected, call <xref:System.Windows.Forms.Application.UseWaitCursor%2A> on the <xref:System.Windows.Forms.Application> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

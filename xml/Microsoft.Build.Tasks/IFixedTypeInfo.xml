@@ -1,0 +1,491 @@
+<Type Name="IFixedTypeInfo" FullName="Microsoft.Build.Tasks.IFixedTypeInfo">
+  <TypeSignature Language="C#" Value="public interface IFixedTypeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFixedTypeInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.IFixedTypeInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020401-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a substitute for <see cref="T:System.Runtime.InteropServices.ComTypes.ITypeInfo" /> by modifying the definitions of <see cref="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetRefTypeOfImplType(System.Int32,System.IntPtr@)" /> and <see cref="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetRefTypeInfo(System.IntPtr,Microsoft.Build.Tasks.IFixedTypeInfo@)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddressOfMember">
+      <MemberSignature Language="C#" Value="public void AddressOfMember (int memid, System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, out IntPtr ppv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddressOfMember(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, native int ppv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memid" Type="System.Int32" />
+        <Parameter Name="invKind" Type="System.Runtime.InteropServices.ComTypes.INVOKEKIND" />
+        <Parameter Name="ppv" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="memid">Identifier for the member.</param>
+        <param name="invKind">The type of invocation to use.</param>
+        <param name="ppv">Location to return the address.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public void CreateInstance (object pUnkOuter, ref Guid riid, out object ppvObj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateInstance(object pUnkOuter, valuetype System.Guid riid, object ppvObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pUnkOuter" Type="System.Object" />
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pUnkOuter">Pointer to IUNknown interface.</param>
+        <param name="riid">The GUID of the class.</param>
+        <param name="ppvObj">Location to return the pointer to the interface.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainingTypeLib">
+      <MemberSignature Language="C#" Value="public void GetContainingTypeLib (out System.Runtime.InteropServices.ComTypes.ITypeLib ppTLB, out int pIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetContainingTypeLib(class System.Runtime.InteropServices.ComTypes.ITypeLib ppTLB, int32 pIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppTLB" Type="System.Runtime.InteropServices.ComTypes.ITypeLib&amp;" RefType="out" />
+        <Parameter Name="pIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppTLB">Location to return the location of the ITypeLib interface.</param>
+        <param name="pIndex">Location to return the index.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDllEntry">
+      <MemberSignature Language="C#" Value="public void GetDllEntry (int memid, System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDllEntry(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, native int pBstrDllName, native int pBstrName, native int pwOrdinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memid" Type="System.Int32" />
+        <Parameter Name="invKind" Type="System.Runtime.InteropServices.ComTypes.INVOKEKIND" />
+        <Parameter Name="pBstrDllName" Type="System.IntPtr" />
+        <Parameter Name="pBstrName" Type="System.IntPtr" />
+        <Parameter Name="pwOrdinal" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="memid">Identifier for the member.</param>
+        <param name="invKind">The type of invocation to use.</param>
+        <param name="pBstrDllName">The name of the DLL containing the interface.</param>
+        <param name="pBstrName">The name of the entry point.</param>
+        <param name="pwOrdinal">The ordinal value of the entry point.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDocumentation">
+      <MemberSignature Language="C#" Value="public void GetDocumentation (int index, out string strName, out string strDocString, out int dwHelpContext, out string strHelpFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDocumentation(int32 index, string strName, string strDocString, int32 dwHelpContext, string strHelpFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the documentation article.</param>
+        <param name="strName">The name of the topic.</param>
+        <param name="strDocString">The name of the documentation.</param>
+        <param name="dwHelpContext">The context number of the help article.</param>
+        <param name="strHelpFile">The name of the help file.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFuncDesc">
+      <MemberSignature Language="C#" Value="public void GetFuncDesc (int index, out IntPtr ppFuncDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFuncDesc(int32 index, native int ppFuncDesc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="ppFuncDesc" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the function</param>
+        <param name="ppFuncDesc">Location to return a pointer to the description.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIDsOfNames">
+      <MemberSignature Language="C#" Value="public void GetIDsOfNames (string[] rgszNames, int cNames, int[] pMemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames(string[] rgszNames, int32 cNames, int32[] pMemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetIDsOfNames(System.String[],System.Int32,System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgszNames" Type="System.String[]" />
+        <Parameter Name="cNames" Type="System.Int32" />
+        <Parameter Name="pMemId" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgszNames">The names of the functions.</param>
+        <param name="cNames">The number of names passed.</param>
+        <param name="pMemId">Location to return the description.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetIDsOfNames(System.String[],System.Int32,System.Int32[])" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImplTypeFlags">
+      <MemberSignature Language="C#" Value="public void GetImplTypeFlags (int index, out System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS pImplTypeFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetImplTypeFlags(int32 index, valuetype System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS pImplTypeFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="pImplTypeFlags" Type="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the flag.</param>
+        <param name="pImplTypeFlags">Location to return the flags.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMops">
+      <MemberSignature Language="C#" Value="public void GetMops (int memid, out string pBstrMops);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetMops(int32 memid, string pBstrMops) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetMops(System.Int32,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memid" Type="System.Int32" />
+        <Parameter Name="pBstrMops" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="memid">Identifier for the Mops.</param>
+        <param name="pBstrMops">Location to return the Mops.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNames">
+      <MemberSignature Language="C#" Value="public void GetNames (int memid, string[] rgBstrNames, int cMaxNames, out int pcNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNames(int32 memid, string[] rgBstrNames, int32 cMaxNames, int32 pcNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memid" Type="System.Int32" />
+        <Parameter Name="rgBstrNames" Type="System.String[]" />
+        <Parameter Name="cMaxNames" Type="System.Int32" />
+        <Parameter Name="pcNames" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="memid">Identifier for the member.</param>
+        <param name="rgBstrNames">Location to return the name.</param>
+        <param name="cMaxNames">The number of bytes allocated at rgBstrNames.</param>
+        <param name="pcNames">Location to return the number of names.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRefTypeInfo">
+      <MemberSignature Language="C#" Value="public void GetRefTypeInfo (IntPtr hRef, out Microsoft.Build.Tasks.IFixedTypeInfo ppTI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeInfo(native int hRef, class Microsoft.Build.Tasks.IFixedTypeInfo ppTI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetRefTypeInfo(System.IntPtr,Microsoft.Build.Tasks.IFixedTypeInfo@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRef" Type="System.IntPtr" />
+        <Parameter Name="ppTI" Type="Microsoft.Build.Tasks.IFixedTypeInfo&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hRef">A handle to the referenced type description to return.</param>
+        <param name="ppTI">When this method returns, contains the referenced type description. This parameter is passed uninitialized.</param>
+        <summary>Retrieves the referenced type descriptions if a type description references other type descriptions.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRefTypeOfImplType">
+      <MemberSignature Language="C#" Value="public void GetRefTypeOfImplType (int index, out IntPtr href);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeOfImplType(int32 index, native int href) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetRefTypeOfImplType(System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="href" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the implemented type whose handle is returned.</param>
+        <param name="href">When this method returns, contains a reference to a handle for the implemented interface. This parameter is passed uninitialized.</param>
+        <summary>Retrieves the type description of the implemented interface types if a type description describes a COM class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeAttr">
+      <MemberSignature Language="C#" Value="public void GetTypeAttr (out IntPtr ppTypeAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeAttr(native int ppTypeAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetTypeAttr(System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppTypeAttr" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppTypeAttr">Location to return the type attributes.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeComp">
+      <MemberSignature Language="C#" Value="public void GetTypeComp (out System.Runtime.InteropServices.ComTypes.ITypeComp ppTComp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeComp(class System.Runtime.InteropServices.ComTypes.ITypeComp ppTComp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppTComp">Location to return the type comp.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVarDesc">
+      <MemberSignature Language="C#" Value="public void GetVarDesc (int index, out IntPtr ppVarDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVarDesc(int32 index, native int ppVarDesc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.GetVarDesc(System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="ppVarDesc" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="index">Index of the variable.</param>
+        <param name="ppVarDesc">Location to return the description.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public void Invoke (object pvInstance, int memid, short wFlags, ref System.Runtime.InteropServices.ComTypes.DISPPARAMS pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, out int puArgErr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(object pvInstance, int32 memid, int16 wFlags, valuetype System.Runtime.InteropServices.ComTypes.DISPPARAMS pDispParams, native int pVarResult, native int pExcepInfo, int32 puArgErr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pvInstance" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Int32" />
+        <Parameter Name="wFlags" Type="System.Int16" />
+        <Parameter Name="pDispParams" Type="System.Runtime.InteropServices.ComTypes.DISPPARAMS&amp;" RefType="ref" />
+        <Parameter Name="pVarResult" Type="System.IntPtr" />
+        <Parameter Name="pExcepInfo" Type="System.IntPtr" />
+        <Parameter Name="puArgErr" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pvInstance">Pointer to an instance of the interface described by this type description.</param>
+        <param name="memid">Identifies the interface member.</param>
+        <param name="wFlags">Flags describing the context of the invoke call, as follows:  
+  
+ DISPATCH_METHOD if the member is accessed as a method. If there is ambiguity, both this and the DISPATCH_PROPERTYGET flag can be set.  
+  
+ DISPATCH_PROPERTYGET if the member is retrieved as a property or data member.  
+  
+ DISPATCH_PROPERTYPUT if the member is changed as a property or data member.  
+  
+ DISPATCH_PROPERTYPUTREF if the member is changed by using a reference assignment, rather than a value assignment. This value is only valid when the property accepts a reference to an object.</param>
+        <param name="pDispParams">Points to a structure that contains an array of arguments, an array of DISPIDs for named arguments, and counts of the number of elements in each array.</param>
+        <param name="pVarResult">Should be Null if the caller does not expect any result. Otherwise, it should be a pointer to the location at which the result is to be stored. If wFlags specifies DISPATCH_PROPERTYPUT or DISPATCH_PROPERTYPUTREF, pVarResultis ignored.</param>
+        <param name="pExcepInfo">Points to an exception information structure, which is filled in only if DISP_E_EXCEPTION is returned. If pExcepInfois Null on input, only an HRESULT error will be returned.</param>
+        <param name="puArgErr">If Invoke returns DISP_E_TYPEMISMATCH, puArgErr indicates the index (within rgvarg) of the argument with incorrect type. If more than one argument returns an error, puArgErr indicates only the first argument with an error. Arguments in pDispParams-&gt;rgvarg appear in reverse order, so the first argument is the one having the highest index in the array. Cannot be Null.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseFuncDesc">
+      <MemberSignature Language="C#" Value="public void ReleaseFuncDesc (IntPtr pFuncDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseFuncDesc(native int pFuncDesc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.ReleaseFuncDesc(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pFuncDesc" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="pFuncDesc">Pointer to the FUNCDESC to be freed.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseFuncDesc(System.IntPtr)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseTypeAttr">
+      <MemberSignature Language="C#" Value="public void ReleaseTypeAttr (IntPtr pTypeAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseTypeAttr(native int pTypeAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.ReleaseTypeAttr(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pTypeAttr" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="pTypeAttr">Pointer to the TYPEATTR to be freed.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseTypeAttr(System.IntPtr)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseVarDesc">
+      <MemberSignature Language="C#" Value="public void ReleaseVarDesc (IntPtr pVarDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseVarDesc(native int pVarDesc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.IFixedTypeInfo.ReleaseVarDesc(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pVarDesc" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="pVarDesc">Pointer to the VARDESC to be freed.</param>
+        <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseVarDesc(System.IntPtr)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

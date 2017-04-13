@@ -1,0 +1,124 @@
+<Type Name="PerformanceCounterPermissionAttribute" FullName="System.Diagnostics.PerformanceCounterPermissionAttribute">
+  <TypeSignature Language="C#" Value="public class PerformanceCounterPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PerformanceCounterPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Event, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows declaritive performance counter permission checks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryName">
+      <MemberSignature Language="C#" Value="public string CategoryName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.CategoryName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the performance counter category.</summary>
+        <value>The name of the performance counter category (performance object).</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.CreatePermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the permission based on the requested access levels that are set through the <see cref="P:System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" /> property on the attribute.</summary>
+        <returns>An <see cref="T:System.Security.IPermission" /> that represents the created permission.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the computer name for the performance counter.</summary>
+        <value>The server on which the category of the performance counter resides.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" /> format is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionAccess">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounterPermissionAccess PermissionAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.PerformanceCounterPermissionAccess PermissionAccess" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" /> values. The default is <see cref="F:System.Diagnostics.EventLogPermissionAccess.Write" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

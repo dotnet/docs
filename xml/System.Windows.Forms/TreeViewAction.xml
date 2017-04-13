@@ -1,0 +1,114 @@
+<Type Name="TreeViewAction" FullName="System.Windows.Forms.TreeViewAction">
+  <TypeSignature Language="C#" Value="public enum TreeViewAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the action that raised a <see cref="T:System.Windows.Forms.TreeViewEventArgs" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as the <xref:System.Windows.Forms.TreeViewEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeView.AfterSelect?displayProperty=fullName> event and the <xref:System.Windows.Forms.TreeViewAction> enumeration. To run the example paste the following code in a form containing a TreeView control named TreeView1. This example assumes TreeView1 is populated with items and the <xref:System.Windows.Forms.TreeView.AfterSelect?displayProperty=fullName> event is connected to the event-handling method defined in the sample.  
+  
+ [!code-cpp[System.Windows.Forms.TreeViewAndPrintPreview#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.TreeViewAndPrintPreview#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.TreeViewAndPrintPreview#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ByKeyboard">
+      <MemberSignature Language="C#" Value="ByKeyboard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction ByKeyboard = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByKeyboard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event was caused by a keystroke.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ByMouse">
+      <MemberSignature Language="C#" Value="ByMouse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction ByMouse = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByMouse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event was caused by a mouse operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="Collapse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Collapse = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Collapse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> collapsing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="Expand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Expand = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Expand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> expanding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The action that caused the event is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

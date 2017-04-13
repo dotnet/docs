@@ -1,0 +1,84 @@
+<Type Name="IWebRequestCreate" FullName="System.Net.IWebRequestCreate">
+  <TypeSignature Language="C#" Value="public interface IWebRequestCreate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebRequestCreate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.IWebRequestCreate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Requests</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base interface for creating <see cref="T:System.Net.WebRequest" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IWebRequestCreate> interface defines the method that <xref:System.Net.WebRequest> descendants must use to register with the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method.  
+  
+ Classes that implement the <xref:System.Net.IWebRequestCreate> interface can be registered with the <xref:System.Net.WebRequest> class and associated with a specific URI scheme so that the <xref:System.Net.WebRequest> calls the class's <xref:System.Net.IWebRequestCreate.Create%2A> method when a URI that matches that scheme is requested.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Net.WebRequest Create (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebRequest Create(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IWebRequestCreate.Create(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The uniform resource identifier (URI) of the Web resource.</param>
+        <summary>Creates a <see cref="T:System.Net.WebRequest" /> instance.</summary>
+        <returns>A <see cref="T:System.Net.WebRequest" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IWebRequestCreate.Create%2A> method must return an initialized instance of the <xref:System.Net.WebRequest> descendant that is capable of performing a standard request/response transaction for the protocol without needing any protocol-specific fields modified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="uri" /> is not supported by this <see cref="T:System.Net.IWebRequestCreate" /> instance.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.UriFormatException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+  
+</para>  
+</block>  
+  
+ The URI specified in <paramref name="uri" /> is not a valid URI.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

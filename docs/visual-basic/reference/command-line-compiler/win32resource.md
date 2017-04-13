@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "win32resource compiler option [Visual Basic]"
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

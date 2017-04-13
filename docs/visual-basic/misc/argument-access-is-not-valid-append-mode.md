@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFileSystem_IllegalAppendAccess"
 ms.assetid: f584056e-5eb7-401f-b43d-d08252e66d1c
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

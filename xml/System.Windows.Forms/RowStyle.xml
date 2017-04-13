@@ -1,0 +1,146 @@
+<Type Name="RowStyle" FullName="System.Windows.Forms.RowStyle">
+  <TypeSignature Language="C#" Value="public class RowStyle : System.Windows.Forms.TableLayoutStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RowStyle extends System.Windows.Forms.TableLayoutStyle" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RowStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.TableLayoutStyle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the look and feel of a row in a table layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.RowStyle> class represents the user interface (UI) characteristics of a row in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the rows in a <xref:System.Windows.Forms.TableLayoutPanel> are collected in the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A?displayProperty=fullName> property.  
+  
+ This simple class offers the <xref:System.Windows.Forms.RowStyle.Height%2A> and <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> for a row.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to extract a <xref:System.Windows.Forms.RowStyle> from a <xref:System.Windows.Forms.TableLayoutRowStyleCollection>.  
+  
+ This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> class.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#9)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#9)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RowStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RowStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.RowStyle" /> class to its default state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property to <xref:System.Windows.Forms.SizeType> and the <xref:System.Windows.Forms.RowStyle.Height%2A> property to 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RowStyle (System.Windows.Forms.SizeType sizeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sizeType" Type="System.Windows.Forms.SizeType" />
+      </Parameters>
+      <Docs>
+        <param name="sizeType">A <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> indicating how the row should be should be sized relative to its containing table.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.RowStyle" /> class using the supplied <see cref="T:System.Windows.Forms.SizeType" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.RowStyle.Height%2A> property to 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RowStyle (System.Windows.Forms.SizeType sizeType, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sizeType" Type="System.Windows.Forms.SizeType" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="sizeType">A <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> indicating how the row should be should be sized relative to its containing table.</param>
+        <param name="height">The preferred height in pixels or percentage of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />, depending on <c>sizeType</c>.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.RowStyle" /> class using the supplied <see cref="T:System.Windows.Forms.SizeType" /> and height values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `height` parameter will take on different meanings depending on the `sizeType` parameter. For more information, see the <xref:System.Windows.Forms.RowStyle.Height%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="height" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RowStyle.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of a row.</summary>
+        <value>The preferred height of a row in pixels or percentage of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />, depending on the <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.RowStyle.Height%2A> property will take on different meanings depending on the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property. The following table describes the possible meanings of <xref:System.Windows.Forms.RowStyle.Height%2A>.  
+  
+|`SizeType` value|`Height` interpretation|  
+|----------------------|-----------------------------|  
+|<xref:System.Windows.Forms.SizeType>|The preferred row height in pixels (fractional portion ignored).|  
+|<xref:System.Windows.Forms.SizeType>|Not applicable—the <xref:System.Windows.Forms.RowStyle.Height%2A> property is ignored.|  
+|<xref:System.Windows.Forms.SizeType>|The preferred row height as a percentage of the containing table.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 0 when setting this property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

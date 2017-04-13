@@ -1,0 +1,48 @@
+<Type Name="ResolveNameEventHandler" FullName="System.ComponentModel.Design.Serialization.ResolveNameEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ResolveNameEventHandler(object sender, ResolveNameEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResolveNameEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ResolveNameEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.Design.Serialization.ResolveNameEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.Design.Serialization.ResolveNameEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" /> event of a serialization manager.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used by the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> to resolve object names during serialization and deserialization.  
+  
+ When you create a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example attaches a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventHandler> to the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName> event of a specified <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager>.  
+  
+ [!code-cpp[MoreEventHandlerExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventHandlerExamples/CPP/form1.cpp#1)]
+ [!code-csharp[MoreEventHandlerExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventHandlerExamples/CS/form1.cs#1)]
+ [!code-vb[MoreEventHandlerExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventHandlerExamples/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

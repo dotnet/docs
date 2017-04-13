@@ -1,0 +1,122 @@
+<Type Name="KerberosSecurityTokenHandler" FullName="System.IdentityModel.Tokens.KerberosSecurityTokenHandler">
+  <TypeSignature Language="C#" Value="public class KerberosSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KerberosSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.KerberosSecurityTokenHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityTokenHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a security token handler that processes Kerberos tokens. Handles tokens of type <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KerberosSecurityTokenHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.KerberosSecurityTokenHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidateToken">
+      <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.CanValidateToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current instance can validate security tokens.</summary>
+        <value>
+          <see langword="true" /> if the handler can validate tokens; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Indicates whether the handler can validate tokens of the type specified by the <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.TokenType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenTypeIdentifiers">
+      <MemberSignature Language="C#" Value="public override string[] GetTokenTypeIdentifiers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetTokenTypeIdentifiers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.GetTokenTypeIdentifiers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the Kerberos Security token type defined in WS-Security Kerberos Security Token profile.</summary>
+        <returns>The Kerberos Security token type URI. By default, the value of the <see cref="P:System.IdentityModel.Tokens.SecurityTokenTypes.Kerberos" /> property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenType">
+      <MemberSignature Language="C#" Value="public override Type TokenType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TokenType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.TokenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the token handled by the current instance.</summary>
+        <value>The type of the token handled by the current instance. By default this is the type of the <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateToken">
+      <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">The security token to be validated. This must be an instance of the <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> class.</param>
+        <summary>Validates the specified Kerberos security token.</summary>
+        <returns>The identities that are contained in the token.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified token is not assignable as a <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

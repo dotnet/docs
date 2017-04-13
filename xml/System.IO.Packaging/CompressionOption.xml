@@ -1,0 +1,122 @@
+<Type Name="CompressionOption" FullName="System.IO.Packaging.CompressionOption">
+  <TypeSignature Language="C#" Value="public enum CompressionOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompressionOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CompressionOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the compression level for content that is stored in a <see cref="T:System.IO.Packaging.PackagePart" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Fast">
+      <MemberSignature Language="C#" Value="Fast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CompressionOption Fast = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Fast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Compression is optimized for performance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="Maximum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CompressionOption Maximum = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Maximum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Compression is optimized for size.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CompressionOption Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Compression is optimized for a balance between size and performance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotCompressed">
+      <MemberSignature Language="C#" Value="NotCompressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CompressionOption NotCompressed = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.NotCompressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Compression is turned off.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuperFast">
+      <MemberSignature Language="C#" Value="SuperFast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CompressionOption SuperFast = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.SuperFast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Compression is optimized for high performance.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

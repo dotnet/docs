@@ -1,0 +1,334 @@
+<Type Name="ClientWebSocketOptions" FullName="System.Net.WebSockets.ClientWebSocketOptions">
+  <TypeSignature Language="C#" Value="public sealed class ClientWebSocketOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientWebSocketOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.ClientWebSocketOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Options to use with a  <see cref="T:System.Net.WebSockets.ClientWebSocket" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientWebSocketOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSubProtocol">
+      <MemberSignature Language="C#" Value="public void AddSubProtocol (string subProtocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubProtocol(string subProtocol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.AddSubProtocol(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subProtocol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subProtocol">The WebSocket sub-protocol to add.</param>
+        <summary>Adds a sub-protocol to be negotiated during the WebSocket connection handshake.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.ClientCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of client side certificates.</summary>
+        <value>Returns <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />.  
+  
+ A collection of client side certificates.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookies">
+      <MemberSignature Language="C#" Value="public System.Net.CookieContainer Cookies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieContainer Cookies" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Cookies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.CookieContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cookies associated with the request.</summary>
+        <value>Returns <see cref="T:System.Net.CookieContainer" />.  
+  
+ The cookies associated with the request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public System.Net.ICredentials Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.ICredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the credential information for the client.</summary>
+        <value>Returns <see cref="T:System.Net.ICredentials" />.  
+  
+ The credential information for the client.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAliveInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan KeepAliveInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan KeepAliveInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the WebSocket protocol keep-alive interval in milliseconds.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The WebSocket protocol keep-alive interval in milliseconds.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the proxy for WebSocket requests.</summary>
+        <value>Returns <see cref="T:System.Net.IWebProxy" />.  
+  
+ The proxy for WebSocket requests.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBuffer">
+      <MemberSignature Language="C#" Value="public void SetBuffer (int receiveBufferSize, int sendBufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBuffer(int32 receiveBufferSize, int32 sendBufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="receiveBufferSize" Type="System.Int32" />
+        <Parameter Name="sendBufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="receiveBufferSize">The size, in bytes, of the client receive buffer.</param>
+        <param name="sendBufferSize">The size, in bytes, of the client send buffer.</param>
+        <summary>Sets the client buffer parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBuffer">
+      <MemberSignature Language="C#" Value="public void SetBuffer (int receiveBufferSize, int sendBufferSize, ArraySegment&lt;byte&gt; buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBuffer(int32 receiveBufferSize, int32 sendBufferSize, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32,System.ArraySegment{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="receiveBufferSize" Type="System.Int32" />
+        <Parameter Name="sendBufferSize" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="receiveBufferSize">The size, in bytes, of the client receive buffer.</param>
+        <param name="sendBufferSize">The size, in bytes, of the client send buffer.</param>
+        <param name="buffer">The receive buffer to use.</param>
+        <summary>Sets client buffer parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRequestHeader">
+      <MemberSignature Language="C#" Value="public void SetRequestHeader (string headerName, string headerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRequestHeader(string headerName, string headerValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetRequestHeader(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerName" Type="System.String" />
+        <Parameter Name="headerValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="headerName">The name of the HTTP header.</param>
+        <param name="headerValue">The value of the HTTP header.</param>
+        <summary>Creates a HTTP request header and its value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultCredentials">
+      <MemberSignature Language="C#" Value="public bool UseDefaultCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.UseDefaultCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that indicates if default credentials should be used during WebSocket handshake.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.  
+  
+ <see langword="true" /> if default credentials should be used during WebSocket handshake; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

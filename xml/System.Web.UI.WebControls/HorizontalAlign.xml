@@ -1,0 +1,118 @@
+<Type Name="HorizontalAlign" FullName="System.Web.UI.WebControls.HorizontalAlign">
+  <TypeSignature Language="C#" Value="public enum HorizontalAlign" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HorizontalAlign extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HorizontalAlign" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.HorizontalAlignConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the horizontal alignment of items within a container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HorizontalAlign> enumeration represents the horizontal alignment options for items within a container, such as a <xref:System.Web.UI.WebControls.TableCell>.  
+  
+   
+  
+## Examples  
+ The following example shows how setting the <xref:System.Web.UI.WebControls.Panel.HorizontalAlign%2A> property of a <xref:System.Web.UI.WebControls.Panel> control changes the horizontal alignment for the text of a <xref:System.Web.UI.WebControls.Label> control that is contained by the <xref:System.Web.UI.WebControls.Panel> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.HorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.HorizontalAlign/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.HorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.HorizontalAlign/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="Center" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Center = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Center" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents of a container are centered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Justify">
+      <MemberSignature Language="C#" Value="Justify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Justify = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Justify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents of a container are uniformly spread out and aligned with both the left and right margins.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents of a container are left justified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The horizontal alignment is not set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Right = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents of a container are right justified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

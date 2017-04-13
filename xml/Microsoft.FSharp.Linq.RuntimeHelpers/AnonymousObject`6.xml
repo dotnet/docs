@@ -1,0 +1,190 @@
+<Type Name="AnonymousObject&lt;T1,T2,T3,T4,T5,T6&gt;" FullName="Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;T1,T2,T3,T4,T5,T6&gt;">
+  <TypeSignature Language="C#" Value="public class AnonymousObject&lt;T1,T2,T3,T4,T5,T6&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AnonymousObject`6&lt;T1, T2, T3, T4, T5, T6&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="T6" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T1">To be added.</typeparam>
+    <typeparam name="T2">To be added.</typeparam>
+    <typeparam name="T3">To be added.</typeparam>
+    <typeparam name="T4">To be added.</typeparam>
+    <typeparam name="T5">To be added.</typeparam>
+    <typeparam name="T6">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnonymousObject (T1 Item1, T2 Item2, T3 Item3, T4 Item4, T5 Item5, T6 Item6);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(!T1 Item1, !T2 Item2, !T3 Item3, !T4 Item4, !T5 Item5, !T6 Item6) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.#ctor(`0,`1,`2,`3,`4,`5)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="Item1" Type="T1" />
+        <Parameter Name="Item2" Type="T2" />
+        <Parameter Name="Item3" Type="T3" />
+        <Parameter Name="Item4" Type="T4" />
+        <Parameter Name="Item5" Type="T5" />
+        <Parameter Name="Item6" Type="T6" />
+      </Parameters>
+      <Docs>
+        <param name="Item1">To be added.</param>
+        <param name="Item2">To be added.</param>
+        <param name="Item3">To be added.</param>
+        <param name="Item4">To be added.</param>
+        <param name="Item5">To be added.</param>
+        <param name="Item6">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item1">
+      <MemberSignature Language="C#" Value="public T1 Item1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T1 Item1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item2">
+      <MemberSignature Language="C#" Value="public T2 Item2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T2 Item2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item3">
+      <MemberSignature Language="C#" Value="public T3 Item3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T3 Item3" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item4">
+      <MemberSignature Language="C#" Value="public T4 Item4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T4 Item4" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T4</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item5">
+      <MemberSignature Language="C#" Value="public T5 Item5 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T5 Item5" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T5</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item6">
+      <MemberSignature Language="C#" Value="public T6 Item6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T6 Item6" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`6.Item6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T6</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

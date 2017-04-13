@@ -1,0 +1,209 @@
+<Type Name="ServiceThrottlingElement" FullName="System.ServiceModel.Configuration.ServiceThrottlingElement">
+  <TypeSignature Language="C#" Value="public sealed class ServiceThrottlingElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceThrottlingElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceThrottlingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.BehaviorExtensionElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that specifies the throttling mechanism of [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceThrottlingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceThrottlingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceThrottlingElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorType">
+      <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.BehaviorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of this behavior configuration element.</summary>
+        <value>The type of the behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFrom">
+      <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceThrottlingElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
+      </Parameters>
+      <Docs>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBehavior">
+      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceThrottlingElement.CreateBehavior" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentCalls">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentCalls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentCalls" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentCalls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxConcurrentCalls", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the maximum number of concurrent calls to a single service instance.</summary>
+        <value>The maximum number of concurrent calls to a single service instance. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to <xref:System.Int32>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentInstances">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentInstances { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentInstances" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentInstances" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxConcurrentInstances", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the maximum number of concurrent service instances.</summary>
+        <value>The maximum number of concurrent service instances. The default is 26.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Requests to create additional instances are queued and complete when a slot below the limit becomes available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentSessions">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentSessions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentSessions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentSessions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxConcurrentSessions", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the maximum number of concurrent connections to a single service.</summary>
+        <value>The maximum number of concurrent connections to a single service. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service accepts connections in excess of the limit. However, only the channels below the limit are active and messages are only read from active channels. Setting this property to 0 is equivalent to setting it to <xref:System.Int32>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

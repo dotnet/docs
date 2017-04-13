@@ -1,0 +1,308 @@
+<Type Name="QueryableFilterUserControl" FullName="System.Web.DynamicData.QueryableFilterUserControl">
+  <TypeSignature Language="C#" Value="public abstract class QueryableFilterUserControl : System.Web.UI.UserControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit QueryableFilterUserControl extends System.Web.UI.UserControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.QueryableFilterUserControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.UserControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for filter controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.QueryableFilterUserControl> class is the base class for user controls that render filters that can be plugged into the Dynamic Data filtering framework that is based on the <xref:System.Web.UI.WebControls.QueryExtender> class.  
+  
+ Implementers must override the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> control, which can return a modified <xref:System.Linq.IQueryable> object that reflects the filter's state. The base class contains helper methods for building LINQ expression trees.  
+  
+   
+  
+## Examples  
+ A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected QueryableFilterUserControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.QueryableFilterUserControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyEqualityFilter">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable ApplyEqualityFilter (System.Linq.IQueryable source, string propertyName, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable ApplyEqualityFilter(class System.Linq.IQueryable source, string propertyName, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.ApplyEqualityFilter(System.Linq.IQueryable,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source <see cref="T:System.Linq.IQueryable" /> object.</param>
+        <param name="propertyName">The name of the property.</param>
+        <param name="value">The value for the <c>propertyName</c> parameter.</param>
+        <summary>Gets the transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</summary>
+        <returns>The transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="protected System.Web.DynamicData.MetaColumn Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column to use for filtering.</summary>
+        <value>The column to use for filtering.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public string DefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default values that are mapped for the table.</summary>
+        <value>The default values that are mapped for the table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, Dynamic Data provides Boolean, foreign-key, and enumeration filter templates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; DefaultValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; DefaultValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.DefaultValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default values that are mapped for the table.</summary>
+        <value>The default values that are mapped for the table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FilterChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FilterChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.QueryableFilterUserControl.FilterChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="M:System.Web.DynamicData.QueryableFilterUserControl.OnFilterChanged" /> method is called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterControl">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control FilterControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control FilterControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.FilterControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data control that handles the filter inside the filter template.</summary>
+        <value>The data control that handles the filter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `null` if the filter template does not override it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryable">
+      <MemberSignature Language="C#" Value="public abstract System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source <see cref="T:System.Linq.IQueryable" /> object.</param>
+        <summary>Gets the transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</summary>
+        <returns>The transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must implement this method if you derive a control from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
+  
+   
+  
+## Examples  
+ This method is implemented to transform the source <xref:System.Linq.IQueryable> object into the target <xref:System.Linq.IQueryable> object. Examples of <xref:System.Linq.IQueryable> expressions that you might want to implement include order by, range, or search.  
+  
+ The following example shows how to implement the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> method for a Boolean filter that is derived from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
+  
+```csharp  
+public override IQueryable GetQueryable(IQueryable source) {  
+    if (String.IsNullOrEmpty(DropDownList1.SelectedValue)) {  
+        return source;  
+    }  
+  
+    bool value = Convert.ToBoolean(DropDownList1.SelectedValue);  
+  
+    ParameterExpression parameterExpression =   
+        Expression.Parameter(source.ElementType, "item");  
+    Expression body = BuildQueryBody(  
+        parameterExpression, value);  
+  
+    LambdaExpression lambda = Expression.Lambda(body,   
+        parameterExpression);  
+    MethodCallExpression whereCall = Expression.Call(  
+        typeof(Queryable),   
+        "Where",   
+        new Type[] { source.ElementType },   
+        source.Expression, Expression.Quote(lambda));  
+    return source.Provider.CreateQuery(whereCall);  
+}  
+```  
+  
+```vb  
+Public Overloads Overrides Function GetQueryable(ByVal source As IQueryable) As IQueryable   
+    If [String].IsNullOrEmpty(DropDownList1.SelectedValue) Then   
+        Return source   
+    End If   
+  
+    Dim value As Boolean = Convert.ToBoolean(DropDownList1.SelectedValue)   
+  
+    Dim parameterExpression As ParameterExpression = Expression.Parameter(source.ElementType, "item")   
+    Dim body As Expression = BuildQueryBody(parameterExpression, value)   
+  
+    Dim lambda As LambdaExpression = Expression.Lambda(body, parameterExpression)   
+    Dim whereCall As MethodCallExpression = Expression.[Call](GetType(Queryable), "Where", _  
+         New Type() {source.ElementType}, source.Expression, Expression.Quote(lambda))   
+    Return source.Provider.CreateQuery(whereCall)   
+End Function  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFilterChanged">
+      <MemberSignature Language="C#" Value="protected void OnFilterChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFilterChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.OnFilterChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises the <see cref="E:System.Web.DynamicData.QueryableFilterUserControl.FilterChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method when the filter selection has changed in order to notify the data source that the query must be re-run.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateListControl">
+      <MemberSignature Language="C#" Value="public void PopulateListControl (System.Web.UI.WebControls.ListControl listControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopulateListControl(class System.Web.UI.WebControls.ListControl listControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.PopulateListControl(System.Web.UI.WebControls.ListControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listControl" Type="System.Web.UI.WebControls.ListControl" />
+      </Parameters>
+      <Docs>
+        <param name="listControl">A list control.</param>
+        <summary>Populates a list control with all the foreign-key elements or Boolean elements in the table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Foreign-key columns are populated with elements from the foreign-key table. Boolean columns are populated with "All", "True", and "False".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "registry, reading"
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

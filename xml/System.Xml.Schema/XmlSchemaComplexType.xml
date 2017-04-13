@@ -1,0 +1,549 @@
+<Type Name="XmlSchemaComplexType" FullName="System.Xml.Schema.XmlSchemaComplexType">
+  <TypeSignature Language="C#" Value="public class XmlSchemaComplexType : System.Xml.Schema.XmlSchemaType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi XmlSchemaComplexType extends System.Xml.Schema.XmlSchemaType" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaComplexType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="complexType" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class defines a complex type that determines the set of attributes and content of an element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An element can be declared with a type attribute that refers to a `complexType` element that defines the structure, content, and attributes of that element.  
+  
+   
+  
+## Examples  
+ The following example creates a `complexType` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CPP/complextype.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CS/complextype.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/VB/complextype.vb#1)]  
+  
+ The following XML file is used for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaComplexType Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/XML/example.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaComplexType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaComplexType.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaComplexType" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnyAttribute">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAnyAttribute AnyAttribute { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaAnyAttribute AnyAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AnyAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("anyAttribute")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaAnyAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the <see cref="T:System.Xml.Schema.XmlSchemaAnyAttribute" /> component of the complex type.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaAnyAttribute" /> component of the complex type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not null, the complex type can contain any attributes from the namespaces specified in the <xref:System.Xml.Schema.XmlSchemaAnyAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("attribute", typeof(System.Xml.Schema.XmlSchemaAttribute))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("attributeGroup", typeof(System.Xml.Schema.XmlSchemaAttributeGroupRef))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of attributes for the complex type.</summary>
+        <value>Contains <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> and <see cref="T:System.Xml.Schema.XmlSchemaAttributeGroupRef" /> classes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeUses">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable AttributeUses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable AttributeUses" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AttributeUses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of all the complied attributes of this complex type and its base types.</summary>
+        <value>The collection of all the attributes from this complex type and its base types. The post-compilation value of the <see langword="AttributeUses" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, a combination of all the attributes from the `Attributes` property from each type in the hierarchy.  
+  
+ The value of this property is read-only. This property has the value after the schema has been successfully compiled to determine the complete attribute set that is allowed in an instance document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeWildcard">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAnyAttribute AttributeWildcard { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaAnyAttribute AttributeWildcard" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AttributeWildcard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaAnyAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the post-compilation value for <see langword="anyAttribute" /> for this complex type and its base type(s).</summary>
+        <value>The post-compilation value of the <see langword="anyAttribute" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is read-only. This property has values after the schema has been successfully compiled to determine the complete attribute set of the complex type. For example, it might be the `anyAttribute` element from one of the base types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Block">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod Block { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod Block" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Block" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("block")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="block" /> attribute.</summary>
+        <value>The <see langword="block" /> attribute prevents a complex type from being used in the specified type of derivation. The default is <see langword="XmlSchemaDerivationMethod.None" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Indicates the type of derivation.  
+  
+ This attribute can contain the following values:  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`None`|Use the derivation restriction defined by the `BlockDefault` property of the schema, if it exists.|  
+|`Extension`|This element cannot be replaced by a type derived by Extension.|  
+|`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
+|`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
+  
+ The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockResolved">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.BlockResolved" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value after the type has been compiled to the post-schema-validation information set (infoset). This value indicates how the type is enforced when <see langword="xsi:type" /> is used in the instance document.</summary>
+        <value>The post-schema-validated infoset value. The default is <see langword="BlockDefault" /> value on the <see langword="schema" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is taken either from the type itself or, if not defined at the type level, it is taken from the `schema` element. For example, if the value is restricted, only the specifically defined type can be used, not types derived from the specifically defined type.  
+  
+ This attribute can contain the following values:  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`None`|Use the derivation restriction defined by the `BlockDefault` property of the schema, if it exists.|  
+|`Extension`|This element cannot be replaced by a type derived by Extension.|  
+|`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
+|`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
+  
+ The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentModel">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaContentModel ContentModel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaContentModel ContentModel" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("simpleContent", typeof(System.Xml.Schema.XmlSchemaSimpleContent))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("complexContent", typeof(System.Xml.Schema.XmlSchemaComplexContent))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaContentModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the post-compilation <see cref="T:System.Xml.Schema.XmlSchemaContentModel" /> of this complex type.</summary>
+        <value>The content model type that is one of the <see cref="T:System.Xml.Schema.XmlSchemaSimpleContent" /> or <see cref="T:System.Xml.Schema.XmlSchemaComplexContent" /> classes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaContentType ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaContentType ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaContentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the content model of the complex type which holds the post-compilation value.</summary>
+        <value>The post-compilation value of the content model for the complex type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the content in the post-schema-validation infoset.  
+  
+ If the `IsMixed` property is set to `true` on the `ContentModel` property that has the type `XmlSchemaComplexContent`, the value returned is `Mixed`.  
+  
+ If the `IsMixed` property is `false`, the value is either `Empty` or `ElementOnly`.  
+  
+ If the type on the `ContentModel` property has the type `XmlSchemaSimpleContent`, then this value is always `TextOnly`.  
+  
+ The `ContentType` property must have one of the values shown in the following table.  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`TextOnly`|Text-only content.|  
+|`Empty`|Empty content.|  
+|`ElementOnly`|Element-only content.|  
+|`Mixed`|Mixed content model.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTypeParticle">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle ContentTypeParticle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaParticle ContentTypeParticle" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentTypeParticle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaParticle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the particle that holds the post-compilation value of the <see cref="P:System.Xml.Schema.XmlSchemaComplexType.ContentType" /> particle.</summary>
+        <value>The particle for the content type. The post-compilation value of the <see cref="P:System.Xml.Schema.XmlSchemaComplexType.ContentType" /> particle.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This `ContentTypeParticle` is determined after the content models of the most derived types and the base complex type have been resolved according to the rules defined in the W3C XML Schema definition language (XSD) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAbstract">
+      <MemberSignature Language="C#" Value="public bool IsAbstract { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.IsAbstract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("abstract")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the information that determines if the <see langword="complexType" /> element can be used in the instance document.</summary>
+        <value>If <see langword="true" />, an element cannot use this <see langword="complexType" /> element directly and must use a complex type that is derived from this <see langword="complexType" /> element. The default is <see langword="false" />.  
+  
+ Optional.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMixed">
+      <MemberSignature Language="C#" Value="public override bool IsMixed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMixed" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.IsMixed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("mixed")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets information that determines if the complex type has a mixed content model (markup within the content).</summary>
+        <value>
+          <see langword="true" />, if character data can appear between child elements of this complex type; otherwise, <see langword="false" />. The default is <see langword="false" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Indicates if character data can appear between the child elements of this `complexType`. If the `simpleContent` element is a child element, the `mixed` attribute is not allowed (`false`). If the `complexContent` element is a child element, the `mixed` attribute can be overridden by the `mixed` attribute on the `complexContent` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Particle">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle Particle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaParticle Particle" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Particle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("group", typeof(System.Xml.Schema.XmlSchemaGroupRef))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("choice", typeof(System.Xml.Schema.XmlSchemaChoice))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("all", typeof(System.Xml.Schema.XmlSchemaAll))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("sequence", typeof(System.Xml.Schema.XmlSchemaSequence))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaParticle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the compositor type as one of the <see cref="T:System.Xml.Schema.XmlSchemaGroupRef" />, <see cref="T:System.Xml.Schema.XmlSchemaChoice" />, <see cref="T:System.Xml.Schema.XmlSchemaAll" />, or <see cref="T:System.Xml.Schema.XmlSchemaSequence" /> classes.</summary>
+        <value>The compositor type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Particles must be one of the following compositors:  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|`group`|The complex type contains the elements defined in the referenced group.|  
+|`sequence`|The complex type contains the elements defined in the specified sequence.|  
+|`choice`|The complex type allows one of the elements specified in the `choice` element.|  
+|`all`|The complex type allows all of the elements specified in the `all` element to appear once or not at all.|  
+  
+ This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.ContentModel%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,183 @@
+<Type Name="ScriptMethodAttribute" FullName="System.Web.Script.Services.ScriptMethodAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ScriptMethodAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptMethodAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ScriptMethodAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies which HTTP verb is used to invoke a method, and the format of the response. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used to specify information for methods that can be called from client script. The attribute lets you specify which HTTP verb (GET or POST) can be used to invoke a method. It also lets you specify whether the response is formatted by using either JavaScript Object Notation (JSON) or XML.  
+  
+ The <xref:System.Web.Script.Services.ScriptMethodAttribute> attribute is optional. (However, methods that can be called from client script must have the <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> attribute applied.). If a method is not marked with <xref:System.Web.Script.Services.ScriptMethodAttribute>, the method will be called by using the HTTP POST command and the response will be serialized as JSON. You cannot override this setting from script.  
+  
+ <xref:System.Web.Script.Services.ScriptMethodAttribute> takes only named parameters. The following are the properties of the <xref:System.Web.Script.Services.ScriptMethodAttribute> class that can be used as named parameters:  
+  
+-   <xref:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet%2A>  
+  
+     Specifies whether the method will be invoked by using the HTTP GET command. The default is `false`.  
+  
+    > [!IMPORTANT]
+    >  Setting the <xref:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet%2A> property to `true` might pose a security risk for your application if you are working with sensitive data or transactions. In GET requests, the message is encoded by the browser into the URL and is therefore an easier target for tampering. For both GET and POST requests, you should follow security guidelines to protect sensitive data.  
+  
+-   <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A>  
+  
+     Specifies whether the response will be serialized as JSON or as XML. The default is `Json`. The <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property is useful to specify XML as the return type when the method returns an <xref:System.Xml.XmlDocument> or an <xref:System.Xml.XmlElement> object.  
+  
+-   <xref:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString%2A>  
+  
+     Specifies whether all return types, including string types, are serialized as XML. The value of the <xref:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString%2A> property is ignored when the response is serialized as JSON.  
+  
+ For more information about how to use attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example shows how to apply <xref:System.Web.Script.Services.ScriptMethodAttribute> to the `GetXmlDocument` and `EchoStringAndDate` methods to specify which HTTP verb to use and to specify the response format.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptMethodAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.ScriptMethodAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Services.ScriptMethodAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseFormat">
+      <MemberSignature Language="C#" Value="public System.Web.Script.Services.ResponseFormat ResponseFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Script.Services.ResponseFormat ResponseFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format of the method response.</summary>
+        <value>One of the <see cref="T:System.Web.Script.Services.ResponseFormat" /> values. The default is <see langword="Json" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property when you want to specify XML as the format for the return type. This is useful when the method returns an <xref:System.Xml.XmlDocument> or an <xref:System.Xml.XmlElement> object.  
+  
+ When the <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property is set to `Xml`, the public fields and properties of the return type that have the <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute> attribute applied will not be ignored. This is because they will be serialized by using the <xref:System.Xml.Serialization.XmlSerializer> object instead of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> object. You must apply the <xref:System.Xml.Serialization.XmlIgnoreAttribute> attribute to make <xref:System.Xml.Serialization.XmlSerializer> ignore, or skip, those public fields and properties of the return type.  
+  
+   
+  
+## Examples  
+ The following example shows how to apply the <xref:System.Web.Script.Services.ScriptMethodAttribute> attribute to a Web method with the <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property set to `Xml`. The return value of the method will be serialized as XML and sent to the succeeded callback function as an object of type <xref:System.Xml.XmlDocument>. This code example is part of a larger example provided for the <xref:System.Web.Script.Services.ScriptMethodAttribute> class.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseHttpGet">
+      <MemberSignature Language="C#" Value="public bool UseHttpGet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseHttpGet" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to invoke the method by using HTTP GET.</summary>
+        <value>
+          <see langword="true" /> if the method is invoked by using the HTTP GET command; <see langword="false" /> if the method is invoked by using the HTTP POST command. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot override this property from ECMAScript (JavaScript) on the client. If this property is set to `true`, invoking the method from script will always use HTTP GET.  
+  
+ When this property is set to `true`, the client proxy code uses HTTP GET to call the Web service. Each input parameter for the method appears as a query parameter in the URL that is used to invoke the Web method. The parameter value is obtained through JavaScript Object Notation (JSON) serialization and URL encoding of the parameter value.  
+  
+ The use of HTTP GET for invoking the Web service method follows the same guidelines for any other Web interaction. HTTP GET should be used only for operations where no sensitive data is exposed and when the server action does not have side effects.  
+  
+> [!IMPORTANT]
+>  Setting the <xref:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet%2A> property to `true` might pose a security risk for your application if you are working with sensitive data or transactions. In GET requests, the message is encoded by the browser into the URL and is therefore an easier target for tampering.  
+  
+   
+  
+## Examples  
+ The following example shows how to apply <xref:System.Web.Script.Services.ScriptMethodAttribute> to a Web method with the <xref:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet%2A> property set to `true`. This code example is part of a larger example provided for the <xref:System.Web.Script.Services.ScriptMethodAttribute> class.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlSerializeString">
+      <MemberSignature Language="C#" Value="public bool XmlSerializeString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool XmlSerializeString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether all return types are serialized as XML, which includes string types.</summary>
+        <value>
+          <see langword="true" /> if all return types are serialized as XML; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `false`, all return types are serialized as XML, except string, which is interpreted as XML markup. If the value is `false`, and if the return type is a string, and if the string does not contain XML markup that corresponds to a well-formed XML document, the succeeded callback function will be invoked but the resulting serialized string will be `null`.  
+  
+ The value of <xref:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString%2A> is ignored when the <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property is set to `Json`.  
+  
+   
+  
+## Examples  
+ The following example shows how to apply <xref:System.Web.Script.Services.ScriptMethodAttribute> to a Web method with the <xref:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString%2A> property set to `true`. This code example is part of a larger example provided for the <xref:System.Web.Script.Services.ScriptMethodAttribute> class.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

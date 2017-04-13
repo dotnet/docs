@@ -1,0 +1,100 @@
+<Type Name="RulePathQualifier" FullName="System.Workflow.Activities.Rules.RulePathQualifier">
+  <TypeSignature Language="C#" Value="public class RulePathQualifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RulePathQualifier extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RulePathQualifier" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Builds the path of a field or property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To build the path `this/wkflwprop/childprop/`, use  
+  
+ `new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RulePathQualifier (string name, System.Workflow.Activities.Rules.RulePathQualifier next);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Workflow.Activities.Rules.RulePathQualifier next) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RulePathQualifier.#ctor(System.String,System.Workflow.Activities.Rules.RulePathQualifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="next" Type="System.Workflow.Activities.Rules.RulePathQualifier" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the current entity in the path.</param>
+        <param name="next">The next entity, or the field or property, for the path. Null if <c>name</c> is the name of the property or field at the root of the path.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RulePathQualifier" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To build the path `this/wkflwprop/childprop/`, use  
+  
+ `new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RulePathQualifier.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the current field or property.</summary>
+        <value>The name of the current entity in the path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RulePathQualifier Next { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RulePathQualifier Next" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RulePathQualifier.Next" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RulePathQualifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next field or property for the path.</summary>
+        <value>The next entity, or the field or property, for the path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.Rules.RulePathQualifier.Next%2A> is null if <xref:System.Workflow.Activities.Rules.RulePathQualifier.Name%2A> is the name of the property or field at the root of the path.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

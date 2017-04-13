@@ -1,0 +1,205 @@
+<Type Name="IEnlistmentNotification" FullName="System.Transactions.IEnlistmentNotification">
+  <TypeSignature Language="C#" Value="public interface IEnlistmentNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnlistmentNotification" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.IEnlistmentNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Describes an interface that a resource manager should implement to provide two phase commit notification callbacks for the transaction manager upon enlisting for participation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order for a resource manager to participate in a transaction, it must enlist in the transaction through the transaction manager. The <xref:System.Transactions.Transaction> class defines a set of methods whose names begin with `Enlist` that provide this functionality. The different `Enlist` methods correspond to the different types of enlistment that a resource maanger may have.  
+  
+ This class describes an interface that a resource manager should implement to provide two phase commit notification callbacks for the transaction manager upon enlisting for participation. For each resource manager's implementation of the <xref:System.Transactions.IEnlistmentNotification> interface, you should enlist it using the <xref:System.Transactions.Transaction.EnlistVolatile%2A> method or the <xref:System.Transactions.Transaction.EnlistDurable%2A> method of the <xref:System.Transactions.Transaction> class, depending on whether your resource is volatile or durable. For more information on enlistment and 2PC, see [Enlisting Resources as Participants in a Transaction](~/docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) and [Committing a Transaction in Single-Phase and Multi-Phase](~/docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md) respectively.  
+  
+ The transaction manager notifies the enlisted object at different phases of the Two Phase Commit Protocol by the following methods.  
+  
+|Method|Description|  
+|------------|-----------------|  
+|<xref:System.Transactions.IEnlistmentNotification.Prepare%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the first phase of a transaction, when the transaction manager asks participants whether they can commit the transaction.|  
+|<xref:System.Transactions.IEnlistmentNotification.Commit%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is commited.|  
+|<xref:System.Transactions.IEnlistmentNotification.Rollback%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is aborted (that is, rolled back).|  
+|<xref:System.Transactions.IEnlistmentNotification.InDoubt%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is in doubt.|  
+  
+> [!NOTE]
+>  You should be aware that notifications might not be sent sequentially, or in a particular order.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this interface, as well as enlisting the object as a participant in a transaction using the <xref:System.Transactions.Transaction.EnlistVolatile%2A> method.  
+  
+ [!code-csharp[Tx_Enlist#1](~/samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs/enlist.cs#1)]
+ [!code-vb[Tx_Enlist#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_enlist/vb/enlist.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit (System.Transactions.Enlistment enlistment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(class System.Transactions.Enlistment enlistment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IEnlistmentNotification.Commit(System.Transactions.Enlistment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enlistment" Type="System.Transactions.Enlistment" />
+      </Parameters>
+      <Docs>
+        <param name="enlistment">An <see cref="T:System.Transactions.Enlistment" /> object used to send a response to the transaction manager.</param>
+        <summary>Notifies an enlisted object that a transaction is being committed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transaction manager calls this method of an enlisted object during the second phase of a commitment, when it instructs all participants to commit the transaction.  
+  
+ The resource manager should perform any work necessary to finish the transaction and then inform the TM that it has finished by calling the <xref:System.Transactions.Enlistment.Done%2A> method on the `enlistment` parameter.  
+  
+ If the resource manager has enlisted durably, but does not respond by calling <xref:System.Transactions.Enlistment.Done%2A> method, the transaction manager is unsure that the resource manager has received the <xref:System.Transactions.IEnlistmentNotification.Commit%2A> call. As such, the transaction manager keeps waiting for a response, and maintains information relevant to this transaction.  If <xref:System.Transactions.Enlistment.Done%2A> is never called, this piece of information is kept around indefinitely in memory or in a system-wide resource. This results in resources not being able to be reclaimed. In the case of a distributed transaction, this could eventually fill the MSDTC log which halts the MSDTC process. In the case of a transaction managed by <xref:System.Transactions>, this results in a gradual and continual increase in the memory consumption of the resource manager's process. Therefore, it is crucial that you call the <xref:System.Transactions.Enlistment.Done%2A> method once your resource manager is done with your prepare work.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InDoubt">
+      <MemberSignature Language="C#" Value="public void InDoubt (System.Transactions.Enlistment enlistment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InDoubt(class System.Transactions.Enlistment enlistment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IEnlistmentNotification.InDoubt(System.Transactions.Enlistment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enlistment" Type="System.Transactions.Enlistment" />
+      </Parameters>
+      <Docs>
+        <param name="enlistment">An <see cref="T:System.Transactions.Enlistment" /> object used to send a response to the transaction manager.</param>
+        <summary>Notifies an enlisted object that the status of a transaction is in doubt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called for volatile resources when the transaction manager has invoked a single phase commit operation to a single durable resource, and then connection to the durable resource was lost prior to getting the transaction result. At that point, the transaction outcome cannot be safely determined.  
+  
+ As <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> is considered to be a final state for a transaction, you should not call <xref:System.Transactions.IEnlistmentNotification.Commit%2A> or <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> after calling <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A>.  
+  
+> [!NOTE]
+>  Your implementation of this method for the volatile resource should perform whatever recovery or containment operation it understands on the affected data.  It must also call the <xref:System.Transactions.Enlistment.Done%2A> method on the on the `enlistment` parameter when it has finished its work.  
+  
+ If the resource manager has enlisted durably, but does not respond by calling <xref:System.Transactions.Enlistment.Done%2A> method, the transaction manager is unsure that the resource manager has received the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> call. As such, the transaction manager keeps waiting for a response, and maintains information relevant to this transaction.  If <xref:System.Transactions.Enlistment.Done%2A> is never called, this piece of information is kept around indefinitely in memory or in a system-wide resource. This results in resources not being able to be reclaimed. In the case of a distributed transaction, this could eventually fill the MSDTC log which halts the MSDTC process. In the case of a transaction managed by <xref:System.Transactions>, this results in a gradual and continual increase in the memory consumption of the resource manager's process. Therefore, it is crucial that you call the <xref:System.Transactions.Enlistment.Done%2A> method once your resource manager is done with your prepare work.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prepare">
+      <MemberSignature Language="C#" Value="public void Prepare (System.Transactions.PreparingEnlistment preparingEnlistment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Prepare(class System.Transactions.PreparingEnlistment preparingEnlistment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IEnlistmentNotification.Prepare(System.Transactions.PreparingEnlistment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preparingEnlistment" Type="System.Transactions.PreparingEnlistment" />
+      </Parameters>
+      <Docs>
+        <param name="preparingEnlistment">A <see cref="T:System.Transactions.PreparingEnlistment" /> object used to send a response to the transaction manager.</param>
+        <summary>Notifies an enlisted object that a transaction is being prepared for commitment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transaction manager calls this method of an enlisted resource manager during the phase 1 of a commitment, when it asks participants whether they can commit the transaction.  
+  
+ When you are implementing a durable resource manager, you should log your prepare record during this phase. The record should contain all the necessary information to perform recovery. This includes the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property, which is passed to the transaction manager in the <xref:System.Transactions.TransactionManager.Reenlist%2A> method during recovery. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+  
+ Your resource manager should complete all work that must be finished before calling the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method of the `preparingEnlistment` parameter to indicate its vote for commitment. You should make sure that this is accomplished before receiving any phase 2 notification such as commit, rollback or in doubt. This is because phase 2 notifications can happen inline on the same thread that called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method in phase 1. As such, you should not do any work after the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> call (for example, releasing locks) that you would expect to have completed before receiving the phase 2 notifications.  
+  
+ You can also call the method of the `preparingEnlistment` parameter to indicate a vote for rollback.  
+  
+ If you want the object to merely observe and react to the progress of the transaction, without participating in it, your implementation of this method should call the <xref:System.Transactions.Enlistment.Done%2A> method of the `preparingEnlistment` parameter when it has finished its work. By doing so, your resource manager would not receive any phase 2 notification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="public void Rollback (System.Transactions.Enlistment enlistment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rollback(class System.Transactions.Enlistment enlistment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IEnlistmentNotification.Rollback(System.Transactions.Enlistment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enlistment" Type="System.Transactions.Enlistment" />
+      </Parameters>
+      <Docs>
+        <param name="enlistment">A <see cref="T:System.Transactions.Enlistment" /> object used to send a response to the transaction manager.</param>
+        <summary>Notifies an enlisted object that a transaction is being rolled back (aborted).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transaction manager calls this method of an enlisted object when the transaction is being rolled back (aborted) due to the inability of one or more transaction participants to commit the transaction.  
+  
+ The resource manager should perform any work necessary to finish the transaction and then inform the TM that it has finished by calling the <xref:System.Transactions.Enlistment.Done%2A> method on the `enlistment` parameter.  
+  
+ If the resource manager has enlisted durably, but does not respond by calling <xref:System.Transactions.Enlistment.Done%2A> method, the transaction manager is unsure that the resource manager has received the <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> call. As such, the transaction manager keeps waiting for a response, and maintains information relevant to this transaction.  If <xref:System.Transactions.Enlistment.Done%2A> is never called, this piece of information is kept around indefinitely in memory or in a system-wide resource. This results in resources not being able to be reclaimed. In the case of a distributed transaction, this could eventually fill the MSDTC log which halts the MSDTC process. In the case of a transaction managed by <xref:System.Transactions>, this results in a gradual and continual increase in the memory consumption of the resource manager's process. Therefore, it is crucial that you call the <xref:System.Transactions.Enlistment.Done%2A> method once your resource manager is done with your prepare work.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

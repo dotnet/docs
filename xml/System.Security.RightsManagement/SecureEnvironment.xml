@@ -1,0 +1,350 @@
+<Type Name="SecureEnvironment" FullName="System.Security.RightsManagement.SecureEnvironment">
+  <TypeSignature Language="C#" Value="public class SecureEnvironment : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecureEnvironment extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.SecureEnvironment" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a secure client session for user activation, license binding, and other rights management operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.SecureEnvironment> is only usable in full trust applications.  
+  
+   
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.SecureEnvironment> class  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationManifest">
+      <MemberSignature Language="C#" Value="public string ApplicationManifest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationManifest" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.SecureEnvironment.ApplicationManifest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Security.RightsManagement.SecureEnvironment.ApplicationManifest" /> specified when the <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> was created.</summary>
+        <value>The application manifest specified to the <see cref="Overload:System.Security.RightsManagement.SecureEnvironment.Create" /> method when the <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> is created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.SecureEnvironment.ApplicationManifest%2A> method.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.RightsManagement.SecureEnvironment Create (string applicationManifest, System.Security.RightsManagement.ContentUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.RightsManagement.SecureEnvironment Create(string applicationManifest, class System.Security.RightsManagement.ContentUser user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.ContentUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.SecureEnvironment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationManifest" Type="System.String" />
+        <Parameter Name="user" Type="System.Security.RightsManagement.ContentUser" />
+      </Parameters>
+      <Docs>
+        <param name="applicationManifest">The application rights manifest.</param>
+        <param name="user">The user or user-group for granting access to rights managed content.</param>
+        <summary>Creates a secure client session for a specified user with a given rights manifest.</summary>
+        <returns>A secure client session for activation, license binding, and other rights management operations.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method is intended for use with users that are already activated, such as provided in the list returned from <xref:System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers%2A>.  Use the alternate <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method for users that are not yet activated.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to create a secure environment.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.RightsManagement.SecureEnvironment Create (string applicationManifest, System.Security.RightsManagement.AuthenticationType authentication, System.Security.RightsManagement.UserActivationMode userActivationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.RightsManagement.SecureEnvironment Create(string applicationManifest, valuetype System.Security.RightsManagement.AuthenticationType authentication, valuetype System.Security.RightsManagement.UserActivationMode userActivationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.AuthenticationType,System.Security.RightsManagement.UserActivationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.SecureEnvironment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationManifest" Type="System.String" />
+        <Parameter Name="authentication" Type="System.Security.RightsManagement.AuthenticationType" />
+        <Parameter Name="userActivationMode" Type="System.Security.RightsManagement.UserActivationMode" />
+      </Parameters>
+      <Docs>
+        <param name="applicationManifest">The application rights manifest.</param>
+        <param name="authentication">The method of authentication.</param>
+        <param name="userActivationMode">The type of the user rights account certificate.</param>
+        <summary>Creates a secure client session given an application rights manifest, <see cref="T:System.Security.RightsManagement.AuthenticationType" />, and <see cref="T:System.Security.RightsManagement.UserActivationMode" />.</summary>
+        <returns>A secure client session for activation, license binding, and other rights management operations.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method is intended for new users that are not yet activated.  
+  
+ Activating a new user includes a roundtrip server transaction to obtain the User Certificate and Client License Certificate.  
+  
+ The alternate <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method can be used if a user is already activated, such as provided in the list returned from <xref:System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to create a secure environment.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.RightsManagement.SecureEnvironment" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application should call <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> when finished with the <xref:System.Security.RightsManagement.SecureEnvironment>.  After <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> is called, resources allocated to the <xref:System.Security.RightsManagement.SecureEnvironment> are reclaimed by the garbage collector.  For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> before the last reference to the <xref:System.Security.RightsManagement.SecureEnvironment> is released.  If <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> is not called, resources allocated to the <xref:System.Security.RightsManagement.SecureEnvironment> will not be freed until the garbage collector calls the instance's <xref:System.Object.Finalize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> method and the <xref:System.Object.Finalize%2A> method. <xref:System.Security.RightsManagement.SecureEnvironment.Dispose> invokes the protected <xref:System.Security.RightsManagement.SecureEnvironment.Dispose%28System.Boolean%29> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.RightsManagement.SecureEnvironment> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivatedUsers">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.RightsManagement.ContentUser&gt; GetActivatedUsers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.RightsManagement.ContentUser&gt; GetActivatedUsers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.RightsManagement.ContentUser&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of the activated users.</summary>
+        <returns>A list of the currently activated users.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUserActivated">
+      <MemberSignature Language="C#" Value="public static bool IsUserActivated (System.Security.RightsManagement.ContentUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUserActivated(class System.Security.RightsManagement.ContentUser user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.Security.RightsManagement.ContentUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user or user-group for granting access to rights managed content.</param>
+        <summary>Indicates whether a given user has been activated for accessing rights managed content.</summary>
+        <returns>
+          <see langword="true" /> if the given <paramref name="user" /> has been activated for accessing rights managed content; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.SecureEnvironment.IsUserActivated%2A> method to determine if given user has been authorized to access rights managed content.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveActivatedUser">
+      <MemberSignature Language="C#" Value="public static void RemoveActivatedUser (System.Security.RightsManagement.ContentUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveActivatedUser(class System.Security.RightsManagement.ContentUser user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.RemoveActivatedUser(System.Security.RightsManagement.ContentUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.Security.RightsManagement.ContentUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user to remove the license activation for.</param>
+        <summary>Removes the license activation for a specified user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user authentication must be performed either with Windows authentication or Passport authentication.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="user" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The given <paramref name="user" /> is not authenticated with either Windows authentication or Passport authentication.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentUser User { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.ContentUser User" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.SecureEnvironment.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user or user-group specified when the <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> was created.</summary>
+        <value>The user or user-group specified to the <see cref="M:System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.ContentUser)" /> method when the <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> was created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.SecureEnvironment.User%2A> property  
+  
+ [!code-csharp[RightsManagedPackageViewer#RmPkgViewSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewsecenv)]
+ [!code-vb[RightsManagedPackageViewer#RmPkgViewSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a secure client session for rights management operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to create a secure environment.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

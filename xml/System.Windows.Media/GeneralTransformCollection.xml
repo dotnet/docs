@@ -1,0 +1,984 @@
+<Type Name="GeneralTransformCollection" FullName="System.Windows.Media.GeneralTransformCollection">
+  <TypeSignature Language="C#" Value="public sealed class GeneralTransformCollection : System.Windows.Media.Animation.Animatable, System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt;, System.Collections.Generic.IList&lt;System.Windows.Media.GeneralTransform&gt;, System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GeneralTransformCollection extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.GeneralTransform&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.GeneralTransform&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Media.GeneralTransform&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeneralTransformCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.Animatable</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;System.Windows.Media.GeneralTransform&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.GeneralTransform" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.GeneralTransformCollection> class provides several special features: <xref:System.Windows.Media.GeneralTransformCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+<a name="xamlImplicitCollectionUsage_GeneralTransformCollection"></a>   
+## XAML Implicit Collection Usage  
+  
+```  
+<object>  
+  <object.property>  
+    oneOrMoreGeneralTransformObjectElements  
+  </object.property>  
+</object>  
+```  
+  
+<a name="xamlValues_GeneralTransformCollection"></a>   
+## XAML Values  
+ *oneOrMoreGeneralTransformObjectElements*  
+ One or more <xref:System.Windows.Media.GeneralTransform> objects, declared using object element syntax.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneralTransformCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneralTransformCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.GeneralTransform&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.GeneralTransform})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">Initial object in the new collection class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneralTransformCollection (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The number of <see cref="T:System.Windows.Media.GeneralTransform" /> objects that the collection is initially capable of storing.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> class with the specified capacity, or the number of <see cref="T:System.Windows.Media.GeneralTransform" /> objects the collection is initially capable of storing.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Media.GeneralTransform value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Media.GeneralTransform value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Add(System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Media.GeneralTransform" /> to add to the end of the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>Adds a <see cref="T:System.Windows.Media.GeneralTransform" /> object to the end of the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Windows.Media.GeneralTransform" /> objects from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not change the capacity of the <xref:System.Windows.Media.GeneralTransformCollection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformCollection Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransformCollection Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransformCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GeneralTransformCollection" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.CloneCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformCollection CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransformCollection CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransformCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GeneralTransformCollection" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.GeneralTransform value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Media.GeneralTransform value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Contains(System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Media.GeneralTransform" /> to locate in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>Indicates whether the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> contains the specified <see cref="T:System.Windows.Media.GeneralTransform" /> object.</summary>
+        <returns>**true** if the collection contains <paramref name="value" />; otherwise **false**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.Collections.Generic.ICollection%601.Contains%2A?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.GeneralTransform[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Media.GeneralTransform[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.CopyTo(System.Windows.Media.GeneralTransform[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Windows.Media.GeneralTransform[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The destination array.</param>
+        <param name="index">The zero-based index position where copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Media.GeneralTransform" /> objects in the collection into an array of GeneralTransforms, starting at the specified index position.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of items in the source <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Windows.Media.GeneralTransform" /> objects in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreezeCore">
+      <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.FreezeCore(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isChecking" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isChecking">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformCollection.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.GeneralTransformCollection/Enumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransformCollection+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that can iterate through the collection.</summary>
+        <returns>An enumerator that can iterate the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.GeneralTransform value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Windows.Media.GeneralTransform value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.IndexOf(System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to locate.</param>
+        <summary>Searches for the specified <see cref="T:System.Windows.Media.GeneralTransform" /> object within a <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <returns>The zero-based index position of <paramref name="value" />, if found; otherwise -1;</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.GeneralTransform value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Windows.Media.GeneralTransform value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Insert(System.Int32,System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index position to insert the object.</param>
+        <param name="value">The object to insert.</param>
+        <summary>Inserts a <see cref="T:System.Windows.Media.GeneralTransform" /> object into the specified index position within the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GeneralTransform Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index position of the object to get or set.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.GeneralTransform" /> object at the specified index position.</summary>
+        <value>The <see cref="T:System.Windows.Media.GeneralTransform" /> object at the <paramref name="index" /> position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of [IList\<T>.Item\<xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Media.GeneralTransform value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Media.GeneralTransform value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.Remove(System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to remove.</param>
+        <summary>Deletes a <see cref="T:System.Windows.Media.GeneralTransform" /> object from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <returns>**true** if <paramref name="value" /> was successfully deleted; otherwise **false**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index position to remove the object.</param>
+        <summary>Deletes a <see cref="T:System.Windows.Media.GeneralTransform" /> object from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#GeneralTransform&gt;#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Media.GeneralTransform&gt; IEnumerable&lt;GeneralTransform&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Media.GeneralTransform&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GeneralTransform&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#GeneralTransform&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Windows.Media.GeneralTransform&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <see cref="T:System.Object" />.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GeneralTransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

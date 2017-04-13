@@ -1,0 +1,84 @@
+<Type Name="CallingDataMethodsEventArgs" FullName="System.Web.UI.WebControls.CallingDataMethodsEventArgs">
+  <TypeSignature Language="C#" Value="public class CallingDataMethodsEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingDataMethodsEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CallingDataMethodsEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ModelDataSource.CallingDataMethods" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallingDataMethodsEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CallingDataMethodsEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CallingDataMethodsEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMethodsObject">
+      <MemberSignature Language="C#" Value="public object DataMethodsObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataMethodsObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An object that contains the data methods to call, when the data methods are not static methods on a type.</summary>
+        <value>The instance that contains the data methods to call, or <see langword="null" /> if the data methods are static methods.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMethodsType">
+      <MemberSignature Language="C#" Value="public Type DataMethodsType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DataMethodsType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type that contains the data methods to call, when the data methods are static methods.</summary>
+        <value>The type that contains the static data methods to call, or <see langword="null" /> if the data methods are not static methods.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

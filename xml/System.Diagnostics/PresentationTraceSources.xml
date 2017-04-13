@@ -1,0 +1,369 @@
+<Type Name="PresentationTraceSources" FullName="System.Diagnostics.PresentationTraceSources">
+  <TypeSignature Language="C#" Value="public static class PresentationTraceSources" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PresentationTraceSources extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PresentationTraceSources" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides debug tracing support that is specifically targeted for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Debug tracing is only available when a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application is running in full trust mode.  
+  
+ In order to enable tracing, you first must set a registry key, then you must configure trace sources.  
+  
+-   To create the registry key, set a "ManagedTracing" reg_dword value to 1 under "HKeyCurrentUser\Software\Microsoft\Tracing\WPF".  
+  
+-   To configure trace sources, create an application config file. This file has a .config extension, for example, XamlPad.exe.config.  
+  
+ Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application development. For more information, see [Optimizing WPF Application Performance](~/docs/framework/wpf/advanced/optimizing-wpf-application-performance.md).  
+  
+   
+  
+## Examples  
+ The following sample configuration file enables tracing of animations, writing the output to a text file called "debug.txt".  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <sources>  
+      <source name="System.Windows.Media.Animation"  
+switchName="SourceSwitch" >  
+        <listeners>  
+          <add name="textListener" />  
+        </listeners>  
+      </source>  
+    </sources>  
+    <switches>  
+      <add name="SourceSwitch" value="All" />  
+    </switches>  
+    <sharedListeners>  
+      <add name="textListener"  
+           type="System.Diagnostics.TextWriterTraceListener"  
+           initializeData="Debug.txt" />  
+    </sharedListeners>  
+    <trace autoflush="true" indentsize="4"></trace>  
+  </system.diagnostics>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnimationSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource AnimationSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource AnimationSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.AnimationSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an animation trace source.</summary>
+        <value>An animation trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindingSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource DataBindingSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource DataBindingSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.DataBindingSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a data-binding trace source.</summary>
+        <value>A data-binding trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependencyPropertySource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource DependencyPropertySource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource DependencyPropertySource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.DependencyPropertySource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dependency property trace source.</summary>
+        <value>A dependency property trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentsSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource DocumentsSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource DocumentsSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.DocumentsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a document trace source.</summary>
+        <value>A document trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreezableSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource FreezableSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource FreezableSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.FreezableSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Freezable trace source.</summary>
+        <value>A Freezable trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTraceLevel">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PresentationTraceLevel GetTraceLevel (object element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.PresentationTraceLevel GetTraceLevel(object element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PresentationTraceSources.GetTraceLevel(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property for a specified element.</summary>
+        <returns>The <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> property value for the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.GetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HwndHostSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource HwndHostSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource HwndHostSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.HwndHostSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an hwnd host trace source.</summary>
+        <value>An hwnd host trace source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.HwndHostSource%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkupSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource MarkupSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource MarkupSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.MarkupSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a markup trace source.</summary>
+        <value>A markup trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameScopeSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource NameScopeSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource NameScopeSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.NameScopeSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a name scope trace source.</summary>
+        <value>A name scope trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public static void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PresentationTraceSources.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes trace sources, by forcing the app.config file to be re-read.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceDictionarySource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource ResourceDictionarySource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource ResourceDictionarySource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.ResourceDictionarySource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a resource dictionary trace source.</summary>
+        <value>A resource dictionary trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutedEventSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource RoutedEventSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource RoutedEventSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.RoutedEventSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a routed event trace source.</summary>
+        <value>A routed event trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTraceLevel">
+      <MemberSignature Language="C#" Value="public static void SetTraceLevel (object element, System.Diagnostics.PresentationTraceLevel traceLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTraceLevel(object element, valuetype System.Diagnostics.PresentationTraceLevel traceLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PresentationTraceSources.SetTraceLevel(System.Object,System.Diagnostics.PresentationTraceLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Object" />
+        <Parameter Name="traceLevel" Type="System.Diagnostics.PresentationTraceLevel" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which the attached property is written.</param>
+        <param name="traceLevel">The needed <see cref="T:System.Diagnostics.PresentationTraceLevel" /> value.</param>
+        <summary>Sets the value of the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property to a specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.SetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShellSource">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSource ShellSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSource ShellSource" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PresentationTraceSources.ShellSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a shell trace source.</summary>
+        <value>A shell trace source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceLevelProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TraceLevelProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TraceLevelProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PresentationTraceSources.TraceLevelProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.TraceLevelProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

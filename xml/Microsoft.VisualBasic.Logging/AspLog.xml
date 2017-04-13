@@ -1,0 +1,128 @@
+<Type Name="AspLog" FullName="Microsoft.VisualBasic.Logging.AspLog">
+  <TypeSignature Language="C#" Value="public class AspLog : Microsoft.VisualBasic.Logging.Log" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi AspLog extends Microsoft.VisualBasic.Logging.Log" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.AspLog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualBasic.Logging.Log</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a property and methods for writing event and exception information to the application's log listeners.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md) and [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
+  
+ The `My.Application.Log` object is available only for client applications. For Web applications, use `My.Log`. For more information, see <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>.  
+  
+ The following table lists examples of tasks involving the `My.Application.Log` object.  
+  
+|To|See|  
+|--------|---------|  
+|Write event information to the application's log listeners|[How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
+|Write exception information to the application's log listeners|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+|Determine where `My.Application.Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
+  
+   
+  
+## Examples  
+ This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md).  
+  
+ [!code-vb[VbVbalrMyApplicationLog#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AspLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.AspLog" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md) and [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AspLog (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+          <see cref="T:System.String" />. The name to give to the <see cref="P:Microsoft.VisualBasic.Logging.Log.TraceSource" /> property object.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.AspLog" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md) and [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeWithDefaultsSinceNoConfigExists">
+      <MemberSignature Language="C#" Value="protected override void InitializeWithDefaultsSinceNoConfigExists ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeWithDefaultsSinceNoConfigExists() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.InitializeWithDefaultsSinceNoConfigExists" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> and adds it to the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>, sets its name to `FileLog`, and configures it to log messages with severity level <xref:System.Diagnostics.SourceLevels> and greater. The new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> object is then added to the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection.  
+  
+ The <xref:Microsoft.VisualBasic.Logging.Log.%23ctor%2A> calls the method if the <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A> property has not been configured. The trace source can be configured in the application's configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

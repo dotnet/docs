@@ -1,0 +1,212 @@
+<Type Name="EventManager" FullName="System.Windows.EventManager">
+  <TypeSignature Language="C#" Value="public static class EventManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EventManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.EventManager" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides event-related utility methods that register routed events for class owners and add class handlers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is most commonly used to register a new routed event, with <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>.  
+  
+ The second most common [!INCLUDE[TLA2#tla_api](~/includes/tla2sharptla-api-md.md)] usage is <xref:System.Windows.EventManager.RegisterClassHandler%2A>. You use this method to enable class handling of a routed event on the class, or an attached event. For details, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+   
+  
+## Examples  
+ The following example show how to use this class to register a new routed event as a class member, along with the routed event "wrapper" technique of overriding the add and remove implementations for a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] event.  
+  
+ [!code-csharp[DPCustom#EventManagerClass](~/samples/snippets/csharp/VS_Snippets_Wpf/DPCustom/CSharp/default.xaml.cs#eventmanagerclass)]
+ [!code-vb[DPCustom#EventManagerClass](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCustom/visualbasic/default.xaml.vb#eventmanagerclass)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetRoutedEvents">
+      <MemberSignature Language="C#" Value="public static System.Windows.RoutedEvent[] GetRoutedEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.RoutedEvent[] GetRoutedEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.GetRoutedEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns identifiers for routed events that have been registered to the event system.</summary>
+        <returns>An array of type <see cref="T:System.Windows.RoutedEvent" /> that contains the registered objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ More <xref:System.Windows.RoutedEvent> objects can be registered later. This method gets a snapshot and the collection of routed events is writeable throughout an application's lifetime. The collection returned might be quite large. Even just counting the events that are part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)], the collection count is in the high hundreds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRoutedEventsForOwner">
+      <MemberSignature Language="C#" Value="public static System.Windows.RoutedEvent[] GetRoutedEventsForOwner (Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.RoutedEvent[] GetRoutedEventsForOwner(class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.GetRoutedEventsForOwner(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="ownerType">The type to start the search with. Base classes are included in the search.</param>
+        <summary>Finds all routed event identifiers for events that are registered with the provided owner type.</summary>
+        <returns>An array of matching routed event identifiers if any match is found; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClassHandler">
+      <MemberSignature Language="C#" Value="public static void RegisterClassHandler (Type classType, System.Windows.RoutedEvent routedEvent, Delegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassHandler(class System.Type classType, class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterClassHandler(System.Type,System.Windows.RoutedEvent,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classType" Type="System.Type" />
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+        <Parameter Name="handler" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="classType">The type of the class that is declaring class handling.</param>
+        <param name="routedEvent">The routed event identifier of the event to handle.</param>
+        <param name="handler">A reference to the class handler implementation.</param>
+        <summary>Registers a class handler for a particular routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Class handling is a feature that is available for routed events, including attached events that are implemented with routed event backing. A class handler is like a static handler that exists for all instances of the class. Because the handler is static, you cannot change instance properties directly with a class handler, but you can access instances through the `sender` parameter and/or the event data.  
+  
+ Class handlers are invoked before instance handlers. You can implement a class handler that has the behavior of marking the event as handled. Therefore, instance handlers for a class-handled event are not invoked unless the instance handlers register specifically for handled events.  
+  
+ Many of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] base element events provide class handling virtual methods. By overriding these methods in classes that inherit the base classes, you can implement class handling without calling <xref:System.Windows.EventManager.RegisterClassHandler%2A> in static constructors. These class handling methods typically exist for input events and have names that start with "On" and end with the name of the event being class handled.  
+  
+ For more information about class handling, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+ Using this signature, class handlers will be registered to invoke only in response to unhandled events. You can also register class handlers to invoke even if the event arguments are marked handled, by using the <xref:System.Windows.EventManager.RegisterClassHandler%28System.Type%2CSystem.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> signature, with `handledEventsToo` set to `true`.  
+  
+   
+  
+## Examples  
+ The following example adds a handler for <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown>, calling <xref:System.Windows.EventManager.RegisterClassHandler%2A>.  
+  
+ [!code-csharp[ClassHandling#StaticAndRegisterClassHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ClassHandling/CSharp/SDKSampleLibrary/class1.cs#staticandregisterclasshandler)]
+ [!code-vb[ClassHandling#StaticAndRegisterClassHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClassHandling/visualbasic/sdksamplelibrary/class1.vb#staticandregisterclasshandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClassHandler">
+      <MemberSignature Language="C#" Value="public static void RegisterClassHandler (Type classType, System.Windows.RoutedEvent routedEvent, Delegate handler, bool handledEventsToo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassHandler(class System.Type classType, class System.Windows.RoutedEvent routedEvent, class System.Delegate handler, bool handledEventsToo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterClassHandler(System.Type,System.Windows.RoutedEvent,System.Delegate,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classType" Type="System.Type" />
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+        <Parameter Name="handler" Type="System.Delegate" />
+        <Parameter Name="handledEventsToo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="classType">The type of the class that is declaring class handling.</param>
+        <param name="routedEvent">The routed event identifier of the event to handle.</param>
+        <param name="handler">A reference to the class handler implementation.</param>
+        <param name="handledEventsToo">
+          <see langword="true" /> to invoke this class handler even if arguments of the routed event have been marked as handled; <see langword="false" /> to retain the default behavior of not invoking the handler on any marked-handled event.</param>
+        <summary>Registers a class handler for a particular routed event, with the option to handle events where event data is already marked handled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Class handling is a feature that is available for routed events, including attached events that are implemented with routed event backing. A class handler is like a static handler that exists for all instances of the class. Because the handler is static, you cannot change instance properties directly with a class handler, but you can access instances through the `sender` parameter and/or the event data.  
+  
+ Class handlers are invoked before instance handlers. You can implement a class handler that has the behavior of marking the event as handled. Therefore, instance handlers for a class-handled event are not invoked unless the instance handlers register specifically for handled events.  
+  
+ Many of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] base element events provide class handling virtual methods. By overriding these methods in classes that inherit the base classes, you can implement class handling without calling <xref:System.Windows.EventManager.RegisterClassHandler%2A> in static constructors. These class handling methods typically exist for input events and have names that start with "On" and end with the name of the event being class handled.  
+  
+ For more information about class handling, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+ Using this signature, class handlers can be registered to invoke upon handled events, by setting `handledEventsToo` set to `true`. Generally, you should do this only if there is a known handling issue you are trying to work around, such as input system handling from mouse or keyboard events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterRoutedEvent">
+      <MemberSignature Language="C#" Value="public static System.Windows.RoutedEvent RegisterRoutedEvent (string name, System.Windows.RoutingStrategy routingStrategy, Type handlerType, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.RoutedEvent RegisterRoutedEvent(string name, valuetype System.Windows.RoutingStrategy routingStrategy, class System.Type handlerType, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterRoutedEvent(System.String,System.Windows.RoutingStrategy,System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="routingStrategy" Type="System.Windows.RoutingStrategy" />
+        <Parameter Name="handlerType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the routed event. The name must be unique within the owner type and cannot be <see langword="null" /> or an empty string.</param>
+        <param name="routingStrategy">The routing strategy of the event as a value of the enumeration.</param>
+        <param name="handlerType">The type of the event handler. This must be a delegate type and cannot be <see langword="null" />.</param>
+        <param name="ownerType">The owner class type of the routed event. This cannot be <see langword="null" />.</param>
+        <summary>Registers a new routed event with the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] event system.</summary>
+        <returns>The identifier for the newly registered routed event. This identifier object can now be stored as a static field in a class and then used as a parameter for methods that attach handlers to the event. The routed event identifier is also used for other event system [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)].</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the return value of this method to create the static declaration for a unique <xref:System.Windows.RoutedEvent> identifier field. This field should be stored within the owner type.  
+  
+ There are a considerable number of conventions and best practices associated with how routed events should be named, registered, and exposed in a class. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

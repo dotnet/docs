@@ -1,0 +1,114 @@
+<Type Name="PerformanceCounterPermissionEntry" FullName="System.Diagnostics.PerformanceCounterPermissionEntry">
+  <TypeSignature Language="C#" Value="public class PerformanceCounterPermissionEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PerformanceCounterPermissionEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the smallest unit of a code access security permission that is set for a <see cref="T:System.Diagnostics.PerformanceCounter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on code access security, see [Code Access Security](~/docs/framework/misc/code-access-security.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterPermissionEntry (System.Diagnostics.PerformanceCounterPermissionAccess permissionAccess, string machineName, string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.PerformanceCounterPermissionAccess permissionAccess, string machineName, string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionEntry.#ctor(System.Diagnostics.PerformanceCounterPermissionAccess,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permissionAccess" Type="System.Diagnostics.PerformanceCounterPermissionAccess" />
+        <Parameter Name="machineName" Type="System.String" />
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" /> values. The <see cref="P:System.Diagnostics.PerformanceCounterPermissionEntry.PermissionAccess" /> property is set to this value.</param>
+        <param name="machineName">The server on which the category of the performance counter resides.</param>
+        <param name="categoryName">The name of the performance counter category (performance object) with which this performance counter is associated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="machineName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="permissionAccess" /> is not a valid <see cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" /> value.  
+  
+ -or-  
+  
+ <paramref name="machineName" /> is not a valid computer name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryName">
+      <MemberSignature Language="C#" Value="public string CategoryName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the performance counter category (performance object).</summary>
+        <value>The name of the performance counter category (performance object).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the server on which the category of the performance counter resides.</summary>
+        <value>The name of the server on which the category resides.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionAccess">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounterPermissionAccess PermissionAccess { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.PerformanceCounterPermissionAccess PermissionAccess" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.PermissionAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the permission access level of the entry.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

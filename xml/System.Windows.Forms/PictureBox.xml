@@ -1,0 +1,1784 @@
+<Type Name="PictureBox" FullName="System.Windows.Forms.PictureBox">
+  <TypeSignature Language="C#" Value="public class PictureBox : System.Windows.Forms.Control, System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PictureBox extends System.Windows.Forms.Control implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PictureBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultBindingProperty("Image")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Image")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.PictureBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.Ask)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a Windows picture box control for displaying an image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically the <xref:System.Windows.Forms.PictureBox> is used to display graphics from a bitmap, metafile, icon, JPEG, GIF, or PNG file.  
+  
+ Set the <xref:System.Windows.Forms.PictureBox.Image%2A> property to the <xref:System.Drawing.Image> you want to display, either at design time or at run time. You can alternatively specify the image by setting the <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> property and load the image synchronously using the <xref:System.Windows.Forms.PictureBox.Load%2A> method or asynchronously using the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method.  
+  
+> [!NOTE]
+>  If you want to use the same image in multiple <xref:System.Windows.Forms.PictureBox> controls, create a clone of the image for each <xref:System.Windows.Forms.PictureBox>. Accessing the same image from multiple controls causes an exception to occur.  
+  
+ The <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property, which is set to values in the <xref:System.Windows.Forms.PictureBoxSizeMode> enumeration, controls the clipping and positioning of the image in the display area. You can change the size of the display area at run time with the <xref:System.Windows.Forms.Control.ClientSize%2A> property.  
+  
+ By default, the <xref:System.Windows.Forms.PictureBox> control is displayed by without any borders. You can provide a standard or three-dimensional border using the <xref:System.Windows.Forms.PictureBox.BorderStyle%2A> property to distinguish the picture box from the rest of the form, even if it contains no image. The <xref:System.Windows.Forms.PictureBox> is not a selectable control, which means that it cannot receive input focus.  
+  
+   
+  
+## Examples  
+ The following code example illustrates how you can set an image and resize the display area of the picture box. This example requires that `ShowMyImage` is called in an existing form, and that the <xref:System.Drawing> namespace has been added to the source code for your form.  
+  
+ [!code-cpp[Classic PictureBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PictureBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PictureBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PictureBox Example/CS/source.cs#1)]
+ [!code-vb[Classic PictureBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PictureBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PictureBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PictureBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Windows.Forms.PictureBox> class.  
+  
+|Item|Description|  
+|----------|-----------------|  
+|<xref:System.Windows.Forms.PictureBox.Image%2A>|`null`|  
+|<xref:System.Windows.Forms.PictureBox.SizeMode%2A>|<xref:System.Windows.Forms.PictureBoxSizeMode>|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox> and <xref:System.Windows.Forms.ListView> controls. The <xref:System.Windows.Forms.PictureBox> is initialized by setting the <xref:System.Windows.Forms.PictureBox.BorderStyle%2A> and <xref:System.Windows.Forms.PictureBox.SizeMode%2A> properties using the <xref:System.Windows.Forms.BorderStyle> and <xref:System.Windows.Forms.PictureBoxSizeMode> enumerations, respectively. The <xref:System.Windows.Forms.ListView> is populated with pictures from the Sample Pictures directory. The <xref:System.Windows.Forms.ListView.GetItemAt%2A?displayProperty=fullName> method is used when handling the <xref:System.Windows.Forms.Control.MouseDown> event of the <xref:System.Windows.Forms.ListView> control to determine whether an item is selected. If an item is selected, the event handler displays the selected file by setting the <xref:System.Windows.Forms.PictureBox.Image%2A> property. The example requires that you have JPG files located in the C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures directory. To run the example, paste the code into a form and call the `InitializePictureBox` and `PopulateListView` methods in the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDrop">
+      <MemberSignature Language="C#" Value="public override bool AllowDrop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDrop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.AllowDrop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property.</summary>
+        <value>
+          <see langword="true" /> if drag-and-drop operations are allowed in the control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the border style for the control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> enumeration values. The default is <see cref="F:System.Windows.Forms.BorderStyle.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify this property at design time or run time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox> and <xref:System.Windows.Forms.ListView> controls. The <xref:System.Windows.Forms.PictureBox> is initialized by setting the <xref:System.Windows.Forms.PictureBox.BorderStyle%2A> and <xref:System.Windows.Forms.PictureBox.SizeMode%2A> properties using the <xref:System.Windows.Forms.BorderStyle> and <xref:System.Windows.Forms.PictureBoxSizeMode> enumerations, respectively. The <xref:System.Windows.Forms.ListView> is populated with pictures from the Sample Pictures directory. The <xref:System.Windows.Forms.ListView.GetItemAt%2A?displayProperty=fullName> method is used in when handling the <xref:System.Windows.Forms.Control.MouseDown> event of the <xref:System.Windows.Forms.ListView> control to determine whether an item is selected. If an item is selected, the event handler displays the selected file by setting the <xref:System.Windows.Forms.PictureBox.Image%2A> property. The example requires that you have  JPG files located in the C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures directory. To run this example, paste the code into a form and call the `InitializePictureBox` and `PopulateListView` methods in the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public void CancelAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.CancelAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels an asynchronous image load.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.PictureBox> image is loaded asynchronously when the <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> property is `false` and the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method is used to load the image. If a load is canceled with the <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> method cancellation is reported by raising the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event with the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> method. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and two <xref:System.Windows.Forms.Button> controls named `startLoadButton` and `cancelLoadButton`. Make sure that the <xref:System.Windows.Forms.Control.Click> event for the buttons is associated with their event-handling method in this example. You must change the image file path to a path that is valid on your system.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#3)]  
+[!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#4)]
+[!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="P:System.Windows.Forms.Control.CausesValidation" /> property.</summary>
+        <value>
+          <see langword="true" /> if the control causes validation to be performed on any controls requiring validation when it receives focus; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidationChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.CausesValidationChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="E:System.Windows.Forms.Control.CausesValidationChanged" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="P:System.Windows.Forms.Control.CreateParams" /> property.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For calling unmanaged code when getting the property value. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultImeMode">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ImeMode DefaultImeMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImeMode DefaultImeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.DefaultImeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the mode for Input Method Editor (IME) for the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <value>Always <see cref="F:System.Windows.Forms.ImeMode.Disable" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release unmanaged resources only.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.PictureBox" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.PictureBox> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.Enter" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="E:System.Windows.Forms.Control.Enter" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorImage">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image ErrorImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image ErrorImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.ErrorImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image to display when an error occurs during the image-loading process or if the image load is canceled.</summary>
+        <value>An <see cref="T:System.Drawing.Image" /> to display if an error occurs during the image-loading process or if the image load is canceled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Windows.Forms.PictureBox.ErrorImage%2A> is specified, a default error image is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font of the text displayed by the control.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.FontChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.Font" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property.</summary>
+        <value>The foreground <see cref="T:System.Drawing.Color" /> of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultForeColor" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColorChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.ForeColorChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.ForeColor" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image Image { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.Image" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image that is displayed by <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <value>The <see cref="T:System.Drawing.Image" /> to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PictureBox.Image%2A> property is set to the <xref:System.Drawing.Image> to display. You can do this either at design time or at run time.  
+  
+> [!NOTE]
+>  If you want to use the same image in multiple <xref:System.Windows.Forms.PictureBox> controls, create a clone of the image for each <xref:System.Windows.Forms.PictureBox>. Accessing the same image from multiple controls causes an exception to occur.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a bitmap at runtime and display it in a <xref:System.Windows.Forms.PictureBox> by setting the <xref:System.Windows.Forms.PictureBox.Image%2A> property. To run this example, paste it into a Windows Form and call `CreateBitmapAtRuntime` from the form's constructor.  
+  
+ [!code-csharp[System.Drawing.CreateBitmapAtRuntime#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CreateBitmapAtRuntime/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.CreateBitmapAtRuntime#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CreateBitmapAtRuntime/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageLocation">
+      <MemberSignature Language="C#" Value="public string ImageLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.ImageLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path or URL for the image to display in the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <value>The path or URL for the image to display in the <see cref="T:System.Windows.Forms.PictureBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value can be an actual path (for example, “C:\SomeFolder\SomeSubFolder\Picture.jpg”), a relative path (“\SomeSubFolder\Picture.jpg”), or a URL (http://contoso.com/images/Picture.jpg).  
+  
+ If a relative path is used, it will be considered relative to the working directory.  
+  
+ A call to the <xref:System.Windows.Forms.PictureBox.Load%2A> method will overwrite the <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> property, setting <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> to the URL value specified in the method call.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImeMode ImeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImeMode ImeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.ImeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Input Method Editor(IME) mode supported by this control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImeModeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.ImeModeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.ImeMode" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialImage">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image InitialImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image InitialImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.InitialImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image displayed in the <see cref="T:System.Windows.Forms.PictureBox" /> control when the main image is loading.</summary>
+        <value>The <see cref="T:System.Drawing.Image" /> displayed in the picture box control when the main image is loading.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Windows.Forms.PictureBox.InitialImage%2A> is specified, a default image is displayed. The <xref:System.Windows.Forms.PictureBox.InitialImage%2A> is always displayed non-stretched, in the center of the <xref:System.Windows.Forms.PictureBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDown">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.KeyDown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is pressed when the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPress">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.KeyPress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is pressed when the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUp">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.KeyUp" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a key is released when the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave">
+      <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.Leave" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when input focus leaves the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.Load" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the image specified by the <see cref="P:System.Windows.Forms.PictureBox.ImageLocation" /> property of the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.PictureBox.ImageLocation" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.Load(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The path for the image to display in the <see cref="T:System.Windows.Forms.PictureBox" />.</param>
+        <summary>Sets the <see cref="P:System.Windows.Forms.PictureBox.ImageLocation" /> to the specified URL and displays the image indicated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `url` parameter indicates a local file, the recommended format is a local file path. For example, an image file named myPicture.jpglocated atc:\ would be accessed by passing **c:\myPicture.jpg** for the `url` parameter. A full path, such as **http://www.contoso.com/path/images/image.jpg**, or a relative path, such as **./images/image.jpg**, can be used. If a relative path is used, it will be considered relative to the working directory. A call to the <xref:System.Windows.Forms.PictureBox.Load%2A> method sets the <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> property to the value of `url`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="url" /> is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.Net.WebException">
+          <paramref name="url" /> refers to an image on the Web that cannot be accessed.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="url" /> refers to a file that is not an image.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="url" /> refers to a file that does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public void LoadAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.LoadAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads the image asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Besides calling the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method, the <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> property must be set to `false` to load an image asynchronously. When you load an image asynchronously, you can handle the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> event to determine the progress of an image load or the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event to determine when an image load has completed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public void LoadAsync (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadAsync(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.LoadAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The path for the image to display in the <see cref="T:System.Windows.Forms.PictureBox" />.</param>
+        <summary>Loads the image at the specified location, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `url` parameter indicates a local file, the recommended format is a local file path. For example, an image file named myPicture.jpglocated atc:\ would be accessed by passing **c:\myPicture.jpg** for the `url` parameter. A full path, such as **http://www.contoso.com/path/images/image.jpg**, or a relative path, such as **./images/image.jpg**, can be used. If a relative path is used, it will be considered relative to the working directory. A call to the <xref:System.Windows.Forms.PictureBox.Load%2A> method sets the <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> property to the value of `url`.  
+  
+ A call to the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method sets the <xref:System.Windows.Forms.PictureBox.ImageLocation%2A> property to the value of `url`. Besides calling the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method, you must set the <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> property to `false` to load an image asynchronously. When you load an image asynchronously, you can handle the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> event to determine the progress of an image load or the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event to determine when an image load has completed. If an error occurs during an asynchronous image-loading operation, it will be caught and reported by the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and a <xref:System.Windows.Forms.Button> named `startLoadButton`. Make sure that the <xref:System.Windows.Forms.Control.Click> event for the button is associated with the `startLoadButton_Click` method in this example. You must change the image file path to a path that is valid on your system.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCompleted">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.AsyncCompletedEventHandler LoadCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AsyncCompletedEventHandler LoadCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.LoadCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AsyncCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the asynchronous image-load operation is completed, been canceled, or raised an exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PictureBox.LoadCompleted> occurs only when the image is loaded asynchronously by using one of the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> methods, and <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> is `false`. If the image-load is canceled by calling the <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> method the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> will be set to `true`. If an exception or error occurs during the load process, it will be caught and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> will contain the exception information.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#516](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#516)]
+ [!code-vb[System.Windows.Forms.EventExamples#516](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#516)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.ProgressChangedEventHandler LoadProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ProgressChangedEventHandler LoadProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.LoadProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the progress of an asynchronous image-loading operation has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> occurs only when the image is loaded asynchronously by using one of the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> methods. The progress percentage of the image load is reported with the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property of the <xref:System.ComponentModel.ProgressChangedEventArgs>.  
+  
+ Handle the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> if you want to reflect the progress of an asynchronous image-loading operation in a <xref:System.Windows.Forms.ProgressBar> or similar control. Use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property of the <xref:System.ComponentModel.ProgressChangedEventArgs> to update the progress value.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> event. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `pictureBox1`, a <xref:System.Windows.Forms.Button> named `startLoadButton`, and a <xref:System.Windows.Forms.ProgressBar> named `progressBar1`. Make sure that the `startLoadButton_Click` method is associated with the <xref:System.Windows.Forms.Control.Click> event for the button and the `pictureBox1_LoadProgressChanged` method is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> event for `pictureBox1`. You must change the image file path to a path that is valid on your system.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#3)]  
+[!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#5)]
+[!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEnabledChanged">
+      <MemberSignature Language="C#" Value="protected override void OnEnabledChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnabledChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnEnabledChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnHandleCreated(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnHandleCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleDestroyed">
+      <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoadCompleted">
+      <MemberSignature Language="C#" Value="protected virtual void OnLoadCompleted (System.ComponentModel.AsyncCompletedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadCompleted(class System.ComponentModel.AsyncCompletedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.AsyncCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PictureBox.LoadCompleted" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnLoadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoadProgressChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnLoadProgressChanged (System.ComponentModel.ProgressChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadProgressChanged(class System.ComponentModel.ProgressChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnLoadProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.ProgressChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.ProgressChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PictureBox.LoadProgressChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnLoadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnLoadProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnLoadProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs pe);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs pe) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Windows.Forms.PaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParentChanged">
+      <MemberSignature Language="C#" Value="protected override void OnParentChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnParentChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResize">
+      <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnResize(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method redraws the image if the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property is set to <xref:System.Windows.Forms.PictureBoxSizeMode>, <xref:System.Windows.Forms.PictureBoxSizeMode>, or <xref:System.Windows.Forms.PictureBoxSizeMode>.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnResize(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnResize(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSizeModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSizeModeChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSizeModeChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnSizeModeChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.PictureBox.SizeModeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.PictureBox.OnSizeModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.PictureBox.OnSizeModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PictureBox.OnSizeModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisibleChanged">
+      <MemberSignature Language="C#" Value="protected override void OnVisibleChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnVisibleChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.OnVisibleChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.RightToLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left languages.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeftChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.RightToLeftChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.RightToLeft" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.PictureBoxSizeMode SizeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.PictureBoxSizeMode SizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.SizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates how the image is displayed.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.PictureBoxSizeMode" /> values. The default is <see cref="F:System.Windows.Forms.PictureBoxSizeMode.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid values for this property are taken from the <xref:System.Windows.Forms.PictureBoxSizeMode> enumeration.  
+  
+ By default, in <xref:System.Windows.Forms.PictureBoxSizeMode> mode, the <xref:System.Drawing.Image> is positioned in the upper-left corner of the <xref:System.Windows.Forms.PictureBox>, and any part of the image that is too big for the <xref:System.Windows.Forms.PictureBox> is clipped. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to stretch or shrink to fit the <xref:System.Windows.Forms.PictureBox>. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to be stretched or shrunk to fit the <xref:System.Windows.Forms.PictureBox>; however, the aspect ratio in the original is maintained.  
+  
+ Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the control to resize to always fit the image. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to be centered in the client area.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property. To run this example, paste the following code into a Windows Form and call the `InitializePictureBoxAndButton` method from the form's constructor or Load-event handling method.  
+  
+ [!code-csharp[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/CS/Form1.cs#10)]
+ [!code-vb[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/VB/Form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.PictureBoxSizeMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeModeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SizeModeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeModeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.SizeModeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="P:System.Windows.Forms.PictureBox.SizeMode" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.SizeModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.SizeModeChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#518](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#518)]
+ [!code-vb[System.Windows.Forms.EventExamples#518](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#518)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the object that initialization is starting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals to the object that initialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndex">
+      <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.TabIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tab index value.</summary>
+        <value>The tab index value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.TabIndexChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.TabIndex" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStop">
+      <MemberSignature Language="C#" Value="public bool TabStop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TabStop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.TabStop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the user can give the focus to this control by using the TAB key.</summary>
+        <value>
+          <see langword="true" /> if the user can give the focus to the control by using the TAB key; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStopChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.TabStopChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.TabStop" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <value>The text of the <see cref="T:System.Windows.Forms.PictureBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.PictureBox.Text%2A> property of the <xref:System.Windows.Forms.PictureBox> has no affect on its appearance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PictureBox.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PictureBox.Text" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PictureBox.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.PictureBox" /> control.</summary>
+        <returns>A string that represents the current <see cref="T:System.Windows.Forms.PictureBox" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PictureBox.ToString%2A> method returns a string that includes the type and the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitOnLoad">
+      <MemberSignature Language="C#" Value="public bool WaitOnLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WaitOnLoad" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PictureBox.WaitOnLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an image is loaded synchronously.</summary>
+        <value>
+          <see langword="true" /> if an image-loading operation is completed synchronously; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> property to `true` means the image is loaded synchronously. This causes the user interface to be blocked from other input until the image is loaded. When <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> is `false` (the default) and the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method is used to load the image, the <xref:System.Windows.Forms.PictureBox.InitialImage%2A> image is displayed when the specified image is loaded, and the user can interact with the interface during the load process.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> property. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and a <xref:System.Windows.Forms.Button> named `startLoadButton`. Make sure that the <xref:System.Windows.Forms.Control.Click> event for the button is associated with the `startLoadButton_Click` method in this example. You must change the image file path to one that is valid on your system.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

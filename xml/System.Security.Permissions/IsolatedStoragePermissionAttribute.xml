@@ -1,0 +1,103 @@
+<Type Name="IsolatedStoragePermissionAttribute" FullName="System.Security.Permissions.IsolatedStoragePermissionAttribute">
+  <TypeSignature Language="C#" Value="public abstract class IsolatedStoragePermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit IsolatedStoragePermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStoragePermissionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows security actions for <see cref="T:System.Security.Permissions.IsolatedStoragePermission" /> to be applied to code using declarative security.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is an abstract base class. This class is never used instantiated; instead, classes that extend it and represent access to a particular type of isolated storage are used.  
+  
+ The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used.  
+  
+ The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IsolatedStoragePermissionAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.IsolatedStoragePermissionAttribute" /> class with the specified <see cref="T:System.Security.Permissions.SecurityAction" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by derived class constructors to initialize states in this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageAllowed">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.IsolatedStorageContainment UsageAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.IsolatedStorageContainment UsageAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermissionAttribute.UsageAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of isolated storage that should be declared.</summary>
+        <value>One of the <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserQuota">
+      <MemberSignature Language="C#" Value="public long UserQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 UserQuota" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermissionAttribute.UserQuota" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum user storage quota size.</summary>
+        <value>The maximum user storage quota size in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

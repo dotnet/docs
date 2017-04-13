@@ -1,0 +1,263 @@
+<Type Name="ReplicationNeighbor+ReplicationNeighborOptions" FullName="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions">
+  <TypeSignature Language="C#" Value="public enum ReplicationNeighbor.ReplicationNeighborOptions" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ReplicationNeighbor/ReplicationNeighborOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the options for a <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompressChanges">
+      <MemberSignature Language="C#" Value="CompressChanges" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions CompressChanges = int64(268435456)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.CompressChanges" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Changes that are received from this source are compressed. This option is usually set only if the source server is in a different site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableScheduledSync">
+      <MemberSignature Language="C#" Value="DisableScheduledSync" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions DisableScheduledSync = int64(134217728)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.DisableScheduledSync" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This option is set to disable synchronizations based on its schedule. The only way this neighbor will perform synchronizations is in response to a change notification or to a manual request for synchronizations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullSyncInProgress">
+      <MemberSignature Language="C#" Value="FullSyncInProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions FullSyncInProgress = int64(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncInProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The destination server is performing a full synchronization from the source server. Full synchronizations do not use vectors that create updates (DS_REPL_CURSORS) for filtering updates. Full synchronizations are not used as a part of the normal replication protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullSyncNextPacket">
+      <MemberSignature Language="C#" Value="FullSyncNextPacket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions FullSyncNextPacket = int64(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncNextPacket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The last packet from the source indicated that an object that has not yet been created by the destination server has been modified. The next packet that is requested will instruct the source server to put all attributes of the modified object into the packet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreChangeNotifications">
+      <MemberSignature Language="C#" Value="IgnoreChangeNotifications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions IgnoreChangeNotifications = int64(67108864)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.IgnoreChangeNotifications" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This option is set to disable notification based synchronizations. Within a site, domain controllers synchronize with each other based on notifications when changes occur. This setting prevents this neighbor from performing syncs that are triggered by notifications. The neighbor will still do synchronizations based on its schedule, or if requested manually.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeverSynced">
+      <MemberSignature Language="C#" Value="NeverSynced" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions NeverSynced = int64(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NeverSynced" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A synchronization has never been successfully completed from this source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoChangeNotifications">
+      <MemberSignature Language="C#" Value="NoChangeNotifications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions NoChangeNotifications = int64(536870912)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NoChangeNotifications" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No change notifications should be received from this source. This option is usually set only if the source server is in a different site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartialAttributeSet">
+      <MemberSignature Language="C#" Value="PartialAttributeSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions PartialAttributeSet = int64(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.PartialAttributeSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This neighbor is in a state where it is rebuilding the contents of this replica because of a change in the partial attribute set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Preempted">
+      <MemberSignature Language="C#" Value="Preempted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions Preempted = int64(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Preempted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The replication engine has temporarily stopped processing this neighbor in order to service another higher-priority neighbor, either for this partition or another partition. The replication engine will resume processing this neighbor after the higher-priority work is completed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnObjectParent">
+      <MemberSignature Language="C#" Value="ReturnObjectParent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions ReturnObjectParent = int64(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ReturnObjectParent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This neighbor is in a state where it returns parent objects before children objects. It goes into this state after it receives a child object before its parent.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduledSync">
+      <MemberSignature Language="C#" Value="ScheduledSync" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions ScheduledSync = int64(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ScheduledSync" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Perform replication on a schedule. This option is normally set unless the schedule for this naming context/source is "never", that is, the empty schedule.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncOnStartup">
+      <MemberSignature Language="C#" Value="SyncOnStartup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions SyncOnStartup = int64(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.SyncOnStartup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replication of this naming context from this source is attempted when the destination server is restarted. This normally only applies to intra-site neighbors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoWaySync">
+      <MemberSignature Language="C#" Value="TwoWaySync" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions TwoWaySync = int64(512)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.TwoWaySync" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If set, this option indicates that when inbound replication is complete, the destination server must tell the source server to synchronize in the reverse direction. This feature is used in dial-up scenarios where only one of the two servers can initiate a dial-up connection. For example, this option would be used in a corporate headquarters and branch office, where the branch office connects to the corporate headquarters over the Internet by means of a dial-up ISP connection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseInterSiteTransport">
+      <MemberSignature Language="C#" Value="UseInterSiteTransport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions UseInterSiteTransport = int64(128)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.UseInterSiteTransport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Perform replication indirectly through the Inter-Site Messaging Service. This flag is set only when replicating over SMTP. This flag is not set when replicating over inter-site RPC/IP.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Writeable">
+      <MemberSignature Language="C#" Value="Writeable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ReplicationNeighbor/ReplicationNeighborOptions Writeable = int64(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Writeable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighbor+ReplicationNeighborOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The local copy of the naming context is writable.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,252 @@
+<Type Name="MemberRelationshipService" FullName="System.ComponentModel.Design.Serialization.MemberRelationshipService">
+  <TypeSignature Language="C#" Value="public abstract class MemberRelationshipService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemberRelationshipService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.MemberRelationshipService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class for relating one member to another.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Designers serialize themselves to code through an engine that searches through the live property values of objects and generates those values as code. So, for example, the text of a button is generated in the following format.  
+  
+```csharp  
+this.okButton.Text = "OK";  
+```  
+  
+ One of the limitations of this scheme is that it is difficult to retrieve a property from another location. For example, it is very difficult to emit code in the following format, because the only thing the code generator can rely on is the value in the property.  
+  
+```csharp  
+this.titleLabel.Text = this.Text;  
+```  
+  
+   
+  
+## Examples  
+ The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService> simplifies retrieval of a property value from another location. A designer can access this service to dictate that one member is assigned the value of another. The code generator searches for such relationships when generating code, and if a relationship between two members is found the code generator, it emits code for the relationship rather than searching for the property value. Using the previous text assignment as an example, the following code example shows design time code used to establish a relationship.  
+  
+```csharp  
+object titleLabel, form;  
+PropertyDescriptor titleLabelText = TypeDescriptor.GetProperties(titleLabel)["Text"];  
+PropertyDescriptor formText = TypeDescriptor.GetProperties(form)["Text"];  
+MemberRelationshipService ms = GetService(typeof(MemberRelationshipService);  
+ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);  
+```  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationshipService" /> class is <see langword="abstract" />. Implementing a concrete version varies depending on the types of members that are supported. For example, relating one event to another might require a different implementation than relating one property to another. Implementing the service requires the following steps:  
+  
+-   Implement <see cref="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.SupportsRelationship(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" /> to return <see langword="true" /> for relationships that you support.  
+  
+-   Track changes to the source relationship and assign value changes into the target relationship.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MemberRelationshipService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationshipService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRelationship">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.Design.Serialization.MemberRelationship GetRelationship (System.ComponentModel.Design.Serialization.MemberRelationship source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.ComponentModel.Design.Serialization.MemberRelationship GetRelationship(valuetype System.ComponentModel.Design.Serialization.MemberRelationship source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.GetRelationship(System.ComponentModel.Design.Serialization.MemberRelationship)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.MemberRelationship</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source relationship.</param>
+        <summary>Gets a relationship to the given source relationship.</summary>
+        <returns>A relationship to <paramref name="source" />, or <see cref="F:System.ComponentModel.Design.Serialization.MemberRelationship.Empty" /> if no relationship exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation stores relationships in a dictionary using weak references, so the relationship table does not keep objects alive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.MemberRelationship this[System.ComponentModel.Design.Serialization.MemberRelationship source] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.Serialization.MemberRelationship Item(valuetype System.ComponentModel.Design.Serialization.MemberRelationship)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationshipService.Item(System.ComponentModel.Design.Serialization.MemberRelationship)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.MemberRelationship</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source relationship. This is the left-hand side of a relationship assignment.</param>
+        <summary>Establishes a relationship between a source and target object.</summary>
+        <value>The current relationship associated with <paramref name="source" />, or <see cref="F:System.ComponentModel.Design.Serialization.MemberRelationship.Empty" /> if there is no relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.ComponentModel.Design.Serialization.MemberRelationship> is assigned to the source, any existing relationship is removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> is empty, or the relationship is not supported by the service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.MemberRelationship this[object sourceOwner, System.ComponentModel.MemberDescriptor sourceMember] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.Serialization.MemberRelationship Item(object, class System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationshipService.Item(System.Object,System.ComponentModel.MemberDescriptor)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.MemberRelationship</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceOwner" Type="System.Object" />
+        <Parameter Name="sourceMember" Type="System.ComponentModel.MemberDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="sourceOwner">The owner of a source relationship.</param>
+        <param name="sourceMember">The member of a source relationship.</param>
+        <summary>Establishes a relationship between a source and target object.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structure encapsulating the relationship between a source and target object, or <see langword="null" /> if there is no relationship.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceOwner" /> or <paramref name="sourceMember" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceOwner" /> or <paramref name="sourceMember" /> is empty, or the relationship is not supported by the service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRelationship">
+      <MemberSignature Language="C#" Value="protected virtual void SetRelationship (System.ComponentModel.Design.Serialization.MemberRelationship source, System.ComponentModel.Design.Serialization.MemberRelationship relationship);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetRelationship(valuetype System.ComponentModel.Design.Serialization.MemberRelationship source, valuetype System.ComponentModel.Design.Serialization.MemberRelationship relationship) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+        <Parameter Name="relationship" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source relationship.</param>
+        <param name="relationship">The relationship to set into the source.</param>
+        <summary>Creates a relationship between the source object and target relationship.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship%2A> method clears any existing relationship if the relationship parameter is <xref:System.ComponentModel.Design.Serialization.MemberRelationship>. The default implementation stores relationships in a dictionary using weak references so the relationship table does not keep objects alive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The relationship is not supported by the service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsRelationship">
+      <MemberSignature Language="C#" Value="public abstract bool SupportsRelationship (System.ComponentModel.Design.Serialization.MemberRelationship source, System.ComponentModel.Design.Serialization.MemberRelationship relationship);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsRelationship(valuetype System.ComponentModel.Design.Serialization.MemberRelationship source, valuetype System.ComponentModel.Design.Serialization.MemberRelationship relationship) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.SupportsRelationship(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+        <Parameter Name="relationship" Type="System.ComponentModel.Design.Serialization.MemberRelationship" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source relationship.</param>
+        <param name="relationship">The relationship to set into the source.</param>
+        <summary>Gets a value indicating whether the given relationship is supported.</summary>
+        <returns>
+          <see langword="true" /> if a relationship between the given two objects is supported; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

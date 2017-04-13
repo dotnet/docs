@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrMaxErrNumber"
 ms.assetid: c5cb5753-516e-4568-9d63-0e9a2a4c5812
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

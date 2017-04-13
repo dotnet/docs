@@ -41,7 +41,7 @@ translation.priority.ht:
 # Casting and Type Conversions (C# Programming Guide)
 Because C# is statically-typed at compile time, after a variable is declared, it cannot be declared again or used to store values of another type unless that type is convertible to the variable's type. For example, there is no conversion from an integer to any arbitrary string. Therefore, after you declare `i` as an integer, you cannot assign the string "Hello" to it, as is shown in the following code.  
   
-```cs  
+```csharp  
 int i;  
 i = "Hello"; // Error: "Cannot implicitly convert type 'string' to 'int'"  
 ```  
@@ -79,7 +79,7 @@ Base b = d; // Always OK.
   
  For reference types, an explicit cast is required if you need to convert from a base type to a derived type:  
   
-```cs  
+```csharp  
 // Create a new derived type.  
 Giraffe g = new Giraffe();  
   
@@ -104,10 +104,7 @@ Giraffe g2 = (Giraffe) a;
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Types](../../../csharp/programming-guide/types/index.md)   

@@ -1,0 +1,378 @@
+<Type Name="TabItem" FullName="System.Windows.Controls.TabItem">
+  <TypeSignature Language="C#" Value="public class TabItem : System.Windows.Controls.HeaderedContentControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TabItem extends System.Windows.Controls.HeaderedContentControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabItem" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.HeaderedContentControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("IsSelectedChanged")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a selectable item inside a <see cref="T:System.Windows.Controls.TabControl" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.TabItem> is a <xref:System.Windows.Controls.HeaderedContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A> and its header property is <xref:System.Windows.Controls.HeaderedContentControl.Header%2A>. For more information, see the <xref:System.Windows.Controls.HeaderedContentControl> class.  
+  
+## Customizing the TabControl Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.TabItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TabItem>, see [TabControl Styles and Templates](~/docs/framework/wpf/controls/tabcontrol-styles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.TabItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.TabControl> with <xref:System.Windows.Controls.TabItem> elements.  
+  
+ [!code-xml[TabControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControl/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TabItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TabItem" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabItem.IsSelected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.TabItem" /> is selected.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.TabItem" /> is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSelected"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.TabItem>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.TabItem.IsSelected%2A> property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
+  
+ [!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]
+ <!-- TODO: review snippet reference [!code-xml[TabControlStyles#4](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlStyles/XAML/Pane1.xaml#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSelectedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSelectedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabItem.IsSelectedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.TabItem.IsSelected" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAccessKey">
+      <MemberSignature Language="C#" Value="protected override void OnAccessKey (System.Windows.Input.AccessKeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAccessKey(class System.Windows.Input.AccessKeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.AccessKeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for <see cref="T:System.Windows.Input.AccessKeyEventArgs" />.</param>
+        <summary>Responds when an <see cref="P:System.Windows.Controls.AccessText.AccessKey" /> for a <see cref="T:System.Windows.Controls.TabControl" /> is called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContentChanged">
+      <MemberSignature Language="C#" Value="protected override void OnContentChanged (object oldContent, object newContent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentChanged(object oldContent, object newContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentChanged(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldContent" Type="System.Object" />
+        <Parameter Name="newContent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="oldContent">Old value of the content property.</param>
+        <param name="newContent">New value of the content property.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.ContentControl.Content" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContentTemplateChanged">
+      <MemberSignature Language="C#" Value="protected override void OnContentTemplateChanged (System.Windows.DataTemplate oldContentTemplate, System.Windows.DataTemplate newContentTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentTemplateChanged(class System.Windows.DataTemplate oldContentTemplate, class System.Windows.DataTemplate newContentTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldContentTemplate" Type="System.Windows.DataTemplate" />
+        <Parameter Name="newContentTemplate" Type="System.Windows.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="oldContentTemplate">Old value of the content template property.</param>
+        <param name="newContentTemplate">New value of the content template property.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.TabControl.ContentTemplate" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContentTemplateSelectorChanged">
+      <MemberSignature Language="C#" Value="protected override void OnContentTemplateSelectorChanged (System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, System.Windows.Controls.DataTemplateSelector newContentTemplateSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentTemplateSelectorChanged(class System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, class System.Windows.Controls.DataTemplateSelector newContentTemplateSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldContentTemplateSelector" Type="System.Windows.Controls.DataTemplateSelector" />
+        <Parameter Name="newContentTemplateSelector" Type="System.Windows.Controls.DataTemplateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="oldContentTemplateSelector">Old value of the content template selector.</param>
+        <param name="newContentTemplateSelector">New value of the content template selector.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.TabControl.ContentTemplateSelector" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for <see cref="T:System.Windows.Input.MouseButtonEventArgs" />.</param>
+        <summary>Responds to the <see cref="E:System.Windows.ContentElement.MouseLeftButtonDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewGotKeyboardFocus">
+      <MemberSignature Language="C#" Value="protected override void OnPreviewGotKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewGotKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Keyboard input event arguments.</param>
+        <summary>Announces that the keyboard is focused on this element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelected (System.Windows.RoutedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelected(class System.Windows.RoutedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnSelected(System.Windows.RoutedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.Primitives.Selector.Selected" /> event.</param>
+        <summary>Called to indicate that the <see cref="P:System.Windows.Controls.TabItem.IsSelected" /> property has changed to <see langword="true" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUnselected">
+      <MemberSignature Language="C#" Value="protected virtual void OnUnselected (System.Windows.RoutedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnselected(class System.Windows.RoutedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnUnselected(System.Windows.RoutedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.Primitives.Selector.Unselected" /> event.</param>
+        <summary>Called to indicate that the <see cref="P:System.Windows.Controls.TabItem.IsSelected" /> property has changed to <see langword="false" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStripPlacement">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Dock TabStripPlacement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Dock TabStripPlacement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabItem.TabStripPlacement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Dock</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tab strip placement.</summary>
+        <value>One of the <see cref="T:System.Windows.Controls.Dock" /> values. The default is <see cref="F:System.Windows.Controls.Dock.Top" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property cannot be set. It gets its value from the <xref:System.Windows.Controls.TabControl.TabStripPlacement%2A?displayProperty=fullName> property of the parent <xref:System.Windows.Controls.TabControl>.  
+  
+<a name="dependencyPropertyInfo_TabStripPlacement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.TabItem.TabStripPlacementProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve <xref:System.Windows.Controls.TabItem.TabStripPlacement%2A> information about a <xref:System.Windows.Controls.TabItem>.  
+  
+ [!code-csharp[TabItem_snip#TabItemPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/TabItem_snip/CSharp/Pane1.xaml.cs#tabitemplacement)]
+ [!code-vb[TabItem_snip#TabItemPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabItem_snip/visualbasic/pane1.xaml.vb#tabitemplacement)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStripPlacementProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabStripPlacementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabStripPlacementProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabItem.TabStripPlacementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.TabItem.TabStripPlacement" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

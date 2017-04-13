@@ -1,0 +1,195 @@
+<Type Name="EndpointDiscoveryMetadata" FullName="System.ServiceModel.Discovery.EndpointDiscoveryMetadata">
+  <TypeSignature Language="C#" Value="public class EndpointDiscoveryMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointDiscoveryMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the metadata for a discoverable service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> class contains metadata about the service it represents.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointDiscoveryMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the endpoint address for the endpoint the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance describes.</summary>
+        <value>The endpoint address for the service endpoint the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance describes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractTypeNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt; ContractTypeNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlQualifiedName&gt; ContractTypeNames" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.ContractTypeNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of contract type names implemented by the service described by the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</summary>
+        <value>A collection of contract type names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt; Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.Linq.XElement&gt; Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the extensions associated with this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
+        <value>A collection of extensions.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromServiceEndpoint">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.EndpointDiscoveryMetadata FromServiceEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.EndpointDiscoveryMetadata FromServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.FromServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">A service endpoint.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> from a <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromServiceEndpoint">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.EndpointDiscoveryMetadata FromServiceEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.EndpointDiscoveryMetadata FromServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.FromServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The endpoint.</param>
+        <param name="endpointDispatcher">The endpoint dispatcher.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> class using the specified service endpoint and endpoint dispatcher.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenUris">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Uri&gt; ListenUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; ListenUris" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.ListenUris" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the listen URIs for the service described by this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
+        <value>A collection of listen URIs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scopes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Uri&gt; Scopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; Scopes" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.Scopes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scopes associated with this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
+        <value>A collection of absolute URIs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryMetadata.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version of the published <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</summary>
+        <value>The version of the published <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

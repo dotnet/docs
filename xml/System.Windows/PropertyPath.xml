@@ -1,0 +1,197 @@
+<Type Name="PropertyPath" FullName="System.Windows.PropertyPath">
+  <TypeSignature Language="C#" Value="public sealed class PropertyPath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PropertyPath extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.PropertyPath" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.PropertyPathConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements a data structure for describing a property as a path below another property, or below an owning type. Property paths are used in data binding to objects, and in storyboards and timelines for animations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class contains a string <xref:System.Windows.PropertyPath.Path%2A>, and list of dependency properties that are the <xref:System.Windows.PropertyPath.PathParameters%2A> into the string<xref:System.Windows.PropertyPath.Path%2A>.  
+  
+ <xref:System.Windows.PropertyPath> supports two modes of behavior:  
+  
+ **Source mode** describes a path to a property that is used as a source for some other operation. This mode is used by the <xref:System.Windows.Data.Binding> class to support data binding.  
+  
+ **Target mode** describes a path to a property that will be set as a target property. This mode is used by animation in support of storyboard and timeline setters.  
+  
+ For instance, `Background.Opacity` is a two-step path. This path implies: first, find the `Background` property of an object, get the value object that the `Background` property is set to, and then get the value of the `Opacity` property on that object.  
+  
+<a name="xamlAttributeUsage_PropertyPath"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="propertyPath" .../>  
+```  
+  
+<a name="xamlValues_PropertyPath"></a>   
+## XAML Values  
+ *propertyPath*  
+ A string that is evaluated to be either a simple or complex property path. The syntax for setting a <xref:System.Windows.PropertyPath> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is versatile but complex, and is described in the separate topic [PropertyPath XAML Syntax](~/docs/framework/wpf/advanced/propertypath-xaml-syntax.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyPath (object parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">A property path that either describes a path to a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property, or a single dependency property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.PropertyPath" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor has two completely different usages depending on whether it is being used for a source-mode property path for a binding, or for a target-mode single-step property path for a storyboard target.  
+  
+ If using this <xref:System.Windows.PropertyPath> in source mode for a binding, `parameter` is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property referenced must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ If using this <xref:System.Windows.PropertyPath> in target mode for a single-step path for a storyboard target, `parameter` is generally provided as type <xref:System.Windows.DependencyProperty>. You can also specify a string that is the <xref:System.Windows.DependencyProperty.Name%2A>. Either of these evaluate to the same result, because it is stored internally as a string. A provided <xref:System.Windows.DependencyProperty> is converted to a string through <xref:System.Windows.Markup.DependencyPropertyConverter>. The <xref:System.Windows.Markup.DependencyPropertyConverter> supports a qualified naming format for dependency properties, so you can specify a *typeName*.*propertyName* qualified dependency property name string to the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=fullName> constructor in code. The qualified path to the dependency property identifier is a different concept than a complex path. A complex-path <xref:System.Windows.PropertyPath> should instead be created with the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=fullName> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyPath (string path, object[] pathParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, object[] pathParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.String,System.Object[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathParameters" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="path">A string that specifies the <see cref="P:System.Windows.PropertyPath.Path" />, in a tokenized format.</param>
+        <param name="pathParameters">An array of objects that sets the <see cref="P:System.Windows.PropertyPath.PathParameters" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.PropertyPath" /> class, with the provided pathing token string and parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This signature is generally only used for target-mode <xref:System.Windows.PropertyPath> usages with complex paths.  
+  
+ This constructor supports `params` for the `pathParameters` constructor argument. Therefore you can specify the contents of `pathParameters` as a series of comma-separated constructor arguments that populate the array, rather than needing to dimension an array and then populate it with the `pathParameters` items. Each item you specify must be one of the following types: <xref:System.Windows.DependencyProperty>, <xref:System.Reflection.PropertyInfo>, <xref:System.ComponentModel.PropertyDescriptor>.  
+  
+ For more information on the requirements of the parameters, see <xref:System.Windows.PropertyPath.Path%2A> and <xref:System.Windows.PropertyPath.PathParameters%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.PropertyPath.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that describes the path.</summary>
+        <value>The string that describes the path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string contained in this property has three completely different meanings depending on whether a <xref:System.Windows.PropertyPath> is being used for a source-mode property path for a binding, for a target-mode single-step property path for a storyboard target, or for a complex path for a storyboard target.  
+  
+ If using this <xref:System.Windows.PropertyPath> in source mode for a binding, <xref:System.Windows.PropertyPath.Path%2A> is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property source must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ If using this <xref:System.Windows.PropertyPath> in target mode for a single-step path for a storyboard target, <xref:System.Windows.PropertyPath> is a string that is a *typeName*.*propertyName* qualified dependency property name string.  
+  
+ If using this <xref:System.Windows.PropertyPath> for a complex path for a storyboard target, <xref:System.Windows.PropertyPath.Path%2A> is a tokenized string format that describes the relationships of the various objects given in the <xref:System.Windows.PropertyPath.PathParameters%2A>.  
+  
+-   Each item in the array is specified in this format by the array index for the item enclosed in parentheses. For example, to specify the first item in the array, the string token is `(0)`.  
+  
+-   Relationships between items ("steps" in the path) are specified by a dot (.). The property forward of the dot is the first step in the path, the property after is the second step, and so on (you can specify steps beyond two). The last step in the chain always represents the property being animated.  
+  
+-   Items within collection properties are accessed with an indexer syntax, with the index within square brackets ([ and ]). The indexer is additive to the token representing the property. For example, the following is a two-step path, with the token combination in the first step specifying the second item from within the collection of that property: `(0)[1].(1)` . You cannot use an indexer on the last property in the chain; you cannot animate the actual collection position, you must animate a property on that object.  
+  
+ The path string for a <xref:System.Windows.PropertyPath> is typically established through the constructors: the <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> signature for bindings or single-step storyboard targets, the [PropertyPath(String, Object\<xref:System.Windows.PropertyPath.%23ctor%28System.String%2CSystem.Object%5B%5D%29> signature for multi-step storyboard targets.  
+  
+ **XAML:** When you use a <xref:System.Windows.PropertyPath> to describe a property reference in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], as an attribute value, the string that you specify is first handled by a type converter (<xref:System.Windows.PropertyPathConverter>). This type converter then processes the string and based on its syntax will call one of the <xref:System.Windows.PropertyPath> constructor signatures. This indirection through the type converter handling an attribute value is generally how you use <xref:System.Windows.PropertyPath> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], rather than declaring a <xref:System.Windows.PropertyPath> object element and then applying specific values to attributes such as <xref:System.Windows.PropertyPath.Path%2A> and <xref:System.Windows.PropertyPath.PathParameters%2A>. For more information, see [PropertyPath XAML Syntax](~/docs/framework/wpf/advanced/propertypath-xaml-syntax.md).  
+  
+<a name="xamlTextUsage_Path"></a>   
+## XAML Text Usage  
+ Members of the <xref:System.Windows.PropertyPath> type are not typically set in a direct [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax. See Remarks.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;object&gt; PathParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;object&gt; PathParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.PropertyPath.PathParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of parameters to use when the path refers to indexed parameters.</summary>
+        <value>The parameter list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties for a <xref:System.Windows.PropertyPath> are typically established through the constructors. For setting <xref:System.Windows.PropertyPath.PathParameters%2A>, the <xref:System.Windows.PropertyPath.%23ctor%2A> constructor is particularly convenient because the `pathParameters` constructor argument is designated as `params`, meaning that you do not need to create or dimension an array for construction. You simply specify each member of the array as an additional parameter.  
+  
+ If the final property that is the target is a <xref:System.Windows.Freezable> type, that value will be cloned. For details, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+  
+ The actual evaluation of the property chain is performed by the storyboard animation mechanisms. At the <xref:System.Windows.PropertyPath> level, no validation is performed to make sure that the steps of the path connect at all. For instance, you can construct a property path that has <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=fullName> as the first step, and <xref:System.Windows.FrameworkElement.FlowDirectionProperty?displayProperty=fullName> as the second step. But such a property path would fail if actually applied as a target, because the Brush type that fills <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=fullName> does not have a <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=fullName> property. Invalid property paths fail silently. For more information, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+  
+ **XAML:** When you use a <xref:System.Windows.PropertyPath> to describe a property reference in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], as an attribute value, the string that you specify is first handled by a type converter (<xref:System.Windows.PropertyPathConverter>). This type converter then processes the string and based on its syntax will call one of the <xref:System.Windows.PropertyPath> constructor signatures. This indirection through the type converter handling an attribute value is generally how you use <xref:System.Windows.PropertyPath> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], rather than declaring a <xref:System.Windows.PropertyPath> object element and then applying specific values to attributes such as <xref:System.Windows.PropertyPath.Path%2A> and <xref:System.Windows.PropertyPath.PathParameters%2A>. For more information, see [PropertyPath XAML Syntax](~/docs/framework/wpf/advanced/propertypath-xaml-syntax.md).  
+  
+<a name="xamlTextUsage_PathParameters"></a>   
+## XAML Text Usage  
+ Members of the <xref:System.Windows.PropertyPath> type are not typically set in a direct [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax. See Remarks.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

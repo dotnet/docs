@@ -1,0 +1,293 @@
+<Type Name="RefreshPropertiesAttribute" FullName="System.ComponentModel.RefreshPropertiesAttribute">
+  <TypeSignature Language="C#" Value="public sealed class RefreshPropertiesAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RefreshPropertiesAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshPropertiesAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that the property grid should refresh when the associated property value changes. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.RefreshPropertiesAttribute> indicates the type of refresh mode to use when refreshing a <xref:System.Windows.Forms.PropertyGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+  
+ [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
+ [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RefreshPropertiesAttribute (System.ComponentModel.RefreshProperties refresh);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.RefreshProperties refresh) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.#ctor(System.ComponentModel.RefreshProperties)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="refresh" Type="System.ComponentModel.RefreshProperties" />
+      </Parameters>
+      <Docs>
+        <param name="refresh">A <see cref="T:System.ComponentModel.RefreshProperties" /> value indicating the nature of the refresh.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RefreshPropertiesAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.RefreshPropertiesAttribute> class is used for refreshing the design-time view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RefreshPropertiesAttribute All;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RefreshPropertiesAttribute All" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshPropertiesAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that all properties are queried again and refreshed if the property value is changed. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties> mode causes the Properties window to query each property again and refresh its view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RefreshPropertiesAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RefreshPropertiesAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshPropertiesAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no other properties are refreshed if the property value is changed. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify this attribute on a property to refresh only the associated property when the property value is changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to test for equality.</param>
+        <summary>Overrides the object's <see cref="Overload:System.Object.Equals" /> method.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is the same; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this object.</summary>
+        <returns>The hash code for the object that the attribute belongs to.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the current value of the attribute is the default value for the attribute.</summary>
+        <returns>
+          <see langword="true" /> if the current value of the attribute is the default; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshProperties">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.RefreshProperties RefreshProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.RefreshProperties RefreshProperties" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.RefreshPropertiesAttribute.RefreshProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the refresh properties for the member.</summary>
+        <value>A <see cref="T:System.ComponentModel.RefreshProperties" /> that indicates the current refresh properties for the member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Repaint">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RefreshPropertiesAttribute Repaint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RefreshPropertiesAttribute Repaint" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.Repaint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RefreshPropertiesAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that all properties are repainted if the property value is changed. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify this attribute on a property to repaint all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

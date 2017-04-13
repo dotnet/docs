@@ -1,0 +1,108 @@
+<Type Name="TileMode" FullName="System.Windows.Media.TileMode">
+  <TypeSignature Language="C#" Value="public enum TileMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TileMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TileMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how a <see cref="T:System.Windows.Media.TileBrush" /> paints tiles onto an output area.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the different tile modes.  
+  
+ ![Available tile modes](~/add/media/graphicsmm-tilemode-enum-enumorder.png "Available tile modes")  
+Available tile modes for the TileMode enumeration  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlipX">
+      <MemberSignature Language="C#" Value="FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipX = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The same as <see cref="F:System.Windows.Media.TileMode.Tile" /> except that alternate columns of tiles are flipped horizontally. The base tile itself is not flipped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FlipXY">
+      <MemberSignature Language="C#" Value="FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipXY = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipXY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The combination of <see cref="F:System.Windows.Media.TileMode.FlipX" /> and <see cref="F:System.Windows.Media.TileMode.FlipY" />. The base tile itself is not flipped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FlipY">
+      <MemberSignature Language="C#" Value="FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipY = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The same as <see cref="F:System.Windows.Media.TileMode.Tile" /> except that alternate rows of tiles are flipped vertically. The base tile itself is not flipped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The base tile is drawn but not repeated. The remaining area is transparent</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tile">
+      <MemberSignature Language="C#" Value="Tile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode Tile = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.Tile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The base tile is drawn and the remaining area is filled by repeating the base tile. The right edge of one tile meets the left edge of the next, and similarly for the bottom and top edges.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "define compiler option [Visual Basic]"
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

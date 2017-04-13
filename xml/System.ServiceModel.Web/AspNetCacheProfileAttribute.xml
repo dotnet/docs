@@ -1,0 +1,186 @@
+<Type Name="AspNetCacheProfileAttribute" FullName="System.ServiceModel.Web.AspNetCacheProfileAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AspNetCacheProfileAttribute : Attribute, System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetCacheProfileAttribute extends System.Attribute implements class System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.AspNetCacheProfileAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IOperationBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>When applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to cache responses from the operation in the ASP .NET Output Cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] the kinds of setting you can make with the Output Cache Profile, see [ASP.NET Cache Settings](http://go.microsoft.com/fwlink/?LinkId=179061).  
+  
+   
+  
+## Examples  
+ The following example shows how to apply the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute to a service operation. In this case, the cache profile named “CacheFor60Seconds” will be used for the `GetCustomer` operation  
+  
+<!-- TODO: review snippet reference  [!CODE [AspNetCacheIntegration#0](AspNetCacheIntegration#0)]  -->  
+  
+ The following configuration snippet shows how the “CacheFor60Seconds” cache profile is specified.  
+  
+```xml  
+<configuration>  
+    <system.web>  
+      <compilation debug="true" targetFramework="4.0" />  
+      <caching>  
+        <outputCacheSettings>  
+          <outputCacheProfiles>  
+            <add name="CacheFor60Seconds" duration="60" varyByParam="format" varyByHeader="Accept" />  
+          </outputCacheProfiles>  
+        </outputCacheSettings>  
+      </caching>  
+    </system.web>  
+</configuration>  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AspNetCacheProfileAttribute (string cacheProfileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cacheProfileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.AspNetCacheProfileAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cacheProfileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cacheProfileName">The cache profile name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.AspNetCacheProfileAttribute" /> class with the specified cache profile name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.AspNetCacheProfileAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation description.</param>
+        <param name="bindingParameters">The binding parameters.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyClientBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyClientBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.ClientOperation clientOperation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.ClientOperation clientOperation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.AspNetCacheProfileAttribute.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="clientOperation" Type="System.ServiceModel.Dispatcher.ClientOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation description.</param>
+        <param name="clientOperation">The client operation..</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.AspNetCacheProfileAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="dispatchOperation" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation being examined.</param>
+        <param name="dispatchOperation">The run-time object that exposes customization properties for the operation described by <c>operationDescription</c>.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheProfileName">
+      <MemberSignature Language="C#" Value="public string CacheProfileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CacheProfileName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.AspNetCacheProfileAttribute.CacheProfileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the cache profile.</summary>
+        <value>The name of the cache profile.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.OperationDescription operationDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.OperationDescription operationDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.AspNetCacheProfileAttribute.Validate(System.ServiceModel.Description.OperationDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">Not implemented.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

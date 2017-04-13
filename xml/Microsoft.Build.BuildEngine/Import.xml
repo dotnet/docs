@@ -1,0 +1,92 @@
+<Type Name="Import" FullName="Microsoft.Build.BuildEngine.Import">
+  <TypeSignature Language="C#" Value="public class Import" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Import extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Import" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a single [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element in an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <c>Condition</c> attribute value of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <value>The <c>Condition</c> attribute value of the <c>Import</c> element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluatedProjectPath">
+      <MemberSignature Language="C#" Value="public string EvaluatedProjectPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EvaluatedProjectPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.EvaluatedProjectPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the fully qualified path of the file specified in the <c>Name</c> attribute of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <value>The fullly qualified path of the file specified in the <c>Name</c> attribute of the <c>Import</c> element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsImported">
+      <MemberSignature Language="C#" Value="public bool IsImported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.IsImported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element was imported into the project.</summary>
+        <value>
+          <see langword="true" /> if the <c>Import</c> element was imported into the project; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectPath">
+      <MemberSignature Language="C#" Value="public string ProjectPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.ProjectPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <c>Project</c> attribute value of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <value>The <c>Project</c> attribute value of the <c>Import</c> element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

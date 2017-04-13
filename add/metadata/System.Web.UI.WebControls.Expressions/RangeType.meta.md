@@ -1,0 +1,5 @@
+---
+uid: System.Web.UI.WebControls.Expressions.RangeType
+ms.author: "riande"
+manager: "wpickett"
+---

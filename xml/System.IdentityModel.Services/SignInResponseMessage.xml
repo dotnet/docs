@@ -1,0 +1,226 @@
+<Type Name="SignInResponseMessage" FullName="System.IdentityModel.Services.SignInResponseMessage">
+  <TypeSignature Language="C#" Value="public class SignInResponseMessage : System.IdentityModel.Services.WSFederationMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignInResponseMessage extends System.IdentityModel.Services.WSFederationMessage" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignInResponseMessage" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Services.WSFederationMessage</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a WS-Federation Sign-In Response message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This message is created when the action parameter (wa) of the received message is “wsignin1.0” and the message contains a wresult or a wresultptr parameter.  
+  
+ When converting a <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse> object to a <xref:System.IdentityModel.Services.SignInResponseMessage> object, the context attribute on the RequestSecurityTokenResponse message is not transferred over, and must be explicitly set.  
+  
+ [!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
+  
+ For more information about the message that this class represents, see the WS-Federation specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, string result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, string result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="result" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">The base URL to which the Sign-In Response message applies.</param>
+        <param name="result">The wresult parameter in the message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> class with the specified base URL and wresult parameter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="result" /> is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, Uri resultPtr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Uri resultPtr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="resultPtr" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">The base URL to which the Sign-In Response message applies.</param>
+        <param name="resultPtr">The wresultptr parameter in the message.</param>
+        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> class using the specified base URL and wresultptr parameter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resultPtr" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, System.IdentityModel.Services.WSFederationSerializer federationSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, class System.IdentityModel.Services.WSFederationSerializer federationSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Services.WSFederationSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
+        <Parameter Name="federationSerializer" Type="System.IdentityModel.Services.WSFederationSerializer" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">The base URL to which the sign-in response message applies.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> to be returned.</param>
+        <param name="federationSerializer">The <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> to use to serialize the response.</param>
+        <param name="context">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the context for the serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> class by using the specified base URL, response message object, federation serializer, and serialization context.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="baseUrl" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="Response" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="federationSerializer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public string Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Result" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the wresult parameter of the message.</summary>
+        <value>The value of the wresult parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set to `null` or an empty string to remove the wresult parameter from the message. Either the <xref:System.IdentityModel.Services.SignInResponseMessage.Result%2A> property or the <xref:System.IdentityModel.Services.SignInResponseMessage.ResultPtr%2A> property must be set for the message to be valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultPtr">
+      <MemberSignature Language="C#" Value="public string ResultPtr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResultPtr" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.ResultPtr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the wresultptr parameter of the message.</summary>
+        <value>The value of the wresultptr parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set to `null` or an empty string to remove the wresultptr parameter from the message. Either the <xref:System.IdentityModel.Services.SignInResponseMessage.Result%2A> property or the <xref:System.IdentityModel.Services.SignInResponseMessage.ResultPtr%2A> property must be set for the message to be valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid, absolute URI occurs. Can be <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="protected override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Validates the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Checks that the action parameter (wa) is “wsignin1.0” and that either the wresult parameter or the wresultptr parameter is specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The action parameter (wa) is not “wsignin1.0”.</exception>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">Neither the wresult parameter nor the wresultptr parameter is specified  
+  
+ -or-  
+  
+ Both the wresult parameter and the wresultptr parameter are specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (System.IO.TextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Write(System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer to which to write the message.</param>
+        <summary>Writes this message in a form post format to the specified text writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.IdentityModel.Services.SignInResponseMessage.Validate%2A> method before writing the message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

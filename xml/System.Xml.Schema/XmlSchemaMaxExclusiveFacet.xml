@@ -1,0 +1,59 @@
+<Type Name="XmlSchemaMaxExclusiveFacet" FullName="System.Xml.Schema.XmlSchemaMaxExclusiveFacet">
+  <TypeSignature Language="C#" Value="public class XmlSchemaMaxExclusiveFacet : System.Xml.Schema.XmlSchemaFacet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaMaxExclusiveFacet extends System.Xml.Schema.XmlSchemaFacet" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaMaxExclusiveFacet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaFacet</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="maxExclusive" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used to specify a restriction on the maximum value of a <see langword="simpleType" /> element. The element value must be less than the value of the <see langword="maxExclusive" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `XmlSchemaMaxExclusiveFacet` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaMaxExclusiveFacet Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaMaxExclusiveFacet Example/CPP/maxexclusivefacet.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaMaxExclusiveFacet Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaMaxExclusiveFacet Example/CS/maxexclusivefacet.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaMaxExclusiveFacet Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaMaxExclusiveFacet Example/VB/maxexclusivefacet.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaMaxExclusiveFacet Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaMaxExclusiveFacet Example/XML/example.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaMaxExclusiveFacet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaMaxExclusiveFacet.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaMaxExclusiveFacet" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

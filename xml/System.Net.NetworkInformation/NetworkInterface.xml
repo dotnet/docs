@@ -1,0 +1,749 @@
+<Type Name="NetworkInterface" FullName="System.Net.NetworkInformation.NetworkInterface">
+  <TypeSignature Language="C#" Value="public abstract class NetworkInterface" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NetworkInterface extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterface" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides configuration and statistical information for a network interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class encapsulates data for network interfaces, also known as adapters, on the local computer. You do not create instances of this class; the <xref:System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces%2A> method returns an array that contains one instance of this class for each network interface on the local computer.  
+  
+   
+  
+## Examples  
+ The following code example displays information about interfaces.  
+  
+ [!code-cpp[NCLNetInfoReport#12](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#12)]
+ [!code-csharp[NCLNetInfoReport#12](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#12)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected NetworkInterface ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be called only by classes that derive from the <xref:System.Net.NetworkInformation.NetworkInterface> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public virtual string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the description of the interface.</summary>
+        <value>A <see cref="T:System.String" /> that describes this interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The description is human-readable text that typically describes the interface vendor, type (for example, Ethernet), brand, and model.  
+  
+   
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
+ [!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllNetworkInterfaces">
+      <MemberSignature Language="C#" Value="public static System.Net.NetworkInformation.NetworkInterface[] GetAllNetworkInterfaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.NetworkInformation.NetworkInterface[] GetAllNetworkInterfaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.NetworkInterface[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns objects that describe the network interfaces on the local computer.</summary>
+        <returns>A <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> array that contains objects that describe the available network interfaces, or an empty array if no interfaces are detected.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The network interfaces on a computer provide network connectivity. Network interfaces are also known as network adapters.  
+  
+   
+  
+## Examples  
+ The following code example displays Domain Name Service (DNS) configuration information for the local computer's network adapters.  
+  
+ [!code-cpp[NCLNetInfo2#41](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#41)]
+ [!code-csharp[NCLNetInfo2#41](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#41)]
+ [!code-vb[NCLNetInfo2#41](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#41)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">A Windows system function call failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIPProperties">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPInterfaceProperties GetIPProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPInterfaceProperties GetIPProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.IPInterfaceProperties</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object that describes the configuration of this network interface.</summary>
+        <returns>An <see cref="T:System.Net.NetworkInformation.IPInterfaceProperties" /> object that describes this network interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the information in the object returned by this method reflects the interfaces as of the time the array is created. This information is not updated dynamically.  
+  
+   
+  
+## Examples  
+ The following code example displays information for the local computer's network adapters that support IPv4.  
+  
+ [!code-cpp[NCLNetInfo2#48](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#48)]
+ [!code-csharp[NCLNetInfo2#48](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#48)]
+ [!code-vb[NCLNetInfo2#48](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIPStatistics">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPInterfaceStatistics GetIPStatistics ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPInterfaceStatistics GetIPStatistics() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPStatistics" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.IPInterfaceStatistics</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the IP statistics for this <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> instance.</summary>
+        <returns>Returns <see cref="T:System.Net.NetworkInformation.IPInterfaceStatistics" />.  
+  
+ The IP statistics.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIPv4Statistics">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPv4InterfaceStatistics GetIPv4Statistics ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPv4InterfaceStatistics GetIPv4Statistics() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPv4Statistics" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.IPv4InterfaceStatistics</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the IPv4 statistics for this <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> instance.</summary>
+        <returns>An <see cref="T:System.Net.NetworkInformation.IPv4InterfaceStatistics" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsNetworkAvailable">
+      <MemberSignature Language="C#" Value="public static bool GetIsNetworkAvailable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsNetworkAvailable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether any network connection is available.</summary>
+        <returns>
+          <see langword="true" /> if a network connection is available; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A network connection is considered to be available if any network interface is marked "up" and is not a loopback or tunnel interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhysicalAddress">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.PhysicalAddress GetPhysicalAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.PhysicalAddress GetPhysicalAddress() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetPhysicalAddress" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.PhysicalAddress</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the Media Access Control (MAC) or physical address for this adapter.</summary>
+        <returns>A <see cref="T:System.Net.NetworkInformation.PhysicalAddress" /> object that contains the physical address.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned by this method contains an address that is appropriate to the media used to transport data at the data link layer. For example, on an Ethernet network, this method returns the Ethernet hardware address.  
+  
+   
+  
+## Examples  
+ The following code example displays the physical addresses of all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfo2#51](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#51)]
+ [!code-csharp[NCLNetInfo2#51](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#51)]
+ [!code-vb[NCLNetInfo2#51](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public virtual string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier of the network adapter.</summary>
+        <value>A <see cref="T:System.String" /> that contains the identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPv6LoopbackInterfaceIndex">
+      <MemberSignature Language="C#" Value="public static int IPv6LoopbackInterfaceIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 IPv6LoopbackInterfaceIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.IPv6LoopbackInterfaceIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the IPv6 loopback interface.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ The index for the IPv6 loopback interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A network interface may have different interface indexes for the IPv4 and IPv6 loopback interface. The P:System.Net.NetworkInformation.NetworkInterface.IPv6LoopbackInterfaceIndex property only returns the IPv6 loopback interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReceiveOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReceiveOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReceiveOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.IsReceiveOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the network interface is set to only receive data packets.</summary>
+        <value>
+          <see langword="true" /> if the interface only receives network traffic; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfo2#51](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#51)]
+ [!code-csharp[NCLNetInfo2#51](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#51)]
+ [!code-vb[NCLNetInfo2#51](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This property is not valid on computers running operating systems earlier than Windows XP.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoopbackInterfaceIndex">
+      <MemberSignature Language="C#" Value="public static int LoopbackInterfaceIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 LoopbackInterfaceIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.LoopbackInterfaceIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the IPv4 loopback interface.</summary>
+        <value>A <see cref="T:System.Int32" /> that contains the index for the IPv4 loopback interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index of the loopback interface is usually 1, but you cannot rely on this. Use the <xref:System.Net.NetworkInformation.NetworkInterface.LoopbackInterfaceIndex%2A> property to get the correct value.  
+  
+ A network interface may have different interface indexes for the IPv4 and IPv6 loopback interface. The <xref:System.Net.NetworkInformation.NetworkInterface.LoopbackInterfaceIndex%2A> property only returns the IPv4 loopback interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">This property is not valid on computers running only Ipv6.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the network adapter.</summary>
+        <value>A <see cref="T:System.String" /> that contains the adapter name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
+ [!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkInterfaceType">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.NetworkInterfaceType NetworkInterfaceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.NetworkInterfaceType NetworkInterfaceType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.NetworkInterfaceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the interface type.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.NetworkInterfaceType" /> value that specifies the network interface type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The interface types are described in detail in the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration documentation.  
+  
+ This property only returns a subset of the possible values defined in the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The possible values include the following:  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+  
+   
+  
+## Examples  
+ The following code example displays type information for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfo2#51](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#51)]
+ [!code-csharp[NCLNetInfo2#51](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#51)]
+ [!code-vb[NCLNetInfo2#51](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationalStatus">
+      <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.OperationalStatus OperationalStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.OperationalStatus OperationalStatus" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.OperationalStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current operational state of the network connection.</summary>
+        <value>One of the <see cref="T:System.Net.NetworkInformation.OperationalStatus" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The operational status values are described in detail in the <xref:System.Net.NetworkInformation.OperationalStatus> enumeration documentation.  
+  
+   
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
+ [!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speed">
+      <MemberSignature Language="C#" Value="public virtual long Speed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Speed" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Speed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the speed of the network interface.</summary>
+        <value>A <see cref="T:System.Int64" /> value that specifies the speed in bits per second.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by this property is reported by the network interface. It is not computed dynamically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates displaying the speed of interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#13)]
+ [!code-csharp[NclNetInfo2#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#13)]
+ [!code-vb[NclNetInfo2#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Supports">
+      <MemberSignature Language="C#" Value="public virtual bool Supports (System.Net.NetworkInformation.NetworkInterfaceComponent networkInterfaceComponent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(valuetype System.Net.NetworkInformation.NetworkInterfaceComponent networkInterfaceComponent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.Supports(System.Net.NetworkInformation.NetworkInterfaceComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="networkInterfaceComponent" Type="System.Net.NetworkInformation.NetworkInterfaceComponent" />
+      </Parameters>
+      <Docs>
+        <param name="networkInterfaceComponent">A <see cref="T:System.Net.NetworkInformation.NetworkInterfaceComponent" /> value.</param>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the interface supports the specified protocol.</summary>
+        <returns>
+          <see langword="true" /> if the specified protocol is supported; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays statistics for IPV4 interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfo2#48](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#48)]
+ [!code-csharp[NCLNetInfo2#48](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#48)]
+ [!code-vb[NCLNetInfo2#48](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsMulticast">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsMulticast { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsMulticast" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.SupportsMulticast" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the network interface is enabled to receive multicast packets.</summary>
+        <value>
+          <see langword="true" /> if the interface receives multicast packets; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicasting is the act of sending a data packet to multiple destinations simultaneously.  
+  
+   
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfo2#51](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#51)]
+ [!code-csharp[NCLNetInfo2#51](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#51)]
+ [!code-vb[NCLNetInfo2#51](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This property is not valid on computers running operating systems earlier than Windows XP.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

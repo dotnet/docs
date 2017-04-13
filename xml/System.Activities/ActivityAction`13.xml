@@ -1,0 +1,370 @@
+<Type Name="ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;" FullName="System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt; : System.Activities.ActivityDelegate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityAction`13&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt; extends System.Activities.ActivityDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction`13" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="T6" />
+    <TypeParameter Name="T7" />
+    <TypeParameter Name="T8" />
+    <TypeParameter Name="T9" />
+    <TypeParameter Name="T10" />
+    <TypeParameter Name="T11" />
+    <TypeParameter Name="T12" />
+    <TypeParameter Name="T13" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.ActivityDelegate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T1">The type of the first in argument of the activity delegate.</typeparam>
+    <typeparam name="T2">The type of the second in argument of the activity delegate.</typeparam>
+    <typeparam name="T3">The type of the third in argument of the activity delegate.</typeparam>
+    <typeparam name="T4">The type of the fourth in argument of the activity delegate.</typeparam>
+    <typeparam name="T5">The type of the fifth in argument of the activity delegate.</typeparam>
+    <typeparam name="T6">The type of the sixth in argument of the activity delegate.</typeparam>
+    <typeparam name="T7">The type of the seventh in argument of the activity delegate.</typeparam>
+    <typeparam name="T8">The type of the eighth in argument of the activity delegate.</typeparam>
+    <typeparam name="T9">The type of the ninth in argument of the activity delegate.</typeparam>
+    <typeparam name="T10">The type of the tenth in argument of the activity delegate.</typeparam>
+    <typeparam name="T11">The type of the eleventh in argument of the activity delegate.</typeparam>
+    <typeparam name="T12">The type of the twelfth in argument of the activity delegate.</typeparam>
+    <typeparam name="T13">The type of the thirteenth in argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate that has thirteen in arguments and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityAction`13.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityAction`13" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument1">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T1&gt; Argument1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T1&gt; Argument1" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T1&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument10">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T10&gt; Argument10 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T10&gt; Argument10" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument10" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T10&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument11">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T11&gt; Argument11 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T11&gt; Argument11" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T11&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the eleventh in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument12">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T12&gt; Argument12 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T12&gt; Argument12" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T12&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the twelfth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument13">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T13&gt; Argument13 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T13&gt; Argument13" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument13" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T13&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the thirteenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument2">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T2&gt; Argument2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T2&gt; Argument2" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T2&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the second in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument3">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T3&gt; Argument3 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T3&gt; Argument3" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the third in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument4">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T4&gt; Argument4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T4&gt; Argument4" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T4&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fourth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument5">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T5&gt; Argument5 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T5&gt; Argument5" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T5&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fifth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument6">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T6&gt; Argument6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T6&gt; Argument6" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T6&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sixth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument7">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T7&gt; Argument7 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T7&gt; Argument7" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T7&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the seventh in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument8">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T8&gt; Argument8 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T8&gt; Argument8" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T8&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the eighth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument9">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T9&gt; Argument9 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T9&gt; Argument9" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`13.Argument9" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T9&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ninth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

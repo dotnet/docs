@@ -1,0 +1,126 @@
+<Type Name="VerifyResult" FullName="System.IO.Packaging.VerifyResult">
+  <TypeSignature Language="C#" Value="public enum VerifyResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerifyResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.VerifyResult" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the result of a certificate or signature verification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.IO.Packaging.VerifyResult> enumeration.  
+  
+ [!code-csharp[PackageDigitalSignature#PackageDigSigValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PackageDigitalSignature/CSharp/PackageDigitalSignature.cs#packagedigsigvalidate)]
+ [!code-vb[PackageDigitalSignature#PackageDigSigValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PackageDigitalSignature/visualbasic/packagedigitalsignature.vb#packagedigsigvalidate)]  
+  
+ For the complete sample, see [Creating a Package with a Digital Signature Sample](http://go.microsoft.com/fwlink/?LinkID=159966).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CertificateRequired">
+      <MemberSignature Language="C#" Value="CertificateRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult CertificateRequired = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.CertificateRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The X.509 certificate is not available to verify the signature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificate">
+      <MemberSignature Language="C#" Value="InvalidCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult InvalidCertificate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The X.509 certificate is not valid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidSignature">
+      <MemberSignature Language="C#" Value="InvalidSignature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult InvalidSignature = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidSignature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature is not valid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSigned">
+      <MemberSignature Language="C#" Value="NotSigned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult NotSigned = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.NotSigned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The specified package or part has no signature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceNotFound">
+      <MemberSignature Language="C#" Value="ReferenceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult ReferenceNotFound = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.ReferenceNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A reference relationship to the signature was not found.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult Success = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.Success" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The verification was successful.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

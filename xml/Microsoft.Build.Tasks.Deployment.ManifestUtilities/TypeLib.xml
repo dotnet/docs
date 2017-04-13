@@ -1,0 +1,299 @@
+<Type Name="TypeLib" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib">
+  <TypeSignature Language="C#" Value="public class TypeLib" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeLib extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a type library.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeLib ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public string Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Flags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string representation of the type library flags for this type library.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpDirectory">
+      <MemberSignature Language="C#" Value="public string HelpDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.HelpDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the directory where the Help file for the types in the type library is located.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceId">
+      <MemberSignature Language="C#" Value="public string ResourceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.ResourceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the hexadecimal string representation of the locale identifier (LCID).</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlbId">
+      <MemberSignature Language="C#" Value="public string TlbId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TlbId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.TlbId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique ID of the type library.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version number of the type library.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlFlags">
+      <MemberSignature Language="C#" Value="public string XmlFlags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlFlags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.XmlFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Flags")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Flags" /> property to an XML file.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlHelpDirectory">
+      <MemberSignature Language="C#" Value="public string XmlHelpDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlHelpDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.XmlHelpDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("HelpDir")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.HelpDirectory" /> property to an XML file.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlResourceId">
+      <MemberSignature Language="C#" Value="public string XmlResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlResourceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.XmlResourceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("ResourceId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.ResourceId" /> property to an XML file.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlTlbId">
+      <MemberSignature Language="C#" Value="public string XmlTlbId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlTlbId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.XmlTlbId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Tlbid")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.TlbId" /> property to an XML file.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlVersion">
+      <MemberSignature Language="C#" Value="public string XmlVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.XmlVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Version")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Version" /> property to an XML file.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

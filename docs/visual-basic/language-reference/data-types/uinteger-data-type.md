@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

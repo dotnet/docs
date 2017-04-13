@@ -1,0 +1,86 @@
+<Type Name="WCFBuildProvider" FullName="System.Web.Compilation.WCFBuildProvider">
+  <TypeSignature Language="C#" Value="public class WCFBuildProvider : System.Web.Compilation.BuildProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WCFBuildProvider extends System.Web.Compilation.BuildProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.WCFBuildProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Compilation.BuildProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Generates proxy class code for Windows Communication Foundation (WCF) services</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.WCFBuildProvider> uses mapping files (.svcmap) at the root level of the Web application that contains WCF service references. The mapping files specify the services for which proxy class source code must be generated. The generated proxy class is then compiled with the other resources during the Web application compilation phase.  
+  
+ The inherited <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property is internally defined and points to the Web application root directory where the .svcmap files reside.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WCFBuildProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.WCFBuildProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public override void GenerateCode (System.Web.Compilation.AssemblyBuilder assemblyBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyBuilder" Type="System.Web.Compilation.AssemblyBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyBuilder">An instance of the <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object that the generated proxy code must be added to. This instance is provided by ASP.NET at run time.</param>
+        <summary>Generates the service proxy class source code and adds it to the specified assembly builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method searches for .svcmap files in the Web application root directory. If files are found, the method generates the source code of a proxy class for the related services into the specified `assemblyBuilder`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Typically, this method parses the .svcmap mapping files and adds the generated source code to the specified <see cref="T:System.Web.Compilation.AssemblyBuilder" /> object. You can contribute source code to the assembly in the form of a <see cref="T:System.IO.TextWriter" /> object or a CodeDOM graph.  
+  
+ For more information, see <see cref="T:System.Web.Compilation.BuildProvider" />.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,527 @@
+<Type Name="AttributeTargets" FullName="System.AttributeTargets">
+  <TypeSignature Language="C#" Value="public enum AttributeTargets" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AttributeTargets extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AttributeTargets" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the application elements on which it is valid to apply an attribute.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AttributeUsageAttribute> class uses this enumeration to specify the kind of element on which it is valid to apply an attribute.  
+  
+ <xref:System.AttributeTargets> enumeration values can be combined with a bitwise OR operation to get the preferred combination.  
+  
+   
+  
+## Examples  
+ The following example illustrates the application of attributes to various targets.  
+  
+> [!NOTE]
+>  Visual Basic and Visual C++ syntax currently do not support the application of attributes to type parameters.  
+  
+ [!code-cpp[AttrTargs#1](~/samples/snippets/cpp/VS_Snippets_CLR/AttrTargs/CPP/attrtargs.cpp#1)]
+ [!code-csharp[AttrTargs#1](~/samples/snippets/csharp/VS_Snippets_CLR/AttrTargs/CS/attrtargs.cs#1)]
+ [!code-vb[AttrTargs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AttrTargs/VB/AttrTargs.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets All = int32(32767)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to any application element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="Assembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Assembly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Assembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to an assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Class = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Class" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a class.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Constructor">
+      <MemberSignature Language="C#" Value="Constructor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Constructor = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Constructor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a constructor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegate">
+      <MemberSignature Language="C#" Value="Delegate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Delegate = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Delegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a delegate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enum">
+      <MemberSignature Language="C#" Value="Enum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Enum = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Enum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to an enumeration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="Event" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Event = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to an event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="Field" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Field = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Field" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericParameter">
+      <MemberSignature Language="C#" Value="GenericParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets GenericParameter = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.GenericParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a generic parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Currently, this attribute can be applied only in C#, Microsoft intermediate language (MSIL), and emitted code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interface">
+      <MemberSignature Language="C#" Value="Interface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Interface = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Interface" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to an interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="Method" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Method = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Method" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Module">
+      <MemberSignature Language="C#" Value="Module" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Module = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Module" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a module.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  `Module` refers to a portable executable file (.dll or.exe) and not a Visual Basic standard module.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameter">
+      <MemberSignature Language="C#" Value="Parameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Parameter = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Parameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="Property" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Property = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnValue">
+      <MemberSignature Language="C#" Value="ReturnValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets ReturnValue = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.ReturnValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a return value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Struct">
+      <MemberSignature Language="C#" Value="Struct" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Struct = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Struct" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attribute can be applied to a structure; that is, a value type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

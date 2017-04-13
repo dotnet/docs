@@ -1,0 +1,97 @@
+<Type Name="ActivityTemplateFactory" FullName="System.Activities.Presentation.Toolbox.ActivityTemplateFactory">
+  <TypeSignature Language="C#" Value="public abstract class ActivityTemplateFactory : System.Activities.Presentation.IActivityTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityTemplateFactory extends System.Object implements class System.Activities.Presentation.IActivityTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Presentation.IActivityTemplateFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Implementation")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a class that is the XAML representation for an IActivityTemplateFactory.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ActivityTemplateFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Create (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity Create(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory.Create(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">A reference to the user interface - not used.</param>
+        <summary>Creates an activity by calling Implementation.</summary>
+        <returns>The activity created by the implementation method or null if implementation is not set.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Implementation">
+      <MemberSignature Language="C#" Value="protected virtual Func&lt;System.Activities.Activity&gt; Implementation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`1&lt;class System.Activities.Activity&gt; Implementation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactory.Implementation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.XamlDeferLoad(typeof(System.Activities.XamlIntegration.FuncDeferringLoader), typeof(System.Activities.Presentation.Toolbox.ActivityTemplateFactory))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Activities.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the factory method that creates an activity as the implementation.</summary>
+        <value>The factory method that creates an activity as the implementation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

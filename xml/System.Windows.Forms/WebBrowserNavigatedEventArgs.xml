@@ -1,0 +1,85 @@
+<Type Name="WebBrowserNavigatedEventArgs" FullName="System.Windows.Forms.WebBrowserNavigatedEventArgs">
+  <TypeSignature Language="C#" Value="public class WebBrowserNavigatedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowserNavigatedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.WebBrowser.Navigated" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=fullName> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control has navigated to a new document. The <xref:System.Windows.Forms.WebBrowserNavigatedEventArgs> object passed to the event handler lets you retrieve the location of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatedEventArgs.Url%2A> property. When the <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=fullName> event occurs, the new document has begun loading, which means you can access some of its content through the <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowser.DocumentText%2A?displayProperty=fullName>, or <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.Navigated> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.Navigated> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#649](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#649)]
+ [!code-vb[System.Windows.Forms.EventExamples#649](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#649)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebBrowserNavigatedEventArgs (Uri url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserNavigatedEventArgs.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="url">A <see cref="T:System.Uri" /> representing the location of the document to which the <see cref="T:System.Windows.Forms.WebBrowser" /> control has navigated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public Uri Url { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserNavigatedEventArgs.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the document to which the <see cref="T:System.Windows.Forms.WebBrowser" /> control has navigated.</summary>
+        <value>A <see cref="T:System.Uri" /> representing the location of the document to which the <see cref="T:System.Windows.Forms.WebBrowser" /> control has navigated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#649](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#649)]
+ [!code-vb[System.Windows.Forms.EventExamples#649](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#649)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Net.WebPermission">for accessing the current URL. Associated enumerations: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

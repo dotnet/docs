@@ -1,0 +1,818 @@
+<Type Name="DataColumnCollection" FullName="System.Data.DataColumnCollection">
+  <TypeSignature Language="C#" Value="public sealed class DataColumnCollection : System.Data.InternalDataCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataColumnCollection extends System.Data.InternalDataCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataColumnCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.InternalDataCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("CollectionChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Data.DataColumn" /> objects for a <see cref="T:System.Data.DataTable" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumnCollection> defines the schema of a <xref:System.Data.DataTable>, and determines what kind of data each <xref:System.Data.DataColumn> can contain. You can access the <xref:System.Data.DataColumnCollection> through the <xref:System.Data.DataTable.Columns%2A> property of the <xref:System.Data.DataTable> object.  
+  
+ The <xref:System.Data.DataColumnCollection> uses the <xref:System.Data.DataColumnCollection.Add%2A> and <xref:System.Data.DataColumnCollection.Remove%2A> methods to insert and delete <xref:System.Data.DataColumn> objects. Use the <xref:System.Data.InternalDataCollectionBase.Count%2A> property to determine how many <xref:System.Data.DataColumn> objects are in the collection. Use the <xref:System.Data.DataColumnCollection.Contains%2A> method to verify whether a specified index or column name exists in the collection.  
+  
+   
+  
+## Examples  
+ The following example iterates through a collection of <xref:System.Data.DataColumn> objects and prints various properties of each column in the collection.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn Add ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and adds a <see cref="T:System.Data.DataColumn" /> object to the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <returns>The newly created <see cref="T:System.Data.DataColumn" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A default name ("Column1", "Column2", and so on) is given to the column.  
+  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example creates and adds a new <xref:System.Data.DataColumn> to the <xref:System.Data.DataColumnCollection> of a <xref:System.Data.DataTable>.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.Add5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Add5 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Data.DataColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Data.DataColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.Data.DataColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Data.DataColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to add.</param>
+        <summary>Creates and adds the specified <see cref="T:System.Data.DataColumn" /> object to the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataColumn> to a <xref:System.Data.DataColumnCollection>.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="column" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The column already belongs to this collection, or to another collection.</exception>
+        <exception cref="T:System.Data.DuplicateNameException">The collection already has a column with the specified name. (The comparison is not case-sensitive.)</exception>
+        <exception cref="T:System.Data.InvalidExpressionException">The expression is invalid. See the <see cref="P:System.Data.DataColumn.Expression" /> property for more information about how to create expressions.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn Add (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column.</param>
+        <summary>Creates and adds a <see cref="T:System.Data.DataColumn" /> object that has the specified name to the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <returns>The newly created <see cref="T:System.Data.DataColumn" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Data.DataColumn.DataType%2A> for the new column is `string`.  
+  
+ If `null` or an empty string ("") is passed in for the name, a default name ("Column1", "Column2", and so on) is given to the column.  
+  
+ Use the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a column with the proposed name already exists in the collection.  
+  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example creates and adds a new <xref:System.Data.DataColumn> to a <xref:System.Data.DataColumnCollection> of a <xref:System.Data.DataTable>.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.Add4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Add4 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.DuplicateNameException">The collection already has a column with the specified name. (The comparison is not case-sensitive.)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn Add (string columnName, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add(string columnName, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The <see cref="P:System.Data.DataColumn.ColumnName" /> to use when you create the column.</param>
+        <param name="type">The <see cref="P:System.Data.DataColumn.DataType" /> of the new column.</param>
+        <summary>Creates and adds a <see cref="T:System.Data.DataColumn" /> object that has the specified name and type to the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <returns>The newly created <see cref="T:System.Data.DataColumn" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `null` or an empty string ("") is passed in for the name, a default name ("Column1", "Column2", and so on) is given to the column.  
+  
+ Use the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a column with the proposed name already exists in the collection.  
+  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example creates and adds a new <xref:System.Data.DataColumn> to a <xref:System.Data.DataColumnCollection> of a <xref:System.Data.DataTable>.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.Add2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Add2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.DuplicateNameException">The collection already has a column with the specified name. (The comparison is not case-sensitive.)</exception>
+        <exception cref="T:System.Data.InvalidExpressionException">The expression is invalid. See the <see cref="P:System.Data.DataColumn.Expression" /> property for more information about how to create expressions.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn Add (string columnName, Type type, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add(string columnName, class System.Type type, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name to use when you create the column.</param>
+        <param name="type">The <see cref="P:System.Data.DataColumn.DataType" /> of the new column.</param>
+        <param name="expression">The expression to assign to the <see cref="P:System.Data.DataColumn.Expression" /> property.</param>
+        <summary>Creates and adds a <see cref="T:System.Data.DataColumn" /> object that has the specified name, type, and expression to the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <returns>The newly created <see cref="T:System.Data.DataColumn" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `null` or an empty string ("") is passed in for the name, a default name ("Column1", "Column2", and so on) is given to the column.  
+  
+ Use the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a column with the proposed name already exists in the collection.  
+  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example creates and adds a new <xref:System.Data.DataColumn> to a <xref:System.Data.DataColumnCollection> of a <xref:System.Data.DataTable>.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Add1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.DuplicateNameException">The collection already has a column with the specified name. (The comparison is not case-sensitive.)</exception>
+        <exception cref="T:System.Data.InvalidExpressionException">The expression is invalid. See the <see cref="P:System.Data.DataColumn.Expression" /> property for more information about how to create expressions.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.Data.DataColumn[] columns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Data.DataColumn[] columns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.AddRange(System.Data.DataColumn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columns" Type="System.Data.DataColumn[]" />
+      </Parameters>
+      <Docs>
+        <param name="columns">The array of <see cref="T:System.Data.DataColumn" /> objects to add to the collection.</param>
+        <summary>Copies the elements of the specified <see cref="T:System.Data.DataColumn" /> array to the end of the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRemove">
+      <MemberSignature Language="C#" Value="public bool CanRemove (System.Data.DataColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanRemove(class System.Data.DataColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.CanRemove(System.Data.DataColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Data.DataColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">A <see cref="T:System.Data.DataColumn" /> in the collection.</param>
+        <summary>Checks whether a specific column can be removed from the collection.</summary>
+        <returns>
+          <see langword="true" /> if the column can be removed. <see langword="false" /> if,  
+  
+-   The <paramref name="column" /> parameter is <see langword="null" />.  
+  
+-   The column does not belong to this collection.  
+  
+-   The column is part of a relationship.  
+  
+-   Another column's expression depends on this column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumnCollection.CanRemove%2A> method performs several checks before returning a `true` or `false` result. This includes the following: whether the column exists, belongs to the table, or is involved in a constraint or relation.  
+  
+ Use the <xref:System.Data.DataColumnCollection.CanRemove%2A> method before you try to remove any column from a collection. You can also use the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a particular column exists before you try to remove it.  
+  
+   
+  
+## Examples  
+ The following example first uses the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a particular column is found in the collection. If found, the <xref:System.Data.DataColumnCollection.CanRemove%2A> method tests whether the column can be removed. If so, the column is removed with the <xref:System.Data.DataColumnCollection.Remove%2A> method.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.CanRemove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.CanRemove Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.CanRemove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.CanRemove Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection of any columns.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example clears the columns collection.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Clear Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Clear Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Data.DataColumnCollection.CollectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the columns collection changes, either by adding or removing a column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.DataColumnCollection.Contains%2A> and <xref:System.Data.DataColumnCollection.CanRemove%2A> methods to determine whether a column exists and can be removed.  
+  
+   
+  
+## Examples  
+ The following example adds an event handler for the CollectionChanged event.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.CollectionChanged Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.CollectionChanged Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.CollectionChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.CollectionChanged Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Data.DataColumn.ColumnName" /> of the column to look for.</param>
+        <summary>Checks whether the collection contains a column with the specified name.</summary>
+        <returns>
+          <see langword="true" /> if a column exists with this name; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.DataColumnCollection.Contains%2A> method to confirm the existence of a column before you perform additional operations on the column. The method returns `false` when two or more columns have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a column name to exactly one column.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumnCollection.Contains%2A> method and the <xref:System.Data.DataColumnCollection.CanRemove%2A> method to determine whether the column can be removed. If so, the column is removed.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Contains Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Contains Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Data.DataColumn[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Data.DataColumn[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.CopyTo(System.Data.DataColumn[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Data.DataColumn[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Data.DataColumn" /> objects to copy the collection into.</param>
+        <param name="index">The index to start from.</param>
+        <summary>Copies the entire collection into an existing array, starting at a specified index within the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Data.DataColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Data.DataColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.IndexOf(System.Data.DataColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Data.DataColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The name of the column to return.</param>
+        <summary>Gets the index of a column specified by name.</summary>
+        <returns>The index of the column specified by <paramref name="column" /> if it is found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumnCollection.IndexOf%2A> method is not case-sensitive.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a specified column exists in a <xref:System.Data.DataColumnCollection>. If so, the <xref:System.Data.DataColumnCollection.IndexOf%2A> method returns the index of the column.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.IndexOf Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.IndexOf Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.IndexOf Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.IndexOf Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.IndexOf(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column to find.</param>
+        <summary>Gets the index of the column with the specific name (the name is not case sensitive).</summary>
+        <returns>The zero-based index of the column with the specified name, or -1 if the column does not exist in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the column to return.</param>
+        <summary>Gets the <see cref="T:System.Data.DataColumn" /> from the collection at the specified index.</summary>
+        <value>The <see cref="T:System.Data.DataColumn" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumnCollection.Contains%2A> method can be used to test for the existence of a column. This is useful before you try to use <xref:System.Data.DataColumnCollection.Item%2A>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumnCollection.Item%2A> property to print the <xref:System.Data.DataColumn.ColumnName%2A> value of a <xref:System.Data.DataColumn> object specified by index. The example uses the <xref:System.Data.DataTable> that is contained by a System.Windows.Forms.DataGrid control.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.this Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.this Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Data.DataColumn this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Data.DataColumn.ColumnName" /> of the column to return.</param>
+        <summary>Gets the <see cref="T:System.Data.DataColumn" /> from the collection with the specified name.</summary>
+        <value>The <see cref="T:System.Data.DataColumn" /> in the collection with the specified <see cref="P:System.Data.DataColumn.ColumnName" />; otherwise a null value if the <see cref="T:System.Data.DataColumn" /> does not exist.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.DataColumnCollection.Item%2A> is conditionally case-sensitive when it searches for column names. For example, if one <xref:System.Data.DataColumn> is named "mydatacolumn" and another is named "Mydatacolumn", a string used to search for one of the columns is regarded as case-sensitive. However, if "mydatacolumn" exists and "Mydatacolumn" does not, the search string is regarded as case-insensitive.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumnCollection.Item%2A> property to print the <xref:System.Data.DataColumn.DataType%2A> value of a <xref:System.Data.DataColumn> object specified by index.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.this1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.this1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="protected override System.Collections.ArrayList List { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList List" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.List" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Data.DataColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Data.DataColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Remove(System.Data.DataColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Data.DataColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Data.DataColumn" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a named column exists. If so, the <xref:System.Data.DataColumnCollection.Item%2A> property returns the column. The <xref:System.Data.DataColumnCollection.CanRemove%2A> method then checks whether the column can be removed; if so, the <xref:System.Data.DataColumnCollection.Remove%2A> method removes it.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Remove Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Remove Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="column" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The column does not belong to this collection.  
+  
+ -Or-  
+  
+ The column is part of a relationship.  
+  
+ -Or-  
+  
+ Another column's expression depends on this column.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the column to remove.</param>
+        <summary>Removes the <see cref="T:System.Data.DataColumn" /> object that has the specified name from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example first uses the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a particular column is found in the collection. If it is found, the <xref:System.Data.DataColumnCollection.CanRemove%2A> method tests whether the column can be removed. If so, the column is removed with the <xref:System.Data.DataColumnCollection.Remove%2A> method.  
+  
+ [!code-csharp[Classic WebData DataColumnCollection.Remove1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Remove1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnCollection.Remove1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.Remove1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The collection does not have a column with the specified name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the column to remove.</param>
+        <summary>Removes the column at the specified index from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is successfully changed by adding or removing columns, the <xref:System.Data.DataColumnCollection.CollectionChanged> event occurs.  
+  
+   
+  
+## Examples  
+ The following example first uses the <xref:System.Data.DataColumnCollection.Contains%2A> method to determine whether a particular column is found in the collection. If it is found, the <xref:System.Data.DataColumnCollection.CanRemove%2A> method tests whether the column can be removed. If so, the column is removed with the <xref:System.Data.DataColumnCollection.RemoveAt%2A> method.  
+  
+ [!code-vb[Classic WebData DataColumnCollection.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnCollection.RemoveAt Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The collection does not have a column at the specified index.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

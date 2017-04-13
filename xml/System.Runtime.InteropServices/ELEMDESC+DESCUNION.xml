@@ -1,0 +1,61 @@
+<Type Name="ELEMDESC+DESCUNION" FullName="System.Runtime.InteropServices.ELEMDESC+DESCUNION">
+  <TypeSignature Language="C#" Value="public struct ELEMDESC.DESCUNION" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sealed beforefieldinit ELEMDESC/DESCUNION extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ELEMDESC.DESCUNION" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION" /> instead.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="idldesc">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.IDLDESC idldesc;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.IDLDESC idldesc" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.DESCUNION.idldesc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains information for remoting the element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="paramdesc">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.PARAMDESC paramdesc;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.PARAMDESC paramdesc" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.DESCUNION.paramdesc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.PARAMDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains information about the parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

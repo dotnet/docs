@@ -1,0 +1,1773 @@
+<Type Name="Legend" FullName="System.Windows.Forms.DataVisualization.Charting.Legend">
+  <TypeSignature Language="C#" Value="public class Legend : System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Legend extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Legend" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.ChartNamedElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the legend for the chart image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend> class encapsulates all the functionality of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control's legend, and is exposed using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Legends%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ There can be any number of legends for a chart image.  
+  
+ Legends can:  
+  
+-   Be docked and aligned.  
+  
+-   Be displayed inside or outside the plotted chart areas.  
+  
+-   Automatically fit their contents.  
+  
+-   Use a predefined style, such as row, column or table.  
+  
+-   Use hatching, gradient colors and background images.  
+  
+-   Be sized and positioned anywhere within the chart image.  
+  
+ Legend items are represented by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem%2A> object, and are either default or custom items. Custom items are not associated with data, and can be added, deleted and modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property.  
+  
+ Default items are by default automatically added to the legend, and are the names of the plotted data points for doughnut and pie charts.  
+  
+ For all other chart types, the default items are the names of the plotted data series. Each series has a <xref:System.Windows.Forms.DataVisualization.Charting.Series.Legend%2A> property that defines the name of the legend that will be used. A legend item will not be created for a series if the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend%2A> property is set to `false`. The text for these default items can be changed using the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A> property. This property will allow you to specify predefined keywords that will be replaced by their appropriate values at run-time.  
+  
+ If you have a pie chart and you set the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label%2A> property, it will also set the legend text to the value you set for the labels. If you want to set the text to a different value, you can set the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A> property. In most cases, you would want to set the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A> property to "#AXISLABEL" or "#VALX".  
+  
+ Legend series symbols are rectangles, dots or lines. The symbol type is set automatically by the chart and depends on the plotted chart type.  
+  
+ Legend text by default is automatically sized. You can disable automatic sizing of legend text by disabling the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit%2A> property. When this property is set to `false`, the size of the legend text is determined by the Size property of the legend <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Font%2A>. If the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit%2A> property is enabled, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.AutoFitMinFontSize%2A> property determines the minimum font size that a legend item can have when resizing.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property defines a limit on the number of characters that can be shown on one line before text is wrapped to another line. If you do not wish to wrap text in the legend, set the value of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property to zero. By default, when the entire legend text does not fit in the legend, the text will be truncated. You can set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> on the legend to get the text to wrap instead of being truncated.  
+  
+ If the contents of the legend cannot fit into the given space, legend entries are truncated. An ellipsis will be shown to indicate that there are more entries than the legend has space for. To prevent the legend items from being truncated,, set the position and size of the legend using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Size%2A> properties, respectively. When setting the legend position or size, the chart can no longer automatically position the elements in the chart. In some cases, you many need to manually position other chart elements to achieve the desired appearance.  
+  
+ Another option would be to define your own cell columns instead of using the default legend settings.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend> object has a CellColumn Collection; each CellColumn object represents a column in the Legend. A cell column has <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.MaximumWidth%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.MinimumWidth%2A> properties that can be used to adjust the size of the columns.  
+  
+ When the legend contains many entries, <xref:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows%2A> can be used to improve readability. When this property is set to True, it will display a back color that you can set using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRowsColor%2A> property.  
+  
+ By default, the legend is positioned in the top-right corner of the chart. This position can be modified by using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Docking%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Alignment%2A> properties of the legend. The legend can also be associated with a chart area by use of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea%2A> property. This property specifies the name of the chart area for which the legend should be docked. In addition, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea%2A> property can be used to display the legend inside a chart area.  
+  
+ When <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea%2A> is set to False, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.MaximumAutoSize%2A> property defines the maximum size, in percent, of the legend within the available chart when the legend is automatically positioned. This property should be set if you wish to adjust the width or height of the legend after the docking properties have been set.  
+  
+ The legend can be modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Legend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Legend (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPoint" /> class with the specified legend name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Alignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the legend.</summary>
+        <value>A .NET Framework <see cref="T:System.Drawing.StringAlignment" /> enumeration value that represents the alignment of the legend. The default value is <see cref="F:System.Drawing.StringAlignment.Near" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The legend can be aligned so that it is <xref:System.Drawing.StringAlignment>, <xref:System.Drawing.StringAlignment> or <xref:System.Drawing.StringAlignment>; its alignment is also affected by the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Docking%2A> property setting.  
+  
+ If the legend is docked to the top or bottom, <xref:System.Drawing.StringAlignment> is to the left; if it is docked to the left or right, <xref:System.Drawing.StringAlignment> is at the top. The <xref:System.Drawing.StringAlignment> property setting is just the opposite, and aligns the legend to the right or the bottom, depending on where it is docked.  
+  
+ <xref:System.Drawing.StringAlignment> always centers the legend, either vertically or horizontally.  
+  
+ Setting the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Alignment%2A> property will have no effect if the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property is not set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFitMinFontSize">
+      <MemberSignature Language="C#" Value="public int AutoFitMinFontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoFitMinFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.AutoFitMinFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum font size that can be used by the autofitting algorithm for the legend text.</summary>
+        <value>An <see langword="integer" /> value that represents the minimum font size that can be used by the autofitting algorithm for the legend text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of a legend.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the background color of a legend. The default color is <see cref="System.Drawing.Color.White" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor%2A> value will be the first color used if you have specified gradient colors for the background.  
+  
+ The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the legend. As a result, the background will be transparent.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackGradientStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.GradientEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the orientation for the background gradient of a legend. Also determines whether a gradient is used.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration that specifies the orientation for the background gradient of a legend. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle%2A> property to determine whether a legend will display a gradient, and to determine the orientation of the gradient if one is used.  
+  
+ For a listing of available patterns, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.GradientStyle> enumeration.  
+  
+ To use gradient colors:  
+  
+ Set the primary color of the legend background with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor%2A> property.  
+  
+ Set the secondary color of the legend background with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> property.  
+  
+ Set this <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle%2A> property to the desired gradient style.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackHatchStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackHatchStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.HatchStyleEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hatching style of a legend.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration that specifies the hatching style of a legend. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
+  
+ For a listing of available hatching styles, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration.  
+  
+ **Note** The color of hatching lines is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImage">
+      <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ImageValueEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background image of a legend.</summary>
+        <value>A <see langword="string" /> value that represents the URL of an image file. The default value is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defines a path to a background image for a <xref:System.Windows.Forms.DataVisualization.Charting.Chart> legend, and can be an absolute or relative URL.  
+  
+ To position the image, use the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageAlignment%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode%2A> properties.  
+  
+ You can also specify one of the colors displayed by the image as "transparent", by setting the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageTransparentColor%2A> property.  
+  
+ An image can originate from any valid graphics file supported by .NET Framework, including icons.  
+  
+ Background images take precedence over other background properties such as gradient color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageAlignment">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background image alignment used for the <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled" /> drawing mode.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value that specifies the background image alignment. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.TopLeft" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the alignment of the background image for the legend; it is only applied when the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageTransparentColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageTransparentColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a color that will be replaced with a transparent color when the background image is drawn.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that will be displayed as transparent color when the background image is drawn. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageWrapMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the legend background image drawing mode.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that specifies the legend background image drawing mode. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property determines how the image is displayed; the image can be tiled, scaled, and so forth.  
+  
+ If an image is scaled, it will be stretched to fit within the bounds of the legend. If the image is tiled, it is repeatedly drawn, starting from the top-left corner of the legend.  
+  
+ For more information about the available wrapping modes, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageAlignment%2A> property setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackSecondaryColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the secondary color of a legend background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used for the secondary color of background with hatching or gradient fill. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> property determines the secondary background color of many <xref:System.Windows.Forms.DataVisualization.Charting.Chart> objects, and is used when gradient colors are being applied.  
+  
+ You can set <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
+  
+ If hatching is used, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> property determines the color of the hatching lines for the legend.  
+  
+ To use gradient colors for the background of a legend:  
+  
+-   Set the primary color with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor%2A> property.  
+  
+-   Set the secondary color with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor%2A> property.  
+  
+-   Set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle%2A> property to the desired gradient style.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of a legend.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw  the border color of a legend. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderDashStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of a legend.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that determines the border style of the chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BorderDashStyle%2A> property determines the line style to use for a border. The line can be solid, dotted, and so forth.  
+  
+ For other border styles, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width of a legend.</summary>
+        <value>An <see langword="integer" /> value that determines the border width, in pixels, of the legend.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BorderWidth%2A> property can also set the width of lines in such elements as line charts, custom legend items displayed with a "line" style, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellColumns">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection CellColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection CellColumns" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.CellColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.LegendCellColumnCollectionEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection" /> object that contains the collection of cell columns for a legend.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection" /> object that contains the collection of cell columns for a legend.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection CustomItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection CustomItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.LegendItemCollectionEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a T<see cref=":System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object used for custom legend items.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection property can be used to add, delete or modify custom legend items.  
+  
+ Custom legend items, unlike default legend items, do not have associated series or data points.  
+  
+ To modify legend items, use the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockedToChartArea">
+      <MemberSignature Language="C#" Value="public string DockedToChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DockedToChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("NotSet")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.LegendAreaNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> where the legend will be docked.</summary>
+        <value>A <see langword="string" /> value that represents the name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> where this legend will be docked. The default value is the empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Docking">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Docking Docking { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.Docking Docking" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Docking" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Docking</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the legend is docked.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Docking" /> enumeration value that determines whether the legend is docked. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.Docking.Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend> can be docked to the top, left, bottom or right of either the entire chart image, or the inside or outside of a chart area. If the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea%2A> property is set to `false`, docking applies to the entire chart image. If the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea%2A> property is set to `true`, docking applies to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object specified by the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea%2A> property  
+  
+ This property has no effect if the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property is not set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the legend is enabled.</summary>
+        <value>
+          <see langword="true" /> if the legend is enabled; otherwise,  <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To hide a legend, set this property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Font), "Microsoft Sans Serif, 8pt")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Drawing.Font" /> object, which is used to set font properties of the legend.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object which is used to set font properties of the legend.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
+  
+> [!NOTE]
+>  If you set the Legend.Font.Size property, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit%2A> property will be set to false. Also, if you set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit%2A> property to true, this property will be reset to its default, which is 8 points.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the legend text.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the color of the legend text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.ForeColor%2A> property is used to set the legend text color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderSeparator">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle HeaderSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle HeaderSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle), "None")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the visual separator type for the legend header.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle" /> enumeration value that specifies the visual separator type for the legend header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderSeparatorColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color HeaderSeparatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HeaderSeparatorColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the separator for the legend header.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the color of the separator for the legend header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideChartArea">
+      <MemberSignature Language="C#" Value="public string InsideChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InsideChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InsideChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("NotSet")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.LegendAreaNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the chart area in which the legend is drawn.</summary>
+        <value>A <see langword="string" /> value that represents the name of the chart area.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterlacedRows">
+      <MemberSignature Language="C#" Value="public bool InterlacedRows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InterlacedRows" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether legend rows will be drawn with interlaced background color.</summary>
+        <value>
+          <see langword="true" /> if legend rows will be drawn with interlaced background color; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the legend contains many entries, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows%2A> property can be used to improve readability. When this property is set to `true`, the legend will display a background color for the rows that are interlaced, which can be set using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRowsColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterlacedRowsColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color InterlacedRowsColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color InterlacedRowsColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRowsColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the legend's interlaced rows.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the background color of the legend's interlaced rows.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only applicable if interlaced rows are used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDockedInsideChartArea">
+      <MemberSignature Language="C#" Value="public bool IsDockedInsideChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDockedInsideChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether the legend is docked inside or outside the chart area.</summary>
+        <value>
+          <see langword="true" /> is the legend is docked inside the chart area; <see langword="false" /> if it is docked outside the chart area. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will only have an effect if the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea%2A> property is set to the name of a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property is set to any value other than <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>, the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea%2A> property also has no effect. This is because the position of the legend is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEquallySpacedItems">
+      <MemberSignature Language="C#" Value="public bool IsEquallySpacedItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEquallySpacedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsEquallySpacedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether all legend items are equally spaced.</summary>
+        <value>
+          <see langword="true" /> if legend items are equally spaced; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextAutoFit">
+      <MemberSignature Language="C#" Value="public bool IsTextAutoFit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTextAutoFit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether the legend text is automatically sized.</summary>
+        <value>
+          <see langword="true" /> if the legend text is automatically sized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemColumnSeparator">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ItemColumnSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ItemColumnSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle), "None")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the visual separator type for the legend table columns.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle" /> enumeration value that specifies the visual separator type for the legend table columns.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemColumnSeparatorColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ItemColumnSeparatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ItemColumnSeparatorColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the legend table column separator.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the color of the legend table column separator.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemColumnSpacing">
+      <MemberSignature Language="C#" Value="public int ItemColumnSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemColumnSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(50)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the legend table column spacing.</summary>
+        <value>An <see langword="integer" /> value that represents the table column spacing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSpacing%2A> property value is calculated as a percentage of the legend text font.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegendItemOrder">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendItemOrder LegendItemOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendItemOrder LegendItemOrder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.LegendItemOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the order in which legend items are displayed. This property only affects legend items automatically added for the chart series; it has no effect on custom legend items.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder" /> enumeration value that specifies the order in which legend items are displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder>, the legend will automatically be reversed if StackedColumn, StackedColumn100, StackedArea or StackedArea100 chart types are used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegendStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendStyle LegendStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendStyle LegendStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style of the legend.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendStyle" /> enumeration value that determines the legend style. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.LegendStyle.Table" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the legend is displayed as a series of items in a table. You can specify whether to expand items in the table width-wise or height-wise by setting the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TableStyle%2A> property. When the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TableStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle>, the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control will determine whether to draw a wide table or a tall table, depending on the alignment and positioning of the chart. This may cause the legend to be drawn using multiple legend item columns.  
+  
+ There are three possible styles for a legend: Column, Row and Table. Refer to the table below for a summary of these styles:  
+  
+|Style|Description|  
+|-|-|  
+|Column|Legend items are displayed in one column, with multiple rows. Most commonly used when the legend is docked to the left or right of the chart.|  
+|Row|Legend items are displayed in one row, with multiple columns. Most commonly used when the legend is docked to the top or bottom of the chart.|  
+|Table|Legend items are displayed using multiple columns and rows.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumAutoSize">
+      <MemberSignature Language="C#" Value="public float MaximumAutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MaximumAutoSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.MaximumAutoSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(50)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size of the legend, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
+        <value>A <see langword="float " /> value that represents the maximum size of the legend.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the legend is docked to the left or right of the chart area, this property determines the maximum width of the legend, which is measured as a percentage of the chart area. If the legend is docked to the top or bottom, this property determines the maximum height of the legend, which is also measured as a percentage.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the legend.</summary>
+        <value>A <see langword="string" /> value that represents the name of the legend.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ElementPosition Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ElementPosition Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.ElementPositionConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ElementPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object, which can be used to get or set the position of the legend.</summary>
+        <value>If the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.Position" /> property is automatic (that is, Legend.Position.Auto = <see langword="true" />) the legend position is calculated automatically by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control, taking into account the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.Docking" />, <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.Alignment" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea" /> property settings.  
+  
+ If it is not automatic, the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.Docking" />, <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea" /> properties are ignored, and the legend position is solely determined by the value of the returned <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ShadowColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "128, 0, 0, 0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow color of the legend.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the shadow color of the legend. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set to any valid ARGB (alpha, red, green, blue) value.  
+  
+ The alpha value can be used to achieve a "realistic" shadowing effect; try a color value of "128,0,0,0" for shadows.  
+  
+ To implement a shadow, set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.ShadowOffset%2A> property to a value other than zero (0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowOffset">
+      <MemberSignature Language="C#" Value="public int ShadowOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ShadowOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow offset, in pixels, of the legend.</summary>
+        <value>An <see langword="integer" /> value that represents the shadow offset, in pixels, of the legend.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement shadowing, set this property to a value other than zero (0). A positive value will result in a shadow that shifts down and to the right; a negative value will result in a shadow that shifts up and to the left.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendTableStyle TableStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendTableStyle TableStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TableStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendTableStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the legend table style.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle" /> enumeration value that specifies the legend table style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendStyle>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextWrapThreshold">
+      <MemberSignature Language="C#" Value="public int TextWrapThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TextWrapThreshold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of characters that can be sequentially displayed in the legend before the text is wrapped.</summary>
+        <value>An <see langword="integer" /> value that represents the number of characters that can be placed in the legend sequentially before the text is wrapped. The default value is 25.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the legend text exceeds the value specified by this property, text will be automatically wrapped when the next whitespace character is encountered. Text will not be wrapped if there are no whitespace characters in the text.  
+  
+ Set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property to zero to disable the feature.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of the legend title.</summary>
+        <value>A <see langword="string" /> value that represents the legend title text. The default value is a zero-length string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleAlignment">
+      <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment TitleAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment TitleAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.StringAlignment), "Center")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the legend title.</summary>
+        <value>A <see cref="T:System.Drawing.StringAlignment" /> enumeration value that represents the alignment of the legend title. The default value is <see cref="F:System.Drawing.StringAlignment.Center" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color TitleBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the legend title.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the background of the legend title. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleFont">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font TitleFont { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font TitleFont" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleFont" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Font), "Microsoft Sans Serif, 8pt, style=Bold")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font for the legend title.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object that represents the font for the legend title. The default value is "Microsoft Sans Serif, 8pt, Bold".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to set font properties of the legend title.  
+  
+ If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color TitleForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text color of the legend title.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the title text color. The default value is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleSeparator">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle TitleSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle TitleSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle), "None")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the visual separator type for the legend title.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle" /> value that represents the type of separator that will be drawn below the title. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.None" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleSeparatorColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color TitleSeparatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleSeparatorColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the legend title separator.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the color of the legend title separator. The default value is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

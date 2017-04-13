@@ -1,0 +1,11 @@
+all: activatedclienttypeentry_client.exe activatedclienttypeentry_server.exe 
+
+activatedclienttypeentry_server.exe: activatedclienttypeentry_server.cs activatedclienttypeentry_share.dll
+	csc activatedclienttypeentry_server.cs /r:activatedclienttypeentry_share.dll
+
+activatedclienttypeentry_client.exe: activatedclienttypeentry_client.cs activatedclienttypeentry_share.dll
+	csc activatedclienttypeentry_client.cs /r:activatedclienttypeentry_share.dll
+
+activatedclienttypeentry_share.dll: activatedclienttypeentry_share.cs
+	csc /t:library activatedclienttypeentry_share.cs
+

@@ -1,0 +1,61 @@
+<Type Name="WebServiceParser" FullName="System.Web.UI.WebServiceParser">
+  <TypeSignature Language="C#" Value="public class WebServiceParser : System.Web.UI.SimpleWebHandlerParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebServiceParser extends System.Web.UI.SimpleWebHandlerParser" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebServiceParser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.SimpleWebHandlerParser</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a parser for Web service handlers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultDirectiveName">
+      <MemberSignature Language="C#" Value="protected override string DefaultDirectiveName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultDirectiveName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebServiceParser.DefaultDirectiveName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default directive name.</summary>
+        <value>A <see cref="T:System.String" /> containing the default directive name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledType">
+      <MemberSignature Language="C#" Value="public static Type GetCompiledType (string inputFile, System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetCompiledType(string inputFile, class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebServiceParser.GetCompiledType(System.String,System.Web.HttpContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputFile" Type="System.String" />
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="inputFile">The file to be compiled.</param>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> object for the current request.</param>
+        <summary>Returns the compiled type for a given input file.</summary>
+        <returns>A <see cref="T:System.Type" /> as specified by the <see cref="T:System.Web.HttpContext" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,120 @@
+<Type Name="IPageableItemContainer" FullName="System.Web.UI.WebControls.IPageableItemContainer">
+  <TypeSignature Language="C#" Value="public interface IPageableItemContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageableItemContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPageableItemContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines members that a data-bound control must implement in order to have paging functionality provided by the <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer> interface defines properties, methods, and events that must be implemented by data-bound controls in order to have paging functionality provided by the <xref:System.Web.UI.WebControls.DataPager> control. (An example of a control that implements this interface is the <xref:System.Web.UI.WebControls.ListView> control.)  
+  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is raised when the <xref:System.Web.UI.WebControls.DataPager> control can bind to data. The <xref:System.Web.UI.WebControls.DataPager> control provides a handler for this event that is named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>.  
+  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. For example, this method is called when the user navigates to another page of data.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MaximumRows">
+      <MemberSignature Language="C#" Value="public int MaximumRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumRows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of items to display on a single page of data.</summary>
+        <value>The maximum number of items to display on a single page of data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPageProperties">
+      <MemberSignature Language="C#" Value="public void SetPageProperties (int startRowIndex, int maximumRows, bool databind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPageProperties(int32 startRowIndex, int32 maximumRows, bool databind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startRowIndex" Type="System.Int32" />
+        <Parameter Name="maximumRows" Type="System.Int32" />
+        <Parameter Name="databind" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="startRowIndex">The index of the first record on the page.</param>
+        <param name="maximumRows">The maximum number of items on a single page.</param>
+        <param name="databind">
+          <see langword="true" /> to rebind the control after the properties are set; otherwise, <see langword="false" />.</param>
+        <summary>Sets the properties of a page of data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. When implemented by a class, the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method must internally update the <xref:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows%2A> and <xref:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex%2A> properties by using the values of the `maximumRows` and `startRowIndex`parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRowIndex">
+      <MemberSignature Language="C#" Value="public int StartRowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartRowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the first record that is displayed on a page of data.</summary>
+        <value>The index of the first record that is displayed on a page of data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalRowCountAvailable">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt; TotalRowCountAvailable;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.PageEventArgs&gt; TotalRowCountAvailable" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the data from the data source is made available to the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is used by the <xref:System.Web.UI.WebControls.DataPager> control, which provides a handler method for this event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,167 @@
+<Type Name="InterfaceTypeAttribute" FullName="System.Runtime.InteropServices.InterfaceTypeAttribute">
+  <TypeSignature Language="C#" Value="public sealed class InterfaceTypeAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InterfaceTypeAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.InterfaceTypeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether a managed interface is dual, dispatch-only, or <see langword="IUnknown" /> -only when exposed to COM.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to interfaces.  
+  
+ By default, the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) exposes a managed interface to COM as a dual interface, giving you the flexibility of late binding or the performance of early binding. The <xref:System.Runtime.InteropServices.ComInterfaceType> enumeration enables you to override the default behavior and specify late binding only or early binding only. For example, you can apply `InterfaceType (ComInterfaceType.InterfaceIsIDispatch)` to an interface to produce metadata to restrict callers to late binding only. Although interfaces that derive from the `IDispatch` interface are often dual, the `InterfaceIsIDispatch` enumeration member allows only late-bound calls to the interface methods. This attribute has no effect on the managed view of the interface. For additional information on how interfaces are exposed to COM, see [Exported Type Conversion](http://msdn.microsoft.com/en-us/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b).  
+  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) also applies this attribute to imported, nondual interfaces; it applies the appropriate enumeration member to indicate that the interface is dispatch-only or `IUnknown` -only.  
+  
+   
+  
+## Examples  
+ The following example shows how `InterfaceTypeAttribute` controls how the interface is exposed to COM.  
+  
+ [!code-cpp[Classic InterfaceTypeAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic InterfaceTypeAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InterfaceTypeAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic InterfaceTypeAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic InterfaceTypeAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic InterfaceTypeAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InterfaceTypeAttribute (short interfaceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 interfaceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Int16)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="interfaceType" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="interfaceType">Describes how the interface should be exposed to COM clients.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.InterfaceTypeAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.ComInterfaceType" /> enumeration member.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor takes an underlying 16-bit integer that represents each <xref:System.Runtime.InteropServices.ComInterfaceType> enumeration member. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) uses this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InterfaceTypeAttribute (System.Runtime.InteropServices.ComInterfaceType interfaceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.ComInterfaceType interfaceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="interfaceType" Type="System.Runtime.InteropServices.ComInterfaceType" />
+      </Parameters>
+      <Docs>
+        <param name="interfaceType">One of the <see cref="T:System.Runtime.InteropServices.ComInterfaceType" /> values that describes how the interface should be exposed to COM clients.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.InterfaceTypeAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.ComInterfaceType" /> enumeration member.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For readable code that is less prone to error, always use this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComInterfaceType Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.ComInterfaceType Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.InterfaceTypeAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Runtime.InteropServices.ComInterfaceType" /> value that describes how the interface should be exposed to COM.</summary>
+        <value>The <see cref="T:System.Runtime.InteropServices.ComInterfaceType" /> value that describes how the interface should be exposed to COM.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

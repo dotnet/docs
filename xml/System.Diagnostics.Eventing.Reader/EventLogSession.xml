@@ -1,0 +1,462 @@
+<Type Name="EventLogSession" FullName="System.Diagnostics.Eventing.Reader.EventLogSession">
+  <TypeSignature Language="C#" Value="public class EventLogSession : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogSession extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogSession" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Used to access the Event Log service on the local computer or a remote computer so you can manage and gather information about the event logs and event providers on the computer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069), [How to: Retrieve Information About an Event Publisher](http://msdn.microsoft.com/en-us/2a3e897f-25a9-4dad-8541-171ac49970a3) or [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventLogSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, establishes a connection with the local Event Log service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventLogSession (string server);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string server) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">The name of the computer on which to connect to the Event Log service.</param>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, and establishes a connection with the Event Log service on the specified computer. The credentials (user name and password) of the user who calls the method is used for the credentials to access the remote computer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventLogSession (string server, string domain, string user, System.Security.SecureString password, System.Diagnostics.Eventing.Reader.SessionAuthentication logOnType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string server, string domain, string user, class System.Security.SecureString password, valuetype System.Diagnostics.Eventing.Reader.SessionAuthentication logOnType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String,System.String,System.String,System.Security.SecureString,System.Diagnostics.Eventing.Reader.SessionAuthentication)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="server" Type="System.String" />
+        <Parameter Name="domain" Type="System.String" />
+        <Parameter Name="user" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+        <Parameter Name="logOnType" Type="System.Diagnostics.Eventing.Reader.SessionAuthentication" />
+      </Parameters>
+      <Docs>
+        <param name="server">The name of the computer on which to connect to the Event Log service.</param>
+        <param name="domain">The domain of the specified user.</param>
+        <param name="user">The user name used to connect to the remote computer.</param>
+        <param name="password">The password used to connect to the remote computer.</param>
+        <param name="logOnType">The type of connection to use for the connection to the remote computer.</param>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, and establishes a connection with the Event Log service on the specified computer. The specified credentials (user name and password) are used for the credentials to access the remote computer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCurrentOperations">
+      <MemberSignature Language="C#" Value="public void CancelCurrentOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelCurrentOperations() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.CancelCurrentOperations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels any operations (such as reading an event log or subscribing to an event log) that are currently active for the Event Log service that this session object is connected to.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearLog">
+      <MemberSignature Language="C#" Value="public void ClearLog (string logName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearLog(string logName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="logName">The name of the event log to clear all the events from.</param>
+        <summary>Clears events from the specified event log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearLog">
+      <MemberSignature Language="C#" Value="public void ClearLog (string logName, string backupPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearLog(string logName, string backupPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logName" Type="System.String" />
+        <Parameter Name="backupPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="logName">The name of the event log to clear all the events from.</param>
+        <param name="backupPath">The path to the file in which the cleared events will be saved. The file should end in .evtx.</param>
+        <summary>Clears events from the specified event log, and saves the cleared events to the specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all the resources used by this object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportLog">
+      <MemberSignature Language="C#" Value="public void ExportLog (string path, System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="targetFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The name of the event log to export events from, or the path to the event log file to export events from.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <param name="query">The query used to select the events to export.  Only the events returned from the query will be exported.</param>
+        <param name="targetFilePath">The path to the log file (ends in .evtx) in which the exported events will be stored after this method is executed.</param>
+        <summary>Exports events into an external log file. The events are stored without the event messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportLog">
+      <MemberSignature Language="C#" Value="public void ExportLog (string path, System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="targetFilePath" Type="System.String" />
+        <Parameter Name="tolerateQueryErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">The name of the event log to export events from, or the path to the event log file to export events from.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <param name="query">The query used to select the events to export. Only the events returned from the query will be exported.</param>
+        <param name="targetFilePath">The path to the log file (ends in .evtx) in which the exported events will be stored after this method is executed.</param>
+        <param name="tolerateQueryErrors">
+          <see langword="true" /> indicates that the method will continue exporting events even if the specified query fails for some logs, and <see langword="false" /> indicates that this method will not continue to export events when the specified query fails.</param>
+        <summary>Exports events into an external log file. A flag can be set to indicate that the method will continue exporting events even if the specified query fails for some logs. The events are stored without the event messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportLogAndMessages">
+      <MemberSignature Language="C#" Value="public void ExportLogAndMessages (string path, System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="targetFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The name of the event log to export events from, or the path to the event log file to export events from.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <param name="query">The query used to select the events to export.  Only the events returned from the query will be exported.</param>
+        <param name="targetFilePath">The path to the log file (ends in .evtx) in which the exported events will be stored after this method is executed.</param>
+        <summary>Exports events and their messages into an external log file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event messages are exported in the default language.  
+  
+   
+  
+## Examples  
+ For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportLogAndMessages">
+      <MemberSignature Language="C#" Value="public void ExportLogAndMessages (string path, System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors, System.Globalization.CultureInfo targetCultureInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors, class System.Globalization.CultureInfo targetCultureInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="targetFilePath" Type="System.String" />
+        <Parameter Name="tolerateQueryErrors" Type="System.Boolean" />
+        <Parameter Name="targetCultureInfo" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="path">The name of the event log to export events from, or the path to the event log file to export events from.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <param name="query">The query used to select the events to export.  Only the events returned from the query will be exported.</param>
+        <param name="targetFilePath">The path to the log file (ends in .evtx) in which the exported events will be stored after this method is executed.</param>
+        <param name="tolerateQueryErrors">
+          <see langword="true" /> indicates that the method will continue exporting events even if the specified query fails for some logs, and <see langword="false" /> indicates that this method will not continue to export events when the specified query fails.</param>
+        <param name="targetCultureInfo">The culture that specifies which language that the exported event messages will be in.</param>
+        <summary>Exports events and their messages into an external log file. A flag can be set to indicate that the method will continue exporting events even if the specified query fails for some logs. The event messages are exported in the specified language.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLogInformation">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogInformation GetLogInformation (string logName, System.Diagnostics.Eventing.Reader.PathType pathType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Eventing.Reader.EventLogInformation GetLogInformation(string logName, valuetype System.Diagnostics.Eventing.Reader.PathType pathType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogInformation(System.String,System.Diagnostics.Eventing.Reader.PathType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogInformation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logName" Type="System.String" />
+        <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
+      </Parameters>
+      <Docs>
+        <param name="logName">The name of the event log to get information about, or the path to the event log file to get information about.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <summary>Gets an object that contains runtime information for the specified event log.</summary>
+        <returns>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogInformation" /> object that contains information about the specified log.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLogNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; GetLogNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetLogNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerable collection of all the event log names that are registered with the Event Log service.</summary>
+        <returns>Returns an enumerable collection of strings that contain the event log names.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; GetProviderNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetProviderNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetProviderNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerable collection of all the event provider names that are registered with the Event Log service. An event provider is an application that publishes events to an event log.</summary>
+        <returns>Returns an enumerable collection of strings that contain the event provider names.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalSession">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Eventing.Reader.EventLogSession GlobalSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.Eventing.Reader.EventLogSession GlobalSession" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a static predefined session object that is connected to the Event Log service on the local computer.</summary>
+        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object that is a predefined session object that is connected to the Event Log service on the local computer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ClearLog">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears events from the specified event log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,13 @@
+<Namespace Name="System.Web.UI.MobileControls.Adapters">
+  <Docs>
+    <summary>The <see cref="N:System.Web.UI.MobileControls.Adapters" /> namespace contains classes you can use to override the life-cycle stages of a mobile control to modify its default HTML, CHTML, or WML markup or behavior for new markup standards or for specific browsers and mobile devices.  The APIs in this namespace are obsolete. For information about how to develop ASP.NET mobile applications, see the <see href="http://go.microsoft.com/fwlink/?LinkID=182900">www.asp.net/mobile</see> Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class is directly or indirectly inherited by all other adapter classes in this namespace, such as <xref:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter>, as well as <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter>, <xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter>, and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

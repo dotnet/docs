@@ -1,0 +1,80 @@
+<Type Name="DataBindingHandler" FullName="System.Web.UI.Design.DataBindingHandler">
+  <TypeSignature Language="C#" Value="public abstract class DataBindingHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataBindingHandler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataBindingHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for a data-binding handler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.Design.DataBindingHandler> provides a base class for data-binding handlers. A data-binding handler can be used within a designer to perform data-binding to enable a meaningful display of the control on the design surface. Typically a control's designer is responsible for this functionality. However, when a control is not live on the design surface, such as within the template of another control, it does not have a designer, and this functionality is provided by a data-binding handler if one has been specified with a <xref:System.Web.UI.DataBindingHandlerAttribute> in the code for the control.  
+  
+ To use a data-binding handler, the control which has the data-bound property or properties must have a <xref:System.Web.UI.DataBindingHandlerAttribute> specified within its code that indicates the type of data-binding handler to use.  
+  
+ For example, the <xref:System.Web.UI.WebControls.Label> control is associated with the <xref:System.Web.UI.Design.TextDataBindingHandler> class through a <xref:System.Web.UI.DataBindingHandlerAttribute> in the code for the <xref:System.Web.UI.WebControls.Label> class. Within a template for a <xref:System.Web.UI.WebControls.DataList>, a <xref:System.Web.UI.WebControls.Label> control whose text property has been data bound displays the word "DataBound" on the label. Without the data-binding handler, the label would be invisible at design-time, as it does not have a designer to bind its data-bound properties while in a templated control at design-time.  
+  
+ To implement a data-binding handler, define a new class that derives from this class and implement the <xref:System.Web.UI.Design.DataBindingHandler.DataBindControl%2A> method to set the appropriate properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DataBindingHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataBindingHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataBindingHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindControl">
+      <MemberSignature Language="C#" Value="public abstract void DataBindControl (System.ComponentModel.Design.IDesignerHost designerHost, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DataBindControl(class System.ComponentModel.Design.IDesignerHost designerHost, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designerHost" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="designerHost">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> for the document.</param>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> to bind.</param>
+        <summary>Binds the specified control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should be implemented in a derived class to provide functionality to a custom data-binding handler. The logic for the data binding should be implemented within this method, and can be specific to the type or types that the data-binding handler is to bind a property or properties on.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Most data binding handlers will need to examine the data bindings collection on the control, using the <see cref="T:System.Web.UI.IDataBindingsAccessor" /> interface, to determine if any specific properties it can handle are data-bound.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

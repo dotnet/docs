@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLogNumberTooSmall"
 ms.assetid: 81aed143-1abb-41c2-9922-8e83711100e3
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

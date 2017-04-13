@@ -1,0 +1,70 @@
+<Type Name="IndexedString" FullName="System.Web.UI.IndexedString">
+  <TypeSignature Language="C#" Value="public sealed class IndexedString" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IndexedString extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IndexedString" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a utility string class that is used by the <see cref="T:System.Web.UI.ObjectStateFormatter" /> class to optimize object graph serialization. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IndexedString> class is used by the <xref:System.Web.UI.ObjectStateFormatter> class to build string tables and optimize object graph serialization. <xref:System.Web.UI.IndexedString> provides optimization that allows the efficient storing of page state information that contains a repeated string. The <xref:System.Web.UI.IndexedString> class is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexedString (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IndexedString.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.IndexedString" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IndexedString> constructor ensures that the string passed is not `null` or <xref:System.String>, and then assigns it to the <xref:System.Web.UI.IndexedString.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The string parameter passed to the constructor is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IndexedString.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string associated with the <see cref="T:System.Web.UI.IndexedString" /> object.</summary>
+        <value>An initialized string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1200 @@
+<Type Name="ScrollableControl" FullName="System.Windows.Forms.ScrollableControl">
+  <TypeSignature Language="C#" Value="public class ScrollableControl : System.Windows.Forms.Control, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollableControl extends System.Windows.Forms.Control implements class System.ComponentModel.IComponent, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ScrollableControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a base class for controls that support auto-scrolling behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not typically use the <xref:System.Windows.Forms.ScrollableControl> class directly. The <xref:System.Windows.Forms.ContainerControl> and <xref:System.Windows.Forms.Panel> classes inherit from this class.  
+  
+ The <xref:System.Windows.Forms.ScrollableControl> class acts as a base class for controls that require the ability to scroll. To enable a control to display scroll bars as needed, set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property to `true` and set the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMinSize%2A> property to the desired size. When the control is sized smaller than the specified minimum size, or a child control is located outside the bounds of the control, the appropriate scroll bars are displayed.  
+  
+ To manually override which scroll bars are visible, set the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> and <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> properties. If either property is set to `false`, the corresponding scroll bar is not visible, even if the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`.  
+  
+ You can handle the <xref:System.Windows.Forms.ScrollableControl.Scroll> event to know when the user or code scrolls the client area.  
+  
+ When adding controls programmatically to a form, use the <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> property to position the control either inside or outside of the current viewable scroll area.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScrollableControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollableControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Windows.Forms.ScrollableControl.%23ctor%2A> constructor performs the following actions:  
+  
+-   Marks the current instance as a container control by calling the <xref:System.Windows.Forms.Control.SetStyle%2A> method to set the <xref:System.Windows.Forms.ControlStyles> style to `true`.  
+  
+-   Enables background erasing by setting the <xref:System.Windows.Forms.ControlStyles> to `false`.  
+  
+-   Disables auto-scrolling by calling the <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> method to set the <xref:System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling> bit to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjustFormScrollbars">
+      <MemberSignature Language="C#" Value="protected virtual void AdjustFormScrollbars (bool displayScrollbars);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AdjustFormScrollbars(bool displayScrollbars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayScrollbars" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="displayScrollbars">
+          <see langword="true" /> to show the scroll bars; otherwise, <see langword="false" />.</param>
+        <summary>Adjusts the scroll bars on the container based on the current control positions and the control currently selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When required, the <xref:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars%2A> method lays out the client area, including resizing the display area as required to accommodate the scroll bars.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScroll">
+      <MemberSignature Language="C#" Value="public virtual bool AutoScroll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the container enables the user to scroll to any controls placed outside of its visible boundaries.</summary>
+        <value>
+          <see langword="true" /> if the container enables auto-scrolling; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `true`, this property enables the container to have a virtual size that is larger than its visible boundaries.  
+  
+ There is currently a limitation in Windows Forms that prevents all classes derived from <xref:System.Windows.Forms.ScrollableControl> from acting properly when both <xref:System.Windows.Forms.Control.RightToLeft%2A> is enabled and <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is set to <xref:System.Windows.Forms.RightToLeft>. For example, let's say that you place a control such as <xref:System.Windows.Forms.Panel>—or a container class derived from <xref:System.Windows.Forms.Panel> (such as <xref:System.Windows.Forms.FlowLayoutPanel> or <xref:System.Windows.Forms.TableLayoutPanel>)—on your form. If you set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the container to <xref:System.Windows.Forms.RightToLeft> and then set the <xref:System.Windows.Forms.Control.Anchor%2A> property on one or more of the controls inside of the container to <xref:System.Windows.Forms.AnchorStyles>, then no scrollbar ever appears. The class derived from <xref:System.Windows.Forms.ScrollableControl> acts as if <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> were set to <xref:System.Windows.Forms.RightToLeft>.  
+  
+ Currently, the only workaround is to nest the <xref:System.Windows.Forms.ScrollableControl> inside another <xref:System.Windows.Forms.ScrollableControl>. For instance, if you need <xref:System.Windows.Forms.TableLayoutPanel> to work in this situation, you can place it inside of a <xref:System.Windows.Forms.Panel> control and set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the <xref:System.Windows.Forms.Panel> to <xref:System.Windows.Forms.RightToLeft>.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> maintains the visibility of the scrollbars automatically. Therefore, setting the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> or <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> property to `true` has no effect when <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is enabled.  
+  
+   
+  
+## Examples  
+ The following code example shows how horizontal and/or vertical scroll bars are provided automatically as needed when the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`. To run the example, follow these steps:  
+  
+1.  Create a new Windows Forms application.  
+  
+2.  Add a <xref:System.Windows.Forms.Panel> to the form.  
+  
+3.  Add a <xref:System.Windows.Forms.TextBox> to the panel and name it `text1`.  
+  
+4.  Move the text box so that the right part extends beyond the right edge of the panel.  
+  
+     You should see only an outline of the part of the text box that is outside the bounds of the panel. If the whole text box is visible, the text box is on the form and not in the panel.  
+  
+5.  Add a <xref:System.Windows.Forms.Button> to the form.  
+  
+6.  Add a handler for the `Click` event of the button.  
+  
+7.  Add the following example code and call it from the button's `Click` handler.  
+  
+ When you run the example, you can only see the part of the text box that is inside the boundaries of the panel. When you click the button, you will see a horizontal scroll bar appear that will enable you to see the rest of the text box.  
+  
+ If you position a part of the text box below the bottom of the panel, you will see a vertical scroll bar when you click the button.  
+  
+ The example code checks to see whether the text box is outside the bounds of the panel before it sets the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property to `true`, and before it sets the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property. This out-of-bounds check is not required. If <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is set to `true`, no scroll bars will appear when the text box is completely within the panel. Also, you can leave the margins at their default settings of 0,0.  
+  
+ [!code-cpp[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/CS/source.cs#1)]
+ [!code-vb[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScrollMargin">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMargin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the auto-scroll margin.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that represents the height and width of the auto-scroll margin in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The auto-scroll margin is the distance between any child controls and the edges of the scrollable parent control. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> size is added to the size of any child controls contained in the scrollable control to determine whether or not scroll bars are needed. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property is evaluated when the parent scrollable control is resized or the individual child controls are brought into view, and is used to determine if scroll bars must be displayed. Docked controls are excluded from the calculations that determine if scroll bars must be displayed.  
+  
+> [!NOTE]
+>  If a docked control's <xref:System.Windows.Forms.Control.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>, the control fills the parent scrollable control and the docked control is ignored when using the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> to determine whether scroll bars are needed.  
+  
+ If the distance from the edge of a child control to the parent scrollable control is less than the value assigned to the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property and the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, the appropriate scroll bar is displayed.  
+  
+> [!NOTE]
+>  We recommend, when docking controls within a scrollable control, that you add a child scrollable control, such as a <xref:System.Windows.Forms.Panel>, to contain any other controls that might require scrolling. You should add the child <xref:System.Windows.Forms.Panel> control to the scrollable control and its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName> and its <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property set to `true`. You should set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property of the parent scrollable control to `false`.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example evaluates the location of a text box and changes the appearance and behavior of its parent container, the panel control. The example requires that you have created an instance of a <xref:System.Windows.Forms.Panel> control, <xref:System.Windows.Forms.TextBox>, and <xref:System.Windows.Forms.Button>. Place the text box on the panel so that it overlaps at least one of the panel's edges. Call this function on the click of a button to see the difference in the panel's behavior and appearance.  
+  
+ [!code-cpp[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/CS/source.cs#1)]
+ [!code-vb[Classic ScrollableControl.AutoScroll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.AutoScroll Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Drawing.Size.Height" /> or <see cref="P:System.Drawing.Size.Width" /> value assigned is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScrollMinSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMinSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMinSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum size of the auto-scroll.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that determines the minimum size of the virtual area through which the user can scroll.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMinSize%2A> property is used to manage the screen size allocated to the automatic scroll bars.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScrollPosition">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point AutoScrollPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point AutoScrollPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the auto-scroll position.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> that represents the auto-scroll position in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> property represents the location of the visible portion of a scrollable control. Use this property to change the portion of the control that is displayed.  
+  
+ When adding controls programmatically to a form, use the <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> property to position the control either inside or outside of the current viewable scroll area.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinate values retrieved are negative if the control has scrolled away from its starting position (0,0). When you set this property, you must always assign positive <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> values to set the scroll position relative to the starting position. For example, if you have a horizontal scroll bar and you set x and y to 200, you move the scroll 200 pixels to the right; if you then set x and y to 100, the scroll appears to jump the left by 100 pixels, because you are setting it 100 pixels away from the starting position. In the first case, <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> returns {-200, 0}; in the second case, it returns {-100,0}.  
+  
+ To detect when <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> changes, create an event handler for the <xref:System.Windows.Forms.Control.Paint> event, save the old position value in a private variable, and compare the new value to the old value on subsequent <xref:System.Windows.Forms.Control.Paint> events.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollableControl> derived class <xref:System.Windows.Forms.Panel> and adds a button to the upper left corner of the scrollable area. The example allows for the offset determined by the <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A>. The example was written under the assumption that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.Panel> with a <xref:System.Windows.Forms.Button> on it. To enable auto-scrolling, place the button outside of the client area of the <xref:System.Windows.Forms.Panel>.  
+  
+ [!code-cpp[Windows.Forms.ScrollableControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.ScrollableControl/CPP/scrollablecontrol.cpp#1)]
+ [!code-csharp[Windows.Forms.ScrollableControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.ScrollableControl/CS/scrollablecontrol.cs#1)]
+ [!code-vb[Windows.Forms.ScrollableControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.ScrollableControl/VB/scrollablecontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRectangle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle DisplayRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle DisplayRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangle that represents the virtual display area of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the display area of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, the <xref:System.Windows.Forms.ScrollableControl.DisplayRectangle%2A> property is the virtual size and position of the <xref:System.Windows.Forms.ScrollableControl> control. For example, if the width and height of the <xref:System.Windows.Forms.ScrollableControl> are both 100 pixels and the control contains controls that extend beyond its boundaries, <xref:System.Windows.Forms.ScrollableControl.DisplayRectangle%2A> represents the size the <xref:System.Windows.Forms.ScrollableControl> needs to be to include the contained controls. Similarly, the <xref:System.Drawing.Rectangle.X%2A> and <xref:System.Drawing.Rectangle.Y%2A> properties of <xref:System.Windows.Forms.ScrollableControl.DisplayRectangle%2A> are relevant to the scroll position of the <xref:System.Windows.Forms.ScrollableControl>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockPadding">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ScrollableControl.DockPaddingEdges DockPadding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ScrollableControl/DockPaddingEdges DockPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollableControl+DockPaddingEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dock padding settings for all edges of the control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" /> that represents the padding for all the edges of a docked control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property controls the border inside of this control for docked components.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. The example requires that you have created an instance of a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> on a form, and you have declared a class level member variable named `myCounter` as a 32-bit signed integer. You should call this code on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-cpp[Classic ScrollableControl.DockPadding Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPadding Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ScrollableControl.DockPadding Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPadding Example/CS/source.cs#1)]
+ [!code-vb[Classic ScrollableControl.DockPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPadding Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScrollState">
+      <MemberSignature Language="C#" Value="protected bool GetScrollState (int bit);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool GetScrollState(int32 bit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bit" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bit">The flag to check.</param>
+        <summary>Determines whether the specified flag has been set.</summary>
+        <returns>
+          <see langword="true" /> if the specified flag has been set; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes the flags the <xref:System.Windows.Forms.ScrollableControl> control uses.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|<xref:System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling>|A mask used to retrieve whether the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`.|  
+|<xref:System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible>|A mask used to retrieve whether the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> property is set to `true`.|  
+|<xref:System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible>|A mask used to retrieve whether the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> property is set to `true`.|  
+|<xref:System.Windows.Forms.ScrollableControl.ScrollStateUserHasScrolled>|A mask used to retrieve whether the user has made the <xref:System.Windows.Forms.ScrollableControl> scroll.|  
+|<xref:System.Windows.Forms.ScrollableControl.ScrollStateFullDrag>|A mask used to retrieve whether the user has enabled the full window drag-and-drop operation.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScroll">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HScrollProperties HorizontalScroll { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HScrollProperties HorizontalScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HScrollProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the characteristics associated with the horizontal scroll bar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.HScrollProperties" /> that contains information about the horizontal scroll bar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.HScrollProperties> class contains information about the scroll bar and its operation, such as whether it is enabled and visible, the scroll page size, orientation, display position, and so on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HScroll">
+      <MemberSignature Language="C#" Value="protected bool HScroll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.HScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the horizontal scroll bar is visible.</summary>
+        <value>
+          <see langword="true" /> if the horizontal scroll bar is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The functionality of the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> property can also be accomplished through calls to the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods using <xref:System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible> as the parameter.  
+  
+ **Note** <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> maintains the visibility of the scrollbars automatically. Therefore, setting the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> or <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> properties to `true` have no effect when <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is enabled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayout">
+      <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseWheel">
+      <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the vertical scroll bar is visible, which means that the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> property is set to `true`, the mouse wheel scrolls through the <xref:System.Windows.Forms.ScrollableControl> control vertically. However, if only the horizontal scroll bar is visible, which means that the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> is set to `false` and the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> property to set to `true,` the mouse wheel scrolls horizontally.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.ScrollableControl.OnMouseWheel%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaddingChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPaddingChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaddingChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnPaddingChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.PaddingChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.ScrollableControl.OnPaddingChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnPaddingChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollableControl.OnPaddingChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaintBackground">
+      <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Paints the background of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.ScrollableControl.OnPaintBackground%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRightToLeftChanged">
+      <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnScroll">
+      <MemberSignature Language="C#" Value="protected virtual void OnScroll (System.Windows.Forms.ScrollEventArgs se);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnScroll(class System.Windows.Forms.ScrollEventArgs se) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="se" Type="System.Windows.Forms.ScrollEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="se">A <see cref="T:System.Windows.Forms.ScrollEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ScrollableControl.Scroll" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.ScrollableControl.OnScroll%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisibleChanged">
+      <MemberSignature Language="C#" Value="protected override void OnVisibleChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnVisibleChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnVisibleChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleControl">
+      <MemberSignature Language="C#" Value="protected override void ScaleControl (System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleControl(valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="factor" Type="System.Drawing.SizeF" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
+      </Parameters>
+      <Docs>
+        <param name="factor">The factor by which the height and width of the control will be scaled.</param>
+        <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
+        <summary>Scales a control's location, size, padding and margin.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleCore">
+      <MemberSignature Language="C#" Value="protected override void ScaleCore (float dx, float dy);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleCore(float32 dx, float32 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScaleCore(System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="dx">The horizontal scaling factor.</param>
+        <param name="dy">The vertical scaling factor.</param>
+        <summary>This method is not relevant for this class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.ScrollEventHandler Scroll;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ScrollEventHandler Scroll" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ScrollableControl.Scroll" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user or code scrolls through the client area.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.Scroll> event occurs when the user scrolls through the client area by interacting with the scroll bars, or when the user navigates between controls and the active control scrolls into view. The <xref:System.Windows.Forms.ScrollableControl.Scroll> event also occurs when you write code, such as setting the <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A> property, that scrolls through the client area.  
+  
+ You can use the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property in your event handler to determine the scroll bar orientation for the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#74](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#74)]
+ [!code-vb[System.Windows.Forms.EventExamples#74](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#74)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollControlIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollControlIntoView (System.Windows.Forms.Control activeControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollControlIntoView(class System.Windows.Forms.Control activeControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeControl" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="activeControl">The child control to scroll into view.</param>
+        <summary>Scrolls the specified child control into view on an auto-scroll enabled control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property must be set to `true`, and at least one of the scroll bars, horizontal or vertical, must also be visible, for the <xref:System.Windows.Forms.ScrollableControl.ScrollControlIntoView%2A> method to have an effect. To make the horizontal and vertical scroll bars visible, the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> and <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> properties, respectively, must be set to `true`.  
+  
+ If the `activeControl` parameter is not a child control, no action takes place.  
+  
+ This method may raise the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
+  
+   
+  
+## Examples  
+ The following code example enables auto-scrolling for a form, resizes the form, and ensures that a button remains visible after the form is resized. The example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.Button> named `button2` on it.  
+  
+ [!code-cpp[Windows.Forms.Control Member5#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CPP/controlmembers5.cpp#2)]
+ [!code-csharp[Windows.Forms.Control Member5#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CS/controlmembers5.cs#2)]
+ [!code-vb[Windows.Forms.Control Member5#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Member5/VB/controlmembers5.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollStateAutoScrolling">
+      <MemberSignature Language="C#" Value="protected const int ScrollStateAutoScrolling = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 ScrollStateAutoScrolling = (1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Determines the value of the <see cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling> field is a mask. You can use it with the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods to get and set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollStateFullDrag">
+      <MemberSignature Language="C#" Value="protected const int ScrollStateFullDrag = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 ScrollStateFullDrag = (16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateFullDrag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>Determines whether the user has enabled full window drag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollStateFullDrag> field is a mask. Use it with the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods to get and set whether the user has enabled full window drag.  
+  
+ When full window drag is enabled, the contents of windows are displayed when the user moves and sizes the windows.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollStateHScrollVisible">
+      <MemberSignature Language="C#" Value="protected const int ScrollStateHScrollVisible = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 ScrollStateHScrollVisible = (2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Determines whether the value of the <see cref="P:System.Windows.Forms.ScrollableControl.HScroll" /> property is set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible> field is a mask. Use it with the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods to get and set the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollStateUserHasScrolled">
+      <MemberSignature Language="C#" Value="protected const int ScrollStateUserHasScrolled = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 ScrollStateUserHasScrolled = (8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateUserHasScrolled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>Determines whether the user had scrolled through the <see cref="T:System.Windows.Forms.ScrollableControl" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollStateUserHasScrolled> field is a mask. Use it with the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> method to get whether the user had scrolled through the <xref:System.Windows.Forms.ScrollableControl>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollStateVScrollVisible">
+      <MemberSignature Language="C#" Value="protected const int ScrollStateVScrollVisible = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 ScrollStateVScrollVisible = (4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Determines whether the value of the <see cref="P:System.Windows.Forms.ScrollableControl.VScroll" /> property is set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible> field is a mask. Use it with the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods to get and set the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollToControl">
+      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Point ScrollToControl (System.Windows.Forms.Control activeControl);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Drawing.Point ScrollToControl(class System.Windows.Forms.Control activeControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScrollToControl(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeControl" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="activeControl">The child control to scroll into view.</param>
+        <summary>Calculates the scroll offset to the specified child control.</summary>
+        <returns>The upper-left hand <see cref="T:System.Drawing.Point" /> of the display area relative to the client area required to scroll the control into view.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollableControl.ScrollControlIntoView%2A> method uses the <xref:System.Windows.Forms.ScrollableControl.ScrollToControl%2A> method to calculate how far it must scroll to display the specified control. The <xref:System.Windows.Forms.Control.AutoScrollOffset%2A> property of the child control is used to adjust the scrolled position.  
+  
+ <xref:System.Windows.Forms.ScrollableControl.ScrollToControl%2A> does not cause scrolling; the <xref:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation%2A> method is typically used to subsequently scroll to the calculated position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAutoScrollMargin">
+      <MemberSignature Language="C#" Value="public void SetAutoScrollMargin (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAutoScrollMargin(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetAutoScrollMargin(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The <see cref="P:System.Drawing.Size.Width" /> value.</param>
+        <param name="y">The <see cref="P:System.Drawing.Size.Height" /> value.</param>
+        <summary>Sets the size of the auto-scroll margins.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The margin sets the width and height of the border around each control. This margin is used to determine when scroll bars are needed on the container and where to scroll to when a control is selected.  
+  
+> [!NOTE]
+>  If a negative number is passed in as the `x` or `y` values, the value will be reset to 0.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example evaluates the location of a text box and changes the appearance and behavior of its parent container, the panel control. The example requires that you have created an instance of a <xref:System.Windows.Forms.Panel> control, <xref:System.Windows.Forms.TextBox>, and <xref:System.Windows.Forms.Button>. Place the box on the panel so that it overlaps at least one of the panel's edges. Call this subprocedure on the click of a button to see the difference in the panel's behavior and appearance.  
+  
+ [!code-cpp[Classic ScrollableControl.SetAutoScrollMargin Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.SetAutoScrollMargin Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ScrollableControl.SetAutoScrollMargin Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.SetAutoScrollMargin Example/CS/source.cs#1)]
+ [!code-vb[Classic ScrollableControl.SetAutoScrollMargin Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.SetAutoScrollMargin Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDisplayRectLocation">
+      <MemberSignature Language="C#" Value="protected void SetDisplayRectLocation (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetDisplayRectLocation(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The horizontal offset at which to position the <see cref="T:System.Windows.Forms.ScrollableControl" />.</param>
+        <param name="y">The vertical offset at which to position the <see cref="T:System.Windows.Forms.ScrollableControl" />.</param>
+        <summary>Positions the display window to the specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, the <xref:System.Windows.Forms.ScrollableControl.DisplayRectangle%2A> property is the virtual size and position displayed client area of the <xref:System.Windows.Forms.ScrollableControl>. Call the <xref:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation%2A> method to scroll through the <xref:System.Windows.Forms.ScrollableControl> to the specified position.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>
+            <see cref="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" /> does not update the position of the scroll bars. To update the scroll bars, call the <see cref="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetScrollState">
+      <MemberSignature Language="C#" Value="protected void SetScrollState (int bit, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetScrollState(int32 bit, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bit" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bit">The scroll state flag to set.</param>
+        <param name="value">The value to set the flag.</param>
+        <summary>Sets the specified scroll state flag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the bit parameter is set to one of the fields of the <xref:System.Windows.Forms.ScrollableControl> class, the <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> method updates the state of the control to the `value` parameter. For more information about the valid parameters and their values, see the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScroll">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.VScrollProperties VerticalScroll { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.VScrollProperties VerticalScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VScrollProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the characteristics associated with the vertical scroll bar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VScrollProperties" /> that contains information about the vertical scroll bar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VScrollProperties> class contains information about the scroll bar and its operation, such as whether it is enabled and visible, the scroll page size, orientation, display position, and so on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VScroll">
+      <MemberSignature Language="C#" Value="protected bool VScroll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VScroll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.VScroll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the vertical scroll bar is visible.</summary>
+        <value>
+          <see langword="true" /> if the vertical scroll bar is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The functionality of the <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> property can also be accomplished through calls to the <xref:System.Windows.Forms.ScrollableControl.GetScrollState%2A> and <xref:System.Windows.Forms.ScrollableControl.SetScrollState%2A> methods using <xref:System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible> as the parameter.  
+  
+ **Note** <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> maintains the visibility of the scrollbars automatically. Therefore, setting the <xref:System.Windows.Forms.ScrollableControl.HScroll%2A> or <xref:System.Windows.Forms.ScrollableControl.VScroll%2A> properties to `true` have no effect when <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is enabled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

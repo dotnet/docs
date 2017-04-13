@@ -1,0 +1,52 @@
+<Type Name="IMessageReceiver" FullName="Microsoft.JScript.IMessageReceiver">
+  <TypeSignature Language="C#" Value="public interface IMessageReceiver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageReceiver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IMessageReceiver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("F062C7FB-53BF-4f0d-B0F6-D66C5948E63F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that receive output from a scripting engine. This interface acts as a callback object to capture output that would otherwise go to the console.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public void Message (string strValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Message(string strValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IMessageReceiver.Message(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strValue">The output to capture.</param>
+        <summary>When implemented in a class, captures the specified output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of this method can send the output to any location you want. For example, it can send the output to a file, store it in a data structure, or print it to a console.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

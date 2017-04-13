@@ -1,0 +1,69 @@
+<Type Name="CachingHint" FullName="System.Windows.Media.CachingHint">
+  <TypeSignature Language="C#" Value="public enum CachingHint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CachingHint extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.CachingHint" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether to cache tiled brush objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios where neither the contents nor the use of the brush in the scene is changing, not caching provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way, the default behavior of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] is to re-render the entire content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
+  
+ By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property on the brush to Cache, you can increase performance by using cached versions of the tiled brush objects.  
+  
+ The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated due to changes in scale. For example, by setting the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property to 2.0, the cache for the <xref:System.Windows.Media.TileBrush> only needs to be regenerated when its size exceeds twice the size of the current cache.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
+  
+ [!code-csharp[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet3)]
+ [!code-vb[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cache">
+      <MemberSignature Language="C#" Value="Cache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.CachingHint Cache = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.CachingHint.Cache" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CachingHint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cache the tiled brush objects in an off-screen buffer, using the caching hints specified by the <see cref="T:System.Windows.Media.RenderOptions" /> settings.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.CachingHint Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.CachingHint.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CachingHint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No caching hints are specified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

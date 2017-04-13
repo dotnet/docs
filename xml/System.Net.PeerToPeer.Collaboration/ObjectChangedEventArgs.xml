@@ -1,0 +1,122 @@
+<Type Name="ObjectChangedEventArgs" FullName="System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerObject.ObjectChanged" /> event occurs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ PeerObjects are run-time data items associated with an application, such as certificates, pictures, avatars, or specific descriptions. They may also be referred to as a host peer's registered applications, objects and presence information.  When a <xref:System.Net.PeerToPeer.Collaboration.PeerObject> is changed, an event is raised.  
+  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration> session begins.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PeerChangeType">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs.PeerChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> that specifies the type of change that has occurred to a <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> or <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> that specifies the type of change that has occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless specified, the default value for this property is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerContact">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerContact PeerContact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerContact PeerContact" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs.PeerContact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerContact</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> for which object information has changed.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on which <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> information has changed.  If the endpoint is not associated with a contact, <see langword="null" /> is returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerEndPoint">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs.PeerEndPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerEndPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> for which object information has changed.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on which <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> information has changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless specified, the default value for this property is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerObject">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerObject PeerObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerObject PeerObject" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs.PeerObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> that has been added, deleted or updated.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> that has been added, deleted, or updated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless specified, the default value for this property is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2246 @@
+<Type Name="WorkflowView" FullName="System.Workflow.ComponentModel.Design.WorkflowView">
+  <TypeSignature Language="C#" Value="public class WorkflowView : System.Windows.Forms.UserControl, IServiceProvider, System.Windows.Forms.IMessageFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowView extends System.Windows.Forms.UserControl implements class System.IServiceProvider, class System.Windows.Forms.IMessageFilter" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.UserControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Forms.IMessageFilter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Design.ActivityDesignerTheme(typeof(System.Workflow.ComponentModel.Design.AmbientTheme), Xml="&lt;AmbientTheme xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" ApplyTo="System.Workflow.ComponentModel.Design.WorkflowView" ShowConfigErrors="True" DrawShadow="False" DrawGrayscale="False" DropIndicatorColor="0xFF006400" SelectionForeColor="0xFF0000FF" SelectionPatternColor="0xFF606060" ForeColor="0xFF808080" BackColor="0xFFFFFFFF" ShowGrid="False" GridColor="0xFFC0C0C0" TextQuality="Aliased" DrawRounded="True" ShowDesignerBorder="True" /&gt;")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a design surface, which renders a visual representation of process flow.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> is the design surface which renders a visual representation of process flow described in workflow markup. <xref:System.Workflow.ComponentModel.Design.WorkflowView> offers a rich set of user interface functionality needed by the activity designers for rendering and for responding to various Windows-generated events. Also, the <xref:System.Workflow.ComponentModel.Design.WorkflowView> offers a set of common functions which can be used by all designers to perform certain activities.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can obtain an instance of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> class using the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method. The code then sets several <xref:System.Workflow.ComponentModel.Design.WorkflowView> properties, including <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A>, and calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize%2A> method.  
+  
+ This code example is part of the Workflow Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Workflow Tracking Profile Designer](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+  
+ [!code-csharp[wf_samples#126](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#126)]
+ [!code-vb[wf_samples#126](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#126)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowView (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">An object that implements the <see cref="T:System.IServiceProvider" /> interface.</param>
+        <summary>Initializes an instance of a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> with the specified service provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object. In this example, a new <xref:System.ComponentModel.Design.DesignSurface> object is created and the `BeginLoad` method is called passing a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> object as the parameter. After creating a new <xref:System.Workflow.Activities.SequentialWorkflowActivity>, a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object is created using the <xref:System.ComponentModel.Design.DesignSurface> created earlier as a parameter to the constructor.  
+  
+ This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[wf_samples#97](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#97)]
+ [!code-vb[wf_samples#97](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#97)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDesignerMessageFilter">
+      <MemberSignature Language="C#" Value="public void AddDesignerMessageFilter (System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter designerMessageFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDesignerMessageFilter(class System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter designerMessageFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.AddDesignerMessageFilter(System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designerMessageFilter" Type="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />
+      </Parameters>
+      <Docs>
+        <param name="designerMessageFilter">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" /> to add to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</param>
+        <summary>Adds a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" /> to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> is a component that handles messages from the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ Using the `Strategy` design pattern, the <xref:System.Workflow.ComponentModel.Design.WorkflowView> will pass messages to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> to be handled.  
+  
+ Mouse events, keyboard events, paint and layout events are passed on to a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> associated with the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> is created and a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object is associated with the workflow design surface. In order to retrieve notifications of messages, a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> is created and added to the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object.  
+  
+ This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[wf_Samples#102](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#102)]
+ [!code-vb[wf_Samples#102](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#102)]  
+  
+ The `MessageFilter` object created in the previous code is derived from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> class.  By overriding the methods of this class, the message filter is notified whenever a user interface event occurs on the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object.  
+  
+ [!code-csharp[wf_samples#104](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#104)]
+ [!code-vb[wf_samples#104](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#104)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientPointToLogical">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point ClientPointToLogical (System.Drawing.Point clientPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point ClientPointToLogical(valuetype System.Drawing.Point clientPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientPointToLogical(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientPoint" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="clientPoint">The <see cref="T:System.Drawing.Point" /> to convert from client coordinates to logical coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Point" /> from client coordinates to logical coordinates.</summary>
+        <returns>The <see cref="T:System.Drawing.Point" /> converted from client coordinates to logical coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+-   In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientRectangleToLogical">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ClientRectangleToLogical (System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle ClientRectangleToLogical(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientRectangleToLogical(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> to convert from client to logical coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Rectangle" /> from client coordinates to logical coordinates.</summary>
+        <returns>The <see cref="T:System.Drawing.Rectangle" /> converted from client coordinates to logical coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientSizeToLogical">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size ClientSizeToLogical (System.Drawing.Size clientSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Size ClientSizeToLogical(valuetype System.Drawing.Size clientSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientSizeToLogical(System.Drawing.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientSize" Type="System.Drawing.Size" />
+      </Parameters>
+      <Docs>
+        <param name="clientSize">The <see cref="T:System.Drawing.Size" /> to convert from client to logical coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Size" /> from client to logical coordinates.</summary>
+        <returns>The <see cref="T:System.Drawing.Size" /> converted from client coordinates to logical coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAccessibilityInstance">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.CreateAccessibilityInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call the <xref:System.Workflow.ComponentModel.Design.WorkflowView.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.AccessibleObject> property is referenced.  
+  
+> [!NOTE]
+>  To create a <xref:System.Windows.Forms.AccessibleObject>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Workflow.ComponentModel.Design.WorkflowView.CreateAccessibilityInstance" /> in a derived class, you should not call the base class <see cref="M:System.Workflow.ComponentModel.Design.WorkflowView.CreateAccessibilityInstance" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the disposing parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Workflow.ComponentModel.Design.WorkflowView> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ For more information about `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableFitToScreen">
+      <MemberSignature Language="C#" Value="public bool EnableFitToScreen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableFitToScreen" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.EnableFitToScreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables the button on the design surface that, when clicked, changes the zoom level of the workflow design surface so that the entire workflow is displayed in the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>
+          <see langword="true" /> if the dynamic button is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to enable the fit to screen button. The method first obtains the <xref:System.ComponentModel.Design.IDesignerHost> interface for the designer and then retrieves the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object by using the <xref:System.IServiceProvider.GetService%2A> method before modifying the <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnableFitToScreen%2A> property.  
+  
+ [!code-csharp[wf_samples#50](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#50)]
+ [!code-vb[wf_samples#50](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisible">
+      <MemberSignature Language="C#" Value="public void EnsureVisible (object selectableObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnsureVisible(object selectableObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="selectableObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="selectableObject">The object to make visible.</param>
+        <summary>Ensures that the <see cref="T:System.Object" /> passed is visible, expanding parent objects and scrolling the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> as necessary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible%2A> when you are working with an object in the workflow that requires user interface cues. <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible%2A> will expand parent objects and scroll the <xref:System.Workflow.ComponentModel.Design.WorkflowView> as necessary to make the object visible on the designer.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.GetService%2A> method of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object to return an <xref:System.ComponentModel.Design.ISelectionService> interface. If the service exists, <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible%2A> is called passing the currently selected activity using the `PrimarySelection` property of the <xref:System.ComponentModel.Design.ISelectionService> object.  
+  
+ [!code-csharp[wf_samples#64](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#64)]
+ [!code-vb[wf_samples#64](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#64)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="selectableObject" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FitToScreenSize">
+      <MemberSignature Language="C#" Value="public void FitToScreenSize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FitToScreenSize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Changes the zoom level of the workflow design surface so that the entire workflow is displayed in the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual zoom level is dependent upon the settings of the user's workflow designer.  
+  
+   
+  
+## Examples  
+ The following example shows how to enable the fit to screen button. The method first obtains the <xref:System.ComponentModel.Design.IDesignerHost> interface for the designer and then retrieves the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object by using the <xref:System.IServiceProvider.GetService%2A> method before modifying the <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnableFitToScreen%2A> property. Finally, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize%2A> method is called to display the entire workflow within the bounds of the displayable area of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ [!code-csharp[wf_samples#50](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#50)]
+ [!code-vb[wf_samples#50](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FitToWorkflowSize">
+      <MemberSignature Language="C#" Value="public void FitToWorkflowSize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FitToWorkflowSize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.FitToWorkflowSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Changes the zoom level to one hundred percent to display the full size of the workflow in the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example initializes the properties of a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object be setting several properties. The <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToWorkflowSize%2A> causes the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object to display the full size of the workflow within the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle%2A>.  
+  
+ [!code-csharp[wf_samples#65](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#65)]
+ [!code-vb[wf_samples#65](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected override object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service to retrieve.</param>
+        <summary>Gets the service object of the specified type, if it is available.</summary>
+        <returns>If the <paramref name="serviceType" /> is <see langword="typeof(" /><see cref="T:System.ComponentModel.Design.CommandID" /><see langword=")" /> then <see langword="GetService" /> returns a specific <see cref="T:System.ComponentModel.Design.CommandID" />; otherwise, <see langword="GetService" /> returns a <see cref="T:System.Object" /> implementing the requested service, or a null reference (<see langword="Nothing" /> in Visual Basic) if the service cannot be resolved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `GetService` returns a <xref:System.Object> implementing the requested service, or a null reference (`Nothing`) if the service cannot be resolved.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.GetService%2A> method of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object to return an <xref:System.ComponentModel.Design.ISelectionService> interface. If the service exists, <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible%2A> is called passing the currently selected activity using the `PrimarySelection` property of the <xref:System.ComponentModel.Design.ISelectionService> object.  
+  
+ [!code-csharp[wf_samples#64](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#64)]
+ [!code-vb[wf_samples#64](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#64)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HScrollBar">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HScrollBar HScrollBar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HScrollBar HScrollBar" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HScrollBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the horizontal scrollbar for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ScrollBar" /> you can use to adjust the settings and visibility of the horizontal scrollbar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can obtain an instance of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> class.  The code then sets several <xref:System.Workflow.ComponentModel.Design.WorkflowView> properties, including <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A>, and calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToWorkflowSize%2A> method.  
+  
+ [!code-csharp[Wf_samples#65](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#65)]
+ [!code-vb[Wf_samples#65](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Idle">
+      <MemberSignature Language="C#" Value="public event EventHandler Idle;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Idle" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.Idle" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see langword="WorkflowView" /> finishes processing and is about to enter the idle state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you have tasks to perform before the thread becomes idle, attach them to this event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateClientRectangle">
+      <MemberSignature Language="C#" Value="public void InvalidateClientRectangle (System.Drawing.Rectangle clientRectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvalidateClientRectangle(valuetype System.Drawing.Rectangle clientRectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateClientRectangle(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientRectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="clientRectangle">The <see cref="T:System.Drawing.Rectangle" />, in client coordinates, to invalidate and cause to be repainted.</param>
+        <summary>Invalidates the specified <see cref="T:System.Drawing.Rectangle" /> and causes it to be repainted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateClientRectangle%2A> to cause a <xref:System.Drawing.Rectangle>, in client coordinates, to be added to the update region.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateLogicalRectangle">
+      <MemberSignature Language="C#" Value="public void InvalidateLogicalRectangle (System.Drawing.Rectangle logicalRectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvalidateLogicalRectangle(valuetype System.Drawing.Rectangle logicalRectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateLogicalRectangle(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logicalRectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="logicalRectangle">The <see cref="T:System.Drawing.Rectangle" />, in logical coordinates, to invalidate and cause to be repainted.</param>
+        <summary>Invalidates the specified <see cref="T:System.Drawing.Rectangle" /> and causes it to be repainted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateLogicalRectangle%2A> to cause a <xref:System.Drawing.Rectangle>, in logical coordinates, to be added to the update region.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="public void LoadViewState (System.IO.Stream viewState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadViewState(class System.IO.Stream viewState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewState" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="viewState">A <see cref="T:System.IO.BinaryReader" /> used to restore the view state.</param>
+        <summary>Restores view-state information from a binary stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState%2A> restores view-state information previously saved by calling the <xref:System.Workflow.ComponentModel.Design.WorkflowView.SaveViewState%2A> method.  
+  
+ Override this method when you need to customize how a custom designer restores its view-state.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to load the view state for a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object by creating a <xref:System.IO.FileStream> object with the `FileMode.Open` flag and passing it to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState%2A> method. The view state file was created using the <xref:System.Workflow.ComponentModel.Design.WorkflowView.SaveViewState%2A> method.  
+  
+ [!code-csharp[wf_samples#60](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#60)]
+ [!code-vb[wf_samples#60](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#60)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalPointToClient">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point LogicalPointToClient (System.Drawing.Point logicalPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point LogicalPointToClient(valuetype System.Drawing.Point logicalPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalPointToClient(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logicalPoint" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="logicalPoint">The <see cref="T:System.Drawing.Point" /> to convert to client coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Point" /> from logical to client coordinates.</summary>
+        <returns>The <see cref="T:System.Drawing.Point" /> converted from logical to client coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalPointToScreen">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point LogicalPointToScreen (System.Drawing.Point logicalPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point LogicalPointToScreen(valuetype System.Drawing.Point logicalPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalPointToScreen(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logicalPoint" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="logicalPoint">The <see cref="T:System.Drawing.Point" /> to convert to screen coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Point" /> from logical to screen coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.Point" /> converted from logical to screen coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalRectangleToClient">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle LogicalRectangleToClient (System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle LogicalRectangleToClient(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalRectangleToClient(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> to convert to client coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Rectangle" /> from logical to client coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> converted from logical to client coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSizeToClient">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size LogicalSizeToClient (System.Drawing.Size logicalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Size LogicalSizeToClient(valuetype System.Drawing.Size logicalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalSizeToClient(System.Drawing.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logicalSize" Type="System.Drawing.Size" />
+      </Parameters>
+      <Docs>
+        <param name="logicalSize">The <see cref="T:System.Drawing.Size" /> to convert to client coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Size" /> from logical to client coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> converted from logical to client coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+-   Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnControlAdded">
+      <MemberSignature Language="C#" Value="protected override void OnControlAdded (System.Windows.Forms.ControlEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnControlAdded(class System.Windows.Forms.ControlEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnControlAdded(System.Windows.Forms.ControlEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.ControlEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.ControlEventArgs" /> that contains the event data.</param>
+        <summary>Occurs when a control is added to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnControlAdded%2A> is called when a child control is added to the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The only child controls allowed are <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A> controls.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If the control added is not a <see cref="P:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar" /> or <see cref="P:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragDrop">
+      <MemberSignature Language="C#" Value="protected override void OnDragDrop (System.Windows.Forms.DragEventArgs dragEventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragDrop(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dragEventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="dragEventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when a dragged item is dropped onto the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragDrop%2A> occurs when the user releases the mouse button over the <xref:System.Workflow.ComponentModel.Design.WorkflowView> during a drag operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragEnter">
+      <MemberSignature Language="C#" Value="protected override void OnDragEnter (System.Windows.Forms.DragEventArgs dragEventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dragEventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="dragEventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when an item is dragged into the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragEnter%2A> occurs when the user first drags the mouse cursor over the <xref:System.Workflow.ComponentModel.Design.WorkflowView> during a drag operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragLeave">
+      <MemberSignature Language="C#" Value="protected override void OnDragLeave (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragLeave(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragLeave(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when the cursor leaves the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> during a drag operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragLeave%2A> occurs when the user drags the mouse cursor out of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> during a drag operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragOver">
+      <MemberSignature Language="C#" Value="protected override void OnDragOver (System.Windows.Forms.DragEventArgs dragEventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dragEventArgs" Type="System.Windows.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="dragEventArgs">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when a drag-drop operation is in progress and the pointer is within the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver%2A> occurs when the mouse cursor moves within bounds of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGiveFeedback">
+      <MemberSignature Language="C#" Value="protected override void OnGiveFeedback (System.Windows.Forms.GiveFeedbackEventArgs gfbevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGiveFeedback(class System.Windows.Forms.GiveFeedbackEventArgs gfbevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gfbevent" Type="System.Windows.Forms.GiveFeedbackEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="gfbevent">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs during a drag operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback%2A> occurs when a drag operation is started. <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback%2A> allows the source of a drag operation to modify the appearance of the mouse pointer in order to give the user visual feedback during a drag operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when a key is pressed while the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyDown%2A> occurs when a key is pressed while the <xref:System.Workflow.ComponentModel.Design.WorkflowView> has focus.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyUp">
+      <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Forms.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Forms.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that provides data about the event.</param>
+        <summary>Occurs when a key is released while the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyUp%2A> occurs when a key is released while the <xref:System.Workflow.ComponentModel.Design.WorkflowView> has focus.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayout">
+      <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that provides data for the event.</param>
+        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> should reposition child controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnLayout%2A> occurs when child controls are added or removed, when the bounds of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> changes, and when other changes occur that can affect the layout of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseCaptureChanged">
+      <MemberSignature Language="C#" Value="protected override void OnMouseCaptureChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseCaptureChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseCaptureChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that provides data about the event.</param>
+        <summary>Occurs when the items selected by dragging the mouse changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseCaptureChanged%2A> occurs when the user makes a selection with the mouse that differs from any existing selection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDoubleClick">
+      <MemberSignature Language="C#" Value="protected override void OnMouseDoubleClick (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDoubleClick(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> is double-clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The double-click is determined by the mouse settings of the operating system. The user can set the time between clicks of a mouse button that should be considered a double-click rather than two clicks.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer is over the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> and a mouse button is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A>/ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ `OnMouseEnter` occurs when the mouse pointer enters the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ `OnMouseDown` occurs when the mouse pointer is over the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and a mouse button is pressed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseEnter">
+      <MemberSignature Language="C#" Value="protected override void OnMouseEnter (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseEnter(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer enters the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A> occurs when the mouse pointer enters the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseHover">
+      <MemberSignature Language="C#" Value="protected override void OnMouseHover (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseHover(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse hovers over the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> occurs when the mouse pointer hovers over the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeave">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse pointer leaves the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A> occurs when the mouse pointer leaves the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseMove">
+      <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse moves over the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A> occurs when the mouse pointer moves over the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseUp">
+      <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when a mouse button is released over the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A> occurs when the mouse pointer is over the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and a button is released.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseWheel">
+      <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the mouse wheel moves when the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mouse events occur in the following order:  
+  
+ 1.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter%2A>  
+  
+ 2.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove%2A>  
+  
+ 3.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown%2A> or <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A>  
+  
+ 4.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp%2A>  
+  
+ 5.<xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave%2A>  
+  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel%2A> occurs when the mouse wheel is moved over the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> is redrawn.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnPaint%2A> occurs when the <xref:System.Workflow.ComponentModel.Design.WorkflowView> is redrawn.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnQueryContinueDrag">
+      <MemberSignature Language="C#" Value="protected override void OnQueryContinueDrag (System.Windows.Forms.QueryContinueDragEventArgs qcdevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnQueryContinueDrag(class System.Windows.Forms.QueryContinueDragEventArgs qcdevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qcdevent" Type="System.Windows.Forms.QueryContinueDragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="qcdevent">A <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> that contains information about the event.</param>
+        <summary>Occurs during a drag operation and allows the drag source to determine whether the drag option should be canceled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag%2A> event is raised when there is a change in the keyboard or mouse button state during a drag operation. The <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag%2A> event allows the drag source to determine whether the drag operation should be canceled.  
+  
+ Events related to drag operations are raised when the control is a valid drop target. The <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback%2A> event is raised with the drag effect specified. For a list of drag effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+  
+ Changes in the mouse cursor position, keyboard state, and mouse button state are tracked.  
+  
+-   If the user moves out of a window, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragLeave%2A> event is raised.  
+  
+-   If the mouse enters another control, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragEnter%2A> for that control is raised.  
+  
+-   If the mouse moves but stays within the same control, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver%2A> event is raised.  
+  
+ If there is a change in the keyboard or mouse button state, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag%2A> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the `Action` property of the event <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
+  
+ If the value is `DragAction.Continue`, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver%2A> event is raised to continue the operation and the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback%2A> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+  
+> [!NOTE]
+>  The <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback%2A> events are paired so that as the mouse moves across the drop target, the user is given the most up-to-date feedback on the mouse position.  
+  
+ If the value is `DragAction.Drop`, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+  
+ If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnDragLeave%2A> event is raised.  
+  
+ By default, the <xref:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag%2A> event sets `Action` to `DragAction.Cancel` if the ESC key was pressed and sets `Action` to `DragAction.Drop` if the left, middle, or right mouse button is pressed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRootDesignerChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnRootDesignerChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRootDesignerChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnRootDesignerChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when a different designer is set as the new root designer of the design surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnZoomChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnZoomChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnZoomChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnZoomChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when the zoom level is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformLayout">
+      <MemberSignature Language="C#" Value="public void PerformLayout (bool immediateUpdate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PerformLayout(bool immediateUpdate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="immediateUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="immediateUpdate">
+          <see langword="true" /> to cause the layout to update immediately; otherwise, <see langword="false" />.</param>
+        <summary>Forces the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to apply layout logic to all its child controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout%2A> updates all child controls in the <xref:System.Workflow.ComponentModel.Design.WorkflowView>, resizing and moving them as necessary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintDocument">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintDocument PrintDocument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrintDocument PrintDocument" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.PrintDocument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Printing.PrintDocument" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A <see cref="P:System.Workflow.ComponentModel.Design.WorkflowView.PrintDocument" /> object that sends output to a printer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.WorkflowView.PrintDocument%2A> object to set the properties that describe how to print, and call the `Print` method to start the printing process.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the <xref:System.Drawing.Printing.PrintDocument> object, display a <xref:System.Windows.Forms.PrintDialog> and associate the <xref:System.Drawing.Printing.PrinterSettings> that were selected by a user before printing the document.  
+  
+ [!code-csharp[Wf_samples#56](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#56)]
+ [!code-vb[Wf_samples#56](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#56)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintPreviewMode">
+      <MemberSignature Language="C#" Value="public bool PrintPreviewMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PrintPreviewMode" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.PrintPreviewMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the print preview mode of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>
+          <see langword="true" /> if print preview mode is active; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to change the WorkflowView object so that it displays the current workflow in print preview mode.  
+  
+ [!code-csharp[wf_samples#57](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#57)]
+ [!code-vb[wf_samples#57](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#57)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDesignerMessageFilter">
+      <MemberSignature Language="C#" Value="public void RemoveDesignerMessageFilter (System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter designerMessageFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDesignerMessageFilter(class System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter designerMessageFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.RemoveDesignerMessageFilter(System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designerMessageFilter" Type="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />
+      </Parameters>
+      <Docs>
+        <param name="designerMessageFilter">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" /> to remove from the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</param>
+        <summary>Removes an associated <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> to respond to designer events, such as drag events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootDesigner">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.ActivityDesigner RootDesigner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ActivityDesigner RootDesigner" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.RootDesigner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesigner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root designer for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The root designer of the workflow is the designer associated with the design surface of the workflow. It contains all child designers, and subsequently all activities in the workflow.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the RootDesigner of a WorkflowView object. The workflowPanel field contains a method named GetWorkflowView that returns the active WorkflowView instance. The RootDesigner is then cast to a SequentialWorkflowRootDesigner before any action is taken on it.  
+  
+ This code example is part of the Basic DesignerHosting SDK Sample from the DesignerShell.cs file. For more information, see [Basic Designer Hosting Sample](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[wf_samples#236](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#236)]
+ [!code-vb[wf_samples#236](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#236)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootDesignerChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler RootDesignerChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RootDesignerChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.RootDesignerChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the root designer is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="public void SaveViewState (System.IO.Stream viewState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveViewState(class System.IO.Stream viewState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveViewState(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewState" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="viewState">A <see cref="T:System.IO.BinaryReader" /> used to store the view state.</param>
+        <summary>Saves the view-state to a binary stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ View state is the accumulation of the values of the properties and child controls of a view. Property values are persisted to the stream after saving and can be restored using the <xref:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates saving the view state for a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object by creating a <xref:System.IO.FileStream> object using the `FileMode.Create` flag and passing it to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.SaveViewState%2A> method. To load this view state at a later time, see <xref:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState%2A>.  
+  
+ [!code-csharp[wf_samples#59](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#59)]
+ [!code-vb[wf_samples#59](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#59)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveWorkflowImage">
+      <MemberSignature Language="C#" Value="public void SaveWorkflowImage (System.IO.Stream stream, System.Drawing.Imaging.ImageFormat imageFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveWorkflowImage(class System.IO.Stream stream, class System.Drawing.Imaging.ImageFormat imageFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="imageFormat" Type="System.Drawing.Imaging.ImageFormat" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to save the workflow view image to.</param>
+        <param name="imageFormat">The <see cref="T:System.Drawing.Imaging.ImageFormat" /> to use to save the workflow view image.</param>
+        <summary>Saves an image of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to the specified stream using the specified image format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow view image is created as a bitmap.  
+  
+   
+  
+## Examples  
+ The following example shows how to save the currently loaded workflow image using a <xref:System.IO.Stream>. In this example, a <xref:System.Windows.Forms.SaveFileDialog> is created to prompt the user for the filename of the image to save. A <xref:System.IO.FileStream> object is then created using the filename and then passed to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage%2A> method.  
+  
+ [!code-csharp[wf_samples#63](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#63)]
+ [!code-vb[wf_samples#63](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#63)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="imageFormat" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveWorkflowImage">
+      <MemberSignature Language="C#" Value="public void SaveWorkflowImage (string imageFile, System.Drawing.Imaging.ImageFormat imageFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveWorkflowImage(string imageFile, class System.Drawing.Imaging.ImageFormat imageFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage(System.String,System.Drawing.Imaging.ImageFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageFile" Type="System.String" />
+        <Parameter Name="imageFormat" Type="System.Drawing.Imaging.ImageFormat" />
+      </Parameters>
+      <Docs>
+        <param name="imageFile">The path to the file in which to store the workflow view image.</param>
+        <param name="imageFormat">The <see cref="T:System.Drawing.Imaging.ImageFormat" /> to use to save the workflow view image.</param>
+        <summary>Saves an image of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to the specified file using the specified image format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow view image is created as a bitmap.  
+  
+   
+  
+## Examples  
+ The following example shows how to save the currently loaded workflow image using a <xref:System.String>. In this example, a <xref:System.Windows.Forms.SaveFileDialog> is created to prompt the user for the filename of the image to save. The filename and the `ImageFormat.Bmp` flag are then passed to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage%2A> method.  
+  
+ [!code-csharp[wf_samples#62](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#62)]
+ [!code-vb[wf_samples#62](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#62)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="imageFile" /> or <paramref name="imageFormat" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveWorkflowImageToClipboard">
+      <MemberSignature Language="C#" Value="public void SaveWorkflowImageToClipboard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveWorkflowImageToClipboard() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImageToClipboard" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves an image of the WorkflowView to the clipboard.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenPointToLogical">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point ScreenPointToLogical (System.Drawing.Point screenPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point ScreenPointToLogical(valuetype System.Drawing.Point screenPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ScreenPointToLogical(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="screenPoint" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="screenPoint">The <see cref="T:System.Drawing.Point" /> to convert from screen coordinates to logical coordinates.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Point" /> from screen coordinates to logical coordinates.</summary>
+        <returns>The <see cref="T:System.Drawing.Point" /> converted from screen coordinates to logical coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.WorkflowView> uses two coordinate spaces: logical and client:  
+  
+ Client coordinates are relative to the upper-left corner of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The upper-left corner is 0,0; x and y coordinates increase vertically and horizontally in the viewable area. The client coordinate system is affected by the zoom level of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> and by the scrollbar position.  
+  
+ In the logical coordinate system every object is always mapped to 0,0. The position vertically and horizontally is not affected by zoom or scrollbar position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollPosition">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point ScrollPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point ScrollPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ScrollPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the position of the scrollbar on the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A point describing the location of the scrollbar in screen coordinates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ScrollPosition%2A> to get or adjust the location of the scrollbar in the design surface.  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the ScrollPosition property inside an implementation of a <xref:System.Windows.Forms.Panel> control's OnMouseMove method.  This example is from the Outlook Workflow Wizard SDK sample.  For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[wf_samples#105](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#105)]
+ [!code-vb[wf_samples#105](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#105)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowDepth">
+      <MemberSignature Language="C#" Value="public int ShadowDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth" /> for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>The shadow depth in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth%2A> to get or adjust the shadow depth of text shown on the workflow design surface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can obtain an instance of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> class using the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method. The code then sets several <xref:System.Workflow.ComponentModel.Design.WorkflowView> properties, including <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth%2A>, and calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize%2A> method.  
+  
+ [!code-csharp[Wf_samples#48](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#48)]
+ [!code-vb[Wf_samples#48](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#48)]  
+  
+ The `UnloadWorkflow` method that is called in the code above removes a currently loaded workflow in order to prepare for the loading of a new workflow and is implemented as follows:  
+  
+ [!code-csharp[Wf_samples#49](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#49)]
+ [!code-vb[Wf_samples#49](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#49)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInfoTip">
+      <MemberSignature Language="C#" Value="public void ShowInfoTip (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowInfoTip(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display on the **InfoTip**.</param>
+        <summary>Shows the **InfoTip** for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> with the specified text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Shows the **InfoTip** for the <xref:System.Workflow.ComponentModel.Design.WorkflowView> with the specified text.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="infoTipText" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInfoTip">
+      <MemberSignature Language="C#" Value="public void ShowInfoTip (string title, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowInfoTip(string title, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">The title of the **InfoTip** to display.</param>
+        <param name="text">The text of the **InfoTip** to display.</param>
+        <summary>Shows the **InfoTip** for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> with the specified title and text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Shows the **InfoTip** for the <xref:System.Workflow.ComponentModel.Design.WorkflowView> with the specified title and text.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="title" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+ -or-  
+  
+ <paramref name="infoTipText" /> is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInPlaceToolTip">
+      <MemberSignature Language="C#" Value="public void ShowInPlaceToolTip (string toolTipText, System.Drawing.Rectangle toolTipRectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowInPlaceToolTip(string toolTipText, valuetype System.Drawing.Rectangle toolTipRectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInPlaceToolTip(System.String,System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolTipText" Type="System.String" />
+        <Parameter Name="toolTipRectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="toolTipText">The text to display.</param>
+        <param name="toolTipRectangle">The <see cref="T:System.Drawing.Rectangle" /> specifying the location on the screen to place the <see langword="ToolTip" />.</param>
+        <summary>Shows a <see langword="ToolTip" /> at the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `ToolTips` are helpful notes to the user that display useful information about an object underneath the pointer.  
+  
+ Use <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShowInPlaceToolTip%2A> to display a `ToolTip` with the specified text and a desired location.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IServiceProvider.GetService">
+      <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.System#IServiceProvider#GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service to retrieve.</param>
+        <summary>Gets the service of the specified type, if it is available.</summary>
+        <returns>An <see cref="T:System.Object" /> implementing the requested service, or a null reference (<see langword="Nothing" /> in Visual Basic) if the service cannot be resolved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `serviceType` is `CommandID` this method will return a specific `CommandID`. For any other `Type`, `GetService` will return an Object that implements the requested service, or a null reference (`Nothing`) if the service cannot be resolved.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.GetService%2A> method of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object to return an <xref:System.ComponentModel.Design.ISelectionService> interface. If the service exists, <xref:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible%2A> is called passing the currently selected activity using the `PrimarySelection` property of the <xref:System.ComponentModel.Design.ISelectionService> object.  
+  
+ [!code-csharp[wf_samples#64](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#64)]
+ [!code-vb[wf_samples#64](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#64)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Forms.IMessageFilter.PreFilterMessage">
+      <MemberSignature Language="C#" Value="bool IMessageFilter.PreFilterMessage (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Forms.IMessageFilter.PreFilterMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.System#Windows#Forms#IMessageFilter#PreFilterMessage(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The message to be dispatched. You cannot modify this message.</param>
+        <summary>Filters out a message before it is dispatched.</summary>
+        <returns>
+          <see langword="true" /> to filter the message and stop it from being dispatched; <see langword="false" /> to allow the message to continue to the next filter or control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewPortRectangle">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ViewPortRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ViewPortRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="P:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle" /> for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that describes the area on the screen that is visible.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle%2A> contains the visible area of the workflow.  
+  
+   
+  
+## Examples  
+ The following example shows a method of handling the Paint event of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object to draw an image directly on the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The <xref:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle%2A> property returns the viewable area on the design surface to correctly constrain the image being drawn.  
+  
+ [!code-csharp[wf_samples#58](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#58)]
+ [!code-vb[wf_samples#58](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#58)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewPortSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size ViewPortSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ViewPortSize" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the visible area for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A <see langword="Size" /> that describes the visible area of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets the size of the visible area of the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VScrollBar">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.VScrollBar VScrollBar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.VScrollBar VScrollBar" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VScrollBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the vertical scrollbar associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ScrollBar" /> you can use to adjust the settings and visibility of the horizontal scrollbar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A> to get the vertical scrollbar on the <xref:System.Workflow.ComponentModel.Design.WorkflowView>, which you can use to make user interface adjustments.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can obtain an instance of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> class.  The code then sets several <xref:System.Workflow.ComponentModel.Design.WorkflowView> properties, including <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A>, and calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToWorkflowSize%2A> method.  
+  
+ [!code-csharp[Wf_samples#65](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#65)]
+ [!code-vb[Wf_samples#65](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows Message to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All messages are sent to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.WndProc%2A> method.  
+  
+ The <xref:System.Workflow.ComponentModel.Design.WorkflowView.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function documentation in the Windows Platform SDK reference located in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes should call the base class <see langword="WndProc" /> method to process any messages not handled.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="public int Zoom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Zoom" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.Zoom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the zoom level of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <value>The zoom level of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the zoom feature to enlarge or reduce the size of the components inside the <xref:System.Workflow.ComponentModel.Design.WorkflowView>. The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> sets the minimum and maximum zoom levels for the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Workflow.ComponentModel.Design.WorkflowView.Zoom%2A> property of a <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the MainForm.cs file. For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[wf_samples#138](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#138)]
+ [!code-vb[wf_samples#138](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#138)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">If the zoom level is less than the minimum zoom level of the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" />  
+  
+ -or-  
+  
+ if the zoom level exceeds the maximum zoom level of the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ZoomChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ZoomChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ZoomChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.ZoomChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the zoom setting for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow view image is created as a bitmap.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can assign a handler to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ZoomChanged> event.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[wf_samples#136](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#136)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ShowInfoTip">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the **InfoTip** for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Displays the **InfoTip** for the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

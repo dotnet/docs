@@ -1,0 +1,74 @@
+<Type Name="IUnrestrictedPermission" FullName="System.Security.Permissions.IUnrestrictedPermission">
+  <TypeSignature Language="C#" Value="public interface IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IUnrestrictedPermission" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows a permission to expose an unrestricted state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All code access permissions should implement <xref:System.Security.Permissions.IUnrestrictedPermission>.  
+  
+   
+  
+## Examples  
+ This example shows how to define a permission class for use with code access security. All of the necessary permission interfaces are implemented.  
+  
+ The following code example demonstrates the behavior of the <xref:System.Security.Permissions.IUnrestrictedPermission> methods.  
+  
+ The example is intended to show how the methods perform if you execute the methods from your code. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
+  
+ [!code-cpp[Permission#1](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#1)]
+ [!code-csharp[Permission#1](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#1)]
+ [!code-vb[Permission#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether unrestricted access to the resource protected by the permission is allowed.</summary>
+        <returns>
+          <see langword="true" /> if unrestricted use of the resource protected by the permission is allowed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.IUnrestrictedPermission> class.  
+  
+ [!code-cpp[Permission#8](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#8)]
+ [!code-csharp[Permission#8](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#8)]
+ [!code-vb[Permission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

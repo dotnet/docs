@@ -1,0 +1,501 @@
+<Type Name="ComponentSerializationService" FullName="System.ComponentModel.Design.Serialization.ComponentSerializationService">
+  <TypeSignature Language="C#" Value="public abstract class ComponentSerializationService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ComponentSerializationService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class for serializing a set of components or serializable objects into a serialization store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> serializes a set of components or serializable objects into a serialization store. The store can then be deserialized later. The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> class differs from other serialization schemes in that the serialization format is opaque, and it allows for partial serialization of objects. For example, you can choose to serialize only selected properties for an object.  
+  
+ This class is `abstract`. Typically, a <xref:System.ComponentModel.Design.Serialization.DesignerLoader> will provide a concrete implementation of this class and add it as a service to its <xref:System.ComponentModel.Design.DesignSurface>. This allows objects to be serialized in the format best suited for them.  
+  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> class replaces the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> interface from the .NET Framework version 1.0, although the latter is retained for backward compatibility.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" /> class, you must override all the methods in this class. Some of these methods were designed to throw exceptions, as documented in their corresponding topics; it is strongly recommended that derived classes follow these guidelines to maintain consistency of operation. For more information, see the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService" /> class.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ComponentSerializationService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStore">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Serialization.SerializationStore CreateStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Serialization.SerializationStore CreateStore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.CreateStore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.SerializationStore</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />.</summary>
+        <returns>A new created serialization store.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiple objects can be serialized into the same serialization store. When you are finished with the store, you can call its <xref:System.ComponentModel.Design.Serialization.SerializationStore.System%23IDisposable%23Dispose%2A> or <xref:System.ComponentModel.Design.Serialization.SerializationStore.Close%2A> method. Once closed, a serialization store can be used for deserialization, or it can be saved into a stream.  
+  
+ The serialization store can be passed to any of the various serializing methods to build up serialization state for a group of objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ICollection Deserialize (System.ComponentModel.Design.Serialization.SerializationStore store);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection Deserialize(class System.ComponentModel.Design.Serialization.SerializationStore store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to deserialize.</param>
+        <summary>Deserializes the given store to produce a collection of objects.</summary>
+        <returns>A collection of objects created according to the stored state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method deserializes `store` to produce a collection of objects contained within it. Objects are deserialized in the same order in which they were serialized.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ICollection Deserialize (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection Deserialize(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to deserialize.</param>
+        <param name="container">The <see cref="T:System.ComponentModel.IContainer" /> to which <see cref="T:System.ComponentModel.IComponent" /> objects will be added.</param>
+        <summary>Deserializes the given store and populates the given <see cref="T:System.ComponentModel.IContainer" /> with deserialized <see cref="T:System.ComponentModel.IComponent" /> objects.</summary>
+        <returns>A collection of objects created according to the stored state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method deserializes `store` to produce a collection of objects contained within it. Objects are deserialized in the same order in which they were serialized.  
+  
+ Created objects that implement <xref:System.ComponentModel.IComponent> are added to `container`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeTo">
+      <MemberSignature Language="C#" Value="public void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to deserialize.</param>
+        <param name="container">The container to which <see cref="T:System.ComponentModel.IComponent" /> objects will be added.</param>
+        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo%2A> method deserializes `store`, but instead of producing new objects, it applies the data in the store to an existing set of objects that are taken from the provided container. As a result, the caller can create in advance an object however it sees fit. If an object has a deserialization state and the object is not named in the set of existing objects, a new object will be created. If that object also implements <xref:System.ComponentModel.IComponent>, it will be added to `container`. Objects in the container must have names and types that match objects in the serialization store in order for an existing object to be used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeTo">
+      <MemberSignature Language="C#" Value="public void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container, bool validateRecycledTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container, bool validateRecycledTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+        <Parameter Name="validateRecycledTypes" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to deserialize.</param>
+        <param name="container">The container to which <see cref="T:System.ComponentModel.IComponent" /> objects will be added.</param>
+        <param name="validateRecycledTypes">
+          <see langword="true" /> to guarantee that the deserialization will only work if applied to an object of the same type.</param>
+        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container, optionally validating recycled types.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo%2A> method deserializes `store`, but instead of producing new objects, it applies the data in the store to an existing set of objects that are taken from the provided container. As a result, the caller can create in advance an object however it sees fit. If an object has a deserialization state and the object is not named in the set of existing objects, a new object will be created. If that object also implements <xref:System.ComponentModel.IComponent>, it will be added to `container`. Objects in the container must have names and types that match objects in the serialization store in order for an existing object to be used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeTo">
+      <MemberSignature Language="C#" Value="public abstract void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container, bool validateRecycledTypes, bool applyDefaults);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container, bool validateRecycledTypes, bool applyDefaults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+        <Parameter Name="validateRecycledTypes" Type="System.Boolean" />
+        <Parameter Name="applyDefaults" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to deserialize.</param>
+        <param name="container">The container to which <see cref="T:System.ComponentModel.IComponent" /> objects will be added.</param>
+        <param name="validateRecycledTypes">
+          <see langword="true" /> to guarantee that the deserialization will only work if applied to an object of the same type.</param>
+        <param name="applyDefaults">
+          <see langword="true" /> to indicate that the default property values should be applied.</param>
+        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container, optionally applying default property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo%2A> method deserializes `store`, but instead of producing new objects, it applies the data in the store to an existing set of objects that are taken from the provided container. As a result, the caller can create in advance an object however it sees fit. If an object has a deserialization state and the object is not named in the set of existing objects, a new object will be created. If that object also implements <xref:System.ComponentModel.IComponent>, it will be added to `container`. Objects in the container must have names and types that match objects in the serialization store in order for an existing object to be used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadStore">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Serialization.SerializationStore LoadStore (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Serialization.SerializationStore LoadStore(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.LoadStore(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.SerializationStore</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> from which the store will be loaded.</param>
+        <summary>Loads a <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> from a stream.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the returned store to deserialize objects by passing it to one of the <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="stream" /> does not contain data saved by a previous call to <see cref="M:System.ComponentModel.Design.Serialization.SerializationStore.Save(System.IO.Stream)" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public abstract void Serialize (System.ComponentModel.Design.Serialization.SerializationStore store, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Serialize(class System.ComponentModel.Design.Serialization.SerializationStore store, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to which the state of <c>value</c> will be written.</param>
+        <param name="value">The object to serialize.</param>
+        <summary>Serializes the given object to the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The store can be used to serialize more than one object by calling this method more than once.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeAbsolute">
+      <MemberSignature Language="C#" Value="public abstract void SerializeAbsolute (System.ComponentModel.Design.Serialization.SerializationStore store, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeAbsolute(class System.ComponentModel.Design.Serialization.SerializationStore store, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to which the state of <c>value</c> will be serialized.</param>
+        <param name="value">The object to serialize.</param>
+        <summary>Serializes the given object, accounting for default property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Standard serialization, as implemented through the <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize%2A> method, only serializes values that differ from the component's default state. This provides the most compact serialization mechanism but assumes that a newly created object will be used during deserialization. If an existing object is used, the resulting deserialized object is not guaranteed to duplicate the original state of the serialized object; the properties that contained default values during serialization will not be reset back to their defaults during deserialization.  
+  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeAbsolute%2A> method does not use this shortcut. It serializes all properties of the source object so that deserialization can restore all the object's properties, regardless of default state.  
+  
+ This method is particularly useful for serializing collections, because the order of the constituent items within the collection can change. In this circumstance, the safest process to restore the original state of the entire collection is to overwrite all the items with all their original property values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeMember">
+      <MemberSignature Language="C#" Value="public abstract void SerializeMember (System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, System.ComponentModel.MemberDescriptor member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeMember(class System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, class System.ComponentModel.MemberDescriptor member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="owningObject" Type="System.Object" />
+        <Parameter Name="member" Type="System.ComponentModel.MemberDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to which the state of <c>member</c> will be serialized.</param>
+        <param name="owningObject">The object to which <c>member</c> is attached.</param>
+        <param name="member">A <see cref="T:System.ComponentModel.MemberDescriptor" /> specifying the member to serialize.</param>
+        <summary>Serializes the given member on the given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember%2A> method can be invoked multiple times for the same object to build up a list of serialized members within the serialization store. In general, the member should be a property or an event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeMemberAbsolute">
+      <MemberSignature Language="C#" Value="public abstract void SerializeMemberAbsolute (System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, System.ComponentModel.MemberDescriptor member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeMemberAbsolute(class System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, class System.ComponentModel.MemberDescriptor member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="System.ComponentModel.Design.Serialization.SerializationStore" />
+        <Parameter Name="owningObject" Type="System.Object" />
+        <Parameter Name="member" Type="System.ComponentModel.MemberDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="store">The <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to which the state of <c>member</c> will be serialized.</param>
+        <param name="owningObject">The object to which <c>member</c> is attached.</param>
+        <param name="member">The member to serialize.</param>
+        <summary>Serializes the given member on the given object, accounting for the default property value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute%2A> method serializes the `member` on `owningObject`, even if `member` contains the default property value.  
+  
+ Note that for some members, containing the default value and restoring the setting of the same value to the member are different concepts. For example, if a property inherits its value from a parent object when no local value is set, setting the value back to the property may not be what is desired. The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute%2A> method takes this into account and would clear the state of the property in this case.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

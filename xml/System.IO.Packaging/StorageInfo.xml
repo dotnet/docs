@@ -1,0 +1,321 @@
+<Type Name="StorageInfo" FullName="System.IO.Packaging.StorageInfo">
+  <TypeSignature Language="C#" Value="public class StorageInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StorageInfo" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access and information for manipulating data stores in a <see cref="T:System.IO.Packaging.Package" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateStream">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo CreateStream (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo CreateStream(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StreamInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name for the new stream.</param>
+        <summary>Creates a new stream with a given name.</summary>
+        <returns>The new stream with the specified <paramref name="name" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.IO.Packaging.StorageInfo.CreateStream%2A> method creates a new stream with <xref:System.IO.Packaging.StreamInfo> default settings set to CompressionOption.<xref:System.IO.Packaging.CompressionOption> and EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStream">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo CreateStream (string name, System.IO.Packaging.CompressionOption compressionOption, System.IO.Packaging.EncryptionOption encryptionOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo CreateStream(string name, valuetype System.IO.Packaging.CompressionOption compressionOption, valuetype System.IO.Packaging.EncryptionOption encryptionOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String,System.IO.Packaging.CompressionOption,System.IO.Packaging.EncryptionOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StreamInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="compressionOption" Type="System.IO.Packaging.CompressionOption" />
+        <Parameter Name="encryptionOption" Type="System.IO.Packaging.EncryptionOption" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name for the new stream.</param>
+        <param name="compressionOption">The compression option for the data stream.</param>
+        <param name="encryptionOption">The encryption option for the data stream.</param>
+        <summary>Creates a new stream with a given name, <see cref="T:System.IO.Packaging.CompressionOption" />, and <see cref="T:System.IO.Packaging.EncryptionOption" />.</summary>
+        <returns>The new stream with the specified <paramref name="name" />, <paramref name="compressionOption" />, and <paramref name="encryptionOption" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSubStorage">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo CreateSubStorage (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo CreateSubStorage(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name for the new child data store.</param>
+        <summary>Creates a new child <see cref="T:System.IO.Packaging.StorageInfo" /> with this <see cref="T:System.IO.Packaging.StorageInfo" /> as the parent.</summary>
+        <returns>The new child data store.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteStream">
+      <MemberSignature Language="C#" Value="public void DeleteStream (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteStream(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.IO.Packaging.StreamInfo" /> name of the stream to delete.</param>
+        <summary>Deletes the stream with a specified name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSubStorage">
+      <MemberSignature Language="C#" Value="public void DeleteSubStorage (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteSubStorage(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the sub-store to delete.</param>
+        <summary>Deletes a specified sub-store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified sub-store itself contains child sub-stores, <xref:System.IO.Packaging.StorageInfo.DeleteSubStorage%2A> also recursively deletes all descendant sub-stores.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStreamInfo">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo GetStreamInfo (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo GetStreamInfo(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreamInfo(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StreamInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.IO.Packaging.StreamInfo" /> instance to return.</param>
+        <summary>Returns the <see cref="T:System.IO.Packaging.StreamInfo" /> instance with the given name.</summary>
+        <returns>The stream with the specified <paramref name="name" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStreams">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo[] GetStreams ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo[] GetStreams() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreams" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StreamInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an array of the <see cref="T:System.IO.Packaging.StreamInfo" /> instances that are currently contained in this store.</summary>
+        <returns>An array of the <see cref="T:System.IO.Packaging.StreamInfo" /> objects, each pointing to an I/O steam defined within this store.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> will always return a <xref:System.IO.Packaging.StreamInfo> array, but the array may be empty (zero-length) if there are no streams defined in the store.  
+  
+ <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> provides a snapshot of the streams currently defined in the store.  The individual <xref:System.IO.Packaging.StreamInfo> objects will reflect the updated state of their respective streams, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> again to obtain an updated array as streams added or deleted to the store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubStorageInfo">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo GetSubStorageInfo (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo GetSubStorageInfo(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorageInfo(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the sub-store to return.</param>
+        <summary>Returns the child sub-store with a given name.</summary>
+        <returns>The child sub-store with the specified <paramref name="name" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubStorages">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo[] GetSubStorages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo[] GetSubStorages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorages" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StorageInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an array of the child sub-stores that are currently contained in this store.</summary>
+        <returns>An array of <see cref="T:System.IO.Packaging.StorageInfo" /> objects, each pointing to a sub-store defined within this store.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> will always return a <xref:System.IO.Packaging.StorageInfo> array, but the array may be empty (zero-length) if there are no sub-stores.  
+  
+ <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> provides a snapshot of the sub-stores currently defined in this store.  The individual <xref:System.IO.Packaging.StorageInfo> objects will reflect the updated state of their respective stores, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> again to obtain an updated array as sub-stores added or deleted to the store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StorageInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the store.</summary>
+        <value>The name of this store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a sub-store is specified to the <xref:System.IO.Packaging.StorageInfo.CreateSubStorage%2A> method and cannot be changed after created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamExists">
+      <MemberSignature Language="C#" Value="public bool StreamExists (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StreamExists(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.StreamExists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.IO.Packaging.StreamInfo" /> name to check for.</param>
+        <summary>Returns a value that indicates whether a given stream exists.</summary>
+        <returns>
+          <see langword="true" /> if a stream with the specified <paramref name="name" /> exists; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubStorageExists">
+      <MemberSignature Language="C#" Value="public bool SubStorageExists (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SubStorageExists(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.SubStorageExists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The child <see cref="T:System.IO.Packaging.StorageInfo" /> name to check for.</param>
+        <summary>Returns a value that indicates whether a given child sub-store exists.</summary>
+        <returns>
+          <see langword="true" /> if a child sub-store with the specified <paramref name="name" /> exists; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

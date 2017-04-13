@@ -1,0 +1,127 @@
+<Type Name="SetIteratorResult" FullName="System.Xml.Xsl.Runtime.SetIteratorResult">
+  <TypeSignature Language="C#" Value="public enum SetIteratorResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SetIteratorResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.SetIteratorResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Sets iterators for combinations of elements by <see langword="Union" />, <see langword="Intersection" />, or <see langword="Difference" />, which use containment to control two nested iterators. This will return one of the enumeration values from <see cref="M:System.Xml.Xsl.Runtime.IdIterator.MoveNext" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HaveCurrentNode">
+      <MemberSignature Language="C#" Value="HaveCurrentNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult HaveCurrentNode = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This iterator's <see cref="P:System.Xml.XPath.XPathNodeIterator.Current" /> property is set to the next node in the iteration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitRightIterator">
+      <MemberSignature Language="C#" Value="InitRightIterator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult InitRightIterator = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.InitRightIterator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Initialize right-nested iterator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedLeftNode">
+      <MemberSignature Language="C#" Value="NeedLeftNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NeedLeftNode = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedLeftNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The next node needs to be fetched from the left-nested iterator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedRightNode">
+      <MemberSignature Language="C#" Value="NeedRightNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NeedRightNode = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedRightNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The next node needs to be fetched from the right-nested iterator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMoreNodes">
+      <MemberSignature Language="C#" Value="NoMoreNodes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NoMoreNodes = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NoMoreNodes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Iteration is complete; there are no more nodes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

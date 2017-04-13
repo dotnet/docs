@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "BC42358"
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

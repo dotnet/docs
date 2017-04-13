@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 90a0bb24-39f8-41f5-a217-b52a7d4fed0b
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"

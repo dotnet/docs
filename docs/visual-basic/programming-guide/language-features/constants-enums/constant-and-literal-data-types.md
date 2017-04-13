@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "declarations, data types"
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

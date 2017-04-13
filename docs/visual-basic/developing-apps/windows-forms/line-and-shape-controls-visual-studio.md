@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Line control, topic list"
 ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

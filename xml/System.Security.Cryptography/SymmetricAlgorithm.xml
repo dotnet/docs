@@ -1,0 +1,1172 @@
+<Type Name="SymmetricAlgorithm" FullName="System.Security.Cryptography.SymmetricAlgorithm">
+  <TypeSignature Language="C#" Value="public abstract class SymmetricAlgorithm : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SymmetricAlgorithm extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SymmetricAlgorithm" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the abstract base class from which all implementations of symmetric algorithms must inherit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes that derive from the <xref:System.Security.Cryptography.SymmetricAlgorithm> class use a chaining mode called cipher block chaining (CBC), which requires a key (<xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A>) and an initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) to perform cryptographic transformations on data.  To decrypt data that was encrypted using one of the <xref:System.Security.Cryptography.SymmetricAlgorithm> classes, you must set the <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property and the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property to the same values that were used for encryption.  For a symmetric algorithm to be useful, the secret key must be known only to the sender and the receiver.  
+  
+ <xref:System.Security.Cryptography.RijndaelManaged>, <xref:System.Security.Cryptography.DESCryptoServiceProvider>, <xref:System.Security.Cryptography.RC2CryptoServiceProvider>, and <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> are implementations of symmetric algorithms.  
+  
+ Note that when using derived classes, it is not enough, from a security perspective, to simply force a garbage collection after you have finished using the object. You must explicitly call the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method on the object to zero out any sensitive data within the object before it is released. Note that garbage collection does not zero out the contents of collected objects but simply marks the memory as available for reallocation. Thus the data contained within a garbage collected object may still be present in the memory heap in unallocated memory. In the case of cryptographic objects, this data could contain sensitive information such as key data or a block of plain text.  
+  
+ All cryptographic classes in the .NET Framework that hold sensitive data implement a `Clear` method. When called, the `Clear` method overwrites all sensitive data within the object with zeros and then releases the object so that it can be safely garbage collected. When the object has been zeroed and released, you should then call the `Dispose` method with the `disposing` parameter set to `True` to dispose of all managed and unmanaged resources associated with the object.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.RijndaelManaged> class with the specified <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) to encrypt a file specified by `inName`, and outputs the encrypted result to the file specified by `outName`. The `desKey` and `desIV` parameters to the method are 8-byte arrays. You must have the high encryption pack installed to run this example.  
+  
+ [!code-cpp[Classic CryptoStream Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CryptoStream Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CS/source.cs#1)]
+ [!code-vb[Classic CryptoStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CryptoStream Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class, you must override the following members: <see cref="M:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])" />, <see cref="M:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])" />, <see cref="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV" />, and <see cref="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SymmetricAlgorithm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The implementation of the class derived from the symmetric algorithm is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockSize">
+      <MemberSignature Language="C#" Value="public virtual int BlockSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.BlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the block size, in bits, of the cryptographic operation.</summary>
+        <value>The block size, in bits.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The block size is the basic unit of data that can be encrypted or decrypted in one operation. Messages longer than the block size are handled as successive blocks; messages shorter than the block size must be padded with extra bits to reach the size of a block. Valid block sizes are determined by the symmetric algorithm used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The block size is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockSizeValue">
+      <MemberSignature Language="C#" Value="protected int BlockSizeValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 BlockSizeValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the block size, in bits, of the cryptographic operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The block size is the basic unit of data that can be encrypted or decrypted in one operation. Messages longer than the block size are handled as successive blocks; messages shorter than the block size must be padded with extra bits to reach the size of a block. Valid block sizes are determined by the symmetric algorithm used.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.BlockSize%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that when using derived classes, it is not enough, from a security perspective, to simply force a garbage collection after you have finished using the object. You must explicitly call the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method on the object to zero out any sensitive data within the object before it is released. Note that garbage collection does not zero out the contents of collected objects but simply marks the memory as available for reallocation. Thus the data contained within a garbage collected object may still be present in the memory heap in unallocated memory. In the case of cryptographic objects, this data could contain sensitive information such as key data or a block of plain text.  
+  
+ All cryptographic classes in the .NET Framework that hold sensitive data implement a `Clear` method. When called, the `Clear` method overwrites all sensitive data within the object with zeros and then releases the object so that it can be safely garbage collected. When the object has been zeroed and released, you should then call the `Dispose` method with the `disposing` parameter set to `True` to dispose of all managed and unmanaged resources associated with the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.SymmetricAlgorithm Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.SymmetricAlgorithm Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SymmetricAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a default cryptographic object used to perform the symmetric algorithm.</summary>
+        <returns>A default cryptographic object used to perform the symmetric algorithm.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.RijndaelManaged> class with the specified <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) to encrypt a file specified by `inName`, and outputs the encrypted result to the file specified by `outName`. The `desKey` and `desIV` parameters to the method are 8-byte arrays. You must have the high encryption pack installed to run this example.  
+  
+ [!code-cpp[Classic CryptoStream Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CryptoStream Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CS/source.cs#1)]
+ [!code-vb[Classic CryptoStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CryptoStream Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.SymmetricAlgorithm Create (string algName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.SymmetricAlgorithm Create(string algName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SymmetricAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="algName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="algName">The name of the specific implementation of the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class to use.</param>
+        <summary>Creates the specified cryptographic object used to perform the symmetric algorithm.</summary>
+        <returns>A cryptographic object used to perform the symmetric algorithm.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.ICryptoTransform CreateDecryptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a symmetric decryptor object with the current <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> property and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor%2A> overload with the same signature.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>When overridden in a derived class, creates a symmetric decryptor object with the specified <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> property and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor%2A> overload with the same parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.ICryptoTransform CreateEncryptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a symmetric encryptor object with the current <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> property and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property is `null`, the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey%2A> method is called to create a new random <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A>. If the current <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property is `null`, the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV%2A> method is called to create a new random <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.  
+  
+ Use the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A> overload with the same signature to decrypt the result of this method.  
+  
+   
+  
+## Examples  
+ The following example encrypts a string using the transform object returned from the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor%2A> method.  
+  
+ [!code-cpp[System.Security.Cryptography.SymmetricAlgorithm#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm/cpp/encryptor.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.SymmetricAlgorithm#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm/cs/encryptor.cs#1)]
+ [!code-vb[System.Security.Cryptography.SymmetricAlgorithm#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm/vb/encryptor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>When overridden in a derived class, creates a symmetric encryptor object with the specified <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> property and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A> overload with the same parameters to decrypt the result of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.SymmetricAlgorithm>. The `Dispose` method leaves the <xref:System.Security.Cryptography.SymmetricAlgorithm> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.SymmetricAlgorithm> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.SymmetricAlgorithm> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.SymmetricAlgorithm>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.SymmetricAlgorithm> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.SymmetricAlgorithm> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedbackSize">
+      <MemberSignature Language="C#" Value="public virtual int FeedbackSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FeedbackSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the feedback size, in bits, of the cryptographic operation.</summary>
+        <value>The feedback size in bits.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The feedback size determines the amount of data that is fed back to successive encryption or decryption operations. The feedback size cannot be greater than the block size.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The feedback size is larger than the block size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedbackSizeValue">
+      <MemberSignature Language="C#" Value="protected int FeedbackSizeValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 FeedbackSizeValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the feedback size, in bits, of the cryptographic operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The feedback size determines the amount of data that is fed back to successive encryption or decryption operations. The feedback size cannot be greater than the block size.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateIV">
+      <MemberSignature Language="C#" Value="public abstract void GenerateIV ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateIV() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, generates a random initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) to use for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In general, there is no reason to use this method, because `CreateEncryptor()` or `CreateEncryptor(null, null)` automatically generates both an initialization vector and a key. However, you may want to use the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV%2A> method to reuse a symmetric algorithm instance with a different initialization vector.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public abstract void GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, generates a random key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) to use for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In general, there is no reason to use this method, because `CreateEncryptor()` or `CreateEncryptor(null, null)` automatically generates both an initialization vector and a key. However, you may want to use the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey%2A> method to reuse a symmetric algorithm instance with a different key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IV">
+      <MemberSignature Language="C#" Value="public virtual byte[] IV { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] IV" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) for the symmetric algorithm.</summary>
+        <value>The initialization vector.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property is automatically set to a new random value whenever you create a new instance of one of the <xref:System.Security.Cryptography.SymmetricAlgorithm> classes or when you manually call the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV%2A> method.  The size of the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property must be the same as the <xref:System.Security.Cryptography.SymmetricAlgorithm.BlockSize%2A> property divided by 8.  
+  
+ The classes that derive from the <xref:System.Security.Cryptography.SymmetricAlgorithm> class use a chaining mode called cipher block chaining (CBC), which requires a key and an initialization vector to perform cryptographic transformations on data.  To decrypt data that was encrypted using one of the <xref:System.Security.Cryptography.SymmetricAlgorithm> classes, you must set the <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property to the same values that were used for encryption.  
+  
+ For a given secret key *k*, a simple block cipher that does not use an initialization vector will encrypt the same input block of plain text into the same output block of cipher text. If you have duplicate blocks within your plain text stream, you will have duplicate blocks within your cipher text stream. If unauthorized users know anything about the structure of a block of your plain text, they can use that information to decipher the known cipher text block and possibly recover your key. To combat this problem, information from the previous block is mixed into the process of encrypting the next block. Thus, the output of two identical plain text blocks is different. Because this technique uses the previous block to encrypt the next block, an initialization vector is needed to encrypt the first block of data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt was made to set the initialization vector to <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt was made to set the initialization vector to an invalid size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IVValue">
+      <MemberSignature Language="C#" Value="protected byte[] IVValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] IVValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.IVValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) for the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public virtual byte[] Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the secret key for the symmetric algorithm.</summary>
+        <value>The secret key to use for the symmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The secret key is used both for encryption and for decryption. For a symmetric algorithm to be successful, the secret key must be known only to the sender and the receiver. The valid key sizes are specified by the particular symmetric algorithm implementation and are listed in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ If this property is `null` when it is used, the <xref:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey%2A> method is called to create a new random value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt was made to set the key to <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key size is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySize">
+      <MemberSignature Language="C#" Value="public virtual int KeySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.KeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size, in bits, of the secret key used by the symmetric algorithm.</summary>
+        <value>The size, in bits, of the secret key used by the symmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes are specified by the particular symmetric algorithm implementation and are listed in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key size is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeValue">
+      <MemberSignature Language="C#" Value="protected int KeySizeValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 KeySizeValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the size, in bits, of the secret key used by the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes are specified by the particular symmetric algorithm implementation and are listed in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.KeySize%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyValue">
+      <MemberSignature Language="C#" Value="protected byte[] KeyValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] KeyValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.KeyValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the secret key for the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The secret key is used both for encryption and for decryption. For a symmetric algorithm to be successful, the secret key must be known only to the sender and the receiver. The valid key sizes are specified by the particular symmetric algorithm implementation and are listed in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalBlockSizes">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.KeySizes[] LegalBlockSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalBlockSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the block sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <value>An array that contains the block sizes supported by the algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The symmetric algorithm supports only block sizes that match an entry in this array.  
+  
+   
+  
+## Examples  
+ The following example shows the value of <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> for the symmetric algorithms.  
+  
+ [!code-csharp[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs#1)]
+ [!code-vb[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalBlockSizesValue">
+      <MemberSignature Language="C#" Value="protected System.Security.Cryptography.KeySizes[] LegalBlockSizesValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.KeySizes[] LegalBlockSizesValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the block sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The symmetric algorithm supports only block sizes that match an entry in this array.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizes">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <value>An array that contains the key sizes supported by the algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The symmetric algorithm supports only key sizes that match an entry in this array.  
+  
+   
+  
+## Examples  
+ The following example shows the value of <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> for the symmetric algorithms.  
+  
+ [!code-csharp[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs#1)]
+ [!code-vb[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizesValue">
+      <MemberSignature Language="C#" Value="protected System.Security.Cryptography.KeySizes[] LegalKeySizesValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.KeySizes[] LegalKeySizesValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the key sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The symmetric algorithm supports only key sizes that match an entry in this array.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.CipherMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CipherMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CipherMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the mode for operation of the symmetric algorithm.</summary>
+        <value>The mode for operation of the symmetric algorithm. The default is <see cref="F:System.Security.Cryptography.CipherMode.CBC" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Security.Cryptography.CipherMode> enumeration for a description of specific modes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cipher mode is not one of the <see cref="T:System.Security.Cryptography.CipherMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModeValue">
+      <MemberSignature Language="C#" Value="protected System.Security.Cryptography.CipherMode ModeValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype System.Security.Cryptography.CipherMode ModeValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.ModeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CipherMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the cipher mode used in the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Security.Cryptography.CipherMode> enumeration for a description of specific modes.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.PaddingMode Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.PaddingMode Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the padding mode used in the symmetric algorithm.</summary>
+        <value>The padding mode used in the symmetric algorithm. The default is <see cref="F:System.Security.Cryptography.PaddingMode.PKCS7" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most plain text messages do not consist of a number of bytes that completely fill blocks. Often, there are not enough bytes to fill the last block. When this happens, a padding string is added to the text. For example, if the block length is 64 bits and the last block contains only 40 bits, 24 bits of padding are added. See the <xref:System.Security.Cryptography.PaddingMode> enumeration for a description of specific modes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The padding mode is not one of the <see cref="T:System.Security.Cryptography.PaddingMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingValue">
+      <MemberSignature Language="C#" Value="protected System.Security.Cryptography.PaddingMode PaddingValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype System.Security.Cryptography.PaddingMode PaddingValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.PaddingValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the padding mode used in the symmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most plain text messages do not consist of a number of bytes that completely fill blocks. Often, there are not enough bytes to fill the last block. When this happens, a padding string is added to the text. For example, if the block length is 64 bits and the last block contains only 40 bits, 24 bits of padding are added. See the <xref:System.Security.Cryptography.PaddingMode> enumeration for a description of specific modes.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidKeySize">
+      <MemberSignature Language="C#" Value="public bool ValidKeySize (int bitLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidKeySize(int32 bitLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bitLength">The length, in bits, to check for a valid key size.</param>
+        <summary>Determines whether the specified key size is valid for the current algorithm.</summary>
+        <returns>
+          <see langword="true" /> if the specified key size is valid for the current algorithm; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,533 @@
+<Type Name="TripleDESCng" FullName="System.Security.Cryptography.TripleDESCng">
+  <TypeSignature Language="C#" Value="public sealed class TripleDESCng : System.Security.Cryptography.TripleDES" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TripleDESCng extends System.Security.Cryptography.TripleDES" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDESCng" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.TripleDES</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a Cryptography Next Generation (CNG) implementation of the Triple Data Encryption Standard (3DES) algorithm.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleDESCng ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with an ephemeral key.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleDESCng (string keyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The name of the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with the specified key name, which represents an existing persisted 3DES key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> and <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> as the default key storage provider (KSP) to open the key.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleDESCng (string keyName, System.Security.Cryptography.CngProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyName, class System.Security.Cryptography.CngProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="provider" Type="System.Security.Cryptography.CngProvider" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The name of the key.</param>
+        <param name="provider">The KSP that contains the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with the specified key name, which represents an existing persisted 3DES key, and the specified key storage provider (KSP).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is used to open the key.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleDESCng (string keyName, System.Security.Cryptography.CngProvider provider, System.Security.Cryptography.CngKeyOpenOptions openOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyName, class System.Security.Cryptography.CngProvider provider, valuetype System.Security.Cryptography.CngKeyOpenOptions openOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="provider" Type="System.Security.Cryptography.CngProvider" />
+        <Parameter Name="openOptions" Type="System.Security.Cryptography.CngKeyOpenOptions" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The name of the key.</param>
+        <param name="provider">The KSP that contains the key.</param>
+        <param name="openOptions">A bitwise combination of the enumeration values that specify options for opening the key, such as where the key is opened from (machine or user storage) and whether to suppress UI prompting.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with the specified key name, which represents an existing persisted 3DES key,  the specified key storage provider (KSP) and key open options.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a symmetric 3DES decryptor object with the current key and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric 3DES decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor> overload with the same signature.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the 3DES algorithm. The key size must be 192 bits.</param>
+        <param name="rgbIV">The initialization vector to use for the 3DES algorithm.</param>
+        <summary>Creates a symmetric 3DES decryptor object with the specified key and initialization vector (IV).</summary>
+        <returns>A symmetric 3DES decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the [CreateEncryptor(Byte\[\], Byte\<xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29> overload with the same signature.  
+  
+> [!NOTE]
+>  If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you want to make use of that key when decrypting the message, you want to set the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property and then call the  parameterless <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor> overload instead; otherwise, using this method will create an ephemeral key as specified by the `rgbKey` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgbKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="rgbKey" /> is not a valid size for this algorithm.  
+  
+ -or-  
+  
+ <paramref name="rgbIV" /> size does not match the block size for this algorithm.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="rgbKey" /> is a known weak key for this algorithm and cannot be used.  
+  
+ -or-  
+  
+ <paramref name="rgbIV" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a symmetric 3DES encryptor object using the current key and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric 3DES encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the 3DES algorithm. The key size must be 192 bits.</param>
+        <param name="rgbIV">The initialization vector to use for the 3DES algorithm.</param>
+        <summary>Creates a symmetric 3DES encryptor object with the specified key and initialization vector (IV).</summary>
+        <returns>A symmetric 3DES encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
+  
+> [!NOTE]
+>  If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you want to make use of that key when encrypting the message, you want to set the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property and then call the  parameterless <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor> overload instead; otherwise, using this method will create an ephemeral key as specified by the `rgbKey` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgbKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="rgbKey" /> is not a valid size for this algorithm.  
+  
+ -or-  
+  
+ <paramref name="rgbIV" /> size does not match the block size for this algorithm.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="rgbKey" /> is a known weak key for this algorithm and cannot be used.  
+  
+ -or-  
+  
+ <paramref name="rgbIV" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateIV">
+      <MemberSignature Language="C#" Value="public override void GenerateIV ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateIV() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.GenerateIV" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random initialization vector (IV) to use for the 3DES algorithm.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public override void GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.GenerateKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random key to use for the 3DES algorithm.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public override byte[] Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key for the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</summary>
+        <value>The key for the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key, when you read the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property, an attempt to export the key will be made. In this case, if the key is not exportable, a <xref:System.Security.Cryptography.CryptographicException> will be thrown.  
+  
+ In addition to that, if you set the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySize">
+      <MemberSignature Language="C#" Value="public override int KeySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.KeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size, in bits, of the secret key used by the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</summary>
+        <value>The size, in bits, of the secret key used by the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you set the value of the <xref:System.Security.Cryptography.TripleDESCng.KeySize%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizes">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.LegalKeySizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

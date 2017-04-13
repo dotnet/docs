@@ -1,0 +1,343 @@
+<Type Name="ClockController" FullName="System.Windows.Media.Animation.ClockController">
+  <TypeSignature Language="C#" Value="public sealed class ClockController : System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClockController extends System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockController" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Interactively controls a <see cref="T:System.Windows.Media.Animation.Clock" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.Animation.ClockController> to interactively begin, pause, resume, seek, skip, stop, and remove a <xref:System.Windows.Media.Animation.Clock>. You can only interactively control root-level clocks.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Begin" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the target <see cref="P:System.Windows.Media.Animation.ClockController.Clock" /> to begin at the next tick.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method causes the target <xref:System.Windows.Media.Animation.Clock> to behave as though its <xref:System.Windows.Media.Animation.Timeline> object's <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> were set to the time of the next tick. The timeline's actual <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> setting is ignored (but not changed).  
+  
+ This method changes the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. The <xref:System.Windows.Media.Animation.ClockController.Begin%2A> method does not resume a paused clock.  
+  
+ This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events will also not be raised until then. Calling this method triggers the <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clock">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Clock Clock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Clock Clock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.Clock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.Clock</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.Animation.Clock" /> controlled by this <see cref="T:System.Windows.Media.Animation.ClockController" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Animation.Clock" /> controlled by this <see cref="T:System.Windows.Media.Animation.ClockController" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Pause" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops the target <see cref="T:System.Windows.Media.Animation.Clock" /> from progressing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can pause a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState>, <xref:System.Windows.Media.Animation.ClockState>, or <xref:System.Windows.Media.Animation.ClockState>. The only way to unpause a clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Pausing a clock implicitly pauses its children.  
+  
+ Calling this method when the target clock is already paused has no effect.  
+  
+ Pausing a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Remove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the <see cref="T:System.Windows.Media.Animation.Clock" /> associated with this <see cref="T:System.Windows.Media.Animation.ClockController" /> from the properties it animates. The clock and its child clocks will no longer affect these properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method triggers the <xref:System.Windows.Media.Animation.Clock.RemoveRequested> event.  
+  
+   
+  
+## Examples  
+ The following example shows how to remove and otherwise interactively control a clock.  
+  
+ [!code-csharp[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/csharp/VS_Snippets_Wpf/ClockController_procedural_snip/CSharp/SeekAlignedToLastTickExample.cs#clockcontrollerseekexample)]
+ [!code-vb[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClockController_procedural_snip/visualbasic/seekalignedtolasttickexample.vb#clockcontrollerseekexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Resume" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enables a <see cref="T:System.Windows.Media.Animation.Clock" /> that was previously paused to resume progressing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can pause or resume a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing or resuming a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState>, <xref:System.Windows.Media.Animation.ClockState>, or <xref:System.Windows.Media.Animation.ClockState>. The only way to resume a paused clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Resuming a clock implicitly resumes its children. Calling this method on a clock that is not paused has no effect.  
+  
+ Resuming a paused clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Seek(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <c>origin</c>.</param>
+        <param name="origin">A value that indicates whether the specified offset is relative to the target clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />.</param>
+        <summary>Seeks the target <see cref="P:System.Windows.Media.Animation.ClockController.Clock" /> by the specified amount when the next tick occurs. If the target clock is stopped, seeking makes it active again.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Seek operations do not take the <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings of this clock's timeline into account: the clock is treated as though its timeline has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
+  
+ This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
+  
+ Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events.  
+  
+ If the target clock has children, their current time is updated accordingly.  
+  
+   
+  
+## Examples  
+ The following example shows how to seek using a <xref:System.Windows.Media.Animation.ClockController>.  
+  
+ [!code-csharp[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/csharp/VS_Snippets_Wpf/ClockController_procedural_snip/CSharp/SeekAlignedToLastTickExample.cs#clockcontrollerseekexample)]
+ [!code-vb[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClockController_procedural_snip/visualbasic/seekalignedtolasttickexample.vb#clockcontrollerseekexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAlignedToLastTick">
+      <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <c>origin</c>.</param>
+        <param name="origin">A value that indicates whether the specified offset is relative to the target clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />.</param>
+        <summary>Seeks the target <see cref="T:System.Windows.Media.Animation.Clock" /> by the specified amount immediately. If the target clock is stopped, seeking makes it active again.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Seek operations do not take the <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings of this clock's timeline into account: the clock is treated as though its timeline has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
+  
+ <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A> aligns the seeked time of the clock with the last clock tick. Values are immediately updated to reflect the changes due to <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A>, even though the screen will not reflect these changes until the screen updates.  
+  
+ If the target clock has children, their current time is updated accordingly.  
+  
+ This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>.  
+  
+ Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events.  
+  
+   
+  
+## Examples  
+ The following example demonstrates both the <xref:System.Windows.Media.Animation.ClockController.Seek%2A> and <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A> methods of a <xref:System.Windows.Media.Animation.ClockController>.  
+  
+ [!code-csharp[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/csharp/VS_Snippets_Wpf/ClockController_procedural_snip/CSharp/SeekAlignedToLastTickExample.cs#clockcontrollerseekexample)]
+ [!code-vb[ClockController_procedural_snip#ClockControllerSeekExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClockController_procedural_snip/visualbasic/seekalignedtolasttickexample.vb#clockcontrollerseekexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToFill">
+      <MemberSignature Language="C#" Value="public void SkipToFill ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToFill() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the current time of the target <see cref="T:System.Windows.Media.Animation.Clock" /> to the end of its active period.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method advances the target clock's current time to the end of its active period; the clock's behavior at this point is specified by the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting of its <xref:System.Windows.Media.Animation.Timeline>. If the timeline's <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the clock fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the clock stops.  
+  
+ This method has an effect only if the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> is <xref:System.Windows.Media.Animation.ClockState>.  
+  
+ This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
+  
+ Advancing a storyboard to its fill period triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeedRatio">
+      <MemberSignature Language="C#" Value="public double SpeedRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SpeedRatio" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.SpeedRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interactive speed of the target <see cref="T:System.Windows.Media.Animation.Clock" />.</summary>
+        <value>A finite value greater than zero that describes the interactive speed of the target clock. This value is multiplied against the value of the <see cref="P:System.Windows.Media.Animation.Timeline.SpeedRatio" /> of the clock's <see cref="T:System.Windows.Media.Animation.Timeline" />. For example, if the timeline's <see cref="P:System.Windows.Media.Animation.Timeline.SpeedRatio" /> is 0.5 and the <see cref="T:System.Windows.Media.Animation.ClockController" /> object's <see cref="P:System.Windows.Media.Animation.ClockController.SpeedRatio" /> is 3.0, the timeline moves at 1.5 times normal speed (0.5 * 3.0). The default value is 1.0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property has no effect until the next tick. If you set this property and then get its value before the next tick occurs, you'll get the old value. This property will return the new value after the next tick.  
+  
+ Setting this property does not change the value of the underlying timeline's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A>.  
+  
+ Setting this property triggers the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops the target <see cref="T:System.Windows.Media.Animation.Clock" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method changes the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ A <xref:System.Windows.Media.Animation.Clock.Stopped%2A> clock can be restarted by using the <xref:System.Windows.Media.Animation.ClockController.Begin%2A>, <xref:System.Windows.Media.Animation.ClockController.Seek%2A>, or <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A> method.  
+  
+ This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
+  
+ Stopping a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events, but not the <xref:System.Windows.Media.Animation.Clock.Completed> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

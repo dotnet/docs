@@ -1,0 +1,175 @@
+<Type Name="UpdatePanelTriggerCollection" FullName="System.Web.UI.UpdatePanelTriggerCollection">
+  <TypeSignature Language="C#" Value="public class UpdatePanelTriggerCollection : System.Collections.ObjectModel.Collection&lt;System.Web.UI.UpdatePanelTrigger&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpdatePanelTriggerCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.UI.UpdatePanelTrigger&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelTriggerCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.UI.UpdatePanelTrigger&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Web.UI.UpdatePanelTrigger</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.UpdatePanelTrigger" /> objects for an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Triggers in the <xref:System.Web.UI.UpdatePanelTrigger> collection are specified by using the **UpdatePanelTrigger Collection Editor** in the designer or by adding them declaratively as `<Triggers>` elements inside the <xref:System.Web.UI.UpdatePanel> control. You can add two types of triggers:  
+  
+-   An <xref:System.Web.UI.AsyncPostBackTrigger> object that can be used to specify that a control can cause an asynchronous postback and refresh the update panel's contents. The <xref:System.Web.UI.AsyncPostBackTrigger> object is used for controls outside an update panel or controls that are not immediate child controls of an <xref:System.Web.UI.UpdatePanel> control.  
+  
+-   A <xref:System.Web.UI.PostBackTrigger> object that can be used to specify that a postback control inside an <xref:System.Web.UI.UpdatePanel> control can cause a synchronous postback and a full-page refresh.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpdatePanelTriggerCollection (System.Web.UI.UpdatePanel owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.UpdatePanel owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTriggerCollection.#ctor(System.Web.UI.UpdatePanel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.UpdatePanel" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.UpdatePanel" /> control that the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.UpdatePanelTrigger" /> collection class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically add triggers to an <xref:System.Web.UI.UpdatePanel> control by using the **UpdatePanelTrigger Collection Editor** in the designer or by adding them declaratively as `<Triggers>` elements inside the <xref:System.Web.UI.UpdatePanel> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTriggerCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.UI.UpdatePanelTrigger item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.UI.UpdatePanelTrigger item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTriggerCollection.InsertItem(System.Int32,System.Web.UI.UpdatePanelTrigger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.UI.UpdatePanelTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the trigger should be inserted.</param>
+        <param name="item">The trigger to insert. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Inserts an <see cref="T:System.Web.UI.UpdatePanelTrigger" /> object into the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> object at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add <xref:System.Web.UI.AsyncPostBackTrigger> objects, <xref:System.Web.UI.PostBackTrigger> objects, or any custom trigger that derives from <xref:System.Web.UI.UpdatePanelTrigger>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Web.UI.UpdatePanel Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.UpdatePanel Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanelTriggerCollection.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.UpdatePanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.UpdatePanel" /> control that the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> belongs to.</summary>
+        <value>An <see cref="T:System.Web.UI.UpdatePanel" /> control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTriggerCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index of the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.UI.UpdatePanelTrigger item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.UI.UpdatePanelTrigger item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTriggerCollection.SetItem(System.Int32,System.Web.UI.UpdatePanelTrigger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.UI.UpdatePanelTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the trigger to replace.</param>
+        <param name="item">The new value for the trigger at the specified index. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Replaces the trigger at the specified index in the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can replace an element in the <xref:System.Web.UI.UpdatePanelTriggerCollection> object with an <xref:System.Web.UI.AsyncPostBackTrigger> object, a <xref:System.Web.UI.PostBackTrigger> object, or any custom trigger that derives from <xref:System.Web.UI.UpdatePanelTrigger>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

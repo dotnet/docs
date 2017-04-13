@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "assemblies [Visual Basic], references"
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

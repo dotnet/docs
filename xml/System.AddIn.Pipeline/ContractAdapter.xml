@@ -1,0 +1,145 @@
+<Type Name="ContractAdapter" FullName="System.AddIn.Pipeline.ContractAdapter">
+  <TypeSignature Language="C#" Value="public static class ContractAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContractAdapter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for sharing and readapting add-ins.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this class to share an add-in with another host that does not have the same pipeline to that add-in (particularly, another host that does not have the same host view of the add-in).  
+  
+ If you need to adapt an activated add-in from its host view to the contract, use the <xref:System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter%2A> method.  
+  
+ If you have an instance of the contract and need to convert it to the host view, use the <xref:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContractToViewAdapter&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView ContractToViewAdapter&lt;TView&gt; (System.AddIn.Pipeline.ContractHandle contract, System.AddIn.Hosting.PipelineStoreLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView ContractToViewAdapter&lt;TView&gt;(class System.AddIn.Pipeline.ContractHandle contract, valuetype System.AddIn.Hosting.PipelineStoreLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter``1(System.AddIn.Pipeline.ContractHandle,System.AddIn.Hosting.PipelineStoreLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contract" Type="System.AddIn.Pipeline.ContractHandle" />
+        <Parameter Name="location" Type="System.AddIn.Hosting.PipelineStoreLocation" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">The type that defines the host view of the add-in.</typeparam>
+        <param name="contract">A handle to the contract used by the add-in to be shared.</param>
+        <param name="location">The host's application base.</param>
+        <summary>Obtains a host view of an add-in if a suitable host-side adapter is found at a location specified by a value from the <see cref="T:System.AddIn.Hosting.PipelineStoreLocation" /> enumeration.</summary>
+        <returns>The host view of the add-in that is shared.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractToViewAdapter&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView ContractToViewAdapter&lt;TView&gt; (System.AddIn.Pipeline.ContractHandle contract, string pipelineRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView ContractToViewAdapter&lt;TView&gt;(class System.AddIn.Pipeline.ContractHandle contract, string pipelineRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter``1(System.AddIn.Pipeline.ContractHandle,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contract" Type="System.AddIn.Pipeline.ContractHandle" />
+        <Parameter Name="pipelineRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">The type that defines the host view of the add-in.</typeparam>
+        <param name="contract">A handle to the contract used by the add-in to be shared.</param>
+        <param name="pipelineRoot">A path to the add-in store.</param>
+        <summary>Obtains a host view of an add-in if a suitable host-side adapter is found at a location specified by a path.</summary>
+        <returns>The host view of the add-in that is shared.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewToContractAdapter">
+      <MemberSignature Language="C#" Value="public static System.AddIn.Pipeline.ContractHandle ViewToContractAdapter (object view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Pipeline.ContractHandle ViewToContractAdapter(object view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Pipeline.ContractHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="view">The host view of an add-in activated by the system from the current application domain.</param>
+        <summary>Gets the handle to the contract for a provided host view of an add-in.</summary>
+        <returns>A handle to the contract.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this scenario, the source entity (a host) has an add-in that wants to be shared by a destination entity (another host).  
+  
+ Use this method to obtain the handle to the contract that was instantiated for the source entity by the add-in system.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="view" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

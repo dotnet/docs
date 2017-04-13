@@ -1,0 +1,102 @@
+<Type Name="XmlNodeChangedAction" FullName="System.Xml.XmlNodeChangedAction">
+  <TypeSignature Language="C#" Value="public enum XmlNodeChangedAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlNodeChangedAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeChangedAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of node change.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="Change" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeChangedAction Change = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeChangedAction.Change" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeChangedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node value is being changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeChangedAction Insert = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeChangedAction.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeChangedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node is being inserted in the tree.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="Remove" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeChangedAction Remove = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeChangedAction.Remove" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeChangedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node is being removed from the tree.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

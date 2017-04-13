@@ -1,0 +1,192 @@
+<Type Name="XmlSerializationReader+Fixup" FullName="System.Xml.Serialization.XmlSerializationReader+Fixup">
+  <TypeSignature Language="C#" Value="protected class XmlSerializationReader.Fixup" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit XmlSerializationReader/Fixup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationReader.Fixup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Holds an <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate instance, plus the method's inputs; also serves as the parameter for the method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically instantiates fix-up methods that implement the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate; plus, it instantiates <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class objects to store the fix-up methods along with their inputs. The infrastructure does so for SOAP-encoded arrays whose data types map to .NET Framework reference types. Then, as necessary, a fix-up method is called to fill in the objects in the array.  
+  
+ In addition, during initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationFixupCallback> properties plus <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class objects for SOAP-encoded, multireferenced XML data. The methods are then invoked during deserialization.  
+  
+ Do not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Fixup (object o, System.Xml.Serialization.XmlSerializationFixupCallback callback, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object o, class System.Xml.Serialization.XmlSerializationFixupCallback callback, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="callback" Type="System.Xml.Serialization.XmlSerializationFixupCallback" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object that contains other objects whose values get filled in by the callback implementation.</param>
+        <param name="callback">A method that instantiates the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</param>
+        <param name="count">The size of the string array obtained through the <see cref="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializationReader.Fixup" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class or the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Fixup (object o, System.Xml.Serialization.XmlSerializationFixupCallback callback, string[] ids);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object o, class System.Xml.Serialization.XmlSerializationFixupCallback callback, string[] ids) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="callback" Type="System.Xml.Serialization.XmlSerializationFixupCallback" />
+        <Parameter Name="ids" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object that contains other objects whose values get filled in by the callback implementation.</param>
+        <param name="callback">A method that instantiates the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</param>
+        <param name="ids">The string array obtained through the <see cref="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializationReader.Fixup" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not directly instantiate the <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class or the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Callback">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializationFixupCallback Callback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializationFixupCallback Callback" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Callback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializationFixupCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the callback method that creates an instance of the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</summary>
+        <value>The callback method that creates an instance of the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ids">
+      <MemberSignature Language="C#" Value="public string[] Ids { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Ids" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of keys for the objects that belong to the <see cref="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Source" /> property whose values get filled in by the callback implementation.</summary>
+        <value>The array of keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The objects can be a SOAP-encoded array or items that belong to a Web service method that maps to a SOAP-encoded message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public object Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Source" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object that contains other objects whose values get filled in by the callback implementation.</summary>
+        <value>The source containing objects with values to fill.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object to fix can be one of the following:  
+  
+-   An array whose items the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate implementation fills in.  
+  
+-   A mapping between a Web service method and a SOAP message that can be defined in a Web Services Description Language (WSDL) document. The members of the mapping, such as method parameters, get filled in by the callback method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

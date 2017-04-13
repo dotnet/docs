@@ -1,0 +1,844 @@
+<Type Name="BlobReader" FullName="System.Reflection.Metadata.BlobReader">
+  <TypeSignature Language="C#" Value="public struct BlobReader" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobReader extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(),nq}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobReader (byte* buffer, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* buffer, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.#ctor(System.Byte*,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte*" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public void Align (byte alignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Align(unsigned int8 alignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.Align(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alignment" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="alignment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPointer">
+      <MemberSignature Language="C#" Value="public byte* CurrentPointer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* CurrentPointer" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.CurrentPointer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte*</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBlobHandle">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle ReadBlobHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle ReadBlobHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBlobHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBoolean">
+      <MemberSignature Language="C#" Value="public bool ReadBoolean ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReadBoolean() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBoolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadByte">
+      <MemberSignature Language="C#" Value="public byte ReadByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8 ReadByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadByte" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBytes">
+      <MemberSignature Language="C#" Value="public byte[] ReadBytes (int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ReadBytes(int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBytes">
+      <MemberSignature Language="C#" Value="public void ReadBytes (int byteCount, byte[] buffer, int bufferOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadBytes(int32 byteCount, unsigned int8[] buffer, int32 bufferOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteCount" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="byteCount">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadChar">
+      <MemberSignature Language="C#" Value="public char ReadChar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char ReadChar() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadChar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCompressedInteger">
+      <MemberSignature Language="C#" Value="public int ReadCompressedInteger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadCompressedInteger() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadCompressedInteger" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCompressedSignedInteger">
+      <MemberSignature Language="C#" Value="public int ReadCompressedSignedInteger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadCompressedSignedInteger() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadCompressedSignedInteger" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadConstant">
+      <MemberSignature Language="C#" Value="public object ReadConstant (System.Reflection.Metadata.ConstantTypeCode typeCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ReadConstant(valuetype System.Reflection.Metadata.ConstantTypeCode typeCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadConstant(System.Reflection.Metadata.ConstantTypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeCode" Type="System.Reflection.Metadata.ConstantTypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="typeCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDateTime">
+      <MemberSignature Language="C#" Value="public DateTime ReadDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime ReadDateTime() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDateTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDecimal">
+      <MemberSignature Language="C#" Value="public decimal ReadDecimal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal ReadDecimal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDecimal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDouble">
+      <MemberSignature Language="C#" Value="public double ReadDouble ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 ReadDouble() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDouble" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadGuid">
+      <MemberSignature Language="C#" Value="public Guid ReadGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid ReadGuid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadGuid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt16">
+      <MemberSignature Language="C#" Value="public short ReadInt16 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int16 ReadInt16() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt16" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt32">
+      <MemberSignature Language="C#" Value="public int ReadInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt32" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt64">
+      <MemberSignature Language="C#" Value="public long ReadInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 ReadInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt64" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSByte">
+      <MemberSignature Language="C#" Value="public sbyte ReadSByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int8 ReadSByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSByte" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSerializationTypeCode">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SerializationTypeCode ReadSerializationTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.SerializationTypeCode ReadSerializationTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSerializationTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSerializedString">
+      <MemberSignature Language="C#" Value="public string ReadSerializedString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadSerializedString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSerializedString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSignatureHeader">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureHeader ReadSignatureHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.SignatureHeader ReadSignatureHeader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSignatureHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureHeader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSignatureTypeCode">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureTypeCode ReadSignatureTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.SignatureTypeCode ReadSignatureTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSignatureTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingle">
+      <MemberSignature Language="C#" Value="public float ReadSingle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 ReadSingle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSingle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadTypeHandle">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EntityHandle ReadTypeHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.EntityHandle ReadTypeHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadTypeHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt16">
+      <MemberSignature Language="C#" Value="public ushort ReadUInt16 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int16 ReadUInt16() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt16" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt32">
+      <MemberSignature Language="C#" Value="public uint ReadUInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int32 ReadUInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt32" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt64">
+      <MemberSignature Language="C#" Value="public ulong ReadUInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 ReadUInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt64" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUTF16">
+      <MemberSignature Language="C#" Value="public string ReadUTF16 (int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadUTF16(int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUTF8">
+      <MemberSignature Language="C#" Value="public string ReadUTF8 (int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadUTF8(int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUTF8(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemainingBytes">
+      <MemberSignature Language="C#" Value="public int RemainingBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemainingBytes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.RemainingBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekOffset">
+      <MemberSignature Language="C#" Value="public void SeekOffset (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekOffset(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.SeekOffset(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipBytes">
+      <MemberSignature Language="C#" Value="public void SkipBytes (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipBytes(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.SkipBytes(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPointer">
+      <MemberSignature Language="C#" Value="public byte* StartPointer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* StartPointer" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.StartPointer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte*</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadCompressedInteger">
+      <MemberSignature Language="C#" Value="public bool TryReadCompressedInteger (out int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedInteger(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadCompressedSignedInteger">
+      <MemberSignature Language="C#" Value="public bool TryReadCompressedSignedInteger (out int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedSignedInteger(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

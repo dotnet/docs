@@ -1,0 +1,181 @@
+<Type Name="WorkflowRuntimeBehavior" FullName="System.ServiceModel.Description.WorkflowRuntimeBehavior">
+  <TypeSignature Language="C#" Value="public class WorkflowRuntimeBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowRuntimeBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the behavior for the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> associated with a <see cref="T:System.ServiceModel.WorkflowServiceHost" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.ServiceModel.Description.WorkflowRuntimeBehavior> to access the <xref:System.Workflow.Runtime.WorkflowRuntime> object in your workflow service. The <xref:System.Workflow.Runtime.WorkflowRuntime> object is added by default when the <xref:System.ServiceModel.WorkflowServiceHost> is created.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowRuntimeBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WorkflowRuntimeBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.ServiceModel.Description.WorkflowRuntimeBehavior.CachedInstanceExpiration%2A> property to 10 minutes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WorkflowRuntimeBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">Not implemented.</param>
+        <param name="serviceHostBase">Not implemented.</param>
+        <param name="endpoints">Not implemented.</param>
+        <param name="bindingParameters">Not implemented.</param>
+        <summary>Not implemented in <see cref="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WorkflowRuntimeBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Configures the workflow service to support the workflow run-time behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a <xref:System.ServiceModel.Description.WorkflowRuntimeBehavior.CachedInstanceExpiration%2A> extension and configures it for the <xref:System.Workflow.Runtime.WorkflowRuntime>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedInstanceExpiration">
+      <MemberSignature Language="C#" Value="public TimeSpan CachedInstanceExpiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CachedInstanceExpiration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WorkflowRuntimeBehavior.CachedInstanceExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates how long a workflow instance stays in-memory in the idle state before it is forcibly removed from memory.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object indicating how long a workflow instance stays in-memory in the idle state before it is forcibly removed from memory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WorkflowRuntimeBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Verifies the scheduling service used for workflow services has been added to the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object and that the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object has not started before the call to <see cref="Overload:System.ServiceModel.Channels.CommunicationObject.Open" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The wrong <see cref="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" /> is registered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowRuntime">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WorkflowRuntimeBehavior.WorkflowRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowRuntime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> associated with a <see cref="T:System.ServiceModel.WorkflowServiceHost" /> instance.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Runtime.WorkflowRuntime> object is not initialized before retrieving this property, then a new <xref:System.Workflow.Runtime.WorkflowRuntime> object is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

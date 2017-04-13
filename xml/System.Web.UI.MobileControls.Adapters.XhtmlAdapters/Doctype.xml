@@ -1,0 +1,100 @@
+<Type Name="Doctype" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype">
+  <TypeSignature Language="C#" Value="public enum Doctype" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Doctype extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of XHTML markup for an <see cref="T:System.Web.UI.XhtmlTextWriter" /> class to render to the page or control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify one of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype> enumeration values as the parameter in a <xref:System.Web.UI.XhtmlTextWriter.SetDocType%2A> method call, the value forces the text writer to adhere to the restrictions of that XHTML document type.  
+  
+ XHTML Basic is the mobile version of XHTML 1.0 and supports the minimum number of XHTML modules to be an XHTML document. It is designed for clients that do not support the full set of XHTML features, such as mobile phones, personal digital assistants (PDAs), pagers, and set-top boxes. With XHTML Basic, a document can be presented on the maximum number of clients, including a wide range of mobile phones with different display formats and presentation capabilities.  
+  
+ XHTML Mobile Profile adds several additional elements and attributes to XHTML Basic from the full XHTML 1.0, including additional presentation elements and support for internal style sheets.  
+  
+ Wireless Markup Language (WML) 2.0 expands on both XHTML Basic and XHTML Mobile Profile by providing support for cascading style sheets.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not determined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wml20">
+      <MemberSignature Language="C#" Value="Wml20" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype Wml20 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.Wml20" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>WML 2.0 document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XhtmlBasic">
+      <MemberSignature Language="C#" Value="XhtmlBasic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype XhtmlBasic = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlBasic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Basic XHTML format. This format does not support frames and styles.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XhtmlMobileProfile">
+      <MemberSignature Language="C#" Value="XhtmlMobileProfile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype XhtmlMobileProfile = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlMobileProfile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XHTML Mobile Profile format.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

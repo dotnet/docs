@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, changing run time appearance"
 ms.assetid: 2af6dfce-760b-489e-b863-8da967f315c3
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

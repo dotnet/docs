@@ -1,0 +1,300 @@
+<Type Name="XmlDictionary" FullName="System.Xml.XmlDictionary">
+  <TypeSignature Language="C#" Value="public class XmlDictionary : System.Xml.IXmlDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDictionary extends System.Object implements class System.Xml.IXmlDictionary" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Xml.IXmlDictionary</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Implements a dictionary used to optimize [!INCLUDE[indigo1](~/includes/indigo1-md.md)]'s XML reader/writer implementations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses 2 kinds of dictionaries, static and dynamic.  
+  
+ With static dictionaries, both sides of the communication use a predefined dictionary.  
+  
+ With dynamic dictionaries, the sending side can add new strings and their mappings not already in the static dictionary. Dynamic dictionaries are sent out of band with the message. Dynamic dictionaries use the <xref:System.Xml.XmlBinaryWriterSession> and <xref:System.Xml.XmlBinaryReaderSession> classes to transmit messages and mappings.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDictionary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an empty <see cref="T:System.Xml.XmlDictionary" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDictionary (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The initial size of the dictionary.</param>
+        <summary>Creates a <see cref="T:System.Xml.XmlDictionary" /> with an initial capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary will resize itself as needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDictionaryString Add (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDictionaryString Add(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">String to add to the dictionary.</param>
+        <summary>Adds a string to the <see cref="T:System.Xml.XmlDictionary" />.</summary>
+        <returns>The <see cref="T:System.Xml.XmlDictionaryString" /> that was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Xml.XmlDictionaryString> is built from `value`.  
+  
+ If the string value is already in the dictionary, the <xref:System.Xml.XmlDictionaryString> previously created for it is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static System.Xml.IXmlDictionary Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Xml.IXmlDictionary Empty" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionary.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.IXmlDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="static" /> empty <see cref="T:System.Xml.IXmlDictionary" />.</summary>
+        <value>A <see langword="static" /> empty <see cref="T:System.Xml.IXmlDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This instance should be used when an <xref:System.Xml.IXmlDictionary> is required but no <xref:System.Xml.XmlDictionaryString>s are needed.  
+  
+ The empty dictionary cannot be modified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLookup">
+      <MemberSignature Language="C#" Value="public virtual bool TryLookup (int key, out System.Xml.XmlDictionaryString result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(int32 key, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Int32" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key to look up.</param>
+        <param name="result">If <c>key</c> is defined, the <see cref="T:System.Xml.XmlDictionaryString" /> that is mapped to the key; otherwise <see langword="null" />.</param>
+        <summary>Attempts to look up an entry in the dictionary.</summary>
+        <returns>
+          <see langword="true" /> if key is in the dictionary, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLookup">
+      <MemberSignature Language="C#" Value="public virtual bool TryLookup (string value, out System.Xml.XmlDictionaryString result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(string value, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">String value being checked for.</param>
+        <param name="result">The corresponding <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <summary>Checks the dictionary for a specified string value.</summary>
+        <returns>
+          <see langword="true" /> if value is in the dictionary, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLookup">
+      <MemberSignature Language="C#" Value="public virtual bool TryLookup (System.Xml.XmlDictionaryString value, out System.Xml.XmlDictionaryString result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(class System.Xml.XmlDictionaryString value, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> being checked for.</param>
+        <param name="result">The matching <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <summary>Checks the dictionary for a specified <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="T:System.Xml.XmlDictionaryString" /> is in the dictionary, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="TryLookup">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to look up an entry in the dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method avoids throwing an exception if the string is not currently in the dictionary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

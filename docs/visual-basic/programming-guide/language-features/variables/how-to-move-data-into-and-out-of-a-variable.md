@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], storing data"
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

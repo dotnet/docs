@@ -1,0 +1,409 @@
+<Type Name="IntegerProperty" FullName="System.Windows.Forms.VisualStyles.IntegerProperty">
+  <TypeSignature Language="C#" Value="public enum IntegerProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IntegerProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.IntegerProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the integer properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.IntegerProperty> enumeration represents a set of integer properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.IntegerProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetInteger%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlphaLevel">
+      <MemberSignature Language="C#" Value="AlphaLevel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty AlphaLevel = int32(2402)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.AlphaLevel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The alpha value for an icon, between 0 and 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlphaThreshold">
+      <MemberSignature Language="C#" Value="AlphaThreshold" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty AlphaThreshold = int32(2415)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.AlphaThreshold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum alpha value of a solid pixel, between 0 and 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderSize">
+      <MemberSignature Language="C#" Value="BorderSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty BorderSize = int32(2403)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.BorderSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The size of the border line for elements with a filled-border background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphIndex">
+      <MemberSignature Language="C#" Value="GlyphIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GlyphIndex = int32(2418)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GlyphIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The index into the font for font-based glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientRatio1">
+      <MemberSignature Language="C#" Value="GradientRatio1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GradientRatio1 = int32(2406)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GradientRatio1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of <see cref="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor1" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientRatio2">
+      <MemberSignature Language="C#" Value="GradientRatio2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GradientRatio2 = int32(2407)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GradientRatio2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of <see cref="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor2" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientRatio3">
+      <MemberSignature Language="C#" Value="GradientRatio3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GradientRatio3 = int32(2408)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GradientRatio3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of <see cref="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor3" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientRatio4">
+      <MemberSignature Language="C#" Value="GradientRatio4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GradientRatio4 = int32(2409)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GradientRatio4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of <see cref="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor4" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientRatio5">
+      <MemberSignature Language="C#" Value="GradientRatio5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty GradientRatio5 = int32(2410)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.GradientRatio5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of <see cref="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor5" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="Height" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty Height = int32(2417)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.Height" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The height of an element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageCount">
+      <MemberSignature Language="C#" Value="ImageCount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty ImageCount = int32(2401)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.ImageCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of state images in multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDpi1">
+      <MemberSignature Language="C#" Value="MinDpi1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty MinDpi1 = int32(2420)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.MinDpi1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum dots per inch (DPI) that <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile1" /> was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDpi2">
+      <MemberSignature Language="C#" Value="MinDpi2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty MinDpi2 = int32(2421)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.MinDpi2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum DPI that <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile2" /> was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDpi3">
+      <MemberSignature Language="C#" Value="MinDpi3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty MinDpi3 = int32(2422)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.MinDpi3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum DPI that <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile3" /> was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDpi4">
+      <MemberSignature Language="C#" Value="MinDpi4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty MinDpi4 = int32(2423)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.MinDpi4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum DPI that <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile4" /> was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDpi5">
+      <MemberSignature Language="C#" Value="MinDpi5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty MinDpi5 = int32(2424)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.MinDpi5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum DPI that <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile5" /> was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressChunkSize">
+      <MemberSignature Language="C#" Value="ProgressChunkSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty ProgressChunkSize = int32(2411)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.ProgressChunkSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The size of progress bar elements.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressSpaceSize">
+      <MemberSignature Language="C#" Value="ProgressSpaceSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty ProgressSpaceSize = int32(2412)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.ProgressSpaceSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The size of spaces between progress bar elements.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundCornerHeight">
+      <MemberSignature Language="C#" Value="RoundCornerHeight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty RoundCornerHeight = int32(2405)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.RoundCornerHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage value that represents the height of a rounded corner, from 0 to 100.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundCornerWidth">
+      <MemberSignature Language="C#" Value="RoundCornerWidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty RoundCornerWidth = int32(2404)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.RoundCornerWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage value that represents the width of a rounded corner, from 0 to 100.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Saturation">
+      <MemberSignature Language="C#" Value="Saturation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty Saturation = int32(2413)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.Saturation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The amount of saturation for an image, between 0 and 255.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBorderSize">
+      <MemberSignature Language="C#" Value="TextBorderSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty TextBorderSize = int32(2414)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.TextBorderSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The size of the border around text characters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueSizeStretchMark">
+      <MemberSignature Language="C#" Value="TrueSizeStretchMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty TrueSizeStretchMark = int32(2419)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.TrueSizeStretchMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage value indicating how far a fixed-size element will stretch when the target exceeds the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="Width" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.IntegerProperty Width = int32(2416)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IntegerProperty.Width" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The width of an element.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

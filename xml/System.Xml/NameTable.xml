@@ -1,0 +1,317 @@
+<Type Name="NameTable" FullName="System.Xml.NameTable">
+  <TypeSignature Language="C#" Value="public class NameTable : System.Xml.XmlNameTable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameTable extends System.Xml.XmlNameTable" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.NameTable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.XmlNameTable</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements a single-threaded <see cref="T:System.Xml.XmlNameTable" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Several classes, such as <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlReader>, use the `NameTable` class internally to store attribute and element names. When an element or attribute name occurs multiple times in an XML document, it is stored only once in the `NameTable`.  
+  
+ The names are stored as common language runtime (CLR) object types. This enables you to do object comparisons on these strings rather than a more expensive string comparison. These string objects are referred to as atomized strings.  
+  
+   
+  
+## Examples  
+ The following example compares two element names.  
+  
+ [!code-cpp[NameTable#1](~/samples/snippets/cpp/VS_Snippets_Data/NameTable/CPP/nametable.cpp#1)]
+ [!code-csharp[NameTable#1](~/samples/snippets/csharp/VS_Snippets_Data/NameTable/CS/nametable.cs#1)]
+ [!code-vb[NameTable#1](~/samples/snippets/visualbasic/VS_Snippets_Data/NameTable/VB/nametable.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="NameTable" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Constructs an empty NameTable.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override string Add (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Add(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The string to add.</param>
+        <summary>Atomizes the specified string and adds it to the <see langword="NameTable" />.</summary>
+        <returns>The atomized string or the existing string if it already exists in the <see langword="NameTable" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override string Add (char[] key, int start, int len);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Add(char[] key, int32 start, int32 len) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Char[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="len" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">The character array containing the string to add.</param>
+        <param name="start">The zero-based index into the array specifying the first character of the string.</param>
+        <param name="len">The number of characters in the string.</param>
+        <summary>Atomizes the specified string and adds it to the <see langword="NameTable" />.</summary>
+        <returns>The atomized string or the existing string if one already exists in the <see langword="NameTable" />. If <paramref name="len" /> is zero, String.Empty is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">0 &gt; <paramref name="start" />  
+  
+ -or-  
+  
+ <paramref name="start" /> &gt;= <paramref name="key" />.Length  
+  
+ -or-  
+  
+ <paramref name="len" /> &gt;= <paramref name="key" />.Length  
+  
+ The above conditions do not cause an exception to be thrown if <paramref name="len" /> =0.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="len" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public override string Get (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Get(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The name to find.</param>
+        <summary>Gets the atomized string with the specified value.</summary>
+        <returns>The atomized string object or <see langword="null" /> if the string has not already been atomized.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public override string Get (char[] key, int start, int len);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Get(char[] key, int32 start, int32 len) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Char[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="len" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">The character array containing the name to find.</param>
+        <param name="start">The zero-based index into the array specifying the first character of the name.</param>
+        <param name="len">The number of characters in the name.</param>
+        <summary>Gets the atomized string containing the same characters as the specified range of characters in the given array.</summary>
+        <returns>The atomized string or <see langword="null" /> if the string has not already been atomized. If <paramref name="len" /> is zero, String.Empty is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">0 &gt; <paramref name="start" />  
+  
+ -or-  
+  
+ <paramref name="start" /> &gt;= <paramref name="key" />.Length  
+  
+ -or-  
+  
+ <paramref name="len" /> &gt;= <paramref name="key" />.Length  
+  
+ The above conditions do not cause an exception to be thrown if <paramref name="len" /> =0.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="len" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the atomized string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Atomizes the specified string and adds it to the <see langword="NameTable" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on atomized strings, see <xref:System.Xml.NameTable>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

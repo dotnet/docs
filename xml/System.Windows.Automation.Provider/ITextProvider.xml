@@ -1,0 +1,204 @@
+<Type Name="ITextProvider" FullName="System.Windows.Automation.Provider.ITextProvider">
+  <TypeSignature Language="C#" Value="public interface ITextProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITextProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3589c92c-63f3-4367-99bb-ada653b77cf2")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that contain text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TextPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DocumentRange">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider DocumentRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.ITextRangeProvider DocumentRange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITextProvider.DocumentRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.ITextRangeProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a text range that encloses the main text of a document.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some auxiliary text such as headers, footnotes, or annotations may not be included.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelection">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider[] GetSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider[] GetSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextProvider.GetSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.ITextRangeProvider[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of disjoint text ranges associated with the current text selection or selections.</summary>
+        <returns>A collection of disjoint text ranges.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For UI Automation providers that support text selection, the provider should implement this method and also return a <xref:System.Windows.Automation.Provider.ITextProvider.SupportedTextSelection%2A> value.  
+  
+ If no text is selected, <xref:System.Windows.Automation.Provider.ITextProvider.GetSelection%2A> returns the degenerate text range (empty range) at the position of the system cursor (text insertion point).  
+  
+ If the system cursor (text insertion point) is not present, <xref:System.Windows.Automation.Provider.ITextProvider.GetSelection%2A> may return a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If the UI Automation provider does not support text selection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisibleRanges">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider[] GetVisibleRanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider[] GetVisibleRanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextProvider.GetVisibleRanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.ITextRangeProvider[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an array of disjoint text ranges from a text container where each text range begins with the first partially visible line through to the end of the last partially visible line.</summary>
+        <returns>The collection of visible text ranges within the container or an empty array. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ UI Automation providers should ensure that they return, at most, the text ranges that are visible within the container.  
+  
+ Disjoint text ranges may occur when any content of a text container is obscured by an overlapping window or other object, or when a text container with a multi-column layout has one or more columns partially scrolled out of view.  
+  
+ If no text is visible, a degenerate (empty) text range is returned. This empty range can be returned if the text container is empty or when all text is scrolled out of view.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeFromChild">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider RangeFromChild (System.Windows.Automation.Provider.IRawElementProviderSimple childElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider RangeFromChild(class System.Windows.Automation.Provider.IRawElementProviderSimple childElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextProvider.RangeFromChild(System.Windows.Automation.Provider.IRawElementProviderSimple)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.ITextRangeProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="childElement" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+      </Parameters>
+      <Docs>
+        <param name="childElement">The enclosed object.</param>
+        <summary>Retrieves a text range enclosing a child element such as an image, hyperlink, or other embedded object.</summary>
+        <returns>A range that spans the child element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A UI Automation provider should check that the passed element is a child of the text container.  
+  
+ If there is no text in the range where the child element exists, a degenerate (empty) range is returned.  
+  
+ The `childElement` parameter is either a child of the <xref:System.Windows.Automation.AutomationElement> associated with a <xref:System.Windows.Automation.TextPattern> or from the array of children of a <xref:System.Windows.Automation.Text.TextPatternRange>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If the child element is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeFromPoint">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider RangeFromPoint (System.Windows.Point screenLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider RangeFromPoint(valuetype System.Windows.Point screenLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextProvider.RangeFromPoint(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.ITextRangeProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="screenLocation" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="screenLocation">The location in screen coordinates.</param>
+        <summary>Returns the degenerate (empty) text range nearest to the specified screen coordinates.</summary>
+        <returns>A degenerate range nearest the specified location. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A text range that encloses a child object is returned if the screen coordinates are within the coordinates of an image, hyperlink, or other embedded object.  
+  
+ Because hidden text is not ignored by <xref:System.Windows.Automation.Provider.ITextProvider.RangeFromPoint%2A> a degenerate range from the visible text closest to the given point is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If a given point is outside the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element associated with the text pattern.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedTextSelection">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.SupportedTextSelection SupportedTextSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.SupportedTextSelection SupportedTextSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITextProvider.SupportedTextSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SupportedTextSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether a text provider supports selection and, if so, the type of selection supported.</summary>
+        <value>One of <see langword="None" />, <see langword="Single" />, or <see langword="Multiple" /> from <see cref="T:System.Windows.Automation.SupportedTextSelection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

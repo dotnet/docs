@@ -1,0 +1,579 @@
+<Type Name="EventLogEntry" FullName="System.Diagnostics.EventLogEntry">
+  <TypeSignature Language="C#" Value="public sealed class EventLogEntry : System.ComponentModel.Component, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EventLogEntry extends System.ComponentModel.Component implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates a single record in the event log. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You usually will not create instances of <xref:System.Diagnostics.EventLogEntry> directly when working with the <xref:System.Diagnostics.EventLog> class. The <xref:System.Diagnostics.EventLog.Entries%2A> member of the <xref:System.Diagnostics.EventLog> class contains a collection of <xref:System.Diagnostics.EventLogEntry> instances, which you iterate over when reading by using the <xref:System.Diagnostics.EventLogEntryCollection.Item%2A?displayProperty=fullName> class index member.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Diagnostics.EventLogEntry> class. In this example, a `switch` statement uses console input to search for event log entries for the specified event type.  If a match is found, log entry source information is displayed at the console.  
+  
+ [!code-cpp[EventLogEntry_Source#1](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntry_Source/CPP/eventlogentry_source.cpp#1)]
+ [!code-csharp[EventLogEntry_Source#1](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntry_Source/CS/eventlogentry_source.cs#1)]
+ [!code-vb[EventLogEntry_Source#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntry_Source/VB/eventlogentry_source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The category of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text associated with the <see cref="P:System.Diagnostics.EventLogEntry.CategoryNumber" /> property for this entry.</summary>
+        <value>The application-specific category text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the category.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryNumber">
+      <MemberSignature Language="C#" Value="public short CategoryNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 CategoryNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.CategoryNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("An ID for the category of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the category number of the event log entry.</summary>
+        <value>The application-specific category number for this entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log. The categories must be numbered consecutively beginning with the number 1. The category number is specified by the <xref:System.Diagnostics.EventInstance.CategoryId%2A?displayProperty=fullName> property. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string. For more information, see <xref:System.Diagnostics.EventInstance>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public byte[] Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("Binary data associated with this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the binary data associated with the entry.</summary>
+        <value>An array of bytes that holds the binary data associated with the entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Getting this property creates an array that holds a copy of the entry's event-specific binary data, which the Event Viewer displays in combined hexadecimal and text format. Event-specific data is sometimes used to store information that the application will process independently of the Event Viewer, for example, to make reports from the log file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryType">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogEntryType EntryType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.EventLogEntryType EntryType" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.EntryType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The type of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the event type of this entry.</summary>
+        <value>The event type that is associated with the entry in the event log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All event types have well-defined common data and can optionally include event-specific data. Each event is of a single type, which the application indicates when it reports the event. The Event Viewer uses the event type to determine which icon to display in the list view of the event log.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Diagnostics.EventLogEntry.EntryType%2A> property. In this example, a `switch` statement uses console input to search for event log entries for the specified <xref:System.Diagnostics.EventLogEntry.EntryType%2A>.  If a match is found, log entry source information is displayed at the console.  
+  
+ [!code-cpp[EventLogEntry_Source#1](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntry_Source/CPP/eventlogentry_source.cpp#1)]
+ [!code-csharp[EventLogEntry_Source#1](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntry_Source/CS/eventlogentry_source.cs#1)]
+ [!code-vb[EventLogEntry_Source#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntry_Source/VB/eventlogentry_source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Diagnostics.EventLogEntry otherEntry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class System.Diagnostics.EventLogEntry otherEntry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogEntry.Equals(System.Diagnostics.EventLogEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherEntry" Type="System.Diagnostics.EventLogEntry" />
+      </Parameters>
+      <Docs>
+        <param name="otherEntry">The <see cref="T:System.Diagnostics.EventLogEntry" /> to compare.</param>
+        <summary>Performs a comparison between two event log entries.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Diagnostics.EventLogEntry" /> objects are identical; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a byte-by-byte comparison between the two objects. It does not determine whether the two <xref:System.Diagnostics.EventLogEntry> instances refer to the same object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventID">
+      <MemberSignature Language="C#" Value="public int EventID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EventID" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.EventID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("An ID number for this event entry.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use InstanceId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application-specific event identifier for the current event entry.</summary>
+        <value>The application-specific identifier for the event message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value represents the event identifier for the entry in the event log, with the top two bits masked off. The <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property for an event log entry represents the full 32-bit resource identifier for the event in the message resource file for the event source. Two event log entries from the same source can have matching <xref:System.Diagnostics.EventLogEntry.EventID%2A> values, but have different <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> values due to differences in the top two bits of the event identifier.  
+  
+ If the application wrote the event entry using one of the <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods, the <xref:System.Diagnostics.EventLogEntry.EventID%2A> property matches the optional `eventId` parameter. If the application wrote the event using <xref:System.Diagnostics.EventLog.WriteEvent%2A> or the Win32 API `ReportEvent`, the <xref:System.Diagnostics.EventLogEntry.EventID%2A> property matches the resource identifier for the event, with the top two bits masked off.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("Sequence numer of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of this entry in the event log.</summary>
+        <value>The index of this entry in the event log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This number is not necessarily zero-based.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceId">
+      <MemberSignature Language="C#" Value="public long InstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 InstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.InstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The instance ID for this event entry.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource identifier that designates the message text of the event entry.</summary>
+        <value>A resource identifier that corresponds to a string definition in the message resource file of the event source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property uniquely identifies an event entry for a configured event source. The <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> for an event log entry represents the full 32-bit resource identifier for the event in the message resource file for the event source. The <xref:System.Diagnostics.EventLogEntry.EventID%2A> property equals the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> with the top two bits masked off. Two event log entries from the same source can have matching <xref:System.Diagnostics.EventLogEntry.EventID%2A> values, but have different <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> values due to differences in the top two bits of the resource identifier.  
+  
+ If the application wrote the event entry using one of the <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the optional `eventId` parameter. If the application wrote the event using <xref:System.Diagnostics.EventLog.WriteEvent%2A>, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the resource identifier specified in the <xref:System.Diagnostics.EventInstance.InstanceId%2A> of the `instance` parameter. If the application wrote the event using the Win32 API `ReportEvent`, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the resource identifier specified in the `dwEventID` parameter.  
+  
+ For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/). For details about event log identifiers, see the "Event Identifiers" topic in the Platform SDK.  
+  
+   
+  
+## Examples  
+ The following code example searches an event log for entries with a particular resource identifier. The code example displays the event message for each matching entry, and counts the total number of matching entries in the log. The message text for each entry may or may not be the same; each event message depends on the event source message file, insertion strings, and parameters used when it was written.  
+  
+ [!code-cpp[EventLog_WriteEvent#10](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#10)]
+ [!code-csharp[EventLog_WriteEvent#10](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#10)]
+ [!code-vb[EventLog_WriteEvent#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The Computer on which this event entry occured.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the computer on which this entry was generated.</summary>
+        <value>The name of the computer that contains the event log.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.BinaryEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The message of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the localized message associated with this event entry.</summary>
+        <value>The formatted, localized text for the message. This includes associated replacement strings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Getting this property opens the registry to determine the file name of the .dll file that contains the localized text. If you receive a registry error when testing your source code, verify that the .dll file exists on the computer. If insertion strings are included in the message, catch errors in their allocation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the message.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacementStrings">
+      <MemberSignature Language="C#" Value="public string[] ReplacementStrings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ReplacementStrings" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.ReplacementStrings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("Application strings for this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the replacement strings associated with the event log entry.</summary>
+        <value>An array that holds the replacement strings stored in the event entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property retrieves only the replacement strings for the entry. To retrieve the full message, read the <xref:System.Diagnostics.EventLogEntry.Message%2A> property.  
+  
+ The <xref:System.Diagnostics.EventLogEntry.ReplacementStrings%2A> property contains the localized versions of replacement strings that are used in the event log entry. If you provide resource files that contain strings in each target language for your application, you can emit event log messages in the language that is used on that computer. To do that, create an instance of the <xref:System.Resources.ResourceManager> class for the resource assembly that contains your replacement strings. The first parameter of the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor identifies the resource assembly to be used. Use the <xref:System.Resources.ResourceManager.GetString%2A> method of that instance to supply localized messages for log events. The following code automatically sets the message to the language for the current culture.  
+  
+```  
+ResourceManager LocRM = new ResourceManager("ReplacementStrings.TestStrings",   
+      typeof(Program).Assembly);  
+EventLog e1 = new EventLog("LocTest", "MyMachine", "LocTest");  
+// Get the string associated with the current culture.  
+e1.WriteEntry(LocRM.GetString("strMessage"),  
+   EventLogEntryType.Information);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The source application of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the application that generated this event.</summary>
+        <value>The name registered with the event log as the source of this event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event source indicates what logged the event. It is often the name of the application or the name of a subcomponent of the application if the application is large. Applications and services usually write to (and therefore are sources for) the Application log or a custom log. Device drivers usually write to the System log.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Diagnostics.EventLogEntry.Source%2A> property. In this example, a `switch` statement uses console input to search for event log entries for the specified <xref:System.Diagnostics.EventLogEntry.EntryType%2A>.  If a match is found, the <xref:System.Diagnostics.EventLogEntry.Source%2A> property information is displayed at the console.  
+  
+ [!code-cpp[EventLogEntry_Source#1](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntry_Source/CPP/eventlogentry_source.cpp#1)]
+ [!code-csharp[EventLogEntry_Source#1](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntry_Source/CS/eventlogentry_source.cs#1)]
+ [!code-vb[EventLogEntry_Source#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntry_Source/VB/eventlogentry_source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogEntry.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("Needs serialization support")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeGenerated">
+      <MemberSignature Language="C#" Value="public DateTime TimeGenerated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeGenerated" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.TimeGenerated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("Generation time of this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the local time at which this event was generated.</summary>
+        <value>The local time at which this event was generated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member holds the time that an event was generated. This might not be the same as the time when the event information was written to the event log. For the latter, read the <xref:System.Diagnostics.EventLogEntry.TimeWritten%2A> property.  
+  
+ There is usually a lag between the time that an event is generated and the time it is logged. It is more important to know when the event was generated, unless you want to see if there is a significant lag in logging. That can happen if your log files are on a different server and you are experiencing a bottleneck.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeWritten">
+      <MemberSignature Language="C#" Value="public DateTime TimeWritten { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeWritten" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.TimeWritten" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The time at which this event entry was written to the logfile.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the local time at which this event was written to the log.</summary>
+        <value>The local time at which this event was written to the log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member holds the time that an event's information is written to the event log. This might not be the same time as when the event was generated. For the latter, read the <xref:System.Diagnostics.EventLogEntry.TimeGenerated%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The name of a user associated with this event entry.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the user who is responsible for this event.</summary>
+        <value>The security identifier (SID) that uniquely identifies a user or group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is often blank for events in logs other than the Security log.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.SystemException">Account information could not be obtained for the user's SID.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

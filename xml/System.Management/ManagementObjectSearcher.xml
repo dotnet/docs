@@ -1,0 +1,438 @@
+<Type Name="ManagementObjectSearcher" FullName="System.Management.ManagementObjectSearcher">
+  <TypeSignature Language="C#" Value="public class ManagementObjectSearcher : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementObjectSearcher extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementObjectSearcher" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Retrieves a collection of management objects based on a specified query. This class is one of the more commonly used entry points to retrieving management information. For example, it can be used to enumerate all disk drives, network adapters, processes and many more management objects on a system, or to query for all network connections that are up, services that are paused, and so on.  When instantiated, an instance of this class takes as input a WMI query represented in an <see cref="T:System.Management.ObjectQuery" /> or its derivatives, and optionally a <see cref="T:System.Management.ManagementScope" /> representing the WMI namespace to execute the query in. It can also take additional advanced options in an <see cref="T:System.Management.EnumerationOptions" />. When the <see cref="M:System.Management.ManagementObjectSearcher.Get" /> method on this object                   is invoked, the <see cref="T:System.Management.ManagementObjectSearcher" /> executes the given query in the specified scope and returns a collection of management objects that match the query in a <see cref="T:System.Management.ManagementObjectCollection" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class. After some properties on this object are set, the object can be used to invoke a query for management information. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (System.Management.ObjectQuery query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ObjectQuery query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="query" Type="System.Management.ObjectQuery" />
+      </Parameters>
+      <Docs>
+        <param name="query">An <see cref="T:System.Management.ObjectQuery" /> representing the query to be invoked by the searcher.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query for management information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/cs/ManagementObjectSearcher(O).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/vb/ManagementObjectSearcher(O).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (string queryString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="queryString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queryString">The WMI query to be invoked by the object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query for management information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/cs/ManagementObjectSearcher(S).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/vb/ManagementObjectSearcher(S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (System.Management.ManagementScope scope, System.Management.ObjectQuery query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.ObjectQuery query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Management.ManagementScope" />
+        <Parameter Name="query" Type="System.Management.ObjectQuery" />
+      </Parameters>
+      <Docs>
+        <param name="scope">A <see cref="T:System.Management.ManagementScope" /> representing the scope in which to invoke the query.</param>
+        <param name="query">An <see cref="T:System.Management.ObjectQuery" /> representing the query to be invoked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query in the specified scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/cs/ManagementObjectSearcher(M_O).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/vb/ManagementObjectSearcher(M_O).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (string scope, string queryString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string queryString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="queryString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope in which to query.</param>
+        <param name="queryString">The query to be invoked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query in the specified scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/cs/ManagementObjectSearcher(S_S).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/vb/ManagementObjectSearcher(S_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (System.Management.ManagementScope scope, System.Management.ObjectQuery query, System.Management.EnumerationOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.ObjectQuery query, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Management.ManagementScope" />
+        <Parameter Name="query" Type="System.Management.ObjectQuery" />
+        <Parameter Name="options" Type="System.Management.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="scope">A <see cref="T:System.Management.ManagementScope" /> specifying the scope of the query.</param>
+        <param name="query">An <see cref="T:System.Management.ObjectQuery" /> specifying the query to be invoked.</param>
+        <param name="options">An <see cref="T:System.Management.EnumerationOptions" /> specifying additional options to be used for the query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class to be used to invoke the specified query in the specified scope, with the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/cs/ManagementObjectSearcher(M_O_E).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/vb/ManagementObjectSearcher(M_O_E).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementObjectSearcher (string scope, string queryString, System.Management.EnumerationOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string queryString, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="queryString" Type="System.String" />
+        <Parameter Name="options" Type="System.Management.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope in which the query should be invoked.</param>
+        <param name="queryString">The query to be invoked.</param>
+        <param name="options">An <see cref="T:System.Management.EnumerationOptions" /> specifying additional options for the query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query, in the specified scope, and with the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/cs/ManagementObjectSearcher(S_S_E).cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/vb/ManagementObjectSearcher(S_S_E).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection Get ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection Get() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementObjectCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the specified WMI query and returns the resulting collection.</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the objects that match the specified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/cs/ManagementObjectSearcher_Get.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/vb/ManagementObjectSearcher_Get.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public void Get (System.Management.ManagementOperationObserver watcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Get(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
+      </Parameters>
+      <Docs>
+        <param name="watcher">The watcher that raises events triggered by the operation.</param>
+        <summary>Invokes the WMI query asynchronously, and binds to a watcher to deliver the results.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Management.EnumerationOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.EnumerationOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.EnumerationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the options for how to search for objects.</summary>
+        <value>Returns an <see cref="T:System.Management.EnumerationOptions" /> that contains the options for searching for WMI objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The options for how to search for objects.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public System.Management.ObjectQuery Query { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ObjectQuery Query" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ObjectQuery</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query to be invoked in the searcher (that is, the criteria to be applied to the search for management objects).</summary>
+        <value>Returns an <see cref="T:System.Management.ObjectQuery" /> that contains the query to be invoked in the searcher.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is reset to use the new query.  
+  
+## Property Value  
+ The criteria to apply to the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public System.Management.ManagementScope Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementScope Scope" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the scope in which to look for objects (the scope represents a WMI namespace).</summary>
+        <value>Returns a <see cref="T:System.Management.ManagementScope" /> that contains the scope (namespace) in which to look for the WMI objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is re-bound to the new scope.  
+  
+## Property Value  
+ The scope (namespace) in which to look for objects.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and then changes the scope of the instance.  
+  
+ [!code-csharp[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/cs/ManagementObjectSearcher_Scope.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/vb/ManagementObjectSearcher_Scope.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

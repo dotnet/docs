@@ -1,0 +1,334 @@
+<Type Name="ModelService" FullName="System.Activities.Presentation.Services.ModelService">
+  <TypeSignature Language="C#" Value="public abstract class ModelService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is the main entry point that the designer uses to interact with the model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service has a split between public and protected methods that you must implement when you create a derived class. The public methods are callable by anyone. The protected methods are invoked by the model.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_Services.ModelService#0](WFD_Services.ModelService#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ModelService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Services.ModelService" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="protected abstract System.Activities.Presentation.Model.ModelItem CreateItem (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem CreateItem(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateItem(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to clone and wrap.</param>
+        <summary>Takes an existing instance and creates a model item that is a deep clone of the instance.</summary>
+        <returns>Returns a newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that is a clone of the existing item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="protected abstract System.Activities.Presentation.Model.ModelItem CreateItem (Type itemType, System.Activities.Presentation.Model.CreateOptions options, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem CreateItem(class System.Type itemType, valuetype System.Activities.Presentation.Model.CreateOptions options, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateItem(System.Type,System.Activities.Presentation.Model.CreateOptions,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+        <Parameter Name="options" Type="System.Activities.Presentation.Model.CreateOptions" />
+        <Parameter Name="arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type of item to create.</param>
+        <param name="options">Creation options. You can specify whether you would like to initialize default values for an item.</param>
+        <param name="arguments">An array of arguments to the constructor of the item.</param>
+        <summary>Creates a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for a given type. This method is called by <see cref="T:System.Activities.Presentation.Model.ModelFactory" /> when the user wants to create a new item.</summary>
+        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStaticMemberItem">
+      <MemberSignature Language="C#" Value="protected abstract System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem (Type type, string memberName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem(class System.Type type, string memberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateStaticMemberItem(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="memberName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type that contains the static member being referenced.</param>
+        <param name="memberName">The name of the static member being referenced.</param>
+        <summary>Creates a new model item that represents the value of a static member of the given class.</summary>
+        <returns>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, to add a reference to `Brushes.Red` to the model, call this method with `typeof(Brushes)` and the string "Red" as the parameters. This will be serialized into XAML as `{x:Static Brushes.Red}`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt; Find (System.Activities.Presentation.Model.ModelItem startingItem, Predicate&lt;Type&gt; match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; Find(class System.Activities.Presentation.Model.ModelItem startingItem, class System.Predicate`1&lt;class System.Type&gt; match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.Find(System.Activities.Presentation.Model.ModelItem,System.Predicate{System.Type})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="startingItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> from which to start the search. Items above this item will be ignored. This item, and any item below it in the hierarchy, will be included in the search. If this value is <see langword="null" />, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> is used instead.</param>
+        <param name="match">A predicate that allows more complex type matching to be used. This method will enumerate all items within the given parent scope that match the predicate.</param>
+        <summary>Finds matching model items given a starting point from which to look.</summary>
+        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All walks are recursive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="match" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt; Find (System.Activities.Presentation.Model.ModelItem startingItem, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; Find(class System.Activities.Presentation.Model.ModelItem startingItem, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.Find(System.Activities.Presentation.Model.ModelItem,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="startingItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> from which to start the search. Items above this item will be ignored. This item, and any item below it in the hierarchy, will be included in the search. If this value is <see langword="null" />, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> is used instead.</param>
+        <param name="type">The <see cref="T:System.Type" /> of the object to find. This method will enumerate all items within the given parent scope that are of the requested type.</param>
+        <summary>Finds matching model items given a starting point from which to look.</summary>
+        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All walks are recursive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromName">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem FromName (System.Activities.Presentation.Model.ModelItem scope, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Model.ModelItem FromName(class System.Activities.Presentation.Model.ModelItem scope, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.FromName(System.Activities.Presentation.Model.ModelItem,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope">An optional scope to provide. If the scope is not provided, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> will be used as a scope. If the scope is provided, the nearest <see cref="T:System.Windows.Markup.INameScope" /> in the hierarchy will be used to locate the item.</param>
+        <param name="name">The name to locate.</param>
+        <summary>Locates the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> in the given scope with the given name.</summary>
+        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromName">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem FromName (System.Activities.Presentation.Model.ModelItem scope, string name, StringComparison comparison);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem FromName(class System.Activities.Presentation.Model.ModelItem scope, string name, valuetype System.StringComparison comparison) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.FromName(System.Activities.Presentation.Model.ModelItem,System.String,System.StringComparison)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="comparison" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="scope">An optional scope to provide. If the scope is not provided, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> will be used as a scope. If the scope is provided, the nearest <see cref="T:System.Windows.Markup.INameScope" /> in the hierarchy will be used to locate the item.</param>
+        <param name="name">The name to locate.</param>
+        <param name="comparison">Determines how the name should be compared. The default is to compare against ordinal.</param>
+        <summary>Locates the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> in the given scope with the given name.</summary>
+        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelChanged">
+      <MemberSignature Language="C#" Value="public abstract event EventHandler&lt;System.Activities.Presentation.Services.ModelChangedEventArgs&gt; ModelChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.Services.ModelChangedEventArgs&gt; ModelChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Services.ModelService.ModelChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Activities.Presentation.Services.ModelChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This event is raised when something in the model has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event arguments in the event can be used to find what has changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Root" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelService.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root of the object hierarchy.</summary>
+        <value>Returns the root of the model hierarchy as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For linear stores, the root is the first object in the store. For stores that represent a tree of objects, this returns the topmost node of the tree.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds matching model items given a starting point from which to look.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All walks are recursive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromName">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> in the given scope with the given name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `null` if the model item could not be located.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

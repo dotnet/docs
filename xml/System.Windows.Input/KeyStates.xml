@@ -1,0 +1,86 @@
+<Type Name="KeyStates" FullName="System.Windows.Input.KeyStates">
+  <TypeSignature Language="C#" Value="public enum KeyStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyStates extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyStates" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies constants that define the state of a key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.KeyStates> class is a bit field (flagwise) enumeration. Therefore, a key can be in multiple states.  For example, a key could be in the Down state as well as in the Toggled state.  Use bit operations to determine the exact state or states the key is in.  
+  
+   
+  
+## Examples  
+ The following example changes the color of a <xref:System.Windows.Controls.Button> if the <xref:System.Windows.Input.KeyStates> of the key passed in the <xref:System.Windows.Input.KeyEventArgs> is Down. The state of the key is determined by using a bitwise `AND` operation.  The same technique can be used to determine whether a key has multiple states, such as being in the Toggled state and the Down state.  
+  
+ [!code-csharp[keyargssnippetsample#KeyEventArgsKeyStatesDown](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeystatesdown)]
+ [!code-vb[keyargssnippetsample#KeyEventArgsKeyStatesDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeystatesdown)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates Down = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates None = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key is not pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Toggled">
+      <MemberSignature Language="C#" Value="Toggled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates Toggled = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.Toggled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key is toggled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

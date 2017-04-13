@@ -1,0 +1,99 @@
+<Type Name="GeometryCombineMode" FullName="System.Windows.Media.GeometryCombineMode">
+  <TypeSignature Language="C#" Value="public enum GeometryCombineMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeometryCombineMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryCombineMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the different methods by which two geometries can be combined.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the different geometry combine modes.  
+  
+ ![Different combine modes applied to two geometries](~/add/media/mmgraphics-geometrycombinemodes.png "Different combine modes applied to two geometries")  
+Geometry Combine Modes  
+  
+   
+  
+## Examples  
+ The following example shows how to combine two geometries using the Union combine mode.  
+  
+ [!code-xml[geometrysample#23](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#23)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exclude">
+      <MemberSignature Language="C#" Value="Exclude" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GeometryCombineMode Exclude = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryCombineMode.Exclude" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second region is excluded from the first.  Given two geometries, <paramref name="A" /> and <paramref name="B" />, the area of geometry <paramref name="B" /> is removed from the area of geometry <paramref name="A" />, producing a region that is <paramref name="A-B" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="Intersect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GeometryCombineMode Intersect = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryCombineMode.Intersect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The two regions are combined by taking their intersection.  The new area consists of the overlapping region between the two geometries.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="Union" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GeometryCombineMode Union = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryCombineMode.Union" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The two regions are combined by taking the union of both.  The resulting geometry is geometry <paramref name="A" /> + geometry <paramref name="B" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xor">
+      <MemberSignature Language="C#" Value="Xor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GeometryCombineMode Xor = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryCombineMode.Xor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The two regions are combined by taking the area that exists in the first region but not the second and the area that exists in the second region but not the first.  The new region consists of <paramref name="(A-B)" /> + <paramref name="(B-A)" />, where <paramref name="A" /> and <paramref name="B" /> are geometries.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,217 @@
+<Type Name="ActivityBuilder&lt;TResult&gt;" FullName="System.Activities.ActivityBuilder&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ActivityBuilder&lt;TResult&gt; : System.Activities.Debugger.IDebuggableWorkflowTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityBuilder`1&lt;TResult&gt; extends System.Object implements class System.Activities.Debugger.IDebuggableWorkflowTree" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityBuilder`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Debugger.IDebuggableWorkflowTree</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Implementation")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The type of the activity being implemented.</typeparam>
+    <summary>Provides property data for a generic workflow activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityBuilder`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityBuilder`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Attribute&gt; Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Attribute&gt; Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the generic collection of attributes to use in the construction of an activity tree.</summary>
+        <value>A generic collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constraints">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt; Constraints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Validation.Constraint&gt; Constraints" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.Constraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Properties")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the generic collection of constraints that govern the construction of an activity tree.</summary>
+        <value>A generic collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Implementation">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Implementation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Implementation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.Implementation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Constraints")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the generic activity tree that is represented by the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>An activity object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplementationVersion">
+      <MemberSignature Language="C#" Value="public Version ImplementationVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version ImplementationVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.ImplementationVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Activities.XamlIntegration.ImplementationVersionConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the implementation version of the activity builder.</summary>
+        <value>The implementation version of the activity builder.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the generic activity tree that is represented by the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>The name of the activity tree.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;string,System.Activities.DynamicActivityProperty&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Activities.DynamicActivityProperty&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityBuilder`1.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Attributes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.Activities.DynamicActivityProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.ObjectModel.KeyedCollection" /> of the properties of the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>A key and value pair collection of activity properties.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Activities.Debugger.IDebuggableWorkflowTree.GetWorkflowRoot">
+      <MemberSignature Language="C#" Value="System.Activities.Activity IDebuggableWorkflowTree.GetWorkflowRoot ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Activities.Activity System.Activities.Debugger.IDebuggableWorkflowTree.GetWorkflowRoot() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityBuilder`1.System#Activities#Debugger#IDebuggableWorkflowTree#GetWorkflowRoot" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the root of the current workflow tree.</summary>
+        <returns>An activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

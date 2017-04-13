@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_MalFormedDelimitedLine"
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

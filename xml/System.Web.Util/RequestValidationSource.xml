@@ -1,0 +1,350 @@
+<Type Name="RequestValidationSource" FullName="System.Web.Util.RequestValidationSource">
+  <TypeSignature Language="C#" Value="public enum RequestValidationSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestValidationSource extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Util.RequestValidationSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies what kind of HTTP request data to validate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create a custom request validation type by implementing the <xref:System.Web.Util.RequestValidator> type. When ASP.NET calls the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method to validate a request, ASP.NET passes a `requestValidationSource` parameter to specify the source of the data being validated. The <xref:System.Web.Util.RequestValidationSource> enumeration is used to specify the source or kind of request data that is being validated. The enumeration indicates the type of HTTP input that is passed in the `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method. You can use the enumeration as a way to fall back to the base request validation implementation for HTTP inputs if you do not want to validate using custom logic.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom request validator class that allows only a specific string for query-string values.  
+  
+ [Visual Basic]  
+  
+```  
+Imports System  
+Imports System.Web  
+Imports System.Web.Util  
+  
+Public Class CustomRequestValidation  
+    Inherits RequestValidator  
+  
+Public Sub New()  
+End Sub  
+  
+Protected Overloads Overrides Function IsValidRequestString( _  
+        ByVal context As HttpContext, _  
+        ByVal value As String, _  
+        ByVal requestValidationSource__1 As RequestValidationSource, _  
+        ByVal collectionKey As String, _  
+        ByRef validationFailureIndex As Integer) As Boolean  
+    validationFailureIndex = -1  
+    ' Set a default value for the out parameter.  
+    ' This application does not use RawUrl directly, so you can   
+    ' ignore the check for RequestValidationSource.RawUrl.  
+    If requestValidationSource = RequestValidationSource.RawUrl Then  
+        Return True  
+    End If  
+  
+    ' Allow the query-string key "data" to have an XML-like value.  
+    If (requestValidationSource = _  
+            (RequestValidationSource.QueryString) AndAlso _  
+            (collectionKey = "data") Then  
+        ' The querystring value "<example>1234</example>" is allowed.  
+        If value = "<example>1234</example>" Then  
+            validationFailureIndex = -1  
+            Return True  
+        Else  
+            ' Leave any further checks to ASP.NET.  
+            Return MyBase.IsValidRequestString(context, value, _  
+                requestValidationSource__1, collectionKey, _  
+                validationFailureIndex)  
+        End If  
+    Else  
+        ' All other HTTP input checks fall back to   
+        ' the base ASP.NET implementation.  
+        Return MyBase.IsValidRequestString(context, value, _  
+            requestValidationSource__1, collectionKey, _  
+            validationFailureIndex)  
+    End If  
+End Function  
+End Class  
+```  
+  
+ [C#]  
+  
+```  
+using System;  
+using System.Web;  
+using System.Web.Util;  
+  
+public class CustomRequestValidation : RequestValidator  
+{  
+    public CustomRequestValidation() {}  
+  
+    protected override bool IsValidRequestString(  
+        HttpContext context, string value,   
+        RequestValidationSource requestValidationSource, string collectionKey,   
+        out int validationFailureIndex)  
+    {  
+        //Set a default value for the out parameter.  
+        validationFailureIndex = -1;  
+  
+        // This application does not use RawUrl directly,   
+        // so you can ignore the check for RequestValidationSource.RawUrl.  
+        if (requestValidationSource == RequestValidationSource.RawUrl)  
+            return true;  
+  
+        // Allow the query-string key "data" to have an XML-like value.  
+        if (  
+            (requestValidationSource == RequestValidationSource.QueryString) &&  
+            (collectionKey == "data")  
+           )  
+        {  
+            // The querystring value "<example>1234</example>" is allowed.  
+            if (value == "<example>1234</example>")  
+            {  
+                validationFailureIndex = -1;  
+                return true;  
+            }  
+            else  
+           // Leave any further checks to ASP.NET.  
+                return base.IsValidRequestString(context, value,   
+                requestValidationSource, collectionKey, out   
+                validationFailureIndex);  
+        }  
+        // All other HTTP input checks fall back to   
+        // the base ASP.NET implementation.  
+        else  
+        {  
+            return base.IsValidRequestString(context, value,   
+                requestValidationSource, collectionKey,   
+                out validationFailureIndex);  
+        }  
+    }  
+}  
+```  
+  
+ The following example shows how to configure ASP.NET to use the custom validator.  
+  
+```  
+<httpRuntime requestValidationType="CustomRequestValidation" />  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cookies">
+      <MemberSignature Language="C#" Value="Cookies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource Cookies = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.Cookies" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request cookies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the cookie in the collection.  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="Files" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource Files = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.Files" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The uploaded file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the uploaded file in the collection.  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the uploaded file in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Form">
+      <MemberSignature Language="C#" Value="Form" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource Form = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.Form" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The form values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the form parameter in the collection.  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the form parameter in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="Headers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource Headers = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.Headers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request headers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of an HTTP header in the collection.  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the HTTP header in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="Path" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource Path = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.Path" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The virtual path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null` (`Path` is not a collection of values).  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the Path field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathInfo">
+      <MemberSignature Language="C#" Value="PathInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource PathInfo = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.PathInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An HTTP <see cref="P:System.Web.HttpRequest.PathInfo" /> string, which is an extension to a URL path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null` (`PathInfo` is not a collection of values).  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the PathInfo field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="QueryString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource QueryString = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.QueryString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the query string parameter in the collection.  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the query-string parameter in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawUrl">
+      <MemberSignature Language="C#" Value="RawUrl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Util.RequestValidationSource RawUrl = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Util.RequestValidationSource.RawUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The raw URL. (The part of a URL after the domain.)</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null`. (`RawUrl` is not a collection of values.)  
+  
+ The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the RawUrl field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

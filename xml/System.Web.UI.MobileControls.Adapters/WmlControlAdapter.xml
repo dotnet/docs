@@ -1,0 +1,508 @@
+<Type Name="WmlControlAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlControlAdapter">
+  <TypeSignature Language="C#" Value="public class WmlControlAdapter : System.Web.UI.MobileControls.Adapters.ControlAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlControlAdapter extends System.Web.UI.MobileControls.Adapters.ControlAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.Adapters.ControlAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the control adapter base class for the Wireless Markup Language (WML) device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WmlControlAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeterminePostBack">
+      <MemberSignature Language="C#" Value="protected string DeterminePostBack (string target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string DeterminePostBack(string target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.DeterminePostBack(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Determines whether the given target requires a postback and returns the required postback argument. Returns <see langword="null" /> if the target is an external link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>The required postback argument for the specified target.  If no postback argument is required, this method returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitSecondaryUIMode">
+      <MemberSignature Language="C#" Value="protected void ExitSecondaryUIMode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExitSecondaryUIMode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.ExitSecondaryUIMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exits any secondary user interface (UI) mode for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is equivalent to setting the <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SecondaryUIMode%2A> property to <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.NotSecondaryUI>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormAdapter">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Adapters.WmlFormAdapter FormAdapter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlFormAdapter FormAdapter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.FormAdapter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.WmlFormAdapter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the form adapter for the form on which the associated control resides. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The form adapter for the form on which the associated control resides.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackValue">
+      <MemberSignature Language="C#" Value="protected virtual string GetPostBackValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetPostBackValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.GetPostBackValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the postback value (or empty string) of the selected item in the selection list, when the parent form's action attribute is set and view state is disabled for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>The postback value (or empty string) of the selected item in the selection list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is overridden in child classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAdapterState">
+      <MemberSignature Language="C#" Value="public override void LoadAdapterState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadAdapterState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.LoadAdapterState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">The current view state.</param>
+        <summary>Loads the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSecondaryUI">
+      <MemberSignature Language="C#" Value="protected static readonly int NotSecondaryUI;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly int32 NotSecondaryUI" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.NotSecondaryUI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a constant that defines a mode where no secondary user interface (UI) is displayed. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageAdapter">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Adapters.WmlPageAdapter PageAdapter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlPageAdapter PageAdapter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.PageAdapter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.WmlPageAdapter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the page adapter for the mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The page adapter for the mobile page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer to receive output.</param>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public virtual void Render (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Render(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer to receive output.</param>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class, this method renders all the children of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginLink">
+      <MemberSignature Language="C#" Value="protected void RenderBeginLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderBeginLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="targetUrl" Type="System.String" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="implicitSoftkeyLabel" Type="System.Boolean" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer.</param>
+        <param name="targetUrl">The specified target (form or URL).</param>
+        <param name="softkeyLabel">Text used for the softkey.</param>
+        <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" />, rather than a softkey label explicitly specified by the application author.</param>
+        <param name="mapToSoftkey">Determines whether a softkey label is used for the link. If <see langword="true" />, the <c>softkeyLabel</c> text is used.</param>
+        <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method automatically checks for the type of link and renders the appropriate markup language. The specified target can refer to another URL or to a form on the same page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndLink">
+      <MemberSignature Language="C#" Value="protected void RenderEndLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderEndLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="targetUrl" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer.</param>
+        <param name="targetUrl">Specified target URL.</param>
+        <param name="breakAfter">Set to <see langword="true" /> if a break is required after the link.</param>
+        <summary>Renders the end tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified target can refer to another URL or to a form on the same page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderLink">
+      <MemberSignature Language="C#" Value="protected void RenderLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey, string text, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey, string text, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="targetUrl" Type="System.String" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="implicitSoftkeyLabel" Type="System.Boolean" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The specified text writer.</param>
+        <param name="targetUrl">The URL target.</param>
+        <param name="softkeyLabel">The softkey text to use for the link.</param>
+        <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
+        <param name="mapToSoftkey">Set to <see langword="true" /> if the softkey label comes from the device adapter itself (the default label, or something else that is adapter specified, such as "Call" for a PhoneCall control), rather than a softkey label explicitly specified by the application author.</param>
+        <param name="text">The text defining the link.</param>
+        <param name="breakAfter">Set to <see langword="true" /> if the <c>BreakAfter</c> property is required to be set.</param>
+        <summary>Renders an entire link, with the specified text inside. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderPostBackEvent">
+      <MemberSignature Language="C#" Value="protected void RenderPostBackEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderPostBackEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The specified text writer.</param>
+        <param name="argument">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
+        <param name="softkeyLabel">The softkey text.</param>
+        <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
+        <param name="text">Text defining the link.</param>
+        <param name="breakAfter">Set to <see langword="true" /> if a break element is added after the text field.</param>
+        <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderPostBackEvent">
+      <MemberSignature Language="C#" Value="protected void RenderPostBackEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderPostBackEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.String,System.Boolean,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The specified text writer.</param>
+        <param name="argument">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
+        <param name="softkeyLabel">The softkey text.</param>
+        <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
+        <param name="text">Text defining the link.</param>
+        <param name="breakAfter">Set to <see langword="true" /> if a break element is added after the text field.</param>
+        <param name="postBackType">Specifies how the postfield is written.</param>
+        <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload sets the default value for the postback type to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>. If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed. The following table shows the postback types used for the `postBackType` argument.  
+  
+|Type|Description|  
+|----------|-----------------|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an encoded argument.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains the control used to submit the form, typically an _EVENTTARGET and a command.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and a variable reference.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an argument.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSubmitEvent">
+      <MemberSignature Language="C#" Value="protected void RenderSubmitEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string softkeyLabel, string text, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderSubmitEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string softkeyLabel, string text, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderSubmitEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">Specifies the output stream.</param>
+        <param name="softkeyLabel">Contains the text label for the softkey.</param>
+        <param name="text">Text defining the link.</param>
+        <param name="breakAfter">Contains <see langword="true" /> if a break element is to be added after the control.</param>
+        <summary>Renders a form submission event appropriate for the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAdapterState">
+      <MemberSignature Language="C#" Value="public override object SaveAdapterState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object SaveAdapterState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SaveAdapterState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is called when the control saves its private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="Null" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondaryUIMode">
+      <MemberSignature Language="C#" Value="protected int SecondaryUIMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SecondaryUIMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SecondaryUIMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets or returns the secondary user interface (UI) mode for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The secondary UI mode for the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,109 @@
+<Type Name="CompiledBindableTemplateBuilder" FullName="System.Web.UI.CompiledBindableTemplateBuilder">
+  <TypeSignature Language="C#" Value="public sealed class CompiledBindableTemplateBuilder : System.Web.UI.IBindableTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompiledBindableTemplateBuilder extends System.Object implements class System.Web.UI.IBindableTemplate, class System.Web.UI.ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CompiledBindableTemplateBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IBindableTemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the default implementation of an <see cref="T:System.Web.UI.IBindableTemplate" /> object, which ASP.NET uses whenever it parses two-way data-binding within the templated content of an ASP.NET control such as <see cref="T:System.Web.UI.WebControls.FormView" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET uses the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class whenever it parses declarative two-way data-binding within the templated content of an ASP.NET control such as <xref:System.Web.UI.WebControls.FormView>. It is not meant to be used directly in your code.  
+  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompiledBindableTemplateBuilder (System.Web.UI.BuildTemplateMethod buildTemplateMethod, System.Web.UI.ExtractTemplateValuesMethod extractTemplateValuesMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.BuildTemplateMethod buildTemplateMethod, class System.Web.UI.ExtractTemplateValuesMethod extractTemplateValuesMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.#ctor(System.Web.UI.BuildTemplateMethod,System.Web.UI.ExtractTemplateValuesMethod)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buildTemplateMethod" Type="System.Web.UI.BuildTemplateMethod" />
+        <Parameter Name="extractTemplateValuesMethod" Type="System.Web.UI.ExtractTemplateValuesMethod" />
+      </Parameters>
+      <Docs>
+        <param name="buildTemplateMethod">A delegate used to handle the <see cref="M:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn(System.Web.UI.Control)" /> method call.</param>
+        <param name="extractTemplateValuesMethod">A delegate used to handle the <see cref="M:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues(System.Web.UI.Control)" /> method call.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.CompiledBindableTemplateBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary ExtractValues (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.IOrderedDictionary ExtractValues(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> from which to extract name/value pairs, which are passed by the data-bound control to an associated data source control in two-way data-binding scenarios.</param>
+        <summary>Retrieves a set of name/value pairs for values bound using two-way ASP.NET data-binding syntax within the templated content.</summary>
+        <returns>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of name/value pairs. The name represents the name of the data item field specified as the first parameter to bind within templated content. The value is the current value of a property value bound using two-way ASP.NET data-binding syntax.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstantiateIn">
+      <MemberSignature Language="C#" Value="public void InstantiateIn (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstantiateIn(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> to contain the controls that are created from the inline template.</param>
+        <summary>Defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to. These child controls are in turn defined within an inline template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

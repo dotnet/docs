@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "From statement"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

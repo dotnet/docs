@@ -1,0 +1,73 @@
+<Type Name="TriState" FullName="Microsoft.VisualBasic.TriState">
+  <TypeSignature Language="C#" Value="public enum TriState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TriState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TriState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates a Boolean value or whether the default should be used when calling number-formatting functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState False = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>False. The numeric value of this member is 0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState True = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>True. The numeric value of this member is -1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefault">
+      <MemberSignature Language="C#" Value="UseDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState UseDefault = int32(-2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.UseDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default setting. The numeric value of this member is -2.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

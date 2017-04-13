@@ -1,0 +1,277 @@
+<Type Name="SolidColorBrush" FullName="System.Windows.Media.SolidColorBrush">
+  <TypeSignature Language="C#" Value="public sealed class SolidColorBrush : System.Windows.Media.Brush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SolidColorBrush extends System.Windows.Media.Brush" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.SolidColorBrush" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Brush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Paints an area with a solid color.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For convenience, the <xref:System.Windows.Media.Brushes> class provides a set of commonly used <xref:System.Windows.Media.SolidColorBrush> objects, such as <xref:System.Windows.Media.Brushes.Blue%2A> and <xref:System.Windows.Media.Brushes.Yellow%2A>.  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.SolidColorBrush> class provides several special features: <xref:System.Windows.Media.SolidColorBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+<a name="xamlAttributeUsage_SolidColorBrush"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="predefinedBrushName"/>  
+- or -  
+<object property="#rgb"/>  
+- or -  
+<object property="#argb"/>  
+- or -  
+<object property="#rrggbb"/>  
+- or -  
+<object property="#aarrggbb"/>  
+- or -  
+<object property="sc#scA,scR,scG,scB"/>  
+- or -  
+<object property="ContextColor profileUri alphaValue,colorValue"/>  
+```  
+  
+<a name="xamlValues_SolidColorBrush"></a>   
+## XAML Values  
+ *predefinedBrushName*  
+ The name of a brush defined by the <xref:System.Windows.Media.Brushes> class, such as <xref:System.Windows.Media.Brushes.Blue%2A> or <xref:System.Windows.Media.Brushes.Orange%2A>.  
+  
+ *rgb*  
+ A three-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.R%2A> value, the second digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the third digit specifies the <xref:System.Windows.Media.Color.B%2A> value. For example, `00F`.  
+  
+ *argb*  
+ A four-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.A%2A> value, the second digit specifies its <xref:System.Windows.Media.Color.R%2A> value, the next digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the final digit specifies its <xref:System.Windows.Media.Color.B%2A> value. For example, `F00F`.  
+  
+ *rrggbb*  
+ A six-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `0000FF`.  
+  
+ *aarrggbb*  
+ An eight-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.A%2A> value, the next two specify its <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `FF0000FF`.  
+  
+ *scA*  
+ <xref:System.Single>  
+  
+ The <xref:System.Windows.Media.Color.ScA%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+  
+ *scR*  
+ <xref:System.Single>  
+  
+ The <xref:System.Windows.Media.Color.ScR%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+  
+ *scG*  
+ <xref:System.Single>  
+  
+ The <xref:System.Windows.Media.Color.ScG%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+  
+ *scB*  
+ <xref:System.Single>  
+  
+ The <xref:System.Windows.Media.Color.ScB%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+  
+ *profileUri*  
+ <xref:System.Uri?displayProperty=fullName>  
+  
+ The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
+  
+ *alphaValue*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The alpha channel color value. The value range is from 0.0 through 1.0.  
+  
+ *colorValue*  
+ A comma-delimited list of three to eight values that represent the color channels of the color profile. The value range is from 0.0 through 1.0.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SolidColorBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SolidColorBrush" /> class with no color or animations.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SolidColorBrush (System.Windows.Media.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color color) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.#ctor(System.Windows.Media.Color)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="color" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color">The color to apply to the fill.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SolidColorBrush" /> class with the specified <see cref="T:System.Windows.Media.Color" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.SolidColorBrush Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.SolidColorBrush Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.SolidColorBrush" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.SolidColorBrush CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.SolidColorBrush CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.SolidColorBrush" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Color Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Color Color" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.SolidColorBrush.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of this <see cref="T:System.Windows.Media.SolidColorBrush" />.</summary>
+        <value>The brush's color. The default value is <see cref="P:System.Windows.Media.Colors.Transparent" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of predefined colors, see the <xref:System.Windows.Media.Colors> class. For a list of system colors, see the <xref:System.Windows.SystemColors> class.  
+  
+<a name="dependencyPropertyInfo_Color"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.SolidColorBrush.ColorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.SolidColorBrush.ColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeFrom">
+      <MemberSignature Language="C#" Value="public static object DeserializeFrom (System.IO.BinaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object DeserializeFrom(class System.IO.BinaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.SolidColorBrush.DeserializeFrom(System.IO.BinaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.IO.BinaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The binary reader to read the <see cref="T:System.Windows.Media.SolidColorBrush" /> from.</param>
+        <summary>This member supports the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>The deserialized <see cref="T:System.Windows.Media.SolidColorBrush" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

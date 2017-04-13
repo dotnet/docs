@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "RemoveHandler statement"
 ms.assetid: 647cd825-e877-4910-b4f1-8d168beebe6a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

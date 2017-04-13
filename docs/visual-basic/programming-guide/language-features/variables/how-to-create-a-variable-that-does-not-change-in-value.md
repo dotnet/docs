@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], constant value"
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

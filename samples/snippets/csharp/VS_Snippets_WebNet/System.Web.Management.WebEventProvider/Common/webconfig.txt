@@ -1,0 +1,40 @@
+<healthMonitoring 
+  heartBeatInterval="0" 
+  enabled="true">
+
+    <providers>
+
+      <add name="SampleWebEventProvider" 
+        type="SamplesAspNet.SampleEventProvider,webeventprovider, Version=1.0.1773.33989, Culture=neutral, PublicKeyToken=cf85aa6c978d9dea, processorArchitecture=MSIL" />
+            
+  
+    </providers>
+
+    <profiles>
+
+      <add name="Custom" 
+           minInstances="1" 
+           maxLimit="Infinite" 
+           minInterval="00:00:00" />
+    
+     </profiles>
+
+     <eventMappings>
+
+       <add name="SampleWebRequestEvent" type="SamplesAspNet.SampleWebRequestEvent,webrequestevent, Version=1.0.1760.27022, Culture=neutral, PublicKeyToken=0d72899b07049076, processorArchitecture=MSIL" />
+
+
+     </eventMappings>
+
+     <rules>
+       <clear />
+
+
+        <add name="Custom Event Provider" 
+             eventName="SampleWebRequestEvent"
+             provider="SampleWebEventProvider" 
+             profile="Custom" />
+                        
+     </rules>
+
+</healthMonitoring>

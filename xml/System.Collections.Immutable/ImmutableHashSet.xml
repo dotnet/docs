@@ -1,0 +1,358 @@
+<Type Name="ImmutableHashSet" FullName="System.Collections.Immutable.ImmutableHashSet">
+  <TypeSignature Language="C#" Value="public static class ImmutableHashSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImmutableHashSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableHashSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="equalityComparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(!!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (T[] items);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(!!T[] items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="items" Type="T[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer, !!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="equalityComparer">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer, T[] items);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer, !!T[] items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="items" Type="T[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="equalityComparer">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBuilder&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt;.Builder CreateBuilder&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1/Builder&lt;!!T&gt; CreateBuilder&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateBuilder``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;+Builder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBuilder&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt;.Builder CreateBuilder&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1/Builder&lt;!!T&gt; CreateBuilder&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateBuilder``1(System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;+Builder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="equalityComparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRange&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; CreateRange&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; CreateRange&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRange&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; CreateRange&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer, System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; CreateRange&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateRange``1(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="equalityComparer">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToImmutableHashSet&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;TSource&gt; ToImmutableHashSet&lt;TSource&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!TSource&gt; ToImmutableHashSet&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToImmutableHashSet&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;TSource&gt; ToImmutableHashSet&lt;TSource&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Collections.Generic.IEqualityComparer&lt;TSource&gt; equalityComparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!TSource&gt; ToImmutableHashSet&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Collections.Generic.IEqualityComparer`1&lt;!!TSource&gt; equalityComparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableHashSet&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="equalityComparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

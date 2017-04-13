@@ -1,0 +1,109 @@
+<Type Name="LoginCancelEventArgs" FullName="System.Web.UI.WebControls.LoginCancelEventArgs">
+  <TypeSignature Language="C#" Value="public class LoginCancelEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginCancelEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for a cancelable event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cancelable event is raised when a component is about to perform an action that can be canceled, such as logging on to a Web site.  
+  
+ The <xref:System.Web.UI.WebControls.LoginCancelEventArgs> class provides the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to indicate whether the event should be canceled. A <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object is used with controls that have cancelable actions, such as the <xref:System.Web.UI.WebControls.Login> control, the <xref:System.Web.UI.WebControls.CreateUserWizard> control, and the <xref:System.Web.UI.WebControls.PasswordRecovery> control.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the logon attempt by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object to `true`.Then the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property is displayed.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  
+  
+ The following is the .aspx file that can be used to run the preceding example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoginCancelEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginCancelEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> class with the <see cref="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" /> property set to <see langword="false" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoginCancelEventArgs (bool cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginCancelEventArgs.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cancel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cancel">
+          <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> class with the <see cref="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" /> property set to the specified value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the event should be canceled.</summary>
+        <value>
+          <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to indicate whether an event, such as the <xref:System.Web.UI.WebControls.Login.LoggingIn> event, the <xref:System.Web.UI.WebControls.LoginStatus.LoggingOut> event, or the <xref:System.Web.UI.WebControls.ChangePassword.ChangingPassword> event, should be canceled.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler sets the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`, and an error message is displayed. For an .aspx file that can be used to run the example, see the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> topic.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

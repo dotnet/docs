@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "reports, printing in Visual Studio"
 ms.assetid: 93928405-ef41-495e-bce2-9d43d5a7080a
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

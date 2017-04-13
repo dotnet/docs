@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "procedures, multiple versions"
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

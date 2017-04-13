@@ -1,0 +1,197 @@
+<Type Name="PathSegment" FullName="System.Windows.Media.PathSegment">
+  <TypeSignature Language="C#" Value="public abstract class PathSegment : System.Windows.Media.Animation.Animatable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract PathSegment extends System.Windows.Media.Animation.Animatable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathSegment" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.Animatable</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a segment of a <see cref="T:System.Windows.Media.PathFigure" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from <xref:System.Windows.Media.PathSegment>, such as <xref:System.Windows.Media.ArcSegment>, <xref:System.Windows.Media.BezierSegment>, and <xref:System.Windows.Media.LineSegment>, represent specific types of geometric segments.  
+  
+ **Freezable Features:** Because <xref:System.Windows.Media.PathSegment> objects inherit from the <xref:System.Windows.Freezable> class, they provide several special features: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Although this class is abstract, it is not publicly extensible.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.PathSegment Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathSegment Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathSegment.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PathSegment</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.PathSegment" /> by making deep copies of its values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.PathSegment CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathSegment CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathSegment.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PathSegment</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.PathSegment" /> object by making deep copies of its values. This method does not copy resource references, data bindings, and animations, although it does copy their current values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSmoothJoin">
+      <MemberSignature Language="C#" Value="public bool IsSmoothJoin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSmoothJoin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathSegment.IsSmoothJoin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the join between this <see cref="T:System.Windows.Media.PathSegment" /> and the previous <see cref="T:System.Windows.Media.PathSegment" /> is treated as a corner when it is stroked with a <see cref="T:System.Windows.Media.Pen" />.</summary>
+        <value>
+          <see langword="true" /> if the join between this <see cref="T:System.Windows.Media.PathSegment" /> and the previous <see cref="T:System.Windows.Media.PathSegment" /> is not to be treated as a corner; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSmoothJoin"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.PathSegment>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSmoothJoinProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSmoothJoinProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSmoothJoinProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathSegment.IsSmoothJoinProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.PathSegment.IsSmoothJoin" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStroked">
+      <MemberSignature Language="C#" Value="public bool IsStroked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStroked" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathSegment.IsStroked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the segment is stroked.</summary>
+        <value>
+          <see langword="true" /> if the segment is stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, the segment is not stroked. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.Media.PathSegment> object has this property set to `true`, that object contributes to the stroked area of the <xref:System.Windows.Media.PathFigure> when rendered by a <xref:System.Windows.Media.Pen>. If this property is `true`, the extra area added by a Pen affects hit testing and explicit operations to widen the <xref:System.Windows.Media.PathGeometry>.  
+  
+ When you switch between stroked and non-stroked <xref:System.Windows.Media.PathSegment> sections in a <xref:System.Windows.Media.PathFigure>, it is considered the same as the dashes of a <xref:System.Windows.Media.Pen>. The <xref:System.Windows.Media.Pen.DashCap%2A> property of the <xref:System.Windows.Media.Pen> object determines the shape of the ends of stroked <xref:System.Windows.Media.PathSegment> objects.  
+  
+<a name="dependencyPropertyInfo_IsStroked"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.PathSegment.IsStrokedProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStrokedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsStrokedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsStrokedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathSegment.IsStrokedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.PathSegment.IsStroked" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

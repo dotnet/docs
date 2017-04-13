@@ -1,0 +1,381 @@
+<Type Name="DataGridAutomationPeer" FullName="System.Windows.Automation.Peers.DataGridAutomationPeer">
+  <TypeSignature Language="C#" Value="public sealed class DataGridAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer, System.Windows.Automation.Provider.ISelectionProvider, System.Windows.Automation.Provider.ITableProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataGridAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer implements class System.Windows.Automation.Provider.IGridProvider, class System.Windows.Automation.Provider.ISelectionProvider, class System.Windows.Automation.Provider.ITableProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ItemsControlAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.ISelectionProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.ITableProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.DataGrid" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridAutomationPeer (System.Windows.Controls.DataGrid owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGrid owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.#ctor(System.Windows.Controls.DataGrid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.DataGrid" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.DataGridAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItemAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.ItemAutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetChildrenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Grid" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Selection" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Table" />, this method returns a <see langword="this" /> pointer; otherwise, this method returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridProvider.ColumnCount">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridProvider.ColumnCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of columns in a grid.</summary>
+        <value>The total number of columns in a grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridProvider.GetItem">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple IGridProvider.GetItem (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IGridProvider.GetItem(int32 row, int32 column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The ordinal number of the row of interest.</param>
+        <param name="column">The ordinal number of the column of interest.</param>
+        <summary>Retrieves the UI Automation provider for the specified cell.</summary>
+        <returns>The UI Automation provider for the specified cell.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridProvider.RowCount">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridProvider.RowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.RowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of rows in a grid.</summary>
+        <value>The total number of rows in a grid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple">
+      <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the [UI Automation provider](GTMT) allows more than one child element to be selected concurrently.</summary>
+        <value>
+          <see langword="true" /> if multiple selection is allowed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.GetSelection">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ISelectionProvider.GetSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ISelectionProvider.GetSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a UI Automation provider for each child element that is selected.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired">
+      <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the [UI Automation provider](GTMT) requires at least one child element to be selected.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ITableProvider.GetColumnHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetColumnHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of UI Automation providers that represents all the column headers in a table.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ITableProvider.GetRowHeaders">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ITableProvider.GetRowHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ITableProvider.GetRowHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetRowHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of UI Automation providers that represents all row headers in the table.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the primary direction of traversal for the table.</summary>
+        <value>The primary direction of traversal.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

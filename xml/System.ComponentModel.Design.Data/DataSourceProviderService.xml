@@ -1,0 +1,203 @@
+<Type Name="DataSourceProviderService" FullName="System.ComponentModel.Design.Data.DataSourceProviderService">
+  <TypeSignature Language="C#" Value="public abstract class DataSourceProviderService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceProviderService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceProviderService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("ABE5C1F0-C96E-40c4-A22D-4A5CEC899BDC")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements the basic functionality required of a service for providing access to a data source at the <see langword="EnvDTE.Project" /> level.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DataSourceProviderService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DataSourceProviderService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDataSourceInstance">
+      <MemberSignature Language="C#" Value="public abstract object AddDataSourceInstance (System.ComponentModel.Design.IDesignerHost host, System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDataSourceInstance(class System.ComponentModel.Design.IDesignerHost host, class System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance(System.ComponentModel.Design.IDesignerHost,System.ComponentModel.Design.Data.DataSourceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="dataSourceDescriptor" Type="System.ComponentModel.Design.Data.DataSourceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="host">The designer host.</param>
+        <param name="dataSourceDescriptor">The data source.</param>
+        <summary>When overridden in a derived class, creates and returns an instance of the given data source, and adds it to the design surface.</summary>
+        <returns>An <see cref="T:System.Object" /> representing an instance of the added data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should only call the <xref:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance%2A> method on data sources that are designable for example, if the<xref:System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable%2A> value is `true`.  
+  
+ This method enables the service implementer to perform custom actions when a data source is added to the design surface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The type name cannot be created or resolved.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSources">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Data.DataSourceGroupCollection GetDataSources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Data.DataSourceGroupCollection GetDataSources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.GetDataSources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DataSourceGroupCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, retrieves the collection of data sources at the <see langword="EnvDTE.Project" /> level.</summary>
+        <returns>A <see cref="T:System.ComponentModel.Design.Data.DataSourceGroupCollection" />, or <see langword="null" /> if there are no data sources at the <see langword="EnvDTE.Project" /> level.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAddNewDataSource">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Data.DataSourceGroup InvokeAddNewDataSource (System.Windows.Forms.IWin32Window parentWindow, System.Windows.Forms.FormStartPosition startPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Data.DataSourceGroup InvokeAddNewDataSource(class System.Windows.Forms.IWin32Window parentWindow, valuetype System.Windows.Forms.FormStartPosition startPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DataSourceGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="startPosition" Type="System.Windows.Forms.FormStartPosition" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">The parent window.</param>
+        <param name="startPosition">The initial position of a form.</param>
+        <summary>When overridden in a derived class, invokes the **Add New Data Source Wizard**.</summary>
+        <returns>A <see cref="T:System.ComponentModel.Design.Data.DataSourceGroup" /> collection of newly added data sources, or <see langword="null" /> if no data sources are added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeConfigureDataSource">
+      <MemberSignature Language="C#" Value="public abstract bool InvokeConfigureDataSource (System.Windows.Forms.IWin32Window parentWindow, System.Windows.Forms.FormStartPosition startPosition, System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool InvokeConfigureDataSource(class System.Windows.Forms.IWin32Window parentWindow, valuetype System.Windows.Forms.FormStartPosition startPosition, class System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="startPosition" Type="System.Windows.Forms.FormStartPosition" />
+        <Parameter Name="dataSourceDescriptor" Type="System.ComponentModel.Design.Data.DataSourceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">The parent window.</param>
+        <param name="startPosition">The initial position of a form.</param>
+        <param name="dataSourceDescriptor">The data source.</param>
+        <summary>When overridden in a derived class, invokes the **Configure Data Source** dialog box on the specified data source.</summary>
+        <returns>
+          <see langword="true" /> if any changes were made to that data source; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified data source is invalid or <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyDataSourceComponentAdded">
+      <MemberSignature Language="C#" Value="public abstract void NotifyDataSourceComponentAdded (object dsc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyDataSourceComponentAdded(object dsc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.NotifyDataSourceComponentAdded(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dsc" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dsc">The data source component.</param>
+        <summary>When overridden in a derived class, notifies the service that a component representing a data source was added to the design surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsAddNewDataSource">
+      <MemberSignature Language="C#" Value="public abstract bool SupportsAddNewDataSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAddNewDataSource" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceProviderService.SupportsAddNewDataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the value indicating whether the service supports adding a new data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />.</summary>
+        <value>
+          <see langword="true" /> if the service supports adding a new data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsConfigureDataSource">
+      <MemberSignature Language="C#" Value="public abstract bool SupportsConfigureDataSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsConfigureDataSource" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceProviderService.SupportsConfigureDataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the value indicating whether the service supports configuring data sources using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />.</summary>
+        <value>
+          <see langword="true" /> if the service supports configuring a data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

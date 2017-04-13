@@ -1,0 +1,300 @@
+<Type Name="InvocationExpression" FullName="System.Linq.Expressions.InvocationExpression">
+  <TypeSignature Language="C#" Value="public sealed class InvocationExpression : System.Linq.Expressions.Expression, System.Linq.Expressions.IArgumentProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvocationExpression extends System.Linq.Expressions.Expression implements class System.Linq.Expressions.IArgumentProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.InvocationExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Linq.Expressions.Expression</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Linq.Expressions.IArgumentProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Linq.Expressions.Expression/InvocationExpressionProxy))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an expression that applies a delegate or lambda expression to a list of argument expressions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Linq.Expressions.Expression.Invoke%2A> factory methods to create an <xref:System.Linq.Expressions.InvocationExpression>.  
+  
+ The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an <xref:System.Linq.Expressions.InvocationExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Linq.Expressions.InvocationExpression> that represents invoking a lambda expression with specified arguments.  
+  
+ [!code-csharp[System.Linq.Expressions.Expression#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#6)]
+ [!code-vb[System.Linq.Expressions.Expression#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="protected override System.Linq.Expressions.Expression Accept (System.Linq.Expressions.ExpressionVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Linq.Expressions.Expression Accept(class System.Linq.Expressions.ExpressionVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.InvocationExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="System.Linq.Expressions.ExpressionVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; Arguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.Expression&gt; Arguments" />
+      <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the arguments that the delegate or lambda expression is applied to.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Linq.Expressions.Expression" /> objects which represent the arguments that the delegate is applied to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression Expression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the delegate or lambda expression to be applied.</summary>
+        <value>An <see cref="T:System.Linq.Expressions.Expression" /> that represents the delegate to be applied.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public override sealed System.Linq.Expressions.ExpressionType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Linq.Expressions.ExpressionType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the node type of this expression. Extension nodes should return <see cref="F:System.Linq.Expressions.ExpressionType.Extension" /> when overriding this method.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> of the expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Linq.Expressions.IArgumentProvider.ArgumentCount">
+      <MemberSignature Language="C#" Value="int System.Linq.Expressions.IArgumentProvider.ArgumentCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
+      <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the number of arguments to the expression tree node.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <value>The number of arguments to the expression tree node as <see cref="T:System.Int32" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Linq.Expressions.IArgumentProvider.GetArgument">
+      <MemberSignature Language="C#" Value="System.Linq.Expressions.Expression IArgumentProvider.GetArgument (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.Expressions.Expression System.Linq.Expressions.IArgumentProvider.GetArgument(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.InvocationExpression.System#Linq#Expressions#IArgumentProvider#GetArgument(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the argument.</param>
+        <summary>Returns the argument at index, throwing if index is out of bounds.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <returns>The argument at index, throwing if index is out of bounds, as <see cref="T:System.Linq.Expressions.Expression" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override sealed Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the static type of the expression that this <see cref="P:System.Linq.Expressions.InvocationExpression.Expression" /> represents.</summary>
+        <value>The <see cref="P:System.Linq.Expressions.InvocationExpression.Type" /> that represents the static type of the expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public System.Linq.Expressions.InvocationExpression Update (System.Linq.Expressions.Expression expression, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.InvocationExpression Update(class System.Linq.Expressions.Expression expression, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.InvocationExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.InvocationExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="P:System.Linq.Expressions.InvocationExpression.Expression" /> property of the result.</param>
+        <param name="arguments">The <see cref="P:System.Linq.Expressions.InvocationExpression.Arguments" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

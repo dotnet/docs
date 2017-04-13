@@ -1,0 +1,177 @@
+<Type Name="AccessDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.AccessDataSourceDesigner">
+  <TypeSignature Language="C#" Value="public class AccessDataSourceDesigner : System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessDataSourceDesigner extends System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.AccessDataSourceDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.SqlDataSourceDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.AccessDataSource> control is parsed and a design-time version of the control, which is just a placeholder, is created on the design surface. When you switch back to Source view, the design-time control, which includes the values of the properties in the **Properties** grid, is persisted to the markup source code and edited into the markup for the Web page.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to extend the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class. The second demonstrates how to derive a copy of the <xref:System.Web.UI.WebControls.AccessDataSource> class and associate it with a designer.  
+  
+ The following code example demonstrates how to extend the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class. The code alters the placeholder that represents the control on the design surface and adds a property to the **Properties** grid.  
+  
+ [!code-csharp[WebNet.Design.WebControls.AccessDataSourceDesigner#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/CS/exampleaccessdatasource.cs#4)]
+ [!code-vb[WebNet.Design.WebControls.AccessDataSourceDesigner#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/VB/ExampleAccessDataSource.vb#4)]  
+  
+ The following code example demonstrates how to derive a copy of the <xref:System.Web.UI.WebControls.AccessDataSource> class and associate it with the designer that was defined in the preceding example.  
+  
+ [!code-csharp[WebNet.Design.WebControls.AccessDataSourceDesigner#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/CS/exampleaccessdatasource.cs#2)]
+ [!code-vb[WebNet.Design.WebControls.AccessDataSourceDesigner#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/VB/ExampleAccessDataSource.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessDataSourceDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class when it creates a placeholder for the associated <xref:System.Web.UI.WebControls.AccessDataSource> control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFile">
+      <MemberSignature Language="C#" Value="public string DataFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataFile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implements a designer property to shadow the <see cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" /> property of the associated control.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name and path of the data file associated with the <see cref="T:System.Web.UI.WebControls.AccessDataSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile%2A> property in the designer to the name and path of the .mdb file containing the Microsoft Access database to use for the associated <xref:System.Web.UI.WebControls.AccessDataSource> control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile%2A> property to display the name and path of the Access data file that is associated with the <xref:System.Web.UI.WebControls.AccessDataSource> control in the control placeholder at design time.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class.  
+  
+ [!code-csharp[WebNet.Design.WebControls.AccessDataSourceDesigner#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/CS/exampleaccessdatasource.cs#5)]
+ [!code-vb[WebNet.Design.WebControls.AccessDataSourceDesigner#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/VB/ExampleAccessDataSource.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionString">
+      <MemberSignature Language="C#" Value="protected override string GetConnectionString ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetConnectionString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.GetConnectionString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the connection string that is valid at design time for the control that is associated with this designer.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the design-time connection string for the associated <see cref="T:System.Web.UI.WebControls.AccessDataSource" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.GetConnectionString%2A> method maps the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property of the control to the designer site, and then uses the <xref:System.Web.UI.WebControls.AccessDataSource.ConnectionString%2A> property of the control to generate the connection string.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.GetConnectionString%2A> method to display the connection string of the Microsoft Access database that is associated with the <xref:System.Web.UI.WebControls.AccessDataSource> control in the control placeholder at design time.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class.  
+  
+ [!code-csharp[WebNet.Design.WebControls.AccessDataSourceDesigner#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/CS/exampleaccessdatasource.cs#5)]
+ [!code-vb[WebNet.Design.WebControls.AccessDataSourceDesigner#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/VB/ExampleAccessDataSource.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection implementing the <see cref="T:System.Collections.IDictionary" /> of the added and shadowed properties.</param>
+        <summary>Used by the designer to add properties to, or remove them from, the **Properties** grid or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to, or remove them from, the **Properties** grid.  
+  
+ For the <xref:System.Web.UI.WebControls.AccessDataSource> control, the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties%2A> method creates the design-time <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile%2A> property to shadow the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property of the control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties%2A> method to make the <xref:System.Web.UI.WebControls.AccessDataSource.ConnectionString%2A> property read-only and visible in the **Properties** grid.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.AccessDataSourceDesigner> class.  
+  
+ [!code-csharp[WebNet.Design.WebControls.AccessDataSourceDesigner#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/CS/exampleaccessdatasource.cs#4)]
+ [!code-vb[WebNet.Design.WebControls.AccessDataSourceDesigner#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebNet.Design.WebControls.AccessDataSourceDesigner/VB/ExampleAccessDataSource.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to the design-time property collection or change their attributes. Be sure to call the base method before performing other processing.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

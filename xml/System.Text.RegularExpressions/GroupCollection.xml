@@ -1,0 +1,478 @@
+<Type Name="GroupCollection" FullName="System.Text.RegularExpressions.GroupCollection">
+  <TypeSignature Language="C#" Value="public class GroupCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GroupCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.GroupCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Returns the set of captured groups in a single match.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.RegularExpressions.GroupCollection> class is a zero-based collection class that consists of one or more <xref:System.Text.RegularExpressions.Group> objects that provide information about captured groups in a regular expression match. The collection is immutable (read-only) and has no public constructor. A <xref:System.Text.RegularExpressions.GroupCollection> object is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property.  
+  
+ The collection contains one or more <xref:System.Text.RegularExpressions.Group?displayProperty=fullName> objects. If the match is successful, the first element in the collection contains the <xref:System.Text.RegularExpressions.Group> object that corresponds to the entire match. Each subsequent element represents a captured group, if the regular expression includes capturing groups. Matches from numbered (unnamed) capturing groups appear in numeric order before matches from named capturing groups. If the match is unsuccessful, the collection contains a single <xref:System.Text.RegularExpressions.Group?displayProperty=fullName> object whose <xref:System.Text.RegularExpressions.Group.Success%2A> property is `false` and whose <xref:System.Text.RegularExpressions.Capture.Value%2A> property equals <xref:System.String.Empty?displayProperty=fullName>. For more information, see the "Grouping Constructs and Regular Expression Objects" section in the [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md) article.  
+  
+ To iterate through the members of the collection, you should use the collection iteration construct provided by your language (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) instead of retrieving the enumerator that is returned by the <xref:System.Text.RegularExpressions.GroupCollection.GetEnumerator%2A> method. In addition, you can access individual numbered captured groups from the [Item\<xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property (the indexer in C#), and you can access individual named captured groups from the [Item\<xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property. Note that you can retrieve an array that contains the numbers and names of all capturing groups by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=fullName> methods, respectively. Both are instance methods and require that you instantiate a <xref:System.Text.RegularExpressions.Regex> object that represents the regular expression to be matched.  
+  
+   
+  
+## Examples  
+ The following example uses a regular expression with capturing groups to extract information about trademarks and registered trademarks used in text. The regular expression pattern is `\b(\w+?)([\u00AE\u2122])`, which is interpreted as shown in the following table.  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`\b`|Look for a word boundary.|  
+|`(\w+?)`|Look for one or more word characters. Together, these form the trademarked name. (Note that this regular expression assumes that a trademark consists of a single word.) This is the first capturing group.|  
+|`([\u00AE\u2122])`|Look for either the ® or the ™ character. This is the second capturing group.|  
+  
+ For each match, the <xref:System.Text.RegularExpressions.GroupCollection> contains three <xref:System.Text.RegularExpressions.Group> objects. The first object contains the string that matches the entire regular expression. The second object, which represents the first captured group, contains the product name. The third object, which represents the second captured group, contains the trademark or registered trademark symbol.  
+  
+ [!code-csharp[System.Text.RegularExpressions.GroupCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.GroupCollection/cs/Example1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.GroupCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.GroupCollection/vb/Example1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.GroupCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array the collection is to be copied into.</param>
+        <param name="arrayIndex">The position in the destination array where the copying is to begin.</param>
+        <summary>Copies all the elements of the collection to the given array beginning at the given index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the entire collection is copied into the array starting at the given index, the destination array must be at least as large as the collection.  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=fullName> method instead.  
+  
+   
+  
+## Examples  
+ The following example extracts each word from a sentence and captures it in a capturing group, The <xref:System.Text.RegularExpressions.GroupCollection.CopyTo%2A> method is then used to copy the elements in each match's <xref:System.Text.RegularExpressions.GroupCollection> object to an array that contains the capturing groups from all matches. The individual captured words are then displayed to the console.  
+  
+ [!code-csharp[System.Text.RegularExpressions.GroupCollection.CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.copyto/cs/copyto1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.GroupCollection.CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.copyto/vb/copyto1.vb#1)]  
+  
+ The regular expression is defined as follows:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`\b`|Match a word boundary.|  
+|`(\S+?)`|Match one or more non-white space characters. Assign them to the first capturing group.|  
+|`\b`|Match a word boundary.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="arrayIndex" /> is outside the bounds of <paramref name="array" />.  
+  
+ -or-  
+  
+ <paramref name="arrayIndex" /> plus <see cref="P:System.Text.RegularExpressions.GroupCollection.Count" /> is outside the bounds of <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the number of groups in the collection.</summary>
+        <value>The number of groups in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.RegularExpressions.GroupCollection> object always has at least one member. If a match is unsuccessful, the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains a single member.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.GroupCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that contains all <see cref="T:System.Text.RegularExpressions.Group" /> objects in the <see cref="T:System.Text.RegularExpressions.GroupCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instead of calling the <xref:System.Text.RegularExpressions.GroupCollection.GetEnumerator%2A> method to retrieve an enumerator that lets you iterate through the <xref:System.Text.RegularExpressions.Group> objects in the collection, you should use the group iteration construct (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) that is provided by your programming language.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Text.RegularExpressions.GroupCollection" /> is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=fullName> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Text.RegularExpressions.Group this[int groupnum] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Group Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Group</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupnum" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groupnum">The zero-based index of the collection member to be retrieved.</param>
+        <summary>Enables access to a member of the collection by integer index.</summary>
+        <value>The member of the collection specified by <paramref name="groupnum" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property is the index (in C#) or the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.GroupCollection> class. It allows you to enumerate the members of the collection by using a `foreach` statement in C# or a `For Each` statement in Visual Basic.  
+  
+ You can also use this property to retrieve individual captured groups by their index number. You can retrieve an array that contains the numbers of all capturing groups in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> method. You can also map named capturing groups to their numbers by calling the instance <xref:System.Text.RegularExpressions.Regex.GroupNumberFromName%2A?displayProperty=fullName> method.  
+  
+ You can determine the number of items in the collection by retrieving the value of the <xref:System.Text.RegularExpressions.GroupCollection.Count%2A> property. Valid values for the `groupnum` parameter range from 0 to one less than the number of items in the collection.  
+  
+ The <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property always has at least one member. If the regular expression engine cannot find any matches in a particular input string, the single <xref:System.Text.RegularExpressions.Group> object in the collection has its <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property set to `false` and its `Group.Value` property set to <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ If `groupnum` is not the index of a member of the collection, or if `groupnum` is the index of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example defines a regular expression that consists of two numbered groups. The first group captures one or more consecutive digits. The second group matches a single character. Because the regular expression engine looks for zero or one occurrence of the first group, it does not always find a match even if the regular expression match is successful. The example then illustrates the result when the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property is used to retrieve an unmatched group, a matched group, and a group that is not defined in the regular expression. The example defines a regular expression pattern `(\d+)*(\w)\2`, which is interpreted as shown in the following table.  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`(\d+)*`|Match one or more occurrence of a decimal digit. This is the first capturing group. Match this pattern either zero or one time.|  
+|`(\w)`|This is the second capturing group.|  
+|`\k`|Match the string captured by the second capturing group.|  
+  
+ [!code-csharp[System.Text.RegularExpressions.GroupCollection.Item#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.item/cs/item3.cs#2)]
+ [!code-vb[System.Text.RegularExpressions.GroupCollection.Item#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.item/vb/item3.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Text.RegularExpressions.Group this[string groupname] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Group Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Group</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupname" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupname">The name of a capturing group.</param>
+        <summary>Enables access to a member of the collection by string index.</summary>
+        <value>The member of the collection specified by <paramref name="groupname" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `groupName` can be either the name of a capturing group that is defined by the `(?<`*name*`>)` element in a regular expression, or the string representation of the number of a capturing group that is defined by a grouping construct. For more information about groups in regular expressions, see [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+  
+ You can retrieve the names of all the captured groups in a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=fullName> method. You can also map the numbers of capturing groups in a regular expression to their names by calling the <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A?displayProperty=fullName> method. Individual names from the array can then be passed to the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property to retrieve the captured string.  
+  
+ If `groupname` is not the name of a capturing group in the collection, or if `groupname` is the name of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example defines a regular expression that consists of two named groups. The first group, `numbers`, captures one or more consecutive digits. The second group, `letter`, matches a single character. Because the regular expression engine looks for zero or one occurrence of the pattern defined by the `numbers` group, the `numbers` group is not always present even if a match is successful. The example then illustrates the result when the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property is used to retrieve an unmatched group, a matched group, and a group that is not defined in the regular expression. The example defines a regular expression pattern `(?<numbers>\d+)*(?<letter>\w)\k<letter>`, which is interpreted as shown in the following table.  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`(?<numbers>\d+)*`|Match one or more occurrence of a decimal digit. Name this the `numbers` capturing group. Match this pattern either zero or one time.|  
+|`(?<letter>\w)`|Match a single word character. Name this the `letter` capturing group.|  
+|`\k<letter>`|Match the string captured by the `letter` capturing group.|  
+  
+ [!code-csharp[System.Text.RegularExpressions.GroupCollection.Item#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.item/cs/item2.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.GroupCollection.Item#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.groupcollection.item/vb/item2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Text.RegularExpressions.GroupCollection" />.</summary>
+        <value>A copy of the <see cref="T:System.Text.RegularExpressions.Match" /> object to synchronize.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=fullName> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.GroupCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.GroupCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,865 @@
+<Type Name="InputMethod" FullName="System.Windows.Input.InputMethod">
+  <TypeSignature Language="C#" Value="public class InputMethod : System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputMethod extends System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethod" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides facilities for managing and interacting with the Text Services Framework, which provides support for alternate text input methods such as speech and handwriting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputMethod> object.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanShowConfigurationUI">
+      <MemberSignature Language="C#" Value="public bool CanShowConfigurationUI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanShowConfigurationUI" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not this input method can display configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
+        <value>**true** if configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.CanShowConfigurationUI%2A> property to determine if the configuration UI is viewable.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanShowRegisterWordUI">
+      <MemberSignature Language="C#" Value="public bool CanShowRegisterWordUI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanShowRegisterWordUI" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this input method can display word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
+        <value>**true** if word registration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.InputMethod Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.InputMethod Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to any currently active input method associated with the current context.</summary>
+        <value>A reference to an <see cref="T:System.Windows.Input.InputMethod" /> object associated with the current context, or **null** if there is no active input method.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInputScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.InputScope GetInputScope (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.InputScope GetInputScope(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetInputScope(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the input scope.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property for a specified dependency object.</summary>
+        <returns>An <see cref="T:System.Windows.Input.InputScope" /> object representing the current input scope for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsInputMethodEnabled">
+      <MemberSignature Language="C#" Value="public static bool GetIsInputMethodEnabled (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsInputMethodEnabled(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetIsInputMethodEnabled(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" />.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsInputMethodSuspended">
+      <MemberSignature Language="C#" Value="public static bool GetIsInputMethodSuspended (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsInputMethodSuspended(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetIsInputMethodSuspended(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" />.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredImeConversionMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.ImeConversionModeValues GetPreferredImeConversionMode (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ImeConversionModeValues GetPreferredImeConversionMode(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeConversionMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" />.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property for a specified dependency object.</summary>
+        <returns>A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredImeSentenceMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.ImeSentenceModeValues GetPreferredImeSentenceMode (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ImeSentenceModeValues GetPreferredImeSentenceMode(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeSentenceMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" />.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property for a specified dependency object.</summary>
+        <returns>A member of the <see cref="T:System.Windows.Input.ImeSentenceModeValues" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredImeState">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.InputMethodState GetPreferredImeState (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.InputMethodState GetPreferredImeState(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeState(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" />.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property for a specified dependency object.</summary>
+        <returns>A member of the <see cref="T:System.Windows.Input.InputMethodState" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> for the specified dependency object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HandwritingState">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState HandwritingState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState HandwritingState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.HandwritingState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current state of handwriting input for this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.InputMethodState" /> enumeration specifying the current input method state for handwriting input.  
+  
+ The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImeConversionMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ImeConversionModeValues ImeConversionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ImeConversionModeValues ImeConversionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeConversionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current conversion mode for the input method editor associated with this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration specifying the conversion mode.  
+  
+ The default value is <see cref="F:System.Windows.Input.ImeConversionModeValues.Alphanumeric" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImeSentenceMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ImeSentenceModeValues ImeSentenceMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ImeSentenceModeValues ImeSentenceMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeSentenceMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current sentence mode for the input method editor associated with this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.ImeSentenceModeValues" /> enumerations specifying the sentence mode.  
+  
+ The default value is <see cref="F:System.Windows.Input.ImeSentenceModeValues.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImeState">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState ImeState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState ImeState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current state of the input method editor associated with this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.InputMethodState" /> enumeration specifying the state of the input method editor associated with this input method.  
+  
+ The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputScopeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty InputScopeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty InputScopeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.InputScopeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputMethodEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInputMethodEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInputMethodEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.IsInputMethodEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputMethodSuspendedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInputMethodSuspendedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInputMethodSuspendedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.IsInputMethodSuspendedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MicrophoneState">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState MicrophoneState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState MicrophoneState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.MicrophoneState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current state of microphone input for this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.InputMethodState" /> enumeration specifying the current input method state for microphone input.  
+  
+ The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to information about the microphone state.  Associated enumeration:  <see cref="T:System.Security.Permissions.PermissionState" />.**Unrestricted**.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredImeConversionModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeConversionModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeConversionModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeConversionModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredImeSentenceModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeSentenceModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeSentenceModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeSentenceModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredImeStateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeStateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeStateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeStateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInputScope">
+      <MemberSignature Language="C#" Value="public static void SetInputScope (System.Windows.DependencyObject target, System.Windows.Input.InputScope value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetInputScope(class System.Windows.DependencyObject target, class System.Windows.Input.InputScope value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetInputScope(System.Windows.DependencyObject,System.Windows.Input.InputScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Input.InputScope" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property.</param>
+        <param name="value">An <see cref="T:System.Windows.Input.InputScope" /> object representing the new value for the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property on the specified dependency object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SetInputScope%2A> method to determine the <xref:System.Windows.Input.InputScope> associated with a <xref:System.Windows.Controls.TextBox> object.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsInputMethodEnabled">
+      <MemberSignature Language="C#" Value="public static void SetIsInputMethodEnabled (System.Windows.DependencyObject target, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInputMethodEnabled(class System.Windows.DependencyObject target, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetIsInputMethodEnabled(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property.</param>
+        <param name="value">The new value for the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property on the specified dependency object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsInputMethodSuspended">
+      <MemberSignature Language="C#" Value="public static void SetIsInputMethodSuspended (System.Windows.DependencyObject target, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInputMethodSuspended(class System.Windows.DependencyObject target, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetIsInputMethodSuspended(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property.</param>
+        <param name="value">The new value for the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property on the specified dependency object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPreferredImeConversionMode">
+      <MemberSignature Language="C#" Value="public static void SetPreferredImeConversionMode (System.Windows.DependencyObject target, System.Windows.Input.ImeConversionModeValues value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeConversionMode(class System.Windows.DependencyObject target, valuetype System.Windows.Input.ImeConversionModeValues value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeConversionMode(System.Windows.DependencyObject,System.Windows.Input.ImeConversionModeValues)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Input.ImeConversionModeValues" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property.</param>
+        <param name="value">A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration representing the new value for the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property on the specified dependency object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPreferredImeSentenceMode">
+      <MemberSignature Language="C#" Value="public static void SetPreferredImeSentenceMode (System.Windows.DependencyObject target, System.Windows.Input.ImeSentenceModeValues value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeSentenceMode(class System.Windows.DependencyObject target, valuetype System.Windows.Input.ImeSentenceModeValues value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeSentenceMode(System.Windows.DependencyObject,System.Windows.Input.ImeSentenceModeValues)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Input.ImeSentenceModeValues" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property.</param>
+        <param name="value">A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration representing the new value for the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property on the specified dependency object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPreferredImeState">
+      <MemberSignature Language="C#" Value="public static void SetPreferredImeState (System.Windows.DependencyObject target, System.Windows.Input.InputMethodState value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeState(class System.Windows.DependencyObject target, valuetype System.Windows.Input.InputMethodState value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeState(System.Windows.DependencyObject,System.Windows.Input.InputMethodState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Input.InputMethodState" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property.</param>
+        <param name="value">A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration representing the new value for the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property on the specified dependency object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowConfigureUI">
+      <MemberSignature Language="C#" Value="public void ShowConfigureUI ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowConfigureUI() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowConfigureUI" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowConfigureUI">
+      <MemberSignature Language="C#" Value="public void ShowConfigureUI (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowConfigureUI(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowConfigureUI(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> that will be used as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  This parameter can be <see langword="null" />.</param>
+        <summary>Displays configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service, using a specified <see cref="T:System.Windows.UIElement" /> as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowRegisterWordUI">
+      <MemberSignature Language="C#" Value="public void ShowRegisterWordUI ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowRegisterWordUI">
+      <MemberSignature Language="C#" Value="public void ShowRegisterWordUI (string registeredText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI(string registeredText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="registeredText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="registeredText">A string that specifies a value to register.</param>
+        <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.  Accepts a specified string as the default value to register.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowRegisterWordUI">
+      <MemberSignature Language="C#" Value="public void ShowRegisterWordUI (System.Windows.UIElement element, string registeredText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI(class System.Windows.UIElement element, string registeredText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.Windows.UIElement,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="registeredText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> that will be used as the parent element for the word registration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  This parameter can be <see langword="null" />.</param>
+        <param name="registeredText">A string that specifies a value to register.</param>
+        <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.  Accepts a specified string as the default value to register, and a specified <see cref="T:System.Windows.UIElement" /> as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeechMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.SpeechMode SpeechMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.SpeechMode SpeechMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.SpeechMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the speech mode for this input method.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.SpeechMode" /> enumeration specifying the current speech mode.  
+  
+ The default value is <see cref="F:System.Windows.Input.SpeechMode.Indeterminate" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SpeechMode%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to information about the speech mode settings.  Associated enumeration:  <see cref="T:System.Security.Permissions.PermissionState" />.**Unrestricted**.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StateChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Input.InputMethodStateChangedEventHandler StateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.InputMethodStateChangedEventHandler StateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputMethod.StateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodStateChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the input method state (represented by the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property) changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

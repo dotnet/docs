@@ -1,0 +1,207 @@
+<Type Name="AccessViolationException" FullName="System.AccessViolationException">
+  <TypeSignature Language="C#" Value="public class AccessViolationException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AccessViolationException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.AccessViolationException" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when there is an attempt to read or write protected memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An access violation occurs in unmanaged or unsafe code when the code attempts to read or write to memory that has not been allocated, or to which it does not have access. This usually occurs because a pointer has a bad value. Not all reads or writes through bad pointers lead to access violations, so an access violation usually indicates that several reads or writes have occurred through bad pointers, and that memory might be corrupted. Thus, access violations almost always indicate serious programming errors. An <xref:System.AccessViolationException> clearly identifies these serious errors.  
+  
+ In programs consisting entirely of verifiable managed code, all references are either valid or null, and access violations are impossible. Any operation that attempts to reference a null reference in verifiable code throws a <xref:System.NullReferenceException> exception. An <xref:System.AccessViolationException> occurs only when verifiable managed code interacts with unmanaged code or with unsafe managed code.  
+  
+## Troubleshooting AccessViolationException exceptions  
+ An <xref:System.AccessViolationException> exception can occur only in unsafe managed code or when verifiable managed code interacts with unmanaged code:  
+  
+-   An access violation that occurs in unsafe managed code can be expressed as either a <xref:System.NullReferenceException> exception or an <xref:System.AccessViolationException> exception, depending on the platform.  
+  
+-   An access violation in unmanaged code that bubbles up to managed code is always wrapped in an <xref:System.AccessViolationException> exception.  
+  
+ In either case, you can identify and correct the cause of the <xref:System.AccessViolationException> exception as follows:  
+  
+ Make sure that the memory that you are attempting to access has been allocated.  
+ An <xref:System.AccessViolationException> exception is always thrown by an attempt to access protected memory -- that is, to access memory that is not allocated or that is not owned by a process.  
+  
+ Automatic memory management is one of the services that the common language runtime provides. If managed code provides the same functionality as your unmanagede code, you may wish to move to managed code to take advantage of this functionality. For more information, see [Automatic Memory Management](~/docs/standard/automatic-memory-management.md).  
+  
+ Make sure that the memory that you are attempting to access has not been corrupted.  
+ If several read or write operations have occurred through bad pointers, memory may be corrupted. This typically occurs when reading or writing to addresses outside of a predefined buffer.  
+  
+## AccessViolationException and try/catch blocks  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.AccessViolationException> exceptions thrown by the common language runtime are not handled by the `catch` statement in a structured exception handler if the exception occurs outside of the memory reserved by the common language runtime. To handle such an <xref:System.AccessViolationException> exception, you should apply the  <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement. For code written for previous versions of the .NET Framework that you want to recompile and run without modification on the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can add the [\<legacyCorruptedStateExceptionsPolicy>](~/docs/framework/configure-apps/file-schema/runtime/legacycorruptedstateexceptionspolicy-element.md) element to your app's configuration file. Note that you can also receive notification of the exceptions if you have defined a handler for the <xref:System.AppDomain.FirstChanceException?displayProperty=fullName> or <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
+  
+## Version Information  
+ This exception is thrown in the .NET Framework 2.0 and later versions. In earlier versions of the .NET Framework, an access violation in unmanaged code or unsafe managed code is represented by a <xref:System.NullReferenceException> in managed code. A <xref:System.NullReferenceException> is also thrown when a null reference is dereferenced in verifiable managed code, an occurrence that does not involve data corruption, and there is no way to distinguish between the two situations in versions 1.0 or 1.1.  
+  
+ Administrators can allow selected applications to revert to the behavior of the .NET Framework version 1.1. Place the following line in the [\&lt;runtime\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the configuration file for the application:  
+  
+```  
+<legacyNullReferenceExceptionPolicy enabled = "1"/>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessViolationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AccessViolationException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AccessViolationException" /> class with a system-supplied message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempted to read or write protected memory. This is often an indication that other memory has been corrupted." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.AccessViolationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessViolationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AccessViolationException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AccessViolationException" /> class with a specified message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of <xref:System.AccessViolationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AccessViolationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AccessViolationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AccessViolationException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessViolationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AccessViolationException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AccessViolationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.AccessViolationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="TextRenderingMode" FullName="System.Windows.Media.TextRenderingMode">
+  <TypeSignature Language="C#" Value="public enum TextRenderingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextRenderingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextRenderingMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the supported rendering modes for text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Grayscale anti-aliasing algorithm chooses the appropriate ClearType algorithm to get bitmap representations for the glyphs. The intensity of the red, green, and blue channels of a pixel of rendered text is the value of the green channel in the corresponding pixel of the bitmap representation of the glyph.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aliased">
+      <MemberSignature Language="C#" Value="Aliased" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Aliased = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Aliased" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is rendered with bilevel anti-aliasing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is rendered with the most appropriate rendering algorithm based on the layout mode that was used to format the text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearType">
+      <MemberSignature Language="C#" Value="ClearType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode ClearType = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.ClearType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is rendered with the most appropriate ClearType rendering algorithm based on the layout mode that was used to format the text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Grayscale">
+      <MemberSignature Language="C#" Value="Grayscale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Grayscale = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Grayscale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is rendered with grayscale anti-aliasing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

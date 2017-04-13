@@ -1,0 +1,105 @@
+<Type Name="DragStartedEventArgs" FullName="System.Windows.Controls.Primitives.DragStartedEventArgs">
+  <TypeSignature Language="C#" Value="public class DragStartedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragStartedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragStartedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event that occurs when a user drags a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse..</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DragStartedEventArgs (double horizontalOffset, double verticalOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 horizontalOffset, float64 verticalOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragStartedEventArgs.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="horizontalOffset" Type="System.Double" />
+        <Parameter Name="verticalOffset" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="horizontalOffset">The horizontal offset of the mouse click with respect to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</param>
+        <param name="verticalOffset">The vertical offset of the mouse click with respect to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DragStartedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalOffset">
+      <MemberSignature Language="C#" Value="public double HorizontalOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragStartedEventArgs.HorizontalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the horizontal offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+        <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragStartedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The event handler delegate.</param>
+        <param name="genericTarget">The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> that uses the handler.</param>
+        <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" /> type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragStartedEventHandler>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalOffset">
+      <MemberSignature Language="C#" Value="public double VerticalOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragStartedEventArgs.VerticalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the vertical offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+        <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

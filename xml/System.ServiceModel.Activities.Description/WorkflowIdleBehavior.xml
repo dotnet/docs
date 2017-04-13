@@ -1,0 +1,172 @@
+<Type Name="WorkflowIdleBehavior" FullName="System.ServiceModel.Activities.Description.WorkflowIdleBehavior">
+  <TypeSignature Language="C#" Value="public class WorkflowIdleBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowIdleBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.WorkflowIdleBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A service behavior that controls when idle workflow instances are unloaded and persisted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  When <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> is set to a value greater than the value of <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> and the workflow then goes idle (because of a Delay activity) if the workflow instance has not changed it will be removed from memory by calling Abort, rather than going through the normal unloading process.. This is a runtime optimization and no data is lost, but a developer looking at trace log may see an Abort trace when expecting an Unload trace.  
+  
+ For an example of how to use this behavior see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowIdleBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Description.WorkflowIdleBehavior" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <param name="endpoints">The endpoints exposed by the service.</param>
+        <param name="bindingParameters">The binding parameters required to implement the behavior.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToPersist">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToPersist { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToPersist" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the <see cref="T:System.TimeSpan" /> that occurs between the time the workflow becomes idle and is persisted.</summary>
+        <value>The time span used to determine when a workflow is persisted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.TimeSpan> begins to elapse when the workflow instance becomes idle. This property is useful if you want to persist a workflow instance more aggressively while still keeping the instance in memory for as long as possible. The default value for this property is <xref:System.TimeSpan>. The <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> property is only valid if its value is less than <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>. If it is greater, it is ignored. If the <xref:System.TimeSpan> specified by <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> elapses before the <xref:System.TimeSpan> specified by <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>, persistence must complete before the workflow is unloaded. This implies that the unload operation may be delayed until the workflow is persisted. The persistence layer is responsible for handling any retries for transient errors and only throws exceptions on non-recoverable errors. Therefore, any exceptions thrown during persistence are treated as fatal and the workflow instance is aborted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToUnload">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToUnload { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToUnload" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the <see cref="T:System.TimeSpan" /> that occurs between the time workflow becomes idle and is unloaded.</summary>
+        <value>The time span used to determine when a workflow is unloaded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 1 minute. Unloading a workflow implies that it is also persisted. If <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> is set to zero the workflow instance is persisted and unloaded immediately after the workflow becomes idle. Setting <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to <xref:System.TimeSpan> effectively disables the unload operation. Idle workflow instances are never unloaded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

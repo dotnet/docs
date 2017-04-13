@@ -1,0 +1,251 @@
+<Type Name="DayOfWeek" FullName="System.DayOfWeek">
+  <TypeSignature Language="C#" Value="public enum DayOfWeek" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DayOfWeek extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DayOfWeek" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the day of the week.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DayOfWeek> enumeration represents the day of the week in calendars that have seven days per week. The value of the constants in this enumeration ranges from Sunday to Saturday. If cast to an integer, its value ranges from zero (which indicates Sunday) to six (which indicates Saturday).  
+  
+ This enumeration is useful when it is desirable to have a strongly typed specification of the day of the week. For example, this enumeration is the type of the property value for the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property.  
+  
+ The members of the <xref:System.DayOfWeek> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property and the <xref:System.DayOfWeek> enumeration.  
+  
+ [!code-cpp[DateTime.DayOfWeek#1](~/samples/snippets/cpp/VS_Snippets_CLR/DateTime.DayOfWeek/CPP/dow.cpp#1)]
+ [!code-csharp[DateTime.DayOfWeek#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime.DayOfWeek/CS/dow.cs#1)]
+ [!code-vb[DateTime.DayOfWeek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime.DayOfWeek/VB/dow.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Friday">
+      <MemberSignature Language="C#" Value="Friday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Friday = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Friday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Friday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Monday">
+      <MemberSignature Language="C#" Value="Monday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Monday = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Monday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Monday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Saturday">
+      <MemberSignature Language="C#" Value="Saturday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Saturday = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Saturday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Saturday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunday">
+      <MemberSignature Language="C#" Value="Sunday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Sunday = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Sunday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Sunday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thursday">
+      <MemberSignature Language="C#" Value="Thursday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Thursday = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Thursday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Thursday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tuesday">
+      <MemberSignature Language="C#" Value="Tuesday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Tuesday = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Tuesday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Tuesday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wednesday">
+      <MemberSignature Language="C#" Value="Wednesday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Wednesday = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Wednesday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates Wednesday.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

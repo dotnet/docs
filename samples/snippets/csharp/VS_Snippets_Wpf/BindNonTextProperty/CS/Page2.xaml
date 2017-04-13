@@ -1,0 +1,12 @@
+﻿<DockPanel xmlns:c="clr-namespace:SDKSample"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--<SnippetBackgroundBindingCompact>-->
+  <DockPanel.Resources>
+    <c:MyData x:Key="myDataSource"/>
+  </DockPanel.Resources>
+  <Button Width="150" Height="30"
+          Background="{Binding Source={StaticResource myDataSource},
+                               Path=ColorName}">I am bound to be RED!</Button>
+  <!--</SnippetBackgroundBindingCompact>-->
+</DockPanel>

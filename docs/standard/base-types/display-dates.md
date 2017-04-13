@@ -2,8 +2,8 @@
 title: "How to: display dates in non-gregorian calendars"
 description: How to display dates in non-gregorian calendars
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod: .net

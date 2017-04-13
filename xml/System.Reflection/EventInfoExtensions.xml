@@ -1,0 +1,157 @@
+<Type Name="EventInfoExtensions" FullName="System.Reflection.EventInfoExtensions">
+  <TypeSignature Language="C#" Value="public static class EventInfoExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EventInfoExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.EventInfoExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAddMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetAddMethod (this System.Reflection.EventInfo eventInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetAddMethod(class System.Reflection.EventInfo eventInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetAddMethod(System.Reflection.EventInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAddMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetAddMethod (this System.Reflection.EventInfo eventInfo, bool nonPublic);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetAddMethod(class System.Reflection.EventInfo eventInfo, bool nonPublic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetAddMethod(System.Reflection.EventInfo,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+        <Parameter Name="nonPublic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <param name="nonPublic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRaiseMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRaiseMethod (this System.Reflection.EventInfo eventInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRaiseMethod(class System.Reflection.EventInfo eventInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetRaiseMethod(System.Reflection.EventInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRaiseMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRaiseMethod (this System.Reflection.EventInfo eventInfo, bool nonPublic);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRaiseMethod(class System.Reflection.EventInfo eventInfo, bool nonPublic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetRaiseMethod(System.Reflection.EventInfo,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+        <Parameter Name="nonPublic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <param name="nonPublic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoveMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRemoveMethod (this System.Reflection.EventInfo eventInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRemoveMethod(class System.Reflection.EventInfo eventInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetRemoveMethod(System.Reflection.EventInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoveMethod">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRemoveMethod (this System.Reflection.EventInfo eventInfo, bool nonPublic);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRemoveMethod(class System.Reflection.EventInfo eventInfo, bool nonPublic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfoExtensions.GetRemoveMethod(System.Reflection.EventInfo,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" RefType="this" />
+        <Parameter Name="nonPublic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">To be added.</param>
+        <param name="nonPublic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

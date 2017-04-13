@@ -1,0 +1,86 @@
+<Type Name="ReferencedCategoriesDocument" FullName="System.ServiceModel.Syndication.ReferencedCategoriesDocument">
+  <TypeSignature Language="C#" Value="public class ReferencedCategoriesDocument : System.ServiceModel.Syndication.CategoriesDocument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReferencedCategoriesDocument extends System.ServiceModel.Syndication.CategoriesDocument" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Syndication.CategoriesDocument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a reference to a categories document.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReferencedCategoriesDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ReferencedCategoriesDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReferencedCategoriesDocument (Uri link);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri link) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ReferencedCategoriesDocument.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="link" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="link">The URL to the referenced categories document.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Link">
+      <MemberSignature Language="C#" Value="public Uri Link { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Link" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ReferencedCategoriesDocument.Link" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the URI for the categories document.</summary>
+        <value>Returns <see cref="T:System.Uri" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

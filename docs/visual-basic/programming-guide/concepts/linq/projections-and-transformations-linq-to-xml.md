@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 297de224-b625-44cf-8c00-186b6189aa0e
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Projections and Transformations (LINQ to XML) (Visual Basic)

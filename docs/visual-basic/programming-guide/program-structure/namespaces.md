@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "namespaces"
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

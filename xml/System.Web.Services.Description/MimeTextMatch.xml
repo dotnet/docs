@@ -1,0 +1,392 @@
+<Type Name="MimeTextMatch" FullName="System.Web.Services.Description.MimeTextMatch">
+  <TypeSignature Language="C#" Value="public sealed class MimeTextMatch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeTextMatch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatch" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a text pattern for which the HTTP transmission is searched. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the properties and methods exposed by the `MimeTextMatch` class.  
+  
+ [!code-cpp[MimeText_Binding_Match_8#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#1)]
+ [!code-csharp[MimeText_Binding_Match_8#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#1)]
+ [!code-vb[MimeText_Binding_Match_8#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MimeTextMatch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatch.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public int Capture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capture" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Capture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("capture")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the zero-based index of a <see cref="T:System.Web.Services.Description.MimeTextMatch" /> within a group.</summary>
+        <value>A 32-bit signed integer. The default value is 0, indicating that the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> is the first instance within a group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.Web.Services.Description.MimeTextMatch.Group%2A> and <xref:System.Web.Services.Description.MimeTextMatch.Matches%2A> properties.  
+  
+   
+  
+## Examples  
+ [!code-cpp[MimeTextMatch_5#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#2)]
+ [!code-csharp[MimeTextMatch_5#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#2)]
+ [!code-vb[MimeTextMatch_5#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public int Group { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Group" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Group" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("group")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the number of groups in which to place the results of the text search.</summary>
+        <value>A 32-bit signed integer. The default value is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property must be less than or equal to the value of the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, or the XML Web service will not compile correctly.  
+  
+   
+  
+## Examples  
+ [!code-cpp[MimeTextMatch_5#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#3)]
+ [!code-csharp[MimeTextMatch_5#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#3)]
+ [!code-vb[MimeTextMatch_5#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCase">
+      <MemberSignature Language="C#" Value="public bool IgnoreCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.IgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("ignoreCase")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the search should disregard the case of the text to be searched.</summary>
+        <value>
+          <see langword="true" /> if the search should disregard case; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[MimeText_Binding_Match_8#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#7)]
+ [!code-csharp[MimeText_Binding_Match_8#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#7)]
+ [!code-vb[MimeText_Binding_Match_8#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.MimeTextMatchCollection Matches { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MimeTextMatchCollection Matches" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Matches" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("match")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.MimeTextMatchCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of text pattern matches that have been found by the search.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> representing the members of the <see cref="P:System.Web.Services.Description.MimeTextMatch.Group" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[MimeText_Binding_Match_8#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#8)]
+ [!code-csharp[MimeText_Binding_Match_8#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#8)]
+ [!code-vb[MimeText_Binding_Match_8#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Services.Description.MimeTextMatch" />.</summary>
+        <value>The name of the <see cref="T:System.Web.Services.Description.MimeTextMatch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[MimeText_Binding_Match_8#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#4)]
+ [!code-csharp[MimeText_Binding_Match_8#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#4)]
+ [!code-vb[MimeText_Binding_Match_8#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public string Pattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Pattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("pattern")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text pattern for the search.</summary>
+        <value>A string representing the text for which to search the HTTP transmission. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property can contain wildcard characters.  
+  
+   
+  
+## Examples  
+ [!code-cpp[MimeText_Binding_Match_8#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#6)]
+ [!code-csharp[MimeText_Binding_Match_8#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#6)]
+ [!code-vb[MimeText_Binding_Match_8#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Repeats">
+      <MemberSignature Language="C#" Value="public int Repeats { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Repeats" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Repeats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the number of times the search is to be performed.</summary>
+        <value>A 32-bit signed integer. The default value is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32> will return all matches.  
+  
+ This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.RepeatsString%2A> property, but as a 32-bit signed integer rather than as a string.  
+  
+   
+  
+## Examples  
+ [!code-cpp[MimeTextMatch_5#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#4)]
+ [!code-csharp[MimeTextMatch_5#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#4)]
+ [!code-vb[MimeTextMatch_5#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatsString">
+      <MemberSignature Language="C#" Value="public string RepeatsString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RepeatsString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.RepeatsString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("1")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("repeats")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the number of times the search is to be performed.</summary>
+        <value>A string indicating the number of times the search is to be performed. The default value is "1".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, but as a string rather than as a 32-bit signed integer. A value of "*" corresponds to <xref:System.Int32.MaxValue>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[MimeTextMatch_5#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#5)]
+ [!code-csharp[MimeTextMatch_5#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#5)]
+ [!code-vb[MimeTextMatch_5#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the MIME format of the text to be searched.</summary>
+        <value>A string indicating the MIME format of the text to be searched.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns an empty string ("") if its value has not been set.  
+  
+   
+  
+## Examples  
+ MimeText_Binding_Match_8#5  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

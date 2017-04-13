@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

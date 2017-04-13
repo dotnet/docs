@@ -1,0 +1,84 @@
+<Type Name="RootContext" FullName="System.ComponentModel.Design.Serialization.RootContext">
+  <TypeSignature Language="C#" Value="public sealed class RootContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RootContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.RootContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" /> adds a root context to provide a definition of the root object. This class cannot be inherited</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.RootContext> can be placed on the context stack to represent the object that is the root of the serialization hierarchy. In addition to this instance, the <xref:System.ComponentModel.Design.Serialization.RootContext> also contains an expression that can be used to reference the <xref:System.ComponentModel.Design.Serialization.RootContext>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RootContext (System.CodeDom.CodeExpression expression, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootContext.#ctor(System.CodeDom.CodeExpression,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The expression representing the root object in the object graph.</param>
+        <param name="value">The root object of the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="expression" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootContext.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the expression representing the root object in the object graph.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> representing the root object in the object graph.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootContext.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root object of the object graph.</summary>
+        <value>The root object of the object graph.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

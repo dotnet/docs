@@ -1,0 +1,102 @@
+<Type Name="ReceiveParametersContent" FullName="System.ServiceModel.Activities.ReceiveParametersContent">
+  <TypeSignature Language="C#" Value="public sealed class ReceiveParametersContent : System.ServiceModel.Activities.ReceiveContent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReceiveParametersContent extends System.ServiceModel.Activities.ReceiveContent" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveParametersContent" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activities.ReceiveContent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Parameters")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables a workflow service to receive data n the form of parameters.<see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> is interoperable with non-workflow WCF clients and services. The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection is similar to the argument declaration on a C# method signature.The <see cref="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" /> collection cannot contain arguments marked with <see cref="T:System.ServiceModel.MessageContractAttribute" />, or of type <see cref="T:System.ServiceModel.Channels.Message" />. Please use <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> for these types of data.This is a sealed class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.ReceiveParametersContent> class  with a <xref:System.ServiceModel.Activities.Receive> activity.  
+  
+ [!code-csharp[ImplicitExplicitCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/service/pharmacyservice.cs#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiveParametersContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveParametersContent.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiveParametersContent (System.Collections.Generic.IDictionary&lt;string,System.Activities.OutArgument&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, class System.Activities.OutArgument&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveParametersContent.#ctor(System.Collections.Generic.IDictionary{System.String,System.Activities.OutArgument})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Activities.OutArgument&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">A collection of key-value pairs with the keys containing the parameter names and the values containing the arguments.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> class with the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[ImplicitExplicitCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/service/pharmacyservice.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,System.Activities.OutArgument&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Activities.OutArgument&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveParametersContent.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Activities.OutArgument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Modifies the parameters collection.</summary>
+        <value>An ordered collection of key-value pairs with the keys containing the parameter names and the values containing the arguments.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activitie.ReceiveParametersContent.Parameters%2A> property.  
+  
+ [!code-csharp[ImplicitExplicitCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/service/pharmacyservice.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

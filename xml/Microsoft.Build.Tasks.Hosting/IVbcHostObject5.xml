@@ -1,0 +1,175 @@
+<Type Name="IVbcHostObject5" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject5">
+  <TypeSignature Language="C#" Value="public interface IVbcHostObject5 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject5 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2, class Microsoft.Build.Tasks.Hosting.IVbcHostObject3, class Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject5" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITaskHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Hosting.IVbcHostObject4</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5ACF41FF-6F2B-4623-8146-740C89212B21")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an interface that proffers a free-threaded host object that allows for background threads to call directly (avoids marshalling to the UI thread.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompileAsync">
+      <MemberSignature Language="C#" Value="public int CompileAsync (out IntPtr buildSucceededEvent, out IntPtr buildFailedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompileAsync(native int buildSucceededEvent, native int buildFailedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.CompileAsync(System.IntPtr@,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildSucceededEvent" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="buildFailedEvent" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="buildSucceededEvent">[out] the build-succeeded event.</param>
+        <param name="buildFailedEvent">[out] the build-failed event.</param>
+        <summary>This code is called only on the UI thread and kicks off the actual build with VB.</summary>
+        <returns>Returns 0 if the method was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCompile">
+      <MemberSignature Language="C#" Value="public int EndCompile (bool buildSuccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EndCompile(bool buildSuccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.EndCompile(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildSuccess" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="buildSuccess">A flag indicating whether the build succeeded. Value is <see langword="true" /> for success.</param>
+        <summary>Performs functions at the end of compilation.</summary>
+        <returns>Returns 0 if the method was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFreeThreadedHostObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded GetFreeThreadedHostObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded GetFreeThreadedHostObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.GetFreeThreadedHostObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a free-threaded host object that allows for background threads to call directly. Avoids marshaling to the UI thread.</summary>
+        <returns>Returns the free-threaded host object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHighEntropyVA">
+      <MemberSignature Language="C#" Value="public bool SetHighEntropyVA (bool highEntropyVA);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetHighEntropyVA(bool highEntropyVA) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetHighEntropyVA(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="highEntropyVA" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="highEntropyVA">
+          <see langword="True" /> to set the <c>/ highentropyva</c> to indicate support of high entropy Address Space Layout Randomization (ASLR); otherwise, <see langword="False" />.</param>
+        <summary>Sets the <c>/highentropyva</c> value as specified.</summary>
+        <returns>
+          <see langword="True" /> if the method was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPlatformWith32BitPreference">
+      <MemberSignature Language="C#" Value="public bool SetPlatformWith32BitPreference (string platformWith32BitPreference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetPlatformWith32BitPreference(string platformWith32BitPreference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformWith32BitPreference" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="platformWith32BitPreference">
+          <see langword="True" /> to set the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />; otherwise, <see langword="False" />.</param>
+        <summary>Sets the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />.</summary>
+        <returns>Returns <see langword="True" /> if the method was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:Microsoft.Build.Tasks.ManagedCompiler.Prefer32Bit%2A> property is set on the project, <xref:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference%2A> changes the `/platform` value `AnyCPU` or the default platform value (`null` or "") to `AnyCPU32BitPreferred`. For more information, see [/platform (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/platform.md).The `AnyCPU``/platform` switch setting (`/platform:AnyCPU`) runs your application as a 64-bit process whenever possible, falling back to 32-bit for 32-bit-only systems. However, running applications as 32-bit is often preferred to running them as 64-bit because 64-bit applications may consume more memory. The `AnyCPU32BitPreferred` setting is similar to `AnyCPU` except that its default action is to run applications in 32-bit mode on systems that support either 32-bit or 64-bit mode.  This setting accommodates future processors that may not have a fallback 32-bit mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubsystemVersion">
+      <MemberSignature Language="C#" Value="public bool SetSubsystemVersion (string subsystemVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetSubsystemVersion(string subsystemVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetSubsystemVersion(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subsystemVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subsystemVersion">The subsystem version.</param>
+        <summary>Sets the subsystem version as specified.</summary>
+        <returns>Returns <see langword="true" /> if the method is successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

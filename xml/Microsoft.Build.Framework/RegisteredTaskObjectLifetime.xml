@@ -1,0 +1,50 @@
+<Type Name="RegisteredTaskObjectLifetime" FullName="Microsoft.Build.Framework.RegisteredTaskObjectLifetime">
+  <TypeSignature Language="C#" Value="public enum RegisteredTaskObjectLifetime" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegisteredTaskObjectLifetime extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.RegisteredTaskObjectLifetime" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the lifetime of a registered task object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomain">
+      <MemberSignature Language="C#" Value="AppDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.RegisteredTaskObjectLifetime AppDomain = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.RegisteredTaskObjectLifetime.AppDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.RegisteredTaskObjectLifetime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The registered object will be disposed when the <see langword="AppDomain" /> in which the build was launched is unloaded</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="Build" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.RegisteredTaskObjectLifetime Build = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.RegisteredTaskObjectLifetime.Build" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.RegisteredTaskObjectLifetime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The registered object will be disposed when the build ends.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

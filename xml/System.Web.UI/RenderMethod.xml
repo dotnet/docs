@@ -1,0 +1,25 @@
+<Type Name="RenderMethod" FullName="System.Web.UI.RenderMethod">
+  <TypeSignature Language="C#" Value="public delegate void RenderMethod(HtmlTextWriter output, Control container);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RenderMethod extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.RenderMethod" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="output" Type="System.Web.UI.HtmlTextWriter" />
+    <Parameter Name="container" Type="System.Web.UI.Control" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter" /> to render content to.</param>
+    <param name="container">The <see cref="T:System.Web.UI.Control" /> to render.</param>
+    <summary>Represents the method that renders the specified <see cref="T:System.Web.UI.Control" /> container to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,121 @@
+<Type Name="InputEventArgs" FullName="System.Windows.Input.InputEventArgs">
+  <TypeSignature Language="C#" Value="public class InputEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for input related events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.InputEventArgs> is the base class for [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] input event argument classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InputEventArgs (System.Windows.Input.InputDevice inputDevice, int timestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputDevice inputDevice, int32 timestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputEventArgs.#ctor(System.Windows.Input.InputDevice,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inputDevice" Type="System.Windows.Input.InputDevice" />
+        <Parameter Name="timestamp" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputDevice">The input device to associate with this event.</param>
+        <param name="timestamp">The time when the input occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputDevice Device { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputDevice Device" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputEventArgs.Device" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the input device that initiated this event.</summary>
+        <value>The input device associated with this event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.Windows.Input.KeyboardDevice>  
+  
+ <xref:System.Windows.Input.MouseDevice>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as an <xref:System.Windows.Input.InputEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public int Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timestamp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputEventArgs.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time when this event occurred.</summary>
+        <value>The timestamp.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

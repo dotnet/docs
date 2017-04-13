@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ByRef keyword, contexts"
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

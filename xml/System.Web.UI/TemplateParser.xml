@@ -1,0 +1,148 @@
+<Type Name="TemplateParser" FullName="System.Web.UI.TemplateParser">
+  <TypeSignature Language="C#" Value="public abstract class TemplateParser : System.Web.UI.BaseParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplateParser extends System.Web.UI.BaseParser" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateParser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.BaseParser</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the abstract base class for ASP.NET file parsers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class provides the common functionality for parser classes. Because the <xref:System.Web.UI.TemplateParser> class is abstract, an instance of this class is not created directly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ParseFile">
+      <MemberSignature Language="C#" Value="protected void ParseFile (string physicalPath, string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ParseFile(string physicalPath, string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ParseFile(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="physicalPath" Type="System.String" />
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="physicalPath">The physical path of the file to parse. <c>physicalPath</c> has precedence over <c>virtualPath</c>.</param>
+        <param name="virtualPath">The virtual path of the file to parse.</param>
+        <summary>Parses the content of the file that is specified by either its virtual or physical path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a physical path is specified, it is used over the virtual path for locating the file to parse.  
+  
+ If the path to the file to parse is a circular reference; that is, it refers to the same file that the parser is currently parsing, an <xref:System.Web.HttpException> exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="physicalPath" /> or <paramref name="virtualPath" /> refers to the file currently being parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseTemplate">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.ITemplate ParseTemplate (string content, string virtualPath, bool ignoreFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ITemplate ParseTemplate(string content, string virtualPath, bool ignoreFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ParseTemplate(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="ignoreFilter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content.</param>
+        <param name="virtualPath">The virtual path.</param>
+        <param name="ignoreFilter">
+          <see langword="true" /> to ignore the filter; otherwise, <see langword="false" />.</param>
+        <summary>Parses the template.</summary>
+        <returns>Returns the template.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessError">
+      <MemberSignature Language="C#" Value="protected void ProcessError (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessError(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ProcessError(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message text used to create a new <see cref="T:System.Web.ParserError" />.</param>
+        <summary>Reports a process error by creating a new <see cref="T:System.Web.ParserError" /> object with the specified message and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessException">
+      <MemberSignature Language="C#" Value="protected void ProcessException (Exception ex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessException(class System.Exception ex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ProcessException(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ex" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="ex">The <see cref="T:System.Exception" /> used to create a new <see cref="T:System.Web.ParserError" />.</param>
+        <summary>Reports a parser exception by creating a new <see cref="T:System.Web.ParserError" /> object as the specified <see cref="T:System.Exception" /> exception and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpCompileException">The <see cref="T:System.Exception" /> to process is a compiler error.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateParser.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string that contains the data to be parsed.</summary>
+        <value>The data to be parsed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

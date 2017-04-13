@@ -1,0 +1,293 @@
+<Type Name="TypedOperationInfo" FullName="System.Workflow.Activities.TypedOperationInfo">
+  <TypeSignature Language="C#" Value="public sealed class TypedOperationInfo : System.Workflow.Activities.OperationInfoBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypedOperationInfo extends System.Workflow.Activities.OperationInfoBase" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.TypedOperationInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.OperationInfoBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An <see cref="T:System.Workflow.Activities.OperationInfo" /> object that inherits from <see cref="T:System.Workflow.Activities.OperationInfoBase" /> used for the service operation information of the <see cref="T:System.Workflow.Activities.SendActivity" /> and <see cref="T:System.Workflow.Activities.ReceiveActivity" /> activities. Note that this operation information must be based on a CLR type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedOperationInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedOperationInfo (Type contractType, string operationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType, string operationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+        <Parameter Name="operationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The type of the associated contract interface.</param>
+        <param name="operationName">The method name of the associated service operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Workflow.Activities.OperationInfoBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.Activities.OperationInfoBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.OperationInfoBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the current object.</summary>
+        <returns>The copy of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractType">
+      <MemberSignature Language="C#" Value="public Type ContractType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.TypedOperationInfo.ContractType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type of the associated contract interface.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the type of the associated contract interface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" />.</param>
+        <summary>Determines whether two <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContractFullName">
+      <MemberSignature Language="C#" Value="protected override string GetContractFullName (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetContractFullName(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetContractFullName(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContractType">
+      <MemberSignature Language="C#" Value="protected override Type GetContractType (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Type GetContractType(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetContractType(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a number that corresponds to the value of the object to support the use of a hash table.</summary>
+        <returns>An <see cref="T:System.Int32" /> that represents the hash code value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsOneWay">
+      <MemberSignature Language="C#" Value="protected override bool GetIsOneWay (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool GetIsOneWay(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetIsOneWay(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethodInfo">
+      <MemberSignature Language="C#" Value="protected override System.Reflection.MethodInfo GetMethodInfo (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Reflection.MethodInfo GetMethodInfo(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetMethodInfo(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.Activities.OperationParameterInfoCollection GetParameters (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.Activities.OperationParameterInfoCollection GetParameters(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetParameters(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.OperationParameterInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> that represents the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> object.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.TypedOperationInfo> class requires that a service contract is present.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,223 @@
+<Type Name="SemaphoreAccessRule" FullName="System.Security.AccessControl.SemaphoreAccessRule">
+  <TypeSignature Language="C#" Value="public sealed class SemaphoreAccessRule : System.Security.AccessControl.AccessRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SemaphoreAccessRule extends System.Security.AccessControl.AccessRule" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SemaphoreAccessRule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.AccessRule</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a set of access rights allowed or denied for a user or group. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.SemaphoreAccessRule> class is one of a set of classes that the .NET Framework provides for managing Windows access control security on named system semaphores. For an overview of these classes, and their relationship to the underlying Windows access control structures, see <xref:System.Security.AccessControl.SemaphoreSecurity>.  
+  
+> [!NOTE]
+>  Windows access control security is meaningful only for named system semaphores. If a <xref:System.Threading.Semaphore> object represents a local semaphore, access control is irrelevant.  
+  
+ To get a list of the rules currently applied to a named semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.SemaphoreSecurity> object, then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAccessRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.SemaphoreAccessRule> objects.  
+  
+ <xref:System.Security.AccessControl.SemaphoreAccessRule> objects do not map one-to-one with access control entries in the underlying discretionary access control list (DACL). When you get the set of all access rules for a semaphore, the set contains the minimum number of rules currently required to express all the access control entries.  
+  
+> [!NOTE]
+>  The underlying access control entries change as you apply and remove rules. The information in rules is merged if possible, to maintain the smallest number of access control entries. Thus, when you read the current list of rules, it might not look exactly like the list of all the rules you have added.  
+  
+ Use <xref:System.Security.AccessControl.SemaphoreAccessRule> objects to specify access rights to allow or deny to a user or group. A <xref:System.Security.AccessControl.SemaphoreAccessRule> object always represents either allowed access or denied access, never both.  
+  
+ To apply a rule to a named system semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.SemaphoreSecurity> object. Modify the <xref:System.Security.AccessControl.SemaphoreSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to reattach the security object.  
+  
+> [!IMPORTANT]
+>  Changes you make to a <xref:System.Security.AccessControl.SemaphoreSecurity> object do not affect the access levels of the named semaphore until you call the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named semaphore.  
+  
+ <xref:System.Security.AccessControl.SemaphoreAccessRule> objects are immutable. Security for a semaphore is modified using the methods of the <xref:System.Security.AccessControl.SemaphoreSecurity> class to add or remove rules; as you do this, the underlying access control entries are modified.  
+  
+> [!NOTE]
+>  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SemaphoreAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.SemaphoreRights eventRights, System.Security.AccessControl.AccessControlType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.SemaphoreRights eventRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.SemaphoreRights,System.Security.AccessControl.AccessControlType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="eventRights" Type="System.Security.AccessControl.SemaphoreRights" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The user or group the rule applies to. Must be of type <see cref="T:System.Security.Principal.SecurityIdentifier" /> or a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="eventRights">A bitwise combination of <see cref="T:System.Security.AccessControl.SemaphoreRights" /> values specifying the rights allowed or denied.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values specifying whether the rights are allowed or denied.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SemaphoreAccessRule" /> class, specifying the user or group the rule applies to, the access rights, and whether the specified access rights are allowed or denied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=fullName> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=fullName> access.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="eventRights" /> specifies an invalid value.  
+  
+ -or-  
+  
+ <paramref name="type" /> specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="eventRights" /> is zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="identity" /> is neither of type <see cref="T:System.Security.Principal.SecurityIdentifier" /> nor of a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SemaphoreAccessRule (string identity, System.Security.AccessControl.SemaphoreRights eventRights, System.Security.AccessControl.AccessControlType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.SemaphoreRights eventRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreAccessRule.#ctor(System.String,System.Security.AccessControl.SemaphoreRights,System.Security.AccessControl.AccessControlType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+        <Parameter Name="eventRights" Type="System.Security.AccessControl.SemaphoreRights" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The name of the user or group the rule applies to.</param>
+        <param name="eventRights">A bitwise combination of <see cref="T:System.Security.AccessControl.SemaphoreRights" /> values specifying the rights allowed or denied.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values specifying whether the rights are allowed or denied.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SemaphoreAccessRule" /> class, specifying the name of the user or group the rule applies to, the access rights, and whether the specified access rights are allowed or denied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=fullName> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=fullName> access.  
+  
+ This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=fullName> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.SemaphoreAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.SemaphoreRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="eventRights" /> specifies an invalid value.  
+  
+ -or-  
+  
+ <paramref name="type" /> specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventRights" /> is zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="identity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="identity" /> is a zero-length string.  
+  
+ -or-  
+  
+ <paramref name="identity" /> is longer than 512 characters.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SemaphoreRights">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.SemaphoreRights SemaphoreRights { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.SemaphoreRights SemaphoreRights" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.SemaphoreAccessRule.SemaphoreRights" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rights allowed or denied by the access rule.</summary>
+        <value>A bitwise combination of <see cref="T:System.Security.AccessControl.SemaphoreRights" /> values indicating the rights allowed or denied by the access rule.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.AccessControl.SemaphoreAccessRule> objects are immutable. You can create a new access rule representing a different user, different rights, or a different <xref:System.Security.AccessControl.AccessControlType>, but you cannot modify an existing access rule.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Security.AccessControl.SemaphoreAccessRule.SemaphoreRights%2A> property to display the rights in the set of rules contained in a <xref:System.Security.AccessControl.SemaphoreSecurity> object. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,153 @@
+<Type Name="LogRecord" FullName="System.IO.Log.LogRecord">
+  <TypeSignature Language="C#" Value="public abstract class LogRecord : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LogRecord extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.LogRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a log record that has been appended to a sequence.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LogRecord ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogRecord.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public abstract System.IO.Stream Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Data" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a stream that contains the record data.</summary>
+        <value>A stream that contains the record data.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.Log.LogRecord" /> has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public abstract void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogRecord.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Log.LogRecord" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should call this method when you finish using the <xref:System.IO.Log.LogRecord> instance. The <xref:System.IO.Log.LogRecord.Dispose%2A> method leaves the <xref:System.IO.Log.LogRecord> instance in an unusable state. After calling this method, you must release all references to the <xref:System.IO.Log.LogRecord> instance, so that the garbage collector can reclaim the memory that the <xref:System.IO.Log.LogRecord> instance was occupying.  
+  
+> [!NOTE]
+>  Always call <xref:System.IO.Log.LogRecord.Dispose%2A> before you release your last reference to the <xref:System.IO.Log.LogRecord> instance. Otherwise, the resources it is using cannot be freed until the garbage collector calls the <xref:System.IO.Log.LogRecord> instance's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber Previous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber Previous" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.Previous" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the sequence number of the previous record.</summary>
+        <value>The sequence number of the previous record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is the sequence number that was provided as the `previousUndoRecord` parameter in the <xref:System.IO.Log.IRecordSequence.Append%2A> method. Aside from its use in enumeration, this sequence number is treated as opaque by the record sequence.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceNumber">
+      <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber SequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber SequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.SequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the sequence number of this record.</summary>
+        <value>The sequence number of this record.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber User { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber User" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the sequence number of the next record.</summary>
+        <value>The sequence number of the next record in the user-specified chain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is the sequence number that was provided as the `nextUndoRecord` parameter in the <xref:System.IO.Log.IRecordSequence.Append%2A> method. Aside from its use in enumeration, this sequence number is treated as opaque by the record sequence.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

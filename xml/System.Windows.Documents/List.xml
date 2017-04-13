@@ -1,0 +1,333 @@
+<Type Name="List" FullName="System.Windows.Documents.List">
+  <TypeSignature Language="C#" Value="public class List : System.Windows.Documents.Block" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi List extends System.Windows.Documents.Block" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.List" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.Block</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("ListItems")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A block-level flow content element that provides facilities for presenting content in an ordered or unordered list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.List> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.List> content model.  
+  
+ <xref:System.Windows.Documents.List> is a flow content element designed to be formatted with markers such as bullets or numbering.  
+  
+ <xref:System.Windows.Documents.ListItem> elements are the only permissible children for a <xref:System.Windows.Documents.List> element.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a <xref:System.Windows.Documents.List> using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
+  
+ [!code-xml[ListSnippets#_ListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_listxaml)]  
+  
+ The following example shows how to create and populate a <xref:System.Windows.Documents.List> programmatically.  
+  
+ [!code-csharp[ListSnippets#_List_Props](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_props)]
+ [!code-vb[ListSnippets#_List_Props](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_props)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: Ordered list](~/add/media/ordered-list.png "Screenshot: Ordered list")  
+  
+ The following example shows how to define a nested <xref:System.Windows.Documents.List> (lists within lists) using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
+  
+ [!code-xml[ListSnippets#_NestedListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_nestedlistxaml)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Nested list](~/add/media/flow-nested-list-example.png "Nested list")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public List ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.List.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.List" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public List (System.Windows.Documents.ListItem listItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.ListItem listItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.List.#ctor(System.Windows.Documents.ListItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listItem" Type="System.Windows.Documents.ListItem" />
+      </Parameters>
+      <Docs>
+        <param name="listItem">A <see cref="T:System.Windows.Documents.ListItem" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.List" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.List" /> class, taking a specified <see cref="T:System.Windows.Documents.ListItem" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.List" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates usage of this constructor.  
+  
+ [!code-csharp[ListSnippets#_List_Const](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_const)]
+ [!code-vb[ListSnippets#_List_Const](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_const)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItemCollection ListItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItemCollection ListItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.List.ListItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.ListItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Documents.ListItemCollection" /> containing the <see cref="T:System.Windows.Documents.ListItem" /> elements that comprise the contents of the <see cref="T:System.Windows.Documents.List" />.</summary>
+        <value>A <see cref="T:System.Windows.Documents.ListItemCollection" /> containing the <see cref="T:System.Windows.Documents.ListItem" /> elements that comprise the contents of the <see cref="T:System.Windows.Documents.List" />.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Documents.ListItemCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.List> element.  
+  
+   
+  
+## Examples  
+ The following examples show how to perform common operations on a <xref:System.Windows.Documents.List> using the <xref:System.Windows.Documents.List.ListItems%2A> property.  
+  
+ [!code-csharp[ListSnippets#_List_ListItems](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_listitems)]
+ [!code-vb[ListSnippets#_List_ListItems](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_listitems)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerOffset">
+      <MemberSignature Language="C#" Value="public double MarkerOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MarkerOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.List.MarkerOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the desired distance between the contents of each <see cref="T:System.Windows.Documents.ListItem" /> element, and the near edge of the list marker.</summary>
+        <value>A double value specifying the desired distance between list content and the near edge of list markers, in device independent pixels.  
+  
+ A value of <see cref="F:System.Double.NaN" /> (equivalent to an attribute value of "<c>Auto</c>") causes the marker offset to be determined automatically.  
+  
+ The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MarkerOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object MarkerOffset="double"/>  
+- or -  
+<object MarkerOffset="qualifiedDouble"/>  
+- or -  
+<object MarkerOffset="Auto"/>  
+```  
+  
+<a name="xamlValues_MarkerOffset"></a>   
+## XAML Values  
+ *double*  
+ String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ Auto  
+ Causes the marker offset to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double>.  
+  
+<a name="dependencyPropertyInfo_MarkerOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.List.MarkerOffsetProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerOffsetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MarkerOffsetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MarkerOffsetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.List.MarkerOffsetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.List.MarkerOffset" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.TextMarkerStyle MarkerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextMarkerStyle MarkerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.List.MarkerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the marker style for the <see cref="T:System.Windows.Documents.List" />.</summary>
+        <value>A member of the <see cref="T:System.Windows.TextMarkerStyle" /> enumeration specifying the marker style to use.  
+  
+ The default value is <see cref="F:System.Windows.TextMarkerStyle.Disc" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MarkerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.List.MarkerStyle%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MarkerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MarkerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.List.MarkerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.List.MarkerStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartIndex">
+      <MemberSignature Language="C#" Value="public int StartIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.List.StartIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the starting index for labeling the items in an ordered list.</summary>
+        <value>The starting index for labeling items in an ordered list.  
+  
+ The default value is **1**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has no effect on unordered lists.  
+  
+<a name="dependencyPropertyInfo_StartIndex"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.List.StartIndexProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartIndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StartIndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StartIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.List.StartIndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.List.StartIndex" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

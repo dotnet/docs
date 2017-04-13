@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "While...End While statements"
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,306 @@
+<Type Name="WebReferenceCollection" FullName="System.Web.Services.Description.WebReferenceCollection">
+  <TypeSignature Language="C#" Value="public sealed class WebReferenceCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebReferenceCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.WebReferenceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a collection of <see cref="T:System.Web.Services.Description.WebReference" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to pass a collection of <xref:System.Web.Services.Description.WebReference> objects when invoking the static <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method of the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this class.  
+  
+ [!code-csharp[WebServices_GenerateWebReferences#0](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebReferenceCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.WebReferenceCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this constructor. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReferenceCollection> class.  
+  
+ [!code-csharp[WebServices_GenerateWebReferences#6](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.WebReference webReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.WebReference webReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.Add(System.Web.Services.Description.WebReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webReference" Type="System.Web.Services.Description.WebReference" />
+      </Parameters>
+      <Docs>
+        <param name="webReference">The Web reference to append.</param>
+        <summary>Appends a <see cref="T:System.Web.Services.Description.WebReference" /> instance to the collection.</summary>
+        <returns>The index of the appended Web reference.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index of the appended Web reference is greater by one than the index of the last appended Web reference. The index is zero based.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this method. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReferenceCollection> class.  
+  
+ [!code-csharp[WebServices_GenerateWebReferences#6](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.WebReference webReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.WebReference webReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.Contains(System.Web.Services.Description.WebReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webReference" Type="System.Web.Services.Description.WebReference" />
+      </Parameters>
+      <Docs>
+        <param name="webReference">The Web reference to search for.</param>
+        <summary>Determines whether the collection contains a given <see cref="T:System.Web.Services.Description.WebReference" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the collections contains the given Web reference instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.Contains%2A> method.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.WebReference[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.WebReference[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.CopyTo(System.Web.Services.Description.WebReference[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Description.WebReference[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of Web references into which the collection members are copied.</param>
+        <param name="index">The array index at which to begin copying.</param>
+        <summary>Copies members of the collection to a specified array, starting at the specified array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index is zero based. The array must be large enough to fit the contents of the collection copied into it starting at the specified array index.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.CopyTo%2A> method.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.WebReference webReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.WebReference webReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.IndexOf(System.Web.Services.Description.WebReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webReference" Type="System.Web.Services.Description.WebReference" />
+      </Parameters>
+      <Docs>
+        <param name="webReference">The Web reference to search for.</param>
+        <summary>Determines the index of the specified <see cref="T:System.Web.Services.Description.WebReference" /> instance.</summary>
+        <returns>The index of the specified Web reference, or -1 if the collection does not contain the specified Web reference.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index is zero based.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.IndexOf%2A> method.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.WebReference webReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.WebReference webReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.Insert(System.Int32,System.Web.Services.Description.WebReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="webReference" Type="System.Web.Services.Description.WebReference" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to insert the specified Web reference.</param>
+        <param name="webReference">The Web reference to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.Web.Services.Description.WebReference" /> instance at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The indices of members of the collection with indices higher than `index` are each increased by one. Indices are zero based.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.Insert%2A> method.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.WebReference this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.WebReference Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.WebReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the Web reference.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.WebReference" /> instance at the specified index.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.WebReference" /> instance at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index is zero based.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.Item%2A> property.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.WebReference webReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.WebReference webReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceCollection.Remove(System.Web.Services.Description.WebReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webReference" Type="System.Web.Services.Description.WebReference" />
+      </Parameters>
+      <Docs>
+        <param name="webReference">The Web reference to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Web.Services.Description.WebReference" /> instance from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection contains multiple instances of the specified Web reference, only the first instance is removed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Services.Description.WebReferenceCollection.Remove%2A> method.  
+  
+ [!code-csharp[System.Web.Services.Description.WebReferenceCollection#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReferenceCollection/CS/webreference.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

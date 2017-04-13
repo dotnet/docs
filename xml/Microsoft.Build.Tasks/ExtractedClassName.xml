@@ -1,0 +1,56 @@
+<Type Name="ExtractedClassName" FullName="Microsoft.Build.Tasks.ExtractedClassName">
+  <TypeSignature Language="C#" Value="public struct ExtractedClassName" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExtractedClassName extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ExtractedClassName" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extracts a class name from a language source file.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsInsideConditionalBlock">
+      <MemberSignature Language="C#" Value="public bool IsInsideConditionalBlock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInsideConditionalBlock" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the extracted class name exists inside a block of conditionally compiled code.</summary>
+        <value>
+          <see langword="true" /> to indicate the extracted class name exists inside a block of conditionally compiled code; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extracted class name.</summary>
+        <value>The extracted class name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

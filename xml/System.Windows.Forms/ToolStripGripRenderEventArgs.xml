@@ -1,0 +1,141 @@
+<Type Name="ToolStripGripRenderEventArgs" FullName="System.Windows.Forms.ToolStripGripRenderEventArgs">
+  <TypeSignature Language="C#" Value="public class ToolStripGripRenderEventArgs : System.Windows.Forms.ToolStripRenderEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripGripRenderEventArgs extends System.Windows.Forms.ToolStripRenderEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripRenderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ToolStripRenderEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#591](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#591)]
+ [!code-vb[System.Windows.Forms.EventExamples#591](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#591)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolStripGripRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStrip toolStrip);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStrip toolStrip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripGripRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStrip)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="toolStrip" Type="System.Windows.Forms.ToolStrip" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> object used to paint the move handle.</param>
+        <param name="toolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> the move handle is to be drawn on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GripBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GripBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle GripBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangle representing the area in which to paint the move handle.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the area in which to paint the move handle.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#591](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#591)]
+ [!code-vb[System.Windows.Forms.EventExamples#591](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#591)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GripDisplayStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripDisplayStyle GripDisplayStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripDisplayStyle GripDisplayStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripDisplayStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripGripDisplayStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style that indicates whether the move handle is displayed vertically or horizontally.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#591](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#591)]
+ [!code-vb[System.Windows.Forms.EventExamples#591](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#591)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GripStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripStyle GripStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripStyle GripStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style that indicates whether or not the move handle is visible.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#591](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#591)]
+ [!code-vb[System.Windows.Forms.EventExamples#591](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#591)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,237 @@
+<Type Name="PropertyAttributes" FullName="System.Reflection.PropertyAttributes">
+  <TypeSignature Language="C#" Value="public enum PropertyAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PropertyAttributes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PropertyAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the attributes that can be associated with a property. These attribute values are defined in corhdr.h.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the `PropertyAttributes`, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `Attributes`.  
+  
+ The enumerated value is a number representing the bitwise OR of the attributes implemented on the method.  
+  
+   
+  
+## Examples  
+ The following example builds three properties and displays the <xref:System.Reflection.PropertyAttributes> enumerated value. Note that the read-only property has no setter and thus cannot be changed by.`Caption = statement`.  
+  
+ [!code-cpp[Classic PropertyAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyAttributes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyAttributes Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyAttributes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasDefault">
+      <MemberSignature Language="C#" Value="HasDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes HasDefault = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.HasDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property has a default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that no attributes are associated with a property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved2">
+      <MemberSignature Language="C#" Value="Reserved2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes Reserved2 = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reserved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved3">
+      <MemberSignature Language="C#" Value="Reserved3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes Reserved3 = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reserved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved4">
+      <MemberSignature Language="C#" Value="Reserved4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes Reserved4 = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reserved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReservedMask">
+      <MemberSignature Language="C#" Value="ReservedMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes ReservedMask = int32(62464)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.ReservedMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a flag reserved for runtime use only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RTSpecialName">
+      <MemberSignature Language="C#" Value="RTSpecialName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes RTSpecialName = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.RTSpecialName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the metadata internal APIs check the name encoding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SpecialName">
+      <MemberSignature Language="C#" Value="SpecialName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PropertyAttributes SpecialName = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.SpecialName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property is special, with the name describing how the property is special.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,534 @@
+<Type Name="HtmlControl" FullName="System.Web.UI.HtmlControls.HtmlControl">
+  <TypeSignature Language="C#" Value="public abstract class HtmlControl : System.Web.UI.Control, System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HtmlControl extends System.Web.UI.Control implements class System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.HtmlIntrinsicControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the methods, properties, and events common to all HTML server controls in the ASP.NET page framework.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl> class provides common properties inherited by all HTML server control classes. A new instance of the class is not created directly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HtmlControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> class using default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlControl> class using default values.  
+  
+> [!NOTE]
+>  A new instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "span" literal string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HtmlControl (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">A string that specifies the tag name of the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> class using the specified tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlControl> class using the specified tag.  
+  
+> [!NOTE]
+>  A new instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The value of the `tag` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all attribute name and value pairs expressed on a server control tag within the ASP.NET page.</summary>
+        <value>A <see cref="T:System.Web.UI.AttributeCollection" /> object that contains all attribute name and value pairs expressed on a server control tag within the Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically access the attributes of the HTML server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+  
+ HTML attributes are treated by the .NET Framework as properties on the HTML server control to which they belong.  
+  
+ For additional information on the attributes collection, see the <xref:System.Web.UI.AttributeCollection?displayProperty=fullName> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Attributes%2A> property to determine the attributes of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object to hold the child controls (both literal and server) of the server control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> object to contain the current server control's child server controls.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="public bool Disabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Disabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Disabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.MinimizableAttributeTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the HTML server control is disabled.</summary>
+        <value>
+          <see langword="true" /> if the control is disabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the browser, a disabled element or control is read-only, with the following added restrictions: its value is not submitted with the form, the element or control cannot receive focus, and the element or control is skipped when navigating the document by tabbing.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Disabled%2A> property to programmatically enable and disable an <xref:System.Web.UI.HtmlControls.HtmlInputButton> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Disabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Disabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttribute">
+      <MemberSignature Language="C#" Value="protected virtual string GetAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetAttribute(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.GetAttribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute. This argument is case-insensitive.</param>
+        <summary>Gets the value of the named attribute on the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> control.</summary>
+        <returns>The value of this attribute on the element, as a <see cref="T:System.String" /> value. If the specified attribute does not exist on this element, returns an empty string ("").</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method to access an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method's `name` parameter is case-insensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
+        <summary>Writes content to render on a client to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A> method calls the <xref:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag%2A> method and passes the specified <xref:System.Web.UI.HtmlTextWriter> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> control's attributes into the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method writes the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> attribute of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginTag">
+      <MemberSignature Language="C#" Value="protected virtual void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the opening HTML tag of the control into the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag%2A> method renders the opening angle bracket (\<), followed by the control's tag name, attributes, and a closing angle bracket (>).  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAttribute">
+      <MemberSignature Language="C#" Value="protected virtual void SetAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.SetAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute to set.</param>
+        <param name="value">The value to set the attribute to.</param>
+        <summary>Sets the value of the named attribute on the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method to set an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+  
+ HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method's `name` parameter is case-insensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CssStyleCollection Style { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CssStyleCollection Style" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CssStyleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all cascading style sheet (CSS) properties applied to a specified HTML server control in the ASP.NET file.</summary>
+        <value>A <see cref="T:System.Web.UI.CssStyleCollection" /> object that contains the style properties for the HTML server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically access the style properties of the HTML server control.  
+  
+ For additional information on the CSS style collection, see the <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Style%2A> property to determine the style properties of an <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Style Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Style Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
+      <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The attribute name.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />.</summary>
+        <returns>The value of this attribute on the element, as a <see cref="T:System.String" /> value. If the specified attribute does not exist on this element, returns an empty string ("").</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.System%23Web%23UI%23IAttributeAccessor%23GetAttribute%2A> method calls the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
+      <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute to set.</param>
+        <param name="value">The value to set the attribute to.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.System%23Web%23UI%23IAttributeAccessor%23SetAttribute%2A> method calls the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagName">
+      <MemberSignature Language="C#" Value="public virtual string TagName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.TagName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element name of a tag that contains a <see langword="runat=server" /> attribute and value pair.</summary>
+        <value>The element name of the specified tag.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically determine the element name of the HTML server control. For example, the <xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A> property of the server-side `<div id="myDiv" runat=server>` element contains the value "div".  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A> property to programmatically determine the element name of a tag.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateIgnoresCase">
+      <MemberSignature Language="C#" Value="protected override bool ViewStateIgnoresCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ViewStateIgnoresCase" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.ViewStateIgnoresCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> view state is case-sensitive.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.ViewStateIgnoresCase%2A> property overrides the base class's <xref:System.Web.UI.Control.ViewStateIgnoresCase%2A> property to always return `true`, indicating that the controls that inherit from <xref:System.Web.UI.HtmlControls.HtmlControl> save view state without taking case into account.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

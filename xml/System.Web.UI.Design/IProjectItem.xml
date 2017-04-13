@@ -1,0 +1,95 @@
+<Type Name="IProjectItem" FullName="System.Web.UI.Design.IProjectItem">
+  <TypeSignature Language="C#" Value="public interface IProjectItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProjectItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IProjectItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for an item that is retrieved at design time from a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppRelativeUrl">
+      <MemberSignature Language="C#" Value="public string AppRelativeUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.AppRelativeUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL for the item relative to the design host.</summary>
+        <value>The relative URL.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the item.</summary>
+        <value>The name of the item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IProjectItem Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IProjectItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the containing item, if any.</summary>
+        <value>An <see cref="T:System.Web.UI.Design.IProjectItem" />, if the current item is contained within another item; otherwise, <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalPath">
+      <MemberSignature Language="C#" Value="public string PhysicalPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PhysicalPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.PhysicalPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path for a project item.</summary>
+        <value>The path for the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IProjectItem.PhysicalPath%2A> property returns the physical path for a given project item if the design host supports this feature and if it makes sense to retrieve a physical path for the item. If the item is a non-disk item, such as a Web site or an FTP site, the <xref:System.Web.UI.Design.IProjectItem.PhysicalPath%2A> property should return `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

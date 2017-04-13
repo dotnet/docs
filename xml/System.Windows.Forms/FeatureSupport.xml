@@ -1,0 +1,266 @@
+<Type Name="FeatureSupport" FullName="System.Windows.Forms.FeatureSupport">
+  <TypeSignature Language="C#" Value="public abstract class FeatureSupport : System.Windows.Forms.IFeatureSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FeatureSupport extends System.Object implements class System.Windows.Forms.IFeatureSupport" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FeatureSupport" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Forms.IFeatureSupport</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides <see langword="static" /> methods for retrieving feature information from the current system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `static` methods of this class when the classes you query for feature information implement the <xref:System.Windows.Forms.IFeatureSupport> interface. Otherwise, inherit from <xref:System.Windows.Forms.FeatureSupport> and provide your own implementation. For an implementation of this class, see <xref:System.Windows.Forms.OSFeature>.  
+  
+ To get the version number of a feature, call <xref:System.Windows.Forms.FeatureSupport.GetVersionPresent%2A>. Call <xref:System.Windows.Forms.FeatureSupport.IsPresent%2A> to determine if a particular feature or version of a feature is installed.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Windows.Forms.FeatureSupport" />, you must override the <see cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" /> method. When you override this method, check that the class that you use for the <paramref name="feature" /> parameter is the same as the class used for this parameter in the <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" /> method. If the two <paramref name="feature" /> parameters differ, you also must override <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FeatureSupport ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FeatureSupport" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVersionPresent">
+      <MemberSignature Language="C#" Value="public abstract Version GetVersionPresent (object feature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Version GetVersionPresent(object feature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature whose version is requested.</param>
+        <summary>When overridden in a derived class, gets the version of the specified feature that is available on the system.</summary>
+        <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Windows.Forms.FeatureSupport" />, you must override this method. When you override this method, check that the class that you use for the <paramref name="feature" /> parameter is the same as the class used for this parameter in the <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" /> method. If the two <paramref name="feature" /> parameters differ, you must also override <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />.  
+  
+ See <see cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" /> for an implementation of this method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVersionPresent">
+      <MemberSignature Language="C#" Value="public static Version GetVersionPresent (string featureClassName, string featureConstName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Version GetVersionPresent(string featureClassName, string featureConstName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="featureClassName" Type="System.String" />
+        <Parameter Name="featureConstName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
+        <param name="featureConstName">The fully qualified name of the feature to look for.</param>
+        <summary>Gets the version of the specified feature that is available on the system.</summary>
+        <returns>A <see cref="T:System.Version" /> with the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
+  
+ See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public virtual bool IsPresent (object feature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPresent(object feature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature to look for.</param>
+        <summary>Determines whether any version of the specified feature is installed in the system.</summary>
+        <returns>
+          <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Windows.Forms.FeatureSupport" />, you must override the <see cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" /> method. When you override this method, check that the class that you use for the <paramref name="feature" /> parameter is the same as the class used for this parameter in the <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" /> method. If the two <paramref name="feature" /> parameters differ, you must also override <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public virtual bool IsPresent (object feature, Version minimumVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPresent(object feature, class System.Version minimumVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.Object,System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+        <Parameter Name="minimumVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature to look for.</param>
+        <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature to look for.</param>
+        <summary>Determines whether the specified or newer version of the specified feature is installed in the system.</summary>
+        <returns>
+          <see langword="true" /> if the feature is present and its version number is greater than or equal to the specified minimum version number; <see langword="false" /> if the feature is not installed or its version number is below the specified minimum number.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Windows.Forms.FeatureSupport" />, you must override the <see cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" /> method. When you override this method, check that the class that you use for the <paramref name="feature" /> parameter is the same as the class used for this parameter in the <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" /> method. If the two <paramref name="feature" /> parameters differ, you must also override <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public static bool IsPresent (string featureClassName, string featureConstName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPresent(string featureClassName, string featureConstName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="featureClassName" Type="System.String" />
+        <Parameter Name="featureConstName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
+        <param name="featureConstName">The fully qualified name of the feature to look for.</param>
+        <summary>Determines whether any version of the specified feature is installed in the system. This method is <see langword="static" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified feature is present; <see langword="false" /> if the specified feature is not present or if the product containing the feature is not installed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public static bool IsPresent (string featureClassName, string featureConstName, Version minimumVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPresent(string featureClassName, string featureConstName, class System.Version minimumVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String,System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="featureClassName" Type="System.String" />
+        <Parameter Name="featureConstName" Type="System.String" />
+        <Parameter Name="minimumVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
+        <param name="featureConstName">The fully qualified name of the feature to look for.</param>
+        <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature.</param>
+        <summary>Determines whether the specified or newer version of the specified feature is installed in the system. This method is <see langword="static" />.</summary>
+        <returns>
+          <see langword="true" /> if the feature is present and its version number is greater than or equal to the specified minimum version number; <see langword="false" /> if the feature is not installed or its version number is below the specified minimum number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

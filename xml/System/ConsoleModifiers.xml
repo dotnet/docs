@@ -1,0 +1,125 @@
+<Type Name="ConsoleModifiers" FullName="System.ConsoleModifiers">
+  <TypeSignature Language="C#" Value="public enum ConsoleModifiers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleModifiers extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ConsoleModifiers" />
+  <AssemblyInfo>
+    <AssemblyName>System.Console</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the SHIFT, ALT, and CTRL modifier keys on a keyboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
+  
+ The <xref:System.ConsoleModifiers> enumeration is used in conjunction with the <xref:System.ConsoleKeyInfo> type.  
+  
+   
+  
+## Examples  
+ The following code example reads a key and determines whether one or more modifier keys was pressed.  
+  
+ [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
+ [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
+ [!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="Alt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Alt = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Alt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleModifiers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left or right ALT modifier key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="Control" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Control = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Control" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleModifiers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left or right CTRL modifier key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shift">
+      <MemberSignature Language="C#" Value="Shift" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Shift = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Shift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ConsoleModifiers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left or right SHIFT modifier key.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

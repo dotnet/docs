@@ -1,0 +1,87 @@
+<Type Name="ContentOperations" FullName="System.Windows.ContentOperations">
+  <TypeSignature Language="C#" Value="public static class ContentOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContentOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ContentOperations" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static utility methods for getting or setting the position of a <see cref="T:System.Windows.ContentElement" /> in an element tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most content element scenarios, the property <xref:System.Windows.FrameworkContentElement.Parent%2A> should be used instead of members of <xref:System.Windows.ContentOperations>, if <xref:System.Windows.FrameworkContentElement.Parent%2A> is available.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetParent (System.Windows.ContentElement reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetParent(class System.Windows.ContentElement reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.GetParent(System.Windows.ContentElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.ContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.ContentElement" /> to get the parent from.</param>
+        <summary>Gets the parent element of the specified <see cref="T:System.Windows.ContentElement" />.</summary>
+        <returns>The parent element in the current tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most practical <xref:System.Windows.ContentElement> derived classes in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] are also a <xref:System.Windows.FrameworkContentElement> derived class. For these classes, the <xref:System.Windows.FrameworkContentElement.Parent%2A> property should be used instead.  
+  
+ <xref:System.Windows.FrameworkContentElement.Parent%2A> returns the parent element in the logical tree, which might not be the same element as returned by <xref:System.Windows.ContentOperations.GetParent%2A>. <xref:System.Windows.ContentOperations.GetParent%2A> exists specifically to correct for certain architectural issues whereby a <xref:System.Windows.ContentElement> class that is not also a <xref:System.Windows.FrameworkContentElement> exists in a tree that is not strictly speaking either the logical tree or the visual tree.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="public static void SetParent (System.Windows.ContentElement reference, System.Windows.DependencyObject parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetParent(class System.Windows.ContentElement reference, class System.Windows.DependencyObject parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.SetParent(System.Windows.ContentElement,System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Windows.ContentElement" />
+        <Parameter Name="parent" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The <see cref="T:System.Windows.ContentElement" /> to reparent.</param>
+        <param name="parent">The new parent element.</param>
+        <summary>Sets the parent element of the provided <see cref="T:System.Windows.ContentElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to help define a <xref:System.Windows.ContentElement> hosting and content model on a <xref:System.Windows.UIElement> class. The <xref:System.Windows.Controls.Primitives.DocumentViewerBase> class uses this method internally to hook up its <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A> content property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

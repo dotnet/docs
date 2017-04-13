@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "LINQ [Visual Basic], LINQ to XML"
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

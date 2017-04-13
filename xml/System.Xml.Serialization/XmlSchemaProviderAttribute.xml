@@ -1,0 +1,153 @@
+<Type Name="XmlSchemaProviderAttribute" FullName="System.Xml.Serialization.XmlSchemaProviderAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XmlSchemaProviderAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaProviderAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSchemaProviderAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Interface)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>When applied to a type, stores the name of a static method of the type that returns an XML schema and a <see cref="T:System.Xml.XmlQualifiedName" /> (or <see cref="T:System.Xml.Schema.XmlSchemaType" /> for anonymous types) that controls the serialization of the type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The main purpose of the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> is to enable the <xref:System.Xml.Serialization.XmlSchemaExporter> class to return a schema when queried by the Web Services Description Language tool (WSDL.exe), or when using the **Add Web Reference** feature of [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]. You can control the actual schema for the type in the static method.  
+  
+> [!NOTE]
+>  The target class of the attribute must implement the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+  
+ The <xref:System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName%2A> property returns the name of a static method through reflection. The method, which must be implemented, must take a single parameter, an <xref:System.Xml.Schema.XmlSchemaSet> object, which the method populates with an <xref:System.Xml.Schema.XmlSchema> object. The method must also return an <xref:System.Xml.XmlQualifiedName> object that identifies the data type.  
+  
+## Returning Anonymous Types  
+ An anonymous complex type cannot be created using a method that returns <xref:System.Xml.XmlQualifiedName>. Because an anonymous type has no name, and you cannot add an anonymous type to a schema, the anonymous type must be returned as an <xref:System.Xml.Schema.XmlSchemaType>.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> to a server-side class. When invoked, the method named by the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName%2A> property creates the schema. This simple implementation reads an existing schema off the disk. However, you can also create a custom schema, if necessary, using the types found in the <xref:System.Xml.Schema> namespace.  
+  
+ [!code-csharp[HowToChunkSerializedData#2](~/samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS/SerializationChunk.cs#2)]
+ [!code-vb[HowToChunkSerializedData#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB/SerializationChunk.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaProviderAttribute (string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaProviderAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodName">The name of the static method that must be implemented.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemaProviderAttribute" /> class, taking the name of the static method that supplies the type's XML schema.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAny">
+      <MemberSignature Language="C#" Value="public bool IsAny { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAny" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemaProviderAttribute.IsAny" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the target class is a wildcard, or that the schema for the class has contains only an <see langword="xs:any" /> element.</summary>
+        <value>
+          <see langword="true" />, if the class is a wildcard, or if the schema contains only the <see langword="xs:any" /> element; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target class of the attribute can be any class. This can be achieved in the following ways:  
+  
+-   The method named by the attribute can return `null`.  
+  
+-   Set the value of this property to `true` to prevent the method from being called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the static method that supplies the type's XML schema and the name of its XML Schema data type.</summary>
+        <value>The name of the method that is invoked by the XML infrastructure to return an XML schema.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

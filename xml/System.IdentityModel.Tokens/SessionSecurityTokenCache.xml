@@ -1,0 +1,202 @@
+<Type Name="SessionSecurityTokenCache" FullName="System.IdentityModel.Tokens.SessionSecurityTokenCache">
+  <TypeSignature Language="C#" Value="public abstract class SessionSecurityTokenCache : System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SessionSecurityTokenCache extends System.Object implements class System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IdentityModel.Configuration.ICustomIdentityConfiguration</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines an abstract class for a cache of session security tokens.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SessionSecurityTokenCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrUpdate">
+      <MemberSignature Language="C#" Value="public abstract void AddOrUpdate (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key, System.IdentityModel.Tokens.SessionSecurityToken value, DateTime expiryTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddOrUpdate(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key, class System.IdentityModel.Tokens.SessionSecurityToken value, valuetype System.DateTime expiryTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.AddOrUpdate(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityToken,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
+        <Parameter Name="value" Type="System.IdentityModel.Tokens.SessionSecurityToken" />
+        <Parameter Name="expiryTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the entry to be added or updated.</param>
+        <param name="value">The token associated with the entry.</param>
+        <param name="expiryTime">The expiration time of the entry.</param>
+        <summary>When overridden in a derived class, attempts to add an entry to the cache or update an existing one.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Tokens.SessionSecurityToken Get (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SessionSecurityToken Get(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.Get(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SessionSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the entry to retrieve.</param>
+        <summary>When overridden in a derived class, attempts to retrieve an entry from the cache.</summary>
+        <returns>The session token associated with the key or <see langword="null" />, if no match is found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAll">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SessionSecurityToken&gt; GetAll (string endpointId, System.Xml.UniqueId contextId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SessionSecurityToken&gt; GetAll(string endpointId, class System.Xml.UniqueId contextId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.GetAll(System.String,System.Xml.UniqueId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SessionSecurityToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointId" Type="System.String" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+      </Parameters>
+      <Docs>
+        <param name="endpointId">The endpoint ID to search for.</param>
+        <param name="contextId">The context ID to search for.</param>
+        <summary>When overridden in a derived class, retrieves all of the tokens associated with a key.</summary>
+        <returns>The collection of session tokens associated with the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCustomConfiguration">
+      <MemberSignature Language="C#" Value="public virtual void LoadCustomConfiguration (System.Xml.XmlNodeList nodelist);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList nodelist) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
+      </Parameters>
+      <Docs>
+        <param name="nodelist">The custom configuration elements.</param>
+        <summary>When overridden in a derived class, loads custom configuration from XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method throws a <xref:System.NotImplementedException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract void Remove (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.Remove(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the entry to remove.</param>
+        <summary>When implemented in a derived class, attempts to remove an entry from the cache.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="public abstract void RemoveAll (string endpointId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll(string endpointId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.RemoveAll(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointId">The endpoint ID for which to remove entries.</param>
+        <summary>When implemented in a derived class, attempts to remove all entries with a matching endpoint ID from the cache.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="public abstract void RemoveAll (string endpointId, System.Xml.UniqueId contextId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll(string endpointId, class System.Xml.UniqueId contextId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.RemoveAll(System.String,System.Xml.UniqueId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointId" Type="System.String" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+      </Parameters>
+      <Docs>
+        <param name="endpointId">The endpoint ID for which to remove entries.</param>
+        <param name="contextId">The context ID for which to remove entries.</param>
+        <summary>When implemented in a derived class, attempts to remove all matching entries from the cache.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

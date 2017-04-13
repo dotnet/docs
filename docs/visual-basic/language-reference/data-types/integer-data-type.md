@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "Integer data type"
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

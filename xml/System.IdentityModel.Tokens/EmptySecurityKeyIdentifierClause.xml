@@ -1,0 +1,84 @@
+<Type Name="EmptySecurityKeyIdentifierClause" FullName="System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause">
+  <TypeSignature Language="C#" Value="public class EmptySecurityKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmptySecurityKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an empty key identifier clause. This class is used when an <see langword="&lt;EncryptedData&gt;" /> or a <see langword="&lt;Signature&gt;" /> element does not contain a <see langword="&lt;KeyInfo&gt;" /> element, which is used to describe the key required to decrypt the data or check the signature.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmptySecurityKeyIdentifierClause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor assumes that the user knows how to resolve the key required without any context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmptySecurityKeyIdentifierClause (object context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">Used to provide a hint when there is a need resolve an empty clause to a particular key. In the case of SAML11 and SAML2 tokens that have signatures without a <see langword="&lt;KeyInfo&gt;" /> element, this property will contain the assertion that is currently being processed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" /> class with the specified context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that is used to provide a hint when there is a need to resolve to a particular key.</summary>
+        <value>An object that provides a hint when there is a need to resolve to a particular key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the case of SAML11 and SAML2 tokens that have signatures without a `<KeyInfo>` element, this property will contain the assertion that is currently being processed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

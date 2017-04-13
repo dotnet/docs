@@ -29,8 +29,8 @@ helpviewer_keywords:
   - "names, shadowing"
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

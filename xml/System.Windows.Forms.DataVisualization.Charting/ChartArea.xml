@@ -1,0 +1,1452 @@
+<Type Name="ChartArea" FullName="System.Windows.Forms.DataVisualization.Charting.ChartArea">
+  <TypeSignature Language="C#" Value="public class ChartArea : System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartArea extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.ChartNamedElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Axes")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a chart area on the chart image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within any given chart, the *inner plot position* is the rectangular area, inside the x and y-axis lines, where the data points are drawn. The *plot position* is the rectangular area that encompasses the inner plot position, the tick marks, and the axis labels. The *chart area* is the rectangular area that encompasses the plot position, the tick marks, the axis labels and the axis titles on the chart.  
+  
+ A chart area is represented by a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> class; <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> objects are stored in the <xref:System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection> class.  
+  
+ The number of chart series that can be plotted in a chart area is unlimited.  
+  
+ A <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object:  
+  
+-   Uses one distinct inner plotting area.  
+  
+-   Is used to plot one or more chart series.  
+  
+-   Has primary and secondary x and y-axes, except for pie and doughnut chart types.  
+  
+ When you use Shape chart types, which includes pie, doughnut, funnel, pyramid, polar, and radar charts, the inner plotting position defines the size of the chart type shape. For example, when you increase the value of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property on a pie chart, you will increase the radius of the pie shape.  
+  
+ For all other chart types, each chart area has two sets of X- and Y-axes, primary and secondary. To access properties related to these axes, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY2%2A> properties. If you need to set a property that affects all axes on the chart, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Axes%2A> property.  
+  
+ One or more series are associated with a chart area. The series has a <xref:System.Windows.Forms.DataVisualization.Charting.Series.ChartArea%2A> property that determines the chart area that each series belongs to. By default, the series is connected to the default chart area. To disable the display of a series, set the <xref:System.Windows.Forms.DataVisualization.Charting.Series.ChartArea%2A> property of that series to a zero-length string.  
+  
+ If another chart area is added to the chart, you can associate any series with the new chart area. In all Shape chart types, as well as bar and stacked bar chart types, each series must be plotted in a separate chart area. In all other chart types, multiple series can be combined in the same chart area.  
+  
+ A 3D chart is displayed on a chart area-by-chart area basis. You can use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Area3DStyle%2A> property to enable and customize your chart in 3D.  
+  
+ The chart area minimum and maximum will not be automatically recalculated if you add new data, so the chart will not automatically change axis sizes.  You can require the chart area to recalculate these values by using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method.  
+  
+ To align multiple chart areas vertically, set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> property. To align multiple chart areas horizontally, you must first position the chart areas using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position%2A> property, and then set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> property to Horizontal.  
+  
+ To suppress the display of a series, set the <xref:System.Windows.Forms.DataVisualization.Charting.Series> property of that series to a zero-length string.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChartArea ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> class.  
+  
+> [!NOTE]
+>  It is highly recommended that you use one of the `Add` or `Insert` methods of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas%2A> collection property to add a chart area at run time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChartArea (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name for the new <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> class with the specified chart area name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignmentOrientation">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations AlignmentOrientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations AlignmentOrientation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.FlagsEnumUITypeEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment orientation of a chart area.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations" /> enumeration value that specifies the alignment orientation of a chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Through the use of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> properties, it is possible to align or synchronize two or more chart areas horizontally, vertically or both.  
+  
+ First, set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A> property to the name of a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object. This chart area will then be aligned, based on the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> setting, which defines the alignment to use, and the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> setting, which defines the elements of the chart area that should be used to set the alignment.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A> property is not set, the chart area will not be aligned, regardless of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> settings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignmentStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles AlignmentStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles AlignmentStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.FlagsEnumUITypeEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment style of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" />.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles" /> enumeration value that can represent either a single value or the bitwise-OR of multiple values that define the alignment to use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> property to align two or more chart areas horizontally, vertically or both. The alignment type is one of the following values, or a bitwise OR combination of the values below.  
+  
+|Member Name|Description|  
+|-----------------|-----------------|  
+|All|Chart areas are aligned using all values.|  
+|AxesView|Chart areas are aligned using the View of the specified <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea>.|  
+|Cursor|Chart areas are aligned on the cursor.|  
+|None|Chart areas are not automatically aligned.|  
+|Position|Chart areas are aligned with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position%2A> of the chart area specified.|  
+|InnerPlotPosition|Chart areas are aligned with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> of the chart area specified.|  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A> value is not set, the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> property will have no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignWithChartArea">
+      <MemberSignature Language="C#" Value="public string AlignWithChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlignWithChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("NotSet")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.LegendAreaNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object to which this chart area should be aligned.</summary>
+        <value>A <see langword="string" /> value that represents the name of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object to which this chart area should be aligned. The default is the empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Through the use of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> properties, it is possible to align or synchronize two or more chart areas horizontally, vertically or both.  
+  
+ First, set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A> property to the name of a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object. This chart area will then be aligned, based on the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> setting, which defines the alignment to use, and the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> setting, which defines the elements of the chart area that should be used to set the alignment.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea%2A> property is not set, the chart area will not be aligned, regardless of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignmentOrientation%2A> settings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Area3DStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle Area3DStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle Area3DStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.Area3DStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" /> object, which is used to implement three-dimensional (3D) for all series in a chart area.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" /> object that implements 3D for all series plotted in a chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To enable or disable 3D for a chart area, set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Enable3D%2A> property.  
+  
+ When the chart is drawn in 3D, scale breaks are not supported on the axis.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axes">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis[] Axes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis[] Axes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.Axes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.AxesArrayEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxesArrayConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array that represents all axes for a chart area.</summary>
+        <value>An array of <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> objects that represents all axes used by a chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The main purpose of this property is to provide access to the properties of the X, Y, X2 and Y2 axes at design time.  
+  
+ At run time, the axes for a chart area should be accessed using the individual axis properties, such as <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2%2A>, and so forth.  
+  
+ If you decide to use this property at run time—for example, in an event—you can access an item in this array by specifying an <xref:System.Windows.Forms.DataVisualization.Charting.AxisName> enumeration member as the identifier.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisX">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis AxisX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis AxisX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the primary X-axis.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the primary X-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to manipulate the primary X-axis in the chart area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisX2">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis AxisX2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis AxisX2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the secondary X-axis.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the secondary X-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to manipulate the secondary X-axis in the chart area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisY">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis AxisY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis AxisY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the primary Y-axis.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the primary Y-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to manipulate the primary Y-axis in the chart area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisY2">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis AxisY2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis AxisY2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the secondary Y-axis.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the secondary Y-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to manipulate the secondary Y-axis in the chart area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the background color of a chart area. The default color is <see cref="T:System.Drawing.Color.White" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> value will be the first color used if you have specified gradient colors for the background.  
+  
+ The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the chart area. As a result, the background will be transparent.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackGradientStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackGradientStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.GradientEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the orientation for the background gradient of a chart area, and also determines whether or not a gradient is used.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration that specifies the orientation for the background gradient of a chart area and determines whether a gradient is used. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackGradientStyle%2A> property to determine whether a chart area will display a gradient, and to determine the orientation of the gradient if one is used.  
+  
+ For a listing of available patterns, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.GradientStyle> enumeration.  
+  
+ To use gradient colors:  
+  
+-   Set the primary color of the chart area background with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property.  
+  
+-   Set the secondary color of the chart area background with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> property.  
+  
+-   Set this <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackGradientStyle%2A> property to the desired gradient style.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackHatchStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackHatchStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.HatchStyleEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hatching style of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration that specifies the hatching style of a chart area. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
+  
+ For a listing of available hatching styles, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration.  
+  
+> [!NOTE]
+>  The color of hatching lines is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImage">
+      <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ImageValueEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background image of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see langword="string" /> value that represents the URL of an image file, used as the background image of a chart area. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defines a path to a background image for a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea>, and can be an absolute or relative URL.  
+  
+ To position the image, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageAlignment%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageWrapMode%2A> properties.  
+  
+ You can also specify one of the colors displayed by the image as "transparent", by setting the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageTransparentColor%2A> property.  
+  
+ An image be any valid graphics file supported by .NET Framework, including icons.  
+  
+ Background images take precedence over other background properties such as gradient color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageAlignment">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> background image.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value that specifies the alignment of the background image of the chart area. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.TopLeft" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the alignment of the background image for the chart area, and is only applied when the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>.  
+  
+ For more information about the available alignments, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle> enumeration topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageTransparentColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageTransparentColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object background image that will be drawn as transparent.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of a background image that will be drawn as transparent. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageWrapMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageWrapMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the drawing mode for the background image of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that specifies the drawing mode for the background image of a chart area. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageWrapMode%2A> property determines how the image is displayed; the image can be tiled, scaled, and so forth.  
+  
+ If an image is scaled, it will be stretched to fit within the bounds of the chart area. If the image is tiled, it is repeatedly drawn, starting from the top-left corner of the chart area.  
+  
+ For more information about the available wrapping modes, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackImageAlignment%2A> property setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackSecondaryColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the secondary color for the background of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the secondary color for the background of a chart area. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> property is one of several related properties that determine the secondary background color of <xref:System.Windows.Forms.DataVisualization.Charting.Chart> objects, and is used when gradient colors are being applied.  
+  
+ You can set <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
+  
+ If hatching is used, the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> property determines the color of the hatching lines for the chart area.  
+  
+ To use gradient colors for the background of a chart area:  
+  
+-   Set the primary color with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property.  
+  
+-   Set the secondary color with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackSecondaryColor%2A> property.  
+  
+-   Set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackGradientStyle%2A> property to the desired gradient style.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the border color of a chart area. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderColor%2A> property to any valid ARGB (alpha, red, green, blue) value.  
+  
+> [!NOTE]
+>  For pie and doughnut charts, this property determines the color of radial and horizontal lines if data labels are drawn outside the pie or doughnut—that is, if the `LabelStyle` custom property is set to "Outside".  
+  
+ This property also determines the marker lines for 3D charts if the `ShowMarkerLines` custom property is set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderDashStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that determines the border style of the chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderDashStyle%2A> property determines the line style to use for a border. The line can be solid, dotted, and so forth.  
+  
+ For other border styles, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>An <see langword="integer" /> value that determines the border width, in pixels, of the chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BorderWidth%2A> property can also set the width of lines for line charts, custom legend items displayed with a line style, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorX">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Cursor CursorX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Cursor CursorX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.CursorX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Cursor" /> object that is used for cursors and selected ranges along the X-axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Cursor" /> object used for cursors and selected ranges along the X-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Forms.DataVisualization.Charting.Cursor> object is used for the X-axis cursor and its selected ranges. For all charts except bar chart types, the X-axis cursor represents the vertical cursor. For bar chart types, the X-axis cursor represents the horizontal cursor.  
+  
+ Refer to the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor> class documentation for a description of its members, as well as sample source code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorY">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Cursor CursorY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Cursor CursorY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.CursorY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Cursor" /> object that is used for cursors and selected ranges along the Y-axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Cursor" /> object used for cursors and selected ranges along the Y-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Forms.DataVisualization.Charting.Cursor> object is used for the Y-axis cursor and its selected ranges. For all charts except bar chart types, the Y-axis cursor represents the horizontal cursor. For bar chart types, the Y-axis cursor represents the vertical cursor.  
+  
+ Refer to the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor> class documentation for a description of its members, as well as sample source code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSeriesDepth">
+      <MemberSignature Language="C#" Value="public float GetSeriesDepth (System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSeriesDepth(class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.GetSeriesDepth(System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> for which the depth is retrieved.</param>
+        <summary>Returns the depth of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> in a chart area.</summary>
+        <returns>A <see langword="float" /> value that represents the depth of the specified <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />, which is measured as a percentage of the chart area's depth.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to get the depth of a specified series. The returned value is measured as a percentage of the chart area's depth, which is the same unit of measurement used in the <xref:System.Windows.Forms.DataVisualization.Charting.Point3D.Z%2A> property.  
+  
+ All series have a depth, regardless of their chart type. For example, even point and bubble series have a depth, even though the entire depth is not used to draw the points or bubbles.  
+  
+ The depth of a series can be used to determine a Z value for a point that is used in a custom drawing routine.  
+  
+> [!NOTE]
+>  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A>method.  
+  
+ To get relative X and Y-values from an axis, use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition%2A> method for both the X and Y axes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSeriesZPosition">
+      <MemberSignature Language="C#" Value="public float GetSeriesZPosition (System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSeriesZPosition(class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.GetSeriesZPosition(System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> for which the Z position is retrieved.</param>
+        <summary>Returns the Z position of a series, which is useful for custom drawing.</summary>
+        <returns>A <see langword="float" /> value that represents the Z position of the specified series, which is measured as a percentage of the depth of a chart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to get the Z position of a series. The Z position is measured from the back wall of the chart area to the center of a data series, and is represented as a percentage of the chart area's depth. For example, a series that is drawn halfway along the Z-axis has a Z position of 50.  
+  
+ The Z position of a series is normally used for a custom drawing routine.  
+  
+> [!NOTE]
+>  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A>method.  
+  
+ To get relative X and Y-values from an axis, use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition%2A> method for both the X and Y axes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerPlotPosition">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ElementPosition InnerPlotPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ElementPosition InnerPlotPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.ElementPositionConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ElementPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object, which defines the inner plot position of a chart area object.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object, which defines the inner plot position of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property defines the rectangle within a chart area element that is used for plotting data; it excludes tick marks, axis labels, and so forth.  
+  
+ The coordinates used for this property (0,0 to 100,100) are related to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object, and not to the entire <xref:System.Windows.Forms.DataVisualization.Charting.Chart>.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property can be used to align multiple chart areas. However, if one chart area has tick marks and axis labels and another one does not, their axis lines cannot be aligned.  
+  
+> [!IMPORTANT]
+>  This property can also be used to change the size of charts, such as pie or doughnut, without changing the size of the generated chart image.  
+  
+ To change the position of an entire <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position%2A> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSameFontSizeForAllAxes">
+      <MemberSignature Language="C#" Value="public bool IsSameFontSizeForAllAxes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSameFontSizeForAllAxes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.IsSameFontSizeForAllAxes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines if the labels of the relevant chart area axes are of equal size.</summary>
+        <value>
+          <see langword="true" /> if all axes that have their <see cref="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit" /> property set to <see langword="true" /> and will display their labels using the same font size; otherwise, <see langword="false." /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The font size is automatically calculated by the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, with the largest size that fits being used.  
+  
+ This property applies to all chart area axes that have their <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique name of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see langword="string" /> value that represents the unique name of a <see langword="ChartArea" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object must be unique, otherwise an exception will be thrown.  
+  
+ This property can be used as the indexer when retrieving a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object from the <xref:System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection> object.  
+  
+ If you set this property to a zero-length string. an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ElementPosition Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ElementPosition Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.ElementPositionConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ElementPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object that defines the position of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object within the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" />.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.ElementPosition" /> object that defines the position of a chart area object within the chart image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defines the position of a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object within the <xref:System.Windows.Forms.DataVisualization.Charting.Chart>, and includes tick marks, axis labels, and so forth.  
+  
+ The coordinates used for this property (0,0 to 100,100) are related to the entire chart image.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecalculateAxesScale">
+      <MemberSignature Language="C#" Value="public void RecalculateAxesScale ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RecalculateAxesScale() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.RecalculateAxesScale" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Recalculates the properties of the chart area after changes have been made to the chart in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.Customize" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Customize> event to make changes, it is sometimes necessary to recalculate chart area properties so that the chart is rendered correctly. For example, if an axis range is changed, the labels for that axis must be recalculated.  
+  
+ Call this method after you use the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Customize> event to make ANY changes to a chart area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.ShadowColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "128,0,0,0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow color of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the shadow color of a chart area. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set to any valid ARGB (alpha, red, green, blue) value.  
+  
+ The alpha value can be used to achieve a "realistic" shadowing effect; try a color value of "128,0,0,0" for shadows.  
+  
+ To implement a shadow, set the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.ShadowOffset%2A> property to a value other than zero (0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowOffset">
+      <MemberSignature Language="C#" Value="public int ShadowOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.ShadowOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow offset, in pixels, of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <value>An <see langword="integer" /> that represents the shadow offset, in pixels, of the chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement shadowing, use a value other than zero (0). A positive value will result in a shadow that shifts down and to the right. A negative value will result in a shadow that shifts up and to the left.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformPoints">
+      <MemberSignature Language="C#" Value="public void TransformPoints (System.Windows.Forms.DataVisualization.Charting.Point3D[] points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TransformPoints(class System.Windows.Forms.DataVisualization.Charting.Point3D[] points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints(System.Windows.Forms.DataVisualization.Charting.Point3D[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Windows.Forms.DataVisualization.Charting.Point3D[]" />
+      </Parameters>
+      <Docs>
+        <param name="points">An array of 3D points.</param>
+        <summary>Applies 3D transformations to an array of 3D points, which must be done before GDI+ drawing methods can be called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public virtual bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines if a chart area is visible.</summary>
+        <value>
+          <see langword="true" /> if the chart area is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this flag is set to `false`, all series, legends, titles and annotation objects associated with the chart area will also be hidden.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

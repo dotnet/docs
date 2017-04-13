@@ -1,0 +1,67 @@
+<Type Name="BlockScope" FullName="Microsoft.JScript.BlockScope">
+  <TypeSignature Language="C#" Value="public class BlockScope : Microsoft.JScript.ActivationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockScope extends Microsoft.JScript.ActivationObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BlockScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ActivationObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the scope of a block of code that is taking part in a scope hierarchy and that can be pushed onto the global scope stack. For example, this class can represent the scope of a <see langword="try" /> block.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockScope (Microsoft.JScript.ScriptObject parent, string name, int scopeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, string name, int32 scopeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.#ctor(Microsoft.JScript.ScriptObject,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.JScript.ScriptObject" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopeId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent of the scope.</param>
+        <param name="name">The name of the scope.</param>
+        <param name="scopeId">The ID of the scope.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BlockScope" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected override Microsoft.JScript.JSVariableField CreateField (string name, System.Reflection.FieldAttributes attributeFlags, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.JScript.JSVariableField CreateField(string name, valuetype System.Reflection.FieldAttributes attributeFlags, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSVariableField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="attributeFlags" Type="System.Reflection.FieldAttributes" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field.</param>
+        <param name="attributeFlags">A bitwise combination of the enumeration values that describe the attributes of the field.</param>
+        <param name="value">The value of the field.</param>
+        <summary>Creates a new scope variable, using the specified name, value, and attributes.</summary>
+        <returns>A scope variable that has the specified name, value, and attributes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

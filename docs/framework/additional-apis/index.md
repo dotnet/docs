@@ -25,22 +25,22 @@ manager: "wpickett"
 
 The .NET Framework is constantly evolving and in order to improve cross-platform development or to introduce new functionality early to our customers, we release new features out of band (OOB). This topic lists the OOB projects that we provide documentation for.  
   
-In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the [CodePagesEncodingProvider Class](https://msdn.microsoft.com/library/system.text.codepagesencodingprovider.aspx) class makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
+In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the <xref:System.Text.CodePagesEncodingProvider> class makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
   
 ## OOB projects
   
 | Project | Description |  
 | ------- | ----------- |  
-| [System.Collections.Immutable](https://msdn.microsoft.com/library/system.collections.immutable.aspx) | Provides collections that are thread safe and guaranteed to never change their contents. |
+| <xref:System.Collections.Immutable> | Provides collections that are thread safe and guaranteed to never change their contents. |
 | [System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833) | Provides a message handler for <xref:System.Net.Http.HttpClient> based on the WinHTTP interface of Windows. |
-| <xref:System.Numerics> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
+| <xref:System.Numerics.Vector> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
 | [TPL Dataflow Library](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |  
 
 ## Platform-specific libraries
   
 | Project | Description |  
 | ------- | ----------- |  
-| [System.Text.CodePagesEncodingProvider](https://msdn.microsoft.com/library/system.text.codepagesencodingprovider.aspx) | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |  
+| <xref:System.Text.CodePagesEncodingProvider> | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |  
   
 ## Private APIs  
 

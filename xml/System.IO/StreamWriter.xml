@@ -1278,7 +1278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to write multiple characters to a text file by using the [WriteAsync Method (Char\<xref:System.IO.StreamWriter.WriteAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
+ The following example shows how to write multiple characters to a text file by using the <xref:System.IO.StreamWriter.WriteAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
   
  [!code-csharp[System.IO.StreamWriter#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example24.cs#24)]
  [!code-vb[System.IO.StreamWriter#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example24.vb#24)]  
@@ -1496,7 +1496,7 @@
    
   
 ## Examples  
- The following example shows how to write characters to two separate lines in a text file by using the [WriteLineAsync Method (Char\<xref:System.IO.StreamWriter.WriteLineAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method. The first line contains the first 11 characters from the string (the letters "First line" followed by a space). The second line contains the remaining characters from the string (the letters "and second line").  
+ The following example shows how to write characters to two separate lines in a text file by using the <xref:System.IO.StreamWriter.WriteLineAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method. The first line contains the first 11 characters from the string (the letters "First line" followed by a space). The second line contains the remaining characters from the string (the letters "and second line").  
   
  [!code-csharp[System.IO.StreamWriter#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example25.cs#25)]
  [!code-vb[System.IO.StreamWriter#25](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example25.vb#25)]  

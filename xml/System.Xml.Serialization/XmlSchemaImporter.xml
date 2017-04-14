@@ -428,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ImportMembersMapping Method (XmlQualifiedName\<xref:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping%2A> method is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe or Xsd.exe.  
+ The <xref:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping%2A> method is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe or Xsd.exe.  
   
  The <xref:System.Xml.Serialization.XmlSchemaImporter> class is used only when a WSDL document specifies literal use. The value of the `names` parameter contains the qualified names of the parts elements under a message definition in a WSDL document.  
   

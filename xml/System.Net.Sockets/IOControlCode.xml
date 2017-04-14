@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following code example calls the [IOControl(IOControlCode, Byte\[\], Byte\<xref:System.Net.Sockets.Socket.IOControl%28System.Net.Sockets.IOControlCode%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29> method with a DataToRead parameter value and compares the result with accessing the.<xref:System.Net.Sockets.Socket.Available%2A> property.  
+ The following code example calls the <xref:System.Net.Sockets.Socket.IOControl%28System.Net.Sockets.IOControlCode%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29> method with a DataToRead parameter value and compares the result with accessing the.<xref:System.Net.Sockets.Socket.Available%2A> property.  
   
  [!code-cpp[NCLSocketIoControl1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp#1)]
  [!code-csharp[NCLSocketIoControl1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs#1)]  

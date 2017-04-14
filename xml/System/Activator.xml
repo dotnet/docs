@@ -43,7 +43,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [CreateInstance(Type, BindingFlags, Binder, Object\<xref:System.Activator.CreateInstance%2A> method creates an instance of a type defined in an assembly by invoking the constructor that best matches the specified arguments. If no arguments are specified, the constructor that takes no parameters, that is, the default constructor, is invoked.  
+ The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type defined in an assembly by invoking the constructor that best matches the specified arguments. If no arguments are specified, the constructor that takes no parameters, that is, the default constructor, is invoked.  
   
  You must have sufficient permission to search for and call a constructor; otherwise, an exception is thrown. By default, only public constructors are considered during the search for a constructor. If no constructor or default constructor can be found, an exception is thrown.  
   
@@ -600,7 +600,7 @@
    
   
 ## Examples  
- The following example calls the  <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to create a <xref:System.String> object. It calls the [String.String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor to instantiate a string that contains ten elements from a character array starting at the fourteenth position.  
+ The following example calls the  <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to create a <xref:System.String> object. It calls the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor to instantiate a string that contains ten elements from a character array starting at the fourteenth position.  
   
  [!code-csharp[System.Activator.CreateInstance#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/CreateInstance5.cs#5)]
  [!code-vb[System.Activator.CreateInstance#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/CreateInstance5.vb#5)]  
@@ -1402,7 +1402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use [CreateInstance Method (AppDomain, String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
   
  Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
   
@@ -1978,7 +1978,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use [CreateInstanceFrom Method (AppDomain, String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
   
  Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
   

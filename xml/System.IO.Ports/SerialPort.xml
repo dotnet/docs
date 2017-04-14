@@ -1459,7 +1459,7 @@
   
  Because the <xref:System.IO.Ports.SerialPort> class buffers data, and the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property does not, the two might conflict about how many bytes are available to read.  The <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property can indicate that there are bytes to read, but these bytes might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property because they have been buffered to the <xref:System.IO.Ports.SerialPort> class.  
   
- The [Read Method (Byte\<xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
+ The <xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
   
  ]]></format>
         </remarks>
@@ -1504,7 +1504,7 @@
   
  Because the <xref:System.IO.Ports.SerialPort> class buffers data, and the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property does not, the two might conflict about how many characters are available to read.  The <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property can indicate that there are characters to read, but these characters might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property because they have been buffered to the <xref:System.IO.Ports.SerialPort> class.  
   
- The [Read Method (Char\<xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
+ The <xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
   
  ]]></format>
         </remarks>

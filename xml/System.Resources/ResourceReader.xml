@@ -125,7 +125,7 @@ Label15="Alternate Email Address:"
   
 <a name="getresourcedata"></a>   
 ### Retrieving Resources by Name with GetResourceData  
- The second approach to enumerating resources in a .resources file also involves navigating through the resources in the file by calling the `IDictionaryEnumerator.MoveNext` method. For each resource, you retrieve the resource's name from the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property, which is then passed to the [GetResourceData(String, String, Byte\<xref:System.Resources.ResourceReader.GetResourceData%28System.String%2CSystem.String%40%2CSystem.Byte%5B%5D%40%29> method to retrieve the resource's data. This is returned as a byte array in the `resourceData` argument.  
+ The second approach to enumerating resources in a .resources file also involves navigating through the resources in the file by calling the `IDictionaryEnumerator.MoveNext` method. For each resource, you retrieve the resource's name from the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property, which is then passed to the <xref:System.Resources.ResourceReader.GetResourceData%28System.String%2CSystem.String%40%2CSystem.Byte%5B%5D%40%29> method to retrieve the resource's data. This is returned as a byte array in the `resourceData` argument.  
   
  This approach is more awkward than retrieving the resource name and value from the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> and <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=fullName> properties, because it returns the actual bytes that form the resource value. However, if the attempt to retrieve the resource throws an exception, the <xref:System.Resources.ResourceReader.GetResourceData%2A> method can help identify the source of the exception by supplying information about the resource's data type. For more information about the string that indicates the resource's data type, see <xref:System.Resources.ResourceReader.GetResourceData%2A>.  
   
@@ -538,7 +538,7 @@ Label11="Mobile Phone:"
   
     |ResourceTypeCode value|Description|  
     |----------------------------|-----------------|  
-    |`ResourceTypeCode.ByteArray`|The data is a byte array. This data type commonly results from the call to the [ResourceWriter.AddResource(String, Byte\<xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method.|  
+    |`ResourceTypeCode.ByteArray`|The data is a byte array. This data type commonly results from the call to the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method.|  
     |`ResourceTypeCode.Null`|The data is a null reference. This data type commonly results from the call to the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Object%29?displayProperty=fullName> method with an object whose value is `null`.|  
     |`ResourceTypeCode.Stream`|The data is stored in a stream. This data type commonly results from the call to the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%29?displayProperty=fullName> or <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%2CSystem.Boolean%29?displayProperty=fullName> method.|  
   

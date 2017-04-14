@@ -921,7 +921,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
 ## Remarks  
  A `maxRecords` value of 0 gets all records found after the start record. If `maxRecords` is greater than the number of remaining rows, only the remaining rows are returned and no error is issued.  
   
- The [Fill Method (DataTable\<xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the SELECT statement must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
+ The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the SELECT statement must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
   
  If a command does not return any rows, no tables are added to the <xref:System.Data.DataSet>, but no exception is raised.  
   
@@ -929,7 +929,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  When the query specified returns multiple results, each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Since no table is created for a query that does not return rows, if you were to process an insert query followed by a select query, the table created for the select query would be named "Table", because it is the first table created. Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
   
- The [Fill Method (DataTable\<xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
+ The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
   
 ```  
 DataSet dataset = new DataSet();  

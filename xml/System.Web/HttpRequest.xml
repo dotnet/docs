@@ -1027,7 +1027,7 @@ End Class
 ## Remarks  
  IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
   
- The [InsertEntityBody Method (Byte\<xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
+ The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
   
  ]]></format>
         </remarks>

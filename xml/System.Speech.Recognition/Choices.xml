@@ -295,7 +295,7 @@ public Grammar CreatePhonePhrase()
   
  If `alternateChoices` is an empty array, this method does not update the set of alternatives.  
   
- Applications can use both [Add(String\<xref:System.Speech.Recognition.Choices.Add%28System.String%5B%5D%29> and <xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> to add alternatives to a <xref:System.Speech.Recognition.Choices> object.  
+ Applications can use both <xref:System.Speech.Recognition.Choices.Add%28System.String%5B%5D%29> and <xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> to add alternatives to a <xref:System.Speech.Recognition.Choices> object.  
   
  This method throws an <xref:System.ArgumentNullException> when `alternateChoices` is `null` or any of the array elements are `null`.  
   
@@ -368,7 +368,7 @@ public Grammar CreatePhonePhrase()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications can use both <xref:System.Speech.Recognition.Choices.Add%28System.String%5B%5D%29> and [Add(GrammarBuilder\<xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> to add alternatives to a <xref:System.Speech.Recognition.Choices> object.  
+ Applications can use both <xref:System.Speech.Recognition.Choices.Add%28System.String%5B%5D%29> and <xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> to add alternatives to a <xref:System.Speech.Recognition.Choices> object.  
   
  If `phrases` is an empty array, this method does not update the set of alternates.  
   

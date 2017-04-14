@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the [CreateDecryptor Method (Byte\<xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
+ The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
   
  [!code-csharp[AesManaged#3](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#3)]
  [!code-vb[AesManaged#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#3)]  
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the [CreateEncryptor Method (Byte\<xref:System.Security.Cryptography.AesManaged.CreateEncryptor%2A> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
+ The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateEncryptor%2A> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
   
  [!code-csharp[AesManaged#2](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#2)]
  [!code-vb[AesManaged#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#2)]  

@@ -22,7 +22,7 @@
   
  The <xref:System.ComponentModel.ISynchronizeInvoke> class provides two ways to invoke a process:  
   
-1.  Asynchronously, by using the [BeginInvoke(Delegate, Object\<xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> method. <xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> starts a process and then returns immediately. Use <xref:System.ComponentModel.ISynchronizeInvoke.EndInvoke%2A> to wait until the process started by <xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> completes.  
+1.  Asynchronously, by using the <xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> method. <xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> starts a process and then returns immediately. Use <xref:System.ComponentModel.ISynchronizeInvoke.EndInvoke%2A> to wait until the process started by <xref:System.ComponentModel.ISynchronizeInvoke.BeginInvoke%2A> completes.  
   
 2.  Synchronously, by using the <xref:System.ComponentModel.ISynchronizeInvoke.Invoke%2A> method. <xref:System.ComponentModel.ISynchronizeInvoke.Invoke%2A> starts a process, waits until it completes, and then returns. Use <xref:System.ComponentModel.ISynchronizeInvoke.Invoke%2A> when the control's main thread is different from the calling thread to marshal the call to the proper thread.  
   

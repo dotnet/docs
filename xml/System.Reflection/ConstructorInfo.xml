@@ -42,7 +42,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `ConstructorInfo` is used to discover the attributes of a constructor as well as to invoke a constructor. Objects are created by calling [Invoke(BindingFlags, Binder, Object\<xref:System.Reflection.ConstructorInfo.Invoke%2A> on a `ConstructorInfo` returned by either the <xref:System.Type.GetConstructors%2A> or <xref:System.Type.GetConstructor%2A> method of a <xref:System.Type> object.  
+ `ConstructorInfo` is used to discover the attributes of a constructor as well as to invoke a constructor. Objects are created by calling <xref:System.Reflection.ConstructorInfo.Invoke%2A> on a `ConstructorInfo` returned by either the <xref:System.Type.GetConstructors%2A> or <xref:System.Type.GetConstructor%2A> method of a <xref:System.Type> object.  
   
 > [!NOTE]
 >  <xref:System.Reflection.ConstructorInfo> inherits from <xref:System.Reflection.MethodBase> several members, such as <xref:System.Reflection.MethodBase.IsGenericMethod%2A>, that can be used to examine generic methods. In the .NET Framework version 2.0 constructors cannot be generic, so these members return `false` or `null`.  

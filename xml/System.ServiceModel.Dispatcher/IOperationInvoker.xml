@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IOperationInvoker> interface to control the conversion from an untyped object and array of parameters to a strongly-typed method call on that object. It has a synchronous <xref:System.ServiceModel.Dispatcher.IOperationInvoker.Invoke%2A> method, which takes an instance and set of inputs of type object and returns an object and a set of outputs of type object. It also has a <xref:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeBegin%2A> and [InvokeEnd(Object, Object\<xref:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeEnd%2A> variant.  The <xref:System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous%2A> property specifies whether the synchronous or asynchronous method should be used.  
+ Implement the <xref:System.ServiceModel.Dispatcher.IOperationInvoker> interface to control the conversion from an untyped object and array of parameters to a strongly-typed method call on that object. It has a synchronous <xref:System.ServiceModel.Dispatcher.IOperationInvoker.Invoke%2A> method, which takes an instance and set of inputs of type object and returns an object and a set of outputs of type object. It also has a <xref:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeBegin%2A> and <xref:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeEnd%2A> variant.  The <xref:System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous%2A> property specifies whether the synchronous or asynchronous method should be used.  
   
  ]]></format>
     </remarks>

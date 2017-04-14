@@ -29,7 +29,10 @@ This configuration element defines a standard endpoint with a fixed discovery co
 <system.serviceModel>
   <standardEndpoints>
     <discoveryEndpoint>
-      <standardEndpoint discoveryMode="Adhoc/Managed" discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" maxResponseDelay="Timespan" name="String" />
+      <standardEndpoint discoveryMode="Adhoc/Managed" 
+                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
+                        maxResponseDelay="Timespan" 
+                        name="String" />
     </discoveryEndpoint>
   </standardEndpoints>
 </system.serviceModel>  

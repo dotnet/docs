@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;wsHttpContextBinding&gt;
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  
   
-\<system.ServiceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<wsHttpContextBinding>  
   

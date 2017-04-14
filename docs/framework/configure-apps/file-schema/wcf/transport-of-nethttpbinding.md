@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;transport&gt; of &lt;netHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  
   
-\<system.ServiceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<netHttpBinding>  
 \<binding>  

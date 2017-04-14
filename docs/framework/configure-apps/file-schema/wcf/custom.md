@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;custom&gt;
 Specifies settings for a custom peer resolver service.  
   
-\<system.ServiceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<netPeerBinding>  
 \<binding>  
@@ -32,7 +32,7 @@ Specifies settings for a custom peer resolver service.
         resolverType="String">  
   <headers/>  
   <identity/>  
-</peerResolver>  
+</custom>  
 ```  
   
 ## Attributes and Elements  

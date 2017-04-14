@@ -21,7 +21,7 @@ manager: "erikre"
 # &lt;serviceMetadata&gt;
 Specifies the publication of service metadata and associated information.  
   
-\<system.ServiceModel>  
+\<system.serviceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  

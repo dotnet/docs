@@ -30,7 +30,10 @@ Defines a routing filter, which determines the type of [!INCLUDE[indigo1](../../
 ```xml
 <routing>
   <filters>
-    <filter customType="String" filterData="String" filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" name="String" />
+    <filter customType="String" 
+            filterData="String" 
+            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" 
+            name="String" />
   </filters>
 </routing>
 ```

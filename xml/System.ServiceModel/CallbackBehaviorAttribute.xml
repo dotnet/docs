@@ -165,7 +165,7 @@
   
  In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](../Topic/Sessions,%20Instancing,%20and%20Concurrency.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  ]]></format>
         </remarks>

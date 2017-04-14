@@ -70,9 +70,9 @@
   
 -   A dynamic method that is associated with a security-critical assembly is also security-critical, and can skip verification. For example, an assembly without security attributes that is run as a desktop application is treated as security-critical by the runtime. If you associate a dynamic method with the assembly, the dynamic method can contain unverifiable code.  
   
--   If a dynamic method that contains unverifiable code is associated with an assembly that has level 1 transparency, the just-in-time (JIT) compiler injects a security demand. The demand succeeds only if the dynamic method is executed by fully trusted code. See [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md).  
+-   If a dynamic method that contains unverifiable code is associated with an assembly that has level 1 transparency, the just-in-time (JIT) compiler injects a security demand. The demand succeeds only if the dynamic method is executed by fully trusted code. See [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md).  
   
--   If a dynamic method that contains unverifiable code is associated with an assembly that has level 2 transparency (such as mscorlib.dll), it throws an exception (injected by the JIT compiler) instead of making a security demand. See [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+-   If a dynamic method that contains unverifiable code is associated with an assembly that has level 2 transparency (such as mscorlib.dll), it throws an exception (injected by the JIT compiler) instead of making a security demand. See [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
 -   An anonymously hosted dynamic method that contains unverifiable code always throws an exception. It can never skip verification, even if it is created and executed by fully trusted code.  
   
@@ -1401,7 +1401,7 @@
     |Mixed transparency|Transparent|Transparent|  
     |Security-agnostic|Safe-critical|Critical|  
   
-     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md) and [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md) and [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
     > [!NOTE]
     >  Associating a dynamic method with a module in a trusted level 1 assembly that is security-agnostic, such as System.dll, does not permit elevation of trust. If the grant set of the code that calls the dynamic method does not include the grant set of System.dll (that is, full trust), <xref:System.Security.SecurityException> is thrown when the dynamic method is called.  
@@ -1463,7 +1463,7 @@
     |Mixed transparency|Transparent|Transparent|  
     |Security-agnostic|Safe-critical|Critical|  
   
-     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md) and [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md) and [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
     > [!NOTE]
     >  Associating a dynamic method with a module in a trusted level 1 assembly that is security-agnostic, such as System.dll, does not permit elevation of trust. If the grant set of the code that calls the dynamic method does not include the grant set of System.dll (that is, full trust), <xref:System.Security.SecurityException> is thrown when the dynamic method is called.  
@@ -1525,7 +1525,7 @@
     |Mixed transparency|Transparent|Transparent|  
     |Security-agnostic|Safe-critical|Critical|  
   
-     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md) and [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+     For example, if you associate a dynamic method with a type that is in mscorlib.dll, which has level 2 mixed transparency, the dynamic method is transparent and cannot execute critical code. For information about transparency levels, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md) and [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
     > [!NOTE]
     >  Associating a dynamic method with a module in a trusted level 1 assembly that is security-agnostic, such as System.dll, does not permit elevation of trust. If the grant set of the code that calls the dynamic method does not include the grant set of System.dll (that is, full trust), <xref:System.Security.SecurityException> is thrown when the dynamic method is called.  

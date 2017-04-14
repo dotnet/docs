@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], selection mode"
 ms.assetid: a3ebfd3d-0525-479d-9d96-d9e017289b36
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Selection Modes in the Windows Forms DataGridView Control

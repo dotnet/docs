@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "computer resources, accessing"
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

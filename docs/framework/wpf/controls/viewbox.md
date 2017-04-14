@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "scaling elements [WPF], Viewbox control"
 ms.assetid: 00fc0a16-1078-4d55-9849-ffaf7da96531
 caps.latest.revision: 61
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Viewbox

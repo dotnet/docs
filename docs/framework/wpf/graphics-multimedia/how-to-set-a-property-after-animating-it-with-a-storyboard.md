@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "animation, changing property values after"
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set a Property After Animating It with a Storyboard

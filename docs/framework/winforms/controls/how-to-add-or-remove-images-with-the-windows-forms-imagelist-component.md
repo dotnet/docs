@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "images [Windows Forms], displaying with controls"
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add or Remove Images with the Windows Forms ImageList Component

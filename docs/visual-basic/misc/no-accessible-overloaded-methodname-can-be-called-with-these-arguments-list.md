@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrAmbiguousCall_ExactMatch2"
 ms.assetid: 78d4c7ed-5e18-47d4-948d-fa8b24e47214
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

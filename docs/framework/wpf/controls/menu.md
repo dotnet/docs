@@ -2,7 +2,7 @@
 title: "Menu | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], Menu"
 ms.assetid: 4317fb80-408c-47c7-9223-b29e4742c4ee
 caps.latest.revision: 77
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Menu

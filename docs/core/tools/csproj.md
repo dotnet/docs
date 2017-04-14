@@ -13,19 +13,25 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to the csproj format for .NET Core
 
-This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and 
-[MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, 
-see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
+This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
 ## Implicit package references
-Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. 
-If the target framework is `netcoreap1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
-Otherwise, if the target framework is `netstandard1.x`, the proper version of the `NetStandard.Library` metapackage is referenced.
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
 
-As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`). 
+```xml
+ <PropertyGroup>
+   <TargetFramework>netcoreapp1.1</TargetFramework>
+ </PropertyGroup>
+ ```
+ 
+ ```xml
+ <PropertyGroup>
+   <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+ </PropertyGroup>
+ ```
 
 ### Recommendations
-Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:
+Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
 * Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.

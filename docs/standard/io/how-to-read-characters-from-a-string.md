@@ -2,11 +2,10 @@
 title: "How to: Read Characters from a String | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -47,4 +46,4 @@ The following code examples show how to read characters synchronously and asynch
  [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)   
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)   
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)   
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)
+ [File and Stream I-O](../../../docs/standard/io/index.md)

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "data-bound controls, Windows Forms"
 ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind a Windows Forms ComboBox or ListBox Control to Data

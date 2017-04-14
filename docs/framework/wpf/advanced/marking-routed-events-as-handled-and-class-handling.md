@@ -2,7 +2,7 @@
 title: "Marking Routed Events as Handled, and Class Handling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "bubbling events"
 ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Marking Routed Events as Handled, and Class Handling

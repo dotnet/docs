@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "TryCast keyword"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

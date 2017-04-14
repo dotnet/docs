@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], multithreading"
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make Thread-Safe Calls to Windows Forms Controls

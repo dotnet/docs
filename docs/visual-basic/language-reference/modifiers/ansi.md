@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ANSI"
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

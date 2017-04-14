@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "filtering data [Visual Basic]"
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], creating toggle buttons"
 ms.assetid: d9c197df-4c65-43f2-beee-b68b52b2befc
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Toggle Buttons in ToolStrip Controls

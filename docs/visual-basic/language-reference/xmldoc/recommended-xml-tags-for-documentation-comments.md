@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "comments, recommended XML tags"
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

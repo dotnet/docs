@@ -2,7 +2,7 @@
 title: "How to: Animate the Opacity of an Element or Brush | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "animation, Opacity property"
 ms.assetid: 572af23b-39dd-48d1-9db5-4bca56a4b3d3
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Opacity of an Element or Brush

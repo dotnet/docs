@@ -2,7 +2,7 @@
 title: What's New in C# 7 | C# Guide
 description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
 keywords: C#, .NET, .NET Core, Latest Features, What's New
-author:  BillWagner
+author: BillWagner
 ms.author: wiwagn
 ms.date: 12/21/2016
 ms.topic: article

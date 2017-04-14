@@ -2,7 +2,7 @@
 title: "Draw Text Using Glyphs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "typography, Glyphs objects"
 ms.assetid: 587ab17e-a419-4ad5-b6da-8933a8e83d97
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Draw Text Using Glyphs

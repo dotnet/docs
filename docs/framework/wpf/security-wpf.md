@@ -2,7 +2,7 @@
 title: "Security (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "Internet Explorer security settings [WPF]"
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 caps.latest.revision: 38
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Security (WPF)

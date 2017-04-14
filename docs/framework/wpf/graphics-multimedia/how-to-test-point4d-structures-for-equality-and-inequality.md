@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Point4D structures, testing for equality"
 ms.assetid: e004a67e-db7f-4af8-a31f-e6b2a44ccf34
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Test Point4D structures for equality and inequality

@@ -2,7 +2,7 @@
 title: "3-D Graphics How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "graphics [WPF], 3-D"
 ms.assetid: 4f091835-28d1-498c-b660-9b3acf34ed13
 caps.latest.revision: 73
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # 3-D Graphics How-to Topics

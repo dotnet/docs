@@ -72,12 +72,7 @@ Indexers enable you to provide the API that matches your type's abstraction
 without exposing the inner details of how the values for that abstraction
 are stored or computed.
 
-Let's walk through some of the common scenarios for using *indexers*.
-The code for all the samples is available at the core-docs [GitHub
-repository](https://github.com/dotnet/core-docs). Or, you can
-access the 
-[sample folder](https://github.com/dotnet/docs/tree/master/samples/csharp/indexers)
-directly.
+Let's walk through some of the common scenarios for using *indexers*. You can access the [sample folder for indexers](https://github.com/dotnet/docs/tree/master/samples/csharp/indexers). For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Arrays and Vectors
 

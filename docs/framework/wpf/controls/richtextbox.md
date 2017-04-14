@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "RichTextBox control [WPF]"
 ms.assetid: a177374d-ee54-4d00-aaae-c983481cae9b
 caps.latest.revision: 68
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RichTextBox

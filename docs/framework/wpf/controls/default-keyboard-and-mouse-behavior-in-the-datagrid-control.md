@@ -2,7 +2,7 @@
 title: "Default Keyboard and Mouse Behavior in the DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "mouse behavior [WPF], DataGrid"
 ms.assetid: 563b8854-ca39-4d97-8235-17eaa0f93c8d
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Default Keyboard and Mouse Behavior in the DataGrid Control

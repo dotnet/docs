@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "syntax errors, Visual Basic"
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

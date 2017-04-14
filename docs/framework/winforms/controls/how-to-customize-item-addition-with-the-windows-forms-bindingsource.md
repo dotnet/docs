@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 1aae11fc-6fb2-4cb9-b3d0-e0638fe77ef0
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize Item Addition with the Windows Forms BindingSource

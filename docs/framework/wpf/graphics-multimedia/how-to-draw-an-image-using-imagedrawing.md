@@ -2,7 +2,7 @@
 title: "How to: Draw an Image Using ImageDrawing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "images, drawing"
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw an Image Using ImageDrawing

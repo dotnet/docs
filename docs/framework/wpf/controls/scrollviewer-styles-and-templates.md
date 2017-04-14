@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ScrollViewer [WPF], styles and templates"
 ms.assetid: dffdd822-ae69-4946-abaf-710860cd65b2
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollViewer Styles and Templates

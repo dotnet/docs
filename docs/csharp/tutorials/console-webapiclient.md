@@ -28,7 +28,10 @@ service on GitHub. You'll read information in JSON format, and convert
 that JSON packet into C# objects. Finally, you'll see how to work with
 C# objects.
 
-There are a lot of features in this tutorial. Let’s build them one by one. 
+There are a lot of features in this tutorial. Let’s build them one by one.
+
+If you prefer to follow along with the [final sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+
 ## Prerequisites
 You’ll need to set up your machine to run .NET core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
@@ -482,8 +485,7 @@ again:
 Console.WriteLine(repo.LastPush);
 ```
 
-Your version should now match the finished version located
-[here](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
+Your version should now match the [finished sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
  
 ## Conclusion
 

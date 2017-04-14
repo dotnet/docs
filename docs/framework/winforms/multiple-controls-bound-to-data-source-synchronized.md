@@ -2,7 +2,7 @@
 title: "How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], synchronizing with data source"
 ms.assetid: c2f0ecc6-11e6-4c2c-a1ca-0759630c451e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized

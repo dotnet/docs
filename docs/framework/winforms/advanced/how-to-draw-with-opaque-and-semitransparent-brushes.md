@@ -2,7 +2,7 @@
 title: "How to: Draw with Opaque and Semitransparent Brushes | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "brushes, using semi-transparent"
 ms.assetid: a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw with Opaque and Semitransparent Brushes

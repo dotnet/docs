@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "threading [Windows Forms], controls"
 ms.assetid: c311d652-0f26-45fa-bdcc-b1615d73ce4e
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Multithreading in Windows Forms Controls

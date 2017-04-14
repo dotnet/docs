@@ -2,11 +2,10 @@
 title: "How to: Copy Directories | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -34,6 +33,6 @@ This example demonstrates how to use I/O classes to synchronously copy the conte
  <xref:System.IO.FileInfo>   
  <xref:System.IO.DirectoryInfo>   
  <xref:System.IO.FileStream>   
- [File and Stream I/O](../../../docs/standard/io/file-and-stream-i-o.md)   
+ [File and Stream I/O](../../../docs/standard/io/index.md)   
  [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)   
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

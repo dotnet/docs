@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
 ms.assetid: 75db9126-e70c-4e81-921d-b83c0a4a9f50
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Provide Standard Menu Items to a Form

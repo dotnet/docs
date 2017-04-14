@@ -2,7 +2,7 @@
 title: "Animation and Timing How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "animation [WPF]"
 ms.assetid: 587e36f6-1957-424e-9d89-c43724f26d84
 caps.latest.revision: 73
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Animation and Timing How-to Topics

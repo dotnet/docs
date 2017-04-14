@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Property statement, declaring mixed access levels"
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

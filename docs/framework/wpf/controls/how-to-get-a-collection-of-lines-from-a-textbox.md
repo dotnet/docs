@@ -2,7 +2,7 @@
 title: "How to: Get a Collection of Lines from a TextBox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "TextBox control, getting collection of lines"
 ms.assetid: a12f529d-b926-47f6-92bf-cad5f17b532a
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get a Collection of Lines from a TextBox

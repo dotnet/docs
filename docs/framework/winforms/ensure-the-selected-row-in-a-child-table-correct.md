@@ -2,7 +2,7 @@
 title: "How to: Ensure the Selected Row in a Child Table Remains at the Correct Position | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "current child position"
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Ensure the Selected Row in a Child Table Remains at the Correct Position

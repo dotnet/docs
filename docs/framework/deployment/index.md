@@ -2,7 +2,7 @@
 title: "Deploying the .NET Framework and Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Deploying the .NET Framework and Applications
-This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework 4.5](../../../docs/framework/getting-started/install-the-net-framework.md).  
+This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework](~/docs/framework/install/index.md).  
   
 ## Key Deployment Resources  
  Use the following links to other MSDN topics for specific information about deploying and servicing the .NET Framework.  
@@ -39,9 +39,9 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   Installer options:  
   
-        -   [Web installer](../../../docs/framework/getting-started/install-the-net-framework.md#choices)  
+        -   [Web installer](~/docs/framework/install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable)  
   
-        -   [Offline installer](../../../docs/framework/getting-started/install-the-net-framework.md#choices)  
+        -   [Offline installer](~/docs/framework/install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable)  
   
     -   Installation modes:  
   
@@ -51,7 +51,7 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   [Reducing system restarts during .NET Framework 4.5 installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
   
-    -   [Troubleshooting blocked .NET Framework  installations](../../../docs/framework/getting-started/troubleshoot-blocked-installations-and-uninstallations.md)  
+    -   [Troubleshooting Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
   
 -   Deploying the .NET Framework with a client application (for developers):  
   
@@ -169,7 +169,7 @@ This article helps you get started deploying the .NET Framework with your applic
 |[Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)|Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.|  
 |[Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).|  
 |[Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|  
-|[Deploying Applications, Services, and Components](../Topic/Deploying%20Applications,%20Services,%20and%20Components.md)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.|  
+|[Deploying Applications, Services, and Components](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.| 
 |[Publishing ClickOnce Applications](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973)|Describes how to package a Windows Forms application and deploy it with ClickOnce to client computers on a network.|  
 |[Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|  
 |[Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|  

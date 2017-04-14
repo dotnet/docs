@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Group By clause"
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

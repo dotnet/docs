@@ -2,11 +2,10 @@
 title: "Basic String Operations in the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -18,7 +17,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Basic String Operations in the .NET Framework
+# Basic String Operations in .NET
 Applications often respond to users by constructing messages based on user input. For example, it is not uncommon for Web sites to respond to a newly logged-on user with a specialized greeting that includes the user's name. Several methods in the <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> classes allow you to dynamically construct custom strings to display in your user interface. These methods also help you perform a number of basic string operations like creating new strings from arrays of bytes, comparing the values of strings, and modifying existing strings.  
   
 ## In This Section  
@@ -44,7 +43,7 @@ Applications often respond to users by constructing messages based on user input
  Demonstrates the use of basic string operations.  
   
 ## Related Sections  
- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)  
+ [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)  
  Describes how to convert one type into another type.  
   
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  

@@ -2,11 +2,10 @@
 title: "Backreference Constructs in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -24,9 +23,9 @@ manager: "wpickett"
 Backreferences provide a convenient way to identify a repeated character or substring within a string. For example, if the input string contains multiple occurrences of an arbitrary substring, you can match the first occurrence with a capturing group, and then use a backreference to match subsequent occurrences of the substring.  
   
 > [!NOTE]
->  A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions](../../../docs/standard/base-types/substitutions-in-regular-expressions.md).  
+>  A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions](substitutions-in-regular-expressions.md).  
   
- The .NET Framework defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ .NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
 ## Numbered Backreferences  
  A numbered backreference uses the following syntax:  

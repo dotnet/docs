@@ -2,11 +2,10 @@
 title: "Quantifiers in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -24,7 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Quantifiers in Regular Expressions
-Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by the .NET Framework.  
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by .NET.  
   
 |Greedy quantifier|Lazy quantifier|Description|  
 |-----------------------|---------------------|-----------------|  
@@ -41,7 +40,7 @@ Quantifiers specify how many instances of a character, group, or character class
 >  Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).  
   
 ## Regular Expression Quantifiers  
- The following sections list the quantifiers supported by .NET Framework regular expressions.  
+ The following sections list the quantifiers supported by .NET regular expressions.  
   
 > [!NOTE]
 >  If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](../../../docs/standard/base-types/character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("\*") character.  

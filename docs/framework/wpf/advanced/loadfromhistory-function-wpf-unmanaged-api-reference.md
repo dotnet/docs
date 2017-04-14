@@ -2,7 +2,7 @@
 title: "LoadFromHistory Function (WPF Unmanaged API Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ apilocation:
   - "PresentationHost_v0400.dll"
 ms.assetid: d037c062-a911-4949-b251-ccd3e48b1d17
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # LoadFromHistory Function (WPF Unmanaged API Reference)

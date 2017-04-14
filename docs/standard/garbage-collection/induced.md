@@ -2,11 +2,10 @@
 title: "Induced Collections | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -27,7 +26,7 @@ In most cases, the garbage collector can determine the best time to perform a co
   
 |`GCCollectionMode` value|Description|  
 |------------------------------|-----------------|  
-|<xref:System.GCCollectionMode>|Uses the default garbage collection setting for the running version of the .NET Framework.|  
+|<xref:System.GCCollectionMode>|Uses the default garbage collection setting for the running version of .NET.|  
 |<xref:System.GCCollectionMode>|Forces garbage collection to occur immediately. This is equivalent to calling the <xref:System.GC.Collect?displayProperty=fullName> overload. It results in a full blocking collection of all generations.<br /><br /> You can also compact the large object heap by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName> before forcing an immediate full blocking garbage collection.|  
 |<xref:System.GCCollectionMode>|Enables the garbage collector to determine whether the current time is optimal to reclaim objects.<br /><br /> The garbage collector could determine that a collection would not be productive enough to be justified, in which case it will return without reclaiming objects.|  
   

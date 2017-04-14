@@ -2,7 +2,7 @@
 title: "Events (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "WPF, events"
 ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
 caps.latest.revision: 73
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Events (WPF)

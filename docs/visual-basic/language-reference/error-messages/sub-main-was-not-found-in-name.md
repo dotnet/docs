@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Sub Main error message"
 ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

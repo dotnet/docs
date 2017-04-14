@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGridView Control Overview (Windows Forms)

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], sizing modes"
 ms.assetid: e9ad15e6-b4bb-44aa-a767-3738e9db1651
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Sizing Modes of the Windows Forms DataGridView Control

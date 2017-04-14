@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "brushes, painting with images"
 ms.assetid: 3432c533-1fc7-492d-94ee-0b13d60125ae
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with an Image

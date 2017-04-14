@@ -2,7 +2,7 @@
 title: "How to: Create a Line Using a LineGeometry | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "LineGeometry class"
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Line Using a LineGeometry

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "spin button control, Windows Forms"
 ms.assetid: cff3cf30-4d46-4381-87df-37bfe83c71c5
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # NumericUpDown Control Overview (Windows Forms)

@@ -2,7 +2,7 @@
 title: "How to: Create a Control That Has an Access Key and Text Wrapping | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "text wrapping"
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Control That Has an Access Key and Text Wrapping

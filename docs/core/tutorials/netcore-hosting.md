@@ -25,11 +25,11 @@ Because hosts are native applications, this tutorial will cover constructing a C
 
 You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](../../csharp/getting-started/with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
-This tutorial and its [associated sample](https://github.com/dotnet/docs/tree/master/samples/core/hosting) build a Windows host, but please see the notes at the end of this article about hosting on Unix.
+This tutorial and its associated sample build a Windows host; see the notes at the end of this article about hosting on Unix.
 
 ## Creating the host
 
-A sample host demonstrating the steps outlined in this article is available in our [.NET Core samples](https://github.com/dotnet/docs/tree/master/samples/core/hosting) repository. Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.
+A [sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting) demonstrating the steps outlined in this article is available in the dotnet/docs GitHub repository. Comments in the sample's *host.cpp* file clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
 

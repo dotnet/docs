@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "data type arguments"
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

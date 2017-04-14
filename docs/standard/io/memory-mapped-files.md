@@ -2,11 +2,10 @@
 title: "Memory-Mapped Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -145,4 +144,4 @@ Process C says: True
  [!code-vb[System.IO.MemoryMappedFiles_IPC_B#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/vb/program.vb#1)]  
   
 ## See Also  
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)
+ [File and Stream I-O](../../../docs/standard/io/index.md)

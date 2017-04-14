@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, selection mode"
 ms.assetid: 2f241643-7f82-4583-8757-03494f63b465
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Selection Mode of the Windows Forms DataGridView Control

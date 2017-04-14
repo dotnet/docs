@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "text, selecting in text boxes programmatically"
 ms.assetid: 8c591546-6a01-45c7-8e03-f78431f903b1
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Select Text in the Windows Forms TextBox Control

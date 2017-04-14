@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Choose Toolbox Items dialog box, display control"
 ms.assetid: 01ef6eba-d044-40f0-951d-78eff7ebd9a9
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display a Control in the Choose Toolbox Items Dialog Box

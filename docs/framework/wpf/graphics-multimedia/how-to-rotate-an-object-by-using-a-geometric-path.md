@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "rotating objects by geometric paths"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Rotate an Object by Using a Geometric Path

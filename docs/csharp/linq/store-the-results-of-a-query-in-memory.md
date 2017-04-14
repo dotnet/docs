@@ -2,7 +2,7 @@
 title: "Store the results of a query in memory"
 description: How to store results.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

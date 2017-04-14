@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tree nodes in TreeView control, iterating through"
 ms.assetid: 427f8928-ebcf-4beb-887f-695b905d5134
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Iterate Through All Nodes of a Windows Forms TreeView Control

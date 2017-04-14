@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ErrorProvider component [Windows Forms], dataset errors"
 ms.assetid: cbae023f-d651-4210-bdea-bcc5f037e321
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "MediaElements, using Transforms on"
 ms.assetid: d89c95e3-27c5-4748-8a27-72e432674032
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Transforms on a MediaElement

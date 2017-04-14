@@ -2,7 +2,7 @@
 title: "How to: Determine Whether a Freezable Is Frozen | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Freezable objects, determining if frozen"
 ms.assetid: 92e58baa-ee12-4a9e-ac3a-ca458807a8b2
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine Whether a Freezable Is Frozen

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ToolBar control [WPF]"
 ms.assetid: 8a95d759-c298-4291-aa7e-ecdeffaae6ab
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolBar

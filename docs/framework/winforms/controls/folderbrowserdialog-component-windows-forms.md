@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "directories [Windows Forms], browsing"
 ms.assetid: d71a0c5e-898a-4eea-be74-93bdf50d1852
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FolderBrowserDialog Component (Windows Forms)

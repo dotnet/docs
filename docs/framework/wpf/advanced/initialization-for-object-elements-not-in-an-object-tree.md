@@ -2,7 +2,7 @@
 title: "Initialization for Object Elements Not in an Object Tree | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "initializing elements"
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Initialization for Object Elements Not in an Object Tree

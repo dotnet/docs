@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], AutoComplete"
 ms.assetid: fd66d085-1af1-45d4-930a-cde944da2e16
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable AutoComplete in ToolStrip Controls in Windows Forms

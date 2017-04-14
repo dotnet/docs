@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 1660f69c-5711-45d2-abc1-e25bc6779124
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind Data to the Windows Forms DataGridView Control

@@ -2,11 +2,10 @@
 title: "How to: Implement a Client of the Event-based Asynchronous Pattern | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -23,8 +22,8 @@ helpviewer_keywords:
   - "AsyncCompletedEventArgs class"
 ms.assetid: 21a858c1-3c99-4904-86ee-0d17b49804fa
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement a Client of the Event-based Asynchronous Pattern

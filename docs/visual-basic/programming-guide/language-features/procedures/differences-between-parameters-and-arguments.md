@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "parameters, definition"
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

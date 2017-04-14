@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], display modes"
 ms.assetid: 9755a030-3f3f-4705-a661-ba5a48a81875
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Display Modes in the Windows Forms DataGridView Control

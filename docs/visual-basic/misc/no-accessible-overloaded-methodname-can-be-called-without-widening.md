@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrAmbiguousCall_WideningConversion2"
 ms.assetid: 5e74f5cf-80bd-4b48-b58a-465f981ec694
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

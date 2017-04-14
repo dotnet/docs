@@ -2,7 +2,7 @@
 title: "How to: Draw a Closed Shape by Using the Polygon Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "drawing, closed shapes with Polygon elements"
 ms.assetid: 4b0ca008-29ce-48dd-8bc3-f3a20ffca6a6
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw a Closed Shape by Using the Polygon Element

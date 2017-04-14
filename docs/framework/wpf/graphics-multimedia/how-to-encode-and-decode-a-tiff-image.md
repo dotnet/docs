@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "TIFF decoding"
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Encode and Decode a TIFF Image

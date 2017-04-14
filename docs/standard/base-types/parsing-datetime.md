@@ -2,11 +2,10 @@
 title: "Parsing Date and Time Strings in the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -23,7 +22,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Parsing Date and Time Strings in the .NET Framework
+# Parsing Date and Time Strings in .NET
 Parsing methods convert the string representation of a date and time to an equivalent <xref:System.DateTime> object. The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.TryParse%2A> methods convert any of several common representations of a date and time. The <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryParseExact%2A> methods convert a string representation that conforms to the pattern specified by a date and time format string. (See the topics on [standard date and time format strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) and [custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).)  
   
  Parsing is influenced by the properties of a format provider that supplies information such as the strings used for date and time separators, and the names of months, days, and eras. The format provider is the current <xref:System.Globalization.DateTimeFormatInfo> object, which is provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of a parsing method. For the <xref:System.IFormatProvider> parameter, specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object.  
@@ -67,4 +66,4 @@ Parsing methods convert the string representation of a date and time to an equiv
 ## See Also  
  [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)   
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+ [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

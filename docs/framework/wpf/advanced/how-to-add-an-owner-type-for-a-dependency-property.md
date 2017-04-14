@@ -2,7 +2,7 @@
 title: "How to: Add an Owner Type for a Dependency Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "dependency properties, adding classes as owners of"
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add an Owner Type for a Dependency Property

@@ -2,7 +2,7 @@
 title: "How to: Validate and Merge PrintTickets | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "PrintTicket, validation"
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Validate and Merge PrintTickets

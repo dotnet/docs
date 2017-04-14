@@ -2,7 +2,7 @@
 title: "How to: Implement a CompositeCollection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "data binding, CompositeCollection class"
 ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement a CompositeCollection

@@ -2,11 +2,10 @@
 title: "Regular Expression Examples | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -43,17 +42,17 @@ This section contains code examples that illustrate the use of regular expressio
   
 ## Reference  
  <xref:System.Text.RegularExpressions>  
- Provides class library reference information for the .NET Framework **System.Text.RegularExpressions** namespace.  
+ Provides class library reference information for the .NET **System.Text.RegularExpressions** namespace.  
   
 ## Related Sections  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
  Provides an overview of the programming language aspect of regular expressions.  
   
  [The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)  
  Describes the regular expression classes contained in the `System.Text.RegularExpression` namespace and provides examples of their use.  
   
  [Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md)  
- Provides information about the capabilities and behavior of .NET Framework regular expressions.  
+ Provides information about the capabilities and behavior of .NET regular expressions.  
   
  [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
  Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.

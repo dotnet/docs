@@ -28,7 +28,7 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 
 Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
 
-The only time `dotnet` is used as a command on its own is to run [framework-dependent apps](../app-types.md). Specify an application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
+The only time `dotnet` is used as a command on its own is to run [framework-dependent apps](../deploying/index.md). Specify an application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
 
 ## Options
 

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], adding"
 ms.assetid: c5d86024-a7c5-44ee-8b3f-2daf53d80d3e
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use ToolTips in ToolStrip Controls

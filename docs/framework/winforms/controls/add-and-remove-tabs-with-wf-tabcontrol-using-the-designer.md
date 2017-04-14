@@ -2,7 +2,7 @@
 title: "How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "tab pages"
 ms.assetid: 480633db-413a-45d2-9c8f-0427cc13adbe
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer

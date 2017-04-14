@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Friend keyword, and Protected"
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

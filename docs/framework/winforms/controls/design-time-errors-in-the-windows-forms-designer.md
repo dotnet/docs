@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "design-time errors [Windows Forms Designer]"
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Design-Time Errors in the Windows Forms Designer

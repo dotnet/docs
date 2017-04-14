@@ -2,11 +2,10 @@
 title: "Character Escapes in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -33,8 +32,8 @@ The backslash (\\) in a regular expression indicates one of the following:
 > [!NOTE]
 >  Character escapes are recognized in regular expression patterns but not in replacement patterns.  
   
-## Character Escapes in the .NET Framework  
- The following table lists the character escapes supported by regular expressions in the .NET Framework.  
+## Character Escapes in .NET  
+ The following table lists the character escapes supported by regular expressions in .NET.  
   
 |Character or sequence|Description|  
 |---------------------------|-----------------|  
@@ -50,7 +49,7 @@ The backslash (\\) in a regular expression indicates one of the following:
 |`\` *nnn*|Matches an ASCII character, where *nnn* consists of two or three digits that represent the octal character code. For example, `\040` represents a space character. This construct is interpreted as a backreference if it has only one digit (for example, `\2`) or if it corresponds to the number of a capturing group. (See [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)|  
 |`\x` *nn*|Matches an ASCII character, where *nn* is a two-digit hexadecimal character code.|  
 |`\c` *X*|Matches an ASCII control character, where X is the letter of the control character. For example, `\cC` is CTRL-C.|  
-|`\u` *nnnn*|Matches a UTF-16 code unit whose value is *nnnn* hexadecimal. **Note:**  The Perl 5 character escape that is used to specify Unicode is not supported by the .NET Framework. The Perl 5 character escape has the form `\x{`*####*`…}`, where *####*`…` is a series of hexadecimal digits. Instead, use `\u`*nnnn*.|  
+|`\u` *nnnn*|Matches a UTF-16 code unit whose value is *nnnn* hexadecimal. **Note:**  The Perl 5 character escape that is used to specify Unicode is not supported by .NET. The Perl 5 character escape has the form `\x{`*####*`…}`, where *####*`…` is a series of hexadecimal digits. Instead, use `\u`*nnnn*.|  
 |`\`|When followed by a character that is not recognized as an escaped character, matches that character. For example, `\*` matches an asterisk (*) and is the same as `\x2A`.|  
   
 ## An Example  

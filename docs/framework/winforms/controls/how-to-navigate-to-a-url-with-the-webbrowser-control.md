@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Navigate to a URL with the WebBrowser Control

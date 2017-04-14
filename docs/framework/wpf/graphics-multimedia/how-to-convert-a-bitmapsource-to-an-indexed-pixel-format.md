@@ -2,7 +2,7 @@
 title: "How to: Convert a BitmapSource to an Indexed Pixel Format | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "BitmapSource objects, converting to palettized pixel format"
 ms.assetid: ccb03a83-8c72-4353-89da-48312d16548b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Convert a BitmapSource to an Indexed Pixel Format

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID393"
 ms.assetid: b527c5a8-3f24-42e9-871f-e6305c9f514b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

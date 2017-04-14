@@ -2,7 +2,7 @@
 title: "Installing the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ manager: "wpickett"
 The fact that later .NET Framework 4.x versions are in-place updates to earlier versions means that you *cannot* install an earlier version listed in the table if a later version is already installed. For example, you cannot install the .NET Framework 4.6 on a Windows 10 November Update system, since the .NET Framework 4.6.1 is preinstalled on it.    
   
 > [!NOTE]
->  For information on the .NET Framework 3.5, see [Installing the .NET Framework 3.5 on Windows 8 and later versions](../Topic/Installing%20the%20.NET%20Framework%203.5%20on%20Windows%208,%20Windows%208.1%20and%20Windows%2010.md).  
+>  For information on the .NET Framework 3.5, see [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/net-framework-3-5-on-windows-8-plus.md).  
   
  Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For help with troubleshooting, see [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).  
   
@@ -201,12 +201,12 @@ The fact that later .NET Framework 4.x versions are in-place updates to earlier 
   
 -   For changes that affect the deployment of the .NET Framework with your app, see [Reducing System Restarts During .NET Framework 4.5 Installations](~/docs/framework/deployment/reducing-system-restarts.md).  
   
--   For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](Migration%20Guide%20to%20the%20.NET%20Framework%204.7,%204.6,%20and%204.5.md). 
+-   For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](~/docs/framework/migration-guide/index.md). 
 
 -   See the [.NET Framework Reference Source](http://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [Github](https://github.com/Microsoft/referencesource). You can [download the reference source](http://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](http://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).  
   
 ## See Also  
  [Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md)   
  [Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)   
- [Installing the .NET Framework 3.5 on Windows 8 and later versions](../Topic/Installing%20the%20.NET%20Framework%203.5%20on%20Windows%208,%20Windows%208.1%20and%20Windows%2010.md)   
+ [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/net-framework-3-5-on-windows-8-plus.md)   
  [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

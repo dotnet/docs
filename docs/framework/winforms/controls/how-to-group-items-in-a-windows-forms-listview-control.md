@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "groups, in Windows Forms controls"
 ms.assetid: 610416a1-8da4-436c-af19-5f19e654769b
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Items in a Windows Forms ListView Control

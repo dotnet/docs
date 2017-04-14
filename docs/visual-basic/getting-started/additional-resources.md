@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "passwords, password text box"
 ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Password Text Box with the Windows Forms TextBox Control

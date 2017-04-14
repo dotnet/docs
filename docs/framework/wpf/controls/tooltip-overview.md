@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "controls, ToolTip"
 ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolTip Overview

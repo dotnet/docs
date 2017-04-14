@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Ports object"
 ms.assetid: 244ede4e-25b7-445b-9fd6-163550cce193
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

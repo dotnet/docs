@@ -2,7 +2,7 @@
 title: "How to: Animate the Position or Color of a Gradient Stop | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "GradientStop objects, animating position of"
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Position or Color of a Gradient Stop

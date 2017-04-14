@@ -2,7 +2,7 @@
 title: "How to: Animate a 3-D Rotation Using Key Frames | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "3-D translations, animating, with key frames (Rotation3DAnimation)"
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a 3-D Rotation Using Key Frames

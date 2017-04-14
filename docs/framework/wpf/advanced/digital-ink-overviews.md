@@ -2,7 +2,7 @@
 title: "Digital Ink Overviews | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "digital ink"
 ms.assetid: 5ddb23a6-7813-4058-b59d-29ff3341638c
 caps.latest.revision: 39
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Digital Ink Overviews

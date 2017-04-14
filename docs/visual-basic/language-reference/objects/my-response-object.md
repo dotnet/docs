@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "My.Response object"
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

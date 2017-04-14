@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "opacity, masks"
 ms.assetid: 22367fab-5f59-4583-abfd-db2bf86eaef7
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Opacity Masks Overview

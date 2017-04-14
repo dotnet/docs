@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "GIF encoding"
 ms.assetid: 9cdd9ec7-71eb-444b-b9e3-991958461163
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Encode and Decode a GIF Image

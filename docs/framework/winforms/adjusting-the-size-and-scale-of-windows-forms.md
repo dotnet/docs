@@ -2,7 +2,7 @@
 title: "Adjusting the Size and Scale of Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, changing scale"
 ms.assetid: a014d2b3-3273-4521-95e1-00171033bf58
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Adjusting the Size and Scale of Windows Forms

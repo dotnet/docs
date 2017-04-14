@@ -2,11 +2,10 @@
 title: "Backtracking in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -29,7 +28,7 @@ manager: "wpickett"
 <a name="top"></a> Backtracking occurs when a regular expression pattern contains optional [quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) or [alternation constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.  
   
 > [!NOTE]
->  In general, a Nondeterministic Finite Automaton (NFA) engine like the .NET Framework regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.  
+>  In general, a Nondeterministic Finite Automaton (NFA) engine like .NET regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.  
   
  This topic contains the following sections:  
   
@@ -124,7 +123,7 @@ manager: "wpickett"
   
 <a name="controlling_backtracking"></a>   
 ## Controlling Backtracking  
- Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, the .NET Framework supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [nonbacktracking subexpressions](#Nonbacktracking), [lookbehind assertions](#Lookbehind), and [lookahead assertions](#Lookahead). For more information about each language element, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, .NET supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [nonbacktracking subexpressions](#Nonbacktracking), [lookbehind assertions](#Lookbehind), and [lookahead assertions](#Lookahead). For more information about each language element, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
 <a name="Timeout"></a>   
 ### Defining a Time-out Interval  
@@ -151,7 +150,7 @@ manager: "wpickett"
   
 <a name="Lookbehind"></a>   
 ### Lookbehind Assertions  
- The .NET Framework includes two language elements, `(?<=`*subexpression*`)` and `(?<!`*subexpression*`)`, that match the previous character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately precede the current character can be matched by *subexpression*, without advancing or backtracking.  
+ .NET includes two language elements, `(?<=`*subexpression*`)` and `(?<!`*subexpression*`)`, that match the previous character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately precede the current character can be matched by *subexpression*, without advancing or backtracking.  
   
  `(?<=` *subexpression* `)` is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. `(?<!`*subexpression*`)` is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous subexpression.  
   
@@ -183,7 +182,7 @@ manager: "wpickett"
   
 <a name="Lookahead"></a>   
 ### Lookahead Assertions  
- The .NET Framework includes two language elements, `(?=`*subexpression*`)` and `(?!`*subexpression*`)`, that match the next character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately follow the current character can be matched by *subexpression*, without advancing or backtracking.  
+ .NET includes two language elements, `(?=`*subexpression*`)` and `(?!`*subexpression*`)`, that match the next character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately follow the current character can be matched by *subexpression*, without advancing or backtracking.  
   
  `(?=` *subexpression* `)` is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. `(?!`*subexpression*`)` is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next subexpression.  
   
@@ -216,7 +215,7 @@ manager: "wpickett"
  [Back to top](#top)  
   
 ## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
  [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)   
  [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)   
  [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)   

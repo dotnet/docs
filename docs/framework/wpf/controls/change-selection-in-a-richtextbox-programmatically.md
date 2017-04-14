@@ -2,7 +2,7 @@
 title: "Change Selection in a RichTextBox Programmatically | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "changing selections in a RichTextBox [WPF]"
 ms.assetid: f1213205-1ad7-4cd2-b115-460173cc5aa3
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Change Selection in a RichTextBox Programmatically

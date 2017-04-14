@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ContextMenuStrip control [Windows Forms], about ContextMenuStrip control"
 ms.assetid: 9787cdb3-88f1-4198-972f-eefd9524ce39
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ContextMenuStrip Control Overview

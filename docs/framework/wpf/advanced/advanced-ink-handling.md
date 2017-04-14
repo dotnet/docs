@@ -2,7 +2,7 @@
 title: "Advanced Ink Handling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ink, advanced handling"
 ms.assetid: abc8481a-f983-416f-b051-9168ac8b2ba3
 caps.latest.revision: 52
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Advanced Ink Handling

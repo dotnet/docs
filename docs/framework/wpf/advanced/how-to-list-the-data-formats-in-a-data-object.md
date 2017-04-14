@@ -2,7 +2,7 @@
 title: "How to: List the Data Formats in a Data Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "data formats [WPF], listing"
 ms.assetid: 18e7ba4b-ccef-4815-ae2d-3a32891010c0
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: List the Data Formats in a Data Object

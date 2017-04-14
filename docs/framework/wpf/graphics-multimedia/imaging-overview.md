@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "rotating images"
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 caps.latest.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Imaging Overview

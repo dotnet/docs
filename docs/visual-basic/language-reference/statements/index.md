@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "statements [Visual Basic]"
 ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], hosting controls"
 ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Wrap a Windows Forms Control with ToolStripControlHost

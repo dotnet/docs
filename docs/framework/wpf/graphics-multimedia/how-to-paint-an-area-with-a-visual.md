@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "brushes, painting with visuals"
 ms.assetid: 35f92996-1d03-4542-acc4-3469dcf09492
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with a Visual

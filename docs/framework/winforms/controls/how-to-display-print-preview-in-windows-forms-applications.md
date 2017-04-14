@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], print preview"
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Print Preview in Windows Forms Applications

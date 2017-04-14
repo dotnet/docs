@@ -2,7 +2,7 @@
 title: "How to: Detect When the Enter Key Pressed | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "keys, Enter"
 ms.assetid: a66f39d2-ef4a-43a5-b454-a4ea0fe88655
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Detect When the Enter Key Pressed

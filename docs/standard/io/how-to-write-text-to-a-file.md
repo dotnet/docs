@@ -2,11 +2,10 @@
 title: "How to: Write Text to a File | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -90,4 +89,4 @@ This topic shows different ways you can write text to a file for .NET Framework 
  [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)   
  [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)   
  [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)   
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)
+ [File and Stream I-O](../../../docs/standard/io/index.md)

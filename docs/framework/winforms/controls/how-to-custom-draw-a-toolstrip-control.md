@@ -29,8 +29,8 @@ helpviewer_keywords:
   - "ToolStripSystemRenderer class"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Custom Draw a ToolStrip Control

@@ -2,7 +2,7 @@
 title: "Globalization for WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "globalization"
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 caps.latest.revision: 35
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Globalization for WPF

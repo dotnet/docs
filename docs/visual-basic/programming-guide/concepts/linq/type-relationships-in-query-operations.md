@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "relationships [LINQ in Visual Basic]"
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

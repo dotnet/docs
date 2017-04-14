@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "object variables"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,11 +2,10 @@
 title: "How to: Strip Invalid Characters from a String | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -37,4 +36,4 @@ The following example uses the static <xref:System.Text.RegularExpressions.Regex
  The regular expression pattern `[^\w\.@-]` matches any character that is not a word character, a period, an @ symbol, or a hyphen. A word character is any letter, decimal digit, or punctuation connector such as an underscore. Any character that matches this pattern is replaced by <xref:System.String.Empty?displayProperty=fullName>, which is the string defined by the replacement pattern. To allow additional characters in user input, add those characters to the character class in the regular expression pattern. For example, the regular expression pattern `[^\w\.@-\\%]` also allows a percentage symbol and a backslash in an input string.  
   
 ## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

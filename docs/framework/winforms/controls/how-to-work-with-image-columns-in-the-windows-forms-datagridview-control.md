@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], image columns"
 ms.assetid: 8a37aa75-3c6e-4893-91d0-7a5f34bfe287
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Work with Image Columns in the Windows Forms DataGridView Control

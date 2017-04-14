@@ -2,7 +2,7 @@
 title: "Interfaces Related to Data Binding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "IDataErrorInfo interface, Windows Forms data binding"
 ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Interfaces Related to Data Binding

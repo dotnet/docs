@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "encoding PNG images"
 ms.assetid: 3d31d186-af73-47f0-b5a7-c26ae46409a6
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Encode and Decode a PNG Image

@@ -2,11 +2,10 @@
 title: "Using User-Filtered Exception Handlers | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -47,8 +46,6 @@ Try
       'Catch statements.  
 End Try  
 ```  
-  
-## See Also  
- [How to: Use Specific Exceptions in a Catch Block](../../../docs/standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md)   
- [Best Practices for Exceptions](../../../docs/standard/exceptions/best-practices-for-exceptions.md)   
- [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)
+
+## See Also
+[Exceptions](index.md)

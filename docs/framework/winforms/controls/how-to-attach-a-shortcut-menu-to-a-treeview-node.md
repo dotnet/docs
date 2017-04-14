@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tree nodes in TreeView control, shortcut menus"
 ms.assetid: a23c6752-fd8f-44ad-b781-bab37962fc7c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Attach a ShortCut Menu to a TreeView Node

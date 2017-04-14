@@ -2,7 +2,7 @@
 title: "How to: Make Data Available for Binding in XAML | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "binding data, making data available for"
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make Data Available for Binding in XAML

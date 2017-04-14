@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ToolStripContainer control [Windows Forms], about ToolStripContainer control"
 ms.assetid: c7d63bff-64e2-4a63-bd89-d31bc96dacb8
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStripContainer Control Overview

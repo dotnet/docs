@@ -2,7 +2,7 @@
 title: "DateTime XAML Syntax | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DateTime XAML syntax [WPF], format strings for"
 ms.assetid: 5901710a-609b-40c8-9d65-f0016cd9090b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DateTime XAML Syntax

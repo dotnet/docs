@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "sounds, playing"
 ms.assetid: fcebb938-62b9-4677-9cbe-6465bc863e22
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # SoundPlayer Class Overview

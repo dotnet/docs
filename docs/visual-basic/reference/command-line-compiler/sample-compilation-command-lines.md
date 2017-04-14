@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Visual Basic compiler, sample command lines"
 ms.assetid: 5bfbb487-5f47-4267-969a-39dfb917beeb
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

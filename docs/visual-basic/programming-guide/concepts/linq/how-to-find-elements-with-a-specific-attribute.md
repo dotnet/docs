@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 4bb38d2c-bc7c-4196-8909-aaf41fb86b28
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (Visual Basic)

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "queries [Visual Basic], Select"
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Generate Text Files from XML (Visual Basic)

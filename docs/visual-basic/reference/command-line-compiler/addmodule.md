@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-addmodule compiler option [Visual Basic]"
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

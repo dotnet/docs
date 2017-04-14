@@ -2,7 +2,7 @@
 title: "Brushes How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "brushes"
 ms.assetid: 43e7f798-9558-4498-b5b6-4a4c6baf956b
 caps.latest.revision: 75
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Brushes How-to Topics

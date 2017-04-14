@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "multiple animation target values"
 ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Key-Frame Animations Overview

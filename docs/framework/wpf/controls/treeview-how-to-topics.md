@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TreeView control, how-to topics"
 ms.assetid: b9e9790e-7bfd-45d1-8b7a-1e0d125182a8
 caps.latest.revision: 70
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TreeView How-to Topics

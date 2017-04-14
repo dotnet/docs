@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My.Application.AssemblyInfo object"
 ms.assetid: 2f4782ed-3da2-4d88-b341-0c6f480fb7bb
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

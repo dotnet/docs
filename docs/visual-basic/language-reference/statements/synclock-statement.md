@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

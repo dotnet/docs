@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrMouse_NoMouseIsPresent"
 ms.assetid: 4472fd57-4217-4463-9d3c-dc4a8fe88f1b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

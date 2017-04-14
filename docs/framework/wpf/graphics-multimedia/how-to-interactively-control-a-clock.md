@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "clocks, controlling interactively"
 ms.assetid: d0b520e0-2f18-4cef-977f-2909e709548a
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Interactively Control a Clock

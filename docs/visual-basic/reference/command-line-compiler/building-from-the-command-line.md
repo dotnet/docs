@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "command line [Visual Basic], Visual Basic"
 ms.assetid: e61947e9-a42e-4717-a699-5f70a98cdd03
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

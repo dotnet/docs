@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "NumericUpDown control [Windows Forms], setting and returning values"
 ms.assetid: 5bd8f8cd-4c12-49ea-9cc3-2a647d064689
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set and Return Numeric Values with the Windows Forms NumericUpDown Control

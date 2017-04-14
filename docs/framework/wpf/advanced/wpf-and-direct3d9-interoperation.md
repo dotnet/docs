@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 1b14b823-69c4-4e8d-99e4-f6dade58f89a
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF and Direct3D9 Interoperation

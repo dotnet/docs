@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "status bars, creating"
 ms.assetid: 6f543e27-cf78-4b7f-b4d0-6a8030155d48
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # StatusBar Control (Windows Forms)

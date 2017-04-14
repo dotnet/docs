@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "mouse, detecting movement on toolbars"
 ms.assetid: d38b5082-aba7-4f6c-841b-bd9714e307fd
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Detect When the Mouse Pointer Is Over a ToolStripItem

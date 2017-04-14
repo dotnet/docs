@@ -2,7 +2,7 @@
 title: "How to: Position the Cursor at the Beginning or End of Text in a TextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "cursor, positioning"
 ms.assetid: c771a0b8-c6b4-4240-aecd-a21d0ba51a2e
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Position the Cursor at the Beginning or End of Text in a TextBox Control

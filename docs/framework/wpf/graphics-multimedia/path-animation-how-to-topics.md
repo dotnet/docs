@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "path animations"
 ms.assetid: e9b71017-bac4-40d7-858b-326939442cb1
 caps.latest.revision: 54
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Path Animation How-to Topics

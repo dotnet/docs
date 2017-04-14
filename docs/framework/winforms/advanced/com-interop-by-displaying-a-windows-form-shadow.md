@@ -2,7 +2,7 @@
 title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Windows Forms, interop"
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method

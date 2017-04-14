@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "date and time picker controls"
 ms.assetid: 1dac1fbd-8f67-4910-9ccb-2c5462d0d855
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DateTimePicker Control (Windows Forms)

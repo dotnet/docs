@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "panels, setting size in status bars"
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Size of Status-Bar Panels

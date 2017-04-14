@@ -2,11 +2,10 @@
 title: "Grouping Constructs in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -33,7 +32,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 -   Retrieve individual subexpressions from the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property and process them separately from the matched text as a whole.  
   
- The following table lists the grouping constructs supported by the .NET Framework regular expression engine and indicates whether they are capturing or non-capturing.  
+ The following table lists the grouping constructs supported by the .NET regular expression engine and indicates whether they are capturing or non-capturing.  
   
 |Grouping construct|Capturing or noncapturing|  
 |------------------------|-------------------------------|  

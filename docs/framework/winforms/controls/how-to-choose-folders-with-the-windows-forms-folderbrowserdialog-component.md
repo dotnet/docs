@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "directories [Windows Forms], selecting"
 ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Choose Folders with the Windows Forms FolderBrowserDialog Component

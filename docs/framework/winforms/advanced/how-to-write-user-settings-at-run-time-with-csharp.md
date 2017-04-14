@@ -2,7 +2,7 @@
 title: "How To: Write User Settings at Run Time with C# | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], C#"
 ms.assetid: 9d061c7d-b33b-470f-a36d-edccb1d6f9a3
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Write User Settings at Run Time with C# #

@@ -2,7 +2,7 @@
 title: "Intercepting Input from the Stylus | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "plug-ins, stylus"
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Intercepting Input from the Stylus

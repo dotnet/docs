@@ -2,11 +2,10 @@
 title: "Alternation Constructs in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -24,7 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Alternation Constructs in Regular Expressions
-<a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. The .NET Framework supports three alternation constructs:  
+<a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. .NET supports three alternation constructs:  
   
 -   [Pattern matching with &#124;](#Either_Or)  
   

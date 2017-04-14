@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "File object"
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

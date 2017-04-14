@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Rendering Controls with Visual Styles

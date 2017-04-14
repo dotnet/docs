@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "-linkres compiler option [Visual Basic]"
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

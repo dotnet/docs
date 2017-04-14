@@ -31,8 +31,8 @@ helpviewer_keywords:
   - "Long data type"
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

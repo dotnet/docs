@@ -2,7 +2,7 @@
 title: "How to: Create Thumbnail Images | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "images [Windows Forms], creating thumbnails"
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Thumbnail Images

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], virtual mode"
 ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Virtual Mode in the Windows Forms DataGridView Control

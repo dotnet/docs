@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 30a68b85-d3af-4946-83c1-1e2d010d0511
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control

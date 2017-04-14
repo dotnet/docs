@@ -2,7 +2,7 @@
 title: "Mouse Events in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "MouseUp event"
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Mouse Events in Windows Forms

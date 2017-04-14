@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "list views, selecting items"
 ms.assetid: ddea918e-1ddf-47f4-bd09-1e9b4c9d0c39
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Select an Item in the Windows Forms ListView Control

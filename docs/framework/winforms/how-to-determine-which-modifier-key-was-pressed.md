@@ -2,7 +2,7 @@
 title: "How to: Determine Which Modifier Key Was Pressed | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,8 +31,8 @@ helpviewer_keywords:
   - "modifier keys"
 ms.assetid: 1e184048-0ae3-4067-a200-d4ba31dbc2cb
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine Which Modifier Key Was Pressed

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Control class, Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Develop a Simple Windows Forms Control

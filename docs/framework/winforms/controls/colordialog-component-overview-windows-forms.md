@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ColorDialog component, about ColorDialog"
 ms.assetid: 6dbdd8f0-f697-4728-bb09-7ea156f6d800
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ColorDialog Component Overview (Windows Forms)

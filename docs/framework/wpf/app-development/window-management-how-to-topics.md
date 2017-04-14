@@ -2,7 +2,7 @@
 title: "Window Management How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "windows, managing"
 ms.assetid: 3090b408-94e4-446a-92ca-50f1fd36e5d8
 caps.latest.revision: 69
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Window Management How-to Topics

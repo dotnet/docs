@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "StatusBar control [WPF]"
 ms.assetid: aba45aed-7953-4b2c-bc29-315a9be6c440
 caps.latest.revision: 69
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # StatusBar

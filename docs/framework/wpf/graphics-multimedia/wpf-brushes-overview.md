@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "brushes, about brushes"
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Brushes Overview

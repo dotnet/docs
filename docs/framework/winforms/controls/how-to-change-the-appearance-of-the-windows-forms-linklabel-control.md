@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: fdc5854f-5162-4457-8cbe-1042feb2d132
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Appearance of the Windows Forms LinkLabel Control

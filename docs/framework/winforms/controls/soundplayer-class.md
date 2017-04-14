@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "SoundPlayer class"
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # SoundPlayer Class

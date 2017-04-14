@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "list boxes"
 ms.assetid: b0172473-c5f2-411e-aaa4-c8f17cb5eed4
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ListBox Control (Windows Forms)

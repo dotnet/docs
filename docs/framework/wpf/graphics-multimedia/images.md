@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "graphics, images"
 ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
 caps.latest.revision: 83
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Images

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "carriage return"
 ms.assetid: 43173201-0b74-4067-a472-605029ca5f35
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: View Multiple Lines in the Windows Forms TextBox Control

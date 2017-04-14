@@ -25,9 +25,9 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like. *Hello* is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild).
+You can [view or download the sample code](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild) from the dotnet/docs GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-Open up a command prompt and type the following:
+Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
 ```
 $ dotnet new console
@@ -60,7 +60,7 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](http://nuget.org) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
+   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
    
    The *project.assets.json* file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    

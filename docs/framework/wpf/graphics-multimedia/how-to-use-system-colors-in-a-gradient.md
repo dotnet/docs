@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "system colors in gradients"
 ms.assetid: 11942e7e-6300-4b50-8ed1-f50e8d20e7d2
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use System Colors in a Gradient

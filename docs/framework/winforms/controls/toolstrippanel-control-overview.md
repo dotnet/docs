@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ToolStripPanel control [Windows Forms], about ToolStripPanel control"
 ms.assetid: ce54a60c-5eba-4b4c-bd77-cf0748a666cc
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStripPanel Control Overview

@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface

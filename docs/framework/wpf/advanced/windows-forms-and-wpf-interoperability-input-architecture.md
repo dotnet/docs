@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "modeless dialog boxes [WPF]"
 ms.assetid: 0eb6f137-f088-4c5e-9e37-f96afd28f235
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms and WPF Interoperability Input Architecture

@@ -2,7 +2,7 @@
 title: "How to: Manipulate Flow Content Elements through the Blocks Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Blocks property, manipulating flow content elements"
 ms.assetid: aeda4ece-b979-4818-a093-ef938e908751
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate Flow Content Elements through the Blocks Property

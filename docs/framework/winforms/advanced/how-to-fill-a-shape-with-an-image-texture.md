@@ -2,7 +2,7 @@
 title: "How to: Fill a Shape with an Image Texture | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "shapes, filling with images"
 ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Fill a Shape with an Image Texture

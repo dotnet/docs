@@ -2,11 +2,10 @@
 title: "How to: Compress and Extract Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -64,4 +63,4 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  <xref:System.IO.Compression.ZipArchiveEntry>   
  <xref:System.IO.Compression.DeflateStream>   
  <xref:System.IO.Compression.GZipStream>   
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)
+ [File and Stream I-O](../../../docs/standard/io/index.md)

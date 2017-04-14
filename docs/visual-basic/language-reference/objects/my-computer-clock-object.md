@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Clock object"
 ms.assetid: a362b270-8a1b-404a-95c8-516a60c607dd
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

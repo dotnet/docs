@@ -2369,7 +2369,8 @@ Response.RedirectToRoutePermanent("Product",
       </Parameters>
       <Docs>
         <param name="cookie">The cookie in the collection to be updated.</param>
-        <summary>Updates an existing cookie in the cookie collection.</summary>
+        <summary>This API supports the product infrastructure and is not intended to be used directly from your code. 
+          Updates an existing cookie in the cookie collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

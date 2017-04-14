@@ -44,7 +44,7 @@ Element  |Description |
 
 Element  |Description |
 ---------|---------|
-`<configuration>` | The root element in every configuration file used by the common language runtime and Windows Forms applications |
+[\<configuration>](../configuration-element.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
 
 ## Remarks
 
@@ -54,4 +54,5 @@ The `<System.Windows.Forms.ConfigurationSection>` element can include one or mor
 
 ## See also
 
+[Configuration File Schema](../index.md)
 [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

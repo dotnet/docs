@@ -1529,7 +1529,7 @@ writer.WriteStartElement("root");
  This method does not escape special characters.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the [WriteRaw Method (Char\<xref:System.Xml.XmlTextWriter.WriteRaw%2A> method. You should not pass arbitrary data to this method.  
+>  The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the <xref:System.Xml.XmlTextWriter.WriteRaw%2A> method. You should not pass arbitrary data to this method.  
   
  ]]></format>
         </remarks>

@@ -1729,7 +1729,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [DefinePInvokeMethod Method (String, String, MethodAttributes, CallingConventions, Type, Type\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
+ The following example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
   
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag.  
@@ -1811,7 +1811,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [DefinePInvokeMethod Method (String, String, String, MethodAttributes, CallingConventions, Type, Type\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
+ The following code example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
   
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag.  
@@ -1904,7 +1904,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [DefinePInvokeMethod Method (String, String, String, MethodAttributes, CallingConventions, Type, Type\[\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
+ The following code example demonstrates how to use the [\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   

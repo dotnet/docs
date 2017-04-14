@@ -1611,7 +1611,7 @@
 ## Remarks  
  This method appends the specified range of characters in `value` to the current instance. If `value` is `null` and `startIndex` and `count` are both zero, no changes are made.  
   
- The [Append Method (Char\<xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method modifies the existing instance of this class; it does not return a new class instance. Because of this, you can call a method or property on the existing reference and you do not have to assign the return value to a <xref:System.Text.StringBuilder> object, as the following example illustrates.  
+ The <xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method modifies the existing instance of this class; it does not return a new class instance. Because of this, you can call a method or property on the existing reference and you do not have to assign the return value to a <xref:System.Text.StringBuilder> object, as the following example illustrates.  
   
  [!code-csharp[System.Text.StringBuilder.Append#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append2.cs#7)]
  [!code-vb[System.Text.StringBuilder.Append#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append2.vb#7)]  

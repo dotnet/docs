@@ -649,7 +649,7 @@
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
 > [!IMPORTANT]
->  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
+>  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
   
    
   
@@ -700,7 +700,7 @@
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
 > [!IMPORTANT]
->  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
+>  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
   
    
   
@@ -810,7 +810,7 @@
  For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
->  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
+>  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
   
    
   
@@ -872,7 +872,7 @@
  For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
->  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
+>  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
   
  ]]></format>
         </remarks>
@@ -4374,12 +4374,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method always returns `true` for the default application domain of an application that runs on the desktop. It returns `false` for a sandboxed application domain that was created by using the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload, unless the permissions that are granted to the application domain are equivalent to full trust.  
+ This method always returns `true` for the default application domain of an application that runs on the desktop. It returns `false` for a sandboxed application domain that was created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload, unless the permissions that are granted to the application domain are equivalent to full trust.  
   
    
   
 ## Examples  
- The following example demonstrates the <xref:System.AppDomain.IsFullyTrusted%2A> property and the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> property with fully trusted and partially trusted application domains. The fully trusted application domain is the default application domain for the application. The partially trusted application domain is created by using the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload.  
+ The following example demonstrates the <xref:System.AppDomain.IsFullyTrusted%2A> property and the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> property with fully trusted and partially trusted application domains. The fully trusted application domain is the default application domain for the application. The partially trusted application domain is created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload.  
   
  The example uses a `Worker` class that derives from <xref:System.MarshalByRefObject>, so it can be marshaled across application domain boundaries. The example creates a `Worker` object in the default application domain. It then calls the `TestIsFullyTrusted` method to display the property value for the application domain and for two assemblies that are loaded into the application domain: mscorlib, which is part of the .NET Framework, and the example assembly. The application domain is fully trusted, so both assemblies are fully trusted.  
   
@@ -4417,7 +4417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns `true` for sandboxed application domains that were created by using the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload. Sandboxed application domains have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
+ This property returns `true` for sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload. Sandboxed application domains have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
   
  Fully trusted code can use the <xref:System.AppDomain.PermissionSet%2A> property to determine the homogenous grant set of a sandboxed application domain.  
   
@@ -5021,7 +5021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sandboxed application domains that were created by using the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
+ Sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
   
  ]]></format>
         </remarks>

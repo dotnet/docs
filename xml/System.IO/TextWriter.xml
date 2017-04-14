@@ -691,7 +691,7 @@
 ## Remarks  
  This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A>.  
   
- This default method calls the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method and passes the entire character array. If the character array is `null`, nothing is written.  
+ This default method calls the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method and passes the entire character array. If the character array is `null`, nothing is written.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -994,7 +994,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is equivalent to the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
+ This overload is equivalent to the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
   
  This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
   
@@ -1314,7 +1314,7 @@
 ## Remarks  
  This method will write `count` characters of data into this `TextWriter` from the `buffer` character array starting at position `index`.  
   
- This overload is equivalent to the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload for each character in `buffer` between `index` and (`index` + `count`).  
+ This overload is equivalent to the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload for each character in `buffer` between `index` and (`index` + `count`).  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1675,7 +1675,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the [WriteAsync Method (Char\<xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>
@@ -1855,7 +1855,7 @@
 ## Remarks  
  All the characters in `buffer` are written to the underlying stream. If the character array is `null`, only the line terminator is written.  
   
- This overload is equivalent to [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> followed by <xref:System.IO.TextWriter.WriteLine> .  
+ This overload is equivalent to <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> followed by <xref:System.IO.TextWriter.WriteLine> .  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2164,7 +2164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is equivalent to the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
+ This overload is equivalent to the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2491,7 +2491,7 @@
 ## Remarks  
  This method will write `count` characters of data into this `TextWriter` from the `buffer` character array starting at position `index`.  
   
- This overload is equivalent to calling the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> method followed by <xref:System.IO.TextWriter.WriteLine%2A> for each character in `buffer` between `index` and (`index` + `count`).  
+ This overload is equivalent to calling the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> method followed by <xref:System.IO.TextWriter.WriteLine%2A> for each character in `buffer` between `index` and (`index` + `count`).  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2915,7 +2915,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the [WriteLineAsync Method (Char\<xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>

@@ -290,7 +290,7 @@ private void keyTest()
 ## Examples  
  The following example creates a <xref:System.Speech.Recognition.Grammar> object that supports commands to change the background color.  
   
- A <xref:System.Speech.Recognition.Choices> object (`colorChoice`) containing the list of options for background colors is filled using the [Add(GrammarBuilder\<xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> method with <xref:System.Speech.Recognition.GrammarBuilder> instances. The <xref:System.Speech.Recognition.GrammarBuilder> instances are obtained through the <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> method on the <xref:System.Speech.Recognition.SemanticResultValue> objects created from color strings.  
+ A <xref:System.Speech.Recognition.Choices> object (`colorChoice`) containing the list of options for background colors is filled using the <xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> method with <xref:System.Speech.Recognition.GrammarBuilder> instances. The <xref:System.Speech.Recognition.GrammarBuilder> instances are obtained through the <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> method on the <xref:System.Speech.Recognition.SemanticResultValue> objects created from color strings.  
   
  A <xref:System.Speech.Recognition.GrammarBuilder> is then obtained by calling <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> on a <xref:System.Speech.Recognition.SemanticResultKey> instance, which will be used to key the semantic choices in `colorChoice`.  
   

@@ -1465,12 +1465,12 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-remap table for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the [SetRemapTable Method (ColorMap\<xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-remap table for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, none of the default adjustment settings will apply to pens.  
   
    
   
 ## Examples  
- For a code example, see the [SetRemapTable(ColorMap\<xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%28System.Drawing.Imaging.ColorMap%5B%5D%29> method.  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%28System.Drawing.Imaging.ColorMap%5B%5D%29> method.  
   
  ]]></format>
         </remarks>

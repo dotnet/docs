@@ -463,7 +463,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF32Encoding.GetBytes%2A> to store the resulting bytes, you call the [GetByteCount Method (Char\<xref:System.Text.UTF32Encoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method. The [GetByteCount Method (Char\<xref:System.Text.UTF32Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF32Encoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UTF32Encoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.UTF32Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
@@ -472,7 +472,7 @@
    
   
 ## Examples  
- The following example populates an array with a Latin uppercase and lowercase characters and calls the [GetByteCount(Char\<xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Latin lowercase characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Latin lowercase characters. The following example populates an array with a combination of Greek and Cyrillic characters and calls the [GetByteCount(Char\<xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Cyrillic characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Cyrillic characters.  
+ The following example populates an array with a Latin uppercase and lowercase characters and calls the <xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Latin lowercase characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Latin lowercase characters. The following example populates an array with a combination of Greek and Cyrillic characters and calls the <xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Cyrillic characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Cyrillic characters.  
   
  [!code-csharp[System.Text.Utf32Encoding.GetByteCount#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf32encoding.getbytecount/cs/getbytecount2.cs#2)]
  [!code-vb[System.Text.Utf32Encoding.GetByteCount#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf32encoding.getbytecount/vb/getbytecount2.vb#2)]  
@@ -715,14 +715,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UTF32Encoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UTF32Encoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.UTF32Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF32Encoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UTF32Encoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.UTF32Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application uses the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF32Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF32Encoding.GetEncoder%2A> method, respectively.  
   
 > [!NOTE]
->  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting a preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UTF32Encoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting a preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The <xref:System.Text.UTF32Encoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
   
    
   
@@ -869,7 +869,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [GetCharCount Method (Byte\<xref:System.Text.UTF32Encoding.GetCharCount%2A> method calculates the exact array size required by the <xref:System.Text.UTF32Encoding.GetChars%2A> method to store the resulting characters. To calculate the maximum array size, call the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method. The [GetCharCount Method (Byte\<xref:System.Text.UTF32Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ The <xref:System.Text.UTF32Encoding.GetCharCount%2A> method calculates the exact array size required by the <xref:System.Text.UTF32Encoding.GetChars%2A> method to store the resulting characters. To calculate the maximum array size, call the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.UTF32Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
@@ -1026,7 +1026,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.UTF32Encoding.GetChars%2A> to store the resulting characters, call the <xref:System.Text.UTF32Encoding.GetCharCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.UTF32Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF32Encoding.GetChars%2A> to store the resulting characters, call the <xref:System.Text.UTF32Encoding.GetCharCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.UTF32Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF32Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
@@ -1456,7 +1456,7 @@
  [!code-csharp[System.Text.UTF32Encoding.GetString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/CS/getstring.cs#1)]
  [!code-vb[System.Text.UTF32Encoding.GetString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/VB/GetString.vb#1)]  
   
- The following example initializes an array by calling the <xref:System.Text.UTF32Encoding.GetByteCount%2A> method to determine exactly how many bytes are required for an encoded string and then adding the size of the byte order mark (BOM). The example then calls the <xref:System.Text.UTF32Encoding.GetPreamble%2A> method to store the BOM to the array before calling the <xref:System.Text.UTF32Encoding.GetBytes%2A> method to store the encoded bytes to the array. The example then calls the [GetString Method (Byte\<xref:System.Text.UTF32Encoding.GetString%2A> method to decode the string.  
+ The following example initializes an array by calling the <xref:System.Text.UTF32Encoding.GetByteCount%2A> method to determine exactly how many bytes are required for an encoded string and then adding the size of the byte order mark (BOM). The example then calls the <xref:System.Text.UTF32Encoding.GetPreamble%2A> method to store the BOM to the array before calling the <xref:System.Text.UTF32Encoding.GetBytes%2A> method to store the encoded bytes to the array. The example then calls the <xref:System.Text.UTF32Encoding.GetString%2A> method to decode the string.  
   
  [!code-csharp[System.Text.UTF32Encoding.GetString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/CS/GetString1.cs#2)]
  [!code-vb[System.Text.UTF32Encoding.GetString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/VB/GetString1.vb#2)]  

@@ -1619,7 +1619,7 @@
 ## Remarks  
  If the number and types of the parameters are known when the method is defined, they can be set using any overload of the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=fullName> method that accepts an array of parameter types. However, a generic method can have parameters whose types are specified by one or more of its own generic type parameters, which cannot be defined until after the method has been defined. Use this method to set the parameter types in that case.  
   
- If the return type has optional or required custom modifiers, such as <xref:System.Runtime.CompilerServices.IsConst>, use the [SetSignature(Type, Type\[\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.MethodBuilder.SetSignature%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
+ If the return type has optional or required custom modifiers, such as <xref:System.Runtime.CompilerServices.IsConst>, use the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
   
  Calling this method replaces any parameter types that were set using the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=fullName> method.  
   
@@ -1669,7 +1669,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to set the return type of a generic method, when the return type is specified by one of the generic type parameters of the method. If the return type has optional or required custom modifiers, such as <xref:System.Runtime.CompilerServices.IsConst>, use the [SetSignature(Type, Type\[\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.MethodBuilder.SetSignature%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
+ Use this method to set the return type of a generic method, when the return type is specified by one of the generic type parameters of the method. If the return type has optional or required custom modifiers, such as <xref:System.Runtime.CompilerServices.IsConst>, use the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
   
  Calling this method replaces a return type established using the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=fullName> method.  
   

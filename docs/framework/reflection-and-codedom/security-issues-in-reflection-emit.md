@@ -65,7 +65,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
   
 <a name="Anonymously_Hosted_Dynamic_Methods"></a>   
 ## Anonymously Hosted Dynamic Methods  
- Anonymously hosted dynamic methods are created by using the two <xref:System.Reflection.Emit.DynamicMethod> constructors that do not specify an associated type or module, [DynamicMethod(String, Type, Type\<xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%29> and [DynamicMethod(String, Type, Type\<xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29>. These constructors place the dynamic methods in a system-provided, fully trusted, security-transparent assembly. No permissions are required to use these constructors or to emit code for the dynamic methods.  
+ Anonymously hosted dynamic methods are created by using the two <xref:System.Reflection.Emit.DynamicMethod> constructors that do not specify an associated type or module, <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%29> and <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29>. These constructors place the dynamic methods in a system-provided, fully trusted, security-transparent assembly. No permissions are required to use these constructors or to emit code for the dynamic methods.  
   
  Instead, when an anonymously hosted dynamic method is created, the call stack is captured. When the method is constructed, security demands are made against the captured call stack.  
   

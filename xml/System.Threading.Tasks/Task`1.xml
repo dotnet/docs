@@ -97,7 +97,7 @@
    
   
 ## Examples  
- The following example counts the approximate number of words in text files that represent published books. Each task is responsible for opening a file, reading its entire contents asynchronously, and calculating the word count by using a regular expression. The [Task.WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method is called to ensure that all tasks have completed before displaying the word count of each book to the console.  
+ The following example counts the approximate number of words in text files that represent published books. Each task is responsible for opening a file, reading its entire contents asynchronously, and calculating the word count by using a regular expression. The <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method is called to ensure that all tasks have completed before displaying the word count of each book to the console.  
   
  Object instantiation is separated from object execution in this example so that the example can ensure that each file exists. If they do not,  it displays the name of the missing file. Otherwise, it calls the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=fullName> method to launch each task.  
   

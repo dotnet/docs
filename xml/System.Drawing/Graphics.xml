@@ -3497,7 +3497,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3519,7 +3519,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that does not pass a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `true`, which causes the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method to end, and the exception-handling code included in the example prints out the exception text rather than drawing the image.  
+ Because this example uses an overload that does not pass a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `true`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to end, and the exception-handling code included in the example prints out the exception text rather than drawing the image.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#44](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#44)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#44](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#44)]
@@ -3578,7 +3578,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, Point\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3600,7 +3600,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the [DrawImage Method (Image, Point\<xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
+ Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#39](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#39)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#39](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#39)]
@@ -3657,7 +3657,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Pa`<xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Pa`<xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3679,7 +3679,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
+ Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#45](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#45)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#45](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#45)]
@@ -5246,7 +5246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see[DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -5300,7 +5300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see [DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see <xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -5353,7 +5353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see [DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see <xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   

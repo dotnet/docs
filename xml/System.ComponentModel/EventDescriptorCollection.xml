@@ -36,7 +36,7 @@
 ## Remarks  
  <xref:System.ComponentModel.EventDescriptorCollection> is read-only; it does not implement methods that add or remove events. You must inherit from this class to implement these methods.  
   
- Using the properties available in the <xref:System.ComponentModel.EventDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the [Item\<xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
+ Using the properties available in the <xref:System.ComponentModel.EventDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
   
  You can also use the <xref:System.ComponentModel.EventDescriptorCollection.Find%2A> method to get a description of the event with the specified name from the collection.  
   
@@ -973,7 +973,7 @@
    
   
 ## Examples  
- The following code example defines the sort order for the [Sort Method (String\<xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
   
  [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
  [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]

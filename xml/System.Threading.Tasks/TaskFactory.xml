@@ -56,7 +56,7 @@
    
   
 ## Examples  
- The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the [TaskFactory.ContinueWhenAll(Task\[\], Action\<Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
+ The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
   
  [!code-csharp[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory1.vb#1)]  
@@ -361,14 +361,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ContinueWhenAll Method (Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
+ The <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
   
- Exceptions thrown by tasks in the `tasks` array are not available to the continuation task through structured exception handling. You can determine which exceptions were thrown by examining the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> property of each task in the `tasks` array. To use structured exception handling to handle exceptions thrown by tasks in the `tasks` array, call the [Task.WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method.  
+ Exceptions thrown by tasks in the `tasks` array are not available to the continuation task through structured exception handling. You can determine which exceptions were thrown by examining the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> property of each task in the `tasks` array. To use structured exception handling to handle exceptions thrown by tasks in the `tasks` array, call the <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method.  
   
    
   
 ## Examples  
- The following example launches separate tasks that use a regular expression to count the number of words in a set of text files. The [ContinueWhenAll Method (Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed.  
+ The following example launches separate tasks that use a regular expression to count the number of words in a set of text files. The <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed.  
   
  [!code-csharp[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/cs/continuewhenall1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/vb/continuewhenall1.vb#1)]  
@@ -423,12 +423,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ContinueWhenAll Method (Task\[\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%2CSystem.Threading.CancellationToken%29> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
+ The [\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%2CSystem.Threading.CancellationToken%29> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
   
    
   
 ## Examples  
- The following example creates a cancellation token, which it passes to separate tasks that use a regular expression to count the number of words in a set of text files. The cancellation token is set if a file cannot be found. The [ContinueWhenAll Method (Task\[\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed. If the cancellation token is set, which indicates that one or more tasks have been cancelled, it handles the <xref:System.AggregateException> exception and displays an error message.  
+ The following example creates a cancellation token, which it passes to separate tasks that use a regular expression to count the number of words in a set of text files. The cancellation token is set if a file cannot be found. The [\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed. If the cancellation token is set, which indicates that one or more tasks have been cancelled, it handles the <xref:System.AggregateException> exception and displays an error message.  
   
  [!code-csharp[System.Threading.Tasks.Task.ContinueWhenAll#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/cs/continuewhenall2.cs#2)]
  [!code-vb[System.Threading.Tasks.Task.ContinueWhenAll#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/vb/continuewhenall2.vb#2)]  

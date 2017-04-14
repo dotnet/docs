@@ -414,7 +414,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of the object query identifies the current object query in the sequence by name when constructing query builder methods. By default, the query name is `it`. This can be useful when referring to the current sequence in joins inside the [M:System.Data.Objects.Query\`1.Where(System.String,System.Data.Objects.ObjectParameter\<xref:System.Data.Objects.Query%601.Where%2A> method or in the <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+ The name of the object query identifies the current object query in the sequence by name when constructing query builder methods. By default, the query name is `it`. This can be useful when referring to the current sequence in joins inside the <xref:System.Data.Objects.Query%601.Where%2A> method or in the <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
   
  When you set the <xref:System.Data.Objects.ObjectQuery%601.Name%2A> property of an <xref:System.Data.Objects.ObjectQuery%601>, that value becomes the alias in successive methods.  
   

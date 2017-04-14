@@ -1224,7 +1224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use [EmitCalli Method (OpCode, CallingConventions, Type, Type\<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+ Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
  If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
   

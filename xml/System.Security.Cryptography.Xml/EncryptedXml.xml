@@ -456,7 +456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [DecryptKey Method (Byte\<xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey%2A> method decrypts an encrypted key contained within the `<EncryptedKey>` element of an XML document. This method accepts a value for the `rsa` parameter that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP padding).  
+ The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey%2A> method decrypts an encrypted key contained within the `<EncryptedKey>` element of an XML document. This method accepts a value for the `rsa` parameter that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP padding).  
   
  ]]></format>
         </remarks>
@@ -750,7 +750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [EncryptKey Method (Byte\<xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for the `symmetricAlgorithm` parameter that represents either the Triple DES algorithm or the AES key wrap algorithm (also called Rijndael).  
+ Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for the `symmetricAlgorithm` parameter that represents either the Triple DES algorithm or the AES key wrap algorithm (also called Rijndael).  
   
  Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
   
@@ -791,7 +791,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [EncryptKey Method (Byte\<xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for `rsa` that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP).  
+ Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for `rsa` that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP).  
   
  Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
   

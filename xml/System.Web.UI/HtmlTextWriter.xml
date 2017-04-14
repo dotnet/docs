@@ -3078,7 +3078,7 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [Write Method (Char\<xref:System.Web.UI.HtmlTextWriter.Write%2A> method generates any tabs that are pending, and then calls the <xref:System.IO.TextWriter.Write%2A> base method.  
+ The <xref:System.Web.UI.HtmlTextWriter.Write%2A> method generates any tabs that are pending, and then calls the <xref:System.IO.TextWriter.Write%2A> base method.  
   
    
   
@@ -3098,7 +3098,7 @@ alert('Hello');
  [!code-csharp[MarkupTextWriter_Methods2#13](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods2/CS/renderobjects.cs#13)]
  [!code-vb[MarkupTextWriter_Methods2#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods2/VB/renderobjects.vb#13)]  
   
- The following portion of the code example uses the `index` and `count` parameters of the [Write Method (Char\<xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the first five characters of the array created in the preceding example.  
+ The following portion of the code example uses the `index` and `count` parameters of the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the first five characters of the array created in the preceding example.  
   
  [!code-csharp[MarkupTextWriter_Methods2#11](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods2/CS/renderobjects.cs#11)]
  [!code-vb[MarkupTextWriter_Methods2#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods2/VB/renderobjects.vb#11)]  
@@ -3988,7 +3988,7 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method uses the same semantics as the [Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` method.  
+ The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method uses the same semantics as the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` method.  
   
    
   
@@ -4055,7 +4055,7 @@ alert('Hello');
  [!code-csharp[MarkupTextWriter_Methods2#6](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods2/CS/displaylabelsline.cs#6)]
  [!code-vb[MarkupTextWriter_Methods2#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods2/VB/displaylabelsline.vb#6)]  
   
- The following code example uses the `index` and `count` parameters of the [WriteLine Method (Char\<xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the first five characters of the array created in the preceding code example.  
+ The following code example uses the `index` and `count` parameters of the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the first five characters of the array created in the preceding code example.  
   
  [!code-csharp[MarkupTextWriter_Methods2#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods2/CS/displaylabelsline.cs#4)]
  [!code-vb[MarkupTextWriter_Methods2#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods2/VB/displaylabelsline.vb#4)]  

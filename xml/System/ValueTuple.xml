@@ -37,9 +37,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element.  
+A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element.  
   
- Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/net-v463-md.md)] to provide the runtime implementation of tuples in C# and struct tuples in F#. They differ from the tuple classes, such as  <xref:System.Tuple%601>, <xref:System.Tuple%601>, etc., as follows:  
+Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/net-v463-md.md)] to provide the runtime implementation of tuples in C# and struct tuples in F#. They differ from the tuple classes, such as  <xref:System.Tuple%601>, <xref:System.Tuple%602>, etc., as follows:  
   
 -   They are structures (value types) rather than classes (reference types).  
   
@@ -47,7 +47,7 @@
   
 -   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
   
- The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
+The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
   
  ]]></format>
     </remarks>

@@ -187,7 +187,7 @@ Integrated Security=True
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Declares the application workload type when connecting to a database in an SQL Server Availability Group. You can set the value of this property with <see cref="T:System.Data.SqlClient.ApplicationIntent" />. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](../Topic/SqlClient%20Support%20for%20High%20Availability,%20Disaster%20Recovery.md).</summary>
+        <summary>Declares the application workload type when connecting to a database in an SQL Server Availability Group. You can set the value of this property with <see cref="T:System.Data.SqlClient.ApplicationIntent" />. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](~/docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).</summary>
         <value>Returns the current value of the property (a value of type <see cref="T:System.Data.SqlClient.ApplicationIntent" />).</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1369,7 +1369,7 @@ False
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If your application is connecting to an AlwaysOn availability group (AG) on different subnets, setting MultiSubnetFailover=true provides faster detection of and connection to the (currently) active server. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](../Topic/SqlClient%20Support%20for%20High%20Availability,%20Disaster%20Recovery.md).</summary>
+        <summary>If your application is connecting to an AlwaysOn availability group (AG) on different subnets, setting MultiSubnetFailover=true provides faster detection of and connection to the (currently) active server. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](~/docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).</summary>
         <value>Returns <see cref="T:System.Boolean" /> indicating the current value of the property.</value>
         <remarks>To be added.</remarks>
       </Docs>

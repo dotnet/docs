@@ -3398,7 +3398,7 @@
  [!code-csharp[System.Console.Write#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.write/cs/WriteParams1.cs#1)]
  [!code-vb[System.Console.Write#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.write/vb/WriteParams1.vb#1)]  
   
- Note that the example calls the <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29> method rather than the [WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29> method because it attempts to display the value of the `Person.Remarks` property on the same line. To do this, it examines the value of the <xref:System.Console.CursorLeft%2A> and <xref:System.Console.WindowWidth%2A> properties to determine whether there is enough space for the remark to fit.  If there is, it displays the line. If not, it writes a line, indents three spaces, and displays the remark.  
+ Note that the example calls the <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29> method rather than the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29> method because it attempts to display the value of the `Person.Remarks` property on the same line. To do this, it examines the value of the <xref:System.Console.CursorLeft%2A> and <xref:System.Console.WindowWidth%2A> properties to determine whether there is enough space for the remark to fit.  If there is, it displays the line. If not, it writes a line, indents three spaces, and displays the remark.  
   
  The following example is identical to the first, except that it supplies a five-item list as the `arg` argument instead of a parameter array.  
   
@@ -3664,7 +3664,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is [Console.Write(String, Object\<xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to [Console.Write(String, Object\<xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   
@@ -4749,7 +4749,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   

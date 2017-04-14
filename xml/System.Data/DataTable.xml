@@ -2228,7 +2228,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [LoadDataRow Method (Object\<xref:System.Data.DataTable.LoadDataRow%2A> method takes an array of values and finds the matching value(s) in the primary key column(s).  
+ The <xref:System.Data.DataTable.LoadDataRow%2A> method takes an array of values and finds the matching value(s) in the primary key column(s).  
   
  If a column has a default value, pass a null value in the array to set the default value for that column. Similarly, if a column has its <xref:System.Data.DataColumn.AutoIncrement%2A> property set to true, pass a null value in the array to set the automatically generated value for the row.  
   
@@ -2236,12 +2236,12 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  Exceptions can also occur during either a <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> event. If an exception occurs, the row is not added to the table.  
   
- Use [LoadDataRow Method (Object\<xref:System.Data.DataTable.LoadDataRow%2A> in conjunction with <xref:System.Data.DataTable.BeginLoadData%2A> and <xref:System.Data.DataTable.EndLoadData%2A>.  
+ Use <xref:System.Data.DataTable.LoadDataRow%2A> in conjunction with <xref:System.Data.DataTable.BeginLoadData%2A> and <xref:System.Data.DataTable.EndLoadData%2A>.  
   
    
   
 ## Examples  
- The following example uses the [LoadDataRow Method (Object\<xref:System.Data.DataTable.LoadDataRow%2A> method to attempt to find a row. If no such row is found, the values are used to create a new row.  
+ The following example uses the <xref:System.Data.DataTable.LoadDataRow%2A> method to attempt to find a row. If no such row is found, the values are used to create a new row.  
   
  [!code-csharp[Classic WebData DataTable.LoadDataRow Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTable.LoadDataRow Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataTable.LoadDataRow Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTable.LoadDataRow Example/VB/source.vb#1)]  

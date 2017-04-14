@@ -760,7 +760,7 @@
   
  The buffer can also be `null`.  
   
- To create a `MemoryStream` instance with a publicly visible buffer, use <xref:System.IO.MemoryStream.%23ctor%2A>, [MemoryStream(Byte\<xref:System.IO.MemoryStream.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%29>, or <xref:System.IO.MemoryStream.%23ctor%28System.Int32%29>. If the current stream is resizable, two calls to this method do not return the same array if the underlying byte array is resized between calls. For additional information, see <xref:System.IO.MemoryStream.Capacity%2A>.  
+ To create a `MemoryStream` instance with a publicly visible buffer, use <xref:System.IO.MemoryStream.%23ctor%2A>, <xref:System.IO.MemoryStream.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%29>, or <xref:System.IO.MemoryStream.%23ctor%28System.Int32%29>. If the current stream is resizable, two calls to this method do not return the same array if the underlying byte array is resized between calls. For additional information, see <xref:System.IO.MemoryStream.Capacity%2A>.  
   
 > [!NOTE]
 >  This method works when the memory stream is closed.  

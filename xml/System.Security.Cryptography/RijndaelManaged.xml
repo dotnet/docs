@@ -112,7 +112,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [CreateDecryptor Method (Byte\<xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> method to decrypt messages encoded with the same signature parameter.  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> method to decrypt messages encoded with the same signature parameter.  
   
  [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
  [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]

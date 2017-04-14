@@ -3626,7 +3626,7 @@
 ## Remarks  
  If the target file already exists, it is overwritten.  
   
- The default behavior of the <xref:System.IO.File.WriteAllLines%2A> method is to write out data using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the [WriteAllLines(String, String\<xref:System.IO.File.WriteAllLines%28System.String%2CSystem.String%5B%5D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+ The default behavior of the <xref:System.IO.File.WriteAllLines%2A> method is to write out data using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.String%5B%5D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
   
  Given a string array and a file path, this method opens the specified file, writes the string array to the file, and then closes the file.  
   
@@ -3776,7 +3776,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the [WriteAllLines Method (String, String\<xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ The following code example demonstrates the use of the <xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
   
  [!code-csharp[System.IO.File.AllLines_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/cs/AllText_Encoding.cs#00)]
  [!code-vb[System.IO.File.AllLines_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/vb/AllText_Encoding.vb#00)]  

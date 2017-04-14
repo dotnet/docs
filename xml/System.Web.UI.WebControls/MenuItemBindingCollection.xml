@@ -280,7 +280,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [CopyTo Method (MenuItemBinding\<xref:System.Web.UI.WebControls.MenuItemBindingCollection.CopyTo%2A> method to copy the <xref:System.Web.UI.WebControls.MenuItemBinding> objects from the collection to an array. The array is then iterated through to display the properties of the <xref:System.Web.UI.WebControls.MenuItemBinding> objects. For this example to work correctly, you must copy the sample XML data below to a file named Map.xml.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBindingCollection.CopyTo%2A> method to copy the <xref:System.Web.UI.WebControls.MenuItemBinding> objects from the collection to an array. The array is then iterated through to display the properties of the <xref:System.Web.UI.WebControls.MenuItemBinding> objects. For this example to work correctly, you must copy the sample XML data below to a file named Map.xml.  
   
  <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingCollectionCopyTo/CS/menuitembindingcollectioncopytocs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MenuItemBindingCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingCollectionCopyTo/VB/menuitembindingcollectioncopytovb.aspx#1)]  -->  

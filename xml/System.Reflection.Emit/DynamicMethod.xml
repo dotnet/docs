@@ -121,7 +121,7 @@
 ## Remarks  
  The dynamic method that is created by this constructor is associated with an anonymous assembly instead of an existing type or module. The anonymous assembly exists only to provide a sandbox environment for dynamic methods, that is, to isolate them from other code. This environment makes it safe for the dynamic method to be emitted and executed by partially trusted code.  
   
- This constructor specifies that just-in-time (JIT) visibility checks will be enforced for the Microsoft intermediate language (MSIL) of the dynamic method. That is, the code in the dynamic method has access to public methods of public classes. Exceptions are thrown if the method tries to access types or members that are `private`, `protected`, or `internal` (`Friend` in Visual Basic). To create a dynamic method that has restricted ability to skip JIT visibility checks, use the [DynamicMethod(String, Type, Type\<xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29> constructor.  
+ This constructor specifies that just-in-time (JIT) visibility checks will be enforced for the Microsoft intermediate language (MSIL) of the dynamic method. That is, the code in the dynamic method has access to public methods of public classes. Exceptions are thrown if the method tries to access types or members that are `private`, `protected`, or `internal` (`Friend` in Visual Basic). To create a dynamic method that has restricted ability to skip JIT visibility checks, use the <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29> constructor.  
   
  When an anonymously hosted dynamic method is constructed, the call stack of the emitting assembly is included. When the method is invoked, the permissions of the emitting assembly are used instead of the permissions of the actual caller. Thus, the dynamic method cannot execute at a higher level of privilege than that of the assembly that emitted it, even if it is passed to and executed by an assembly that has a higher trust level.  
   
@@ -246,7 +246,7 @@
    
   
 ## Examples  
- The following code example creates a dynamic method that takes two parameters. The example emits a simple function body that prints the first parameter to the console, and the example uses the second parameter as the return value of the method. The example completes the method by creating a delegate, invokes the delegate with different parameters, and finally invokes the dynamic method using the [Invoke(Object, BindingFlags, Binder, Object\<xref:System.Reflection.Emit.DynamicMethod.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method.  
+ The following code example creates a dynamic method that takes two parameters. The example emits a simple function body that prints the first parameter to the console, and the example uses the second parameter as the return value of the method. The example completes the method by creating a delegate, invokes the delegate with different parameters, and finally invokes the dynamic method using the <xref:System.Reflection.Emit.DynamicMethod.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method.  
   
  [!code-cpp[Reflection.DynamicMethod.ctor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Reflection.DynamicMethod.ctor1/cpp/source.cpp#1)]
  [!code-csharp[Reflection.DynamicMethod.ctor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection.DynamicMethod.ctor1/CS/source.cs#1)]
@@ -1275,16 +1275,16 @@
 ## Remarks  
  In addition to the listed exceptions, the calling code should be prepared to catch any exceptions thrown by the dynamic method.  
   
- Executing a dynamic method with a delegate created by the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method is more efficient than executing it with the [Invoke Method (Object, BindingFlags, Binder, Object\<xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method.  
+ Executing a dynamic method with a delegate created by the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method is more efficient than executing it with the <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method.  
   
- Calling the [Invoke Method (Object, BindingFlags, Binder, Object\<xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method or the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method completes the dynamic method. Any further attempt to alter the dynamic method, such as modifying parameter definitions or emitting more Microsoft intermediate language (MSIL), is ignored; no exception is thrown.  
+ Calling the <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method or the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method completes the dynamic method. Any further attempt to alter the dynamic method, such as modifying parameter definitions or emitting more Microsoft intermediate language (MSIL), is ignored; no exception is thrown.  
   
  All dynamic methods are static, so the `obj` parameter is always ignored. To treat a dynamic method as if it were an instance method, use the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%28System.Type%2CSystem.Object%29> overload that takes an object instance.  
   
  If the dynamic method has no parameters, the value of `parameters` should be `null`. Otherwise the number, type, and order of elements in the parameters array should be identical to the number, type, and order of parameters of the dynamic method.  
   
 > [!NOTE]
->  This method overload is called by the [Invoke(Object, Object\<xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Object%5B%5D%29> method overload inherited from the <xref:System.Reflection.MethodBase> class, so the preceding remarks apply to both overloads.  
+>  This method overload is called by the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Object%5B%5D%29> method overload inherited from the <xref:System.Reflection.MethodBase> class, so the preceding remarks apply to both overloads.  
   
  This method does not demand permissions directly, but invoking the dynamic method can result in security demands, depending on the method. For example, no demands are made for anonymously hosted dynamic methods that are created with the `restrictedSkipVisibility` parameter set to `false`. On the other hand, if you create a method with `restrictedSkipVisibility` set to `true` so it can access a hidden member of a target assembly, the method will cause a demand for the permissions of the target assembly plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
   

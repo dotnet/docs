@@ -1478,7 +1478,7 @@
    
   
 ## Examples  
- The following example shows how to use the [VerifyData Method (Byte\<xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
+ The following example shows how to use the <xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
   
  [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CPP/class1.cpp#2)]
  [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CS/class1.cs#2)]
@@ -1534,7 +1534,7 @@
    
   
 ## Examples  
- The following example shows how to use the [VerifyHash Method (Byte\<xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
+ The following example shows how to use the <xref:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash%2A> method to verify a signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSACryptoServiceProvider.SignHash%2A> method.  
   
  [!code-cpp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CPP/class1.cpp#2)]
  [!code-csharp[System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Security.Cryptography.RSACryptoServiceProvider ManualHash Example/CS/class1.cs#2)]

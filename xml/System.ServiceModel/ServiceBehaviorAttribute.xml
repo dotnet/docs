@@ -624,7 +624,7 @@ public void MyMethod()
 ## Remarks  
  Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
   
- In addition, it is important to realize that if the service is created by passing a service object to the [ServiceHost.ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were `false`.  
+ In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were `false`.  
   
    
   

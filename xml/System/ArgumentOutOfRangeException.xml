@@ -136,7 +136,7 @@
     endIndex - startIndex   
     ```  
   
- The following example defines a `FindWords` method that uses the [String.IndexOfAny(Char\<xref:System.String.IndexOfAny%28System.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to identify space characters and punctuation marks in a string and returns an array that contains the words found in the string.  
+ The following example defines a `FindWords` method that uses the <xref:System.String.IndexOfAny%28System.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to identify space characters and punctuation marks in a string and returns an array that contains the words found in the string.  
   
  [!code-csharp[System.ArgumentOutOfRangeException#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/FindWords1.cs#19)]
  [!code-vb[System.ArgumentOutOfRangeException#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/FindWords1.vb#19)]  

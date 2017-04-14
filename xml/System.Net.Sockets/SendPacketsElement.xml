@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [SendPacketsElement Constructor (Byte\<xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>
@@ -224,7 +224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [SendPacketsElement Constructor (Byte\<xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>

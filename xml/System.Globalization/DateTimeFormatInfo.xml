@@ -191,7 +191,7 @@
   
 -   The major composite formatting method, which is <xref:System.String.Format%2A?displayProperty=fullName>.  
   
--   Other composite formatting methods, such as [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+-   Other composite formatting methods, such as <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
   
  All date and time formatting operations make use of an <xref:System.IFormatProvider> implementation. The <xref:System.IFormatProvider> interface includes a single method, <xref:System.IFormatProvider.GetFormat%28System.Type%29?displayProperty=fullName>. This callback method is passed a <xref:System.Type> object that represents the type needed to provide formatting information. The method returns either an instance of that type or `null` if it cannot provide an instance of the type. The .NET Framework includes two <xref:System.IFormatProvider> implementations for formatting dates and times:  
   
@@ -201,7 +201,7 @@
   
  If an <xref:System.IFormatProvider> implementation is not provided to a formatting method explicitly, the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property that represents the current thread culture is used.  
   
- The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.DateTimeFormatInfo> class in formatting operations. It defines a custom <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method displays the type of the object requested by the formatting operation. If it is requesting a <xref:System.Globalization.DateTimeFormatInfo> object, the method provides the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method requests a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information, whereas the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
+ The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.DateTimeFormatInfo> class in formatting operations. It defines a custom <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method displays the type of the object requested by the formatting operation. If it is requesting a <xref:System.Globalization.DateTimeFormatInfo> object, the method provides the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method requests a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information, whereas the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
   
  [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/formatprovider1.cs#9)]
  [!code-vb[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/formatprovider1.vb#9)]  
@@ -1141,13 +1141,13 @@
   
  To parse the string representation of a date and time that can be expressed in a number of predefined custom formats, call one of the following methods:  
   
--   [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+-   <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
   
--   [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+-   <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
   
--   [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
+-   <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
   
--   [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
+-   <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
   
  The custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method depends on the current calendar of the culture for which the <xref:System.Globalization.DateTimeFormatInfo> object supplies formatting information. If the calendar changes, the array returned by this method also changes.  
   
@@ -1202,13 +1202,13 @@
   
  To parse the string representation of a date and time that can be expressed in a number of predefined custom formats, call one of the following methods:  
   
--   [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+-   <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
   
--   [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+-   <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
   
--   [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
+-   <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
   
--   [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
+-   <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
   
  The custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method depends on the current calendar of the culture for which the <xref:System.Globalization.DateTimeFormatInfo> object supplies formatting information. If the calendar changes, the array returned by this method also changes.  
   
@@ -2098,7 +2098,7 @@
  The <xref:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns%2A> method defines the custom format strings that correspond to a particular standard date and time format string. If a call to a date and time formatting method includes the standard date and time format string specified by `format`, the method uses the first element in the `patterns` array to define the format of the resulting string.  
   
 > [!WARNING]
->  The `Parse` and `TryParse` methods do not fully iterate all strings in `patterns` when parsing the string representation of a date and time. If you require a date and time string to have particular formats in a parsing operation, you should pass the array of valid formats to the [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>, or [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName> method.  
+>  The `Parse` and `TryParse` methods do not fully iterate all strings in `patterns` when parsing the string representation of a date and time. If you require a date and time string to have particular formats in a parsing operation, you should pass the array of valid formats to the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>, or <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName> method.  
   
  You can define custom format strings that correspond to the "d", "D", "t", "T", and "y" or "Y" standard date and time format strings. If the value of `format` is any other standard format string, the <xref:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns%2A> method throws an <xref:System.ArgumentException>.  
   

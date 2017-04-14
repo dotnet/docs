@@ -37,7 +37,7 @@
  [!code-csharp[Classic DES Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic DES Example/CS/source.cs#1)]
  [!code-vb[Classic DES Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic DES Example/VB/source.vb#1)]  
   
- Decryption can be handled in the same way; use [CreateDecryptor(Byte\[\], Byte\<xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateDecryptor%2A> instead of [CreateEncryptor(Byte\[\], Byte\<xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateEncryptor%2A>. The same key (<xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A>) and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) used to encrypt the file must be used to decrypt it.  
+ Decryption can be handled in the same way; use <xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateDecryptor%2A> instead of <xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateEncryptor%2A>. The same key (<xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A>) and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) used to encrypt the file must be used to decrypt it.  
   
  ]]></format>
     </remarks>

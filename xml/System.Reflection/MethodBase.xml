@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that calls the [Invoke(Object, BindingFlags, Binder, Object\<xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method overload, passing <xref:System.Reflection.BindingFlags> for `invokeAttr` and `null` for `binder` and `culture`.  
+ This is a convenience method that calls the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method overload, passing <xref:System.Reflection.BindingFlags> for `invokeAttr` and `null` for `binder` and `culture`.  
   
  If the invoked method throws an exception, the <xref:System.Exception.GetBaseException%2A?displayProperty=fullName> method returns the exception.  
   

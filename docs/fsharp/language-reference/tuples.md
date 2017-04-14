@@ -90,17 +90,17 @@ C# 7 and VB.NET 15 introduced tuples to their respective languages.  Tuples in b
 This is quite easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 
 ```csharp
-namespace TupleInterop
+namespace CSharpTupleInterop
 {
     public static class Example
     {
-        public static (int newX, int newY) AddOneToXAndY((int x, int y)) =>
-            (x + 1, y + 1);
+        public static (int, int) AddOneToXAndY((int x, int y) a) =>
+            (a.x + 1, a.y + 1);
     }
 }
 ```
 
-In your F# code, you can then pass a struct tuple as the parameter and cosume the result as a struct tuple.
+In your F# code, you can then pass a struct tuple as the parameter and consume the result as a struct tuple.
 
 ```fsharp
 open TupleInterop
@@ -112,20 +112,33 @@ let struct(newX, newY) = Example.AddOneToXAndY(struct(1, 2))
 The same is true for VB.NET tuples:
 
 ```vb
-' TODO - write this shit proper yo
-Public Function (Int newX, Int newY) AddOneToXAndYFromVB((Int x, Int y)) Begin
-        (x + 1, y + 1)
-End
+Public Module Tuples
+
+    Public Function AddOneToXAndYFromVB(t As (x As Integer, y As Integer)) As (newX As Integer, newY As Integer)
+        Return (t.x + 1, t.y + 1)
+    End Function
+
+End Module
 ```
 
 And the F# code is virtually the same:
 
 ```fsharp
-open TupleInterop
+open VBTuple // Assume the VB project is named this
 
-let struct(newX, newY) = Example.AddOneToXAndYFromVB(struct(1, 2))
+let struct(newX, newY) = Tuples.AddOneToXAndYFromVB(struct(1, 2))
 // newX is now 2, and newY is now 3
 ```
+
+### Converting between Reference Tuples and Struct Tuples
+
+Because Reference Tuples and Struct Tuples have a completely different underlying representation, they are not implicitly convertable.  That is, code such as the following will not compile:
+
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L5-L12)]
+
+You must pattern match on one tuple and construct the other with the constituent parts.  For example:
+
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L18-L22)]
 
 ## Compiled Form of Reference Tuples
 This section explains the form of tuples when they're compiled.  The information here isn't necessary to read unless you are targeting .NET Framework 3.5 or lower.

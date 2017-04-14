@@ -3508,7 +3508,7 @@ writer.Close();
  This method does not escape special characters.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.XmlWriter> does not validate the data that is passed to the [WriteRaw Method (Char\<xref:System.Xml.XmlWriter.WriteRaw%2A> method. You should not pass arbitrary data to this method.  
+>  The <xref:System.Xml.XmlWriter> does not validate the data that is passed to the <xref:System.Xml.XmlWriter.WriteRaw%2A> method. You should not pass arbitrary data to this method.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteRawAsync%2A>.  
   

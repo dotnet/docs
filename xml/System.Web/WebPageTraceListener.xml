@@ -123,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.WebPageTraceListener.TraceEvent%2A> method calls the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method, passing `format` and `args` and using the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to format the string as the message to write to the trace viewer or Web page.  
+ The <xref:System.Web.WebPageTraceListener.TraceEvent%2A> method calls the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method, passing `format` and `args` and using the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to format the string as the message to write to the trace viewer or Web page.  
   
  ]]></format>
         </remarks>

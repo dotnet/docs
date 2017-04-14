@@ -476,7 +476,7 @@
    
   
 ## Examples  
- The following example copies an array to unmanaged memory by using the [Copy Method (Byte\<xref:System.Runtime.InteropServices.Marshal.Copy%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.IntPtr%2CSystem.Int32%29> overload, and then copies the unmanaged array back to managed memory by using the [Copy(IntPtr, Byte\<xref:System.Runtime.InteropServices.Marshal.Copy%28System.IntPtr%2CSystem.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29>overload.  
+ The following example copies an array to unmanaged memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.IntPtr%2CSystem.Int32%29> overload, and then copies the unmanaged array back to managed memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.IntPtr%2CSystem.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29>overload.  
   
  [!code-csharp[Runtime.InteropServices.Marshal.Copy-byte#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.InteropServices.Marshal.Copy-byte/cs/sample.cs#1)]
  [!code-vb[Runtime.InteropServices.Marshal.Copy-byte#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.InteropServices.Marshal.Copy-byte/vb/sample.vb#1)]  
@@ -1179,7 +1179,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unmanaged, C-style arrays do not contain bounds information, which prevents the `startIndex` and `length` parameters from being validated. Therefore, the unmanaged data that corresponds to the `source` parameter populates the managed array regardless of its usefulness. You must initialize the managed array with the appropriate size before calling the [Copy Method (IntPtr, IntPtr\<xref:System.Runtime.InteropServices.Marshal.Copy%2A?displayProperty=fullName> method.  
+ Unmanaged, C-style arrays do not contain bounds information, which prevents the `startIndex` and `length` parameters from being validated. Therefore, the unmanaged data that corresponds to the `source` parameter populates the managed array regardless of its usefulness. You must initialize the managed array with the appropriate size before calling the <xref:System.Runtime.InteropServices.Marshal.Copy%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>

@@ -290,7 +290,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
 ## Remarks  
  When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.CodeBase%2A?displayProperty=fullName> property.  
   
- If the assembly was loaded as a byte array, this property returns the location of the caller of the [Load(Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%29> method overload, not the location of the loaded assembly.  
+ If the assembly was loaded as a byte array, this property returns the location of the caller of the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%29> method overload, not the location of the loaded assembly.  
   
 > [!NOTE]
 >  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  

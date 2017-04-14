@@ -640,7 +640,7 @@
 ## Remarks  
  The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
   
- The [FromEnum Method (Int64, String\<xref:System.Xml.Serialization.XmlSerializationWriter.FromEnum%2A> method is static.  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromEnum%2A> method is static.  
   
  ]]></format>
         </remarks>
@@ -2298,7 +2298,7 @@
   
  When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
   
- The [WriteNullableStringEncodedRaw Method (String, String, Byte\<xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
   
  ]]></format>
         </remarks>

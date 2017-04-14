@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are two constructors used to create an instance of the <xref:System.ServiceModel.ServiceHost> class. Use the [ServiceHost(Type, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29> constructor which takes the service type as an input parameter, most of the time. The host can use this to create new services as needed. Use the [ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
+ There are two constructors used to create an instance of the <xref:System.ServiceModel.ServiceHost> class. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29> constructor which takes the service type as an input parameter, most of the time. The host can use this to create new services as needed. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
   
  ]]></format>
         </remarks>
@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor when you have the service type and you can create new instances of it when needed, even when you need a singleton instance. Use the [ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
+ Use this constructor when you have the service type and you can create new instances of it when needed, even when you need a singleton instance. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
   
    
   
@@ -462,7 +462,7 @@ protected override void OnClosed()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor to initialize a singleton instance of the service to be hosted when you want to control the instance of the service that is used.  
+ Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor to initialize a singleton instance of the service to be hosted when you want to control the instance of the service that is used.  
   
  ]]></format>
         </remarks>

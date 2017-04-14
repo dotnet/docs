@@ -443,7 +443,7 @@ xslt.Load(typeof(bookOrders));
    
   
 ## Examples  
- The code example below uses the [Load Method (MethodInfo, Byte\<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> to load a compiled style sheet. The transformation reduces the value of the `Price` element by ten percent.  
+ The code example below uses the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> to load a compiled style sheet. The transformation reduces the value of the `Price` element by ten percent.  
   
  [!code-csharp[XsltDynamicMethodLoad#1](~/samples/snippets/csharp/VS_Snippets_Data/XsltDynamicMethodLoad/CS/XsltDynamicMethodLoad.cs#1)]
  [!code-vb[XsltDynamicMethodLoad#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XsltDynamicMethodLoad/VB/XsltDynamicMethodLoad.vb#1)]  

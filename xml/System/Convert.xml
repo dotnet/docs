@@ -581,7 +581,7 @@
  [!code-csharp[System.Convert UUEncodeDecode functions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert UUEncodeDecode functions/CS/class1.cs#3)]
  [!code-vb[System.Convert UUEncodeDecode functions#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert UUEncodeDecode functions/VB/class1.vb#3)]  
   
- The following example demonstrates the [ToBase64CharArray(Byte\[\], Int32, Int32, Char\<xref:System.Convert.ToBase64CharArray%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%2CSystem.Base64FormattingOptions%29> and <xref:System.Convert.FromBase64CharArray%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> methods. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits, "A", "A", "E", and "C", at the beginning of the output.  
+ The following example demonstrates the <xref:System.Convert.ToBase64CharArray%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%2CSystem.Base64FormattingOptions%29> and <xref:System.Convert.FromBase64CharArray%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> methods. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits, "A", "A", "E", and "C", at the beginning of the output.  
   
  If an integral number of 3-byte groups does not exist, the remaining bytes are effectively padded with zeros to form a complete group. In this example, the value of the last byte is hexadecimal FF. The first 6 bits are equal to decimal 63, which corresponds to the base-64 digit "/" at the end of the output, and the next 2 bits are padded with zeros to yield decimal 48, which corresponds to the base-64 digit, "w". The last two 6-bit values are padding and correspond to the valueless padding character, "=".  
   
@@ -657,12 +657,12 @@
    
   
 ## Examples  
- The following example uses the [ToBase64String(Byte\<xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to convert a byte array to a UUencoded (base-64) string, and then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to restore the original byte array.  
+ The following example uses the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to convert a byte array to a UUencoded (base-64) string, and then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to restore the original byte array.  
   
  [!code-csharp[System.Convert.ToBase64String#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String2.cs#1)]
  [!code-vb[System.Convert.ToBase64String#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String2.vb#1)]  
   
- The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=fullName> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. This buffer is then passed to the [ToBase64String(Byte\<xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
+ The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=fullName> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. This buffer is then passed to the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
   
  [!code-csharp[System.Convert.ToBase64String#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String.cs#2)]
  [!code-vb[System.Convert.ToBase64String#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String.vb#2)]  
@@ -808,12 +808,12 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offsetIn` and `offsetOut` parameters are zero-based array positions.  
   
 > [!IMPORTANT]
->  The [ToBase64CharArray Method (Byte\[\], Int32, Int32, Char\<xref:System.Convert.ToBase64CharArray%2A>method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64CharArray%2A>method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
    
   
 ## Examples  
- The following example demonstrates using the [ToBase64CharArray Method (Byte\[\], Int32, Int32, Char\<xref:System.Convert.ToBase64CharArray%2A> method to UUencode (encode in base 64) a binary stream, then save the encoding to a file.  
+ The following example demonstrates using the <xref:System.Convert.ToBase64CharArray%2A> method to UUencode (encode in base 64) a binary stream, then save the encoding to a file.  
   
  [!code-cpp[System.Convert UUEncodeDecode functions#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Convert UUEncodeDecode functions/CPP/class1.cpp#2)]
  [!code-csharp[System.Convert UUEncodeDecode functions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert UUEncodeDecode functions/CS/class1.cs#2)]
@@ -889,14 +889,14 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offsetIn` and `offsetOut` parameters are zero-based array positions.  
   
 > [!IMPORTANT]
->  The [ToBase64CharArray Method (Byte\[\], Int32, Int32, Char\<xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
    
   
 ## Examples  
- The following example demonstrates the [ToBase64CharArray Method (Byte\[\], Int32, Int32, Char\<xref:System.Convert.ToBase64CharArray%2A> method. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits "A", "A", "E", and "C" at the beginning of the output.  
+ The following example demonstrates the <xref:System.Convert.ToBase64CharArray%2A> method. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits "A", "A", "E", and "C" at the beginning of the output.  
   
  If an integral number of 3-byte groups does not exist, the remaining bytes are effectively padded with zeros to form a complete group. In this example, the value of the last byte is hexadecimal FF. The first 6 bits are equal to decimal 63, which corresponds to the base-64 digit "/" at the end of the output, and the next 2 bits are padded with zeros to yield decimal 48, which corresponds to the base-64 digit, "w". The last two 6-bit values are padding and correspond to the valueless padding character, "=".  
   
@@ -1025,14 +1025,14 @@
  The base-64 digits in ascending order from zero are the uppercase characters "A" to "Z", the lowercase characters "a" to "z", the numerals "0" to "9", and the symbols "+" and "/". The valueless character "=" is used for trailing padding.  
   
 > [!IMPORTANT]
->  The [ToBase64String Method (Byte\<xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered whitespace characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window. For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
    
   
 ## Examples  
- The following example calls the [ToBase64String Method (Byte\<xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=fullName> with a <xref:System.Base64FormattingOptions?displayProperty=fullName> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
+ The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=fullName> with a <xref:System.Base64FormattingOptions?displayProperty=fullName> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
   
  [!code-csharp[System.Convert.ToBase64String#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String3.cs#3)]
  [!code-vb[System.Convert.ToBase64String#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String3.vb#3)]  
@@ -1092,7 +1092,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offset` parameter is zero-based.  
   
 > [!IMPORTANT]
->  The [ToBase64String Method (Byte\<xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
  ]]></format>
         </remarks>
@@ -1156,14 +1156,14 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offset` parameter is zero-based.  
   
 > [!IMPORTANT]
->  The [ToBase64String Method (Byte\<xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
    
   
 ## Examples  
- The following example demonstrates the [ToBase64String Method (Byte\<xref:System.Convert.ToBase64String%2A> method. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits "A", "A", "E", and "C" at the beginning of the output.  
+ The following example demonstrates the <xref:System.Convert.ToBase64String%2A> method. The input is divided into groups of three bytes (24 bits) each. Consequently, each group consists of four 6-bit numbers where each number ranges from decimal 0 to 63. In this example, there are 85 3-byte groups with one byte remaining. The first group consists of the hexadecimal values 00, 01, and 02, which yield four 6-bit values equal to decimal 0, 0, 4, and 2. Those four values correspond to the base-64 digits "A", "A", "E", and "C" at the beginning of the output.  
   
  If an integral number of 3-byte groups does not exist, the remaining bytes are effectively padded with zeros to form a complete group. In this example, the value of the last byte is hexadecimal FF. The first 6 bits are equal to decimal 63, which corresponds to the base-64 digit "/" at the end of the output, and the next 2 bits are padded with zeros to yield decimal 48, which corresponds to the base-64 digit, "w". The last two 6-bit values are padding and correspond to the valueless padding character, "=".  
   

@@ -47,7 +47,7 @@
   
  By default, a <xref:System.IO.StreamReader> is not thread safe. See <xref:System.IO.TextReader.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
   
- The [Read(Char\<xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> and [Write(Char\<xref:System.IO.StreamWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overloads read and write the number of characters specified by the `count` parameter. These are to be distinguished from <xref:System.IO.BufferedStream.Read%2A?displayProperty=fullName> and <xref:System.IO.BufferedStream.Write%2A?displayProperty=fullName>, which read and write the number of bytes specified by the `count` parameter. Use the <xref:System.IO.BufferedStream> methods only for reading and writing an integral number of byte array elements.  
+ The <xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> and <xref:System.IO.StreamWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overloads read and write the number of characters specified by the `count` parameter. These are to be distinguished from <xref:System.IO.BufferedStream.Read%2A?displayProperty=fullName> and <xref:System.IO.BufferedStream.Write%2A?displayProperty=fullName>, which read and write the number of bytes specified by the `count` parameter. Use the <xref:System.IO.BufferedStream> methods only for reading and writing an integral number of byte array elements.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
@@ -1167,7 +1167,7 @@
   
  This method returns an integer so that it can return 0 if the end of the stream has been reached.  
   
- When using the [Read Method (Char\<xref:System.IO.StreamReader.Read%2A> method, it is more efficient to use a buffer that is the same size as the internal buffer of the stream, where the internal buffer is set to your desired block size, and to always read less than the block size. If the size of the internal buffer was unspecified when the stream was constructed, its default size is 4 kilobytes (4096 bytes). If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
+ When using the <xref:System.IO.StreamReader.Read%2A> method, it is more efficient to use a buffer that is the same size as the internal buffer of the stream, where the internal buffer is set to your desired block size, and to always read less than the block size. If the size of the internal buffer was unspecified when the stream was constructed, its default size is 4 kilobytes (4096 bytes). If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
  This method returns after either the number of characters specified by the `count` parameter are read, or the end of the file is reached. <xref:System.IO.TextReader.ReadBlock%2A> is a blocking version of <xref:System.IO.StreamReader.Read%2A>.  
   
@@ -1500,7 +1500,7 @@
 ## Remarks  
  This method overrides <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=fullName>.  
   
- <xref:System.IO.StreamReader.ReadToEnd%2A> works best when you need to read all the input from the current position to the end of the stream. If more control is needed over how many characters are read from the stream, use the [Read(Char\<xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload, which generally results in better performance.  
+ <xref:System.IO.StreamReader.ReadToEnd%2A> works best when you need to read all the input from the current position to the end of the stream. If more control is needed over how many characters are read from the stream, use the <xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload, which generally results in better performance.  
   
  <xref:System.IO.StreamReader.ReadToEnd%2A> assumes that the stream knows when it has reached an end. For interactive protocols in which the server sends data only when you ask for it and does not close the connection, <xref:System.IO.StreamReader.ReadToEnd%2A> might block indefinitely because it does not reach an end, and should be avoided.  
   

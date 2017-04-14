@@ -2435,7 +2435,7 @@
   
 -   If an <xref:System.Attribute> instance is specified and it is the default property, it is included in the returned array even if there is no instance of the <xref:System.Attribute> in the property.  
   
--   If `attributes` has a default attribute, the [GetProperties Method (Object, Attribute\<xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method matches the case when the property does not have the attribute applied.  
+-   If `attributes` has a default attribute, the <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method matches the case when the property does not have the attribute applied.  
   
  If the `component` parameter is `null`, an empty collection is returned.  
   

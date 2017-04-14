@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.[TypeDescriptor.GetProperties(Type, Attribute\<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=fullName> method.  
+ The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>

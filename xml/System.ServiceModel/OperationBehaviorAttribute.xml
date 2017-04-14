@@ -192,7 +192,7 @@
   
  You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
- In addition, it is important to realize that if the service is created by passing a service object to the [ServiceHost.ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were <xref:System.ServiceModel.ReleaseInstanceMode>.  
+ In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were <xref:System.ServiceModel.ReleaseInstanceMode>.  
   
    
   

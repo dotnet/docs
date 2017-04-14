@@ -55,6 +55,6 @@ Defines a routing filter, which determines the type of [!INCLUDE[indigo1](../../
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section for defining a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.|  
   
 ## See Also  
- [System.ServiceModel.Routing.Configuration.FilterElement](assetId:///System.ServiceModel.Routing.Configuration.FilterElement?qualifyHint=False&amp;autoUpgrade=True)   
+ <!-- TODO: review code entity reference <xref:System.ServiceModel.Routing.Configuration.FilterElement>  -->   
  <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>   
  <xref:System.ServiceModel.Routing.Configuration.FilterType>

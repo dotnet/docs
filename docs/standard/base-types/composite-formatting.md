@@ -34,11 +34,11 @@ The .NET Framework composite formatting feature takes a list of objects and a co
   
 -   Some overloads of the <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=fullName> method, which write the formatted result string to a stream or file. The classes derived from <xref:System.IO.TextWriter>, such as <xref:System.IO.StreamWriter> and <xref:System.Web.UI.HtmlTextWriter>, also share this functionality.  
   
--   [Debug.WriteLine(String, Object\<xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, which outputs a formatted message to trace listeners.  
+-   <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, which outputs a formatted message to trace listeners.  
   
--   The [Trace.TraceError(String, Object\<xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, [Trace.TraceInformation(String, Object\<xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and [Trace.TraceWarning(String, Object\<xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> methods, which output formatted messages to trace listeners.  
+-   The <xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, <xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and <xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> methods, which output formatted messages to trace listeners.  
   
--   The [TraceSource.TraceInformation(String, Object\<xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, which writes an informational method to trace listeners.  
+-   The <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, which writes an informational method to trace listeners.  
   
 ## Composite Format String  
  A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.  

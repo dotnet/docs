@@ -22,9 +22,9 @@ The `<add>` element adds a predefined key that specifies whether your Windows Fo
 ## Syntax
 
 ```xml
-\<System.Windows.Forms.ConfigurationSection>
-   <add key="key-name" value="key-value" />
-\</System.Windows.Forms.ConfigurationSection>
+<System.Windows.Forms.ConfigurationSection>
+  <add key="key-name" value="key-value" />
+</System.Windows.Forms.ConfigurationSection>
 ```
 
 ## Attributes and elements
@@ -33,25 +33,25 @@ The following sections describe attributes, child elements, and parent elements.
 
 ### Attributes
 
-Attribute  | Description  |
----------|---------|
-`key` | Required attribute. A predefined key name that corresponds to a particular Windows Forms customizable feature. |
-`value` | Required attribute. The value to assign to `key`. |
+| Attribute | Description |
+| --------- | ----------- |
+| `key`     | Required attribute. A predefined key name that corresponds to a particular Windows Forms customizable feature. |
+| `value`   | Required attribute. The value to assign to `key`. |
 
 ### `key` attribute names and associated values
 
 
-`key` name | Values  | Description  |
----------|---------|---------|
-"AnchorLayout.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
-"DpiAwareness" | "PerMonitorV2"&#124;"false"  | Indicates whether an application is DPI-aware. Set the key to "PerMonitorV2" to support Dpi awareness; otherwise, set it to "false". DPI awareness is an opt-in feature; to take advantage of Windows Forms' high DPI support, you should set its value to "PerMonitorV2". See the [Remarks](#remarks) section for more information. |
-"CheckedListBox.DisableHighDpiImprovements"  | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.CheckListBox> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of caling and layout improvements; otherwise, "false". |
-"DataGridView.DisableHighDpiImprovements"  | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.DataGridView> control scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
-"DisableDpiChangedMessageHandling"  | "true"&#124;"false" | "true" to opt out of receiving messages related to DPI scaling changes; "false" otherwise. See the [Remarks](#remarks) section for more information. |
-"EnableWindowsFormsHighDpiAutoResizing" | "true"&#124;"false" | Indicates whether a Windows Forms application is automatically resized due to DPI scaling changes. "true" to enable automatic resizing; otherwise, false. |
-"Form.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Form> is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
-"MonthCalendar.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.MonthCalendar> control is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
-"Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Toolstrip> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise.  |
+| `key` name | Values | Description |
+| ---------- | ------ | ----------- |
+| "AnchorLayout.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
+| "DpiAwareness" | "PerMonitorV2"&#124;"false" | Indicates whether an application is DPI-aware. Set the key to "PerMonitorV2" to support Dpi awareness; otherwise, set it to "false". DPI awareness is an opt-in feature; to take advantage of Windows Forms' high DPI support, you should set its value to "PerMonitorV2". See the [Remarks](#remarks) section for more information. |
+| "CheckedListBox.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.CheckListBox> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of caling and layout improvements; otherwise, "false". |
+| "DataGridView.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.DataGridView> control scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
+| "DisableDpiChangedMessageHandling" | "true"&#124;"false" | "true" to opt out of receiving messages related to DPI scaling changes; "false" otherwise. See the [Remarks](#remarks) section for more information. |
+| "EnableWindowsFormsHighDpiAutoResizing" | "true"&#124;"false" | Indicates whether a Windows Forms application is automatically resized due to DPI scaling changes. "true" to enable automatic resizing; otherwise, false. |
+| "Form.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Form> is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
+| "MonthCalendar.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.MonthCalendar> control is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
+| "Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Toolstrip> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
 
 ### Child elements
 
@@ -59,8 +59,8 @@ None.
 
 ### Parent elements
 
-Element  |Description |
----------|---------|
+| Element | Description |
+| ------- | ----------- |
 | [`<System.Windows.Forms.ConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
 
 ## <a name="remarks" /> Remarks
@@ -92,11 +92,11 @@ High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness`
 The single default opt-in setting provided by setting `DpiAwareness` to `PerMonitorV2` is generally adequate for new Windows Forms applications. However, You can then opt out of individual high DPI improvements by adding the corresponding key to the application configuration file. For example, to take advantage of all the new DPI featuers except for dynamic DPI support, you would add the following to your application configuration file:
 
 ```xml
-\<System.Windows.Forms.ApplicationConfigurationSection>
+<System.Windows.Forms.ConfigurationSection>
    <add key="DpiAwareness" value="PerMonitorV2" />
-   \<--! Disable dynamic DPI support -->
-   \<add key="EnableWindowsFormsHighDpiAutoResizing" value"false" />
-\</System.Windows.Forms.ApplicationConfigurationSection>
+   <--! Disable dynamic DPI support -->
+   <add key="EnableWindowsFormsHighDpiAutoResizing" value"false" />
+</System.Windows.Forms.ConfigurationSection>
 ```
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Contains functionality to connect to and communicate with a [!INCLUDE[ss2k](~/includes/ss2k-md.md)].</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.SqlClient.Sql2000Provider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

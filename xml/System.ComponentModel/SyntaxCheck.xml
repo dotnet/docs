@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides methods to verify the machine name and path conform to a specific syntax. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CheckMachineName">
@@ -46,6 +47,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> matches the proper machine name format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckPath">
@@ -74,6 +76,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckRootedPath">
@@ -102,6 +105,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

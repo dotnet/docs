@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Construct">
@@ -44,6 +45,7 @@
         <summary>Creates a new <see cref="T:Microsoft.JScript.RegExpObject" /> object for the specified regular expression pattern and flags.</summary>
         <returns>A new <see cref="T:Microsoft.JScript.RegExpObject" /> object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -77,6 +79,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="index">
@@ -95,6 +98,7 @@
         <summary>Gets the index of the last successful match, before advancing the index.</summary>
         <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="input">
@@ -113,6 +117,7 @@
         <summary>Gets or sets the input string for a regular expression search.</summary>
         <value>The input string for a regular expression search.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -146,6 +151,7 @@
         <summary>Creates an instance of a prototype-based object, passing in the specified arguments.</summary>
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lastIndex">
@@ -164,6 +170,7 @@
         <summary>Gets the index of the last successful match, after advancing the index.</summary>
         <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lastMatch">
@@ -182,6 +189,7 @@
         <summary>Gets a string representation of the last successful match.</summary>
         <value>A string representation of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lastParen">
@@ -200,6 +208,7 @@
         <summary>Gets the last <see cref="T:System.Text.RegularExpressions.Group" /> from the <see cref="P:System.Text.RegularExpressions.Match.Groups" /> of the last match.</summary>
         <value>A string representation of the last group, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="leftContext">
@@ -218,6 +227,7 @@
         <summary>Gets a substring of the input string between the start of the input and the start of the last successful match.</summary>
         <value>A substring of the input string, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="rightContext">
@@ -236,6 +246,7 @@
         <summary>Gets a substring of the input string between the start of the last successful match and the end of the input.</summary>
         <value>A substring of the input string, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a function object. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptFunctionExpression">
@@ -53,6 +54,7 @@
         <summary>Creates a new function object, using the specified information.</summary>
         <returns>A new function object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

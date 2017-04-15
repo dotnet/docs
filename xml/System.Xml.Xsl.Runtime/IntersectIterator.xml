@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents the position of the iterator to the next node in the intersection of two sets of nodes.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -47,6 +48,7 @@
         <param name="runtime">The <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.IntersectIterator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -76,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

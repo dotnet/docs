@@ -25,6 +25,7 @@
   <Docs>
     <summary>Enables JScript to communicate with an external COM property. This class is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> in order to bind to an external object.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMPropertyInfo" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -60,6 +62,7 @@
           <see cref="F:System.Reflection.PropertyAttributes.None" />
         </value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -79,6 +82,7 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -98,6 +102,7 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -116,6 +121,7 @@
         <summary>Gets the type that declares this property.</summary>
         <value>null, because the type that declares this property is an external COM object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetAccessors">
@@ -139,6 +145,7 @@
         <summary>Gets an array whose elements contain the get and set accessors of the external COM property that this object represents.</summary>
         <returns>A two-element array of <see cref="T:System.Reflection.MethodInfo" /> objects that contains the get and set methods of this property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCOMMemberInfo">
@@ -158,6 +165,7 @@
         <summary>Gets a managed object that enables JScript to communicate with this external COM property.</summary>
         <returns>A managed object that enables JScript to communicate with this external COM property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -181,6 +189,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this property.</summary>
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -206,6 +215,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this property, searching only for attributes of the specified type.</summary>
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetGetMethod">
@@ -229,6 +239,7 @@
         <summary>Returns the get accessor for this property.</summary>
         <returns>The get accessor for this property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetIndexParameters">
@@ -248,6 +259,7 @@
         <summary>Returns an array of all the index parameters for the property.</summary>
         <returns>An array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSetMethod">
@@ -271,6 +283,7 @@
         <summary>Returns the set accessor for this property.</summary>
         <returns>The set accessor for this property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -301,6 +314,7 @@
         <summary>Gets the value of the external COM property by using the <see cref="T:Microsoft.JScript.COMMemberInfo" /> that was specified to the <see cref="M:Microsoft.JScript.COMPropertyInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" /> method.</summary>
         <returns>The value of the external COM property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -324,6 +338,7 @@
         <param name="dispatch">Information that enables JScript to access the external COM property.</param>
         <summary>Initializes the information that enables JScript to communicate with this external COM property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -350,6 +365,7 @@
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -369,6 +385,7 @@
         <value>
           <see cref="F:System.Reflection.MemberTypes.Property" />, because this class derives from <see cref="T:System.Reflection.PropertyInfo" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -387,6 +404,7 @@
         <summary>Gets the name of the external COM property that this object represents.</summary>
         <value>The name of the external COM property that this object represents.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PropertyType">
@@ -405,6 +423,7 @@
         <summary>Gets the type of this property.</summary>
         <value>The type of <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -423,6 +442,7 @@
         <summary>Gets the class object that was used to obtain this instance through reflection.</summary>
         <value>null, because this instance was not obtained through reflection.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -454,6 +474,7 @@
         <param name="culture">Provides information about a specific culture or locale. Used to format numbers, dates, and strings correctly.</param>
         <summary>Sets the value of the external COM property by using the <see cref="T:Microsoft.JScript.COMMemberInfo" /> that was specified to the <see cref="M:Microsoft.JScript.COMPropertyInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

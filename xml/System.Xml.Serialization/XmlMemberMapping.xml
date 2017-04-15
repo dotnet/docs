@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Any">
@@ -72,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckSpecified">
@@ -103,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ElementName">
@@ -126,6 +129,7 @@
         <summary>Gets the unqualified name of the XML element declaration that applies to this mapping.</summary>
         <value>The unqualified name of the XML element declaration that applies to this mapping.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeName">
@@ -148,6 +152,7 @@
         <summary>Returns the name of the type associated with the specified <see cref="T:System.CodeDom.Compiler.CodeDomProvider" />.</summary>
         <returns>The name of the type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -182,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -205,6 +211,7 @@
         <summary>Gets the XML namespace that applies to this mapping.</summary>
         <value>The XML namespace that applies to this mapping.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeFullName">
@@ -228,6 +235,7 @@
         <summary>Gets the fully qualified type name of the .NET Framework type for this mapping.</summary>
         <value>The fully qualified type name of the .NET Framework type for this mapping.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -251,6 +259,7 @@
         <summary>Gets the type name of the .NET Framework type for this mapping.</summary>
         <value>The type name of the .NET Framework type for this mapping.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeNamespace">
@@ -274,6 +283,7 @@
         <summary>Gets the namespace of the .NET Framework type for this mapping.</summary>
         <value>The namespace of the .NET Framework type for this mapping.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XsdElementName">
@@ -297,6 +307,7 @@
         <summary>Gets the XML element name as it appears in the service description document.</summary>
         <value>The XML element name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

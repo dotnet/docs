@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that receive output from a scripting engine. This interface acts as a callback object to capture output that would otherwise go to the console.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides a wrapper over the result elements with the ability to project a subset of the properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapperMany" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalGetProjectedPropertyValue">
@@ -55,6 +57,7 @@
         <summary>Gets the value for the specified property by its index.</summary>
         <returns>The value for the property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -73,6 +76,7 @@
         <summary>Gets or sets another instance of <see cref="T:System.Data.Services.Internal.ProjectedWrapperMany" /> which contains the set of the next eight projected properties, and possibly another link.</summary>
         <value>The next set of properties.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty0">
@@ -91,6 +95,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty1">
@@ -109,6 +114,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty2">
@@ -127,6 +133,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty3">
@@ -145,6 +152,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty4">
@@ -163,6 +171,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty5">
@@ -181,6 +190,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty6">
@@ -199,6 +209,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty7">
@@ -217,6 +228,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

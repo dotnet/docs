@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides access to instances of the JScript code generator and code compiler.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptCodeProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateCompiler">
@@ -52,6 +54,7 @@
         <summary>Returns an instance of the JScript code compiler.</summary>
         <returns>An instance of the JScript code compiler.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -71,6 +74,7 @@
         <summary>Returns an instance of the JScript code generator.</summary>
         <returns>An instance of the JScript code generator.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FileExtension">
@@ -89,6 +93,7 @@
         <summary>Gets the file name extension for JScript code files.</summary>
         <value>The string literal "js".</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

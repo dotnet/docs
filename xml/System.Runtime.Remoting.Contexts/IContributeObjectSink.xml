@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetObjectSink">
@@ -50,6 +51,7 @@
         <summary>Chains the message sink of the provided server object in front of the given sink chain.</summary>
         <returns>The composite sink chain.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

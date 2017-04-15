@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides helper methods for marshaling data between the .NET Framework and the [!INCLUDE[wrt](~/includes/wrt-md.md)].</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddEventHandler&lt;T&gt;">
@@ -59,6 +60,7 @@
   
  <paramref name="removeMethod" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FreeHString">
@@ -87,6 +89,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The [!INCLUDE[wrt](~/includes/wrt-md.md)] is not supported on the current version of the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetActivationFactory">
@@ -131,6 +134,7 @@
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.TypeLoadException">The specified [!INCLUDE[wrt](~/includes/wrt-md.md)] class is not properly registered. For example, the .winmd file was located, but the [!INCLUDE[wrt](~/includes/wrt-md.md)] failed to locate the implementation.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringHString">
@@ -160,6 +164,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The [!INCLUDE[wrt](~/includes/wrt-md.md)] is not supported on the current version of the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveAllEventHandlers">
@@ -189,6 +194,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="removeMethod" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveEventHandler&lt;T&gt;">
@@ -224,6 +230,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="removeMethod" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringToHString">
@@ -262,6 +269,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

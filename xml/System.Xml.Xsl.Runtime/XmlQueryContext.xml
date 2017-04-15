@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DefaultDataSource">
@@ -57,6 +58,7 @@
         <summary>Returns the document that is queried by default if no data source is explicitly selected in the query.</summary>
         <value>An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultNameTable">
@@ -79,6 +81,7 @@
         <summary>Returns the name table used by the default data source, or null if there is no default data source.</summary>
         <value>An instance of the <see cref="T:System.Xml.XmlNameTable" /> class.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDataSource">
@@ -114,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetLateBoundObject">
@@ -140,6 +144,7 @@
         <summary>Returns the extension object that is mapped to the specified namespace, or null if no object is mapped.</summary>
         <returns>An extension object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetParameter">
@@ -169,6 +174,7 @@
         <returns>
           <see langword="null" /> if no argument list was provided, or if there is no parameter by that name; otherwise, a named parameter from the external argument list.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeXsltLateBoundFunction">
@@ -199,6 +205,7 @@
         <summary>Gets a late-bound extension object from the external argument list.</summary>
         <returns>Returns a generic list of type <see cref="T:System.Xml.XPath.XPathItem" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LateBoundFunctionExists">
@@ -228,6 +235,7 @@
         <returns>
           <see langword="true" /> if the late bound object matches name; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnXsltMessageEncountered">
@@ -253,6 +261,7 @@
         <param name="message">A value of type <see langword="string" />.</param>
         <summary>Raises an <see cref="E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="QueryNameTable">
@@ -275,6 +284,7 @@
         <summary>Gets the <see cref="T:System.Xml.XmlNameTable" /> instance.</summary>
         <value>Returns an instance of the <see cref="T:System.Xml.XmlNameTable" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

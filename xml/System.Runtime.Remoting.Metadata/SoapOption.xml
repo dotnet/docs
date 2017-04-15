@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AlwaysIncludeTypes">
@@ -45,6 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that type will always be included on SOAP elements. This option is useful when performing SOAP interop with SOAP implementations that require types on all elements.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EmbedAll">
@@ -62,6 +64,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that SOAP will be generated without references. This option is currently not implemented.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,6 +82,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default option indicating that no extra options are selected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Option1">
@@ -96,6 +100,7 @@
       </ReturnValue>
       <Docs>
         <summary>Public reserved option for temporary interop conditions; the use will change.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Option2">
@@ -113,6 +118,7 @@
       </ReturnValue>
       <Docs>
         <summary>Public reserved option for temporary interop conditions; the use will change.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XsdString">
@@ -170,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

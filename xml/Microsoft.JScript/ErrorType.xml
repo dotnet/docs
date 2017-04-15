@@ -12,6 +12,7 @@
   <Docs>
     <summary>Specifies the JScript error types.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EvalError">
@@ -28,6 +29,7 @@
       </ReturnValue>
       <Docs>
         <summary>An [eval Method (Visual Studio - JScript)](http://msdn.microsoft.com/en-us/8af3274a-ce81-46db-854c-25db60cd9b38) error. Corresponds to the <see cref="T:Microsoft.JScript.EvalErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OtherError">
@@ -44,6 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>Any error other than one of the other error types. This is the default value.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RangeError">
@@ -60,6 +63,7 @@
       </ReturnValue>
       <Docs>
         <summary>A range error. Corresponds to the <see cref="T:Microsoft.JScript.RangeErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReferenceError">
@@ -76,6 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>A reference error. Corresponds to the <see cref="T:Microsoft.JScript.ReferenceErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -92,6 +97,7 @@
       </ReturnValue>
       <Docs>
         <summary>A syntax error. Corresponds to the <see cref="T:Microsoft.JScript.SyntaxErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeError">
@@ -108,6 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>A type error. Corresponds to the <see cref="T:Microsoft.JScript.TypeErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="URIError">
@@ -124,6 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>A Uniform Resource Identifier (URI) error. Corresponds to the <see cref="T:Microsoft.JScript.URIErrorObject" /> object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

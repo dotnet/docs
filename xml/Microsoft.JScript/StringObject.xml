@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a string object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <param name="value">The underlying value that the class represents.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.StringObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -56,6 +58,7 @@
         <returns>
           <see langword="true" /> if this string and <paramref name="ob" /> have the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -75,6 +78,7 @@
         <summary>Returns the hash code for this string.</summary>
         <returns>A hash code for this string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -95,6 +99,7 @@
         <returns>
           <see cref="T:System.String" /> or <see cref="T:Microsoft.JScript.StringObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -113,6 +118,7 @@
         <summary>Gets the number of characters in the string.</summary>
         <value>The number of characters in the string.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

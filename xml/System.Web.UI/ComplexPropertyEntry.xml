@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="IsCollectionItem">
@@ -41,6 +42,7 @@
         <value>
           <see langword="true" /> if the property entry represents an item that contains a collection of values; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -60,6 +62,7 @@
         <value>
           <see langword="true" /> if the item represented by the property entry does not contain a set method; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

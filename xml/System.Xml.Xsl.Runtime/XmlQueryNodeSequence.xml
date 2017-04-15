@@ -35,6 +35,7 @@
   <Docs>
     <summary>A sequence of XML nodes that dynamically expands and allows random access to items.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,6 +78,7 @@
         <param name="list">A sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> instances.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +101,7 @@
         <param name="capacity">A value of type <see langword="Int32" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +124,7 @@
         <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +149,7 @@
         <param name="size">A value of type <see langword="int" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddClone">
@@ -169,6 +175,7 @@
         <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
         <summary>Clone the navigator and then adds a node to the sequence.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -195,6 +202,7 @@
         <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> if it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" />.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -223,6 +231,7 @@
         <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> if it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> and adds <paramref name="navigator" /> to the sequence.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DocOrderDistinct">
@@ -249,6 +258,7 @@
         <summary>Returns a sequence that contains all the distinct nodes in this cache, sorted in document order.</summary>
         <returns>A sequence of <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class instances.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -270,6 +280,7 @@
       <Docs>
         <summary>Gets an empty <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> that is properly initialized.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDocOrderDistinct">
@@ -293,6 +304,7 @@
         <value>
           <see langword="true" /> if the nodes are distinct, otherwise return <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">
@@ -340,6 +352,7 @@
         <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Xml.XPath.XPathItem&gt;.Clear">
@@ -362,6 +375,7 @@
       <Docs>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Xml.XPath.XPathItem&gt;.Contains">
@@ -389,6 +403,7 @@
         <returns>
           <see langword="true" /> if the value is in the sequence; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Xml.XPath.XPathItem&gt;.CopyTo">
@@ -416,6 +431,7 @@
         <param name="index">A value of type <see langword="int" />.</param>
         <summary>Copies the contents of this sequence to the specified array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Xml.XPath.XPathItem&gt;.get_Count">
@@ -485,6 +501,7 @@
         <returns>
           <see langword="true" /> if the item is removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Xml.XPath.XPathItem&gt;.GetEnumerator">
@@ -508,6 +525,7 @@
         <summary>Returns the <see cref="T:System.Collections.Generic.IEnumerator`1" /> of <see cref="T:System.Xml.XPath.XPathItem" /> implementation.</summary>
         <returns>The IEnumerator&lt;XPathItem&gt; implementation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;.IndexOf">
@@ -534,6 +552,7 @@
         <summary>Returns the index of the specified value in the sequence.</summary>
         <returns>The index of the specified value in the sequence.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;.Insert">
@@ -561,6 +580,7 @@
         <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;.Item">
@@ -612,6 +632,7 @@
         <param name="index">A value of type <see langword="int" />.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -16,6 +16,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.SimpleWebHandlerParser" />, you must override the <see cref="P:System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName" /> property.</para>
     </block>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +39,7 @@
         <param name="physicalPath">Pass <see langword="null" />. Parameter is now obsolete.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SimpleWebHandlerParser" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultDirectiveName">
@@ -56,6 +58,7 @@
         <summary>When overridden in a derived class, gets the name of the main directive from a &lt;%@ %&gt; block.</summary>
         <value>A <see cref="T:System.String" /> that contains the default directive name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledTypeFromCache">
@@ -75,6 +78,7 @@
         <summary>Returns the type for the compiled object from the virtual path.</summary>
         <returns>The <see cref="T:System.Type" /> assigned to the virtual path.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

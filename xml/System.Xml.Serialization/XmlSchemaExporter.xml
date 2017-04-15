@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportAnyType">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportAnyType">
@@ -128,6 +131,7 @@
         <summary>Adds an element declaration for an object or type to a SOAP message or to an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
         <returns>The string "any" with an appended integer.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportMembersMapping">
@@ -163,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportMembersMapping">
@@ -192,6 +197,7 @@
           <see langword="true" /> if the schema elements that enclose the schema are to be included; otherwise, <see langword="false" />.</param>
         <summary>Adds an element declaration to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> for each of the element parts of a literal SOAP message definition, and specifies whether enclosing elements are included.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportTypeMapping">
@@ -228,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExportTypeMapping">
@@ -254,6 +261,7 @@
         <param name="xmlTypeMapping">The internal mapping between a .NET Framework type and an XML schema element.</param>
         <summary>Adds an element declaration for a .NET Framework type to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

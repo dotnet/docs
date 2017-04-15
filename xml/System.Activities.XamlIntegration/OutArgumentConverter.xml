@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides a type converter to convert <see cref="T:System.Activities.OutArgument" /> classes to and from various other representations.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.OutArgumentConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,6 +48,7 @@
         <param name="type">The type of the associated <see cref="T:System.Activities.OutArgument" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.OutArgumentConverter" /> class using the specified type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

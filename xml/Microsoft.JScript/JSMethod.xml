@@ -21,6 +21,7 @@
   <Docs>
     <summary>Represents a JScript method. This class belongs to the name binding category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetBaseDefinition">
@@ -41,6 +42,7 @@
         <returns>
           <see langword="this" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -64,6 +66,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this method.</summary>
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -89,6 +92,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this method, searching only for attributes of the specified type.</summary>
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -109,6 +113,7 @@
         <returns>
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -144,6 +149,7 @@
         <summary>Invokes the method, using the specified information.</summary>
         <returns>The return value of the call to the method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -170,6 +176,7 @@
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -189,6 +196,7 @@
         <value>
           <see cref="F:System.Reflection.MemberTypes.Method" />, because this class derives from <see cref="T:System.Reflection.MethodInfo" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -207,6 +215,7 @@
         <summary>Gets a handle to the internal metadata representation of this method.</summary>
         <value>A handle to the internal metadata representation of this method.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -225,6 +234,7 @@
         <summary>Gets the class object that was used to obtain this instance through reflection.</summary>
         <value>The type that declares this method.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReturnTypeCustomAttributes">
@@ -243,6 +253,7 @@
         <summary>Gets the custom attributes for the type of the return value of this method.</summary>
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

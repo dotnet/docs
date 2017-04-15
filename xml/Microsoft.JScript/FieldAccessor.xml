@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a field accessor.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.FieldAccessor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -55,6 +57,7 @@
         <summary>When overridden in a derived class, gets the value of the field for the specified object.</summary>
         <returns>The value of the field for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -83,6 +86,7 @@
         <param name="value">The value to set for the field.</param>
         <summary>When overridden in a derived class, sets the specified value of the field for the specified object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

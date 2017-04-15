@@ -22,6 +22,7 @@
   <Docs>
     <summary>Iterate over all descendant content nodes according to XPath descendant axis rules. Eliminates duplicates by not querying over nodes that are contained in the subtree of the previous node.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -50,6 +51,7 @@
           <see cref="T:System.Boolean" /> that indicates whether the current node is returned as part of the iteration or filtered out.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.DescendantMergeIterator" />. Merges multiple sets of descendant nodes in document order and removes duplicates.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -106,6 +109,7 @@
         <summary>Position this iterator to the next descendant node.</summary>
         <returns>Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" /> if there are no more descendant nodes. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" /> if the next input node needs to be fetched first. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" /> if while iterating through the nodes the <see cref="P:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current" /> property was set to the next node.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

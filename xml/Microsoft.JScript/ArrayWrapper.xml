@@ -13,6 +13,7 @@
   <Docs>
     <summary>Wraps an array to create a JScript <see cref="T:Microsoft.JScript.ArrayObject" />. This class wraps either a .NET Framework <see cref="T:System.Array" /> object or a JScript <see cref="T:Microsoft.JScript.ArrayObject" /> object.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetType">
@@ -32,6 +33,7 @@
         <summary>Gets the type of the array.</summary>
         <returns>The type of <see cref="T:System.Array" /> or <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -57,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

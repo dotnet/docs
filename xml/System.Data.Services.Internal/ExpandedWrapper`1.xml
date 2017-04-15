@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -66,6 +68,7 @@
         <summary>Gets or sets the description for the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</summary>
         <value>The description of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandedElement">
@@ -84,6 +87,7 @@
         <summary>Gets or sets the element with expanded properties.</summary>
         <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetExpandedPropertyValue">
@@ -106,6 +110,7 @@
         <summary>Returns the value of the expanded property.</summary>
         <returns>The value of the property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalGetExpandedPropertyValue">
@@ -128,6 +133,7 @@
         <summary>Returns a property object of the expanded property.</summary>
         <returns>The property value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Data.Services.IExpandedResult.ExpandedElement">

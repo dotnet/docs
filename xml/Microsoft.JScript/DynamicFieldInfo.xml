@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents field information. This class is used to return fields of expando classes and script arrays to the debugger.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <param name="value">The value of the field.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name and value.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,6 +57,7 @@
         <param name="fieldTypeName">The type of the field.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name, value, and type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="fieldTypeName">
@@ -72,6 +75,7 @@
       <Docs>
         <summary>The type of the field.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -89,6 +93,7 @@
       <Docs>
         <summary>The name of the field.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="value">
@@ -106,6 +111,7 @@
       <Docs>
         <summary>The value of the field.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents a window class in an application manifest.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -83,6 +86,7 @@
         <summary>Gets the name of the window class.</summary>
         <value>The name of the window class.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Versioned">
@@ -114,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlName">
@@ -143,6 +148,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Name" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Name" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlVersioned">
@@ -172,6 +178,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Versioned" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Versioned" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

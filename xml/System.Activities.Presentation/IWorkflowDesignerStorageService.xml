@@ -17,6 +17,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddData">
@@ -40,6 +41,7 @@
         <param name="value">The data associated with the specified key.</param>
         <summary>Adds the specified key/value pair to the dictionary.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -63,6 +65,7 @@
         <returns>
           <see langword="true" /> if the dictionary contains an item with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -85,6 +88,7 @@
         <summary>Returns the data associated with the specified key.</summary>
         <returns>The data associated with the specified key.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveData">
@@ -106,6 +110,7 @@
         <param name="key">The key whose data is to be removed.</param>
         <summary>Removes the data associated with the specified key from the dictionary.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -129,6 +134,7 @@
         <param name="value">The data to update the item with.</param>
         <summary>Updates the data for an existing dictionary item identified by the specified key.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

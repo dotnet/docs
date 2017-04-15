@@ -18,6 +18,7 @@
     <summary>
       <see cref="T:System.Drawing.FontConverter.FontNameConverter" /> is a type converter that is used to convert a font name to and from various other representations.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.FontConverter.FontNameConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -58,6 +60,7 @@
         <returns>
           <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -85,6 +88,7 @@
         <returns>The converted object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be completed.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -107,6 +111,7 @@
         <summary>Retrieves a collection containing a set of standard values for the data type this converter is designed for.</summary>
         <returns>A collection containing a standard set of valid values, or <see langword="null" />. The default is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -137,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -160,6 +166,7 @@
         <returns>
           <see langword="true" /> if <see cref="Overload:System.Drawing.FontConverter.FontNameConverter.GetStandardValues" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -178,6 +185,7 @@
       <Docs>
         <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

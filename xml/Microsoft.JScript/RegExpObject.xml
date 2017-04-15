@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a regular expression object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="global">
@@ -32,6 +33,7 @@
         <value>
           <see langword="true" /> if global searches are performed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ignoreCase">
@@ -51,6 +53,7 @@
         <value>
           <see langword="true" /> if case-insensitive searches are performed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lastIndex">
@@ -69,6 +72,7 @@
         <summary>Gets or sets the index of the last successful match.</summary>
         <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="multiline">
@@ -88,6 +92,7 @@
         <value>
           <see langword="true" /> if searches are performed in multiline mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="source">
@@ -106,6 +111,7 @@
         <summary>Gets the regular expression pattern that is represented by this object.</summary>
         <value>The regular expression pattern that is represented by this object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -125,6 +131,7 @@
         <summary>Creates a string representation of this object that contains the regular expression pattern and flags.</summary>
         <returns>A string representation of this object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

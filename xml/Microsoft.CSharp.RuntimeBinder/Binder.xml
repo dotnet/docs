@@ -14,6 +14,7 @@
   <Docs>
     <summary>Contains factory methods to create dynamic call site binders for CSharp.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BinaryOperation">
@@ -43,6 +44,7 @@
         <summary>Initializes a new CSharp binary operation binder.</summary>
         <returns>Returns a new CSharp binary operation binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -70,6 +72,7 @@
         <summary>Initializes a new CSharp convert binder.</summary>
         <returns>Returns a new CSharp convert binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetIndex">
@@ -97,6 +100,7 @@
         <summary>Initializes a new CSharp get index binder.</summary>
         <returns>Returns a new CSharp get index binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -126,6 +130,7 @@
         <summary>Initializes a new CSharp get member binder.</summary>
         <returns>Returns a new CSharp get member binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -153,6 +158,7 @@
         <summary>Initializes a new CSharp invoke binder.</summary>
         <returns>Returns a new CSharp invoke binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeConstructor">
@@ -180,6 +186,7 @@
         <summary>Initializes a new CSharp invoke constructor binder.</summary>
         <returns>Returns a new CSharp invoke constructor binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -211,6 +218,7 @@
         <summary>Initializes a new CSharp invoke member binder.</summary>
         <returns>Returns a new CSharp invoke member binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsEvent">
@@ -238,6 +246,7 @@
         <summary>Initializes a new CSharp is event binder.</summary>
         <returns>Returns a new CSharp is event binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetIndex">
@@ -265,6 +274,7 @@
         <summary>Initializes a new CSharp set index binder.</summary>
         <returns>Returns a new CSharp set index binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetMember">
@@ -294,6 +304,7 @@
         <summary>Initializes a new CSharp set member binder.</summary>
         <returns>Returns a new CSharp set member binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnaryOperation">
@@ -323,6 +334,7 @@
         <summary>Initializes a new CSharp unary operation binder.</summary>
         <returns>Returns a new CSharp unary operation binder.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

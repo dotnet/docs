@@ -10,6 +10,7 @@
   <Docs>
     <summary>Provides the interface for implementing factories for Web objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -29,6 +30,7 @@
         <summary>Creates a new <see cref="T:System.Web.Util.IWebObjectFactory" /> instance.</summary>
         <returns>A new <see cref="T:System.Web.Util.IWebObjectFactory" /></returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

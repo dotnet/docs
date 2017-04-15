@@ -968,7 +968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Cookie.Value%2A> of a <xref:System.Net.Cookie> must not be `null`. The following characters are reserved and cannot be used for this property: semicolon, comma.  
+ The <xref:System.Net.Cookie.Value%2A> of a <xref:System.Net.Cookie> must not be `null`. If a `null` value is passed into the Setter it will be replaced with an empty String. The following characters are reserved and cannot be used for this property: semicolon, comma. The Setter won't throw an exception if invalid characters are passed into it but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception
   
    
   

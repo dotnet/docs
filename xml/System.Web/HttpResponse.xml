@@ -2369,8 +2369,7 @@ Response.RedirectToRoutePermanent("Product",
       </Parameters>
       <Docs>
         <param name="cookie">The cookie in the collection to be updated.</param>
-        <summary>This API supports the product infrastructure and is not intended to be used directly from your code. 
-          Updates an existing cookie in the cookie collection.</summary>
+        <summary>Because the <b>HttpResponse.SetCookie</b> method is intended for internal use only, you should not call it in your code. Instead, you can call the <b>HttpResponse.Cookies.Set</b> method, as the following example shows</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

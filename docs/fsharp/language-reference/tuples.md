@@ -147,7 +147,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 ### Compiled Form of Struct Tuples
 
-Struct tuples (e.g., `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the `System.ValueTuple` type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
+Struct tuples (e.g., `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the `System.ValueTuple` type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
 
 ## See Also
 [F# Language Reference](index.md)

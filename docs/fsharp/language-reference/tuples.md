@@ -57,7 +57,7 @@ The functions `fst` and `snd` return the first and second elements of a tuple, r
 
 There is no built-in function that returns the third element of a triple, but you can easily write one as follows.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L78)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L78-L78)]
 
 Generally, it is better to use pattern matching to access individual tuple elements.
 
@@ -68,7 +68,7 @@ Tuples provide a convenient way to return multiple values from a function, as sh
 
 Tuples can also be used as function arguments when you want to avoid the implicit currying of function arguments that is implied by the usual function syntax.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L88)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L88-L88)]
 
 The usual syntax for defining the function `let sum a b = a + b` enables you to define a function that is the partial application of the first argument of the function, as shown in the following code.
 

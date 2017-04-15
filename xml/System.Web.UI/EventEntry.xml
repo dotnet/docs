@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.EventEntry" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HandlerMethodName">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HandlerType">
@@ -78,6 +81,7 @@
         <summary>Gets or sets the type of delegate for the event.</summary>
         <value>A <see cref="T:System.Type" /> that represents the type of delegate for the event.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -96,6 +100,7 @@
         <summary>Gets or sets the name of the property from the expression.</summary>
         <value>A <see cref="T:System.String" /> that contains the name of the property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

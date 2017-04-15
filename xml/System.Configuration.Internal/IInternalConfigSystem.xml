@@ -15,6 +15,7 @@
   <Docs>
     <summary>Defines an interface used by the .NET Framework to initialize application configuration properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetSection">
@@ -44,6 +45,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RefreshConfig">
@@ -72,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SupportsUserConfig">
@@ -91,6 +94,7 @@
         <value>
           <see langword="true" /> if the user configuration is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

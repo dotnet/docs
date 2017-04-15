@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides methods used internally by the configuration system to produce request-specific instances of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BlackberryProcessBrowsers">
@@ -54,6 +56,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Blackberry browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BlackberryProcessGateways">
@@ -77,6 +80,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Blackberry gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChromeProcessBrowsers">
@@ -103,6 +107,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Google Chrome browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChromeProcessGateways">
@@ -126,6 +131,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Google Chrome gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConfigureBrowserCapabilities">
@@ -149,6 +155,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Used internally by the configuration system to produce request-specific instances of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CpuProcessBrowsers">
@@ -175,6 +182,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Cpu browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CpuProcessGateways">
@@ -198,6 +206,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Cpu gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CrawlerProcessBrowsers">
@@ -224,6 +233,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Crawler browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CrawlerProcessGateways">
@@ -247,6 +257,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Crawler gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultDefaultProcessBrowsers">
@@ -273,6 +284,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultDefault browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultProcessBrowsers">
@@ -299,6 +311,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Default browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultProcessGateways">
@@ -322,6 +335,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Default gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultWmlProcessBrowsers">
@@ -348,6 +362,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultWml browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultXhtmlmpProcessBrowsers">
@@ -374,6 +389,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultXhtmlmp browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Firefox35ProcessBrowsers">
@@ -400,6 +416,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox35 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Firefox35ProcessGateways">
@@ -423,6 +440,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Firefox35 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Firefox3plusProcessBrowsers">
@@ -471,6 +489,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox version 3 and later gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Firefox3ProcessBrowsers">
@@ -497,6 +516,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox 3 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Firefox3ProcessGateways">
@@ -520,6 +540,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox3 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FirefoxProcessBrowsers">
@@ -546,6 +567,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FirefoxProcessGateways">
@@ -569,6 +591,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenericdownlevelProcessBrowsers">
@@ -595,6 +618,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Genericdownlevel browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenericdownlevelProcessGateways">
@@ -618,6 +642,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Genericdownlevel gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie10plusProcessBrowsers">
@@ -644,6 +669,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 10 and later browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie10plusProcessGateways">
@@ -667,6 +693,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 10 and later gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie6plusProcessBrowsers">
@@ -693,6 +720,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 6 and later browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie6plusProcessGateways">
@@ -716,6 +744,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 6 and later gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie6to9ProcessBrowsers">
@@ -742,6 +771,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie6to9 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie6to9ProcessGateways">
@@ -765,6 +795,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie6to9 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie7ProcessBrowsers">
@@ -791,6 +822,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE7 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie7ProcessGateways">
@@ -814,6 +846,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE7 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie8ProcessBrowsers">
@@ -840,6 +873,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE8 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie8ProcessGateways">
@@ -863,6 +897,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE8 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie9ProcessBrowsers">
@@ -889,6 +924,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 9 and later browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ie9ProcessGateways">
@@ -912,6 +948,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Microsoft Internet Explorer version 9 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IebetaProcessBrowsers">
@@ -938,6 +975,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iebeta browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IebetaProcessGateways">
@@ -961,6 +999,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iebeta gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IemobileProcessBrowsers">
@@ -987,6 +1026,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iemobile browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IemobileProcessGateways">
@@ -1010,6 +1050,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iemobile gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IeProcessBrowsers">
@@ -1036,6 +1077,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IeProcessGateways">
@@ -1059,6 +1101,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternetexplorerProcessBrowsers">
@@ -1087,6 +1130,7 @@
   
  Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternetexplorerProcessGateways">
@@ -1112,6 +1156,7 @@
   
  Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IpadProcessBrowsers">
@@ -1138,6 +1183,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple iPad browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IpadProcessGateways">
@@ -1161,6 +1207,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple iPad gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IphoneProcessBrowsers">
@@ -1187,6 +1234,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iphone browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IphoneProcessGateways">
@@ -1210,6 +1258,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iphone gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IpodProcessBrowsers">
@@ -1236,6 +1285,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Ipod browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IpodProcessGateways">
@@ -1259,6 +1309,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Ipod gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MonoProcessBrowsers">
@@ -1285,6 +1336,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mono browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MonoProcessGateways">
@@ -1308,6 +1360,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mono gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MozillaProcessBrowsers">
@@ -1334,6 +1387,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MozillaProcessGateways">
@@ -1357,6 +1411,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera10ProcessBrowsers">
@@ -1383,6 +1438,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera10 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera10ProcessGateways">
@@ -1406,6 +1462,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera10 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera8plusProcessBrowsers">
@@ -1432,6 +1489,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera version 8 and later browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera8plusProcessGateways">
@@ -1455,6 +1513,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera version 8 and later gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera8to9ProcessBrowsers">
@@ -1481,6 +1540,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera8to9 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Opera8to9ProcessGateways">
@@ -1504,6 +1564,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera8to9 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperaminiProcessBrowsers">
@@ -1530,6 +1591,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera Mini browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperaminiProcessGateways">
@@ -1553,6 +1615,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera Mini gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperamobileProcessBrowsers">
@@ -1579,6 +1642,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera Mobile browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperamobileProcessGateways">
@@ -1602,6 +1666,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera Mobile gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperaProcessBrowsers">
@@ -1628,6 +1693,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OperaProcessGateways">
@@ -1651,6 +1717,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OSProcessBrowsers">
@@ -1677,6 +1744,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the OS browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OSProcessGateways">
@@ -1700,6 +1768,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the OS gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PixelsProcessBrowsers">
@@ -1726,6 +1795,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Pixels browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PixelsProcessGateways">
@@ -1749,6 +1819,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Pixels gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformmac68kProcessBrowsers">
@@ -1775,6 +1846,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmac68k browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformmac68kProcessGateways">
@@ -1798,6 +1870,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmac68k gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformmacppcProcessBrowsers">
@@ -1824,6 +1897,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmacppc browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformmacppcProcessGateways">
@@ -1847,6 +1921,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmacppc gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformProcessBrowsers">
@@ -1873,6 +1948,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platform browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformProcessGateways">
@@ -1896,6 +1972,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platform gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformunixProcessBrowsers">
@@ -1922,6 +1999,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformunix browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformunixProcessGateways">
@@ -1945,6 +2023,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformunix gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwebtvProcessBrowsers">
@@ -1971,6 +2050,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwebtv browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwebtvProcessGateways">
@@ -1994,6 +2074,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwebtv gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin16ProcessBrowsers">
@@ -2020,6 +2101,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin16 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin16ProcessGateways">
@@ -2043,6 +2125,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin16 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000aProcessBrowsers">
@@ -2069,6 +2152,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000a browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000aProcessGateways">
@@ -2092,6 +2176,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000a gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000bProcessBrowsers">
@@ -2118,6 +2203,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000b browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000bProcessGateways">
@@ -2141,6 +2227,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000b gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin95ProcessBrowsers">
@@ -2167,6 +2254,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin95 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin95ProcessGateways">
@@ -2190,6 +2278,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin95 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin98ProcessBrowsers">
@@ -2216,6 +2305,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin98 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platformwin98ProcessGateways">
@@ -2239,6 +2329,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin98 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinceProcessBrowsers">
@@ -2265,6 +2356,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwince browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinceProcessGateways">
@@ -2288,6 +2380,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwince gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinntProcessBrowsers">
@@ -2314,6 +2407,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinnt browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinntProcessGateways">
@@ -2337,6 +2431,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinnt gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinxpProcessBrowsers">
@@ -2363,6 +2458,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinxp browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinxpProcessGateways">
@@ -2386,6 +2482,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinxp gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PopulateBrowserElements">
@@ -2407,6 +2504,7 @@
         <param name="dictionary">A collection of browser capabilities.</param>
         <summary>Used internally by the configuration system to produce request-specific instances of <see cref="T:System.Web.HttpBrowserCapabilities" /> that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PopulateMatchedHeaders">
@@ -2428,6 +2526,7 @@
         <param name="dictionary">A collection of request headers.</param>
         <summary>Used internally by the configuration system to produce request-specific instances of <see cref="T:System.Web.HttpBrowserCapabilities" /> that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari3plusProcessBrowsers">
@@ -2454,6 +2553,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari version 3 and later browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari3plusProcessGateways">
@@ -2477,6 +2577,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari version 3 and later gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari3to4ProcessBrowsers">
@@ -2503,6 +2604,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari3to4 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari3to4ProcessGateways">
@@ -2526,6 +2628,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari3to4 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari4ProcessBrowsers">
@@ -2552,6 +2655,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari4 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Safari4ProcessGateways">
@@ -2575,6 +2679,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari4 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SafariProcessBrowsers">
@@ -2601,6 +2706,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Safari browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SafariProcessGateways">
@@ -2624,6 +2730,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Safari gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UcbrowserProcessBrowsers">
@@ -2650,6 +2757,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the UC Browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UcbrowserProcessGateways">
@@ -2673,6 +2781,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the UC Browser gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VoiceProcessBrowsers">
@@ -2699,6 +2808,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Voice browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VoiceProcessGateways">
@@ -2722,6 +2832,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Voice gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WebkitmobileProcessBrowsers">
@@ -2748,6 +2859,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the WebKit Mobile browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WebkitmobileProcessGateways">
@@ -2771,6 +2883,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the WebKit Mobile gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WebkitProcessBrowsers">
@@ -2797,6 +2910,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the WebKit browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WebkitProcessGateways">
@@ -2820,6 +2934,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the WebKit gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Win16ProcessBrowsers">
@@ -2846,6 +2961,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win16 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Win16ProcessGateways">
@@ -2869,6 +2985,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win16 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Win32ProcessBrowsers">
@@ -2895,6 +3012,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win32 browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Win32ProcessGateways">
@@ -2918,6 +3036,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win32 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WindowsphoneProcessBrowsers">
@@ -2944,6 +3063,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Windows Phone browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WindowsphoneProcessGateways">
@@ -2967,6 +3087,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Windows Phone gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WinProcessBrowsers">
@@ -2993,6 +3114,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win browser making the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WinProcessGateways">
@@ -3016,6 +3138,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

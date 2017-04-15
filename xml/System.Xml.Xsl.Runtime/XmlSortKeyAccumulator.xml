@@ -22,6 +22,7 @@
   <Docs>
     <summary>Accumulates a list of sort keys and stores them in an array.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddDateTimeSortKey">
@@ -49,6 +50,7 @@
         <param name="value">A <see langword="DateTime" /> value.</param>
         <summary>Creates a new <see cref="T:System.DateTime" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddDecimalSortKey">
@@ -76,6 +78,7 @@
         <param name="value">A <see langword="decimal" /> value.</param>
         <summary>Creates a new <see cref="T:System.Decimal" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddDoubleSortKey">
@@ -103,6 +106,7 @@
         <param name="value">A <see langword="double" /> value.</param>
         <summary>Creates a new <see cref="T:System.Double" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddEmptySortKey">
@@ -128,6 +132,7 @@
         <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
         <summary>Creates a new empty sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddIntegerSortKey">
@@ -155,6 +160,7 @@
         <param name="value">A value of type <see langword="Int64" />.</param>
         <summary>Creates a new <see cref="T:System.Int64" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddIntSortKey">
@@ -182,6 +188,7 @@
         <param name="value">A value of type <see langword="Int32" />.</param>
         <summary>Creates a new <see cref="T:System.Int32" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddStringSortKey">
@@ -209,6 +216,7 @@
         <param name="value">A value of type <see langword="string" />.</param>
         <summary>Creates a new <see cref="T:System.String" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -231,6 +239,7 @@
       <Docs>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FinishSortKeys">
@@ -253,6 +262,7 @@
       <Docs>
         <summary>Finishes creating the current run of sort keys and begins a new run.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -275,6 +285,7 @@
         <summary>Gets an array of sort keys that was constructed by the internal <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" /> class.</summary>
         <value>An array of sort keys.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Implements the <c>CallTarget</c> task. Use the <c>CallTarget</c> element in your project file to create and execute this task. For usage and parameter information, see [CallTarget Task](http://msdn.microsoft.com/library/bb1fe2c4-4383-436f-8326-c24cc4a46150).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CallTarget" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -53,6 +55,7 @@
         <returns>
           <see langword="true" /> if all targets built successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RunEachTargetSeparately">
@@ -72,6 +75,7 @@
         <value>
           <see langword="true" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine is called once per target; <see langword="false" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine is called once to build all targets.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetOutputs">
@@ -95,6 +99,7 @@
         <summary>Gets the outputs of all built targets.</summary>
         <value>The outputs of all built targets.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Targets">
@@ -113,6 +118,7 @@
         <summary>Gets or sets the target or targets to build.</summary>
         <value>The target or targets to build.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseResultsCache">
@@ -139,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

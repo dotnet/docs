@@ -26,6 +26,7 @@
   <Docs>
     <summary>Describes the operand type of Microsoft intermediate language (MSIL) instruction.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="InlineBrTarget">
@@ -51,6 +52,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit integer branch target.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineField">
@@ -76,6 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineI">
@@ -101,6 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineI8">
@@ -126,6 +130,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 64-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineMethod">
@@ -151,6 +156,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineNone">
@@ -176,6 +182,7 @@
       </ReturnValue>
       <Docs>
         <summary>No operand.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlinePhi">
@@ -202,6 +209,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is reserved and should not be used.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineR">
@@ -227,6 +235,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 64-bit IEEE floating point number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineSig">
@@ -252,6 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata signature token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineString">
@@ -277,6 +287,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata string token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineSwitch">
@@ -302,6 +313,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is the 32-bit integer argument to a switch instruction.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineTok">
@@ -327,6 +339,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a <see langword="FieldRef" />, <see langword="MethodRef" />, or <see langword="TypeRef" /> token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineType">
@@ -352,6 +365,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineVar">
@@ -377,6 +391,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is 16-bit integer containing the ordinal of a local variable or an argument.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineBrTarget">
@@ -402,6 +417,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer branch target.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineI">
@@ -427,6 +443,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineR">
@@ -452,6 +469,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit IEEE floating point number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineVar">
@@ -477,6 +495,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer containing the ordinal of a local variable or an argumenta.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

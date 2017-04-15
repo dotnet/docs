@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Used internally to create a new instance of <see cref="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessBrowserFiles">
@@ -89,6 +92,7 @@
  \- or -  
   
  One of the browser-definition files fails to load.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -116,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

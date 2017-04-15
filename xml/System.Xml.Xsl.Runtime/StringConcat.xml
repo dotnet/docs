@@ -23,6 +23,7 @@
   <Docs>
     <summary>Concatenates strings when the number of strings is not known beforehand.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -46,6 +47,7 @@
       <Docs>
         <summary>Clears the result string.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Concat">
@@ -72,6 +74,7 @@
         <param name="value">A <see langword="string" /> value to be concatenated to the result.</param>
         <summary>Concatenates a new string to the result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Delimiter">
@@ -95,6 +98,7 @@
         <summary>Gets or sets the string that delimits concatenated strings.</summary>
         <value>Returns the <see cref="T:System.String" /> delimiter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetResult">
@@ -119,6 +123,7 @@
         <summary>Gets the result string.</summary>
         <returns>A <see langword="string" /> value that contains the result.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

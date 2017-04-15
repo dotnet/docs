@@ -20,6 +20,7 @@
   <Docs>
     <summary>Specifies the state of source code text. This class is used together with other classes that provide information to color JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="STATE_COLOR_COMMENT">
@@ -36,6 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>Comment text.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="STATE_COLOR_NORMAL">
@@ -52,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Normal text.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="STATE_COLOR_STRING">
@@ -68,6 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>String literal text.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

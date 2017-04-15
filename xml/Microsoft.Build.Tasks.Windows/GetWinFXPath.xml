@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GetWinFXPath</c> task. Use the <c>GetWinFXPath</c> element in your project file to create and execute this task. For usage and parameter information, see [GetWinFXPath](http://msdn.microsoft.com/library/b1dfb467-f3d3-47f3-83ef-af7b0e33a772).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.GetWinFXPath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WinFXNativePath">
@@ -71,6 +74,7 @@
         <summary>Gets or sets the path for native WinFX runtime.</summary>
         <value>The path for native WinFX runtime.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WinFXPath">
@@ -94,6 +98,7 @@
         <summary>Gets or sets the path for the WinFX runtime.</summary>
         <value>The path for the WinFX runtime.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WinFXWowPath">
@@ -117,6 +122,7 @@
         <summary>Gets or sets the path for WoW WinFX run time.</summary>
         <value>The path for WoW WinFX run time.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.FunctionObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="apply">
@@ -44,6 +45,7 @@
         <summary>Calls the function that this object represents, converting the specified argument object to an array of arguments if it has to.</summary>
         <returns>The return value of the call to the function that this object represents.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="call">
@@ -81,6 +83,7 @@
         <summary>Calls the function that this object represents.</summary>
         <returns>The return value of the call to the function that this object represents.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -99,6 +102,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -126,6 +130,7 @@
         <summary>Creates a string representation of the specified object.</summary>
         <returns>A string representation of <paramref name="thisob" /> that contains the name of the function.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that provide information about debugger objects. This interface is implemented by all <see cref="T:System.Reflection.IReflect" /> objects that are implemented by the debugger. Currently, this interface serves only to flag these objects as such to the scripting engine.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="HasEnumerableMember">
@@ -41,6 +42,7 @@
         <returns>
           <see langword="true" /> if the current object has an enumerable member named <paramref name="name" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsCOMObject">
@@ -61,6 +63,7 @@
         <returns>
           <see langword="true" /> if the current object is a COM object; <see langword="false" /> if the current object is a proxy to a managed object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsEqual">
@@ -84,6 +87,7 @@
         <returns>
           <see langword="true" /> if the current object is the same as <paramref name="o" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsScriptFunction">
@@ -104,6 +108,7 @@
         <returns>
           <see langword="true" /> if the current object is a proxy to a managed JScript function; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsScriptObject">
@@ -124,6 +129,7 @@
         <returns>
           <see langword="true" /> if the current object is a proxy to a managed JScript object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

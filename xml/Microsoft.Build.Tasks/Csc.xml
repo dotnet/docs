@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>Csc</c> task. Use the <c>Csc</c> element in your project file to create and execute this task. For usage and parameter information, see [Csc Task](http://msdn.microsoft.com/library/d8c19b36-f5ca-484b-afa6-8ff3b90e103a).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Csc" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddResponseFileCommands">
@@ -49,6 +51,7 @@
         <param name="commandLine">Command line builder to add arguments to.</param>
         <summary>Fills the specified <paramref name="commandLine" /> parameter with switches and other information that can go into a response file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllowUnsafeBlocks">
@@ -75,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ApplicationConfiguration">
@@ -93,6 +97,7 @@
         <summary>Returns configuration information.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BaseAddress">
@@ -118,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CallHostObjectToExecute">
@@ -145,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckForOverflowUnderflow">
@@ -170,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DisabledWarnings">
@@ -195,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DocumentationFile">
@@ -220,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrorEndLocation">
@@ -238,6 +248,7 @@
         <summary>If true, outputs the line and column of the end location of each error.</summary>
         <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrorReport">
@@ -263,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPaths">
@@ -289,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -308,6 +321,7 @@
         <summary>Returns the full file path of the Csc tool.</summary>
         <returns>The full file path of the Csc tool.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeHostObject">
@@ -334,6 +348,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LangVersion">
@@ -359,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ModuleAssemblyName">
@@ -384,6 +400,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoStandardLib">
@@ -410,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PdbFile">
@@ -435,6 +453,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreferredUILang">
@@ -460,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -478,6 +498,7 @@
         <summary>Returns the name of the Csc tool (csc.exe).</summary>
         <value>The name of the Csc tool (csc.exe).</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseHostCompilerIfAvailable">
@@ -504,6 +525,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WarningLevel">
@@ -529,6 +551,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WarningsAsErrors">
@@ -554,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WarningsNotAsErrors">
@@ -579,6 +603,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

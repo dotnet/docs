@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EnumFromString">
@@ -66,6 +67,7 @@
  \- or -  
   
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnumToString">
@@ -110,6 +112,7 @@
  \- or -  
   
  The type of <paramref name="enumValue" /> is not an underlying type of <paramref name="enumType" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ObjectFromString">
@@ -147,6 +150,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An object of the type specified by <paramref name="objType" /> cannot be created from the <paramref name="value" /> parameter.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

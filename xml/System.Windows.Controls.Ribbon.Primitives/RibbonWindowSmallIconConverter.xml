@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -67,6 +69,7 @@
         <summary>Converts an icon to its small size variant if one is available.</summary>
         <returns>The 16x16 image variant of the specified icon if one is available; otherwise, the original image.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertBack">
@@ -96,6 +99,7 @@
         <returns>This API is not implemented.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">All cases.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

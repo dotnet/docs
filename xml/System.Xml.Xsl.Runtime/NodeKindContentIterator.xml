@@ -22,6 +22,7 @@
   <Docs>
     <summary>Iterates over all child content nodes with a matching node kind.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -51,6 +52,7 @@
           <see cref="T:System.Xml.XPath.XPathNodeType" /> object.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.NodeKindContentIterator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -80,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

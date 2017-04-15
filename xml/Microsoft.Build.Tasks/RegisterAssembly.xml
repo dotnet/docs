@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.RegisterAssembly" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Assemblies">
@@ -66,6 +68,7 @@
         <summary>Gets or sets the assemblies to be registered with COM.</summary>
         <value>The assemblies to be registered with COM.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyListFile">
@@ -84,6 +87,7 @@
         <summary>Gets or sets information about the state between the <c>RegisterAssembly</c> task and the [UnregisterAssembly](http://msdn.microsoft.com/library/04f549dd-3591-4dda-9c3a-cf6ede9df2c3) task. This prevents the <c>UnregisterAssembly</c> task from attempting to unregister an assembly that failed to register in the <c>RegisterAssembly</c> task.</summary>
         <value>The state information necessary for the <c>UnregisterAssembly</c> task to do proper clean-up.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateCodeBase">
@@ -110,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -130,6 +135,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReportEvent">
@@ -155,6 +161,7 @@
         <param name="msg">The message of the export event.</param>
         <summary>Callback method for reporting the type library export events.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolveRef">
@@ -185,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeLibFiles">
@@ -223,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

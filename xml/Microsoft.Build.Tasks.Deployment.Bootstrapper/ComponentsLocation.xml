@@ -20,6 +20,7 @@
   <Docs>
     <summary>Specifies the way that required components will be published.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Absolute">
@@ -36,6 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that products be located at a specific location.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HomeSite">
@@ -52,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that products be found according to the redistributable vendor's designated URL.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Relative">
@@ -68,6 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that products be located relative to the generated bootstrapper.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

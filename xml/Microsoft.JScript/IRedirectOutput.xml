@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that capture output that would otherwise go to the console. This interface is implemented by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="SetOutputStream">
@@ -39,6 +40,7 @@
         <param name="output">The output to redirect.</param>
         <summary>When implemented in a class, redirects the specified output stream to a new stream or data storage.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

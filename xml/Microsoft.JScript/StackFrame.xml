@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a stack frame for executing code. This class contains methods for resolving scope. It belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="closureInstance">
@@ -41,6 +42,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultThisObject">
@@ -60,6 +62,7 @@
         <summary>Gets the current default scope, which will be either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
         <returns>The current default scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -84,6 +87,7 @@
         <summary>Gets a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -103,6 +107,7 @@
         <summary>Gets the global scope by searching the scope hierarchy until it finds a scope that includes static variables, for example, a module scope.</summary>
         <returns>The global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -127,6 +132,7 @@
         <summary>Retrieves an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match a specified name.</summary>
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -149,6 +155,7 @@
         <summary>Retrieves an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the current object.</summary>
         <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMemberValue">
@@ -178,6 +185,7 @@
         <summary>Gets the value of the specified member by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
         <returns>The value of the member <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="localVars">
@@ -195,6 +203,7 @@
       <Docs>
         <summary>Stores the local variables for this stack frame.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.JScript.IActivationObject.GetLocalField">
@@ -217,6 +226,7 @@
         <summary>Gets the local declaration of a field that has the specified name. This method is used at compile time for error checking.</summary>
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PushStackFrameForMethod">
@@ -242,6 +252,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a method and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PushStackFrameForStaticMethod">
@@ -267,6 +278,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a static method and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

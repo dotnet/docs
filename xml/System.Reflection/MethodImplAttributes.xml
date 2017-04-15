@@ -72,6 +72,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AggressiveInlining">
@@ -102,6 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method should be inlined wherever possible.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CodeTypeMask">
@@ -127,6 +129,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies flags about code type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ForwardRef">
@@ -152,6 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is not defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IL">
@@ -177,6 +181,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalCall">
@@ -202,6 +207,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies an internal call.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Managed">
@@ -227,6 +233,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is implemented in managed code.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ManagedMask">
@@ -252,6 +259,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies whether the method is implemented in managed or unmanaged code.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MaxMethodImplVal">
@@ -273,6 +281,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies a range check value.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -298,6 +307,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is native.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoInlining">
@@ -323,6 +333,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method cannot be inlined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoOptimization">
@@ -348,6 +359,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](~/docs/framework/tools/ngen-exe-native-image-generator.md)) when debugging possible code generation problems.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OPTIL">
@@ -373,6 +385,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is in Optimized Intermediate Language (OPTIL).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreserveSig">
@@ -398,6 +411,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method signature is exported exactly as declared.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Runtime">
@@ -423,6 +437,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is provided by the runtime.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -448,6 +463,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](~/docs/csharp/language-reference/keywords/lock-statement.md) or the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) for this purpose.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Unmanaged">
@@ -473,6 +489,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is implemented in unmanaged code.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

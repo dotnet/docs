@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="MakeVersionSafeName">
@@ -63,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MakeVersionSafeName">
@@ -111,6 +113,7 @@
         <exception cref="T:System.ArgumentException">The values for <paramref name="from " />and <paramref name="to " />are invalid. The resource type in the <see cref="T:System.Runtime.Versioning.ResourceScope" /> enumeration is going from a more restrictive resource type to a more general resource type.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type " />is<see langword=" null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

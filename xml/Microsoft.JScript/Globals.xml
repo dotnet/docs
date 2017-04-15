@@ -13,6 +13,7 @@
   <Docs>
     <summary>Stores references to all globally available types and manages the stack. This class belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ConstructArray">
@@ -46,6 +47,7 @@
         <summary>Provides global access to the <see cref="M:Microsoft.JScript.ArrayConstructor.CreateInstance(System.Object[])" /> method.</summary>
         <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConstructArrayLiteral">
@@ -68,6 +70,7 @@
         <summary>Provides global access to the <see cref="M:Microsoft.JScript.ArrayConstructor.ConstructArray(System.Object[])" /> method.</summary>
         <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="contextEngine">
@@ -90,6 +93,7 @@
       <Docs>
         <summary>Stores a global reference to the single scripting engine that is running in the current context.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

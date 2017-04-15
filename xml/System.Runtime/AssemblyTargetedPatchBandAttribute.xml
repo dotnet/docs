@@ -23,6 +23,7 @@
   <Docs>
     <summary>Specifies patch band information for targeted patching of the .NET Framework.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
         <param name="targetedPatchBand">The patch band.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.AssemblyTargetedPatchBandAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetedPatchBand">
@@ -69,6 +71,7 @@
         <summary>Gets the patch band.</summary>
         <value>The patch band information.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

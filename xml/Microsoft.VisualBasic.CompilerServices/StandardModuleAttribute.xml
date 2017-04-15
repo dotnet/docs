@@ -21,6 +21,7 @@
   <Docs>
     <summary>This class provides attributes that are applied to the standard module construct when it is emitted to Intermediate Language (IL). It is not intended to be called directly from your code.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +37,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

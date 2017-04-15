@@ -25,6 +25,7 @@
   <Docs>
     <summary>Represents a managed install.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.ManagedInstallerClass" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InstallHelper">
@@ -61,6 +63,7 @@
         <param name="args">The arguments passed to the Installer Tool.</param>
         <summary>Handles the functionality of the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md).</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.Install.IManagedInstaller.ManagedInstall">
@@ -92,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

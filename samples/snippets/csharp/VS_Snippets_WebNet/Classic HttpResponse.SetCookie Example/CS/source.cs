@@ -10,7 +10,7 @@ public class Page1: Page
  {
 // <Snippet1>
 MyCookie.Value = DateTime.Now.ToString();
- Response.Cookies.Add(MyCookie);
+ Response.Cookies.Set(MyCookie);
     
 // </Snippet1>
  }

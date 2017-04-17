@@ -8,3 +8,4 @@
 ### [Mapping Algorithm Names to Cryptography Classes](map-algorithm-names-to-cryptography-classes.md)
 ### [Mapping Object Identifiers to Cryptography Algorithms](map-object-identifiers-to-cryptography-algorithms.md)
 ## [How to: Create a Publisher Policy](how-to-create-a-publisher-policy.md)
+## [Configuration file schema](file-schema/index.md)

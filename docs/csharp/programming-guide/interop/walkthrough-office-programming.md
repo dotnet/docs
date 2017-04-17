@@ -58,7 +58,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 3.  In the **Installed Templates** pane, expand **Visual Basic** or **Visual C#**, expand **Office**, and then click the version year of the Office product.  
   
-4.  In the **Templates** pane, click **Excel \<version\> Add-in**.  
+4.  In the **Templates** pane, click **Excel \<version> Add-in**.  
   
 5.  Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a later version, appears in the **Target Framework** box.  
   
@@ -167,11 +167,11 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  Run the application again, but do not click **Clean Solution**.  
   
-2.  Select the **Start**. Locate **Microsoft Visual Studio \<version\>** and open a developer command prompt.  
+2.  Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.  
   
 3.  Type `ildasm` in the Visual Studio Command Prompt window, and then press ENTER. The IL DASM window appears.  
   
-4.  On the **File** menu in the IL DASM window, select **File > Open**. Double-click **Visual Studio \<version\>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.  
+4.  On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.  
   
      For more information, see [How to: View Assembly Contents](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709).  
   
@@ -180,7 +180,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
      Because deployment of PIAs is no longer necessary, you can create an application in advanced scenarios that works with multiple versions of Office, including earlier versions. However, this works only if your code does not use any APIs that are not available in the version of Office you are working with. It is not always clear whether a particular API was available in an earlier version, and for that reason working with earlier versions of Office is not recommended.  
   
     > [!NOTE]
-    >  Office did not publish PIAs before Office 2003. Therefore, the only way to generate an interop assembly for Office 2002 or earlier versions is by importing the COM reference.  
+    > Office did not publish PIAs before Office 2003. Therefore, the only way to generate an interop assembly for Office 2002 or earlier versions is by importing the COM reference.  
   
 6.  Close the manifest window and the assembly window.  
   

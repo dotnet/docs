@@ -45,7 +45,7 @@
    
   
 ## Examples  
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. The <xref:System.IO.StreamReader> class derives from <xref:System.IO.TextReader> and provides implementations of the members for reading from a stream. The following example shows how to read all the characters in a file by using the [StreamReader.ReadAsync(Char\<xref:System.IO.StreamReader.ReadAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. It checks whether each character is a letter, digit, or white space before adding the character to an instance of the <xref:System.Text.StringBuilder> class.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. The <xref:System.IO.StreamReader> class derives from <xref:System.IO.TextReader> and provides implementations of the members for reading from a stream. The following example shows how to read all the characters in a file by using the <xref:System.IO.StreamReader.ReadAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. It checks whether each character is a letter, digit, or white space before adding the character to an instance of the <xref:System.Text.StringBuilder> class.  
   
  [!code-csharp[System.IO.StreamReader#42](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/example42.cs#42)]
  [!code-vb[System.IO.StreamReader#42](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/example42.vb#42)]  
@@ -379,7 +379,7 @@
 ## Remarks  
  This method returns after either `count` characters are read or the end of the file is reached. <xref:System.IO.TextReader.ReadBlock%2A> is a blocking version of this method.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the [Read Method (Char\<xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=fullName> method.  
   
  ]]></format>
         </remarks>

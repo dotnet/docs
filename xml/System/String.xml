@@ -423,7 +423,7 @@
   
 -   Methods that use ordinal comparison by default, such as <xref:System.String.Contains%2A>, <xref:System.String.Replace%2A>, and <xref:System.String.Split%2A>.  
   
--   Methods that search for a <xref:System.Char>value or for the elements in a <xref:System.Char> arrayin a string instance. Such methods include <xref:System.String.IndexOf%28System.Char%29> and [Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29>.  
+-   Methods that search for a <xref:System.Char>value or for the elements in a <xref:System.Char> arrayin a string instance. Such methods include <xref:System.String.IndexOf%28System.Char%29> and <xref:System.String.Split%28System.Char%5B%5D%29>.  
   
  You can determine whether a string is normalized to normalization form C by calling the <xref:System.String.IsNormalized?displayProperty=fullName> method, or you can call the <xref:System.String.IsNormalized%28System.Text.NormalizationForm%29?displayProperty=fullName> method to determine whether a string is normalized to a specified normalization form. You can also call the <xref:System.String.Normalize?displayProperty=fullName> method to convert a string to normalization form C, or you can call the <xref:System.String.Normalize%28System.Text.NormalizationForm%29?displayProperty=fullName> method to convert a string to a specified normalization form. For step-by-step information about normalizing and comparing strings, see the <xref:System.String.Normalize> and <xref:System.String.Normalize%28System.Text.NormalizationForm%29> methods.  
   
@@ -3218,7 +3218,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is [String.Concat(Object\<xref:System.String.Concat%28System.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to [String.Concat(Object\<xref:System.String.Concat%28System.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.String.Concat%28System.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.String.Concat%28System.Object%5B%5D%29?displayProperty=fullName>.  
   
  The method concatenates each object in the parameter list by calling its parameterless `ToString` method; it does not add any delimiters.  
   
@@ -8207,7 +8207,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-vb[System.String.Split#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#5)]  
   
 ## Comparison details  
- The [Split Method (Char\<xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the characters in the `separator` parameter, and returns those substrings as elements of an array.  
+ The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the characters in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> enumeration.  
   
@@ -8279,7 +8279,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a string is delimited by a known set of strings, you can use the [Split Method (String\<xref:System.String.Split%2A> method to separate it into substrings.  
+ When a string is delimited by a known set of strings, you can use the <xref:System.String.Split%2A> method to separate it into substrings.  
   
 ## Return value details  
  Delimiter strings are not included in the elements of the returned array. For example, if the `separator` array includes the string "--" and the value of the current string instance is "aa--bb-cc", the method returns an array that contains three elements: "aa", "bb", and "cc".  
@@ -8311,11 +8311,11 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-vb[System.String.Split#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#6)]  
   
 ## Comparison details  
- The [Split Method (String\<xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
+ The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> enumeration.  
   
- The [Split Method (String\<xref:System.String.Split%2A> method ignores any element of `separator` whose value is `null` or the empty string ("").  
+ The <xref:System.String.Split%2A> method ignores any element of `separator` whose value is `null` or the empty string ("").  
   
  To avoid ambiguous results when strings in `separator` have characters in common, the <xref:System.String.Split%2A> operation proceeds from the beginning to the end of the value of the instance, and matches the first element in `separator` that is equal to a delimiter in the instance. The order in which substrings are encountered in the instance takes precedence over the order of elements in `separator`.  
   
@@ -8333,12 +8333,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
    
   
 ## Examples  
- The following example illustrates the difference in the arrays returned by calling a string's [Split Method (String\<xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29?displayProperty=fullName> method with its `options` parameter equal to <xref:System.StringSplitOptions?displayProperty=fullName> and <xref:System.StringSplitOptions?displayProperty=fullName>.  
+ The following example illustrates the difference in the arrays returned by calling a string's <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29?displayProperty=fullName> method with its `options` parameter equal to <xref:System.StringSplitOptions?displayProperty=fullName> and <xref:System.StringSplitOptions?displayProperty=fullName>.  
   
  [!code-csharp[System.String.Split#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split.cs#1)]
  [!code-vb[System.String.Split#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/Split.vb#1)]  
   
- The following example defines an array of separators that include punctuation and white-space characters. Passing this array along with a value of <xref:System.StringSplitOptions?displayProperty=fullName> to the [Split Method (String\<xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> method returns an array that consists of the individual words from the string.  
+ The following example defines an array of separators that include punctuation and white-space characters. Passing this array along with a value of <xref:System.StringSplitOptions?displayProperty=fullName> to the <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> method returns an array that consists of the individual words from the string.  
   
  [!code-csharp[System.String.Split#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split7.cs#7)]
  [!code-vb[System.String.Split#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split7.vb#7)]  
@@ -8507,11 +8507,11 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  If any of the elements in `separator` consists of multiple characters, the entire substring is considered a delimiter. For example, if one of the elements in `separator` is "10", attempting to split the string "This10is10a10string." returns this four-element array: { "This", "is", "a", "string." }.  
   
 ## Comparison details  
- The [Split Method (String\<xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
+ The <xref:System.String.Split%2A> method extracts the substrings in this string that are delimited by one or more of the strings in the `separator` parameter, and returns those substrings as elements of an array.  
   
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> enumeration.  
   
- The [Split Method (String\<xref:System.String.Split%2A> method ignores any element of `separator` whose value is `null` or the empty string ("").  
+ The <xref:System.String.Split%2A> method ignores any element of `separator` whose value is `null` or the empty string ("").  
   
  To avoid ambiguous results when strings in `separator` have characters in common, the <xref:System.String.Split%2A> method proceeds from the beginning to the end of the value of the instance, and matches the first element in `separator` that is equal to a delimiter in the instance. The order in which substrings are encountered in the instance takes precedence over the order of elements in `separator`.  
   
@@ -9684,7 +9684,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  This method copies each character (that is, each <xref:System.Char> object) in a string to a character array. The first character copied is at index zero of the returned character array; the last character copied is at index <xref:System.Array.Length%2A?displayProperty=fullName> – 1.  
   
- To create a string from the characters in a character array, call the [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor.  
+ To create a string from the characters in a character array, call the <xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor.  
   
  To create a byte array that contains the encoded characters in a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%29?displayProperty=fullName> method. Some of the standard encodings available in the .NET Framework include the following:  
   
@@ -9706,7 +9706,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.ToCharArray#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.tochararray/cs/ToCharArray1.cs#1)]
  [!code-vb[System.String.ToCharArray#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.tochararray/vb/ToCharArray1.vb#1)]  
   
- The following example defines a string containing the characters that serve as delimiters in a delimited string. It then calls the <xref:System.String.ToCharArray%2A> method to create a character array that can be passed to the [Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29> method to separate the delimited string into its individual substrings.  
+ The following example defines a string containing the characters that serve as delimiters in a delimited string. It then calls the <xref:System.String.ToCharArray%2A> method to create a character array that can be passed to the <xref:System.String.Split%28System.Char%5B%5D%29> method to separate the delimited string into its individual substrings.  
   
  [!code-cpp[StringSplit2#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringSplit2/CPP/stringsplit2.cpp#1)]
  [!code-csharp[StringSplit2#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/Split1.cs#1)]
@@ -9759,13 +9759,13 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method copies the characters in a portion of a string to a character array. To create a string from a range of characters in a character array, call the  [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
+ This method copies the characters in a portion of a string to a character array. To create a string from a range of characters in a character array, call the  <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
   
  The `startIndex` parameter is zero-based. That is, the index of the first character in the string instance is zero.  
   
  If `length` is zero, the returned array is empty and has a zero length. If this instance is `null` or an empty string (""), the returned array is empty and has a zero length.  
   
- To create a byte array that contains the encoded characters in a portion of a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its [GetBytes(String, Int32, Int32, Byte\<xref:System.Text.Encoding.GetBytes%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32%29> method. Some of the standard encodings available in the .NET Framework include the following:  
+ To create a byte array that contains the encoded characters in a portion of a string, instantiate the appropriate <xref:System.Text.Encoding> object and call its <xref:System.Text.Encoding.GetBytes%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32%29> method. Some of the standard encodings available in the .NET Framework include the following:  
   
 |Encoding|Object|  
 |--------------|------------|  
@@ -9948,7 +9948,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
    
   
 ## Examples  
- The following example defines a string array that contains a single word in a number of languages. The <xref:System.String.ToLowerInvariant%2A> method is used to populate the elements of a parallel array with the case-insensitive version of each word. The [Array.Sort\<TKey, TValue>(TKey\[\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method is used to sort the case-sensitive array based on the order of elements in the lowercase array to ensure that elements appear in the same order regardless of language.  
+ The following example defines a string array that contains a single word in a number of languages. The <xref:System.String.ToLowerInvariant%2A> method is used to populate the elements of a parallel array with the case-insensitive version of each word. The <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method is used to sort the case-sensitive array based on the order of elements in the lowercase array to ensure that elements appear in the same order regardless of language.  
   
  [!code-csharp[System.String.ToLowerInvariant#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.tolowerinvariant/cs/tolowerinvariant.cs#1)]
  [!code-vb[System.String.ToLowerInvariant#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.tolowerinvariant/vb/tolowerinvariant.vb#1)]  
@@ -10193,7 +10193,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
    
   
 ## Examples  
- The following example defines a string array that contains a single word in a number of languages. The <xref:System.String.ToUpperInvariant%2A> method is used to populate the elements of a parallel array with the case-insensitive version of each word. The [Array.Sort\<TKey, TValue>(TKey\[\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method is used to sort the case-sensitive array based on the order of elements in the uppercase array to ensure that elements appear in the same order regardless of language.  
+ The following example defines a string array that contains a single word in a number of languages. The <xref:System.String.ToUpperInvariant%2A> method is used to populate the elements of a parallel array with the case-insensitive version of each word. The <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method is used to sort the case-sensitive array based on the order of elements in the uppercase array to ensure that elements appear in the same order regardless of language.  
   
  [!code-csharp[System.String.ToUpperInvariant#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.toupperinvariant/cs/toupperinvariant.cs#1)]
  [!code-vb[System.String.ToUpperInvariant#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.toupperinvariant/vb/toupperinvariant.vb#1)]  
@@ -10634,8 +10634,8 @@ A copy of `format` in which the format items have been replaced by the string re
   
 |To|Call|  
 |--------|----------|  
-|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining<xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the [Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
-|Format one or more objects by using the conventions of a specific culture.|Each<xref:System.String.Format%2A>overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
+|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining<xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
+|Format one or more objects by using the conventions of a specific culture.|Each<xref:System.String.Format%2A>overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
 |Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|  
   
 <a name="Format_Brief"></a>   
@@ -10700,7 +10700,7 @@ index[,alignment][ :formatString] }
   
 -   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=fullName> into the result string.  
   
--   If you call the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
+-   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
   
 -   If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation is called.  
   
@@ -10729,7 +10729,7 @@ index[,alignment][ :formatString] }
   
 <a name="Format_Custom"></a>   
 ## Custom formatting operations  
- You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
+ You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
   
  For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
@@ -10773,7 +10773,7 @@ index[,alignment][ :formatString] }
   
 <a name="Format5_Example"></a>   
 ## Example 5: Culture-sensitive formatting  
- This example uses the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
+ This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
   
  [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
  [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
@@ -10790,7 +10790,7 @@ index[,alignment][ :formatString] }
 ## Example 7: An intercept provider and Roman numeral formatter  
  This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
   
--   It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> implementation. This enables us to see what parameters the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.  
+-   It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> implementation. This enables us to see what parameters the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.  
   
 -   If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.  
   
@@ -10807,10 +10807,10 @@ index[,alignment][ :formatString] }
  All overloads are supported in: 4, 3.5 SP1  
   
  Portable Class Library  
- Only [Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported  
+ Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported  
   
  .NET for Windows Store apps  
- Only [Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported in Windows 8  
+ Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported in Windows 8  
   
 <a name="QA"></a>   
 ## String.Format Q & A  
@@ -10859,7 +10859,7 @@ index[,alignment][ :formatString] }
  [!code-vb[System.String.Format#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa28.vb#28)]  
   
 ### How many items can I include in the format list?  
- There is no practical limit. The second parameter of the [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
+ There is no practical limit. The second parameter of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
   
 ### How do I include literal braces ("{" and "}") in the result string?  
  For example, how do you prevent the following method call from throwing a <xref:System.FormatException> exception?  
@@ -10888,7 +10888,7 @@ index[,alignment][ :formatString] }
   
  This is a problem of compiler overload resolution. Because the compiler cannot convert an array of integers to an object array, it treats the integer array as a single argument, so it calls the <xref:System.String.Format%28System.String%2CSystem.Object%29> method. The exception is thrown because there are four format items but only a single item in the format list.  
   
- Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the [Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The following example provides one implementation.  
+ Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The following example provides one implementation.  
   
  [!code-csharp[System.String.Format#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa2.cs#22)]
  [!code-vb[System.String.Format#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa2.vb#22)]  
@@ -10911,7 +10911,7 @@ index[,alignment][ :formatString] }
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [Split(Char\<xref:System.String.Split%2A> is used to break a delimited string into substrings. You can use either a character array to specify zero, one, or multiple delimiting characters (the <xref:System.String.Split%28System.Char%5B%5D%29> method), or you can use a character array to specify zero, one, or multiple delimiting strings. Overloads of the [Split(Char\<xref:System.String.Split%2A> method allow you to limit the number of substrings returned by the method (the [Split(Char\<xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%29> method), to determine whether empty strings are included in the returned substrings (the [Split(Char\<xref:System.String.Split%28System.Char%5B%5D%2CSystem.StringSplitOptions%29> and [Split(String\<xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> methods, or to do both (the [Split(Char\<xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> and [Split(String\<xref:System.String.Split%28System.String%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> methods).  
+ <xref:System.String.Split%2A> is used to break a delimited string into substrings. You can use either a character array to specify zero, one, or multiple delimiting characters (the <xref:System.String.Split%28System.Char%5B%5D%29> method), or you can use a character array to specify zero, one, or multiple delimiting strings. Overloads of the <xref:System.String.Split%2A> method allow you to limit the number of substrings returned by the method (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%29> method), to determine whether empty strings are included in the returned substrings (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> methods, or to do both (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> methods).  
   
 > [!IMPORTANT]
 >  For more detailed information on the <xref:System.String.Split%2A> method, as well as for examples that call each overload, see the documentation for the individual overloads of <xref:System.String.Split%2A>.  
@@ -11113,8 +11113,8 @@ index[,alignment][ :formatString] }
   
 |Exception|Condition|Thrown by|  
 |---------------|---------------|---------------|  
-|<xref:System.ArgumentNullException>|`value` is `null`.|[String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
-|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
+|<xref:System.ArgumentNullException>|`value` is `null`.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
+|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
   
  Here's a list of exceptions thrown by constructors that include pointer parameters.  
   
@@ -11131,8 +11131,8 @@ index[,alignment][ :formatString] }
 |To|Call or use|  
 |--------|-----------------|  
 |Create a string.|Assignment from a string literal or an existing string ([example](#Ctor1_Example))|  
-|Create a string from an entire character array.|[String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%29> ([example](#Ctor2_Example))|  
-|Createa string from a portion of a character array.|[String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
+|Create a string from an entire character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%29> ([example](#Ctor2_Example))|  
+|Createa string from a portion of a character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
 |Create a string that repeats the same character multiple times.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
 |Create a string from a pointer to a Unicode or wide character array.|<xref:System.String.%23ctor%28System.Char%2A%29>|  
 |Create a string from a portion of a Unicode or wide character array by using its pointer.|<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>|  
@@ -11143,7 +11143,7 @@ index[,alignment][ :formatString] }
 ## Creating strings  
  The most commonly used technique for creating strings programmatically is simple assignment, as illustrated in [this example](#Ctor1_Example). The <xref:System.String> class also includes four types of constructor overloads that let you create strings from the following values:  
   
--   From a character array (an array of UTF-16-encoded characters). You can create a new <xref:System.String> object from the characters in the entire array or a portion of it. The [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor copies all the characters in the array to the new string. The [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor copies the characters from index `startIndex` to index `startIndex` + `length` – 1 to the new string. If `length` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
+-   From a character array (an array of UTF-16-encoded characters). You can create a new <xref:System.String> object from the characters in the entire array or a portion of it. The <xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor copies all the characters in the array to the new string. The <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor copies the characters from index `startIndex` to index `startIndex` + `length` – 1 to the new string. If `length` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
   
      If your code repeatedly instantiates strings that have the same value, you can improve application performance by using an alternate means of creating strings. For more information, see [Handling repetitive strings](#Repetitive).  
   
@@ -11158,7 +11158,7 @@ index[,alignment][ :formatString] }
   
      The array must contain Unicode characters. In C++, this means that the character array must be defined either as the managed <xref:System.Char>[] type or the unmanaged`wchar_t`[] type.  
   
-     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
+     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
   
 -   From a pointer to a signed byte array. Either the entire array or a specified range can be used to initialize the string. The sequence of bytes can be interpreted by using the default code page encoding, or an encoding can be specified in the constructor call. If the constructor tries to instantiate a string from an entire array that is not null-terminated, or if the range of the array from `value` + `startIndex` to `value` + `startIndex` + `length` -1 is outside of the memory allocated for the array, the behavior of this constructor is system-dependent, and an access violation may occur.  
   
@@ -11175,11 +11175,11 @@ index[,alignment][ :formatString] }
   
 <a name="Repetitive"></a>   
 ## Handling repetitive strings  
- Apps that parse or decode streams of text often use the [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor or the [StringBuilder.Append(Char\<xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to convert sequences of characters into a string. Repeatedly creating new strings with the same value instead of creating and reusing one string wastes memory. If you are likely to create the same string value repeatedly by calling the [String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor, even if you do not know in advance what those identical string values may be, you can use a lookup table instead.  
+ Apps that parse or decode streams of text often use the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor or the <xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to convert sequences of characters into a string. Repeatedly creating new strings with the same value instead of creating and reusing one string wastes memory. If you are likely to create the same string value repeatedly by calling the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor, even if you do not know in advance what those identical string values may be, you can use a lookup table instead.  
   
  For example, suppose you read and parse a stream of characters from a file that contains XML tags and attributes. When you parse the stream, you repeatedly encounter certain tokens (that is, sequences of characters that have a symbolic meaning). Tokens equivalent to the strings "0", "1", "true", and "false" are likely to occur frequently in an XML stream.  
   
- Instead of converting each token into a new string, you can create a <xref:System.Xml.NameTable?displayProperty=fullName> object to hold commonly occurring strings. The <xref:System.Xml.NameTable> object improves performance, because it retrieves stored strings without allocating temporary memory. When you encounter a token, use the [NameTable.Get(Char\<xref:System.Xml.NameTable.Get%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to retrieve the token from the table. If the token exists, the method returns the corresponding string. If the token does not exist, use the [NameTable.Add(Char\<xref:System.Xml.NameTable.Add%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to insert the token into the table and to get the corresponding string.  
+ Instead of converting each token into a new string, you can create a <xref:System.Xml.NameTable?displayProperty=fullName> object to hold commonly occurring strings. The <xref:System.Xml.NameTable> object improves performance, because it retrieves stored strings without allocating temporary memory. When you encounter a token, use the <xref:System.Xml.NameTable.Get%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to retrieve the token from the table. If the token exists, the method returns the corresponding string. If the token does not exist, use the <xref:System.Xml.NameTable.Add%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to insert the token into the table and to get the corresponding string.  
   
 <a name="Ctor1_Example"></a>   
 ## Example 1: Using string assignment  

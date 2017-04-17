@@ -279,7 +279,7 @@
 ## Remarks  
  Exception string: Callback cannot be made at this time.  
   
- Thrown by multiple methods when one of the <xref:Microsoft.Vsa.IVsaSite> or <xref:Microsoft.Vsa.IVsaPersistSite> callback methods is called at an unexpected time. For example, the [Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte\[\]@,System.Byte\<xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method should only be called by an engine as a result of a call to the <xref:Microsoft.Vsa.IVsaEngine.Run%2A> method. If it is called at any other time, a CallbackUnexpected exception will be thrown.  
+ Thrown by multiple methods when one of the <xref:Microsoft.Vsa.IVsaSite> or <xref:Microsoft.Vsa.IVsaPersistSite> callback methods is called at an unexpected time. For example, the <xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method should only be called by an engine as a result of a call to the <xref:Microsoft.Vsa.IVsaEngine.Run%2A> method. If it is called at any other time, a CallbackUnexpected exception will be thrown.  
   
  ]]></format>
         </remarks>
@@ -357,7 +357,7 @@
 ## Remarks  
  Exception string: The specified compiled state could not be loaded.  
   
- Thrown by the [Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte\[\]@,System.Byte\<xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method when it is called for an engine that does not have compiled state.  
+ Thrown by the <xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method when it is called for an engine that does not have compiled state.  
   
  ]]></format>
         </remarks>
@@ -721,7 +721,7 @@
 ## Remarks  
  Exception string: The specified engine is not compiled.  
   
- Thrown by the <xref:Microsoft.Vsa.IVsaEngine.Run%2A> method and [Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte\[\]@,System.Byte\<xref:Microsoft.Vsa.IVsaEngine.SaveCompiledState%2A> methods when there is no compiled state to run or save. Either the .NET script engine must compile the code with a call to the <xref:Microsoft.Vsa.IVsaEngine.Compile%2A> method, or the <xref:Microsoft.Vsa.IVsaEngine.LoadSourceState%2A> method must be called before the script engine can be run or saved.  
+ Thrown by the <xref:Microsoft.Vsa.IVsaEngine.Run%2A> method and <xref:Microsoft.Vsa.IVsaEngine.SaveCompiledState%2A> methods when there is no compiled state to run or save. Either the .NET script engine must compile the code with a call to the <xref:Microsoft.Vsa.IVsaEngine.Compile%2A> method, or the <xref:Microsoft.Vsa.IVsaEngine.LoadSourceState%2A> method must be called before the script engine can be run or saved.  
   
  ]]></format>
         </remarks>
@@ -1033,7 +1033,7 @@
 ## Remarks  
  Exception string: The specified compiled state could not be loaded.  
   
- Thrown by the [Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte\[\]@,System.Byte\<xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method and <xref:Microsoft.Vsa.IVsaEngine.Run%2A> methods when the `GetCompiledState` method fails. The Run method returns to the caller the `GetCompiledStateFailed` exception returned by the `GetCompiledState` method. The `Run` method may also generate the GetCompiledStateFailed exception if the assembly cache throws an exception.  
+ Thrown by the <xref:Microsoft.Vsa.IVsaSite.GetCompiledState%2A> method and <xref:Microsoft.Vsa.IVsaEngine.Run%2A> methods when the `GetCompiledState` method fails. The Run method returns to the caller the `GetCompiledStateFailed` exception returned by the `GetCompiledState` method. The `Run` method may also generate the GetCompiledStateFailed exception if the assembly cache throws an exception.  
   
  ]]></format>
         </remarks>
@@ -1843,7 +1843,7 @@
 ## Remarks  
  Exception string: The specified compiled state could not be saved.  
   
- Thrown by the [Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte\[\]@,System.Byte\<xref:Microsoft.Vsa.IVsaEngine.SaveCompiledState%2A> method when this method fails. Note that this method does not actually save code, but rather simply provides the host application with the specified binary data, so that the host can save it.  
+ Thrown by the <xref:Microsoft.Vsa.IVsaEngine.SaveCompiledState%2A> method when this method fails. Note that this method does not actually save code, but rather simply provides the host application with the specified binary data, so that the host can save it.  
   
  ]]></format>
         </remarks>

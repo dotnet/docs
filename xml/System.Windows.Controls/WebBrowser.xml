@@ -668,7 +668,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [Navigate Method (String, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the [Navigate(Uri, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
+ Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
   
  ]]></format>
         </remarks>
@@ -702,7 +702,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [Navigate(String, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the [Navigate Method (Uri, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
+ Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
   
    
   

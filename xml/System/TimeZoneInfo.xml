@@ -1004,9 +1004,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this overload of the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to create a custom time zone whose support for daylight saving time can be determined by conditions at run time.  
+ You can use this overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to create a custom time zone whose support for daylight saving time can be determined by conditions at run time.  
   
- The following table shows the relationship between the parameters that are provided to the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
   
 |CreateCustomTimeZone parameter|TimeZoneInfo property|  
 |------------------------------------|---------------------------|  
@@ -1039,7 +1039,7 @@
    
   
 ## Examples  
- The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It sets the `disableDaylightSavingTime` parameter in the call to the [CreateCustomTimeZone Method (String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to `true`. It then displays the new time zone's daylight saving time name, if one is present, and the number of adjustment rules to confirm that the new time zone has no daylight saving time information.  
+ The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It sets the `disableDaylightSavingTime` parameter in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to `true`. It then displays the new time zone's daylight saving time name, if one is present, and the number of adjustment rules to confirm that the new time zone has no daylight saving time information.  
   
  [!code-csharp[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#3)]
  [!code-vb[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#3)]  
@@ -1107,7 +1107,7 @@
   
  A <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is not <xref:System.String?displayProperty=fullName> or `null` does not necessarily indicate that the time zone supports daylight saving time. To determine whether the time zone supports daylight saving time, check the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   
- In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=fullName> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=fullName>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=fullName> or the [TimeZoneInfo.CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule\<xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=fullName> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
+ In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=fullName> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=fullName>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=fullName> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
   
  The <xref:System.TimeZoneInfo.DaylightName%2A> property is equivalent to the <xref:System.TimeZone.DaylightName%2A> property of the <xref:System.TimeZone> class.  
   

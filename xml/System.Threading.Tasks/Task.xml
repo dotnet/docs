@@ -95,7 +95,7 @@
   
  You can also supply a cancellation token by calling the <xref:System.Threading.Tasks.Task.Wait%28System.Threading.CancellationToken%29> and  <xref:System.Threading.Tasks.Task.Wait%28System.Int32%2CSystem.Threading.CancellationToken%29> methods. If the  token's <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property is `true`, the wait is cancelled; if it becomes true while the <xref:System.Threading.Tasks.Task.Wait%2A> method terminates.  
   
- In some cases, you may want to wait for the first of a series of executing tasks to complete, but don't care which task it is.  For this purpose, you can call one of the overloads of the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method.  The following example creates three tasks, each of which sleeps for an interval determine by a random number generator. The [WaitAny(Task\<xref:System.Threading.Tasks.Task.WaitAny%28System.Threading.Tasks.Task%5B%5D%29> method waits for the first task to complete. The example then displays information about the status of all three tasks.  
+ In some cases, you may want to wait for the first of a series of executing tasks to complete, but don't care which task it is.  For this purpose, you can call one of the overloads of the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method.  The following example creates three tasks, each of which sleeps for an interval determine by a random number generator. The <xref:System.Threading.Tasks.Task.WaitAny%28System.Threading.Tasks.Task%5B%5D%29> method waits for the first task to complete. The example then displays information about the status of all three tasks.  
   
  [!code-csharp[System.Threading.Tasks.Task#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/WhenAny1.cs#10)]
  [!code-vb[System.Threading.Tasks.Task#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/WaitAny1.vb#10)]  
@@ -180,7 +180,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Threading.Tasks.Task.%23ctor%28System.Action%29> constructor to create tasks that retrieve the filenames in specified directories. All tasks write the file names to a single <xref:System.Collections.Concurrent.ConcurrentBag%601> object. The example then calls the [WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method to ensure that all tasks have completed, and then displays a count of the total number of file names written to the <xref:System.Collections.Concurrent.ConcurrentBag%601> object.  
+ The following example uses the <xref:System.Threading.Tasks.Task.%23ctor%28System.Action%29> constructor to create tasks that retrieve the filenames in specified directories. All tasks write the file names to a single <xref:System.Collections.Concurrent.ConcurrentBag%601> object. The example then calls the <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method to ensure that all tasks have completed, and then displays a count of the total number of file names written to the <xref:System.Collections.Concurrent.ConcurrentBag%601> object.  
   
  [!code-csharp[System.Threading.Tasks.Task.Ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.ctor/cs/ctor1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.ctor/vb/ctor1.vb#1)]  
@@ -2121,7 +2121,7 @@ Task t Status: RanToCompletion, Result: 42
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a <xref:System.Threading.Tasks.Task> object with default configuration values.  
   
- The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the [TaskFactory.ContinueWhenAll(Task\[\], Action\<Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
+ The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
   
  [!code-csharp[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory1.vb#1)]  
@@ -2595,7 +2595,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The call to the <xref:System.Threading.Tasks.Task.Wait%2A> method ensures that the task completes and displays its output before the application ends. Otherwise, it is possible that the `Main` method will complete before the task finishes.  
   
- The following example illustrates the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method. It defines an array of directory names and starts a separate task to retrieve the file names in each directory. All tasks write the file names to a single <xref:System.Collections.Concurrent.ConcurrentBag%601> object. The example then calls the [WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method to ensure that all tasks have completed, and then displays a count of the total number of file names written to the <xref:System.Collections.Concurrent.ConcurrentBag%601> object.  
+ The following example illustrates the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method. It defines an array of directory names and starts a separate task to retrieve the file names in each directory. All tasks write the file names to a single <xref:System.Collections.Concurrent.ConcurrentBag%601> object. The example then calls the <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method to ensure that all tasks have completed, and then displays a count of the total number of file names written to the <xref:System.Collections.Concurrent.ConcurrentBag%601> object.  
   
  [!code-csharp[System.Threading.Tasks.Task.Run#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.run/cs/run2.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.Run#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.run/vb/run2.vb#1)]  
@@ -2843,7 +2843,7 @@ Task t Status: RanToCompletion, Result: 42
    
   
 ## Examples  
- The following example counts the approximate number of words in text files that represent published books. Each task is responsible for opening a file, reading its entire contents asynchronously, and calculating the word count by using a regular expression. The [WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method is called to ensure that all tasks have completed before  displaying the word count of each book to the console.  
+ The following example counts the approximate number of words in text files that represent published books. Each task is responsible for opening a file, reading its entire contents asynchronously, and calculating the word count by using a regular expression. The <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29> method is called to ensure that all tasks have completed before  displaying the word count of each book to the console.  
   
  [!code-csharp[System.Threading.Tasks.Task.Run#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.run/cs/run3.cs#2)]
  [!code-vb[System.Threading.Tasks.Task.Run#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.run/vb/run3.vb#2)]  

@@ -1614,7 +1614,7 @@
   
 -   The Unicode character buffer version of <xref:System.Text.Encoding.GetBytes%28System.Char%2A%2CSystem.Int32%2CSystem.Byte%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls using the <xref:System.Text.Encoder> object or inserting into existing buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetBytes Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
 -   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
@@ -1782,9 +1782,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetChars(Byte\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method. To calculate the maximum array size, you should use the <xref:System.Text.Encoding.GetMaxCharCount%28System.Int32%29> method. The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method. To calculate the maximum array size, you should use the <xref:System.Text.Encoding.GetMaxCharCount%28System.Int32%29> method. The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method determines how many characters result in decoding a sequence of bytes, and the  [GetChars(Byte\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method determines how many characters result in decoding a sequence of bytes, and the  <xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1794,7 +1794,7 @@
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -1875,7 +1875,7 @@
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -1942,7 +1942,7 @@
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -2027,7 +2027,7 @@
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -2088,7 +2088,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [GetChars Method (Byte\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. [GetChars Method (Byte\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
@@ -2098,13 +2098,13 @@
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one [GetChars Method (Byte\<xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next [GetChars Method (Byte\<xref:System.Text.Encoding.GetChars%2A> call. [GetChars Method (Byte\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, it is recommended to use the <xref:System.Text.Encoding.GetString%2A> method. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -2201,7 +2201,7 @@
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -2268,7 +2268,7 @@
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetChars%2A> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
@@ -2278,13 +2278,13 @@
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call. [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, the <xref:System.Text.Encoding.GetString%2A> method is recommended. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
 -   The byte version of <xref:System.Text.Encoding.GetChars%28System.Byte%2A%2CSystem.Int32%2CSystem.Char%2A%2CSystem.Int32%29> allows some fast techniques, particularly with multiple calls to large buffers. Bear in mind, however, that this method version is sometimes unsafe, since pointers are required.  
   
--   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
+-   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
 -   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
@@ -3026,7 +3026,7 @@
    
   
 ## Examples  
- The following example reads a UTF-8 encoded string from a binary file represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the [Decoder.GetCharCount(Byte\<xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the [Decoder.GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
+ The following example reads a UTF-8 encoded string from a binary file represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
   
  [!code-csharp[System.Text.Encoding.GetString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.GetString/CS/getstring1.cs#2)]
  [!code-vb[System.Text.Encoding.GetString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.GetString/VB/getstring1.vb#2)]  
@@ -3166,7 +3166,7 @@ The goal is to save this file, then open and decode it as a binary stream.
    
   
 ## Examples  
- The following example reads a UTF-8 encoded string from a binary file that is represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the [GetString Method (Byte\<xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the [Decoder.GetCharCount(Byte\<xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the [Decoder.GetChars(Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
+ The following example reads a UTF-8 encoded string from a binary file that is represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
   
  [!code-csharp[System.Text.Encoding.GetString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.GetString/CS/getstring2.cs#3)]
  [!code-vb[System.Text.Encoding.GetString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.GetString/VB/getstring2.vb#3)]  

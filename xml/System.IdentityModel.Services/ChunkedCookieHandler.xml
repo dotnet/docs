@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Services.ChunkedCookieHandler> class presents the cookie as a logical entity, so that, in the case of cookies with a size that exceeds a specified threshold (the chunk size), a single call to the [Write(Byte\<xref:System.IdentityModel.Services.CookieHandler.Write%2A> method breaks the data into a series of actual client-side cookies, none of which exceeds the chunk size.  
+ The <xref:System.IdentityModel.Services.ChunkedCookieHandler> class presents the cookie as a logical entity, so that, in the case of cookies with a size that exceeds a specified threshold (the chunk size), a single call to the <xref:System.IdentityModel.Services.CookieHandler.Write%2A> method breaks the data into a series of actual client-side cookies, none of which exceeds the chunk size.  
   
  Cookie names are constructed based on the `name` parameter to the <xref:System.IdentityModel.Services.CookieHandler.Write%2A>, <xref:System.IdentityModel.Services.CookieHandler.Read%2A>, or <xref:System.IdentityModel.Services.CookieHandler.Delete%2A> methods. The cookie names are constructed by appending a number to the base name: name, name1, name2, and so on.  
   

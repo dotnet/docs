@@ -595,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the [String.Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  

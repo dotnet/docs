@@ -533,7 +533,7 @@
  [!code-csharp[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/CS/rwreadbytes.cs#1)]
  [!code-vb[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/VB/rwreadbytes.vb#1)]  
   
- This example reads the contents of a file and displays each byte's numeric value in 16-column format. The end of the file that is being read is detected when the [Read Method (Byte\<xref:System.IO.BinaryReader.Read%2A> method returns zero bytes.  
+ This example reads the contents of a file and displays each byte's numeric value in 16-column format. The end of the file that is being read is detected when the <xref:System.IO.BinaryReader.Read%2A> method returns zero bytes.  
   
  [!code-csharp[System.IO.BinaryReaderWriter#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source5.cs#6)]
  [!code-vb[System.IO.BinaryReaderWriter#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source5.vb#6)]  

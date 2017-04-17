@@ -183,14 +183,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [CopyTo Method (TreeNodeBinding\<xref:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object into `bindingArray`. Items are copied starting at `index`. You can then use the array to access the items that are in the collection.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object into `bindingArray`. Items are copied starting at `index`. You can then use the array to access the items that are in the collection.  
   
  As an alternative, you can use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [CopyTo Method (TreeNodeBinding\<xref:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection to an array.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection to an array.  
   
  <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/CS/treenodebindingcollectioncopytocs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/VB/treenodebindingcollectioncopytovb.aspx#1)]  -->  

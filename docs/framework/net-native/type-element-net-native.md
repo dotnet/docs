@@ -124,11 +124,11 @@ Applies runtime policy to a particular type, such as a class or structure.
 ```  
   
 ## Example  
- The following example uses reflection to retrieve a <xref:System.Reflection.PropertyInfo> object that represents the <xref:System.String.Chars%2A?displayProperty=fullName> property. It then uses the [PropertyInfo.GetValue(Object, Object\<xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=fullName> method to retrieve the value of the seventh character in a string, and to display all the characters in the string. The variable `b` in the example is a [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control.  
+ The following example uses reflection to retrieve a <xref:System.Reflection.PropertyInfo> object that represents the <xref:System.String.Chars%2A?displayProperty=fullName> property. It then uses the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=fullName> method to retrieve the value of the seventh character in a string, and to display all the characters in the string. The variable `b` in the example is a [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control.  
   
  [!code-csharp[ProjectN_Reflection#1](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/propertyinfo1.cs#1)]  
   
- Because metadata for the <xref:System.String> object isn't available, the call to the [PropertyInfo.GetValue(Object, Object\<xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.NullReferenceException> exception at run time when compiled with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. To eliminate the exception and provide the necessary metadata, add the following `<Type>` element to the runtime directives file:  
+ Because metadata for the <xref:System.String> object isn't available, the call to the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.NullReferenceException> exception at run time when compiled with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. To eliminate the exception and provide the necessary metadata, add the following `<Type>` element to the runtime directives file:  
   
 ```xml  
   

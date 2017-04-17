@@ -437,7 +437,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Guid.CompareTo%2A> method compares the GUIDs as if they were values provided to the [Guid(Int32, Int16, Int16, Byte\<xref:System.Guid.%23ctor%28System.Int32%2CSystem.Int16%2CSystem.Int16%2CSystem.Byte%5B%5D%29> constructor, as follows:  
+ The <xref:System.Guid.CompareTo%2A> method compares the GUIDs as if they were values provided to the <xref:System.Guid.%23ctor%28System.Int32%2CSystem.Int16%2CSystem.Int16%2CSystem.Byte%5B%5D%29> constructor, as follows:  
   
 -   It compares the <xref:System.UInt32> values, and returns a result if they are unequal. If they are equal, it performs the next comparison.  
   
@@ -1066,7 +1066,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the byte array returned by this method to round-trip a <xref:System.Guid> value by calling the [Guid(Byte\<xref:System.Guid.%23ctor%28System.Byte%5B%5D%29> constructor.  
+ You can use the byte array returned by this method to round-trip a <xref:System.Guid> value by calling the <xref:System.Guid.%23ctor%28System.Byte%5B%5D%29> constructor.  
   
  Note that the order of bytes in the returned byte array is different from the string representation of a <xref:System.Guid> value. The order of the beginning four-byte group and the next two two-byte groups is reversed, whereas the order of the last two-byte group and the closing six-byte group is the same. The example provides an illustration.  
   
@@ -1225,7 +1225,7 @@
   
  The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=fullName> method on the returned string.  
   
- Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
+ Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
   
  ]]></format>
         </remarks>

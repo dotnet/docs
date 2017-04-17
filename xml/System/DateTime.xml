@@ -143,7 +143,7 @@
  [!code-csharp[System.DateTime.Parsing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.parsing/cs/parsingex1.cs#1)]
  [!code-vb[System.DateTime.Parsing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.parsing/vb/parsingex1.vb#1)]  
   
- You can use the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a date and time string that must match a particular format or formats to a <xref:System.DateTime> value. You specify the required format or formats as a parameter to the parsing methodby using one or more  or  date and time format strings. The following example uses the [TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.  
+ You can use the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a date and time string that must match a particular format or formats to a <xref:System.DateTime> value. You specify the required format or formats as a parameter to the parsing methodby using one or more  or  date and time format strings. The following example uses the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.  
   
  [!code-csharp[System.DateTime.Parsing#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.parsing/cs/parsingex2.cs#2)]
  [!code-vb[System.DateTime.Parsing#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.parsing/vb/parsingex2.vb#2)]  
@@ -303,7 +303,7 @@
   
 1.  If the values represent single moments of time, convert them from the local time to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A> method.  
   
-2.  Convert the dates to their string representations by calling the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29> or [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload. Use the formatting conventions of the invariant culture by specifying <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> as the `provider` argument. Specify that the value should round-trip by using the "O" or "R" .  
+2.  Convert the dates to their string representations by calling the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29> or <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload. Use the formatting conventions of the invariant culture by specifying <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> as the `provider` argument. Specify that the value should round-trip by using the "O" or "R" .  
   
 3.  When you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
   
@@ -4304,7 +4304,7 @@ juillet 2009
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   
 > [!NOTE]
->  Rather than requiring that `s` conform to a single format for the parse operation to succeed, you can call the [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method and specify multiple permitted formats. This makes the parse operation more likely to succeed.  
+>  Rather than requiring that `s` conform to a single format for the parse operation to succeed, you can call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method and specify multiple permitted formats. This makes the parse operation more likely to succeed.  
   
  The `styles` parameter includes one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration that determine whether and where white space not defined by `format` can appear in `s` and that control the precise behavior of the parse operation. The following table describes how each member of the <xref:System.Globalization.DateTimeStyles> enumeration affects the operation of the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method.  
   
@@ -4401,7 +4401,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ParseExact Method (String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. If the string `s` does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `s` to multiple formatting patterns, rather than to a single formatting pattern, this overload behaves identically to the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method.  
+ The <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. If the string `s` does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `s` to multiple formatting patterns, rather than to a single formatting pattern, this overload behaves identically to the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method.  
   
  The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
   
@@ -4439,7 +4439,7 @@ juillet 2009
    
   
 ## Examples  
- The following example uses the [ParseExact Method (String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method to ensure that a string in a number of possible formats can be successfully parsed .  
+ The following example uses the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method to ensure that a string in a number of possible formats can be successfully parsed .  
   
  [!code-csharp[System.Datetime.ParseExact#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.ParseExact/cs/parseexact3.cs#3)]
  [!code-vb[System.Datetime.ParseExact#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.ParseExact/vb/parseexact3.vb#3)]  
@@ -6465,7 +6465,7 @@ juillet 2009
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   
 > [!NOTE]
->  Rather than requiring that `s` conform to a single format for the parse operation to succeed, you can call the [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method and specify multiple permitted formats. This makes the parse operation more likely to succeed.  
+>  Rather than requiring that `s` conform to a single format for the parse operation to succeed, you can call the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method and specify multiple permitted formats. This makes the parse operation more likely to succeed.  
   
  The particular date and time symbols and strings (such as the names of the days of the week in a particular language) used in `s` are defined by the `provider` parameter, as is the precise format of `s` if `format` is a standard format specifier string. The `provider` parameter can be any of the following:  
   
@@ -6557,7 +6557,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [TryParseExact Method (String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. It is like the [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, except the [TryParseExact Method (String, String\<xref:System.DateTime.TryParseExact%2A> method does not throw an exception if the conversion fails.  
+ The <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. It is like the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, except the <xref:System.DateTime.TryParseExact%2A> method does not throw an exception if the conversion fails.  
   
  The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
   
@@ -6577,7 +6577,7 @@ juillet 2009
   
  If `provider` is `null`, the <xref:System.Globalization.CultureInfo> object that corresponds to the current culture is used.  
   
- The `styles` parameter includes one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration that determine whether and where white space not defined by `format` can appear in `s` and that control the precise behavior of the parse operation. The following table describes how each member of the <xref:System.Globalization.DateTimeStyles> enumeration affects the operation of the [TryParseExact Method (String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
+ The `styles` parameter includes one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration that determine whether and where white space not defined by `format` can appear in `s` and that control the precise behavior of the parse operation. The following table describes how each member of the <xref:System.Globalization.DateTimeStyles> enumeration affects the operation of the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  

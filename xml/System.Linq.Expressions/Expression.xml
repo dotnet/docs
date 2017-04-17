@@ -1273,7 +1273,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [ArrayIndex(Expression, Expression\<xref:System.Linq.Expressions.Expression.ArrayIndex%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create a <xref:System.Linq.Expressions.MethodCallExpression> that represents indexing into a two-dimensional array.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ArrayIndex%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create a <xref:System.Linq.Expressions.MethodCallExpression> that represents indexing into a two-dimensional array.  
   
  [!code-csharp[System.Linq.Expressions.Expression#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#3)]
  [!code-vb[System.Linq.Expressions.Expression#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#3)]  
@@ -4720,7 +4720,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [ElementInit(MethodInfo, Expression\<xref:System.Linq.Expressions.Expression.ElementInit%28System.Reflection.MethodInfo%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create an <xref:System.Linq.Expressions.ElementInit> that represents calling the <xref:System.Collections.Generic.Dictionary%602.Add%2A> method to initialize an element of a dictionary collection.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ElementInit%28System.Reflection.MethodInfo%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create an <xref:System.Linq.Expressions.ElementInit> that represents calling the <xref:System.Collections.Generic.Dictionary%602.Add%2A> method to initialize an element of a dictionary collection.  
   
  [!code-csharp[System.Linq.Expressions.Expression#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#4)]
  [!code-vb[System.Linq.Expressions.Expression#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#4)]  
@@ -6277,7 +6277,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [Invoke(Expression, Expression\<xref:System.Linq.Expressions.Expression.Invoke%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create an <xref:System.Linq.Expressions.InvocationExpression> that represents the invocation of a lambda expression with specified arguments.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.Invoke%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.Expression%5B%5D%29> method to create an <xref:System.Linq.Expressions.InvocationExpression> that represents the invocation of a lambda expression with specified arguments.  
   
  [!code-csharp[System.Linq.Expressions.Expression#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#6)]
  [!code-vb[System.Linq.Expressions.Expression#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#6)]  
@@ -8432,7 +8432,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [ListInit(NewExpression, ElementInit\<xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance with two key-value pairs.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance with two key-value pairs.  
   
  [!code-csharp[System.Linq.Expressions.Expression#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#7)]
  [!code-vb[System.Linq.Expressions.Expression#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#7)]  

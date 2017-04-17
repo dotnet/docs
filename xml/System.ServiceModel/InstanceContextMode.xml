@@ -90,7 +90,7 @@
 ## Remarks  
   
 > [!NOTE]
->  For singleton lifetime behavior (for example, if the host application calls the [System.ServiceModel.ServiceHost.#ctor(System.Object,System.Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%2A> constructor and passes an object to use as the service), the service class must set <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> to Single, or an exception is thrown when the service host is opened.  
+>  For singleton lifetime behavior (for example, if the host application calls the <xref:System.ServiceModel.ServiceHost.%23ctor%2A> constructor and passes an object to use as the service), the service class must set <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> to Single, or an exception is thrown when the service host is opened.  
   
  ]]></format>
         </remarks>

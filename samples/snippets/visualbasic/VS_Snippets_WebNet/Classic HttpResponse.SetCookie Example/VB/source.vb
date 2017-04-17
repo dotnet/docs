@@ -9,7 +9,7 @@ Public Class Page1: Inherits Page
   Protected Sub Page_Load(sender As Object, e As EventArgs)
 ' <Snippet1>
 MyCookie.Value = CStr(DateTime.Now())
- Response.SetCookie(MyCookie)
+    Response.Cookies.Set(MyCookie)
     
 ' </Snippet1>
  End Sub

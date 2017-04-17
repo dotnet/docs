@@ -1034,7 +1034,7 @@
         <param name="offset">The location in <c>buffer</c> to begin storing the data to.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Reads data from the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
-        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</returns>
+        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />. 0 if the socket is closed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

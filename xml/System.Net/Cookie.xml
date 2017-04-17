@@ -113,11 +113,11 @@
   
  The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "", "contoso.com");`  
   
  However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "", "contoso.com");`  
   
  The comma character is used as a delimiter between separate cookies on the same line.  
   
@@ -180,11 +180,11 @@
   
  The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and can not cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "", "contoso.com");`  
   
  However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "", "contoso.com");`  
   
  The comma character is used as a delimiter between separate cookies on the same line.  
   
@@ -249,11 +249,11 @@
   
  The `value` parameter for a <xref:System.Net.Cookie> must not be a `null` reference (Nothing in Visual Basic). The following characters are reserved and cannot be passed in the `value` parameter unless the string passed in the `value` parameter is enclosed in double quotes: semicolon, comma. So the following example constructor would succeed but when you try to add this <xref:System.Net.Cookie> to a <xref:System.Net.CookieContainer> instance with the <xref:System.Net.CookieContainer.Add%2A> or <xref:System.Net.CookieContainer.Add%2A> methods the operation will fail and throw an exception:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "123,456", "", "contoso.com");`  
   
  However, the following constructor with these special characters escaped will create a <xref:System.Net.Cookie> that can be added to a <xref:System.Net.CookieContainer> instance:  
   
- `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "", "");`  
+ `System.Net.Cookie cookie = new System.Net.Cookie("contoso", "\"123,456\"", "", "", "contoso.com");`  
   
  The comma character is used as a delimiter between separate cookies on the same line.  
   

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents the base class for <see cref="T:Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput" /> and <see cref="T:Microsoft.Build.Tasks.AssignProjectConfiguration" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveProjectBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddSyntheticProjectReferences">
@@ -49,6 +51,7 @@
         <param name="currentProjectAbsolutePath">The absolute path of the current project.</param>
         <summary>Helper method for retrieving the extra “project references” passed in the solution blob. These come from dependencies expressed in the solution file itself.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProjectElement">
@@ -71,6 +74,7 @@
         <summary>Retrieves the XML element representing the given project.</summary>
         <returns>Returns the project element.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProjectItem">
@@ -93,6 +97,7 @@
         <summary>Retrieves the XML contents of the project element of the specified project.</summary>
         <returns>The XML contents of the project element of the specified project.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectReferences">
@@ -116,6 +121,7 @@
         <summary>Gets or sets the project references.</summary>
         <value>The project references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

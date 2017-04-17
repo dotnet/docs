@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides basic design-time functionality for the <see cref="T:System.Messaging.Message" /> class.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.Design.MessageDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -49,6 +51,7 @@
         <param name="properties">A <see cref="T:System.Collections.IDictionary" /> that contains the set of properties to filter for the component.</param>
         <summary>Modifies the set of properties that the designer exposes through the <see cref="T:System.ComponentModel.TypeDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

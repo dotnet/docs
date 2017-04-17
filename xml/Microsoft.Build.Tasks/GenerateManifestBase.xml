@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents the base class for all manifest generation tasks.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateManifestBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddAssemblyFromItem">
@@ -50,6 +52,7 @@
         <summary>Adds an assembly reference to the manifest, based on the specified item.</summary>
         <returns>The assembly reference that was added to the manifest.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddAssemblyNameFromItem">
@@ -74,6 +77,7 @@
         <summary>Adds an assembly reference to the manifest, based on the specified item and the assembly reference type.</summary>
         <returns>The assembly reference that was added to the manifest.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddEntryPointFromItem">
@@ -98,6 +102,7 @@
         <summary>Adds an entry point reference to the manifest, based on the specified item and the assembly reference type.</summary>
         <returns>The entry point reference that was added to the manifest.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddFileFromItem">
@@ -120,6 +125,7 @@
         <summary>Adds a file reference to the manifest, based on the specified item.</summary>
         <returns>The file reference that was added to the manifest.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
@@ -138,6 +144,7 @@
         <summary>Gets or sets the name of the assembly.</summary>
         <value>The name of the assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyVersion">
@@ -156,6 +163,7 @@
         <summary>Gets or sets the assembly version.</summary>
         <value>The assembly version.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -174,6 +182,7 @@
         <summary>Gets or sets the manifest description text.</summary>
         <value>The manifest description text.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -192,6 +201,7 @@
         <summary>Gets or sets the managed assembly or ClickOnce manifest reference that is the entry point to the manifest.</summary>
         <value>The managed assembly or ClickOnce manifest reference that is the entry point to the application.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -212,6 +222,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FindFileFromItem">
@@ -241,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObjectType">
@@ -260,6 +272,7 @@
         <summary>When implemented in a derived class, returns the type of the manifest.</summary>
         <returns>The manifest type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InputManifest">
@@ -278,6 +291,7 @@
         <summary>Gets or sets the input manifest.</summary>
         <value>The input manifest.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MaxTargetPath">
@@ -296,6 +310,7 @@
         <summary>Gets or sets the maximum manifest file name length.</summary>
         <value>The maximum manifest file name length.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnManifestLoaded">
@@ -319,6 +334,7 @@
         <returns>
           <see langword="true" /> if no errors occurred when the manifest properties are set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnManifestResolved">
@@ -349,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputManifest">
@@ -372,6 +389,7 @@
         <summary>Gets or sets the generated manifest.</summary>
         <value>The generated manifest.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platform">
@@ -397,6 +415,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetCulture">
@@ -422,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkMoniker">
@@ -440,6 +460,7 @@
         <summary>Gets or sets the target framework moniker.</summary>
         <value>Returns the target framework moniker.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkVersion">
@@ -465,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateInputs">
@@ -485,6 +507,7 @@
         <returns>
           <see langword="true" /> if input validation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateOutput">
@@ -505,6 +528,7 @@
         <returns>
           <see langword="true" /> if manifest validation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

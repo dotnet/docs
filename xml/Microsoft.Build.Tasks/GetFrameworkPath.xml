@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GetFrameworkPath</c> task. Use the <c>GetFrameworkPath</c> element in your project file to create and execute this task. For usage and parameter information, see [GetFrameworkPath Task](http://msdn.microsoft.com/library/5b7bcdd7-d4a0-442d-af29-8aadb3b10598).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GetFrameworkPath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -55,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion11Path">
@@ -78,6 +81,7 @@
         <summary>Gets or sets the path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 1.1 assemblies.</summary>
         <value>The path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 1.1 assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion20Path">
@@ -101,6 +105,7 @@
         <summary>Gets or sets the path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0 assemblies.</summary>
         <value>The path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0 assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion30Path">
@@ -124,6 +129,7 @@
         <summary>Gets or sets the path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.0 assemblies.</summary>
         <value>The path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.0 assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion35Path">
@@ -147,6 +153,7 @@
         <summary>Gets or sets the path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.5 assemblies.</summary>
         <value>The path of the folder that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.5 assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion40Path">
@@ -170,6 +177,7 @@
         <summary>Path to the v4.0 framework, if available</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkVersion45Path">
@@ -193,6 +201,7 @@
         <summary>Path to the v4.5 framework, if available</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -216,6 +225,7 @@
         <summary>Gets or sets the path of the folder that contains the latest version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies.</summary>
         <value>The path of the folder that contains the latest version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

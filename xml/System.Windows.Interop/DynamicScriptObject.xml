@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ToString">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TryGetIndex">
@@ -88,6 +90,7 @@
         <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TryGetMember">
@@ -122,6 +125,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="binder" /> is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TryInvoke">
@@ -158,6 +162,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="binder" /> is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMethodException">The method does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TryInvokeMember">
@@ -194,6 +199,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="binder" /> is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMethodException">The method does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrySetIndex">
@@ -236,6 +242,7 @@
         <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrySetMember">
@@ -276,6 +283,7 @@
         <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Converts instances of <see cref="T:System.Activities.Argument" /> to instances of <see cref="T:System.String" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.ArgumentValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertToString">
@@ -53,6 +55,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -77,6 +80,7 @@
         <summary>Converts the specified object to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> representation of the specified object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

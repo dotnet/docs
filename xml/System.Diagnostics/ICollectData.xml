@@ -18,6 +18,7 @@
   <Docs>
     <summary>Prepares performance data for the performance DLL the system loads when working with performance counters.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CloseData">
@@ -36,6 +37,7 @@
       <Docs>
         <summary>Called by the performance DLL's close performance data function.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CollectData">
@@ -65,6 +67,7 @@
         <param name="res">When this method returns, contains a <see cref="T:System.IntPtr" /> to the first byte after the data, -1 for an error, or -2 if a larger buffer is required. This parameter is passed uninitialized.</param>
         <summary>Collects the performance data for the performance DLL.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents an internal class that provides static helper methods that get a value converter from <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> to convert among several physical common language runtime (CLR) representations for the same logical XML type.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BooleanToAtomicValue">
@@ -52,6 +53,7 @@
         <summary>Converts a Boolean value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Boolean" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BytesToAtomicValue">
@@ -82,6 +84,7 @@
         <summary>Converts an array of bytes to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Byte" /> array.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DateTimeToAtomicValue">
@@ -112,6 +115,7 @@
         <summary>Converts a <see langword="DateTime" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="DateTime" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DecimalToAtomicValue">
@@ -142,6 +146,7 @@
         <summary>Converts a decimal value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Decimal" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleToAtomicValue">
@@ -172,6 +177,7 @@
         <summary>Converts a <see langword="Double" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Double" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int32ToAtomicValue">
@@ -202,6 +208,7 @@
         <summary>Converts an <see langword="Int32" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Int32" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int64ToAtomicValue">
@@ -232,6 +239,7 @@
         <summary>Converts an <see langword="Int64" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Int64" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ItemsToNavigators">
@@ -258,6 +266,7 @@
         <summary>Converts a list or sequence of <see cref="T:System.Xml.XPath.XPathItem" /> objects to a sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> objects or values.</summary>
         <returns>A generic list of type <see cref="T:System.Xml.XPath.XPathNavigator" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NavigatorsToItems">
@@ -284,6 +293,7 @@
         <summary>Converts a sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> objects or values to a list or sequence of <see cref="T:System.Xml.XPath.XPathItem" /> objects.</summary>
         <returns>A generic list of type <see cref="T:System.Xml.XPath.XPathItem" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SingleToAtomicValue">
@@ -314,6 +324,7 @@
         <summary>Converts a <see langword="Single" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="Single" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringToAtomicValue">
@@ -344,6 +355,7 @@
         <summary>Converts a string value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="String" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TimeSpanToAtomicValue">
@@ -374,6 +386,7 @@
         <summary>Converts a <see cref="T:System.TimeSpan" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="TimeSpan" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlQualifiedNameToAtomicValue">
@@ -404,6 +417,7 @@
         <summary>Converts an <see cref="T:System.Xml.XmlQualifiedName" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>
         <returns>The <see cref="T:System.Xml.Schema.XmlAtomicValue" /> object for the <see langword="XmlQualifiedName" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

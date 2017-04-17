@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="FromBoolean">
@@ -54,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromByte">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromChar">
@@ -112,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromDate">
@@ -141,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromDecimal">
@@ -170,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromDecimal">
@@ -201,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromDouble">
@@ -230,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromDouble">
@@ -261,6 +269,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromInteger">
@@ -290,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromLong">
@@ -319,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromObject">
@@ -348,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromShort">
@@ -377,6 +389,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromSingle">
@@ -406,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FromSingle">
@@ -437,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MidStmtStr">
@@ -471,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrCmp">
@@ -496,40 +512,42 @@
         <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive comparison; otherwise <see langword="False" />.</param>
         <summary>Compares two strings.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> zero  
+ </description>
+            </listheader>
+            <item>
+              <term> zero  
   
- </term>  
-<description> The two strings are equal.  
+ </term>
+              <description> The two strings are equal.  
   
- </description>  
-</item>  
-<item>  
-<term> less than zero  
+ </description>
+            </item>
+            <item>
+              <term> less than zero  
   
- </term>  
-<description> <paramref name="sLeft" /> is less than <paramref name="sRight" />.  
+ </term>
+              <description>
+                <paramref name="sLeft" /> is less than <paramref name="sRight" />.  
   
- </description>  
-</item>  
-<item>  
-<term> greater than zero  
+ </description>
+            </item>
+            <item>
+              <term> greater than zero  
   
- </term>  
-<description> <paramref name="sLeft" /> is greater than <paramref name="sRight" />.  
+ </term>
+              <description>
+                <paramref name="sLeft" /> is greater than <paramref name="sRight" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -539,6 +557,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrLike">
@@ -572,6 +591,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrLikeBinary">
@@ -605,6 +625,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrLikeText">
@@ -638,6 +659,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <MemberGroup MemberName="FromSingle">

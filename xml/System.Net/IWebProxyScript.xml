@@ -15,6 +15,7 @@
   <Docs>
     <summary>Provides the base interface to load and execute scripts for automatic proxy detection.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -38,6 +39,7 @@
       <Docs>
         <summary>Closes a script.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -69,6 +71,7 @@
         <summary>Loads a script.</summary>
         <returns>A <see cref="T:System.Boolean" /> indicating whether the script was successfully loaded.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -109,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at compile time.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="defaultMember">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>Stores a reference to a default indexed property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -49,6 +51,7 @@
         <summary>When overridden in a derived class, gets the object that the binding reference is defined on.</summary>
         <returns>The object that the binding reference is defined on.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HandleNoSuchMemberError">
@@ -74,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isAssignmentToDefaultIndexedProperty">
@@ -98,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isFullyResolved">
@@ -115,6 +120,7 @@
       <Docs>
         <summary>Stores a value that indicates whether the binding reference is fully resolved.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsMissing">
@@ -138,6 +144,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> is equivalent to <see cref="T:Microsoft.JScript.Missing" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isNonVirtual">
@@ -155,6 +162,7 @@
       <Docs>
         <summary>Stores a value that indicates whether the binding reference is to a member that overrides a member in a base class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -172,6 +180,7 @@
       <Docs>
         <summary>Stores a string that identifies the binding reference.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolveRHValue">
@@ -190,6 +199,7 @@
       <Docs>
         <summary>Resolves the right-hand side of the binding reference.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TranslateToILObject">
@@ -216,6 +226,7 @@
           <see langword="true" /> if the object does not have a value; otherwise, <see langword="false" />.</param>
         <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the object that the binding reference is defined on.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TranslateToILWithDupOfThisOb">
@@ -237,6 +248,7 @@
         <param name="il">An object that generates Microsoft intermediate language (MSIL) instructions.</param>
         <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the binding reference. If necessary, copies the current topmost value on the evaluation stack and then pushes the copy onto the evaluation stack.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

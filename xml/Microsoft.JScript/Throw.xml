@@ -13,6 +13,7 @@
   <Docs>
     <summary>Throws an exception. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptThrow">
@@ -35,6 +36,7 @@
         <summary>Returns the specified object as an exception, converting if it has to.</summary>
         <returns>An exception that represents <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

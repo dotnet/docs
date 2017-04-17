@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -51,6 +52,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The object specified by <paramref name="child" /> is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -89,6 +91,7 @@
  -or-  
   
  The object is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

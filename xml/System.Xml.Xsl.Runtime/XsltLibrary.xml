@@ -22,6 +22,7 @@
   <Docs>
     <summary>Implements different <see langword="XPath" /> and <see langword="XSLT" /> functions.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CheckScriptNamespace">
@@ -48,6 +49,7 @@
         <summary>Checks that the extension and script namespaces do not clash.</summary>
         <returns>An integer used for internal infrastructure only.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ElementAvailable">
@@ -82,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EqualityOperator">
@@ -115,6 +118,7 @@
         <summary>Determines equality between collections of type <see cref="T:System.Xml.XPath.XPathItem" />.</summary>
         <returns>Returns <see langword="true" /> if the collections are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FormatMessage">
@@ -143,6 +147,7 @@
         <summary>Formats an exception message composed of a format string supplied by the <paramref name="res" /> parameter and arguments contained by the <paramref name="args" /> parameter.</summary>
         <returns>A string that contains the formatted exception message.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FormatNumberDynamic">
@@ -184,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FormatNumberStatic">
@@ -221,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FunctionAvailable">
@@ -248,6 +255,7 @@
         <summary>Implements the [function-available()](http://go.microsoft.com/fwlink/?LinkId=144249) XSLT function.</summary>
         <returns>A Boolean value that is <see langword="true" /> if the function identified by <paramref name="name" /> is available.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsSameNodeSort">
@@ -278,6 +286,7 @@
         <summary>Determines whether two nodes have the same node type and, if nodes of that node type have expanded-names, the same expanded names.</summary>
         <returns>A Boolean value that is <see langword="true" /> if two nodes have the same node type and, if nodes of that node type have expanded names, the same expanded names.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LangToLcid">
@@ -306,6 +315,7 @@
         <summary>Converts the language identifier (as specified in the <see langword="xml:lang" /> attribute) to the culture identifier (LCID).</summary>
         <returns>A string that contains the culture identifier.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -346,6 +356,7 @@
         <summary>Gets a string that indicates the number format.</summary>
         <returns>A string that indicates the number format. Used for internal infrastructure only.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterDecimalFormat">
@@ -379,6 +390,7 @@
         <summary>Registers a decimal-format with the given expanded name. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
         <returns>In the current implementation the return value is always 0.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterDecimalFormatter">
@@ -411,6 +423,7 @@
         <summary>Registers a decimal formatter object and returns a unique index assigned to it. The decimal formatter object is used by the format-number() XSLT function. For more information, see the [number formatting](http://go.microsoft.com/fwlink/?LinkId=144247) section in the W3C Recommendation.</summary>
         <returns>Returns a unique index of type <see cref="T:System.Double" /> assigned to a decimal formatter object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RelationalOperator">
@@ -449,6 +462,7 @@
         <summary>Evaluates whether the <paramref name="left" /> expression is greater than or equal to, or less than or equal to, the <paramref name="right" /> expression based on the <paramref name="opCode" /> passed.</summary>
         <returns>A Boolean value that is true if the left expression is greater than or equal to the right expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

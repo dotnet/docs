@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods for parsing text when JScript code is being authored in an editor.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Parse">
@@ -41,6 +42,7 @@
         <param name="error">An object that contains information about errors that occur when <c>code</c> is being parsed.</param>
         <summary>When implemented in a class, parses the specified source code.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

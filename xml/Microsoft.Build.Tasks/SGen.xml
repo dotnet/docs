@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>SGen</c> task. Use the <c>SGen</c> element in your project file to create and execute this task. For usage and parameter information, see [SGen Task](http://msdn.microsoft.com/library/22c5ade4-4159-4667-b891-0c1aa06f4df5).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.SGen" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BuildAssemblyName">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the assembly to generate serialization code for.</summary>
         <value>The assembly to generate serialization code for.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BuildAssemblyPath">
@@ -74,6 +77,7 @@
         <summary>Gets or sets the path to the assembly to generate serialization code for.</summary>
         <value>The path to the assembly to generate serialization code for.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -93,6 +97,7 @@
         <value>
           <see langword="true" /> if the <c>SGen</c> task places the public key in the assembly; <see langword="false" /> if the <c>SGen</c> task fully signs the assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateCommandLineCommands">
@@ -112,6 +117,7 @@
         <summary>Gets the switches and other information that the command line tool must run directly from the command line and not from a response file.</summary>
         <returns>A string containing the switches and other information that the command line tool must run directly from the command line and not from a response file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -131,6 +137,7 @@
         <summary>Gets the full file path of the SGen tool.</summary>
         <returns>The full file path of the SGen tool.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyContainer">
@@ -156,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -181,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Platform">
@@ -199,6 +208,7 @@
         <summary>Gets or sets the compiler platform to use to generate the output assembly.</summary>
         <value>Returns the compiler platform to use.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="References">
@@ -217,6 +227,7 @@
         <summary>Gets or sets the assemblies that are referenced by the types requiring XML serialization.</summary>
         <value>The assemblies that are referenced by the types requiring XML serialization.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SdkToolsPath">
@@ -235,6 +246,7 @@
         <summary>Gets or sets the SDK Tools path.</summary>
         <value>Returns the SDK Tools path.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SerializationAssembly">
@@ -258,6 +270,7 @@
         <summary>Gets or sets the generated serialization assembly.</summary>
         <value>The generated serialization assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SerializationAssemblyName">
@@ -276,6 +289,7 @@
         <summary>Gets the name of the generated serialization assembly.</summary>
         <value>The name of the generated serialization assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShouldGenerateSerializer">
@@ -307,6 +321,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SkipTaskExecution">
@@ -327,6 +342,7 @@
         <returns>
           <see langword="true" /> if task execution should be skipped; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -345,6 +361,7 @@
         <summary>Gets the name of the tool executable file (sgen.exe).</summary>
         <value>The name of the tool executable file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Types">
@@ -363,6 +380,7 @@
         <summary>Gets or sets a list of specific types to generate serialization code for. <see langword="SGen" /> generates code only for these types.</summary>
         <value>Returns a list of specific types.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseProxyTypes">
@@ -387,6 +405,7 @@
         <value>
           <see langword="true" /> if the <c>SGen</c> task generates serialization code only for the XML Web service proxy types; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
@@ -407,6 +426,7 @@
         <returns>
           <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

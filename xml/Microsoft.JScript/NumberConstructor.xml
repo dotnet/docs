@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -46,6 +47,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -69,6 +71,7 @@
         <returns>
           <paramref name="arg" /> expressed as a number, if that is possible.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MAX_VALUE">
@@ -87,6 +90,7 @@
       <Docs>
         <summary>Represents the largest possible value of a <see cref="T:System.Double" />. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MIN_VALUE">
@@ -105,6 +109,7 @@
       <Docs>
         <summary>Represents the smallest positive <see cref="T:System.Double" /> value that is greater than zero. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NaN">
@@ -123,6 +128,7 @@
       <Docs>
         <summary>Represents a value that is not a number (NaN). This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NEGATIVE_INFINITY">
@@ -141,6 +147,7 @@
       <Docs>
         <summary>Represents negative infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="POSITIVE_INFINITY">
@@ -159,6 +166,7 @@
       <Docs>
         <summary>Represents positive infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

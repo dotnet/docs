@@ -17,6 +17,7 @@
   <Docs>
     <summary>Handles configuration sections that are represented by a single XML tag in the .config file.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SingleTagSectionHandler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -58,6 +60,7 @@
         <summary>Used internally to create a new instance of this object.</summary>
         <returns>The created object handler.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

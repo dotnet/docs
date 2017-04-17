@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ParseControl">
@@ -42,6 +43,7 @@
         <summary>Parses and builds one control at design time.</summary>
         <returns>The built <see cref="T:System.Web.UI.Control" /> object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseControls">
@@ -64,6 +66,7 @@
         <summary>Parses and builds one or more controls at design time.</summary>
         <returns>An array of built <see cref="T:System.Web.UI.Control" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -86,6 +89,7 @@
         <summary>Parses a template at design time.</summary>
         <returns>The <see cref="T:System.Web.UI.RootBuilder" /> from the parser that parsed the template.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseTheme">
@@ -113,6 +117,7 @@
         <returns>The <see cref="T:System.Web.UI.RootBuilder" /> from the parser that parsed the theme.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">An error occurred while parsing the theme.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

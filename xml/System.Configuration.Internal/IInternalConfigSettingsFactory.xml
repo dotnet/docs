@@ -15,6 +15,7 @@
   <Docs>
     <summary>Defines an interface used by the configuration system to set the <see cref="T:System.Configuration.ConfigurationSettings" /> class.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CompleteInit">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Indicates that initialization of the configuration system has completed.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetConfigurationSystem">
@@ -57,6 +59,7 @@
           <see langword="true" /> if the initialization process of the configuration system is complete; otherwise, <see langword="false" />.</param>
         <summary>Provides hierarchical configuration settings and extensions specific to ASP.NET to the configuration system.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

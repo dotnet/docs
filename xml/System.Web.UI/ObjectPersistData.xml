@@ -13,6 +13,7 @@
   <Docs>
     <summary>During the build process, retains information about property entries.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <param name="builtObjects">A collection of objects that have been built by this builder.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectPersistData" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddToObjectControlBuilderTable">
@@ -54,6 +56,7 @@
         <param name="table">A collection for the control builder.</param>
         <summary>Adds built objects to a collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllPropertyEntries">
@@ -72,6 +75,7 @@
         <summary>Gets all the property entries for the control being built.</summary>
         <value>An <see cref="T:System.Collections.ArrayList" /> containing the property entries for the control.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BuiltObjects">
@@ -90,6 +94,7 @@
         <summary>Gets a collection of the objects that have been built by the control builder.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> containing the items that have been built by the control builder.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CollectionItems">
@@ -108,6 +113,7 @@
         <summary>Gets items that are collection types.</summary>
         <value>An <see cref="T:System.Collections.ArrayList" /> containing items of type <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EventEntries">
@@ -126,6 +132,7 @@
         <summary>Gets event entries for the control being built.</summary>
         <value>An <see cref="T:System.Collections.ArrayList" /> containing the event entries.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFilteredProperties">
@@ -148,6 +155,7 @@
         <summary>Gets the property entries with the specified filter.</summary>
         <returns>The property entries with the specified filter.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFilteredProperty">
@@ -172,6 +180,7 @@
         <summary>Gets all property entries for the specified filter and property name.</summary>
         <returns>All property entries for the specified filter and property name.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyAllFilters">
@@ -194,6 +203,7 @@
         <summary>Returns all filtered property entries for a specified property name.</summary>
         <returns>All filtered property entries for a specified property name.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsCollection">
@@ -213,6 +223,7 @@
         <value>
           <see langword="true" /> if this persisted data is for a collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Localize">
@@ -232,6 +243,7 @@
         <value>
           <see langword="true" /> if the control created by the control builder object is localized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -250,6 +262,7 @@
         <summary>Gets the type of the object associated with the persisted properties.</summary>
         <value>The <see cref="T:System.Type" /> of the object being built.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -268,6 +281,7 @@
         <summary>Gets the resource key for the control builder object.</summary>
         <value>A <see cref="T:System.String" /> representing the resource key for the control builder.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

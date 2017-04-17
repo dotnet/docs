@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="LogFilePath">
@@ -31,6 +32,7 @@
         <summary>Gets the path of the ClickOnce log file.</summary>
         <value>The path of the ClickOnce log file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortcutAppId">
@@ -56,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

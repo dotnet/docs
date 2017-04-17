@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ResolveAssemblyReference</c> task. Use the <c>ResolveAssemblyReference</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveAssemblyReference Task](http://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveAssemblyReference" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllowedAssemblyExtensions">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllowedRelatedFileExtensions">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AppConfigFile">
@@ -103,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Assemblies">
@@ -128,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyFiles">
@@ -146,6 +152,7 @@
         <summary>Gets or sets a list of fully qualified assembly paths to find dependencies for.</summary>
         <value>The list of fully qualified assembly paths to find dependencies for.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AutoUnify">
@@ -174,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CandidateAssemblyFiles">
@@ -199,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopyLocalDependenciesWhenParentReferenceInGac">
@@ -227,13 +236,12 @@
   
  If the parent reference from the project file is in the GAC then we will not copy the dependency locally.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If there are multiple parent reference and ANY of them does not come from the GAC then we will set copy local to true.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopyLocalFiles">
@@ -257,6 +265,7 @@
         <summary>Returns all files in the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />, and <see cref="T:Microsoft.Build.Tasks.ResolveAssemblyReference" /> properties that have the <c>CopyLocal</c> item metadata with a value of <see langword="true" />.</summary>
         <value>All files in the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />, and <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ScatterFiles" /> properties that have the <c>CopyLocal</c> item metadata with a value of <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -277,6 +286,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FilesWritten">
@@ -300,6 +310,7 @@
         <summary>Gets or sets the items written to disk.</summary>
         <value>The items written to disk.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FindDependencies">
@@ -326,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FindRelatedFiles">
@@ -352,6 +364,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FindSatellites">
@@ -378,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FindSerializationAssemblies">
@@ -404,6 +418,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FullFrameworkAssemblyTables">
@@ -443,6 +458,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FullFrameworkFolders">
@@ -461,6 +477,7 @@
         <summary>Gets or sets a list of folders which contain a RedistList directory which represent the full framework for a given client profile, for example:%programfiles%\reference assemblies\microsoft\framework\v4.0</summary>
         <value>Returns a list of folders which contain a RedistList directory which represent the full framework for a given client profile</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FullTargetFrameworkSubsetNames">
@@ -486,6 +503,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreDefaultInstalledAssemblySubsetTables">
@@ -505,6 +523,7 @@
         <value>
           <see langword="true" /> if additional assembly subset tables are used; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreDefaultInstalledAssemblyTables">
@@ -531,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreTargetFrameworkAttributeVersionMismatch">
@@ -549,6 +569,7 @@
         <summary>Gets or sets a flag indicating whether to ignore the framework attribute when checking if an assembly is compatible with the targeted framework.</summary>
         <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreVersionForFrameworkReferences">
@@ -567,6 +588,7 @@
         <summary>Gets or sets a flag indicating whether to ignore the version information on the framework assembly and actually resolve the framework assembly from the currently targeted framework. Flag applies if the primary reference is a framework assembly.</summary>
         <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InstalledAssemblySubsetTables">
@@ -604,6 +626,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InstalledAssemblyTables">
@@ -622,6 +645,7 @@
         <summary>Gets or sets a list of XML files that contain assemblies that are expected to be installed on the target machine.</summary>
         <value>A list of XML files that contain assemblies that are expected to be installed on the target machine.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LatestTargetFrameworkDirectories">
@@ -640,6 +664,7 @@
         <summary>Gets or sets the list of directories which contain the redist lists for the most current framework which can be targeted on the machine.</summary>
         <value>Returns the list of directories which contain the redist lists for the most current framework which can be targeted on the machine.  If this is not set Then we will looks for the highest framework installed on the machine for a given target framework identifier and use that.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProfileName">
@@ -658,6 +683,7 @@
         <summary>Gets or sets the name of the target framework profile we are targeting, for example  Client, Web, or Network</summary>
         <value>Returns the name of the target framework profile we are targeting, for example  Client, Web, or Network</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RelatedFiles">
@@ -681,6 +707,7 @@
         <summary>Gets related files, such as .xml and .pdb files with the same base name as a reference.</summary>
         <value>The related files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedDependencyFiles">
@@ -704,6 +731,7 @@
         <summary>Gets the *n*th order paths to dependencies.</summary>
         <value>The *n*th order paths to dependencies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedFiles">
@@ -727,6 +755,7 @@
         <summary>Gets a list of all primary references resolved to full paths.</summary>
         <value>The list of all primary references resolved to full paths.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedSDKReferences">
@@ -747,6 +776,7 @@
  These locations will only be searched if the reference has the SDKName metadata attached to it.</summary>
         <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SatelliteFiles">
@@ -777,6 +807,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScatterFiles">
@@ -800,6 +831,7 @@
         <summary>Gets the scatter files associated with one of the given assemblies.</summary>
         <value>The scatter files associated with one of the given assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SearchPaths">
@@ -823,6 +855,7 @@
         <summary>Specifies the directories or special locations that are searched to find the files on disk that represent the assemblies.</summary>
         <value>The directories or special locations that are searched to find the files on disk that represent the assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SerializationAssemblyFiles">
@@ -846,6 +879,7 @@
         <summary>Gets the serialization assemblies.</summary>
         <value>The serialization assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Silent">
@@ -872,6 +906,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StateFile">
@@ -890,6 +925,7 @@
         <summary>Gets or sets a file name that indicates where to save the intermediate build state for this task.</summary>
         <value>The file name that indicates where to save the intermediate build state for this task.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuggestedRedirects">
@@ -920,6 +956,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetedRuntimeVersion">
@@ -938,6 +975,7 @@
         <summary>Gets or sets the name of the runtime we are targeting, for example, 2.0.57027.</summary>
         <value>Returns the name of the runtime we are targeting, for example, 2.0.57027. A "v" may be prefixed to the name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkDirectories">
@@ -965,6 +1003,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkMoniker">
@@ -990,6 +1029,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkMonikerDisplayName">
@@ -1015,6 +1055,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkSubsets">
@@ -1033,6 +1074,7 @@
         <summary>A list of target framework subset names that will be searched for in the target framework directories.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkVersion">
@@ -1058,6 +1100,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetProcessorArchitecture">
@@ -1076,6 +1119,7 @@
         <summary>Gets or sets the preferred target processor architecture used for resolving Global Assembly Cache (GAC) references, which can have a value of <c>x86</c>, <c>IA64</c>, or <c>AMD64</c>.</summary>
         <value>The preferred target processor architecture used for resolving Global Assembly Cache (GAC) references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WarnOrErrorOnTargetArchitectureMismatch">
@@ -1094,6 +1138,7 @@
         <summary>Gets or sets a string value specifying the behavior when a mismatch between the target processor architecture and the architecture of a primary reference. When this is “Error”, an error will be logged for a mismatch. When this is “Warning”, a warning will be logged for a mismatch. When this is “None”, no error or warning will be logged for a mismatch.</summary>
         <value>Returns a string value of “Error”, “Warning” or “None”.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

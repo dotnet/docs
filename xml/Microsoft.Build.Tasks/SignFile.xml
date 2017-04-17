@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>SignFile</c> task. Use the <c>SignFile</c> element in your project file to create and execute this task. For usage and parameter information, see [SignFile Task](http://msdn.microsoft.com/library/edef1819-ddeb-4e09-95de-fc7063ba9388).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.SignFile" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CertificateThumbprint">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the certificate to use for signing.</summary>
         <value>The certificate to use for signing.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -71,6 +74,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SigningTarget">
@@ -94,6 +98,7 @@
         <summary>Gets or sets the files to sign with the certificate.</summary>
         <value>The files to sign with the certificate.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TimestampUrl">
@@ -112,6 +117,7 @@
         <summary>Gets or sets the URL of a time stamping server.</summary>
         <value>The URL of a time stamping server.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

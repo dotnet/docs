@@ -43,11 +43,8 @@ Both languages enable embedding of type information, which allows deployment of 
 This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.  
   
 ## Prerequisites  
-<<<<<<< HEAD
+
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
-=======
- You must have Microsoft Office Excel 2007 or later and Microsoft Office Word 2007 or later installed on your computer to complete this walkthrough.  
->>>>>>> Updates
   
  If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
   

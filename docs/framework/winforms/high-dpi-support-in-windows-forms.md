@@ -50,7 +50,7 @@ In addition, to configure high DPI support in your Windows Forms application, yo
 
 - Enable per-monitor DPI awareness in the app.config file.
 
-  Windows Forms introduces a new [`<System.Windows.Forms.ConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
+  Windows Forms introduces a new [`<System.Windows.Forms.ConfigurationSection>`](../../../docs/framework/configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
 
   ```xml
   <System.Windows.Forms.ConfigurationSection>

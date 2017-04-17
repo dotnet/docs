@@ -212,7 +212,7 @@ namespace MultitargetLib
 
              int dotNetCount = Regex.Matches(result, ".NET").Count;
 
-             return $"dotnetfoundation.orgmentions .NET {dotNetCount} times in its HTML!";
+             return $"dotnetfoundation.org mentions .NET {dotNetCount} times in its HTML!";
          }
  #endif
     }

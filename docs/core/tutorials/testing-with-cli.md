@@ -4,7 +4,7 @@ description: This tutorial explains how to organize and test .NET Core projects 
 keywords: .NET, .NET Core, unit testing, .NET CLI, xUnit
 author: cartermp
 ms.author: mairaw
-ms.date: 03/21/2017
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -30,7 +30,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 
 However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
-To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the `Models` folder:
+To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the *Models* folder:
 
 ```
 /MyProject
@@ -183,7 +183,7 @@ The following shows the complete project structure:
       |__NewTypesTests.csproj
 ```
 
-Start in the `test/NewTypesTests` directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file. Execute the following commands:
+Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file. Execute the following commands:
  
 ```console
 dotnet restore

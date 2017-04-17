@@ -60,7 +60,7 @@ In general, we have attempted to maintain a very high level of backward compatib
   
 ## Migrating from the .NET Framework 4  
 
-If you are migrating from the .NET Framework 4 to 4.6, review the following topics for application compatibility issues that may affect your app:  
+If you are migrating from the .NET Framework 4 to a later version, review the following topics for application compatibility issues that may affect your app:  
   
 -   [Application Compatibility in 4.5](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)  
   

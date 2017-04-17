@@ -2,8 +2,8 @@
 title: Publishing your Hello World application with Visual Studio 2017
 description: Publishing creates the set of files that are needed to run your application.
 keywords: .NET, .NET Core, console application, publishing, deployment
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
